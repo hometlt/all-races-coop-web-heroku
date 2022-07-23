@@ -1,0 +1,11 @@
+{
+  "name": "sc2-all-races",
+  "version": "1.0.0",
+  "description": "SC2 All Races",
+  "author": "visceroid",
+  "private": true,
+  "main" : "server.js",
+  "scripts": {
+    "postinstall": "npm install express"
+  }
+}
