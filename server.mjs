@@ -26,9 +26,18 @@ disk.responseFile = function(srcPath, response, callback) {
     this._request('GET', srcPath, headers, null, response, callback);
 }
 
-app.get('/download/:file', function(req, res){
-    let filename = "SC2/Commanders Conflict/"+ req.params.file + ".SC2Mod"
-    res.setHeader('Content-disposition', 'attachment; filename=' + req.params.file + ".SC2Mod");
+    
+
+// AssetMods
+// PatchNotes
+// VersionControlMods
+// Versions
+
+
+
+app.get('/download/*', function(req, res){
+    let filename = "SC2/Commanders Conflict/"+ req.params[0]
+    res.setHeader('Content-disposition', 'attachment; filename=' + req.params[0] + ".SC2Mod");
     disk.responseFile(filename, res, ()=>{
         console.log("Woohoo")
     })
