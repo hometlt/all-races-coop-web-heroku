@@ -1,12 +1,24 @@
 {
-  "name": "sc2-all-races",
+  "name": "node-example",
   "version": "1.0.0",
-  "description": "SC2 All Races",
-  "author": "visceroid",
-  "private": true,
-  "main" : "server.js",
+  "description": "This example is so cool.",
+  "main": "web.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "npm install express"
-  }
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "yandex-disk": "^0.0.8",
+    "yargs": "^17.5.1"
+  },
+  "author": "Denis Ponomarev",
+  "license": "MIT"
 }
