@@ -27,7 +27,7 @@ disk.responseFile = function(srcPath, response, callback) {
 }
 
 app.get('/download/:file', function(req, res){
-    let filename = "SC2/"+ req.params.file + ".SC2Mod"
+    let filename = "SC2/Commanders Conflict/"+ req.params.file + ".SC2Mod"
     res.setHeader('Content-disposition', 'attachment; filename=' + req.params.file + ".SC2Mod");
     disk.responseFile(filename, res, ()=>{
         console.log("Woohoo")
