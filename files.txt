@@ -1,0 +1,6 @@
+Assets01.SC2Mod
+Assets02.SC2Mod
+Assets03.SC2Mod
+Assets04.SC2Mod
+Assets05.SC2Mod
+Assets06.SC2Mod
