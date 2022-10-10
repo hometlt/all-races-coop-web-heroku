@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<const id="$GenericAttackImpactSiteOpsHeader" type="CActorSiteOps" value="SOpAttachHarness SOpForwardLaunchGuide SOpAttachVolumeStandard SOp2DRotation"/>
+<const id="$GenericAttackLaunchMethods" type="CAttachMethods" value="AMFilterWeapon00"/>
+<const id="$GenericAttackTargetMethods" type="CAttachMethods" value="AMVolumesTargets AMArcTestWeapon AMVolumesWeightedPick"/>
+<const id="$GenericBunkerAttackLaunchMethods" type="CAttachMethods" value="AMFilterWeapon AMProximityTargetAll AMPortAllocatorBunker"/>
+<const id="$Spell" type="CActorMsgPayloadPtr" value="AnimPlay Spell Spell"/>
+<const id="$Stand" type="CActorMsgPayloadPtr" value="AnimPlay Stand Stand"/>
+<const id="$Death" type="CActorMsgPayloadPtr" value="AnimPlay Death Death"/>
+<const id="$Birth" type="CActorMsgPayloadPtr" value="AnimPlay Birth Birth"/>
+<const id="$AllowBlobShadow" type="CActorTerms" value="CompareField ::Main UnitFlags[ShowBlobShadow] Eq 1"/>
+<const id="$Decals1" value="ui_wol_achievementdecals_sheet1.dds"/>
+<const id="$Decals2" value="ui_wol_achievementdecals_sheet2.dds"/>
+<const id="$Decals3" value="ui_wol_achievementdecals_sheet3.dds"/>
+<const id="$Decals4" value="ui_wol_achievementdecals_sheet4.dds"/>
+<const id="$Decals5" value="ui_wol_achievementdecals_sheet5.dds"/>
+<const id="$Emoticons1" value="ui_wol_achievementemoticons_sheet1.dds"/>
+<const id="$Emoticons2" value="ui_wol_achievementemoticons_sheet2.dds"/>
+<const id="$Transparency" value="ui_wol_achievementicons_sheet_transparency.dds"/>
+<const id="$Portraits1" value="ui_wol_achievementportraits_sheet1.dds"/>
+<const id="$Portraits2" value="ui_wol_achievementportraits_sheet2.dds"/>
+<const id="$Portraits3" value="ui_wol_achievementportraits_sheet3.dds"/>
+<const id="$Portraits4" value="ui_wol_achievementportraits_sheet4.dds"/>
+<const id="$Portraits5" value="ui_wol_achievementportraits_sheet5.dds"/>
+<const id="$Portraits6" value="ui_wol_achievementportraits_sheet6.dds"/>
+<const id="$Portraits7" value="ui_wol_achievementportraits_sheet7.dds"/>
+<const id="$Portraits8" value="ui_wol_achievementportraits_sheet8.dds"/>
+<const id="$Portraits9" value="ui_wol_achievementportraits_sheet9.dds"/>
+<const id="$Portraits10" value="ui_wol_achievementportraits_sheet10.dds"/>
+<const id="$Portraits11" value="ui_wol_achievementportraits_sheet11.dds"/>
+<const id="$Portraits12" value="ui_wol_achievementportraits_sheet12.dds"/>
+<const id="$Portraits13" value="ui_wol_achievementportraits_sheet13.dds"/>
+<const id="$Portraits14" value="ui_wol_achievementportraits_sheet14.dds"/>
+<const id="$Portraits15" value="ui_wol_achievementportraits_sheet15.dds"/>
+<const id="$Portraits16" value="ui_wol_achievementportraits_sheet16.dds"/>
+<const id="$Achievements1" value="ui_wol_achievementicons_sheet1.dds"/>
+<const id="$Achievements2" value="ui_wol_achievementicons_sheet2.dds"/>
+<const id="$Achievements3" value="ui_wol_achievementicons_sheet3.dds"/>
+<const id="$Achievements4" value="ui_wol_achievementicons_sheet4.dds"/>
+<const id="$Achievements5" value="ui_wol_achievementicons_sheet5.dds"/>
+<const id="$Achievements6" value="ui_wol_achievementicons_sheet6.dds"/>
+<const id="$Achievements7" value="ui_wol_achievementicons_sheet7.dds"/>
+<const id="$Achievements8" value="ui_wol_achievementicons_sheet8.dds"/>
+<const id="$Achievements9" value="ui_wol_achievementicons_sheet9.dds"/>
+<const id="$Achievements10" value="ui_wol_achievementicons_sheet10.dds"/>
+<const id="$Achievements11" value="ui_wol_achievementicons_sheet11.dds"/>
+<const id="$Achievements12" value="ui_wol_achievementicons_sheet12.dds"/>
+<const id="$Achievements13" value="ui_wol_achievementicons_sheet13.dds"/>
+<const id="$Achievements14" value="ui_wol_achievementicons_sheet14.dds"/>
+<const id="$Achievements15" value="ui_wol_achievementicons_sheet15.dds"/>
+<const id="$Achievements16" value="ui_wol_achievementicons_sheet16.dds"/>
+<const id="$Icons10" value="ui_wol_achievementicons_sheetA.dds"/>
+<const id="$Icons11" value="ui_wol_achievementicons_sheetB.dds"/>
+<const id="$Sprays1" value="ui_wol_achievementsprays_sheet1.dds"/>
+<const id="$Sprays2" value="ui_wol_achievementsprays_sheet2.dds"/>
+<const id="$Consoles1" value="ui_wol_achievementconsoles_sheet1.dds"/>
+<const id="$Skins1" value="ui_wol_unitskinicons_sheet1.dds"/>
+<const id="$Skins2" value="ui_wol_unitskinicons_sheet2.dds"/>
+<const id="$WarChest1" value="ui_wol_unitskinicons_warchest1.dds"/>
+<const id="$WarChest2" value="ui_wol_unitskinicons_warchest2.dds"/>
+<const id="$WarChest3" value="ui_wol_unitskinicons_warchest3.dds"/>
+<const id="$WarChest4" value="ui_wol_unitskinicons_warchest4.dds"/>
+<const id="$WarChest5" value="ui_wol_unitskinicons_warchest5.dds"/>
+<const id="$WarChest6" value="ui_wol_unitskinicons_warchest6.dds"/>
+<const id="$Banners1" value="ui_wol_achievementbanners_sheet1.dds"/>
+<const id="$Banners2" value="ui_wol_achievementbanners_sheet2.dds"/>
+<const id="Small" path="CUnit.Collide.index" value="Land16"/>
+<const id="Burrow" path="CUnit.Collide.index" value="Land1"/>
+<const id="TinyCritter" path="CUnit.Collide.index" value="Land8"/>
+<const id="Swarm" path="CUnit.Collide.index" value="Land4"/>
+<const id="ForceField" path="CUnit.Collide.index" value="Land9"/>
+<const id="Locust" path="CUnit.Collide.index" value="Land11"/>
+<const id="DisruptorPhased" path="CUnit.Collide.index" value="Land15"/>
+<const id="Structure" path="CUnit.Collide.index" value="Land6"/>
+<const id="FlyingImmobile" path="CUnit.Collide.index" value="Air2"/>
+<const id="FlyingEscorts" path="CUnit.Collide.index" value="Air3"/>
+<const id="Ground" path="CUnit.Collide.index" value="Land2"/>
+<const id="LocustForceField" path="CUnit.Collide.index" value="Land12"/>
+<const id="Flying" path="CUnit.Collide.index" value="Air1"/>
+<const id="Colossus" path="CUnit.Collide.index" value="Land5"/>
+<const id="CreepTumor" path="CUnit.Collide.index" value="Land10"/>
+<const id="RoachBurrow" path="CUnit.Collide.index" value="Land7"/>
+<const id="Phased" path="CUnit.Collide.index" value="Land14"/>
+<const id="Larva" path="CUnit.Collide.index" value="Land3"/>
+<CPremiumMap id="ARKStar">
+  <ProductId value="35755"/>
+  <LicenseId value="27856"/>
+  <Price value="5"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_01.dds"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_02.dds"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_03.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_thumb_01.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_thumb_02.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_promotionalscreenshots_thumb_03.dds"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/ARKStar/ScreenshotDescription1"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/ARKStar/ScreenshotDescription2"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/ARKStar/ScreenshotDescription3"/>
+  <Movie value="Assets/Textures/Video_PremiumArcade_Preview_ARKStar.ogv"/>
+  <MoviePreviewImage value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_moviepreviewimage.dds"/>
+  <MovieImageThumbnail value="Assets/Textures/ui_battlenet_glues_premiummaps_arkstar_moviepreviewimage_thumb.dds"/>
+  <MovieDescription value="UI/PremiumMaps/ARKStar/MovieDescription"/>
+  <Description value="UI/PremiumMaps/ARKStar/LongDescription"/>
+  <Title value="UI/PremiumMaps/ARKStar/Title"/>
+  <PayToPlay value="1"/>
+  <ShortDescription value="UI/PremiumMaps/ARKStar/ShortDescription"/>
+  <LanguageWarning value="UI/PremiumMaps/ARKStar/LanguageWarning"/>
+  <CustomFeaturedDescription value="UI/PremiumMaps/ARKStar/CustomFeaturedDescription"/>
+</CPremiumMap>
+<CPremiumMap id="DirectStrike">
+  <ProductId value="35770"/>
+  <LicenseId value="27827"/>
+  <Price value="5"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_01.dds"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_02.dds"/>
+  <ScreenShotImageArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_03.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_thumb_01.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_thumb_02.dds"/>
+  <ScreenShotImageThumbnailArray value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_promotionalscreenshots_thumb_03.dds"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/DirectStrike/ScreenshotDescription1"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/DirectStrike/ScreenshotDescription2"/>
+  <ScreenShotDescriptionArray value="UI/PremiumMaps/DirectStrike/ScreenshotDescription3"/>
+  <Movie value="Assets/Textures/Video_PremiumArcade_Preview_DirectStrike.ogv"/>
+  <MoviePreviewImage value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_moviepreviewimage.dds"/>
+  <MovieImageThumbnail value="Assets/Textures/ui_battlenet_glues_premiummaps_directstrike_moviepreviewimage_thumb.dds"/>
+  <MovieDescription value="UI/PremiumMaps/DirectStrike/MovieDescription"/>
+  <Description value="UI/PremiumMaps/DirectStrike/LongDescription"/>
+  <Title value="UI/PremiumMaps/DirectStrike/Title"/>
+  <PayToPlay value="0"/>
+  <ShortDescription value="UI/PremiumMaps/DirectStrike/ShortDescription"/>
+  <LanguageWarning value="UI/PremiumMaps/DirectStrike/LanguageWarning"/>
+  <CustomFeaturedDescription value="UI/PremiumMaps/DirectStrike/CustomFeaturedDescription"/>
+</CPremiumMap>
+<CTile id="MarSaraTile">
+  <Material value="Assets/HardTiles/MarSaraRoad/MarSaraRoad.m3"/>
+  <EditorIcon value="Assets\Textures\ui-editoricon-roads.dds"/>
+</CTile>
+<CTile id="KorhalTile">
+  <Material value="Assets/HardTiles/KorhalRoad/KorhalRoad.m3"/>
+  <EditorIcon value="Assets\Textures\ui-editoricon-roads.dds"/>
+</CTile>
+<CTile id="MeinhoffTile">
+  <Material value="Assets/HardTiles/MeinhoffRoad/MeinhoffRoad.m3"/>
+  <EditorIcon value="Assets\Textures\ui-editoricon-roads.dds"/>
+</CTile>
+<CTile id="TarsonisRail">
+  <Material value="Assets/HardTiles/TarsonisRail/TarsonisRail.m3"/>
+  <EditorIcon value="Assets\Textures\ui-editoricon-rails.dds"/>
+</CTile>
+<CTrophy id="ClassicTrophy">
+  <DefinitionId value="1"/>
+  <TopCutsceneFilter value="TopClassic"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="NovaTrophy">
+  <DefinitionId value="2"/>
+  <TopCutsceneFilter value="TopNova"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="Nova2Trophy">
+  <DefinitionId value="3"/>
+  <TopCutsceneFilter value="TopGriffin"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="Nova3Trophy">
+  <DefinitionId value="4"/>
+  <TopCutsceneFilter value="TopBlackOps"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="CarrierTrophy">
+  <DefinitionId value="5"/>
+  <TopCutsceneFilter value="TopCarrier"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="MutaliskTrophy">
+  <DefinitionId value="6"/>
+  <TopCutsceneFilter value="TopMutalisk"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="SiegeTankTrophy">
+  <DefinitionId value="7"/>
+  <TopCutsceneFilter value="TopSiegeTank"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="VoidRayTrophy">
+  <DefinitionId value="8"/>
+  <TopCutsceneFilter value="TopVoidRay"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="UltraliskTrophy">
+  <DefinitionId value="9"/>
+  <TopCutsceneFilter value="TopUltralisk"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="VikingTrophy">
+  <DefinitionId value="10"/>
+  <TopCutsceneFilter value="TopViking"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="HydraSkullTrophy">
+  <DefinitionId value="11"/>
+  <TopCutsceneFilter value="TopHydraSkull"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="MinigunTrophy">
+  <DefinitionId value="12"/>
+  <TopCutsceneFilter value="TopMinigun"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="ColossusTrophy">
+  <DefinitionId value="13"/>
+  <TopCutsceneFilter value="TopColossus"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CTrophy id="BattlecruiserTrophy">
+  <DefinitionId value="14"/>
+  <TopCutsceneFilter value="TopBattlecruiser"/>
+  <BottomCutsceneFilter value="BottomClassic"/>
+</CTrophy>
+<CLocation id="Placeholder">
+  <UserReference value="Locations;Placeholder"/>
+</CLocation>
+
+</Catalog>

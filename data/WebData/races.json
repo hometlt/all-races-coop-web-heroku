@@ -1,0 +1,186 @@
+{
+	"Neut": {
+		"AttributeId": "Neut",
+		"Icon": "ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_rand",
+		"color": "#0c95fa"
+	},
+	"Terr": {
+		"AttributeId": "Terr",
+		"Icon": "ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_terr",
+		"color": "#28ac44"
+	},
+	"Prot": {
+		"AttributeId": "Prot",
+		"Icon": "ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_prot",
+		"color": "#0c95fa"
+	},
+	"Zerg": {
+		"AttributeId": "Zerg",
+		"Icon": "ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_zerg",
+		"color": "#f58c46"
+	},
+	"@Amon": {},
+	"@Neutral": {},
+	"@AmonAlly": {},
+	"@Bonus": {},
+	"@Hostile": {},
+	"@Player": {},
+	"@AmonPlayer": {},
+	"@PlayerAlly": {},
+	"Hybr": {
+		"AttributeId": "Hybr",
+		"Icon": "amonsarmadalogo",
+		"color": "#0c95fa"
+	},
+	"ProtT": {
+		"AttributeId": "PTal",
+		"Icon": "taldarimlogo",
+		"color": "#0c95fa"
+	},
+	"ProtP": {
+		"AttributeId": "PPur",
+		"Icon": "purifierlogo",
+		"color": "#0c95fa"
+	},
+	"ProtN": {
+		"AttributeId": "PNer",
+		"Icon": "nerazimlogo",
+		"color": "#0c95fa"
+	},
+	"ProtL": {
+		"AttributeId": "PTal",
+		"Icon": "fistofulrezajlogo",
+		"color": "#0c95fa"
+	},
+	"TerrM": {
+		"AttributeId": "TMar",
+		"Icon": "mirasmarauderslogo",
+		"color": "#28ac44"
+	},
+	"ZergE": {
+		"AttributeId": "ZEnt",
+		"Icon": "decal_terran_0088_01",
+		"color": "#f58c46"
+	},
+	"ZergM": {
+		"AttributeId": "ZMec",
+		"Icon": "simulantswarmlogo",
+		"color": "#f58c46"
+	},
+	"ProtI": {
+		"AttributeId": "PIha",
+		"Icon": "xelnagaremnantslogo",
+		"color": "#0c95fa"
+	},
+	"ProtA": {
+		"AttributeId": "PArt",
+		"Icon": "aiurprotosslogo",
+		"color": "#0c95fa"
+	},
+	"ProtK": {
+		"AttributeId": "PKar",
+		"Icon": "decal_terran_0074_01",
+		"color": "#0c95fa"
+	},
+	"TerrC": {
+		"AttributeId": "TCov",
+		"Icon": "covertopslogo",
+		"color": "#28ac44"
+	},
+	"TerrD": {
+		"AttributeId": "TDom",
+		"Icon": "terrandominionlogo",
+		"color": "#28ac44"
+	},
+	"TerrI": {
+		"AttributeId": "TInf",
+		"Icon": "infestedterranlogo",
+		"color": "#28ac44"
+	},
+	"TerrK": {
+		"AttributeId": "TKel",
+		"Icon": "kelmoriancombinelogo"
+	},
+	"TerrR": {
+		"AttributeId": "TRai",
+		"Icon": "raynorsraiderslogo"
+	},
+	"TerrO": {
+		"AttributeId": "TOut",
+		"Icon": "heavensdevilslogo",
+		"color": "#28ac44"
+	},
+	"ZergA": {
+		"AttributeId": "ZAba",
+		"Icon": "abathursrenegadebroodslogo",
+		"color": "#f58c46"
+	},
+	"ZergK": {
+		"AttributeId": "ZKer",
+		"Icon": "theswarmlogo",
+		"color": "#f58c46"
+	},
+	"ZergL": {
+		"AttributeId": "Zlev",
+		"Icon": "leviathanbroodlogo",
+		"color": "#f58c46"
+	},
+	"ZergP": {
+		"AttributeId": "ZPri",
+		"Icon": "primalzerglogo",
+		"color": "#28ac44"
+	},
+	"Gen": {
+		"AttributeId": "Gen",
+		"Icon": "lobby-genetron",
+		"color": "#80ffff"
+	},
+	"Xayi": {
+		"AttributeId": "Xayi",
+		"Icon": "lobby-xayid",
+		"color": "#ff8040"
+	},
+	"Keir": {
+		"AttributeId": "Keir",
+		"color": "#ffff80"
+	},
+	"UED": {
+		"AttributeId": "UED",
+		"Icon": "lobby-ued",
+		"color": "#ffff00"
+	},
+	"NHbr": {
+		"AttributeId": "NHbr",
+		"Icon": "tip_hybridbehemoth",
+		"color": "#00ffbf"
+	},
+	"Dragon": {
+		"AttributeId": "Drag",
+		"Icon": "lobby-dragons",
+		"color": "#ff8040"
+	},
+	"UPL": {
+		"AttributeId": "UPL",
+		"Icon": "lobby-upl"
+	},
+	"War3_Race": {},
+	"War3_HiddenRace": {},
+	"Human": {
+		"AttributeId": "hum"
+	},
+	"NightElf": {
+		"AttributeId": "elf"
+	},
+	"Orc": {
+		"AttributeId": "orc"
+	},
+	"Undead": {
+		"AttributeId": "und"
+	},
+	"Demon": {},
+	"Commoner": {},
+	"Creeps": {},
+	"Critters": {},
+	"Other": {},
+	"Naga": {}
+}

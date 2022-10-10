@@ -1,0 +1,6476 @@
+[
+	{
+		"commander": "[Default]",
+		"unit": "NONE",
+		"upgrade": "NONE",
+		"behavior": "NONE"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorHero",
+		"unit": "RaynorCommando"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"unit": "Swann"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "K5Kerrigan"
+	},
+	{
+		"ability": "KerriganVoidCoopEconDrop",
+		"commander": "Kerrigan"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxHero",
+		"unit": "KaraxChampion"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisHero",
+		"unit": "ArtanisVoid"
+	},
+	{
+		"commander": "Nova",
+		"unit": "NovaCoop"
+	},
+	{
+		"commander": "Stukov",
+		"prestige": "CommanderPrestigeStukovHero",
+		"unit": "InfestedStukovCoop"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "ZagaraVoidCoop"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "AlarakCoop"
+	},
+	{
+		"commander": "Alarak"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulCoop"
+	},
+	{
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunHero",
+		"unit": "VorazunChampion"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "CoopCasterRaynor"
+	},
+	{
+		"commander": "Swann",
+		"unit": "CoopCasterSwann"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "CoopCasterAbathur"
+	},
+	{
+		"commander": "Karax",
+		"unit": "SoACasterKarax"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "SoACasterArtanis"
+	},
+	{
+		"commander": "Nova",
+		"unit": "CoopCasterNova"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Horner",
+		"unit": "CoopCasterHorner"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "CoopCasterStukov"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "CoopCasterAlarak"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "CoopCasterZeratul"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "SoACasterVorazun"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "SoACasterFenix"
+	},
+	{
+		"commander": "Tychus",
+		"unit": "CoopCasterTychus"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "CoopCasterMengsk"
+	},
+	{
+		"commander": "Stetmann",
+		"unit": "CoopCasterStetmann"
+	},
+	{
+		"commander": "Dehaka",
+		"unit": "CoopCasterDehaka"
+	},
+	{
+		"commander": "Swann",
+		"unit": "UnfinishedDrakkenLaserDrillCoop"
+	},
+	{
+		"commander": "Karax",
+		"unit": "SolarForge"
+	},
+	{
+		"commander": "Nova",
+		"unit": "GhostAcademyNova"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHStarport"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SICivilianStructure"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulACArtifact"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "FenixAltarOfPsiStorms",
+		"level": "2"
+	},
+	{
+		"commander": "Tychus",
+		"unit": "TychusResearchCenter"
+	},
+	{
+		"commander": "Stetmann",
+		"unit": "GarysDen"
+	},
+	{
+		"commander": "Dehaka",
+		"unit": "DehakaCoopReviveCocoon"
+	},
+	{
+		"ability": "DehakaConsume",
+		"commander": "Dehaka"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Stukov",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Stetmann",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Tychus",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Mengsk",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "CoopTech"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "KerriganCommander"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "SpineCrawler",
+		"upgrade": "HotSHaveSpineCrawler"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "SporeCrawler",
+		"upgrade": "HotSHaveSporeCrawler"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "NydusNetwork"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "BroodLord",
+		"upgrade": "HotSHaveBroodLord"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Hydralisk",
+		"upgrade": "HotSHaveHydralisk"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "HydraliskDen"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "EvolveMuscularAugments"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "MutaliskBroodlord",
+		"upgrade": "HotSMutaliskBroodlord"
+	},
+	{
+		"ability": "UpgradeToGreaterSpireBroodlord",
+		"commander": "Kerrigan",
+		"unit": "GreaterSpire"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Spire"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "KerriganViciousGlaive"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "HotSRapidRegeneration"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "QueenCoop",
+		"upgrade": "HotSHaveQueen"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Ultralisk",
+		"upgrade": "HotSHaveUltralisk"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "UltraliskCavern"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Zergling",
+		"upgrade": "HotSHaveZergling"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "SpawningPool"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "VoidCoopHeroicFortitude"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "K5PrimalSlash"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "K5PsiStrike"
+	},
+	{
+		"ability": "KerriganVoidCoopCrushingGripWave",
+		"commander": "Kerrigan",
+		"level": "2"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "3",
+		"upgrade": "KerriganVoidCoopImprovedLeapingStrike"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "4",
+		"upgrade": "HotSZerglingHealth"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "4",
+		"upgrade": "ZerglingArmorShred"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Hydralisk",
+		"level": "5"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "HydraliskLurker",
+		"level": "5"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Lurker",
+		"level": "5"
+	},
+	{
+		"ability": "UpgradeToLurkerDen",
+		"commander": "Kerrigan",
+		"unit": "LurkerDen",
+		"level": "5",
+		"upgrade": "HotSLurker"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "5",
+		"upgrade": "SeismicSpines"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "6",
+		"upgrade": "HotSHydraliskHealth"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "6",
+		"upgrade": "HydraliskFrenzy"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "7",
+		"upgrade": "K5CreepBonuses"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "7",
+		"upgrade": "KerriganCreepBonusesCoop"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "8",
+		"upgrade": "VoidCoopGreaterNydusWorm"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "9",
+		"upgrade": "K5ChainLightning"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "9",
+		"upgrade": "K5Cooldowns"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "10",
+		"upgrade": "K5Fury"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "11",
+		"upgrade": "KerriganSeveringGlave"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "11",
+		"upgrade": "KerriganVoidCoopBroodlordSpeed"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "HotSRaptor",
+		"level": "12",
+		"upgrade": "HotsRaptor"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Zergling",
+		"level": "12"
+	},
+	{
+		"ability": "UltraliskBurrowCharge",
+		"commander": "Kerrigan",
+		"level": "13",
+		"upgrade": "HotSUltraliskBurrowCharge"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "13",
+		"upgrade": "HotSTissueAssimilation"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "Ultralisk",
+		"level": "14",
+		"upgrade": "HotSHaveUltralisk"
+	},
+	{
+		"commander": "Kerrigan",
+		"unit": "HotSTorrasque",
+		"level": "14",
+		"upgrade": "HotSTorrasque"
+	},
+	{
+		"commander": "Kerrigan",
+		"level": "15",
+		"upgrade": "KerriganVoidCoopEnergyRegen"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZagaraCommander"
+	},
+	{
+		"ability": "ZagaraVoidCoopBanelingBarrage",
+		"commander": "Zagara"
+	},
+	{
+		"ability": "ZagaraVoidCoopMassFrenzy",
+		"commander": "Zagara"
+	},
+	{
+		"ability": "ZagaraVoidCoopSpawnHunterKillers",
+		"commander": "Zagara"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "ScourgeNest"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "VoidCoopHeroicFortitude"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "K5TwoDrones"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "MasteryZagaraLarvaRatePassive"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMeleeWeaponsLevel1"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMeleeWeaponsLevel2"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMeleeWeaponsLevel3"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMissileWeaponsLevel1"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMissileWeaponsLevel2"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZergMissileWeaponsLevel3"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZagaraGroundAttacksLevel1"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZagaraGroundAttacksLevel2"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "ZagaraGroundAttacksLevel3"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "SpineCrawler",
+		"upgrade": "HotSHaveSpineCrawler"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "SporeCrawler",
+		"upgrade": "HotSHaveSporeCrawler"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "InfestedAbomination",
+		"upgrade": "HotSHaveAberration"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "Baneling",
+		"upgrade": "HotSHaveBaneling"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "BanelingNest"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "Scourge"
+	},
+	{
+		"ability": "Corruption",
+		"commander": "Zagara",
+		"unit": "ZagaraCorruptor",
+		"upgrade": "HotSHaveCorruptor"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "QueenCoop",
+		"upgrade": "HotSHaveQueen"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "Zergling",
+		"upgrade": "HotSHaveZergling"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "SpawningPool"
+	},
+	{
+		"ability": "ZagaraVoidCoopMassRoachDrop",
+		"commander": "Zagara",
+		"level": "2"
+	},
+	{
+		"commander": "Zagara",
+		"level": "3",
+		"upgrade": "QueenDoubleInjectLarva"
+	},
+	{
+		"commander": "Zagara",
+		"level": "4",
+		"upgrade": "ScourgeSplashDamage"
+	},
+	{
+		"commander": "Zagara",
+		"level": "4",
+		"upgrade": "ScourgeGasCostReduction"
+	},
+	{
+		"ability": "ScourgeDetonate",
+		"commander": "Zagara",
+		"level": "4"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "BileLauncherZagara",
+		"level": "5",
+		"upgrade": "ZagaraBileLaunchers"
+	},
+	{
+		"commander": "Zagara",
+		"level": "4",
+		"upgrade": "HotSZerglingHealth"
+	},
+	{
+		"commander": "Zagara",
+		"level": "4",
+		"upgrade": "ZerglingArmorShred"
+	},
+	{
+		"commander": "Zagara",
+		"level": "7",
+		"upgrade": "ZagaraVoidCoopBanelingSpawner"
+	},
+	{
+		"commander": "Zagara",
+		"level": "8",
+		"upgrade": "ZagaraVoidCoopAberrationBanelingIncubation"
+	},
+	{
+		"commander": "Zagara",
+		"level": "9",
+		"upgrade": "ZagaraVoidCoopAttackUpgrade"
+	},
+	{
+		"commander": "Zagara",
+		"level": "9",
+		"upgrade": "AberrationArmorAura"
+	},
+	{
+		"commander": "Zagara",
+		"level": "10",
+		"upgrade": "ZagaraVoidCoopImprovedMassRoachDrop"
+	},
+	{
+		"commander": "Zagara",
+		"level": "11",
+		"upgrade": "HotSBanelingCorrosiveBile"
+	},
+	{
+		"commander": "Zagara",
+		"level": "11",
+		"upgrade": "HotSRupture"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "Zergling",
+		"level": "12"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "HotSSwarmling",
+		"level": "12",
+		"upgrade": "HotsSwarmling"
+	},
+	{
+		"commander": "Zagara",
+		"level": "12",
+		"upgrade": "CoopZerglingSwarmling"
+	},
+	{
+		"commander": "Zagara",
+		"level": "13",
+		"upgrade": "BileLauncherIncreasedRange"
+	},
+	{
+		"commander": "Zagara",
+		"level": "13",
+		"upgrade": "BileLauncherBombardmentCooldown"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "Baneling",
+		"level": "14"
+	},
+	{
+		"commander": "Zagara",
+		"unit": "HotSSplitterlingBig",
+		"level": "14",
+		"upgrade": "CoopBanelingSplitterling"
+	},
+	{
+		"commander": "Zagara",
+		"level": "15",
+		"upgrade": "ZagaraVoidCoopImprovedAbilities"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Queen",
+		"upgrade": "HotSHaveQueen"
+	},
+	{
+		"ability": "MorphRoachToRavager",
+		"commander": "Abathur"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "HotSViciousGlaive"
+	},
+	{
+		"ability": "MorphRoachVileToRavager",
+		"commander": "Abathur"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "AbathurCommander"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "RavagerCorrosiveBileRadiusIncrease"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "HotSRoachDamage"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Roach",
+		"upgrade": "HotSHaveRoach"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "RoachWarren"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Mutalisk",
+		"upgrade": "CoopMutalisk"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Spire"
+	},
+	{
+		"ability": "UpgradeToGreaterSpireViper",
+		"commander": "Abathur"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "HotSRapidRegeneration"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "SpineCrawler",
+		"upgrade": "HotSHaveSpineCrawler"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "SwarmHost",
+		"upgrade": "HotSHaveSwarmHost"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "InfestationPit"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "LocustLifetimeIncrease"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "HotSRapidIncubation"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "HotSPressurizedGlands"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "FlyingLocusts"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "NydusNetwork"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "SporeCrawler",
+		"upgrade": "HotSHaveSporeCrawler"
+	},
+	{
+		"ability": "MutaliskMorphToDevourer",
+		"commander": "Abathur",
+		"unit": "Devourer",
+		"upgrade": "HotSHaveDevourer"
+	},
+	{
+		"ability": "MutaliskMorphToGuardian",
+		"commander": "Abathur",
+		"unit": "GuardianMP",
+		"upgrade": "HaveGuardian"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "SwarmQueenVisual"
+	},
+	{
+		"ability": "EvolveToLeviathanMutalisk",
+		"commander": "Abathur",
+		"level": "2"
+	},
+	{
+		"ability": "EvolveToLeviathanGuardianMP",
+		"commander": "Abathur",
+		"level": "2"
+	},
+	{
+		"ability": "EvolveToLeviathanDevourer",
+		"commander": "Abathur",
+		"level": "2"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Brutalisk",
+		"level": "2"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "HotSLeviathan",
+		"level": "2"
+	},
+	{
+		"commander": "Abathur",
+		"level": "3",
+		"upgrade": "AbathurToxicNestIcreasedBiomass"
+	},
+	{
+		"commander": "Abathur",
+		"level": "3",
+		"upgrade": "AbathurHiddenToxicNest"
+	},
+	{
+		"commander": "Abathur",
+		"level": "3",
+		"upgrade": "AbathurToxicNestRespawnTalent"
+	},
+	{
+		"commander": "Abathur",
+		"level": "4",
+		"upgrade": "RavagerCorrosiveBileDamageIncrease"
+	},
+	{
+		"commander": "Abathur",
+		"level": "4",
+		"upgrade": "HotSRoachShield"
+	},
+	{
+		"commander": "Abathur",
+		"level": "5",
+		"upgrade": "AbathurImprovedMend"
+	},
+	{
+		"ability": "BioMechanicalTransfusion",
+		"commander": "Abathur",
+		"level": "6"
+	},
+	{
+		"commander": "Abathur",
+		"level": "6",
+		"upgrade": "AbathurHatcheryDoubleQueue"
+	},
+	{
+		"commander": "Abathur",
+		"level": "6",
+		"upgrade": "AbathurBioMechanicalTransfusion"
+	},
+	{
+		"commander": "Abathur",
+		"level": "7",
+		"upgrade": "AbathurBiomassRefund"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Viper",
+		"level": "8",
+		"upgrade": "HotSHaveViper"
+	},
+	{
+		"commander": "Abathur",
+		"level": "8",
+		"upgrade": "ViperImprovedCastRange"
+	},
+	{
+		"commander": "Abathur",
+		"level": "9",
+		"upgrade": "ViperAbductImprovedStun"
+	},
+	{
+		"ability": "AbathurDeepTunnel",
+		"commander": "Abathur",
+		"level": "9",
+		"upgrade": "AbathurDeepTunnel"
+	},
+	{
+		"commander": "Abathur",
+		"level": "10",
+		"upgrade": "AbathurEnableSymbiote"
+	},
+	{
+		"commander": "Abathur",
+		"level": "11",
+		"upgrade": "MutaliskSunderingGlave"
+	},
+	{
+		"commander": "Abathur",
+		"level": "11",
+		"upgrade": "GuardianAttackRangeIncrease"
+	},
+	{
+		"commander": "Abathur",
+		"level": "11",
+		"upgrade": "DevourerAoEDamage"
+	},
+	{
+		"commander": "Abathur",
+		"level": "12",
+		"upgrade": "AbathurMorphTimeCostReduced"
+	},
+	{
+		"commander": "Abathur",
+		"level": "13",
+		"upgrade": "AbathurEnemyDeathCreateLocusts"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "Roach",
+		"level": "14",
+		"upgrade": "HotSHaveRoach"
+	},
+	{
+		"commander": "Abathur",
+		"unit": "RoachVile",
+		"level": "14",
+		"upgrade": "HotSHaveVile"
+	},
+	{
+		"commander": "Abathur",
+		"level": "15",
+		"upgrade": "AbathurBiomassLifeLeech"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "RaynorCommander"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "NeosteelFrame"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranBuildingArmorRaynor"
+	},
+	{
+		"ability": "CalldownMULE",
+		"commander": "Raynor"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel1"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel2"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel3"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipArmorsLevel1"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipArmorsLevel2"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "TerranVehicleAndShipArmorsLevel3"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "BarracksReactor"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "FactoryReactor"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "StarportReactor"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "CommandCenter"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "OrbitalCommand"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "SupplyDepot"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Barracks"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Bunker"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "MissileTurret"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Banshee"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "BansheeCloak"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Firebat"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Marauder"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "PunisherGrenades"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Marine"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "ShieldWall"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Medic"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "SCV"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "SiegeTank"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "VikingFighter"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "AresClassWeaponsSystemViking"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Vulture"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "NanoConstructor"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "RaynorCommanderStimUpgrade"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "Stimpack"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "RaynorCommanderRapidRecruitment"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "RaynorCommanderMechCostReduction"
+	},
+	{
+		"ability": "BansheeAirstrike",
+		"commander": "Raynor",
+		"level": "2",
+		"upgrade": "RaynorBansheeAirstrike"
+	},
+	{
+		"commander": "Raynor",
+		"level": "3",
+		"upgrade": "RaynorFirebatMedicRange"
+	},
+	{
+		"commander": "Raynor",
+		"level": "4",
+		"upgrade": "BearclawNozzles"
+	},
+	{
+		"commander": "Raynor",
+		"level": "4",
+		"upgrade": "StabilizerMedPacks"
+	},
+	{
+		"commander": "Raynor",
+		"level": "4",
+		"upgrade": "FirebatJuggernautPlating"
+	},
+	{
+		"ability": "HyperionAdvancedPDD",
+		"commander": "Raynor",
+		"level": "5"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "FusionCore",
+		"level": "6"
+	},
+	{
+		"commander": "Raynor",
+		"level": "6",
+		"upgrade": "BattlecruiserEnableSpecializations"
+	},
+	{
+		"commander": "Raynor",
+		"unit": "Battlecruiser",
+		"level": "6",
+		"upgrade": "RaynorUnlockBattlecruiser"
+	},
+	{
+		"commander": "Raynor",
+		"level": "7",
+		"upgrade": "ShrikeTurret2"
+	},
+	{
+		"commander": "Raynor",
+		"level": "7",
+		"upgrade": "FortifiedBunkerCarapace2"
+	},
+	{
+		"commander": "Raynor",
+		"level": "8",
+		"upgrade": "OrbitalStrike"
+	},
+	{
+		"commander": "Raynor",
+		"level": "9",
+		"upgrade": "CerberusMines"
+	},
+	{
+		"commander": "Raynor",
+		"level": "9",
+		"upgrade": "RaynorImprovedSiegeMode"
+	},
+	{
+		"commander": "Raynor",
+		"level": "10",
+		"upgrade": "RaynorCommanderArmorVanadium"
+	},
+	{
+		"commander": "Raynor",
+		"level": "11",
+		"upgrade": "SwannCommanderVehicleWeaponRange"
+	},
+	{
+		"ability": "VehicleAfterburners",
+		"commander": "Raynor",
+		"level": "11",
+		"upgrade": "VehicleAfterburners"
+	},
+	{
+		"commander": "Raynor",
+		"level": "12",
+		"upgrade": "SupplyDepotDrop"
+	},
+	{
+		"commander": "Raynor",
+		"level": "13",
+		"upgrade": "HALORockets"
+	},
+	{
+		"commander": "Raynor",
+		"level": "13",
+		"upgrade": "ClusterWarheads"
+	},
+	{
+		"commander": "Raynor",
+		"level": "14",
+		"upgrade": "RaynorCommanderHyperionAdvancedTargetingSystems"
+	},
+	{
+		"commander": "Raynor",
+		"level": "15",
+		"upgrade": "RaynorCommanderTerranWeaponAttackSpeed"
+	},
+	{
+		"commander": "Swann",
+		"unit": "BarracksReactor"
+	},
+	{
+		"commander": "Swann",
+		"unit": "FactoryReactor"
+	},
+	{
+		"commander": "Swann",
+		"unit": "StarportReactor"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "HiSecAutoTracking"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "MaelstromRounds"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel1"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel2"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel3"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipArmorsLevel1"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipArmorsLevel2"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranVehicleAndShipArmorsLevel3"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryWeaponsLevel1"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryWeaponsLevel2"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryWeaponsLevel3"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryArmorsLevel1"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryArmorsLevel2"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranInfantryArmorsLevel3"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "SwannCommander"
+	},
+	{
+		"commander": "Swann",
+		"unit": "CommandCenter"
+	},
+	{
+		"commander": "Swann",
+		"unit": "SupplyDepot"
+	},
+	{
+		"commander": "Swann",
+		"unit": "KelMorianGrenadeTurret"
+	},
+	{
+		"commander": "Swann",
+		"unit": "MissileTurret"
+	},
+	{
+		"commander": "Swann",
+		"unit": "PerditionTurret"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Cyclone"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "CycloneLockOnRangeUpgrade"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Goliath"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "AresClassWeaponsSystem"
+	},
+	{
+		"commander": "Swann",
+		"unit": "HellionTank"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Hellion"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Hercules"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "HighCapacityBarrels"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "HellbatHellArmor"
+	},
+	{
+		"commander": "Swann",
+		"unit": "ScienceVessel"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "ScienceVesselFreeRepair"
+	},
+	{
+		"commander": "Swann",
+		"unit": "SCV"
+	},
+	{
+		"commander": "Swann",
+		"unit": "SiegeTank"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Wraith"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "WraithImprovedBurstLaser"
+	},
+	{
+		"ability": "SpecialDelivery",
+		"commander": "Swann",
+		"level": "2"
+	},
+	{
+		"commander": "Swann",
+		"level": "2",
+		"upgrade": "SwannSpecialDelivery"
+	},
+	{
+		"commander": "Swann",
+		"unit": "KelMorianMissileTurret",
+		"level": "3"
+	},
+	{
+		"commander": "Swann",
+		"unit": "MissileTurret",
+		"level": "3"
+	},
+	{
+		"commander": "Swann",
+		"level": "3",
+		"upgrade": "SwannKelMorianTurretUpgrades"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch",
+		"commander": "Swann",
+		"level": "4"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch,1",
+		"commander": "Swann",
+		"level": "4"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch,2",
+		"commander": "Swann"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch,3",
+		"commander": "Swann"
+	},
+	{
+		"ability": "DrakkenLaserDrillNuke",
+		"commander": "Swann",
+		"level": "4"
+	},
+	{
+		"ability": "DrakkenLaserDrillPulseCannonIssueOrder",
+		"commander": "Swann",
+		"level": "4"
+	},
+	{
+		"ability": "VespeneDroneCast",
+		"commander": "Swann",
+		"level": "5"
+	},
+	{
+		"commander": "Swann",
+		"unit": "VespeneDrone",
+		"level": "5"
+	},
+	{
+		"commander": "Swann",
+		"unit": "Thor",
+		"level": "6",
+		"upgrade": "SwannUnlockThor"
+	},
+	{
+		"commander": "Swann",
+		"level": "7",
+		"upgrade": "CycloneLockOnDamageUpgrade"
+	},
+	{
+		"commander": "Swann",
+		"level": "7",
+		"upgrade": "MultilockTargetingSystems"
+	},
+	{
+		"ability": "330mmBarrageCannons",
+		"commander": "Swann",
+		"level": "7",
+		"upgrade": "330mmBarrageCannons"
+	},
+	{
+		"commander": "Swann",
+		"level": "8",
+		"upgrade": "AdvancedConstruction"
+	},
+	{
+		"commander": "Swann",
+		"level": "8",
+		"upgrade": "SwannCommanderWorkerFreeRepairs"
+	},
+	{
+		"commander": "Swann",
+		"level": "9",
+		"upgrade": "SwannCommanderVehicleWeaponRange"
+	},
+	{
+		"commander": "Swann",
+		"level": "9",
+		"upgrade": "RegenerativeBioSteel"
+	},
+	{
+		"commander": "Swann",
+		"level": "10",
+		"upgrade": "TechReactor"
+	},
+	{
+		"commander": "Swann",
+		"level": "11",
+		"upgrade": "FireSuppressionSystems"
+	},
+	{
+		"commander": "Swann",
+		"level": "11",
+		"upgrade": "SwannTurretIncreasedAttackSpeed"
+	},
+	{
+		"commander": "Swann",
+		"level": "12",
+		"upgrade": "SwannCommanderImmortalityProtocol"
+	},
+	{
+		"commander": "Swann",
+		"level": "13",
+		"upgrade": "ScienceVesselResearchDefensiveMatrix"
+	},
+	{
+		"ability": "DefensiveMatrixTarget",
+		"commander": "Swann",
+		"level": "13"
+	},
+	{
+		"commander": "Swann",
+		"level": "13",
+		"upgrade": "CloakDistortionField"
+	},
+	{
+		"commander": "Swann",
+		"level": "14",
+		"upgrade": "SwannImprovedSpecialDelivery"
+	},
+	{
+		"commander": "Swann",
+		"level": "15",
+		"upgrade": "SwannCommanderVehicleHealth"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaCommander"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel1"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel2"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipWeaponsLevel3"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipArmorsLevel1"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipArmorsLevel2"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranVehicleAndShipArmorsLevel3"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaWeaponCanisterRifle"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaHelmetGhostVisor"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaWeaponHellfireShotgun"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaWeaponPsiBlade"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaGadgetPulseGrenades"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaGadgetFlashbangGrenades"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "SuperStimpackNova"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaWeaponImprovedCanisterRifle"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaGadgetSuperStim"
+	},
+	{
+		"commander": "Nova",
+		"unit": "NovaACLaserTurret"
+	},
+	{
+		"commander": "Nova",
+		"unit": "CommandCenter"
+	},
+	{
+		"commander": "Nova",
+		"unit": "Barracks"
+	},
+	{
+		"commander": "Nova",
+		"unit": "MissileTurret"
+	},
+	{
+		"commander": "Nova",
+		"unit": "SCV"
+	},
+	{
+		"ability": "BarracksTrainNova",
+		"commander": "Nova",
+		"unit": "Marine_BlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "NovaConcussiveShells"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "LaserTargetingSystemNova"
+	},
+	{
+		"ability": "BarracksTrainNova,1",
+		"commander": "Nova",
+		"unit": "Marauder_BlackOps"
+	},
+	{
+		"ability": "BarracksTrainNova,2",
+		"commander": "Nova",
+		"unit": "Ghost_BlackOps"
+	},
+	{
+		"ability": "FactoryTrainNova",
+		"commander": "Nova",
+		"unit": "Goliath_BlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "AresClassWeaponsSystem"
+	},
+	{
+		"ability": "FactoryTrainNova,2",
+		"commander": "Nova",
+		"unit": "HellbatBlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "HighCapacityBarrels"
+	},
+	{
+		"ability": "FactoryTrainNova,1",
+		"commander": "Nova",
+		"unit": "SiegeTank_BlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "DeploySpiderMines"
+	},
+	{
+		"ability": "StarportTrainNova",
+		"commander": "Nova",
+		"unit": "Banshee_BlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "BansheePermaCloak"
+	},
+	{
+		"ability": "StarportTrainNova,1",
+		"commander": "Nova",
+		"unit": "Raven_BlackOps"
+	},
+	{
+		"ability": "StarportTrainNova,2",
+		"commander": "Nova",
+		"unit": "Liberator_BlackOps"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "LiberatorStructureAttack"
+	},
+	{
+		"commander": "Nova",
+		"unit": "GhostAcademyNova"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "Stimpack"
+	},
+	{
+		"ability": "NovaGriffinBombingRunActivate",
+		"commander": "Nova",
+		"level": "2"
+	},
+	{
+		"ability": "NovaKitSwap,1",
+		"commander": "Nova",
+		"level": "3"
+	},
+	{
+		"ability": "NovaKitSwap",
+		"commander": "Nova",
+		"level": "3"
+	},
+	{
+		"commander": "Nova",
+		"level": "4",
+		"upgrade": "MarineSuperStim"
+	},
+	{
+		"commander": "Nova",
+		"level": "4",
+		"upgrade": "MarauderMagrailMunitions"
+	},
+	{
+		"ability": "NovaGriffinTransportLoadUnits",
+		"commander": "Nova",
+		"level": "5"
+	},
+	{
+		"commander": "Nova",
+		"level": "6",
+		"upgrade": "NovaUnitLockdown"
+	},
+	{
+		"commander": "Nova",
+		"level": "6",
+		"upgrade": "SiegeTankSiegeModeProgressiveRangeIncease"
+	},
+	{
+		"commander": "Nova",
+		"level": "6",
+		"upgrade": "HellbatJumpJetAssault"
+	},
+	{
+		"commander": "Nova",
+		"level": "7",
+		"upgrade": "AutoHarvester"
+	},
+	{
+		"commander": "Nova",
+		"level": "8",
+		"upgrade": "GhostBlackOpsTripleTap"
+	},
+	{
+		"commander": "Nova",
+		"level": "8",
+		"upgrade": "NovaLifeRegen"
+	},
+	{
+		"ability": "NovaCoopCasterNuke",
+		"commander": "Nova",
+		"level": "9"
+	},
+	{
+		"ability": "NovaCoopDecoyTarget",
+		"commander": "Nova",
+		"level": "9"
+	},
+	{
+		"commander": "Nova",
+		"level": "10",
+		"upgrade": "BansheeAirstrike"
+	},
+	{
+		"commander": "Nova",
+		"level": "10",
+		"upgrade": "MultiTaskMAFServosLiberator"
+	},
+	{
+		"commander": "Nova",
+		"level": "11",
+		"upgrade": "NovaBetterResearch"
+	},
+	{
+		"commander": "Nova",
+		"level": "12",
+		"upgrade": "HealingDroneCloakHealBeam"
+	},
+	{
+		"commander": "Nova",
+		"level": "12",
+		"upgrade": "RavenSuperScience"
+	},
+	{
+		"commander": "Nova",
+		"level": "13",
+		"upgrade": "NovaGlobalPowerUpgrades"
+	},
+	{
+		"commander": "Nova",
+		"level": "14",
+		"upgrade": "NovaSnipeRefund"
+	},
+	{
+		"commander": "Nova",
+		"level": "14",
+		"upgrade": "NovaShotgunBlastRange"
+	},
+	{
+		"commander": "Nova",
+		"level": "15",
+		"upgrade": "NovaStanceDance"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "ArtanisCommander"
+	},
+	{
+		"ability": "SOAPylonPower",
+		"commander": "Artanis",
+		"level": "1",
+		"upgrade": "SOAPylonPower"
+	},
+	{
+		"ability": "SOAOrbitalStrikeActivate",
+		"commander": "Artanis",
+		"level": "1"
+	},
+	{
+		"ability": "SOAOrbitalStrikeTargetingDummy",
+		"commander": "Artanis",
+		"level": "1"
+	},
+	{
+		"ability": "SOAOrbitalStrikeExecute",
+		"commander": "Artanis",
+		"level": "1"
+	},
+	{
+		"ability": "SoASuperShield",
+		"commander": "Artanis",
+		"level": "1",
+		"upgrade": "SOASuperShield"
+	},
+	{
+		"commander": "Artanis",
+		"level": "1",
+		"upgrade": "SOAOrbitalStrike"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "ImmortalResearchBarrierAdvanced"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "PhotonCannon",
+		"upgrade": "HavePhotonCannon"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Archon"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Observer",
+		"upgrade": "HaveObserver"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "ObserverGraviticBooster"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Zealot",
+		"upgrade": "HaveZealot"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Dragoon",
+		"upgrade": "VoidStalkerDragoon"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "StalkerResearchDragoonRange"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "HighTemplar",
+		"upgrade": "HaveHighTemplar"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "TemplarArchive"
+	},
+	{
+		"ability": "PsiStorm",
+		"commander": "Artanis",
+		"upgrade": "PsiStormTech"
+	},
+	{
+		"ability": "Feedback",
+		"commander": "Artanis"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Immortal",
+		"upgrade": "HaveImmortal"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "VoidImmortalBarrier"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Phoenix",
+		"upgrade": "HavePhoenix"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "VoidPhoenixGravitonCampaignVersion"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "FleetBeacon"
+	},
+	{
+		"ability": "GravitonBeamVoidCampaign",
+		"commander": "Artanis"
+	},
+	{
+		"commander": "Artanis",
+		"upgrade": "PhoenixRangeUpgrade"
+	},
+	{
+		"commander": "Artanis",
+		"level": "1",
+		"upgrade": "SOAWarpTech"
+	},
+	{
+		"commander": "Artanis",
+		"level": "2",
+		"upgrade": "SOAHeroicShield"
+	},
+	{
+		"commander": "Artanis",
+		"level": "3",
+		"upgrade": "SOAWarpGateCharges"
+	},
+	{
+		"ability": "VoidZealotWhirlwind",
+		"commander": "Artanis",
+		"level": "4",
+		"upgrade": "ZealotResearchWhirlwind"
+	},
+	{
+		"commander": "Artanis",
+		"level": "4",
+		"upgrade": "StalkerResearchDragoonHealth"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Zealot",
+		"level": "4"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "ZealotAiur",
+		"level": "4",
+		"upgrade": "VoidZealotWhirlwind"
+	},
+	{
+		"commander": "Artanis",
+		"level": "4",
+		"upgrade": "AlarakZealotFrenziedOverload"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Reaver",
+		"level": "5",
+		"upgrade": "HaveVoidReaver"
+	},
+	{
+		"commander": "Artanis",
+		"level": "5",
+		"upgrade": "ArtanisUnlockReaver"
+	},
+	{
+		"commander": "Artanis",
+		"level": "6",
+		"upgrade": "HighTemplarKhaydarinAmulet"
+	},
+	{
+		"commander": "Artanis",
+		"level": "6",
+		"upgrade": "HealingPsionicStorm"
+	},
+	{
+		"ability": "FeedbackArchon",
+		"commander": "Artanis",
+		"level": "7"
+	},
+	{
+		"ability": "PsiStormArchon",
+		"commander": "Artanis",
+		"level": "7"
+	},
+	{
+		"commander": "Artanis",
+		"level": "7",
+		"upgrade": "ArtanisUnlockHighArchon"
+	},
+	{
+		"ability": "UpgradeToRoboticsFacilityWarp",
+		"commander": "Artanis",
+		"unit": "RoboticsFacilityWarp",
+		"level": "8"
+	},
+	{
+		"ability": "UpgradeToStargateWarp",
+		"commander": "Artanis",
+		"unit": "StargateWarp",
+		"level": "8"
+	},
+	{
+		"commander": "Artanis",
+		"level": "9",
+		"upgrade": "ReaverIncreasedScarabCount"
+	},
+	{
+		"commander": "Artanis",
+		"level": "9",
+		"upgrade": "ReaverIncreasedScarabSplashRadius"
+	},
+	{
+		"ability": "SOAStrafeAttackActivate",
+		"commander": "Artanis",
+		"level": "10"
+	},
+	{
+		"ability": "SOAStrafeAttack",
+		"commander": "Artanis",
+		"level": "10",
+		"upgrade": "SOAStrafeAttack"
+	},
+	{
+		"ability": "SOAStrafeAttackExecute",
+		"commander": "Artanis",
+		"level": "10"
+	},
+	{
+		"commander": "Artanis",
+		"unit": "Tempest",
+		"level": "11",
+		"upgrade": "HaveVoidTempest"
+	},
+	{
+		"commander": "Artanis",
+		"level": "11",
+		"upgrade": "VoidCarrierTempest"
+	},
+	{
+		"commander": "Artanis",
+		"level": "11",
+		"upgrade": "ArtanisUnlockTempest"
+	},
+	{
+		"commander": "Artanis",
+		"level": "12",
+		"upgrade": "VoidPhoenixDoubleGraviton"
+	},
+	{
+		"ability": "LightningBomb",
+		"commander": "Artanis",
+		"level": "12",
+		"upgrade": "TempestDisintegration"
+	},
+	{
+		"commander": "Artanis",
+		"level": "13",
+		"upgrade": "SOASuperShieldUpgrade"
+	},
+	{
+		"commander": "Artanis",
+		"level": "14",
+		"upgrade": "SOAStrafeAttackUpgrade"
+	},
+	{
+		"commander": "Artanis",
+		"level": "15",
+		"upgrade": "ArtanisStartingSupply"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "WarpGateResearch"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "VorazunCommander"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "SOARecall"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "VoidPylonRecall"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "DarkShrine"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "PhotonCannon",
+		"upgrade": "HavePhotonCannon"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Oracle"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Zealot",
+		"upgrade": "HaveZealot"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Stalker",
+		"upgrade": "HaveStalker"
+	},
+	{
+		"ability": "Blink",
+		"commander": "Vorazun",
+		"upgrade": "BlinkTech"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "DarkTemplarShakuras",
+		"upgrade": "HaveDarkTemplar"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "VoidDarkTemplarShadowFury"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "DarkTemplarResearchShadowFury"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "CorsairMP",
+		"upgrade": "HaveVoidCorsair"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "FleetBeacon"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "CorsairDisruptionWeb"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "VoidRay",
+		"upgrade": "HaveVoidRay"
+	},
+	{
+		"commander": "Vorazun",
+		"upgrade": "VoidRayBeamCanCharge"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "2",
+		"upgrade": "SOAAutoAssimilator"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "3",
+		"upgrade": "ShadowGuardSpawnCount"
+	},
+	{
+		"ability": "BlinkShieldRestore",
+		"commander": "Vorazun",
+		"level": "4"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "StalkerResearchBlinkShieldRestore"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Stalker"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "StalkerShakuras",
+		"level": "4"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "VoidStalkerBlinkShieldRestore"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "Zealot",
+		"level": "4"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "ZealotShakuras",
+		"level": "4"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "ZealotResearchShadowStun"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "ZealotResearchShadowCharge"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "VorazunUnlockCenturion"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "4",
+		"upgrade": "VoidZealotShadowCharge"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "DarkArchon",
+		"level": "5"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "5",
+		"upgrade": "VorazunUnlockDarkArchon"
+	},
+	{
+		"ability": "DarkTemplarVoidStasis",
+		"commander": "Vorazun",
+		"level": "6"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "6",
+		"upgrade": "DarkTemplarResearchVoidStasis"
+	},
+	{
+		"ability": "DarkTemplarShadowDash",
+		"commander": "Vorazun",
+		"level": "6"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "6",
+		"upgrade": "DarkTemplarResearchShadowDash"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "6",
+		"upgrade": "VorazunDarkTemplarRecallPassiveButtonDisplayUpgrade"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "7",
+		"upgrade": "VorazunCloakShieldRegen"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "8",
+		"upgrade": "VorazunImprovedBlackHole"
+	},
+	{
+		"ability": "DarkArchonMindControl",
+		"commander": "Vorazun",
+		"level": "9",
+		"upgrade": "DarkArchonMindControl"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "9",
+		"upgrade": "DarkArchonFullStartingEnergy"
+	},
+	{
+		"ability": "SOATimeFreeze",
+		"commander": "Vorazun",
+		"level": "10",
+		"upgrade": "SOATimeFreeze"
+	},
+	{
+		"ability": "DarkPylonRecall",
+		"commander": "Vorazun",
+		"level": "11"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "12",
+		"upgrade": "CorsairPermanentCloak"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "12",
+		"upgrade": "OracleStasisWardUpgrade"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "12",
+		"upgrade": "VoidRayPrismaticRange"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "VoidRay",
+		"level": "12"
+	},
+	{
+		"commander": "Vorazun",
+		"unit": "VoidRayShakuras",
+		"level": "12"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "12",
+		"upgrade": "VoidVoidRayShakuras"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "13",
+		"upgrade": "SOARecallonDeath"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "14",
+		"upgrade": "SOATimeFreezeUpgrade"
+	},
+	{
+		"commander": "Vorazun",
+		"level": "15",
+		"upgrade": "VorazunCloakDamageBoost"
+	},
+	{
+		"ability": "SOAOrbitalStrikeActivate",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAOrbitalStrikeTargetingDummy",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAOrbitalStrikeExecute",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAThermalLanceActivate",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAThermalLanceTargetingDummy",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAThermalLanceExecute",
+		"commander": "Karax"
+	},
+	{
+		"ability": "SOAMapWideChrono",
+		"commander": "Karax",
+		"upgrade": "SOAMapWideChrono"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "ColossusFireBeam"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "WarpGateResearch"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "KaraxCommander"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "SOAOrbitalStrike"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "SOAThermalLance"
+	},
+	{
+		"commander": "Karax",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Karax",
+		"unit": "PhotonCannon",
+		"upgrade": "HavePhotonCannon"
+	},
+	{
+		"commander": "Karax",
+		"unit": "ShieldBattery"
+	},
+	{
+		"commander": "Karax",
+		"unit": "SolarForge"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Observer",
+		"upgrade": "HaveObserver"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "ObserverGraviticBooster"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "KaraxCarrierInterceptorLaunchSpeed"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "Amon",
+		"upgrade": "CarrierLaunchSpeedUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"unit": "ZealotPurifier",
+		"upgrade": "HaveZealot"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidZealotSuperShields"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Karax",
+		"unit": "SentryPurifier"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidSentryShieldRepair"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidSentryNoMPHallucination"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidSentryPurifier"
+	},
+	{
+		"commander": "Karax",
+		"unit": "ImmortalAiur",
+		"upgrade": "HaveImmortal"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidImmortalBarrier"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Colossus",
+		"upgrade": "HaveColossus"
+	},
+	{
+		"commander": "Karax",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "Karax",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "ExtendedThermalLance"
+	},
+	{
+		"commander": "Karax",
+		"unit": "PhoenixPurifier",
+		"upgrade": "HavePhoenix"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "VoidPhoenixPhasingArmor"
+	},
+	{
+		"ability": "PhoenixAiurGravitonBeam",
+		"commander": "Karax"
+	},
+	{
+		"commander": "Karax",
+		"upgrade": "PhoenixRangeUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Carrier",
+		"upgrade": "HaveCarrier"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "Karax",
+		"unit": "FleetBeacon"
+	},
+	{
+		"commander": "Karax",
+		"level": "2",
+		"upgrade": "KaraxSOAChronoPassive"
+	},
+	{
+		"commander": "Karax",
+		"unit": "KhaydarinMonolith",
+		"level": "3",
+		"upgrade": "HaveKhaydarinMonolith"
+	},
+	{
+		"commander": "Karax",
+		"level": "3",
+		"upgrade": "KaraxKhaydarinMonolithUnlock"
+	},
+	{
+		"commander": "Karax",
+		"level": "4",
+		"upgrade": "KaraxEnergyRegenUpgrade"
+	},
+	{
+		"ability": "EnergizerReclamation",
+		"commander": "Karax",
+		"level": "4",
+		"upgrade": "EnergizerReclamation"
+	},
+	{
+		"commander": "Karax",
+		"level": "4",
+		"upgrade": "ZealotResearchReconstruction"
+	},
+	{
+		"ability": "ZealotPurifierReviveDeath",
+		"commander": "Karax",
+		"level": "4"
+	},
+	{
+		"commander": "Karax",
+		"level": "5",
+		"upgrade": "SOAMapWideChronoUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"level": "6",
+		"upgrade": "KaraxTurretRange"
+	},
+	{
+		"commander": "Karax",
+		"level": "6",
+		"upgrade": "KaraxTurretAttackSpeed"
+	},
+	{
+		"ability": "ShieldBatteryStructureBarrier",
+		"commander": "Karax",
+		"level": "6",
+		"upgrade": "ShieldBatteryStructureBarrier"
+	},
+	{
+		"commander": "Karax",
+		"level": "7",
+		"upgrade": "SOARepairBeam"
+	},
+	{
+		"commander": "Karax",
+		"level": "8",
+		"upgrade": "SolarEfficiencyLevel3"
+	},
+	{
+		"commander": "Karax",
+		"level": "8",
+		"upgrade": "SOARepairBeamExtraTarget"
+	},
+	{
+		"ability": "ImmortalShakurasShadowCannon",
+		"commander": "Karax",
+		"level": "9",
+		"upgrade": "ImmortalResearchShadowCannon"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Colossus",
+		"level": "9"
+	},
+	{
+		"commander": "Karax",
+		"unit": "ColossusPurifier",
+		"level": "9"
+	},
+	{
+		"commander": "Karax",
+		"level": "9",
+		"upgrade": "VoidColossusFireBeam"
+	},
+	{
+		"commander": "Karax",
+		"level": "10",
+		"upgrade": "SOAPurifierBeam"
+	},
+	{
+		"commander": "Karax",
+		"level": "11",
+		"upgrade": "KaraxInstantStructureWarp"
+	},
+	{
+		"commander": "Karax",
+		"level": "12",
+		"upgrade": "SOAOrbitalStrikeUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"level": "12",
+		"upgrade": "SOASolarLanceUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"level": "13",
+		"upgrade": "SOAPurifierBeamUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"level": "14",
+		"upgrade": "CarrierRepairDrones"
+	},
+	{
+		"commander": "Karax",
+		"level": "14",
+		"upgrade": "MiragePhaseArmor"
+	},
+	{
+		"commander": "Karax",
+		"unit": "Carrier",
+		"level": "14"
+	},
+	{
+		"commander": "Karax",
+		"unit": "CarrierAiur",
+		"level": "14"
+	},
+	{
+		"commander": "Karax",
+		"level": "14",
+		"upgrade": "VoidCarrierAiur"
+	},
+	{
+		"ability": "CarrierRepairDroneHanger",
+		"commander": "Karax",
+		"level": "14"
+	},
+	{
+		"commander": "Karax",
+		"level": "14",
+		"upgrade": "KaraxCarrierUpgrade"
+	},
+	{
+		"commander": "Karax",
+		"level": "15",
+		"upgrade": "KaraxUnitSpawnBarrier"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "AlarakCommander"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirArmorsLevel1"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirArmorsLevel2"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirArmorsLevel3"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirWeaponsLevel1"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirWeaponsLevel2"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "ProtossAirWeaponsLevel3"
+	},
+	{
+		"ability": "AlarakStructureOvercharge",
+		"commander": "Alarak"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "WarpGateResearch"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "VoidRayBeamCanCharge"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "PhotonCannon",
+		"upgrade": "HavePhotonCannon"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "WarpPrismTaldarim",
+		"upgrade": "HaveWarpPrism"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "Stalker",
+		"upgrade": "HaveStalker"
+	},
+	{
+		"ability": "Blink",
+		"commander": "Alarak",
+		"upgrade": "BlinkTech"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "Monitor",
+		"upgrade": "HaveMonitor"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "HaveSentry"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "AlarackHavocPermanentCloak"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "ImmortalTaldarim",
+		"upgrade": "VoidImmortalTaldarim"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "HaveImmortal"
+	},
+	{
+		"commander": "Alarak"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "VanguardArmoredDamage"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "ColossusTaldarim"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "HaveColossus"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "VoidColossusTaldarim"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "AlarakColossusChargedBlastAirAttack"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "Supplicant"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "AlarakSupplicantWarpTrainDummy"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "AlarakSupplicantShieldArmor"
+	},
+	{
+		"commander": "Alarak",
+		"level": "2",
+		"upgrade": "AlarakStructureImprovedOvercharge"
+	},
+	{
+		"commander": "Alarak",
+		"level": "3",
+		"upgrade": "AlarakImprovedDeadlyCharge"
+	},
+	{
+		"commander": "Alarak",
+		"level": "4",
+		"upgrade": "AlarakStalkerPhasingArmor"
+	},
+	{
+		"commander": "Alarak",
+		"level": "4",
+		"upgrade": "AlarakSupplicantMaxShields"
+	},
+	{
+		"ability": "AlarakEmpower",
+		"commander": "Alarak",
+		"level": "5"
+	},
+	{
+		"commander": "Alarak",
+		"level": "6",
+		"upgrade": "AlarakVanguardIncreaseSplashArea"
+	},
+	{
+		"commander": "Alarak",
+		"level": "6",
+		"upgrade": "AlarakColossusChargedBlastChargeTime"
+	},
+	{
+		"commander": "Alarak",
+		"level": "7",
+		"upgrade": "AlarakSupplicantSacrificeLightningStrikes"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "HighTemplarTaldarim",
+		"level": "8"
+	},
+	{
+		"commander": "Alarak",
+		"unit": "TemplarArchive",
+		"level": "8"
+	},
+	{
+		"commander": "Alarak",
+		"level": "8",
+		"upgrade": "VoidHighTemplarMindBlast"
+	},
+	{
+		"commander": "Alarak",
+		"level": "8",
+		"upgrade": "VoidHighTemplarTerazine"
+	},
+	{
+		"commander": "Alarak",
+		"level": "9",
+		"upgrade": "AlarakHavocTargetLockBuff"
+	},
+	{
+		"commander": "Alarak",
+		"level": "9",
+		"upgrade": "AlarakHavocAbilityRange"
+	},
+	{
+		"ability": "AlarakACSummonDeathfleetTarget",
+		"commander": "Alarak",
+		"level": "10"
+	},
+	{
+		"commander": "Alarak",
+		"level": "11",
+		"upgrade": "AlarakAreaDamageUpgrade"
+	},
+	{
+		"commander": "Alarak",
+		"level": "12",
+		"upgrade": "AlarakHighTemplarPsionicOrbTravelDistance"
+	},
+	{
+		"commander": "Alarak",
+		"level": "12",
+		"upgrade": "AlarakHighTemplarImprovedSacrifice"
+	},
+	{
+		"commander": "Alarak",
+		"level": "13",
+		"upgrade": "AlarakImprovedDeathFleet"
+	},
+	{
+		"commander": "Alarak",
+		"level": "15",
+		"upgrade": "AlarakSupplicantSacrificeCDR"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "FenixCommander"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "WarpGateResearch"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "FenixResearchCostReduction"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "PhotonCannon",
+		"upgrade": "HavePhotonCannon"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Adept",
+		"upgrade": "HaveAdept"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "AdeptShadeDebuff"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "AdeptFenixShadeSpawn"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Observer",
+		"upgrade": "HaveObserver"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "ObserverGraviticBooster"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Scout",
+		"upgrade": "HaveScout"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "FenixScoutWeaponRange"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "ZealotPurifier",
+		"upgrade": "HaveZealot"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "VoidZealotSuperShields"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "SentryFenix",
+		"upgrade": "HaveSentryBase"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Immortal",
+		"upgrade": "HaveImmortal"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "ExtendedThermalLance"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "ColossusPurifier",
+		"upgrade": "HaveColossus"
+	},
+	{
+		"commander": "Fenix",
+		"upgrade": "ExtendedThermalLance"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Carrier",
+		"upgrade": "HaveCarrier"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "FleetBeacon"
+	},
+	{
+		"ability": "SOASummonFenixArbiter",
+		"commander": "Fenix",
+		"level": "3"
+	},
+	{
+		"commander": "Fenix",
+		"level": "4",
+		"upgrade": "FenixChampionTalisAdeptBounceShotUpgrade"
+	},
+	{
+		"ability": "FenixTalisAdeptBounceShot",
+		"commander": "Fenix",
+		"level": "4"
+	},
+	{
+		"commander": "Fenix",
+		"level": "4",
+		"upgrade": "FenixKaldalisCleave"
+	},
+	{
+		"commander": "Fenix",
+		"level": "5",
+		"upgrade": "FenixChampionMojoScout"
+	},
+	{
+		"commander": "Fenix",
+		"level": "5",
+		"upgrade": "FenixChampionTaldarinImmortal"
+	},
+	{
+		"ability": "FenixMojoMissiles",
+		"commander": "Fenix",
+		"level": "5"
+	},
+	{
+		"commander": "Fenix",
+		"level": "6",
+		"upgrade": "FenixSuitAttackDamage"
+	},
+	{
+		"commander": "Fenix",
+		"level": "6",
+		"upgrade": "FenixArbiterDetection"
+	},
+	{
+		"commander": "Fenix",
+		"unit": "Disruptor",
+		"level": "7"
+	},
+	{
+		"ability": "FenixPurificationNova",
+		"commander": "Fenix",
+		"level": "7"
+	},
+	{
+		"commander": "Fenix",
+		"level": "7",
+		"upgrade": "FenixUnlockDisruptor"
+	},
+	{
+		"commander": "Fenix",
+		"level": "8",
+		"upgrade": "FenixChampionWarbringerColossus"
+	},
+	{
+		"commander": "Fenix",
+		"level": "8",
+		"upgrade": "FenixChampionClolarionCarrier"
+	},
+	{
+		"commander": "Fenix",
+		"level": "8",
+		"upgrade": "FenixWarbringerColossusIceBeam"
+	},
+	{
+		"commander": "Fenix",
+		"level": "9",
+		"upgrade": "DisruptorCloak"
+	},
+	{
+		"commander": "Fenix",
+		"level": "9",
+		"upgrade": "DisruptorSecondExplosion"
+	},
+	{
+		"commander": "Fenix",
+		"level": "9",
+		"upgrade": "FenixSentryGuardianZoneUpgrade"
+	},
+	{
+		"commander": "Fenix",
+		"level": "10",
+		"upgrade": "FenixNoTechNoGas"
+	},
+	{
+		"commander": "Fenix",
+		"level": "11",
+		"upgrade": "FenixChampionSwapBoost"
+	},
+	{
+		"commander": "Fenix",
+		"level": "12",
+		"upgrade": "FenixImmortalDetonationShot"
+	},
+	{
+		"commander": "Fenix",
+		"level": "12",
+		"upgrade": "KaraxCarrierInterceptorLaunchSpeed"
+	},
+	{
+		"commander": "Fenix",
+		"level": "13",
+		"upgrade": "FenixOfflineSuitRegen"
+	},
+	{
+		"commander": "Fenix",
+		"level": "14",
+		"upgrade": "FenixChampionScoutAOEMissiles"
+	},
+	{
+		"commander": "Fenix",
+		"level": "14",
+		"upgrade": "FenixChampionCarrierBombers"
+	},
+	{
+		"ability": "FenixClolarionCarrierBomberHangar",
+		"commander": "Fenix",
+		"level": "14"
+	},
+	{
+		"ability": "FenixWarbringerColossusPowerShot",
+		"commander": "Fenix",
+		"level": "14",
+		"upgrade": "FenixWarbringerColossusPowerShot"
+	},
+	{
+		"commander": "Fenix",
+		"level": "15",
+		"upgrade": "FenixNetworkedSuperiority"
+	},
+	{
+		"commander": "Dehaka",
+		"upgrade": "DehakaCommander"
+	},
+	{
+		"commander": "Dehaka",
+		"upgrade": "SwarmHostFakeWeapon"
+	},
+	{
+		"ability": "PrimalZerglingRavasaurMerge",
+		"commander": "Dehaka",
+		"level": "2"
+	},
+	{
+		"ability": "PrimalZerglingRavasaurMerge,1",
+		"commander": "Dehaka",
+		"level": "2"
+	},
+	{
+		"ability": "PrimalRoachLevel2Merge",
+		"commander": "Dehaka",
+		"level": "2"
+	},
+	{
+		"ability": "PrimalRoachLevel2Merge,1",
+		"commander": "Dehaka",
+		"level": "2"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "2",
+		"upgrade": "DehakaLevel02Tooltips"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "3",
+		"upgrade": "DehakaRavasaurRange"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "3",
+		"upgrade": "DehakaRavasaurVSArmor"
+	},
+	{
+		"ability": "DehakaDeepTunnel",
+		"commander": "Dehaka",
+		"level": "4"
+	},
+	{
+		"ability": "NydusDestroyerDeepTunnel",
+		"commander": "Dehaka",
+		"level": "4"
+	},
+	{
+		"ability": "GreaterNydusDestroyerDeepTunnel",
+		"commander": "Dehaka",
+		"level": "4"
+	},
+	{
+		"ability": "DehakaLearn,8",
+		"commander": "Dehaka",
+		"level": "5"
+	},
+	{
+		"ability": "DehakaLearn,5",
+		"commander": "Dehaka",
+		"level": "5"
+	},
+	{
+		"ability": "PrimalRoachGuardianMerge",
+		"commander": "Dehaka",
+		"level": "6"
+	},
+	{
+		"ability": "PrimalRoachGuardianMerge,1",
+		"commander": "Dehaka",
+		"level": "6"
+	},
+	{
+		"ability": "PrimalHydraliskToMutalisk",
+		"commander": "Dehaka",
+		"level": "6"
+	},
+	{
+		"ability": "PrimalHydraliskToMutalisk,1",
+		"commander": "Dehaka",
+		"level": "6"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "6",
+		"upgrade": "DehakaMutaliskDamageReduction"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "6",
+		"upgrade": "DehakaGuardianFury"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "6",
+		"upgrade": "DehakaMutaliskAirDoubleDamage"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "6",
+		"upgrade": "DehakaLevel06Tooltips"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "7",
+		"upgrade": "DehakaMutaliskRespawnOnDeath"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "7",
+		"upgrade": "DehakaGuardianExplosiveBomb"
+	},
+	{
+		"ability": "DehakaGuardianMineCharge",
+		"commander": "Dehaka",
+		"level": "7"
+	},
+	{
+		"ability": "PrimalSwarmHostMerge",
+		"commander": "Dehaka",
+		"level": "8"
+	},
+	{
+		"ability": "PrimalSwarmHostMerge,1",
+		"commander": "Dehaka",
+		"level": "8"
+	},
+	{
+		"ability": "PrimalHydraliskImpalerMerge",
+		"commander": "Dehaka",
+		"level": "8"
+	},
+	{
+		"ability": "PrimalHydraliskImpalerMerge,1",
+		"commander": "Dehaka",
+		"level": "8"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "8",
+		"upgrade": "DehakaLevel08Tooltips"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "9",
+		"upgrade": "DehakaGlevigRoachFireBreath"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "9",
+		"upgrade": "DehakaImpalerTenderize"
+	},
+	{
+		"ability": "DehakaGlevigFirebreath",
+		"commander": "Dehaka",
+		"level": "10"
+	},
+	{
+		"ability": "NydusDestroyerBeam",
+		"commander": "Dehaka",
+		"level": "10"
+	},
+	{
+		"ability": "DehakaNydusDestroyerTimedNoFoodBeam",
+		"commander": "Dehaka",
+		"level": "10"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "10",
+		"upgrade": "DehakaPrimalBossUpgrades"
+	},
+	{
+		"ability": "PrimalUltraliskLevel2Merge",
+		"commander": "Dehaka",
+		"level": "11"
+	},
+	{
+		"ability": "PrimalUltraliskLevel2Merge,1",
+		"commander": "Dehaka",
+		"level": "11"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "11",
+		"upgrade": "DehakaTyrannozorFanOfKnives"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "11",
+		"upgrade": "DehakaLevel11Tooltips"
+	},
+	{
+		"ability": "DehakaLearn,4",
+		"commander": "Dehaka",
+		"level": "12"
+	},
+	{
+		"ability": "DehakaLearn,10",
+		"commander": "Dehaka",
+		"level": "12"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "13",
+		"upgrade": "DehakaUltraliskBash"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "13",
+		"upgrade": "DehakaTyrannozorArmorAura"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "13",
+		"upgrade": "DehakaMurvarCreeperAir"
+	},
+	{
+		"commander": "Dehaka",
+		"level": "14",
+		"upgrade": "DehakaBonusSkillPoint"
+	},
+	{
+		"commander": "Stukov",
+		"upgrade": "StukovCommander"
+	},
+	{
+		"commander": "Stukov",
+		"upgrade": "SISiegeTankAmmoCapacity"
+	},
+	{
+		"commander": "Stukov",
+		"upgrade": "SISiegeTankTentacleWhileSieged"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SICommandCenter"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIBarracks"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIFactory"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIStarport"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SISupplyDepot"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIRefinery"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIEvolutionChamber"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SICivilianStructure"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIArmory"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SISCV"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIOverlord"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIInfestedCivilian"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "SIInfestedMarine"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "StukovInfestedBanshee"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "StukovInfestedSiegeTank"
+	},
+	{
+		"ability": "SIStukovInfestStructureUpgraded",
+		"commander": "Stukov",
+		"level": "2"
+	},
+	{
+		"commander": "Stukov",
+		"level": "3",
+		"upgrade": "SIBarracksTrainInfestedCivilianLevel4"
+	},
+	{
+		"commander": "Stukov",
+		"level": "3",
+		"upgrade": "HeavyInfestation"
+	},
+	{
+		"ability": "StukovSummonApocalisk",
+		"commander": "Stukov",
+		"level": "4"
+	},
+	{
+		"commander": "Stukov",
+		"level": "5",
+		"upgrade": "SIBunkerArmor"
+	},
+	{
+		"commander": "Stukov",
+		"level": "5",
+		"upgrade": "SIBunkerLifeRegen"
+	},
+	{
+		"commander": "Stukov",
+		"level": "6",
+		"upgrade": "SIImprovedMarineSpawning"
+	},
+	{
+		"commander": "Stukov",
+		"level": "7",
+		"upgrade": "StukovInfestedCivilianSpawnBroodlingOnDeath"
+	},
+	{
+		"commander": "Stukov",
+		"level": "7",
+		"upgrade": "SIMarinePlaguedMunitions"
+	},
+	{
+		"commander": "Stukov",
+		"unit": "QueenClassic",
+		"level": "8"
+	},
+	{
+		"commander": "Stukov",
+		"level": "9",
+		"upgrade": "InfestedSiegeTankArmoredDamage"
+	},
+	{
+		"commander": "Stukov",
+		"level": "9",
+		"upgrade": "SIDiamondbackSnailTrail"
+	},
+	{
+		"ability": "StukovSummonAleksander",
+		"commander": "Stukov",
+		"level": "10"
+	},
+	{
+		"commander": "Stukov",
+		"level": "11",
+		"upgrade": "StukovInfestedBansheeInfestedLife"
+	},
+	{
+		"commander": "Stukov",
+		"level": "11",
+		"upgrade": "LiberatorInfestedBecomeSwarm"
+	},
+	{
+		"commander": "Stukov",
+		"level": "12",
+		"upgrade": "StukovApocaliskUpgrades"
+	},
+	{
+		"commander": "Stukov",
+		"level": "13",
+		"upgrade": "SIQueenFungalGrowth"
+	},
+	{
+		"commander": "Stukov",
+		"level": "13",
+		"upgrade": "SIQueenEnergy"
+	},
+	{
+		"commander": "Stukov",
+		"level": "14",
+		"upgrade": "SIInfestedBunkerUpgraded"
+	},
+	{
+		"commander": "Stukov",
+		"level": "15",
+		"upgrade": "StukovAleksanderMindControl"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HornerCommander"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHSuperRadar"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipWeaponsLevel1"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipWeaponsLevel2"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipWeaponsLevel3"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipArmorsLevel1"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipArmorsLevel2"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVehicleAndShipArmorsLevel3"
+	},
+	{
+		"ability": "HHStarportTrainHorner",
+		"commander": "Horner",
+		"unit": "HHWraith"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHWraithPermaCloak"
+	},
+	{
+		"ability": "HHStarportTrainHorner,1",
+		"commander": "Horner",
+		"unit": "HHVikingFighter"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHVikingRockets"
+	},
+	{
+		"ability": "HHStarportTrainHorner,2",
+		"commander": "Horner",
+		"unit": "HHBattlecruiser"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "FleetwideJump"
+	},
+	{
+		"ability": "HHStarportTrainHorner,3",
+		"commander": "Horner",
+		"unit": "HHRaven"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHReaper"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHReaperG4ClusterBombs"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHWidowMine"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHWidowMineDeathBlossom"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHHellion"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHHellionStimDeath"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHHellionTank"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHHellionFearDeath"
+	},
+	{
+		"commander": "Horner",
+		"upgrade": "HHScrapPickup"
+	},
+	{
+		"commander": "Horner",
+		"unit": "SupplyDepot"
+	},
+	{
+		"commander": "Horner",
+		"unit": "MissileTurret"
+	},
+	{
+		"commander": "Horner",
+		"unit": "FusionCore"
+	},
+	{
+		"ability": "HHBuild,12",
+		"commander": "Horner",
+		"level": "2"
+	},
+	{
+		"ability": "HHBomberPlatformAreaBombTopBarOrder",
+		"commander": "Horner",
+		"level": "2"
+	},
+	{
+		"ability": "HHMercStarportHangar,1",
+		"commander": "Horner",
+		"level": "3"
+	},
+	{
+		"commander": "Horner",
+		"level": "3",
+		"upgrade": "HHMultiLock"
+	},
+	{
+		"commander": "Horner",
+		"level": "4",
+		"upgrade": "HHWidowMineBurrowedRange"
+	},
+	{
+		"commander": "Horner",
+		"level": "4",
+		"upgrade": "HHReaperFlight"
+	},
+	{
+		"ability": "HornerAirFleetActivate",
+		"commander": "Horner",
+		"level": "5"
+	},
+	{
+		"ability": "HornerAirFleetTargetingDummy",
+		"commander": "Horner",
+		"level": "5"
+	},
+	{
+		"commander": "Horner",
+		"level": "6",
+		"upgrade": "HHMiraBuildResearchTimeReduction"
+	},
+	{
+		"commander": "Horner",
+		"level": "7",
+		"upgrade": "HHVikingPiercingAttacks"
+	},
+	{
+		"commander": "Horner",
+		"level": "7",
+		"upgrade": "HHWraithFury"
+	},
+	{
+		"commander": "Horner",
+		"level": "8",
+		"upgrade": "HHDoubleSupply"
+	},
+	{
+		"commander": "Horner",
+		"level": "9",
+		"upgrade": "HHHellionRocket"
+	},
+	{
+		"commander": "Horner",
+		"level": "9",
+		"upgrade": "HHHellionAttackDoT"
+	},
+	{
+		"ability": "HHSummonMercenarySpaceStation",
+		"commander": "Horner",
+		"level": "10"
+	},
+	{
+		"commander": "Horner",
+		"level": "11",
+		"upgrade": "HHArmyOOCRegen"
+	},
+	{
+		"commander": "Horner",
+		"level": "12",
+		"upgrade": "HHAirFleetYamato"
+	},
+	{
+		"commander": "Horner",
+		"level": "12",
+		"upgrade": "HHProgression12IconUpgrade"
+	},
+	{
+		"commander": "Horner",
+		"level": "13",
+		"upgrade": "HHBattlecruiserYamatoAttacks"
+	},
+	{
+		"commander": "Horner",
+		"level": "13",
+		"upgrade": "HHBomberNapalm"
+	},
+	{
+		"commander": "Horner",
+		"level": "14",
+		"upgrade": "HHSpaceStationNuke"
+	},
+	{
+		"commander": "Horner",
+		"level": "14",
+		"upgrade": "HHProgression14IconUpgrade"
+	},
+	{
+		"commander": "Horner",
+		"level": "15",
+		"upgrade": "HHSOBuff"
+	},
+	{
+		"commander": "Tychus",
+		"upgrade": "TychusCommander"
+	},
+	{
+		"ability": "TychusFakeReviveTrain",
+		"commander": "Tychus",
+		"unit": "TychusCoop"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,1",
+		"commander": "Tychus",
+		"unit": "TychusReaper"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,2",
+		"commander": "Tychus"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,3",
+		"commander": "Tychus",
+		"unit": "TychusFirebat"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,4",
+		"commander": "Tychus",
+		"unit": "TychusMarauder"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,7",
+		"commander": "Tychus",
+		"unit": "TychusSpectre"
+	},
+	{
+		"ability": "TychusFakeReviveTrain,8",
+		"commander": "Tychus",
+		"unit": "TychusMedic"
+	},
+	{
+		"commander": "Tychus",
+		"level": "2",
+		"upgrade": "TychusCoopFifthHeroUpgrade"
+	},
+	{
+		"ability": "TychusCalldownOdinTargeted",
+		"commander": "Tychus",
+		"unit": "TychusOdin",
+		"level": "3"
+	},
+	{
+		"ability": "TychusBarracksTrain,4",
+		"commander": "Tychus",
+		"unit": "TychusMarauder",
+		"level": "4"
+	},
+	{
+		"commander": "Tychus",
+		"level": "5",
+		"upgrade": "TychusSquadAttackSpeed"
+	},
+	{
+		"commander": "Tychus",
+		"level": "5",
+		"upgrade": "TychusSquadHealth"
+	},
+	{
+		"ability": "TychusFactoryTrain,3",
+		"commander": "Tychus",
+		"unit": "TychusWarhound",
+		"level": "6"
+	},
+	{
+		"commander": "Tychus",
+		"level": "7",
+		"upgrade": "TychusCoopHeroHalfCostUpgrade"
+	},
+	{
+		"ability": "TychusFactoryTrain,1",
+		"commander": "Tychus",
+		"unit": "TychusHERC",
+		"level": "8"
+	},
+	{
+		"commander": "Tychus",
+		"level": "9",
+		"upgrade": "TychusCoopMedivacChargesUpgrade"
+	},
+	{
+		"ability": "TychusBarracksTrain,2",
+		"commander": "Tychus",
+		"unit": "TychusGhost",
+		"level": "10"
+	},
+	{
+		"commander": "Tychus",
+		"level": "11",
+		"upgrade": "TychusCoopEquipmentCostUpgrade"
+	},
+	{
+		"commander": "Tychus",
+		"level": "12",
+		"upgrade": "TychusACBandofBrothers"
+	},
+	{
+		"commander": "Tychus",
+		"level": "12",
+		"upgrade": "TychusReaperBombCharges"
+	},
+	{
+		"commander": "Tychus",
+		"level": "12",
+		"upgrade": "TychusFirebatShield"
+	},
+	{
+		"commander": "Tychus",
+		"level": "12",
+		"upgrade": "TychusSpectreBrillianceAura"
+	},
+	{
+		"commander": "Tychus",
+		"level": "12",
+		"upgrade": "TychusMedicDefensiveMatrix"
+	},
+	{
+		"commander": "Tychus",
+		"level": "13",
+		"upgrade": "TychusOutlawArmorsLevel4"
+	},
+	{
+		"commander": "Tychus",
+		"level": "13",
+		"upgrade": "TychusOutlawArmorsLevel5"
+	},
+	{
+		"commander": "Tychus",
+		"level": "13",
+		"upgrade": "TychusOutlawWeaponsLevel4"
+	},
+	{
+		"commander": "Tychus",
+		"level": "13",
+		"upgrade": "TychusOutlawWeaponsLevel5"
+	},
+	{
+		"commander": "Tychus",
+		"level": "14",
+		"upgrade": "TychusMarauderAttackSplash"
+	},
+	{
+		"commander": "Tychus",
+		"level": "14",
+		"upgrade": "TychusWarhoundTurretUpgrade"
+	},
+	{
+		"commander": "Tychus",
+		"level": "14",
+		"upgrade": "TychusHercCrit"
+	},
+	{
+		"commander": "Tychus",
+		"level": "14",
+		"upgrade": "TychusGhostConcentrationHelmet"
+	},
+	{
+		"commander": "Tychus",
+		"level": "15",
+		"upgrade": "TychusOdinRedButton"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "ZeratulCommander"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "AutomatedAssimilator"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "Assimilator"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "Pylon"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "Forge"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "CyberneticsCore"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "AutomatedAssimilatorZeratul"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulGateway"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulCyberneticsCore"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulPhotonCannon"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulDarkShrine"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulRoboticsBay"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulRoboticsFacility"
+	},
+	{
+		"ability": "NexusBuild",
+		"commander": "Zeratul"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "ZeratulTopBarZealotSquad"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "ZeratulTopBarVoidRaySquad"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulDisruptor"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulZealot"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulStalker"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulSentry"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulImmortal"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulWarpPrism"
+	},
+	{
+		"commander": "Zeratul",
+		"unit": "ZeratulObserver"
+	},
+	{
+		"ability": "RallyZeratulTopBarRedirect",
+		"commander": "Zeratul"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "SOAAutoAssimilator"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "ZeratulArtifactTier0"
+	},
+	{
+		"commander": "Zeratul",
+		"level": "2",
+		"upgrade": "ZeratulThirdArtifactUpgrade"
+	},
+	{
+		"commander": "Zeratul",
+		"level": "10",
+		"upgrade": "ZeratulTalentQuickBuild"
+	},
+	{
+		"commander": "Zeratul",
+		"level": "11",
+		"upgrade": "BacktotheShadows"
+	},
+	{
+		"commander": "Zeratul",
+		"level": "12",
+		"upgrade": "ZeratulSupportMechanicsUpgrade"
+	},
+	{
+		"commander": "Zeratul",
+		"level": "14",
+		"upgrade": "ZeratulTalentUltimatePurity"
+	},
+	{
+		"commander": "Stetmann",
+		"upgrade": "StetmannCommander"
+	},
+	{
+		"commander": "Stetmann",
+		"upgrade": "StetmannIsPresent"
+	},
+	{
+		"commander": "Stetmann",
+		"upgrade": "PowerFieldMovementSpeed"
+	},
+	{
+		"commander": "Stetmann",
+		"level": "13",
+		"upgrade": "MechaZerglingRemnantReclaimationBonus"
+	},
+	{
+		"commander": "Mengsk",
+		"upgrade": "MengskCommander"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "TrooperMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "MarauderMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "GhostMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "SiegeTankMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "VikingMengskFighter"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "RavenMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "MedivacMengsk"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "ThorMengsk",
+		"level": "9"
+	},
+	{
+		"commander": "Mengsk",
+		"unit": "BattlecruiserMengsk",
+		"level": "12"
+	},
+	{
+		"commander": "Mengsk",
+		"level": "5",
+		"upgrade": "ImperialMandateGenerationFactor"
+	},
+	{
+		"commander": "Mengsk",
+		"level": "11",
+		"upgrade": "ArtilleryMengskExperimentalStrikeFear"
+	},
+	{
+		"commander": "Mengsk",
+		"level": "13",
+		"upgrade": "NuclearAnnihilationMengskNumberMissiles"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganCreep",
+		"upgrade": "CommanderPrestigeKerriganCreep"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAbilities",
+		"upgrade": "CommanderPrestigeKerriganAbilities"
+	},
+	{
+		"ability": "PsiStrikeWalk",
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura"
+	},
+	{
+		"ability": "PrimalSlash",
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura"
+	},
+	{
+		"ability": "PsionicLift",
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura"
+	},
+	{
+		"ability": "MindBolt",
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura",
+		"upgrade": "CommanderPrestigeKerriganAssimilationAura"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura",
+		"upgrade": "CommanderPrestigeKerriganAssimilationAuraShared"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraZagara",
+		"upgrade": "CommanderPrestigeZagaraZagara"
+	},
+	{
+		"ability": "CommanderPrestigeZagaraZagaraDeepTunnel",
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraZagara"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraMaxSupply",
+		"upgrade": "CommanderPrestigeZagaraMaxSupply"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraMaxSupply",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraMaxSupply",
+		"upgrade": "VoidCoopHeroicFortitude"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraMaxSupply",
+		"upgrade": "ZagaraVoidCoopAttackUpgrade"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraCorruptorsAberrations",
+		"upgrade": "CommanderPrestigeZagaraCorruptorsAberrations"
+	},
+	{
+		"ability": "ZagaraVoidCoopBanelingSpawnerTrain",
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraCorruptorsAberrations"
+	},
+	{
+		"ability": "ZagaraVoidCoopBanelingSpawnerTrain,1",
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraCorruptorsAberrations"
+	},
+	{
+		"ability": "ZagaraVoidCoopBanelingSpawnerTrain,2",
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraCorruptorsAberrations"
+	},
+	{
+		"commander": "Abathur",
+		"prestige": "CommanderPrestigeAbathurDeepTunnel",
+		"upgrade": "CommanderPrestigeAbathurDeepTunnel"
+	},
+	{
+		"commander": "Abathur",
+		"prestige": "CommanderPrestigeAbathurUltimateEvo",
+		"upgrade": "CommanderPrestigeAbathurUltEvo"
+	},
+	{
+		"commander": "Abathur",
+		"prestige": "CommanderPrestigeAbathurBiomass",
+		"upgrade": "CommanderPrestigeAbathurBiomass"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorAir",
+		"upgrade": "CommanderPrestigeRaynorAir"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorMechAfterburners",
+		"upgrade": "CommanderPrestigeRaynorMechAfterburners"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorMechAfterburners",
+		"upgrade": "RaynorCommanderMechCostReduction"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorBio",
+		"upgrade": "CommanderPrestigeRaynorBio"
+	},
+	{
+		"ability": "CalldownMULE",
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorBio"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannDrill",
+		"upgrade": "CommanderPrestigeSwannDrill"
+	},
+	{
+		"ability": "DrakkenLaserDrillConcentratedBeamIssueOrder",
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannDrill"
+	},
+	{
+		"ability": "DrakkenLaserDrillPulseCannonIssueOrder",
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannDrill"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHercules",
+		"upgrade": "CommanderPrestigeSwannHercules"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannTurrets",
+		"upgrade": "CommanderPrestigeSwannTurrets"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaBio",
+		"upgrade": "CommanderPrestigeNovaBio"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaSuperCloak",
+		"upgrade": "CommanderPrestigeNovaSuperCloak"
+	},
+	{
+		"ability": "NovaKitSwap",
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaSuperCloak"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaSuperCloak",
+		"upgrade": "NovaShotgunBlastRange"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaAirlift",
+		"upgrade": "CommanderPrestigeNovaAirlift"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisOrbitalStrikes",
+		"upgrade": "CommanderPrestigeArtanisOrbitalStrikes"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisOrbitalStrikes",
+		"upgrade": "CommanderPrestigeArtanisOrbitalStrikesShared"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisOrbitalStrikes",
+		"upgrade": "SOAHeroicShield"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisCombatAbilities",
+		"upgrade": "CommanderPrestigeArtanisCombatAbilities"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisPowerField",
+		"upgrade": "CommanderPrestigeArtanisPowerField"
+	},
+	{
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunEmergencyRecall",
+		"upgrade": "CommanderPrestigeVorazunEmergencyRecall"
+	},
+	{
+		"ability": "DarkPylonRecall",
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunEmergencyRecall"
+	},
+	{
+		"ability": "SOATimeFreeze",
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunTimeStop"
+	},
+	{
+		"ability": "CommanderPrestigeVorazunTimeStop",
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunTimeStop",
+		"upgrade": "CommanderPrestigeVorazunTimeStop"
+	},
+	{
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunStasis",
+		"upgrade": "CommanderPrestigeVorazunStasis"
+	},
+	{
+		"commander": "Vorazun",
+		"prestige": "CommanderPrestigeVorazunEmergencyRecall",
+		"level": "1",
+		"upgrade": "CommanderPrestigeVorazunEmergencyRecallSeekPylon"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxArmy",
+		"upgrade": "CommanderPrestigeKaraxArmy"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxArmy",
+		"upgrade": "KaraxTurretAttackSpeed"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxStructures",
+		"upgrade": "CommanderPrestigeKaraxStructures"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxStructures",
+		"upgrade": "KaraxUnitSpawnBarrier"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxTopBar",
+		"upgrade": "CommanderPrestigeKaraxTopBar"
+	},
+	{
+		"ability": "TimeWarp",
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxTopBar"
+	},
+	{
+		"ability": "SOAMapWideChrono",
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxTopBar"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "CommanderPrestigeKaraxTopBar",
+		"upgrade": "KaraxSOAChronoPassive"
+	},
+	{
+		"commander": "Alarak",
+		"prestige": "CommanderPrestigeAlarakMech",
+		"upgrade": "CommanderPrestigeAlarakMech"
+	},
+	{
+		"ability": "AlarakACSummonDeathfleetTarget",
+		"commander": "Alarak",
+		"prestige": "CommanderPrestigeAlarakEmpowerMe"
+	},
+	{
+		"commander": "Alarak",
+		"prestige": "CommanderPrestigeAlarakEmpowerMe",
+		"upgrade": "CommanderPrestigeAlarakEmpowerMe"
+	},
+	{
+		"commander": "Alarak",
+		"prestige": "CommanderPrestigeAlarakDeathFleet",
+		"upgrade": "CommanderPrestigeAlarakDeathFleet"
+	},
+	{
+		"commander": "Fenix",
+		"prestige": "CommanderPrestigeFenixSuitSwap",
+		"upgrade": "CommanderPrestigeFenixSuitSwap"
+	},
+	{
+		"commander": "Fenix",
+		"prestige": "CommanderPrestigeFenixDataWeb",
+		"upgrade": "CommanderPrestigeFenixDataWeb"
+	},
+	{
+		"commander": "Fenix",
+		"prestige": "CommanderPrestigeFenixAvenger",
+		"upgrade": "CommanderPrestigeFenixAvenger"
+	},
+	{
+		"ability": "DehakaLearn,3",
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaDevour"
+	},
+	{
+		"ability": "MammothBreath",
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaDevour"
+	},
+	{
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaDevour",
+		"upgrade": "CommanderPrestigeDehakaDevour"
+	},
+	{
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaClone",
+		"upgrade": "CommanderPrestigeDehakaClone"
+	},
+	{
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaPackLeaders",
+		"upgrade": "CommanderPrestigeDehakaPackLeaders"
+	},
+	{
+		"commander": "Stukov",
+		"prestige": "CommanderPrestigeStukovBunkers",
+		"upgrade": "CommanderPrestigeStukovBunkers"
+	},
+	{
+		"commander": "Stukov",
+		"prestige": "CommanderPrestigeStukovMech",
+		"upgrade": "CommanderPrestigeStukovMech"
+	},
+	{
+		"commander": "Stukov",
+		"prestige": "CommanderPrestigeStukovBanshees",
+		"upgrade": "CommanderPrestigeStukovBanshees"
+	},
+	{
+		"commander": "Horner",
+		"prestige": "CommanderPrestigeHornerStarport",
+		"upgrade": "CommanderPrestigeHornerStarport"
+	},
+	{
+		"commander": "Horner",
+		"prestige": "CommanderPrestigeHornerMagMines",
+		"upgrade": "CommanderPrestigeHornerMagMines"
+	},
+	{
+		"commander": "Horner",
+		"prestige": "CommanderPrestigeHornerBombingPlatforms",
+		"upgrade": "CommanderPrestigeHornerBombingPlatforms"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusSquadAbilities",
+		"upgrade": "CommanderPrestigeTychusSquadAbilities"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "CommanderPrestigeTychusLoneWolf"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusGhostConcentrationHelmet"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusSpectreBrillianceAura"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusMedicDefensiveMatrix"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusACBandofBrothers"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusReaperBombCharges"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusWarhoundTurretUpgrade"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusMarauderAttackSplash"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusHercCrit"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusLoneWolf",
+		"upgrade": "TychusFirebatShield"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusOdin",
+		"upgrade": "CommanderPrestigeTychusOdin"
+	},
+	{
+		"ability": "TychusOdinBarrage",
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusOdin"
+	},
+	{
+		"ability": "TychusOdinNuclearStrike",
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusOdin"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusOdin",
+		"upgrade": "TychusOdinRedButton"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulVoidSeeker",
+		"upgrade": "CommanderPrestigeZeratulVoidSeeker"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulTornadoes",
+		"upgrade": "CommanderPrestigeZeratulTornadoes"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulTornadoes",
+		"upgrade": "ZeratulThirdArtifactUpgrade"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulArtifactFragments",
+		"upgrade": "CommanderPrestigeZeratulArtifactFragments"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannGary",
+		"upgrade": "CommanderPrestigeStetmannGary"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannStetellites",
+		"upgrade": "CommanderPrestigeStetmannStetellites"
+	},
+	{
+		"ability": "MorphToSuperGaryStetmann",
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannStetellites"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannCombatBuff",
+		"upgrade": "CommanderPrestigeStetmannCombatBuff"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannCombatBuff",
+		"upgrade": "InfestorStetmannBonusRavager"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "CommanderPrestigeStetmannCombatBuff",
+		"upgrade": "InfestorStetmannRecharge"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskTroopers",
+		"upgrade": "CommanderPrestigeMengskTroopers"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskTroopers",
+		"upgrade": "MedivacMengskDoubleHealBeam"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskTroopers",
+		"upgrade": "MedivacMengskPermanentCloak"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskTroopers",
+		"upgrade": "MedivacMengskSiegeTankAirlift"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskRoyalGuard",
+		"upgrade": "CommanderPrestigeMengskRoyalGuard"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskArtillery",
+		"upgrade": "CommanderPrestigeMengskArtillery"
+	},
+	{
+		"ability": "NuclearAnnihilationMengsk",
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskArtillery"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "ZergMultiplayerTech"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "EvolveGroovedSpines"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "HydraliskSpeedUpgrade"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "NeuralParasite"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "AnabolicSynthesis"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "TransportOverlord"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "InfestorEnergyUpgrade"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "LurkerRange"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "DiggingClaws"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "LurkerDenMP"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "SpineCrawler"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "SporeCrawler"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "NydusNetwork"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "HydraliskDen"
+	},
+	{
+		"ability": "UpgradeToGreaterSpireBroodlord",
+		"commander": "Zerg",
+		"unit": "GreaterSpire"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Spire"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Ultralisk"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "UltraliskCavern"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "SpawningPool"
+	},
+	{
+		"ability": "UpgradeToLurkerDen",
+		"commander": "Zerg",
+		"unit": "LurkerDen"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "BanelingNest"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "RoachWarren"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "InfestationPit"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Infestor"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "QueenCoop"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Hydralisk"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Mutalisk"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Zergling"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Lurker"
+	},
+	{
+		"ability": "MorphZerglingToBaneling",
+		"commander": "Zerg",
+		"unit": "Baneling",
+		"upgrade": "HotSHaveBaneling"
+	},
+	{
+		"ability": "CausticSpray",
+		"commander": "Zerg",
+		"unit": "Corruptor"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Roach"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "SwarmHostMP"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "Viper"
+	},
+	{
+		"ability": "SpawnChangeling",
+		"commander": "Zerg"
+	},
+	{
+		"ability": "Contaminate",
+		"commander": "Zerg"
+	},
+	{
+		"ability": "HydraliskFrenzy",
+		"commander": "Zerg"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "HalTech"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "ProtossMultiplayerTech"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "WarpGateResearch"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "ObserverGraviticBooster"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "Charge"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "ExtendedThermalLance"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "PhoenixRangeUpgrade"
+	},
+	{
+		"ability": "PsiStorm",
+		"commander": "Protoss",
+		"upgrade": "PsiStormTech"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "GraviticDrive"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "DarkTemplarBlinkUpgrade"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "AdeptPiercingAttack"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "TempestGroundAttackUpgrade"
+	},
+	{
+		"commander": "Protoss",
+		"upgrade": "VoidRaySpeedUpgrade"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "PhotonCannon"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "TemplarArchive"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "FleetBeacon"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "DarkShrine"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "ShieldBattery"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Sentry"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Archon"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Observer"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Zealot"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "HighTemplar"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Immortal"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Phoenix"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Tempest"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Oracle"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Stalker"
+	},
+	{
+		"ability": "Blink",
+		"commander": "Protoss",
+		"upgrade": "BlinkTech"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "DarkTemplar"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "VoidRay"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Colossus"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Carrier"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Adept"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Disruptor"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "WarpPrism"
+	},
+	{
+		"commander": "Protoss",
+		"unit": "Mothership"
+	},
+	{
+		"ability": "AdeptPhaseShift",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "Feedback",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "OrcleRevaelation",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "GravitonBeam",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "VoidRaySwarmDamageBoost",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "ForceField",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "HallucinationArchon",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "DarkTemplarBlink",
+		"commander": "Protoss"
+	},
+	{
+		"ability": "VoidSentryShieldRepair",
+		"commander": "Protoss"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranMultiplayerTech"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleWeaponsLevel1"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleWeaponsLevel2"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleWeaponsLevel3"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranShipWeaponsLevel1"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranShipWeaponsLevel2"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranShipWeaponsLevel3"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleAndShipArmorsLevel1"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleAndShipArmorsLevel2"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranVehicleAndShipArmorsLevel3"
+	},
+	{
+		"commander": "[Default]",
+		"upgrade": "CycloneRapidFireLaunchers"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "RavenCorvidReactor"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "DrillClaws"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "BansheeCloak"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "PunisherGrenades"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "ShieldWall"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "Stimpack"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "BattlecruiserEnableSpecializations"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "HiSecAutoTracking"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "CycloneLockOnDamageUpgrade"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "BansheeSpeed"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "PersonalCloaking"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "EnhancedShockwaves"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "HighCapacityBarrels"
+	},
+	{
+		"ability": "FusionCoreResearch,1",
+		"commander": "Terran"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "SmartServos"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "MedivacIncreaseSpeedBoost"
+	},
+	{
+		"commander": "Terran",
+		"unit": "SensorTower"
+	},
+	{
+		"commander": "Terran",
+		"unit": "PlanetaryFortress"
+	},
+	{
+		"commander": "Terran",
+		"unit": "BarracksReactor"
+	},
+	{
+		"commander": "Terran",
+		"unit": "FactoryReactor"
+	},
+	{
+		"commander": "Terran",
+		"unit": "StarportReactor"
+	},
+	{
+		"commander": "Terran",
+		"unit": "CommandCenter"
+	},
+	{
+		"commander": "Terran",
+		"unit": "OrbitalCommand"
+	},
+	{
+		"commander": "Terran",
+		"unit": "SupplyDepot"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Barracks"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Bunker"
+	},
+	{
+		"commander": "Terran",
+		"unit": "MissileTurret"
+	},
+	{
+		"commander": "Terran",
+		"unit": "FusionCore"
+	},
+	{
+		"commander": "Terran",
+		"unit": "GhostAcademy"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Liberator"
+	},
+	{
+		"commander": "Terran",
+		"unit": "WidowMine"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Banshee"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Marauder"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Marine"
+	},
+	{
+		"commander": "Terran",
+		"unit": "SCV"
+	},
+	{
+		"commander": "Terran",
+		"unit": "SiegeTank"
+	},
+	{
+		"commander": "Terran",
+		"unit": "VikingFighter"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Battlecruiser"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Cyclone"
+	},
+	{
+		"commander": "Terran",
+		"unit": "HellionTank"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Hellion"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Thor",
+		"upgrade": "SwannUnlockThor"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Ghost"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Reaper"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Medivac"
+	},
+	{
+		"commander": "Terran",
+		"unit": "Raven"
+	},
+	{
+		"ability": "SupplyDrop",
+		"commander": "Terran"
+	},
+	{
+		"ability": "OrbitalCommandSupplyDepotDrop",
+		"commander": "Terran",
+		"prestige": "Amon"
+	},
+	{
+		"ability": "ReaperSpiderMines",
+		"commander": "Terran"
+	},
+	{
+		"ability": "CalldownMULE",
+		"commander": "Terran"
+	},
+	{
+		"ability": "ThorAPMode",
+		"commander": "Terran"
+	},
+	{
+		"ability": "BuildAutoTurret",
+		"commander": "Terran"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "overlordtransport"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "overlordtransport"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "overlordtransport"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "CoopLarvaCount"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "CoopLarvaCount"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "CoopLarvaCount"
+	},
+	{
+		"ability": "MorphToTransportOverlord",
+		"commander": "Stukov",
+		"unit": "OverlordTransport"
+	},
+	{
+		"ability": "MorphToTransportOverlord",
+		"commander": "Zerg",
+		"unit": "OverlordTransport"
+	},
+	{
+		"ability": "ZeratulGatewayTrain",
+		"commander": "Zeratul",
+		"unit": "ZeratulZealot"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "CommanderPrestigeZeratulUnits"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "SuppliesMade"
+	},
+	{
+		"ability": "ZeratulGatewayTrain",
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulZealot"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulAdept"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulColossus"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulArchon"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "AncientStargate"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "AncientFleetBeacon"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulTemplarArchive"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulForge"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulShieldBattery"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "ZeratulHighTemplar"
+	},
+	{
+		"ability": "ZeratulBuild,10",
+		"commander": "Zeratul",
+		"prestige": "Amon"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "FirstArtifactFragment"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "SecondArtifactFragment"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "ThirdArtifactFragment"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"upgrade": "CommanderPrestigeSwannHero"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"unit": "LaserDrillTank"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch,2",
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"level": "4"
+	},
+	{
+		"ability": "DrakkenLaserDrillResearch,3",
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"level": "4"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"unit": "MilitarizedColonistShipFlying"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"unit": "Ares"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "CommanderPrestigeSwannHero",
+		"unit": "Hercules"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "CommanderPrestigeRaynorHero",
+		"upgrade": "CommanderPrestigeRaynorHero"
+	},
+	{
+		"ability": "KD8Charge",
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "Reaper"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "ReaperStimpack"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "ReaperD8Charge"
+	},
+	{
+		"ability": "D8Charge",
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "ReaperClusterBombRange"
+	},
+	{
+		"ability": "D8Charge",
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "ClusterBomb"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "EnlightenedDynamics"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "CombatAwareness"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "Diamondback"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "WidowMine"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "DrillClaws"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "Amon",
+		"unit": "WarHound"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "Amon",
+		"unit": "PlanetaryFortress"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "Amon",
+		"unit": "Liberator"
+	},
+	{
+		"ability": "StarportTechLabResearch,15",
+		"commander": "Swann",
+		"prestige": "Amon"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "Amon",
+		"upgrade": "LiberatorImprovedAARange"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "Amon",
+		"upgrade": "SmartServos"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "Medivac"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "Raven"
+	},
+	{
+		"ability": "RavenScramblerMissile",
+		"commander": "Raynor",
+		"prestige": "Amon"
+	},
+	{
+		"ability": "BuildAutoTurret",
+		"commander": "Raynor",
+		"prestige": "Amon"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "SensorTower"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "RavenCorvidReactor"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "TriLithiumPowerCells"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"upgrade": "ReaperSpeed"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "CommanderPrestigeArtanisHero",
+		"upgrade": "CommanderPrestigeArtanisHero"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "ArbiterMP"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "DarkTemplarAiur"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "ArbiterTribunal"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "ClassicShuttle"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "Sentry"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "Replicant"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "Observatory"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "WarpPrism",
+		"upgrade": "HaveWarpPrism"
+	},
+	{
+		"ability": "VoidRaySwarmDamageBoost",
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "VoidRay",
+		"upgrade": "HaveVoidRay"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "StalkerPurifier"
+	},
+	{
+		"commander": "Alarak",
+		"upgrade": "GraviticThrusters"
+	},
+	{
+		"commander": "Horner",
+		"prestige": "CommanderPrestigeHornerArmy",
+		"upgrade": "CommanderPrestigeHornerArmy"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "CommanderPrestigeMengskArmy",
+		"upgrade": "CommanderPrestigeMengskArmy"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "Amon",
+		"unit": "FirebatMengsk"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "CommanderPrestigeNovaArmy"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "SuppliesMade"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "Amon",
+		"upgrade": "HoverSiegeTank"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "NuclearConveyor"
+	},
+	{
+		"ability": "ArmSiloWithNuke",
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy"
+	},
+	{
+		"ability": "TacNukeStrike",
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "NovaDetector"
+	},
+	{
+		"ability": "NovaReviveInstantBuyback",
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "NovaSnipeRefund"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "NovaShotgunBlastRange"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "CommanderPrestigeNovaArmy",
+		"upgrade": "NovaLifeRegen"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"unit": "LabTurret"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganArmy",
+		"upgrade": "CommanderPrestigeKerriganArmy"
+	},
+	{
+		"commander": "Abathur",
+		"prestige": "CommanderPrestigeAbathurHero",
+		"upgrade": "CommanderPrestigeAbathurHero"
+	},
+	{
+		"commander": "Zagara",
+		"prestige": "CommanderPrestigeZagaraArmy",
+		"upgrade": "CommanderPrestigeZagaraArmy"
+	},
+	{
+		"commander": "Dehaka",
+		"prestige": "CommanderPrestigeDehakaArmy",
+		"upgrade": "CommanderPrestigeDehakaArmy"
+	},
+	{
+		"commander": "Fenix",
+		"prestige": "CommanderPrestigeFenixArmy",
+		"upgrade": "CommanderPrestigeFenixArmy"
+	},
+	{
+		"commander": "Alarak",
+		"prestige": "CommanderPrestigeAlarakArmy",
+		"upgrade": "CommanderPrestigeAlarakArmy"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "CommanderPrestigeTychusArmy",
+		"upgrade": "CommanderPrestigeTychusArmy"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"unit": "HERC"
+	},
+	{
+		"ability": "ArmSiloWithNuke",
+		"commander": "Terran"
+	},
+	{
+		"ability": "TacNukeStrike",
+		"commander": "Terran"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Terran"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "TerranJunkers",
+		"upgrade": "FactionSkinJunkers"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "TerranTyrador",
+		"upgrade": "FactionSkinTyrador"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "TerranUmojan",
+		"upgrade": "FactionSkinUmojan"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "TerranSpecOps",
+		"upgrade": "FactionSkinSpecOps"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Zerg"
+	},
+	{
+		"commander": "Zerg",
+		"prestige": "ZergSimulant",
+		"upgrade": "FactionSkinSimulant"
+	},
+	{
+		"commander": "Zerg",
+		"prestige": "ZergCerberus",
+		"upgrade": "FactionSkinCerberus"
+	},
+	{
+		"commander": "Zerg",
+		"prestige": "ZergLeviathan",
+		"upgrade": "FactionSkinLeviathan"
+	},
+	{
+		"commander": "Zerg",
+		"prestige": "ZergPrimal",
+		"upgrade": "FactionSkinPrimal"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossDelaam",
+		"upgrade": "FactionSkinKhalaiSkinPack"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossGolden",
+		"upgrade": "FactionSkinGolden"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossTaldarim",
+		"upgrade": "FactionSkinTaldarim"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossPurifiers",
+		"upgrade": "FactionSkinPurifiers"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossIhanRii",
+		"upgrade": "FactionSkinIhanRii"
+	},
+	{
+		"commander": "Protoss",
+		"prestige": "ProtossNerazim",
+		"upgrade": "FactionSkinNerazim"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "Amon",
+		"unit": "SpecialOpsDropship"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "SiegeTankShapedBlast"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "CrossSpectrumDampeners"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "KerriganInfestedCosmetic"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura",
+		"upgrade": "KerriganInfestedCosmetic"
+	},
+	{
+		"commander": "Kerrigan",
+		"prestige": "CommanderPrestigeKerriganAssimilationAura",
+		"upgrade": "KerriganGhostCosmetic"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "TerranBuildingArmor"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "TerranBuildingArmor"
+	},
+	{
+		"commander": "Terran",
+		"upgrade": "TerranBuildingArmor"
+	},
+	{
+		"ability": "InfestorConsumption",
+		"commander": "Zerg",
+		"prestige": "Amon"
+	},
+	{
+		"ability": "InfestedTerrans",
+		"commander": "Zerg",
+		"prestige": "Amon"
+	},
+	{
+		"commander": "Zerg",
+		"unit": "BroodLordMP"
+	},
+	{
+		"ability": "ViperConsumption",
+		"commander": "Abathur"
+	},
+	{
+		"ability": "ViperConsume",
+		"commander": "Zerg"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "Burrow"
+	},
+	{
+		"ability": "Transfusion",
+		"commander": "Zerg"
+	},
+	{
+		"ability": "TransfusionCoop",
+		"commander": "Kerrigan"
+	},
+	{
+		"ability": "TransfusionCoop",
+		"commander": "Abathur"
+	},
+	{
+		"commander": "Zerg",
+		"upgrade": "overlordspeed"
+	},
+	{
+		"commander": "Stukov",
+		"upgrade": "overlordspeed"
+	},
+	{
+		"commander": "Kerrigan",
+		"upgrade": "OverlordspeedCoop"
+	},
+	{
+		"commander": "Abathur",
+		"upgrade": "OverlordspeedCoop"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "OverlordspeedCoop"
+	},
+	{
+		"commander": "Swann",
+		"upgrade": "SiegeTech"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "MedivacRapidDeployment"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "AdvancedHealingAI"
+	},
+	{
+		"commander": "Raynor",
+		"upgrade": "ImprovedSalvageRefund"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "RavenRecalibratedExplosives"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "RavenEnhancedMunitions"
+	},
+	{
+		"ability": "KD8Charge",
+		"commander": "Terran"
+	},
+	{
+		"ability": "RavenShredderMissile",
+		"commander": "Terran"
+	},
+	{
+		"ability": "RavenScramblerMissile",
+		"commander": "Terran"
+	},
+	{
+		"ability": "SeekerMissile",
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "RavenInstantSeekerMissile"
+	},
+	{
+		"ability": "PlacePointDefenseDrone",
+		"commander": "Terran",
+		"prestige": "Amon"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"unit": "RoachWarrenStetmann"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"unit": "BigRoachStetmann"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"unit": "SwarmHostStetmann"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"unit": "QueenStetmann"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"upgrade": "StetmannSwarmHostDoubleLocusts"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"upgrade": "StetmannSwarmHostExplosiveLocusts"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"upgrade": "LightningField"
+	},
+	{
+		"commander": "Terran",
+		"prestige": "Amon",
+		"upgrade": "LiberatorMorph"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "CommanderPrestigeZeratulUnits",
+		"upgrade": "CommanderPrestigeZeratulArmyCostReduction"
+	},
+	{
+		"commander": "Nova",
+		"upgrade": "SuppliesMade"
+	},
+	{
+		"commander": "Zagara",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Tychus",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "SuppliesMax"
+	},
+	{
+		"commander": "Tychus",
+		"upgrade": "SuppliesMade"
+	},
+	{
+		"commander": "Zeratul",
+		"upgrade": "SuppliesMade"
+	},
+	{
+		"commander": "UED"
+	},
+	{
+		"commander": "NetworkHybrids"
+	},
+	{
+		"commander": "Genetron"
+	},
+	{
+		"commander": "Xayid"
+	},
+	{
+		"commander": "Dragon"
+	},
+	{
+		"commander": "Keiron"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "ProtossBuildingArmorLevel1"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "ProtossBuildingArmorLevel2"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "AdvancedGenetics"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "ArticulatedTracking"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "TalonObelisk"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "VaporizerCannon"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Vaporizer"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "TalonBlastWave"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "DisruptorTalon"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Crusader"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Predator"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Lancer"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Subjugator"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Pacifier"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Golem"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Behemoth"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Enlightend"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "DisruptionWebEnlightend"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "NullChargedClawMissiles"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Vindicator"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Crystalwing"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "ProtossTalon"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Gateway"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "RoboticsFacility"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "TwilightCouncil"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "RoboticsBay"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Stargate"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "FleetBeacon"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Oracle"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "OracleEnergyUpgrade"
+	},
+	{
+		"ability": "TalonHarmonicDisruption",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "PulsarBeam",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "TempestDisruptionBlast",
+		"commander": "ProtossVolchron",
+		"upgrade": "TalonDisruptionTethers"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Carrier"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "CarrierCapacity"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "CarrierLaunchSpeedUpgrade"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Tempest"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "DispersingSingularity"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Predator"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "Subjugator"
+	},
+	{
+		"ability": "MutateCrusaderGreen",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateCrusaderRed",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateSubjugatorGreen",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateSubjugatorRed",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateCrystalmancer",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateTyrant",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateSteelGolem",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateResurgent",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateNecromancer",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateBerserker",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateBaneGolem",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "MutateInsurgent",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"ability": "ReleaseInterceptors",
+		"commander": "ProtossVolchron"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"unit": "TemplarArchive"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"upgrade": "ExtendedThermalLance"
+	},
+	{
+		"commander": "ProtossVolchron"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"prestige": "CommanderPrestigeProtossTalonCI",
+		"unit": "TalonHunterEnhanced"
+	},
+	{
+		"commander": "ProtossVolchron",
+		"prestige": "CommanderPrestigeProtossTalonCI",
+		"unit": "PaladinEnhanced"
+	},
+	{
+		"commander": "Stetmann",
+		"unit": "GaryStetmann",
+		"level": "1"
+	},
+	{
+		"commander": "Dehaka",
+		"unit": "DehakaCoop"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHMercStarportUpgraded"
+	},
+	{
+		"commander": "Horner",
+		"unit": "HHCommandCenter"
+	},
+	{
+		"commander": "Raynor",
+		"prestige": "Amon",
+		"unit": "CoopCasterRaynor"
+	},
+	{
+		"commander": "Swann",
+		"prestige": "Amon",
+		"unit": "CoopCasterSwann"
+	},
+	{
+		"commander": "Abathur",
+		"prestige": "Amon",
+		"unit": "CoopCasterAbathur"
+	},
+	{
+		"commander": "Karax",
+		"prestige": "Amon",
+		"unit": "SoACasterKarax"
+	},
+	{
+		"commander": "Artanis",
+		"prestige": "Amon",
+		"unit": "SoACasterArtanis"
+	},
+	{
+		"commander": "Nova",
+		"prestige": "Amon",
+		"unit": "CoopCasterNova"
+	},
+	{
+		"commander": "Horner",
+		"prestige": "Amon",
+		"unit": "CoopCasterHorner"
+	},
+	{
+		"commander": "Stukov",
+		"prestige": "Amon",
+		"unit": "CoopCasterStukov"
+	},
+	{
+		"commander": "Alarak",
+		"prestige": "Amon",
+		"unit": "CoopCasterAlarak"
+	},
+	{
+		"commander": "Zeratul",
+		"prestige": "Amon",
+		"unit": "CoopCasterZeratul"
+	},
+	{
+		"commander": "Vorazun",
+		"prestige": "Amon",
+		"unit": "SoACasterVorazun"
+	},
+	{
+		"commander": "Fenix",
+		"prestige": "Amon",
+		"unit": "SoACasterFenix"
+	},
+	{
+		"commander": "Tychus",
+		"prestige": "Amon",
+		"unit": "CoopCasterTychus"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "Amon",
+		"unit": "CoopCasterMengsk"
+	},
+	{
+		"commander": "Stetmann",
+		"prestige": "Amon",
+		"unit": "CoopCasterStetmann"
+	},
+	{
+		"commander": "Dehaka",
+		"prestige": "Amon",
+		"unit": "CoopCasterDehaka"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "Amon",
+		"upgrade": "TrooperMengskDropTrain"
+	},
+	{
+		"commander": "Mengsk",
+		"prestige": "Amon",
+		"upgrade": "ArtilleryMengskRange"
+	}
+]

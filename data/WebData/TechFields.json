@@ -1,0 +1,52 @@
+[
+	{
+		"Type": "Commanders",
+		"EditorColumn": 1
+	},
+	{
+		"Type": "Prestiges",
+		"EditorColumn": 2
+	},
+	{
+		"Type": "Int",
+		"EditorColumn": 3
+	},
+	{
+		"Type": "Unit",
+		"EditorColumn": 3
+	},
+	{
+		"Type": "Upgrade",
+		"EditorColumn": 4
+	},
+	{
+		"Type": "AbilCmd",
+		"EditorColumn": 6
+	},
+	{
+		"Type": "Behavior",
+		"EditorColumn": 7
+	},
+	{
+		"Type": "Int",
+		"EditorColumn": 15
+	},
+	{
+		"Type": "Tech",
+		"EditorColumn": 12
+	},
+	{
+		"Type": "Image",
+		"EditorColumn": 14
+	},
+	{
+		"Type": "String"
+	},
+	{
+		"Type": "Text"
+	},
+	{
+		"Type": "Int",
+		"EditorColumn": 44
+	}
+]
