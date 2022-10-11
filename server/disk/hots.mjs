@@ -1,4 +1,5 @@
 import express from 'express'
+import fs from 'fs'
 
 const hotsRouter = express.Router();
 
@@ -24,6 +25,14 @@ hotsRouter.get('/download/*', function(req, res){
     })
 });
 
+hotsRouter.get('/files', function(req, res){
+    const files = fs.readFileSync("./data/Hots/files.txt", {encoding: 'utf-8'})
+    let response = {
+        files: files.split("\n")
+    }
+    res.setHeader('content-type', 'text/plain');
+    res.json(response)
+});
 
 export {
     hotsRouter
