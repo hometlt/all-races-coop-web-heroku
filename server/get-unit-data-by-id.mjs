@@ -163,9 +163,14 @@ function affectingUpgrades (unitname){
 }
 
 export function getUnits(params){
-    return cache.units
+    let units = cache.units
         .filter(entry => !entry.unit.ignore)
+        .filter(entry => entry.unit.Race)
+        .filter(entry => entry.unit.ObjectFamily === "Melee")
+        .filter(entry => !["Orc","Human","Other","Naga","Critters","NightElf","Creeps","Undead"].includes(entry.unit.Race) )
         .map(entry =>quickInfo("Unit",entry.id))
+    console.log(units.length)
+    return units;
 }
 
 export function getCommands(unitname){
