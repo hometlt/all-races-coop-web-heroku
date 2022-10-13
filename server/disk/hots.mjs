@@ -36,7 +36,7 @@ hotsRouter.get('/files/disk', function(req, res){
     res.setHeader('content-type', 'text/plain');
     res.json(data)
 });
-hotsRouter.get('/files/gf', function(req, res){
+hotsRouter.get('/files/gdrive', function(req, res){
     const data = JSON.parse(fs.readFileSync("./data/Hots/versions.json", {encoding: 'utf-8'}))
     res.setHeader('content-type', 'text/plain');
     res.json(data)
