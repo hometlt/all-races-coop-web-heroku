@@ -31,13 +31,13 @@ hotsRouter.get('/versions', function(req, res){
     res.json(data)
 });
 
-hotsRouter.get('/files/disk', function(req, res){
-    const data = JSON.parse(fs.readFileSync("./data/Hots/versions.json", {encoding: 'utf-8'}))
+hotsRouter.get('/files/ydisk', function(req, res){
+    const data = JSON.parse(fs.readFileSync("./data/Hots/info-disk.json", {encoding: 'utf-8'}))
     res.setHeader('content-type', 'text/plain');
     res.json(data)
 });
 hotsRouter.get('/files/gdrive', function(req, res){
-    const data = JSON.parse(fs.readFileSync("./data/Hots/versions.json", {encoding: 'utf-8'}))
+    const data = JSON.parse(fs.readFileSync("./data/Hots/info-drive.json", {encoding: 'utf-8'}))
     res.setHeader('content-type', 'text/plain');
     res.json(data)
 });
