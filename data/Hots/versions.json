@@ -9,11 +9,13 @@
   ],
   "versions": [
     {
-      "version": "0.0.1.6",
+      "id": "0.0.1.6",
+      "title": "0.0.1.6 Beta",
       "directory": "0.0.1.6"
     },
     {
-      "version": "Development",
+      "id": "Development",
+      "title": "Development",
       "directory": "Development",
       "hidden": true
     }
