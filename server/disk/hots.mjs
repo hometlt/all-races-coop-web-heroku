@@ -25,15 +25,22 @@ hotsRouter.get('/download/*', function(req, res){
     })
 });
 
-hotsRouter.get('/files', function(req, res){
-    const files = fs.readFileSync("./data/Hots/files.txt", {encoding: 'utf-8'})
-    let response = {
-        files: files.split("\n")
-    }
+hotsRouter.get('/versions', function(req, res){
+    const files = fs.readFileSync("./data/Hots/versions.json", {encoding: 'utf-8'})
     res.setHeader('content-type', 'text/plain');
-    res.json(response)
+    res.json(versions)
 });
 
+hotsRouter.get('/files/ydisk', function(req, res){
+    const files = fs.readFileSync("./data/Hots/info-disk.json", {encoding: 'utf-8'})
+    res.setHeader('content-type', 'text/plain');
+    res.json(versions)
+});
+hotsRouter.get('/files/gdrive', function(req, res){
+    const files = fs.readFileSync("./data/Hots/info-drive.json", {encoding: 'utf-8'})
+    res.setHeader('content-type', 'text/plain');
+    res.json(versions)
+});
 export {
     hotsRouter
 }
