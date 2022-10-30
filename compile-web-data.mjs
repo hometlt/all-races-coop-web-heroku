@@ -11,6 +11,7 @@ import {
     resolveImagesTags, simplifyUnitsCommandCards} from "./server/data-parser.mjs";
 
 async function run(){
+
     let gameData = {}
     for(let includedFile of config.gameDataFiles){
         let data = await readXMLFile("./data/GameData/" + includedFile,true)

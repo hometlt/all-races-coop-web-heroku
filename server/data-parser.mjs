@@ -1,9 +1,7 @@
 import fs from 'fs'
 import xml2js from 'xml2js'
 import osd from "object-assign-deep"
-
 export const IGNORE = {ignore: true}
-
 export const config = {
     gameDataFiles: [
         "abildata.xml",
@@ -118,23 +116,10 @@ export const config = {
     ],
     includes: true
 }
-
-
 export const objectAssignDeep = (a, ...b) => (osd.withOptions(a,b,{arrayBehaviour: 'merge'}))
-
-const parser = new xml2js.Parser({
-    trim: true,
-    explicitArray: true
-});
-const parser2 = new xml2js.Parser({
-    trim: true,
-    explicitArray: true,
-    explicitChildren: true,
-    preserveChildrenOrder: true
-});
-
+const parser = new xml2js.Parser({trim: true, explicitArray: true});
+const parser2 = new xml2js.Parser({trim: true, explicitArray: true, explicitChildren: true, preserveChildrenOrder: true});
 const CMBuilder = new xml2js.Builder();
-
 const CMBuilder2 = new xml2js.Builder({headless: true});
 
 let regexp = {
@@ -1205,7 +1190,10 @@ export async function combineMods({input,output}){
 
 
     for(let entity of combo.gameData){
-        let type = entity["#"]
+        let type = entity["#name"]
+        if(!type){
+            console.log("@")
+        }
         let cat = catalogs.find(catalog => type.toLowerCase().startsWith("c" + catalog))
 
         let id = entity.id || entity.Id || entity.index
@@ -1217,12 +1205,12 @@ export async function combineMods({input,output}){
             delete entity["#mod"]
             let existed = resultData[cat].find(el => el.id === id )//&& el["#"] === entity["#"]
             if(cat === "undefined"){
-                console.warn(`category undefined ${el["#"]}`)
+                console.warn(`category undefined ${el["#name"]}`)
             }
             if (existed) {
-                if(entity.parent || entity["#"] !== existed["#"]){
-                    if(entity["#"] !== existed["#"]){
-                        console.info(`entity class override: ${id} ${existed["#"]} => ${entity["#"]}`)
+                if(entity.parent || entity["#name"] !== existed["#name"]){
+                    if(entity["#name"] !== existed["#name"]){
+                        console.info(`entity class override: ${id} ${existed["#name"]} => ${entity["#name"]}`)
                     }
                     // else{
                     //     console.log(`override ${id} ${entity["#"]}`)
@@ -1260,7 +1248,7 @@ export async function combineMods({input,output}){
         if(obj.constructor === Array){
             return
         }
-        if(prop === "#"){
+        if(prop === "#name"){
             return
         }
         if(!obj.$)obj.$ = {}
@@ -1271,8 +1259,8 @@ export async function combineMods({input,output}){
     for(let cat in resultData){
         let entitiesData = ""
         for(let entity of resultData[cat]) {
-            let tag = entity["#"]
-            delete entity["#"]
+            let tag = entity["#name"]
+            delete entity["#name"]
             entitiesData += CMBuilder2.buildObject({[tag]: entity}) + "\n";
         }
         entitiesData = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<Catalog>\n${entitiesData}\n</Catalog>`
