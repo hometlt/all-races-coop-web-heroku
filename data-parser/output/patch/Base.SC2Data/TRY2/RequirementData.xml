@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CRequirement id="LegacyHaveGhostAlternate">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Show" Link="LegacyCountUpgradeGhostAlternateCompleteOnly"/>
+</CRequirement>
+<CRequirement id="LegacyGhostHoldingFire">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyCountBehaviorGhostHoldFireBCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyGhostNotHoldingFire">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountBehaviorGhostHoldFireBCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyHatcherySpawnMutantLarva">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyGTCountBehaviorQueenSpawnLarvaCompleteOnlyAtUnit0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTunnelingClaws">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyOr1515591279CountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeTunnelingClawsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnPunisherGrenades">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradePunisherGrenadesQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnInfestorEnergyUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeInfestorEnergyUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnMedivacEnergyUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeMedivacCaduceusReactorQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnBattlecruiserSpecializations">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeBattlecruiserEnableSpecializationsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnRavenEnergyUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeRavenCorvidReactorQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnGhostEnergyUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeGhostMoebiusReactorQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnVoidRaySpeedUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeVoidRaySpeedUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnNeosteelFrame">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeNeosteelFrameQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnDurableMaterials">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeDurableMaterialsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnInterceptorLaunchSpeedUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeCarrierLaunchSpeedUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyNotUnderConstruction">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Neutral,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyNot1225867992CountBehaviorUnderConstructionCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyPlayerHasTunnelingClaws">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyCountUpgradeTunnelingClawsCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUseBattlecruiserSpecializations">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeBattlecruiserEnableSpecializationsCompleteOnly3622066930TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUsePunisherGrenades">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradePunisherGrenadesCompleteOnly679349TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranDefenseRangeBonus">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeHiSecAutoTrackingQueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranBuildingArmor">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranBuildingArmorQueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyUseCharge">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeChargeCompleteOnly137519211TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCharge">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeChargeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyUsePsiStorm">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradePsiStormTechCompleteOnly3263798822TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyArmInterceptor">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyLT2210218377CountUnitInterceptorQueuedOrBetterAtUnit8"/>
+</CRequirement>
+<CRequirement id="LegacyLearnPsiStorm">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradePsiStormTechQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnGraviticDrive">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeGraviticDriveQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnGraviticBooster">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyAndNotCountUpgradeObserverGraviticBoosterQueuedOrBetterAllowUnitObserver"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3446134918CountUpgradeTerranInfantryArmorsLevel1CompleteOnly1CountUnitArmoryCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3722837715CountUpgradeTerranInfantryArmorsLevel2CompleteOnly1CountUnitArmoryCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1429793488CountUpgradeTerranInfantryWeaponsLevel1CompleteOnly1CountUnitArmoryCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranInfantryWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3342497887CountUpgradeTerranInfantryWeaponsLevel2CompleteOnly1CountUnitArmoryCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranInfantryWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1121594928CountUpgradeTerranVehicleArmorsLevel1CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2517918925CountUpgradeTerranVehicleArmorsLevel2CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1834932227CountUpgradeTerranVehicleWeaponsLevel1CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq894233239CountUpgradeTerranVehicleWeaponsLevel2CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3052852033CountUpgradeTerranShipArmorsLevel1CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1864353859CountUpgradeTerranShipArmorsLevel2CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq285961020CountUpgradeTerranShipWeaponsLevel1CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranShipWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1004646809CountUpgradeTerranShipWeaponsLevel2CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranShipWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1740904084CountUpgradeProtossGroundWeaponsLevel1CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq629999927CountUpgradeProtossGroundWeaponsLevel2CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3569156689CountUpgradeProtossGroundArmorsLevel1CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossGroundArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq419273267CountUpgradeProtossGroundArmorsLevel2CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossGroundArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossShield1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossShieldsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossShield2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3354561256CountUpgradeProtossShieldsLevel1CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossShieldsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossShield3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3751249461CountUpgradeProtossShieldsLevel2CompleteOnly1CountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeProtossShieldsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirArmorsLevel1QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq4283478838CountUpgradeProtossAirArmorsLevel1CompleteOnly1CountUnitFleetBeaconCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirArmorsLevel2QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2731442398CountUpgradeProtossAirArmorsLevel2CompleteOnly1CountUnitFleetBeaconCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirArmorsLevel3QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirWeaponsLevel1QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1491800815CountUpgradeProtossAirWeaponsLevel1CompleteOnly1CountUnitFleetBeaconCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirWeaponsLevel2QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnProtossAirWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq524089035CountUpgradeProtossAirWeaponsLevel2CompleteOnly1CountUnitFleetBeaconCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyAndEqCountUpgradeProtossAirWeaponsLevel3QueuedOrBetter0AllowUnitPhoenix"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMeleeWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMeleeWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMeleeWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1542947369CountUpgradeZergMeleeWeaponsLevel1CompleteOnly1CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMeleeWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMeleeWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2480428841CountUpgradeZergMeleeWeaponsLevel2CompleteOnly1CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMeleeWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMissileWeapon1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMissileWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMissileWeapon2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2966286162CountUpgradeZergMissileWeaponsLevel1CompleteOnly1CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMissileWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergMissileWeapon3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2358983352CountUpgradeZergMissileWeaponsLevel2CompleteOnly1CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergMissileWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergGroundArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergGroundArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergGroundArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq1695466224CountUpgradeZergGroundArmorsLevel1CompleteOnly1CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergGroundArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergGroundArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq4090499265CountUpgradeZergGroundArmorsLevel2CompleteOnly1CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergGroundArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerAttack1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerWeaponsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerAttack2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq3274469600CountUpgradeZergFlyerWeaponsLevel1CompleteOnly1CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerWeaponsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerAttack3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq2419098971CountUpgradeZergFlyerWeaponsLevel2CompleteOnly1CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerWeaponsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq539690215CountUpgradeZergFlyerArmorsLevel1CompleteOnly1CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnZergFlyerArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyAndEq504020316CountUpgradeZergFlyerArmorsLevel2CompleteOnly1CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeZergFlyerArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyUseStimpack">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeStimpackCompleteOnly80611996TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUseFighterMode">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+</CRequirement>
+<CRequirement id="LegacyUseCloakingField">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeBansheeCloakCompleteOnly758801471TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUsePersonalCloaking">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradePersonalCloakingCompleteOnly769360710TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnStimpack">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyAndAllowUnitMarineNotCountUpgradeStimpackQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnSiegeTech">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeSiegeTechQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCloakingField">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeBansheeCloakQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnPersonnelCloaking">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradePersonalCloakingQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnVentralSacs">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyOr1515591279CountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeoverlordtransportQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnMetabolicBoost">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradezerglingmovementspeedQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAdrenalGlands">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradezerglingattackspeedQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAnabolicSynthesis">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeAnabolicSynthesisQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnChitinousPlating">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeChitinousPlatingQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyUseBurrow">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeBurrowCompleteOnly4196384071TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUseBlink">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeBlinkTechCompleteOnly520446663TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnBlink">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeBlinkTechQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnGlialReconstitution">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyOr1515591279CountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeGlialReconstitutionQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnShieldWall">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeShieldWallQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyTrainNuke">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyAndOr96167438CountUnitFactoryCompleteOnly96167438TechTreeCheatCountUnitFactoryFlyingCompleteOnly1718561093TechTreeCheatNot866976074CountUnitNukeQueuedOrBetterAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyShowIfHaveNoAddOnParent">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyNotOrCountUnitAlias_BarracksCompleteOnlyAtUnitCountUnitAlias_FactoryCompleteOnlyAtUnitCountUnitAlias_StarportCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyShowIfHaveBarrAddOnParent">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyCountUnitAlias_BarracksCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyShowIfHaveFactAddOnParent">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyCountUnitAlias_FactoryCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyShowIfHaveStarportAddOnParent">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyCountUnitAlias_StarportCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyUseWarpGate">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeWarpGateResearchCompleteOnly3112877171TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnWarpGate">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeWarpGateResearchQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyMothershipRequirements">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyAndCountUnitFleetBeaconCompleteOnlyTechTreeCheatEq1228785331CountUnitMothershipQueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyUseOverseerMorph">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyNotOnCreep">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Show" Link="LegacyNotCountBehaviorOnCreepCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCentrificalHooks">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyOr1515591279CountUnitLairCompleteOnlyTechTreeCheatCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeCentrificalHooksQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnHighCapacityBarrels">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeHighCapacityBarrelsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnExtendedThermalLance">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyAndNotCountUpgradeExtendedThermalLanceQueuedOrBetterAllowUnitColossus"/>
+</CRequirement>
+<CRequirement id="LegacyLearnStrikeCannons">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeStrikeCannonsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyUseStrikeCannons">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeStrikeCannonsCompleteOnly3055499258TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSprayTerran">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyCountUpgradeSprayTerranCompleteOnly"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSprayZerg">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyCountUpgradeSprayZergCompleteOnly"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSprayProtoss">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyCountUpgradeSprayProtossCompleteOnly"/>
+</CRequirement>
+<CRequirement id="LegacyHaveBurrowCharge">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeUltraliskBurrowChargeUpgradeCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnBurrowCharge">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeUltraliskBurrowChargeUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnHunterSeekerMissiles">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran"/>
+  <NodeArray index="Use" Link=""/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeHunterSeekerQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyArmBroodlingEscort">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyLTCountUnitBroodlingEscortQueuedOrBetterAtUnit2"/>
+</CRequirement>
+<CRequirement id="LegacyHaveArmory">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitArmoryCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveArmoryAndAttachedTechLab">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyAndCountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitArmoryCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveAttachedBarrTechLabAndShadowOps">
+  <CanBeSuppressed index="Use" value="0"/>
+  <NodeArray index="Use" Link="LegacyAndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitGhostAcademyCompleteOnlyTechTreeCheat"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+</CRequirement>
+<CRequirement id="LegacyHaveAttachedNuclearReactor">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_ReactorCompleteOnlyAtUnit1444470936TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveAttachedStarportTechLabAndFusionCore">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyAndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitFusionCoreCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveAttachedTechLab">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveBanelingNest">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitBanelingNestCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveBanelingNest2">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitRoachWarrenCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveBarracks">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveCommandCenter">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_CommandCenterCompleteOnly1610623376TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveCyberneticsCore">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitCyberneticsCoreCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveDarkShrine">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitDarkShrineCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveEngineeringBay">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitEngineeringBayCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveFactory">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_FactoryCompleteOnly96167438TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveFleetBeacon">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitFleetBeaconCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveForge">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitForgeCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveGateway">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_GatewayCompleteOnly4260347518TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveGreaterSpire">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitGreaterSpireCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveHatchery">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_HatcheryCompleteOnly3846943109TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveHive">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveHydraliskDen">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_HydraliskDenCompleteOnly4037297345TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveInfestationPit">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitInfestationPitCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveLair">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_LairCompleteOnly1515591279TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveNexus">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitNexusCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveNuke">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitNukeCompleteOnly421500357"/>
+</CRequirement>
+<CRequirement id="LegacyHaveNydusNetwork">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitNydusNetworkCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveRoboticsBay">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitRoboticsBayCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveRoboticsFa">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitRoboticsFacilityCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSpawningPool">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitSpawningPoolCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSpire">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_SpireCompleteOnly836078744TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveStargate">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitStargateCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveStarport">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_StarportCompleteOnly4195804750TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveTemplarArchives">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitTemplarArchiveCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveTwilightCouncil">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Protoss,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitTwilightCouncilCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveUltraliskCavern">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitUltraliskCavernCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnHallucination">
+  <CanBeSuppressed index="Use" value="1"/>
+  <CanBeSuppressed index="Show" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradehaltechQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnLocustLifetimeIncrease">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeLocustLifetimeIncreaseQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTempestRangeUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeTempestRangeUpgradeQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnPhoenixRangeUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradePhoenixRangeUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyHaveSupplyDepot">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Terran,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitAlias_SupplyDepotCompleteOnly3975993912TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnNeuralParasite">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeNeuralParasiteQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyHaveNexusPurifyActive">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyAndCountBehaviorMothershipCorePurifyNexusCompleteOnlyAtUnit1"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTransformationServos">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUnitArmoryCompleteOnly609241497TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTransformationServosQueuedOrBetterTechTreeCheat0"/>
+</CRequirement>
+<CRequirement id="LegacyPurifyNexusRequirements">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyAndCountBehaviorPurifyCompleteOnlyAtUnit1"/>
+</CRequirement>
+<CRequirement id="LegacyWidowMineArmed">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountBehaviorWidowMineArmedCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnImmortalRevive">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeImmortalReviveQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnRoachSupply">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyOr1229866228CountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeRoachSupplyQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnBurrow">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Ability"/>
+  <NodeArray index="Use" Link=""/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeBurrowQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnDrillingClaws">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUnitArmoryCompleteOnly"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeDrillClawsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnPneumatizedCarapace">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link=""/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeoverlordspeedQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleAndShipArmor1">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleAndShipArmorsLevel1QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleAndShipArmor2">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyAndEq611800619CountUpgradeTerranVehicleAndShipArmorsLevel1CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleAndShipArmorsLevel2QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTerranVehicleAndShipArmor3">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyAndEq2326683880CountUpgradeTerranVehicleAndShipArmorsLevel2CompleteOnly1"/>
+  <NodeArray index="Show" Link="LegacyEqCountUpgradeTerranVehicleAndShipArmorsLevel3QueuedOrBetter0"/>
+</CRequirement>
+<CRequirement id="LegacyLockedOn">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyCountBehaviorLockOnDisableAttackCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyNearWarpgateorNexus">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss"/>
+  <NodeArray index="Use" Link="LegacyCountBehaviorPowerSourceFastCompleteOnlyAtUnit2876499218"/>
+</CRequirement>
+<CRequirement id="LegacyNoLockedOn">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyNot361380870CountBehaviorLockOnDisableAttackCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCycloneLockOnRangeUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUnitArmoryCompleteOnly"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeCycloneLockOnRangeUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLurkerHoldingFire">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyCountBehaviorLurkerHoldFireBCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLurkerNotHoldingFire">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountBehaviorLurkerHoldFireBCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyAdeptPhaseShifting">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyCountBehaviorAdeptPhaseShiftCasterCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyHaveAdeptPiercingAttack">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeAdeptPiercingAttackCompleteOnly543136321"/>
+</CRequirement>
+<CRequirement id="LegacyHaveTempestGroundAttackUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeTempestGroundAttackUpgradeCompleteOnly788113278"/>
+</CRequirement>
+<CRequirement id="LegacyLearnTempestGroundAttackUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeTempestGroundAttackUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyHaveCycloneLockOnDamageUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeCycloneLockOnDamageUpgradeCompleteOnly114637382"/>
+</CRequirement>
+<CRequirement id="LegacyHaveLiberatorRange">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeLiberatorAGRangeUpgradeCompleteOnly2325880491"/>
+</CRequirement>
+<CRequirement id="LegacyHaveLurkerDen">
+  <CanBeSuppressed index="Use" value="0"/>
+  <EditorCategories value="Race:Zerg,TechType:Unit"/>
+  <NodeArray index="Use" Link="LegacyCountUnitLurkerDenMPCompleteOnlyTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyHaveMedivacSpeedBoostUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeMedivacIncreaseSpeedBoostCompleteOnly20648635"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAdeptAmplifiedShielding">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeAmplifiedShieldingQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAdeptPsionicAmplifiers">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradePsionicAmplifiersQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAmorphousArmorcloud">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeMicrobialShroudQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnSunderingImpact">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeChargeCompleteOnly137519211TechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeSunderingImpactQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEvolveSeismicSpines">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeLurkerRangeQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEvolveSecretedCoating">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeSecretedCoatingQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyIsGatewayMorphing">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountBehaviorMorphingintoWarpGateCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnAdeptPiercingAttack">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeAdeptPiercingAttackQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCycloneLockOnDamageUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeCycloneLockOnDamageUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnLiberatorMorph">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link=""/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeLiberatorMorphQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnLiberatorRange">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUnitFusionCoreCompleteOnly"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeLiberatorAGRangeUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnLurkerRange">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnly"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeLurkerRangeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnBansheeSpeed">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeBansheeSpeedQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnMedivacSpeedBoostUpgrade">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeMedivacIncreaseSpeedBoostQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnRapidDeployment">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeMedivacRapidDeploymentQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnRavenRecalibratedExplosives">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeRavenRecalibratedExplosivesQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyNotHaveScramblerMissileBehavior">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyNotCountBehaviorRavenScramblerMissileQueuedOrBetterAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyQueenOnCreep">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg"/>
+  <NodeArray index="Use" Link="LegacyCountBehaviorQueenMustBeOnCreepCompleteOnlyAtUnit1120682689"/>
+</CRequirement>
+<CRequirement id="LegacyUseNeuralParasite">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeNeuralParasiteCompleteOnly1444946120TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyUseSingleOverlordTransport">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Zerg,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountBehaviorIsTransportOverlordCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnDarkTemplarBlink">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeDarkTemplarBlinkUpgradeQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyUseDarkTemplarBlink">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeDarkTemplarBlinkUpgradeCompleteOnly3445645436TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyVoidRayPrismaticAlligned">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Protoss,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyCountBehaviorVoidRaySwarmDamageBoostCompleteOnlyAtUnit"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEvolveGroovedSpines">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeEvolveGroovedSpinesQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEvolveMuscularAugments">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeEvolveMuscularAugmentsQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEvolveDiggingClaws">
+  <CanBeSuppressed index="Use" value="1"/>
+  <NodeArray index="Use" Link="LegacyCountUnitHiveCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeDiggingClawsQueuedOrBetterTechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnSmartServos">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUnitArmoryCompleteOnlyTechTreeCheat"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeSmartServosQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnArmorPiercingRockets">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeArmorPiercingRocketsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnRavenEnhancedMunitions">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeRavenEnhancedMunitionsQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyLearnEnhancedShockwaves">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeEnhancedShockwavesQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyUseEnhancedShockwaves">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Ability"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeEnhancedShockwavesCompleteOnly2618611756TechTreeCheat"/>
+</CRequirement>
+<CRequirement id="LegacyLearnCycloneRapidFireLaunchers">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Show" Link="LegacyNotCountUpgradeCycloneRapidFireLaunchersQueuedOrBetter"/>
+</CRequirement>
+<CRequirement id="LegacyHaveWidowMineDrillingClaws">
+  <CanBeSuppressed index="Use" value="1"/>
+  <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+  <NodeArray index="Use" Link="LegacyCountUpgradeDrillClawsCompleteOnly1396043293"/>
+</CRequirement>
+
+</Catalog>

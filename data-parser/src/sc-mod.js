@@ -1,9 +1,9 @@
 import fs from 'fs'
 import xml2js from 'xml2js'
 import * as yaml from "js-yaml";
-import {deep, matchPath, deepReplaceMatch, resolveSchemaType} from "./sc-util.js";
 import {SCGame} from "./sc-game.js";
 import {SCEntity} from "./sc-entity.js";
+import {deep,optimizeObject, optimizeJSONObject, fromXMLToObject, optimiseForXML, convertObjectsToIndexedArray, stringValues} from "./operations.js";
 
 export class SCMod {
     constructor(data= {}){
@@ -19,7 +19,7 @@ export class SCMod {
         this.entities = []
         Object.defineProperty(this, 'cache',{ configurable:true, writable: true,enumerable: false,value: {} })
         Object.defineProperty(this, 'catalogs',{ configurable:true, writable: true,enumerable: false,value: {} })
-        Object.defineProperty(this, 'entities',{ configurable:true, writable: true,enumerable: false,value: []})
+        // Object.defineProperty(this, 'entities',{ configurable:true, writable: true,enumerable: false,value: []})
 
         // this.path = ""
         // this.assets = {}
@@ -92,59 +92,14 @@ export class SCMod {
                     data.localisations = localisations
                 }
             }
-            ////////     GameData     //////////////////////////////////////////////////////////////////////////////////
-            {
-                let includesData = await this._readXMLFile(path + "Base.SC2Data/GameData.xml")
-                let commonFiles = SCMod.datafiles.map(el => "Base.SC2Data/GameData/" + el + "data.xml");
-                let includes = commonFiles.filter(file => fs.existsSync(path + file))
-                let additionalFiles = includesData?.Includes?.Catalog?.map(catalog => "Base.SC2Data/" + catalog.$.path)
-                if (additionalFiles) {
-                    includes.push(...additionalFiles)
-                }
-                let catalogs = []
-                for (let file of includes) {
-                    let data = await this._readXMLFile(path + file, true)
-                    if (!data) {
-                        console.log("File not found: " + path + file)
-                    } else {
-                        catalogs.push({id: file, data: data.Catalog?.constructor === Object ? data : {}});
-                    }
-                }
-                let entities = []
-                for (let catalog of catalogs) {
-                    if (catalog.data.Catalog) {
-                        if (catalog.data.Catalog.$$) {
-                            for (let entityID of catalog.data.Catalog.$$) {
-                                deepReplaceMatch(entityID, null, prop => prop === "$$", ({val, obj, prop}) => {
-                                    delete obj[prop]
-                                })
-                                let entity = this._collectDataRecoursive(entityID,/*[],, mod.name*/)
-                                entity.class = entity["#name"]
-                                delete entity["#name"]
-                                for (let property in entity) {
-                                    if (/^__(.*)__$/.test(property)) {
-                                        entity[property.substring(2, property.length - 2)] = entity[property][0].value
-                                        delete entity[property]
-                                    }
-                                }
-                                // if (!entity.id) {
-                                //     entity.id = "_" + entity.class + "_"
-                                // }
-                                entities.push(entity)
-                            }
-                        }
-                    }
-                }
-                if(entities.length){
-                    data.entities = entities
-                }
-            }
             ////////     Triggers     //////////////////////////////////////////////////////////////////////////////////
             {
                 let triggersFile = path + "Triggers"
-                let raw = fs.existsSync(triggersFile) && fs.readFileSync(triggersFile, {encoding: 'utf-8'})
-                if(raw){
-                    data.triggers = raw.substring(raw.indexOf("<TriggerData>") + 13, raw.indexOf("</TriggerData>"))
+                let triggersDataParsed = await this._readXMLFile(path + "Triggers", true)
+                let triggersData = triggersDataParsed?.TriggerData
+                if(triggersData){
+                    fromXMLToObject(triggersData)
+                    data.triggers = triggersData.Library
                 }
             }
             ////////     layouts     ///////////////////////////////////////////////////////////////////////////////////
@@ -178,6 +133,42 @@ export class SCMod {
                     data.files = files
                 }
             }
+            ////////     GameData     //////////////////////////////////////////////////////////////////////////////////
+            {
+                let includesData = await this._readXMLFile(path + "Base.SC2Data/GameData.xml")
+                let commonFiles = SCGame.datafiles.map(el => "Base.SC2Data/GameData/" + el + "data.xml");
+                let includes = commonFiles.filter(file => fs.existsSync(path + file))
+                let additionalFiles = includesData?.Includes?.Catalog?.map(catalog => "Base.SC2Data/" + catalog.$.path)
+                if (additionalFiles) {
+                    includes.push(...additionalFiles)
+                }
+                let catalogs = []
+                for (let file of includes) {
+                    let data = await this._readXMLFile(path + file, true)
+                    if (!data) {
+                        console.log("File not found: " + path + file)
+                    } else {
+                        catalogs.push({id: file, data: data.Catalog?.constructor === Object ? data : {}});
+                    }
+                }
+                let entities = []
+                for (let catalog of catalogs) {
+                    if (catalog.data.Catalog) {
+                        if (catalog.data.Catalog.$$) {
+                            for (let entity of catalog.data.Catalog.$$) {
+                                fromXMLToObject(entity)
+                                if(SCGame.classlist[entity.class]?.$$namespace && !SCGame.ignoredNamespaces.includes(SCGame.classlist[entity.class]?.$$namespace)){
+                                    optimizeObject(entity, SCGame.classlist[entity.class].$$schema)
+                                    entities.push(entity)
+                                }
+                            }
+                        }
+                    }
+                }
+                if(entities.length){
+                    data.entities = entities
+                }
+            }
         }
         else{
             if(!fs.existsSync(path))return
@@ -193,13 +184,16 @@ export class SCMod {
             if (format === 'XML') {
                 data = {}
             }
+            for(let entity of data.entities){
+                optimizeJSONObject(entity, SCGame.classlist[entity.class].$$schema)
+            }
         }
 
         ////////     triggers     /////////////////////////////////////////////////////////////////////////////////////
 
         if(data.triggers){
-            if (!this.triggers) this.triggers = ""
-            this.triggers += data.triggers
+            if (!this.triggers) this.triggers = []
+            this.triggers.push(...data.triggers)
         }
         ////////     dependencies     /////////////////////////////////////////////////////////////////////////////////////
         if(data.dependencies){
@@ -257,22 +251,6 @@ export class SCMod {
             }
         }
     }
-    resolveParents(entity = null){
-
-        if(entity){
-            this._resolveEntityParents(entity)
-            return entity;
-        }
-
-
-        // this.updateCache()
-        for(let catalog in this.catalogs){
-            if(catalog === "const")continue;
-            for(let entity of this.catalogs[catalog]){
-                 this._resolveEntityParents(entity)
-            }
-        }
-    }
     async write(path){
         if(path){
             if(!path.endsWith("/"))path += "/"
@@ -291,20 +269,15 @@ export class SCMod {
         if (!fs.existsSync(localeFile)) {
             return null;
         }
+
         let raw = fs.readFileSync(localeFile, {encoding: 'utf-8'})
-
-        raw = raw.replace(/<\?xml(.*)\?>/g,()=>{
-            return ""
-        })
-
-        raw = raw.replace(/<\?token\s+id="(\w+)"\s+(?:type="(\w+)"\s+)?value="(.*)"\?>/g,function(_,tokenID,tokenType,tokenValue){
-            // console.log(val,a,b)
-            return `<__${tokenID}__ value="${tokenValue}"/>`
-            // <DeathRevealRadius value="0"/>
-        })
-        raw = raw.replace(/<\?(.*)\?>/g,function(_){
-            return _
-        })
+            .replace(/<\?xml(.*)\?>/g,'')
+            .replace(/<\?token\s+id="(\w+)"\s+(?:type="(\w+)"\s+)?value="(.*)"\?>/g,(_,tokenID,tokenType,tokenValue) =>{
+                return `<__${tokenID}__ value="${tokenValue}"/>`
+            })
+            .replace(/<\?(.*)\?>/g,function(_){
+                return _
+            })
 
         return new Promise((resolve, reject) => {
             let parser
@@ -326,31 +299,6 @@ export class SCMod {
                 resolve(result);
             });
         })
-    }
-    _getAllFiles (dirPath, relativePath, arrayOfFiles = []) {
-        let files = fs.readdirSync(dirPath)
-
-        files.forEach(function (file) {
-            let relativeFile = relativePath ? relativePath + "/" + file : file
-            if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-                arrayOfFiles = getAllFiles(dirPath + "/" + file, relativeFile, arrayOfFiles)
-            } else {
-                arrayOfFiles.push(relativeFile)
-            }
-        })
-
-        return arrayOfFiles
-    }
-    _parseLanguagRawData(text) {
-        if (!text) return {}
-        let data = {}
-        text.replace(/\r/g, "").split("\n").forEach(el => {
-            let key = el.substring(0, el.indexOf("="))
-            let value = el.substring(el.indexOf("=") + 1)
-            data[key] = value
-        })
-        delete data[""]
-        return data;
     }
     _copyFile(input, outputPath) {
         input = input.replace(/\\/g, "\/")
@@ -412,8 +360,6 @@ export class SCMod {
 
             // let catalogs = JSON.parse(JSON.stringify(this.catalogs))
 
-            for (let entity of this.entities)entity.optimiseForXML()
-
             if(writeToSingleFile){
                 let entitiesData = ""
                 for (let cat in catalogs) {
@@ -432,10 +378,33 @@ export class SCMod {
                     let entitiesData = ""
                     for (let entity of this.catalogs[cat]) {
 
-                        let tag = entity.class
-                        delete entity.class
-                        entitiesData += CMBuilder2.buildObject({[tag]: entity}) + "\n";
-                        entity.class = tag
+                        let entityData;
+
+                        if(SCGame.useResolve){
+                            entityData = deep({},entity.$$resolved)
+                        }
+                        else{
+                            entityData = deep({},entity)
+                        }
+                        entityData.id = entity.id
+
+                        delete entityData.class
+                        optimiseForXML(entityData,entity.$$schema)
+
+
+                        try{
+                            entitiesData += CMBuilder2.buildObject({[entity.class]: entityData}) + "\n";
+                        }
+                        catch(e){
+                            for(let property in entity){
+                                try {
+                                    CMBuilder2.buildObject({[entity.class]: {[property]: entity[property]}})
+                                }
+                                catch(e2){
+                                    console.error(e2.message, entity.id, property ,entity[property])
+                                }
+                            }
+                        }
                     }
                     entitiesData = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<Catalog>\n${entitiesData}\n</Catalog>`
                     this._saveRawData(entitiesData,  `${path}Base.SC2Data/GameData/${cat.at(0).toUpperCase() + cat.substring(1)}Data.xml`)
@@ -459,7 +428,6 @@ export class SCMod {
 
     }
     mixin(b){
-
         function mixin(a,b){
             for(let i in b){
                 if(a.constructor === Object && b.constructor === Object && a[i]) {
@@ -470,7 +438,6 @@ export class SCMod {
                 }
             }
         }
-
         let a = this.cache
         for(let i in b){
             if(a.constructor === Object && b.constructor === Object && a[i]) {
@@ -481,333 +448,206 @@ export class SCMod {
             }
         }
     }
-    // chains = {}
-    // ingored = {}
-
-    _pickField(object, property , type, path,chain){
-        let  value = object[property]
-
-        let referenceID , referenceCatalog
-        //optimised arrays
-        switch(type){
-            case "unit":
-            case "weapon":
-            case "turret":
-            case "upgrade":
-            case "button":
-            case "requirementnode":
-            case "requirement":
-            case "behavior":
-            case "abil":
-            case "validator":
-            case "effect": {
-                referenceID = value
-                referenceCatalog = type
-                break;
+    pickEntity(entity){
+        if(!entity)return
+        for(let relation of entity.$$relations){
+            let linkedEntity = this.cache[relation.namespace][relation.link]
+            if(!linkedEntity)continue
+            if(linkedEntity.$$references){
+                linkedEntity.addReferences(relation.path)
             }
-            case "reference":{
-                let [entityType, entityName, entityProperty] = value.split(",")
-                referenceID = entityName
-                referenceCatalog = entityType.toLowerCase()
-                break;
-            }
-            case "abilcmd": {
-                let [abilName, cmd] = value.split(",")
-                referenceID= abilName
-                referenceCatalog = "abil"
-                break;
-            }
-            default:
-                return;
-        }
-
-
-        let entity = this.cache[referenceCatalog][referenceID]
-        if(!entity)return;
-
-        let newChain = [...chain]
-        newChain.push([newChain.pop(),... path.slice(1),property].join("."))
-
-        entity.addReference( path, type, object, property)
-
-        for(let iPath of SCGame.pickIgnoreObjects.path){
-            if(matchPath(iPath,path)){
-                return;
-            }
-        }
-
-        if(SCGame.pickIgnoreObjects.path.includes(entity.$class)) {
-            return
-        }
-        this.pickEntity(entity,newChain)
-    }
-    _pickProperty(object,schema,path,chain){
-        if(!schema) return
-
-        for(let property in object){
-            if(["index",'class', "removed" ,'id','parent','default'].includes(property))continue;
-            // if(property !== 'value' && /[a-z]/.test(property))continue;
-            let value = object[property]
-            if(!value)continue;
-            let type = resolveSchemaType(schema,property);
-            let _path = [...path,property]
-            if(!type){
-                console.log("unknown field",_path.join(".") );
-                continue;
-            }
-
-            if(type.constructor === Object){
-                if(value.constructor === Array){
-                    //todo For not otimised object
-                    for(let item of value){
-                        this._pickProperty(item,type, _path,chain)
-                    }
-                }
-                else{
-                    //optimised arrays
-                    this._pickProperty(value,type, _path,chain)
-                }
-            }
-            else if(type.constructor === Array){
-                for(let item in value){
-                    this._pickProperty(value[item],type[0], _path,chain)
-                }
-            }
-            else {
-                if(value.constructor === Array){
-                    //todo For not otimised object
-                    for(let item of value){
-                        if(item.constructor === Object){
-                            // item = item.value
-                            this._pickField(item, 'value' , type, _path,chain)
-                        }
-                        else{
-                            this._pickField(value, value.indexOf("item") , type, _path,chain)
-                        }
-                    }
-                }
-                else{
-                    //for optimised objects
-                    this._pickField(object, property , type, _path,chain)
-                }
+            else{
+                linkedEntity.addReferences(relation.path)
+                this.pickEntity(linkedEntity)
             }
         }
     }
+    pick(include = {}, {exclude = {}} = {}){
+        SCGame.pickIgnoreObjects = {}
+        deep(SCGame.pickIgnoreObjects,SCGame.defaultPickIgnoreObjects)
+        deep(SCGame.pickIgnoreObjects,exclude)
 
-    pickEntity(entity,chain = []){
-        if(SCGame.pickIgnoreObjects?.[entity.$$namespace]?.includes(entity.id))return
-        entity.addChain(chain)
-        if(entity.$picked) return
-        entity.markPicked()
-        this._pickProperty(entity, entity.$$schema,[entity.class],[...chain,entity.$trace])
+        for(let namespace in include){
+            for(let link of include[namespace]){
+                let entity = this.cache[namespace][link]
+                if(!entity)continue;
+                entity.addReferences("")
+                this.pickEntity(entity)
+            }
+        }
     }
-    createEntity(entity){
-        let catalog = entity.$class.$$namespace
-        if(!this.createdCache[catalog])this.createdCache[catalog] = {}
-        if(!this.createdCatalog[catalog])this.createdCatalog[catalog] = []
-        let instance =  new SCEntity(entity)
-        this.createdCache[catalog][entity.id] =instance
-        this.createdCatalog[catalog].push(instance)
-        this.createdEntities.push(instance)
-    }
-    // createdCache = {}
-    // createdCatalog = {}
-    // createdEntities = []
-    pick(include = {}, exclude = {}){
-        if(!this.createdCache) this.createdCache = {}
-        if(!this.createdCatalog) this.createdCatalog = {}
-        if(!this.createdEntities) this.createdEntities = []
-
-        SCGame.pickIgnoreObjects = deep(SCGame.defaultPickIgnoreObjects,exclude)
-
-        for(let catalog in include){
-            for(let unit of include[catalog]){
-                this.pickEntity(this.cache[catalog][unit])
+    pickActors(){
+        for (let actor of this.catalogs.actor){
+            let termRelations = actor.$$relations.filter(rel => rel.type === "terms")
+            let used = false
+            for(let relation of termRelations){
+                let linkedEntity = this.cache[relation.namespace][relation.link]
+                if(linkedEntity?.$$references){
+                    // linkedEntity.addReferences(relation.path)
+                    used = true;
+                }
+            }
+            if(used) {
+                actor.addReferences("")
+                this.pickEntity(actor)
             }
         }
     }
     createActorsForPickedUnits(){
-        // for (let actor of [this.cache.actor.MothershipCore]){
+
+        let copiedEvents = []
+
         for (let actor of this.catalogs.actor){
-            if(actor.$picked){
-                this.createEntity({
-                    id: actor.id,
-                    class: actor.class,
-                    $class: actor.$class,
-                    $references: actor.$references,
-                    $chains: actor.$chains
-                })
-            }
-            for(let field of ["On","Remove"]){
-                if(!actor[field])continue
-                for (let index in actor[field]){
-                    let actorAction = actor[field][index]
-                    if(!actorAction.Terms) continue
-                    let actionCopy = deep({},actorAction)
-                    let newchains = []
-                    for(let terms of actionCopy.Terms){
+            let createdEntity;
+            if(actor.$created)continue;
+            if(actor.$overriden)continue;
 
-                        let [event,...conditions] = terms.value.split(";").map(term => term.trim())
-                        let termParts = event.split(".")
-                        let catalog = {
-                            Behavior: "behavior",
-                            Abil: "abil",
-                            WeaponStart: "weapon",
-                            Upgrade: "upgrade",
-                            Confirmation: "unit",
-                            UnitConstruction: "unit",
-                            UnitDeath: "unit",
-                            UnitBirth: "unit",
-                            UnitRevive: "unit",
-                            Effect: "effect",
-                        }[termParts[0]]
+            delete actor.$$references
 
-                        let entityID = termParts[1]
-                        if(catalog && entityID && entityID !== "*"){
-                            let entity = this.cache[catalog][entityID]
-                            if(entity?.$picked){
-                                newchains.push([ entity.$trace, field+"#" + index + "."+ event])
-                                entity.addReference( "actor." + field, 'actor-event', terms, 'value')
-                            }
-                        }
+            let termRelations = actor.$$relations.filter(rel => rel.type === "terms")
+            for(let relation of termRelations){
+                let linkedEntity = this.cache[relation.namespace][relation.link]
+                if(!linkedEntity || !relation.path)continue
+                if(linkedEntity?.$$references){
+                    let _path = relation.path.split(".")
 
-                        for(let index =0; index < conditions.length; index++){
-                            let condition = conditions[index]
-                            let termParts = condition.split(" ").map(term => term.trim())
-                            let catalog = {
-                                MorphFrom: "unit",
-                                MorphTo: "unit",
-                            }[termParts[0]]
-                            let entityID = termParts[1]
-                            if(catalog && entityID && entityID !== "*"){
-                                let entity = this.cache[catalog][entityID]
-                                if(entity?.$picked){
-                                    newchains.push([ entity.$trace, field+"#" + index + "."+ event ])
-                                    entity.addReference( "actor." + field, 'actor-condition', terms, 'value' ,index )
-                                }
-                            }
-                        }
+                    if(linkedEntity.$$references.includes(relation.path)){
+                        linkedEntity.$$references.splice(linkedEntity.$$references.indexOf(relation.path),1)
                     }
 
-                    if(newchains.length){
-                        if(!this.createdCache.actor?.[actor.id]) {
-                            this.createEntity({
-                                id: actor.id,
-                                class: actor.class,
-                                $class: actor.$class,
-                                $references: actor.$references,
-                                $chains: actor.$chains
-                            })
-                        }
-                        let chainActor = this.createdCache.actor[actor.id]
-                        chainActor.markPicked()
-                        chainActor.addChain(...newchains)
-                        if(!chainActor[field]){
-                            chainActor[field] = []
-                        }
-                        chainActor[field].push(actionCopy)
+                    if(!createdEntity){
+                        createdEntity = this.makeEntity({
+                            id: actor.id,
+                            class: actor.class,
+                            $class: actor.$class
+                        })
+                        Object.defineProperty(createdEntity, '$created',{ configurable:true, writable: true,enumerable: false,value: true })
+                        createdEntity.addReferences("")
                     }
+                    let property = _path[2]
+
+                    if(!createdEntity[property])createdEntity[property] = []
+                    let event = actor.$$resolved[property][_path[3]]
+                    if(copiedEvents.includes(event)) continue;
+                    copiedEvents.push(event)
+                    _path[3] = createdEntity[property].length
+                    createdEntity[property].push({...event})
+                    linkedEntity.addReferences(_path.join("."))
                 }
             }
+
+
         }
     }
     filter(){
-
-
         for(let catalog in this.catalogs){
             for(let entity of this.catalogs[catalog]){
-                if(!entity.$picked){
-                    delete this.cache[catalog][entity.id]
+                if(!entity.$$references){
+                    if(this.cache[catalog][entity.id] === entity){
+                        delete this.cache[catalog][entity.id]
+                    }
                 }
             }
-            this.catalogs[catalog] = this.catalogs[catalog].filter(item => item.$picked)
+            this.catalogs[catalog] = this.catalogs[catalog].filter(item => item.$$references)
 
             if(!this.catalogs[catalog].length){
                 delete this.catalogs[catalog]
                 delete this.cache[catalog]
             }
         }
-        this.entities = this.entities.filter(item => item.$picked)
-
-        //adding actors //todo probably add to ordinary array with tag $new
-        this.entities.push(...this.createdEntities)
-        for(let catalog in this.createdCatalog){
-            for(let entity of this.createdCatalog[catalog]){
-
-                if(entity.id === "HellionTank"){
-                    entity
-                }
-
-                if(!this.cache[catalog])this.cache[catalog] = {}
-                if(!this.catalogs[catalog])this.catalogs[catalog] = []
-                this.cache[catalog][entity.id] = entity
-                this.catalogs[catalog].push(entity)
-            }
-        }
-
-        delete this.createdCatalog
-        delete this.createdEntities
-        delete this.createdCache
-
-        for(let entity of this.entities){
-            delete entity.$picked
-        }
-
+        this.entities = this.entities.filter(item => item.$$references)
     }
     renameEntities(mask){
         for(let catalog in this.catalogs) {
-            if(catalog === 'actor')continue
+            // if(catalog === 'actor')continue
             for (let entity of this.catalogs[catalog]) {
-                entity.id = mask.replace("*", entity.id)
-                if (entity.$references) {
-                    for (let reference of entity.$references) {
-                        let value = reference.object[reference.property]
-                        let newvalue
-                        switch (reference.type) {
-                            case 'actor-event': {
-                                let [event, ...conditions] = value.split(";").map(term => term.trim())
-                                let termParts = event.split(".")
-                                termParts[1] = entity.id
-                                newvalue = [termParts.join("."), ...conditions].join(";")
-                                break;
-                            }
-
-                            case 'actor-condition': {
-                                let [event, ...conditions] = value.split(";").map(term => term.trim())
-                                let condition = conditions[reference.index]
-                                let termParts = condition.split(" ").map(term => term.trim())
-                                termParts[1] = entity.id
-                                conditions[reference.index] = termParts.join(" ")
-                                newvalue = [event, ...conditions].join(";")
-                                break;
-                            }
-                            case 'reference': {
-                                let [entityType, entityName, entityProperty] = value.split(",")
-                                newvalue = [entityType, entity.id, entityProperty].join(",")
-                                break;
-                            }
-                            case "abilcmd": {
-                                let [entityName, cmd] = value.split(",")
-                                newvalue = [entity.id, cmd].join(",")
-                                break
-                            }
-                            default:
-                                newvalue = entity.id
+                let oldName = entity.id
+                entity.id = mask.replace("*", oldName)
+                if (entity.$$references) {
+                    for (let reference of entity.$$references) {
+                        if(reference === "")continue //nothing to rename
+                        let _path = reference.split(".")
+                        let value,valueObject,valueProperty, valueEntity, newvalue
+                        let referenceEntity = this.cache[_path[0]][_path[1]]
+                        if(!referenceEntity){
+                            console.warn("wrong reference " + reference)
+                            continue;
                         }
-                        reference.object[reference.property] = newvalue
+                        if(SCGame.useResolve){
+                            valueEntity = referenceEntity.$created ? referenceEntity : referenceEntity.$$resolved;
+                        }
+                        else{
+                            valueEntity = referenceEntity;
+                        }
+                        value = valueEntity
+                        for(let pathItem of _path.slice(2)){
+                            if(value === undefined)break;
+                            valueObject = value
+                            valueProperty = pathItem
+                            value = value[pathItem]
+                        }
+                        if(value === undefined){
+                            console.warn("wrong reference " + reference)
+                            continue;
+                        }
+                        if(value.includes(".") || value.includes(" ") || value.includes(";")){
+                            //this is a term
 
+                            let [event,...conditions] = value.split(";").map(term => term.trim())
+                            let eventParts = event.split(".")
+                            let namespace = {
+                                Behavior: "behavior",
+                                Abil: "abil",
+                                WeaponStart: "weapon",
+                                Upgrade: "upgrade",
+                                Confirmation: "unit",
+                                UnitConstruction: "unit",
+                                UnitDeath: "unit",
+                                UnitBirth: "unit",
+                                UnitRevive: "unit",
+                                Effect: "effect",
+                            }[eventParts[0]]
+
+
+                            if(namespace === entity.$$namespace && eventParts[1] === oldName){
+                                eventParts[1] = entity.id
+                                event = eventParts.join(".")
+                            }
+                            for(let index =0; index < conditions.length; index++){
+                                let condition = conditions[index]
+                                let eventParts = condition.split(" ").map(term => term.trim())
+                                let namespace = {
+                                    ValidateUnit: "validator",
+                                    MorphFrom: "unit",
+                                    MorphTo: "unit",
+                                }[eventParts[0]]
+                                if(namespace === entity.$$namespace && eventParts[1] === oldName){
+                                    eventParts[1] = entity.id
+                                    conditions[index] = eventParts.join(" ")
+                                }
+                            }
+                            newvalue = [event, ...conditions].join(";")
+                        }
+                        else if(value.includes(",") && value.lastIndexOf(",") !==  value.indexOf(","))  {
+                            //this is a reference
+                            let [entityType, entityName, entityProperty] = value.split(",")
+                            newvalue = [entityType, entity.id, entityProperty].join(",")
+                        }
+                        else if(value.includes(",")) {
+                            //this is a abilcmd
+                            let [entityName, cmd] = value.split(",")
+                            newvalue = [entity.id, cmd].join(",")
+                        }
+                        else{
+                            //this is a link
+                            newvalue = entity.id
+                        }
+                        valueObject[valueProperty] = newvalue
                     }
                 }
             }
         }
-//        this.updateCache()
     }
-    // updateEntities(){
-    //     this.entities = [];
-    //     for(let catalog in this.catalogs){
-    //         this.entities.push(...this.catalogs[catalog])
-    //     }
-    // }
     _saveRawData(output, outputPath) {
         this._makeDirectories(outputPath)
         fs.writeFileSync(outputPath, output)
@@ -825,40 +665,16 @@ export class SCMod {
             return null;
         }
         let raw = fs.readFileSync(localeFile, {encoding: 'utf-8'})
-        return this._parseLanguagRawData(raw)
+        if (!raw) return {}
+        let data = {}
+        raw.replace(/\r/g, "").split("\n").forEach(el => {
+            let key = el.substring(0, el.indexOf("="))
+            let value = el.substring(el.indexOf("=") + 1)
+            data[key] = value
+        })
+        delete data[""]
+        return data;
     }
-    _collectDataRecoursive(Instance, path, ModName) {
-        if (!path) path = []
-        // if (path.length > 10) {
-        //     console.log(path)
-        // }
-        let result = ModName ? {$: [ModName]} : {}
-        if (Instance.$) {
-            for (let field in Instance.$) {
-                result[field] = Instance.$[field]
-                // delete Instance.$;
-            }
-        }
-        for (let field in Instance) {
-            if (field === "$") continue
-            if (!field.startsWith("?") && Instance[field].constructor === Array) {
-                if (!result[field]) result[field] = []
-                for (let Entity of Instance[field]) {
-                    let element = this._collectDataRecoursive(Entity, [...path, field], ModName)
-                    if (result[field].constructor === String) {
-                        console.log(`duplicate field value ${result.id} ${field}`)
-                        result[field] = element
-                    } else {
-                        result[field].push(element)
-                    }
-                }
-            } else {
-                result[field] = Instance[field]
-            }
-        }
-        return result
-    }
-
     makeEntity(entity){
         let classname = entity.class;
         let entityparent = entity.parent;
@@ -872,72 +688,37 @@ export class SCMod {
             return
         }
         if(!entityid){
-
-            // entitydata.$parent = entityclass
-            // entitydata.class = classname
-
-            // let entityInstance  = new SCEntity(entitydata)
-            // SCGame.classlist[classname] = entityInstance
-            //extend the class. do not create property
-            if(Object.keys(entitydata).length){
-
-                entityclass.arrayValues(entitydata)
-                // entityclass._modifyIndexArrays(entitydata,entityclass.$$schema)
-                // entityclass.arrayValues(entitydata)
-                deep(entityclass,entitydata)
-            }
+            entityclass.mixin(entitydata)
+            this.entities.push(entityclass)
+            return entityclass
         }
         else{
             let namespace = entityclass.$$namespace
-
             if(!namespace || SCGame.ignoredNamespaces.includes(namespace))return;
-
             if(!this.cache[namespace])this.cache[namespace] ={}
             if(!this.catalogs[namespace])this.catalogs[namespace] =[]
-
             let catalog = this.catalogs[namespace]
-
-
             let existed = this.cache[namespace][entityid]
             let parent = entityparent && this.cache[namespace][entityparent]
-            // if (existed && parent) {
-            //     console.info(`entity parent override: ${this.id} ${existed.parent?.id} => ${data.parent}`)
-            // }
-            entitydata.$parent =  parent || existed || null;
+
+            if(existed) {
+                if (entityparent) {
+                    Object.defineProperty(existed, '$overriden',{ configurable:true, writable: true,enumerable: false,value: true })
+                    console.log(entityid + ': overriding element parent ')
+                }
+                else{
+                    existed.mixin(entitydata)
+                    return existed
+                }
+            }
+            entitydata.$parent =  parent || null;
             entitydata.class = classname
             entitydata.$class = entityclass
-
             let entityInstance = new SCEntity(entitydata)
-
-
             this.cache[namespace][entityid] = entityInstance
-
-            if(existed){
-                //overriden instances aren`t available anymore
-                catalog.splice(catalog.indexOf(existed),1)
-                //but keep in entitie for proper saving
-                // this.entities.splice(this.entities.indexOf(existed),1)
-            }
             catalog.push(entityInstance)
             this.entities.push(entityInstance)
-
-
+            return entityInstance
         }
     }
-    static datafiles = [
-        "abil", "accumulator", "achievement", "achievementterm", "actor", "actorsupport", "alert", "armycategory", "armyunit",
-        "armyupgrade", "artifact", "artifactslot", "attachmethod", "bankcondition", "beam", "behavior", "boost", "bundle",
-        "button", "camera", "campaign", "character", "cliff", "cliffmesh", "colorstyle", "commander", "config", "consoleskin",
-        "conversation", "conversationstate", "cursor", "datacollection", "datacollectionpattern", "decalpack", "dsp", "effect",
-        "emoticon", "emoticonpack", "error", "footprint", "fow", "game", "gameui", "herd", "herdnode", "hero", "heroabil",
-        "herostat", "item", "itemclass", "itemcontainer", "kinetic", "lensflareset", "light", "location", "loot", "map",
-        "model", "mount", "mover", "objective", "physicsmaterial", "ping", "playerresponse", "portraitpack", "preload",
-        "premiummap", "racebannerpack", "race", "requirement", "requirementnode", "reverb", "reward", "scoreresult", "scorevalue",
-        "shape", "skin", "skinpack", "sound", "soundexclusivity", "soundmixsnapshot", "soundtrack", "spray", "spraypack",
-        "stimpack", "taccooldown", "tactical", "talent", "talentprofile", "targetfind", "targetsort", "terrain", "terrainobject",
-        "terraintex", "texture", "texturesheet", "tile", "trophy", "turret", "unit",
-        "upgrade","user","validator","voiceover","voicepack","warchest","warchestseason","water","weapon"
-    ]
 }
-
-

@@ -1,0 +1,4060 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CBehaviorBuff id="LegacyPrecursor">
+  <Name value="Behavior/Name/Precursor"/>
+  <Tooltip value="Behavior/Tooltip/Precursor"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="NoDraw" value="1"/>
+    <StateFlags index="Uncommandable" value="1"/>
+    <StateFlags index="Unselectable" value="1"/>
+    <StateFlags index="Untargetable" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyDeathOffCreep">
+  <Name value="Behavior/Name/DeathOffCreep"/>
+  <Tooltip value="Behavior/Tooltip/DeathOffCreep"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyNotNearCreep"/>
+  <PeriodicEffect value="Suicide"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChangelingDisguiseEx3">
+  <Name value="Behavior/Name/ChangelingDisguiseEx3"/>
+  <Tooltip value="Behavior/Tooltip/ChangelingDisguiseEx3"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Period value="0.5"/>
+  <PeriodicEffect value="LegacyChangelingDisguiseEx3Search"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyGhostHoldFire">
+  <Name value="Behavior/Name/GhostHoldFire"/>
+  <Tooltip value="Behavior/Tooltip/GhostHoldFire"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification>
+    <StateFlags index="Passive" value="1"/>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+  </Modification>
+  <Duration value="0.07"/>
+  <ExpireEffect value="LegacyGhostHoldFireB"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyGhostHoldFireB">
+  <Name value="Behavior/Name/GhostHoldFireB"/>
+  <Tooltip value="Behavior/Tooltip/GhostHoldFireB"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <RemoveValidatorArray value="LegacyCasterNotAttacking"/>
+  <Modification>
+    <StateFlags index="Passive" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyVoidRayPhase2">
+  <Name value="Behavior/Name/VoidRayPhase2"/>
+  <Tooltip value="Behavior/Tooltip/VoidRayPhase2"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender">
+    <Cost>
+      <Charge Link="Behavior/DoubleDamage"/>
+      <Cooldown Link="Behavior/DoubleDamage"/>
+    </Cost>
+  </DamageResponse>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="NotQuadDamage"/>
+  <RemoveValidatorArray value="NotVortexd"/>
+  <Duration value="5"/>
+  <Cost>
+    <Charge Link="Behavior/DoubleDamage"/>
+    <Cooldown Link="Behavior/DoubleDamage"/>
+  </Cost>
+  <Modification>
+    <DeathResponse>
+      <Cost>
+        <Charge Link="Behavior/DoubleDamage"/>
+        <Cooldown Link="Behavior/DoubleDamage"/>
+      </Cost>
+    </DeathResponse>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyVoidRayPhase3">
+  <Name value="Behavior/Name/VoidRayPhase3"/>
+  <Tooltip value="Behavior/Tooltip/VoidRayPhase3"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender">
+    <Cost>
+      <Charge Link="Behavior/QuadDamage"/>
+      <Cooldown Link="Behavior/QuadDamage"/>
+    </Cost>
+  </DamageResponse>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="5"/>
+  <RemoveValidatorArray value="LegacyNotVortexd"/>
+  <Cost>
+    <Charge Link="Behavior/QuadDamage"/>
+    <Cooldown Link="Behavior/QuadDamage"/>
+  </Cost>
+  <Modification>
+    <DeathResponse>
+      <Cost>
+        <Charge Link="Behavior/QuadDamage"/>
+        <Cooldown Link="Behavior/QuadDamage"/>
+      </Cost>
+    </DeathResponse>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyGuardianShield">
+  <Name value="Behavior/Name/GuardianShield"/>
+  <Tooltip value="Behavior/Tooltip/GuardianShield"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-shieldbattery.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" ModifyAmount="-2" Chance="1">
+    <Kind index="Spell" value="0"/>
+    <Kind index="Melee" value="0"/>
+    <Kind index="Splash" value="0"/>
+  </DamageResponse>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="0.6"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyQueenBirthUnburrow">
+  <Name value="Behavior/Name/QueenBirthUnburrow"/>
+  <Tooltip value="Behavior/Tooltip/QueenBirthUnburrow"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.8"/>
+  <Modification>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+    <AbilClassDisableArray index="CAbilMove" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySupplyDepotMorphing">
+  <Name value="Behavior/Name/SupplyDepotMorphing"/>
+  <Tooltip value="Behavior/Tooltip/SupplyDepotMorphing"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="1.35"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyUnderConstruction">
+  <Name value="Behavior/Name/UnderConstruction"/>
+  <Tooltip value="Behavior/Tooltip/UnderConstruction"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyIsConstructing"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyInfestedTerransEggTimedLife">
+  <Name value="Behavior/Name/InfestedTerransEggTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/InfestedTerransEggTimedLife"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <ExpireEffect value="LegacyInfestedTerransMorphToInfestedTerran"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyEthereal">
+  <Name value="Behavior/Name/Ethereal"/>
+  <Tooltip value="Behavior/Tooltip/Ethereal"/>
+  <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-phaseshift.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="2"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="EnableMove" value="1"/>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressRadar" value="1"/>
+    <AbilClassEnableArray index="CAbilStop" value="1"/>
+    <AbilLinkEnableArray value="LegacyWarpable"/>
+    <BehaviorClassDisableArray index="CBehaviorBuff" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorPowerSource" value="1"/>
+    <BehaviorLinkEnableArray value="LegacyEthereal"/>
+  </Modification>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyQueenSpawnLarva">
+  <Name value="Behavior/Name/QueenSpawnLarva"/>
+  <Tooltip value="Behavior/Tooltip/QueenSpawnLarva"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="0"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="1.5"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyStimpackMarauder">
+  <Name value="Behavior/Name/StimpackMarauder"/>
+  <Tooltip value="Behavior/Tooltip/StimpackMarauder"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="15"/>
+  <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySupplyDropEnRoute">
+  <Name value="Behavior/Name/SupplyDropEnRoute"/>
+  <Tooltip value="Behavior/Tooltip/SupplyDropEnRoute"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="4"/>
+  <ExpireEffect value="LegacySupplyDropApplyBehavior"/>
+  <Modification>
+    <AbilClassDisableArray index="CAbilMorph" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBroodlingFate">
+  <Name value="Behavior/Name/BroodlingFate"/>
+  <Tooltip value="Behavior/Tooltip/BroodlingFate"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-explode.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="8"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChangeling">
+  <Name value="Behavior/Name/Changeling"/>
+  <Tooltip value="Behavior/Tooltip/Changeling"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="150"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChangelingDisable">
+  <Name value="Behavior/Name/ChangelingDisable"/>
+  <Tooltip value="Behavior/Tooltip/ChangelingDisable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ClampMinimum="1" Handled="Suicide" Minimum="1"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="EnableMove" value="1"/>
+    <StateFlags index="Passive" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <AbilClassEnableArray index="CAbilStop" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyStimpack">
+  <Name value="Behavior/Name/Stimpack"/>
+  <Tooltip value="Behavior/Tooltip/Stimpack"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="15"/>
+  <Modification MoveSpeedMultiplier="1.5" AttackSpeedMultiplier="1.5"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyGhostCloak">
+  <Name value="Behavior/Name/GhostCloak"/>
+  <Tooltip value="Behavior/Tooltip/GhostCloak"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <RemoveValidatorArray value="CanSpendEnergy"/>
+  <RemoveValidatorArray value="hasEnergy"/>
+  <Modification>
+    <StateFlags index="Cloak" value="1"/>
+    <VitalRegenArray index="Energy" value="-1.4765"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBansheeCloak">
+  <Name value="Behavior/Name/BansheeCloak"/>
+  <Tooltip value="Behavior/Tooltip/BansheeCloak"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <RemoveValidatorArray value="CanSpendEnergy"/>
+  <RemoveValidatorArray value="hasEnergy"/>
+  <Modification>
+    <StateFlags index="Cloak" value="1"/>
+    <VitalRegenArray index="Energy" value="-1.4765"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyPsiStorm">
+  <Name value="Behavior/Name/PsiStorm"/>
+  <Tooltip value="Behavior/Tooltip/PsiStorm"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="0.6665"/>
+  <Period value="0.571"/>
+  <InitialEffect value="LegacyPsiStormDamageInitial"/>
+  <PeriodicEffect value="LegacyPsiStormDamage"/>
+</CBehaviorBuff>
+<CBehaviorJump id="LegacyReaperJump">
+  <Name value="Behavior/Name/ReaperJump"/>
+  <Tooltip value="Behavior/Tooltip/ReaperJump"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <TriggerHeightDeltaMin value="1.5"/>
+  <TriggerHeightDeltaMax value="4.5"/>
+  <InitiateRangeUp value="1.5"/>
+  <InitiateRangeDown value="0.5"/>
+  <JumpRangeMax value="12"/>
+  <Mover value="CliffJumper"/>
+  <MoverUp value="ReaperJumpDown"/>
+  <MoverDown value="ReaperJumpDown"/>
+  <DurationPreLaunch value="0.05"/>
+  <DurationPostLand value="0.075"/>
+  <DurationMoveOut value="0.08"/>
+  <Placeholder value="ReaperPlaceholder"/>
+  <LandAdjustmentDown value="1"/>
+  <LandArrivalRange value="0.05"/>
+  <LandCheckRadius value="5"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorJump>
+<CBehaviorPowerUser id="LegacyPowerUserQueue">
+  <Name value="Behavior/Name/PowerUserQueue"/>
+  <Tooltip value="Behavior/Tooltip/PowerUserQueue"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <PlacementMinPowerLevel value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerStageArray>
+    <Modification>
+      <ModifyFlags index="DisableAbils" value="1"/>
+      <StateFlags index="SuppressDetection" value="1"/>
+      <StateFlags index="SuppressThreat" value="1"/>
+      <AbilLinkEnableArray value="BuildInProgress"/>
+      <AbilLinkEnableArray value="Rally"/>
+      <BehaviorLinkDisableArray value="LegacyDetector11"/>
+      <SoundArray index="What" value="Protoss_PoweredDownWhatLarge"/>
+    </Modification>
+  </PowerStageArray>
+  <PowerStageArray MinPowerLevel="1"/>
+</CBehaviorPowerUser>
+<CBehaviorPowerUser id="LegacyPowerUserQueueSmall">
+  <Name value="Behavior/Name/PowerUserQueueSmall"/>
+  <Tooltip value="Behavior/Tooltip/PowerUserQueueSmall"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <PlacementMinPowerLevel value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerStageArray>
+    <Modification>
+      <ModifyFlags index="DisableAbils" value="1"/>
+      <StateFlags index="SuppressDetection" value="1"/>
+      <StateFlags index="SuppressThreat" value="1"/>
+      <AbilLinkEnableArray value="BuildInProgress"/>
+      <AbilLinkEnableArray value="Rally"/>
+      <BehaviorLinkDisableArray value="LegacyDetector11"/>
+      <SoundArray index="What" value="Protoss_PoweredDownWhatSmall"/>
+      <DeathResponse>
+        <Cost>
+          <Charge Link="Behavior/PowerUserQueueSmall"/>
+          <Cooldown Link="Behavior/PowerUserQueueSmall"/>
+        </Cost>
+      </DeathResponse>
+    </Modification>
+  </PowerStageArray>
+  <PowerStageArray MinPowerLevel="1"/>
+</CBehaviorPowerUser>
+<CBehaviorPowerUser id="LegacyPowerUserBaseDefenseSmall">
+  <Name value="Behavior/Name/PowerUserBaseDefenseSmall"/>
+  <Tooltip value="Behavior/Tooltip/PowerUserBaseDefenseSmall"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <PlacementMinPowerLevel value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerStageArray>
+    <Modification>
+      <ModifyFlags index="DisableAbils" value="1"/>
+      <StateFlags index="SuppressDetection" value="1"/>
+      <StateFlags index="SuppressThreat" value="1"/>
+      <AbilLinkEnableArray value="BuildInProgress"/>
+      <AbilLinkEnableArray value="Rally"/>
+      <BehaviorLinkDisableArray value="LegacyDetector11"/>
+      <SoundArray index="What" value="Protoss_PoweredDownWhatSmall"/>
+      <DeathResponse>
+        <Cost>
+          <Charge Link="Behavior/PowerUserBaseDefenseSmall"/>
+          <Cooldown Link="Behavior/PowerUserBaseDefenseSmall"/>
+        </Cost>
+      </DeathResponse>
+    </Modification>
+  </PowerStageArray>
+  <PowerStageArray MinPowerLevel="1"/>
+</CBehaviorPowerUser>
+<CBehaviorWander id="LegacyLarvaWander">
+  <Name value="Behavior/Name/LarvaWander"/>
+  <Tooltip value="Behavior/Tooltip/LarvaWander"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <TimeLimitFactor value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Leash value="1"/>
+  <Range value="0.6"/>
+  <Delay value="2"/>
+</CBehaviorWander>
+<CBehaviorSpawn id="LegacySpawnLarva">
+  <Name value="Behavior/Name/SpawnLarva"/>
+  <Tooltip value="Behavior/Tooltip/SpawnLarva"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <Range value="1"/>
+  <InfoArray Unit="LegacyLarva" MaxCount="3" Delay="15"/>
+  <InfoArray Unit="LegacyLarva" MaxCount="19" Requirements="LegacyHatcherySpawnMutantLarva" Delay="0.25" Effect="LegacyLarvaRelease"/>
+  <Slop value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Center value="0,-3"/>
+  <Offset value="0,-3"/>
+  <Offset value="1,-3"/>
+  <Offset value="2,-3"/>
+  <Offset value="3,-3"/>
+  <Offset value="3,-2"/>
+  <Offset value="3,-1"/>
+  <Offset value="3,0"/>
+  <Offset value="3,1"/>
+  <Offset value="3,2"/>
+  <Offset value="3,3"/>
+  <Offset value="2,3"/>
+  <Offset value="1,3"/>
+  <Offset value="0,3"/>
+  <Offset value="-1,3"/>
+  <Offset value="-2,3"/>
+  <Offset value="-3,3"/>
+  <Offset value="-3,2"/>
+  <Offset value="-3,1"/>
+  <Offset value="-3,0"/>
+  <Offset value="-3,-1"/>
+  <Offset value="-3,-2"/>
+  <Offset value="-3,-3"/>
+  <Offset value="-2,-3"/>
+  <Offset value="-1,-3"/>
+  <Limit value="19"/>
+  <ConjoinedLink value="SpawnLarvaConjoined"/>
+</CBehaviorSpawn>
+<CBehaviorConjoined id="LegacySpawnLarvaConjoined">
+  <Name value="Behavior/Name/SpawnLarvaConjoined"/>
+  <Tooltip value="Behavior/Tooltip/SpawnLarvaConjoined"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <ConjoinedFlags index="ShareLife" value="0"/>
+  <ConjoinedFlags index="ShareAcquire" value="0"/>
+  <ConjoinedFlags index="ShareSelect" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorConjoined>
+<CBehaviorBuff id="LegacyReactorQueue">
+  <Name value="Behavior/Name/ReactorQueue"/>
+  <Tooltip value="Behavior/Tooltip/ReactorQueue"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Requirements value="LegacyHaveAttachedNuclearReactor"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification QueueCount="1" QueueSize="3"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBunkerWeaponRangeBonus">
+  <Name value="Behavior/Name/BunkerWeaponRangeBonus"/>
+  <Tooltip value="Behavior/Tooltip/BunkerWeaponRangeBonus"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification WeaponRange="1">
+    <AbilLinkEnableArray value="Stimpack"/>
+    <AbilLinkEnableArray value="heal"/>
+    <AbilLinkEnableArray value="stop"/>
+    <AbilLinkEnableArray value="HoldFire"/>
+    <WeaponDisableArray value="LegacyFusionCutter"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBarracksReactor">
+  <Name value="Behavior/Name/BarracksReactor"/>
+  <Tooltip value="Behavior/Tooltip/BarracksReactor"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyFactoryReactor">
+  <Name value="Behavior/Name/FactoryReactor"/>
+  <Tooltip value="Behavior/Tooltip/FactoryReactor"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyStarportReactor">
+  <Name value="Behavior/Name/StarportReactor"/>
+  <Tooltip value="Behavior/Tooltip/StarportReactor"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBarracksTechLab">
+  <Name value="Behavior/Name/BarracksTechLab"/>
+  <Tooltip value="Behavior/Tooltip/BarracksTechLab"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyFactoryTechLab">
+  <Name value="Behavior/Name/FactoryTechLab"/>
+  <Tooltip value="Behavior/Tooltip/FactoryTechLab"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyStarportTechLab">
+  <Name value="Behavior/Name/StarportTechLab"/>
+  <Tooltip value="Behavior/Tooltip/StarportTechLab"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySensorTowerRadar">
+  <Name value="Behavior/Name/SensorTowerRadar"/>
+  <Tooltip value="Behavior/Tooltip/SensorTowerRadar"/>
+  <InfoIcon value="Assets\Textures\btn-status-radar.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification Radar="30" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBanelingExplode">
+  <Name value="Behavior/Name/BanelingExplode"/>
+  <Tooltip value="Behavior/Tooltip/BanelingExplode"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <DeathResponse Chance="1" Effect="LegacyVolatileBurst"/>
+  </Modification>
+  <AINotifyEffect value="LegacyVolatileBurstU"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyDetector11">
+  <Name value="Behavior/Name/Detector11"/>
+  <Tooltip value="Behavior/Tooltip/Detector11"/>
+  <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification DetectFilters="-;Missile" Detect="11"/>
+  <BehaviorCategories index="User14" value="1"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySalvageShared">
+  <Name value="Behavior/Name/SalvageShared"/>
+  <Tooltip value="Behavior/Tooltip/SalvageShared"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="5"/>
+  <ExpireEffect value="LegacySalvageShared"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressRadar" value="1"/>
+    <AbilLinkEnableArray value="SalvageShared"/>
+    <AbilLinkEnableArray value="SalvageSharedRefund"/>
+    <BehaviorLinkDisableArray value="LegacySensorTowerRadar"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOnCreep">
+  <Name value="Behavior/Name/OnCreep"/>
+  <Tooltip value="Behavior/Tooltip/OnCreep"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyOnCreep"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyZergBuildingDies6">
+  <Name value="Behavior/Name/ZergBuildingDies6"/>
+  <Tooltip value="Behavior/Tooltip/ZergBuildingDies6"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <DeathResponse Chance="1" Effect="LegacyZergBuildingSpawnBroodling6Delay"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyZergBuildingDies9">
+  <Name value="Behavior/Name/ZergBuildingDies9"/>
+  <Tooltip value="Behavior/Tooltip/ZergBuildingDies9"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <DeathResponse Chance="1" Effect="LegacyZergBuildingSpawnBroodling9Delay"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHallucination">
+  <Name value="Behavior/Name/Hallucination"/>
+  <Tooltip value="Behavior/Tooltip/Hallucination"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ModifyFraction="2"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification LifeArmorMultiplier="0" ShieldArmorMultiplier="0" SubgroupPriority="-100">
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="EnableAttack" value="1"/>
+    <ModifyFlags index="EnableMove" value="1"/>
+    <ModifyFlags index="HideChangeUI" value="1"/>
+    <StateFlags index="Hallucination" value="1"/>
+    <StateFlags index="SuppressCombat" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressRadar" value="1"/>
+    <DamageDealtMaximum index="Spell" value="0"/>
+    <DamageDealtMaximum index="Melee" value="0"/>
+    <DamageDealtMaximum index="Ranged" value="0"/>
+    <DamageDealtMaximum index="Splash" value="0"/>
+    <AbilClassEnableArray index="CAbilMorph" value="1"/>
+    <AbilClassEnableArray index="CAbilMorphPlacement" value="1"/>
+    <AbilClassEnableArray index="CAbilStop" value="1"/>
+    <AbilLinkDisableArray value="MorphZerglingToBaneling"/>
+    <AbilLinkDisableArray value="DevourerAspect"/>
+    <AbilLinkDisableArray value="MorphToBroodLord"/>
+    <AbilLinkDisableArray value="LurkerAspect"/>
+    <AbilLinkDisableArray value="MorphToOverseer"/>
+    <AbilLinkDisableArray value="MorphQueen2"/>
+    <AbilLinkDisableArray value="MorphQueen3"/>
+    <AbilLinkDisableArray value="ThorCrippled"/>
+    <AbilLinkDisableArray value="ThorUncrippled"/>
+    <AbilLinkDisableArray value="PhasingMode"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTerranBuildingBurnDown">
+  <Name value="Behavior/Name/TerranBuildingBurnDown"/>
+  <Tooltip value="Behavior/Tooltip/TerranBuildingBurnDown"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyBurnDownFire"/>
+  <Period value="0.3332"/>
+  <PeriodicEffect value="LegacyBurndownDamage"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBroodlingAttackDelay">
+  <Name value="Behavior/Name/BroodlingAttackDelay"/>
+  <Tooltip value="Behavior/Tooltip/BroodlingAttackDelay"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.5"/>
+  <Modification>
+    <AbilLinkDisableArray value="Legacyattack"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyWarpInEffect">
+  <Name value="Behavior/Name/WarpInEffect"/>
+  <Tooltip value="Behavior/Tooltip/WarpInEffect"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="2"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyWarpInEffect15">
+  <Name value="Behavior/Name/WarpInEffect15"/>
+  <Tooltip value="Behavior/Tooltip/WarpInEffect15"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="1.5"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyFrenzy">
+  <Name value="Behavior/Name/Frenzy"/>
+  <Tooltip value="Behavior/Tooltip/Frenzy"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-creepmove.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCCTransportDummy">
+  <Name value="Behavior/Name/CCTransportDummy"/>
+  <Tooltip value="Behavior/Tooltip/CCTransportDummy"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyContaminated">
+  <Name value="Behavior/Name/Contaminated"/>
+  <Tooltip value="Behavior/Tooltip/Contaminated"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-fungalgrowth.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Alignment value="Negative"/>
+  <Modification>
+    <AbilClassDisableArray index="CAbilQueue" value="1"/>
+    <AbilClassDisableArray index="CAbilResearch" value="1"/>
+    <AbilClassDisableArray index="CAbilTrain" value="1"/>
+    <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
+    <BehaviorLinkDisableArray value="SpawnLarva"/>
+    <BehaviorLinkDisableArray value="QueenSpawnLarvaTimer"/>
+  </Modification>
+  <Duration value="30"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMineDroneCountdown">
+  <Name value="Behavior/Name/MineDroneCountdown"/>
+  <Tooltip value="Behavior/Tooltip/MineDroneCountdown"/>
+  <InfoIcon value="Assets\Textures\btn-unit-terran-widowmine.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Duration value="10"/>
+  <Period value="5.1"/>
+  <InitialEffect value="LegacyMineDroneCountdownDamageDummy"/>
+  <PeriodicEffect value="LegacyMineDroneCountdownDamageDummy"/>
+  <ExpireEffect value="LegacyMineDroneExplodeSet"/>
+  <Modification>
+    <ModifyFlags index="Reveal" value="1"/>
+    <ModifyFlags index="Detected" value="1"/>
+    <ModifyFlags index="ShareSight" value="1"/>
+    <AbilLinkDisableArray value="ZergBuild"/>
+    <AbilLinkDisableArray value="MorphZerglingToBaneling"/>
+    <AbilLinkDisableArray value="MorphToOverseer"/>
+    <AbilLinkDisableArray value="MorphToBroodLord"/>
+    <AbilLinkDisableArray value="ArchonWarp"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMothershipCoreEnergizeVisual">
+  <Name value="Behavior/Name/MothershipCoreEnergizeVisual"/>
+  <Tooltip value="Behavior/Tooltip/MothershipCoreEnergizeVisual"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNydusDestroyerInvulnerability">
+  <Name value="Behavior/Name/NydusDestroyerInvulnerability"/>
+  <Tooltip value="Behavior/Tooltip/NydusDestroyerInvulnerability"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyIsConstructing"/>
+  <Duration value="15"/>
+  <Modification>
+    <StateFlags index="Invulnerable" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNexusInvulnerability">
+  <Name value="Behavior/Name/NexusInvulnerability"/>
+  <Tooltip value="Behavior/Tooltip/NexusInvulnerability"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="20"/>
+  <Modification>
+    <StateFlags index="Invulnerable" value="1"/>
+  </Modification>
+  <Alignment value="Positive"/>
+  <DisplayDuration index="Self" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleCloakField">
+  <Name value="Behavior/Name/OracleCloakField"/>
+  <Tooltip value="Behavior/Tooltip/OracleCloakField"/>
+  <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Period value="0.2"/>
+  <Duration value="60"/>
+  <PeriodicEffect value="LegacyOracleCloakingFieldSearchSet"/>
+  <Alignment value="Positive"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisableValidatorArray value="LegacyNotStasis"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleCloakFieldEffect">
+  <Name value="Behavior/Name/OracleCloakFieldEffect"/>
+  <Tooltip value="Behavior/Tooltip/OracleCloakFieldEffect"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="0.5417"/>
+  <Modification>
+    <StateFlags index="Cloak" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleNoCloak">
+  <Name value="Behavior/Name/OracleNoCloak"/>
+  <Tooltip value="Behavior/Tooltip/OracleNoCloak"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <StateFlags index="SuppressCloak" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyViperConsumeStructure">
+  <Name value="Behavior/Name/ViperConsumeStructure"/>
+  <Tooltip value="Behavior/Tooltip/ViperConsumeStructure"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-corruption-color.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="100"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySupplyDrop">
+  <Name value="Behavior/Name/SupplyDrop"/>
+  <Tooltip value="Behavior/Tooltip/SupplyDrop"/>
+  <InfoIcon value="Assets\Textures\BTN-Building-Terran-SupplyDepot.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Modification Food="8"/>
+  <DisableValidatorArray value="LegacyNotBuildingStasis"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHellionTankReady">
+  <Name value="Behavior/Name/HellionTankReady"/>
+  <Tooltip value="Behavior/Tooltip/HellionTankReady"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="4"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLocustMPStun">
+  <Name value="Behavior/Name/LocustMPStun"/>
+  <Tooltip value="Behavior/Tooltip/LocustMPStun"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <FinalEffect value="LegacyLocustMPReady"/>
+  <Duration value="2"/>
+  <Modification>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Stun" value="1"/>
+    <StateFlags index="Unselectable" value="1"/>
+    <StateFlags index="Untargetable" value="1"/>
+  </Modification>
+  <BehaviorCategories index="Stun" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCorruptorGroundAttackDebuff">
+  <Name value="Behavior/Name/CorruptorGroundAttackDebuff"/>
+  <Tooltip value="Behavior/Tooltip/CorruptorGroundAttackDebuff"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ModifyAmount="1"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.6665"/>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBuildingStasis">
+  <Name value="Behavior/Name/BuildingStasis"/>
+  <Tooltip value="Behavior/Tooltip/BuildingStasis"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift2.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="45"/>
+  <Modification>
+    <StateFlags index="Stasis" value="1"/>
+    <StateFlags index="Stun" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressFoodMade" value="1"/>
+    <StateFlags index="SuppressRadar" value="1"/>
+    <StateFlags index="SuppressTech" value="1"/>
+    <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorPowerSource" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
+    <BehaviorLinkDisableArray value="SalvageBunker"/>
+    <BehaviorLinkDisableArray value="SalvageShared"/>
+    <BehaviorLinkDisableArray value="SensorTowerRadar"/>
+  </Modification>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyResourceBlocker">
+  <Name value="Behavior/Name/ResourceBlocker"/>
+  <Tooltip value="Behavior/Tooltip/ResourceBlocker"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="60"/>
+  <FinalEffect value="LegacyResourceStunFinalSet"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyResourceStun">
+  <Name value="Behavior/Name/ResourceStun"/>
+  <Tooltip value="Behavior/Tooltip/ResourceStun"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InitialEffect value="LegacyResourceStunCreateUnit"/>
+  <Modification>
+    <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
+  </Modification>
+  <BehaviorCategories index="Stun" value="1"/>
+</CBehaviorBuff>
+<CBehaviorPowerSource id="LegacyPowerSource">
+  <Name value="Behavior/Name/PowerSource"/>
+  <Tooltip value="Behavior/Tooltip/PowerSource"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <CliffLevelFlags index="Lower" value="1"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="0"/>
+  <Radius value="6.5"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorPowerSource>
+<CBehaviorBuff id="LegacyForceFieldFate">
+  <Name value="Behavior/Name/ForceFieldFate"/>
+  <Tooltip value="Behavior/Tooltip/ForceFieldFate"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="0"/>
+  <DisplayDuration index="Ally" value="0"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="15"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTrainInfestedTerran">
+  <Name value="Behavior/Name/TrainInfestedTerran"/>
+  <Tooltip value="Behavior/Tooltip/TrainInfestedTerran"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCorruption">
+  <Name value="Behavior/Name/Corruption"/>
+  <Tooltip value="Behavior/Tooltip/Corruption"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-corruption.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ModifyFraction="1.2"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="30"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="0"/>
+    <ModifyFlags index="EnableAttack" value="0"/>
+    <ModifyFlags index="EnableMove" value="0"/>
+    <ModifyFlags index="SuppressMoving" value="0"/>
+    <ModifyFlags index="SuppressTurning" value="0"/>
+    <StateFlags index="SuppressAttack" value="0"/>
+    <StateFlags index="SuppressCloak" value="0"/>
+    <StateFlags index="SuppressDetection" value="0"/>
+    <StateFlags index="SuppressRadar" value="0"/>
+    <BehaviorClassDisableArray index="CBehaviorSpawn" value="0"/>
+    <BehaviorLinkDisableArray value=""/>
+  </Modification>
+  <DisplayDuration index="Self" value="0"/>
+  <DisplayDuration index="Ally" value="0"/>
+  <DisplayDuration index="Enemy" value="0"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySurfaceForSpellCast">
+  <Name value="Behavior/Name/SurfaceForSpellCast"/>
+  <Tooltip value="Behavior/Tooltip/SurfaceForSpellCast"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="1.5"/>
+  <Modification>
+    <ModifyFlags index="Reveal" value="1"/>
+    <ModifyFlags index="Detected" value="1"/>
+    <ModifyFlags index="SuppressMoving" value="0"/>
+    <ModifyFlags index="SuppressTurning" value="0"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <AbilLinkDisableArray value="LegacyBurrowInfestorUp"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyZergBuildingNotOnCreep">
+  <Name value="Behavior/Name/ZergBuildingNotOnCreep"/>
+  <Tooltip value="Behavior/Tooltip/ZergBuildingNotOnCreep"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Requirements value="LegacyNotOnCreep"/>
+  <Period value="0.3332"/>
+  <PeriodicEffect value="LegacyZergBuildingNotOnCreepDamage"/>
+  <DisableValidatorArray value="LegacyNotHiddenSelf"/>
+</CBehaviorBuff>
+<CBehaviorCreepSource id="LegacyMakeCreepNydusAttacker">
+  <Name value="Behavior/Name/MakeCreepNydusAttacker"/>
+  <Tooltip value="Behavior/Tooltip/MakeCreepNydusAttacker"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Period value="0.8332"/>
+  <Start value="CreepGrowthNydusAttackerStart"/>
+  <Birth value="CreepGrowthNydusAttackerStart"/>
+  <Grown value="CreepGrowthNydusAttacker"/>
+</CBehaviorCreepSource>
+<CBehaviorBuff id="LegacyMothershipCoreWeapon">
+  <Name value="Behavior/Name/MothershipCoreWeapon"/>
+  <Tooltip value="Behavior/Tooltip/MothershipCoreWeapon"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="25"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNexusDeath">
+  <Name value="Behavior/Name/NexusDeath"/>
+  <Tooltip value="Behavior/Tooltip/NexusDeath"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <FinalEffect value="LegacyNexusDeathSearch"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMothershipResetEnergy">
+  <Name value="Behavior/Name/MothershipResetEnergy"/>
+  <Tooltip value="Behavior/Tooltip/MothershipResetEnergy"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.0625"/>
+  <InitialEffect value="LegacyResetEnergySet"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMothershipCorePurifyNexus">
+  <Name value="Behavior/Name/MothershipCorePurifyNexus"/>
+  <Tooltip value="Behavior/Tooltip/MothershipCorePurifyNexus"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <StateFlags index="SuppressEnergyRegen" value="1"/>
+    <AbilLinkDisableArray value="move"/>
+    <AbilLinkDisableArray value="MothershipCorePurifyNexus"/>
+    <AbilLinkDisableArray value="MorphToMothership"/>
+    <AbilLinkDisableArray value="MothershipCoreEnergize"/>
+    <AbilLinkDisableArray value="MothershipCoreMassRecall"/>
+    <AbilLinkDisableArray value="MothershipCoreWeapon"/>
+    <WeaponEnableArray value="LegacyMothershipCoreWeapon"/>
+    <WeaponDisableArray value="LegacyRepulsorCannon"/>
+  </Modification>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyWidowMineArmed">
+  <Name value="Behavior/Name/WidowMineArmed"/>
+  <Tooltip value="Behavior/Tooltip/WidowMineArmed"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBurrowChargingRevD">
+  <Name value="Behavior/Name/BurrowChargingRevD"/>
+  <Tooltip value="Behavior/Tooltip/BurrowChargingRevD"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification MoveSpeedBonus="5.0468">
+    <ModifyFlags index="OrdersUninterruptible" value="1"/>
+    <StateFlags index="Bury" value="1"/>
+    <StateFlags index="Cloak" value="1"/>
+    <StateFlags index="SuppressCollision" value="1"/>
+    <WeaponDisableArray value="LegacyKaiserBlades"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyFungalGrowth">
+  <Name value="Behavior/Name/FungalGrowth"/>
+  <Tooltip value="Behavior/Tooltip/FungalGrowth"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-fungalgrowth.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Modification>
+    <StateFlags index="SuppressCloak" value="1"/>
+  </Modification>
+  <Duration value="4"/>
+  <Period value="0.25"/>
+  <PeriodicEffect value="LegacyFungalGrowthDamage"/>
+  <RemoveValidatorArray value="NoPurificationNova"/>
+  <RemoveValidatorArray value="NotOracleStasisTrapped"/>
+  <DisableValidatorArray value="LegacyBattlecruiserNotJumping"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyGravitonBeam">
+  <Name value="Behavior/Name/GravitonBeam"/>
+  <Tooltip value="Behavior/Tooltip/GravitonBeam"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-gravitonbeam.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="0.5"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Stun" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="SuppressCollision" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressPassenger" value="1"/>
+    <StateFlags index="SuppressRadar" value="1"/>
+    <StateFlags index="Uncommandable" value="1"/>
+    <AbilLinkEnableArray value="TerranBuild"/>
+    <AbilLinkEnableArray value="MorphToSwarmHostMP"/>
+    <AbilLinkEnableArray value="WidowMineUnburrow"/>
+    <AbilLinkEnableArray value="BurrowLurkerMPUp"/>
+    <BehaviorClassDisableArray index="CBehaviorCreepSource" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorPowerSource" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorResource" value="1"/>
+    <BehaviorClassDisableArray index="CBehaviorSpawn" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMothershipCoreRecalling">
+  <Name value="Behavior/Name/MothershipCoreRecalling"/>
+  <Tooltip value="Behavior/Tooltip/MothershipCoreRecalling"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="2"/>
+  <ExpireEffect value="LegacyMothershipCoreMassRecallSet"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressPassenger" value="1"/>
+    <StateFlags index="Uncommandable" value="1"/>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+    <AbilClassDisableArray index="CAbilMove" value="1"/>
+    <AbilLinkEnableArray value="BansheeCloak"/>
+    <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+    <AbilLinkEnableArray value="GhostCloak"/>
+    <AbilLinkEnableArray value="LiberatorMorphtoAG"/>
+    <AbilLinkEnableArray value="LiberatorMorphtoAA"/>
+    <AbilLinkEnableArray value="LiberatorAATarget"/>
+  </Modification>
+  <RemoveValidatorArray value="LegacyCasterNotDead"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyReleaseInterceptorsTimedLifeWarning">
+  <Name value="Behavior/Name/ReleaseInterceptorsTimedLifeWarning"/>
+  <Tooltip value="Behavior/Tooltip/ReleaseInterceptorsTimedLifeWarning"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="50"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyAdeptPhaseShiftCaster">
+  <Name value="Behavior/Name/AdeptPhaseShiftCaster"/>
+  <Tooltip value="Behavior/Tooltip/AdeptPhaseShiftCaster"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <DisableValidatorArray value="NotBeingAbducted"/>
+  <DisableValidatorArray value="KD8CasterKnockingBack"/>
+  <Duration value="10.0625"/>
+  <Modification>
+    <StateFlags index="SuppressPassenger" value="1"/>
+  </Modification>
+  <FinalEffect value="LegacyAdeptPhaseShiftCancel"/>
+  <ExpireEffect value="LegacyAdeptPhaseShiftCancel"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyPurificationNovaCooldownVisual">
+  <Name value="Behavior/Name/PurificationNovaCooldownVisual"/>
+  <Tooltip value="Behavior/Tooltip/PurificationNovaCooldownVisual"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="28"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHyperjumpTeleport">
+  <Name value="Behavior/Name/HyperjumpTeleport"/>
+  <Tooltip value="Behavior/Tooltip/HyperjumpTeleport"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="4.8"/>
+  <Modification>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Stasis" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="Untargetable" value="1"/>
+  </Modification>
+  <ExpireEffect value="LegacyHyperjumpTeleportInAB"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHyperjumpTeleportIn">
+  <Name value="Behavior/Name/HyperjumpTeleportIn"/>
+  <Tooltip value="Behavior/Tooltip/HyperjumpTeleportIn"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.6"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Stasis" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="Untargetable" value="1"/>
+  </Modification>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLightofAiur">
+  <Name value="Behavior/Name/LightofAiur"/>
+  <Tooltip value="Behavior/Tooltip/LightofAiur"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-envision.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="60"/>
+  <Modification Detect="14">
+    <StateFlags index="Detector" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCycloneWeaponLaunchMissileAlternate">
+  <Name value="Behavior/Name/CycloneWeaponLaunchMissileAlternate"/>
+  <Tooltip value="Behavior/Tooltip/CycloneWeaponLaunchMissileAlternate"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLockOn">
+  <Name value="Behavior/Name/LockOn"/>
+  <Tooltip value="Behavior/Tooltip/LockOn"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="65535"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" Fatal="1" Handled="LockOnTurretClear"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <MaxStackCountPerCaster value="1"/>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMothershipRecalling">
+  <Name value="Behavior/Name/MothershipRecalling"/>
+  <Tooltip value="Behavior/Tooltip/MothershipRecalling"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="2"/>
+  <ExpireEffect value="LegacyMothershipMassRecallSet"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressPassenger" value="1"/>
+    <StateFlags index="Uncommandable" value="1"/>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+    <AbilClassDisableArray index="CAbilMove" value="1"/>
+    <AbilLinkEnableArray value="VolatileBurstBuilding"/>
+    <AbilLinkEnableArray value="GhostCloak"/>
+    <AbilLinkEnableArray value="BansheeCloak"/>
+    <AbilLinkEnableArray value="LiberatorMorphtoAG"/>
+    <AbilLinkEnableArray value="LiberatorMorphtoAA"/>
+    <AbilLinkEnableArray value="LiberatorAATarget"/>
+  </Modification>
+  <RemoveValidatorArray value="LegacyCasterNotDead"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySeekerMissileTimeout">
+  <Name value="Behavior/Name/SeekerMissileTimeout"/>
+  <Tooltip value="Behavior/Tooltip/SeekerMissileTimeout"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="5"/>
+  <ExpireEffect value=""/>
+  <RemoveValidatorArray value="LegacyNotInLastMotionPhase"/>
+  <Modification MoveSpeedMaximum="0"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyVolatileBurstBuilding">
+  <Name value="Behavior/Name/VolatileBurstBuilding"/>
+  <Tooltip value="Behavior/Tooltip/VolatileBurstBuilding"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <WeaponEnableArray value="LegacyVolatileBurstBuilding"/>
+    <WeaponDisableArray value="LegacyVolatileBurst"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNydusDetect">
+  <Name value="Behavior/Name/NydusDetect"/>
+  <Tooltip value="Behavior/Tooltip/NydusDetect"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <FinalEffect value="LegacyNydusDetect"/>
+  <RemoveValidatorArray value="LegacyIsConstructing"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleStasisTrapCloak">
+  <Name value="Behavior/Name/OracleStasisTrapCloak"/>
+  <Tooltip value="Behavior/Tooltip/OracleStasisTrapCloak"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyIsNotConstructing"/>
+  <Modification>
+    <StateFlags index="Cloak" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleStasisTrapTarget">
+  <Name value="Behavior/Name/OracleStasisTrapTarget"/>
+  <Tooltip value="Behavior/Tooltip/OracleStasisTrapTarget"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-stasistrap.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="30"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Stasis" value="1"/>
+    <StateFlags index="Stun" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="SuppressDetection" value="1"/>
+    <StateFlags index="SuppressPassenger" value="1"/>
+    <StateFlags index="SuppressLifeRegen" value="1"/>
+    <StateFlags index="SuppressShieldsRegen" value="1"/>
+    <StateFlags index="SuppressEnergyRegen" value="1"/>
+    <AbilLinkEnableArray value="move"/>
+    <AbilLinkEnableArray value="stop"/>
+    <RateMultiplierArray index="Cooldown" value="0.001"/>
+  </Modification>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySelfRepair">
+  <Name value="Behavior/Name/SelfRepair"/>
+  <Tooltip value="Behavior/Tooltip/SelfRepair"/>
+  <InfoIcon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="Channeled" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <RemoveValidatorArray value="LegacyThorLifeNotFull"/>
+  <Duration value="20.0625"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <VitalRegenArray index="Life" value="20"/>
+    <BehaviorLinkDisableArray value="LegacySelfRepairEnd"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySelfRepairEnd">
+  <Name value="Behavior/Name/SelfRepairEnd"/>
+  <Tooltip value="Behavior/Tooltip/SelfRepairEnd"/>
+  <InfoIcon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="1"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Stun" value="1"/>
+  </Modification>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyAdeptPhaseShiftCancelDummy">
+  <Name value="Behavior/Name/AdeptPhaseShiftCancelDummy"/>
+  <Tooltip value="Behavior/Tooltip/AdeptPhaseShiftCancelDummy"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.125"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLurkerHoldFire">
+  <Name value="Behavior/Name/LurkerHoldFire"/>
+  <Tooltip value="Behavior/Tooltip/LurkerHoldFire"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.07"/>
+  <ExpireEffect value="LegacyLurkerHoldFireB"/>
+  <Modification>
+    <StateFlags index="Passive" value="1"/>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLurkerHoldFireB">
+  <Name value="Behavior/Name/LurkerHoldFireB"/>
+  <Tooltip value="Behavior/Tooltip/LurkerHoldFireB"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <RemoveValidatorArray value="LegacyCasterNotAttacking"/>
+  <Modification>
+    <StateFlags index="Passive" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLiberatorTargetMorphAGAttackable">
+  <Name value="Behavior/Name/LiberatorTargetMorphAGAttackable"/>
+  <Tooltip value="Behavior/Tooltip/LiberatorTargetMorphAGAttackable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="65535"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <MaxStackCountPerCaster value="1"/>
+  <Duration value="0.3125"/>
+</CBehaviorBuff>
+<CBehaviorPowerSource id="LegacyPowerSourceFast">
+  <Name value="Behavior/Name/PowerSourceFast"/>
+  <Tooltip value="Behavior/Tooltip/PowerSourceFast"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <CliffLevelFlags index="Lower" value="1"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="0"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerLevel value="2"/>
+  <Radius value="6.5"/>
+</CBehaviorPowerSource>
+<CBehaviorPowerSource id="LegacyFastEnablerPowerSource">
+  <Name value="Behavior/Name/FastEnablerPowerSource"/>
+  <Tooltip value="Behavior/Tooltip/FastEnablerPowerSource"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="FastEnablerPowerSource"/>
+  <CliffLevelFlags index="Lower" value="0"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Radius value="6.5"/>
+  <PowerLevel value="2"/>
+</CBehaviorPowerSource>
+<CBehaviorPowerUser id="LegacyFastEnablerPowerUser">
+  <Name value="Behavior/Name/FastEnablerPowerUser"/>
+  <Tooltip value="Behavior/Tooltip/FastEnablerPowerUser"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <PowerLink value="FastEnablerPowerSource"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerStageArray>
+    <Modification>
+      <BehaviorLinkDisableArray value="LegacyPowerSourceFast"/>
+    </Modification>
+  </PowerStageArray>
+  <PowerStageArray MinPowerLevel="2">
+    <Modification>
+      <BehaviorLinkEnableArray value="LegacyPowerSourceFast"/>
+      <BehaviorLinkDisableArray value="LegacyPowerSource"/>
+    </Modification>
+  </PowerStageArray>
+  <Flags index="HideUnpoweredText" value="1"/>
+</CBehaviorPowerUser>
+<CBehaviorBuff id="LegacyPurificationNovaTargettedCaster">
+  <Name value="Behavior/Name/PurificationNovaTargettedCaster"/>
+  <Tooltip value="Behavior/Tooltip/PurificationNovaTargettedCaster"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-arcshield.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="3"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification MoveSpeedBonus="-2.2382"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyAddonIsWorking">
+  <Name value="Behavior/Name/AddonIsWorking"/>
+  <Tooltip value="Behavior/Tooltip/AddonIsWorking"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyCasterCanCancelQueue5Addon"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBatteryEnergy">
+  <Name value="Behavior/Name/BatteryEnergy"/>
+  <Tooltip value="Behavior/Tooltip/BatteryEnergy"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.01"/>
+  <ExpireEffect value="LegacyBatteryAddEnergy"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyDarkTemplarBlinkAttackDelay">
+  <Name value="Behavior/Name/DarkTemplarBlinkAttackDelay"/>
+  <Tooltip value="Behavior/Tooltip/DarkTemplarBlinkAttackDelay"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="1.05"/>
+  <Modification>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <AbilCategoriesEnable index="Passive" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorCreepSource id="LegacyNydusCreepGrowth">
+  <Name value="Behavior/Name/NydusCreepGrowth"/>
+  <Tooltip value="Behavior/Tooltip/NydusCreepGrowth"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <Period value="0.63"/>
+  <Start value="Footprint4x4CreepSourceGrown"/>
+  <Birth value="CreepGrowthMediumNydusCreepSourceStart"/>
+  <Grown value="Footprint4x4CreepSourceGrown"/>
+</CBehaviorCreepSource>
+<CBehaviorBuff id="LegacyQueenMustBeOnCreep">
+  <Name value="Behavior/Name/QueenMustBeOnCreep"/>
+  <Tooltip value="Behavior/Tooltip/QueenMustBeOnCreep"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyOnCreep"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyAutoTurretTimedLife">
+  <Name value="Behavior/Name/AutoTurretTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/AutoTurretTimedLife"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="14"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCharging">
+  <Name value="Behavior/Name/Charging"/>
+  <Tooltip value="Behavior/Tooltip/Charging"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-charge.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="Channeling" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="3.5"/>
+  <Modification MoveSpeedMultiplier="2.2"/>
+  <Alignment value="Positive"/>
+  <RemoveValidatorArray value="LegacyChargeTargetAttacked"/>
+  <InitialEffect value="LegacyChargeCheckApplyBuff"/>
+  <FinalEffect value="LegacyChargingPrimaryDamageSet"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyCommandCenterKnockbackBehavior">
+  <Name value="Behavior/Name/CommandCenterKnockbackBehavior"/>
+  <Tooltip value="Behavior/Tooltip/CommandCenterKnockbackBehavior"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Period value="0.25"/>
+  <PeriodicEffect value="LegacyCommandCenterKnockbackSE"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHyperjumpTeleportOut">
+  <Name value="Behavior/Name/HyperjumpTeleportOut"/>
+  <Tooltip value="Behavior/Tooltip/HyperjumpTeleportOut"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.6"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Stasis" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <StateFlags index="Untargetable" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+  </Modification>
+  <ExpireEffect value="LegacyHyperjumpTeleportSet"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyHyperjumpInitialDelaySuppressWeapon">
+  <Name value="Behavior/Name/HyperjumpInitialDelaySuppressWeapon"/>
+  <Tooltip value="Behavior/Tooltip/HyperjumpInitialDelaySuppressWeapon"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <ModifyFlags index="SuppressTurning" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLarvaPauseWander">
+  <Name value="Behavior/Name/LarvaPauseWander"/>
+  <Tooltip value="Behavior/Tooltip/LarvaPauseWander"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyLarvaNotConjoined"/>
+  <Modification MoveSpeedMaximum="0"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLiberatorInitialMovable">
+  <Name value="Behavior/Name/LiberatorInitialMovable"/>
+  <Tooltip value="Behavior/Tooltip/LiberatorInitialMovable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="3.5"/>
+  <Modification MoveSpeedBonus="0"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyMedivacSpeedBoost">
+  <Name value="Behavior/Name/MedivacSpeedBoost"/>
+  <Tooltip value="Behavior/Tooltip/MedivacSpeedBoost"/>
+  <InfoIcon value="Assets\Textures\btn-upgrade-terran-jotunboosters.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="8"/>
+  <Modification MoveSpeedMultiplier="1.7" AccelerationBonus="500" DecelerationBonus="500"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <RemoveValidatorArray value="LegacyNotHaveScramblerMissileBehavior"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNeuralParasite">
+  <Name value="Behavior/Name/NeuralParasite"/>
+  <Tooltip value="Behavior/Tooltip/NeuralParasite"/>
+  <InfoIcon value="Assets\Textures\BTN-Ability-Zerg-NeuralParasite.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Caster"/>
+  <AcquirePlayer Value="Target" Effect="LegacyNeuralParasiteLaunchMissile"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="Channeled" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Modification>
+    <StateFlags index="SuppressPassenger" value="1"/>
+    <StateFlags index="RevealProgress" value="1"/>
+    <AbilClassDisableArray index="CAbilSpecialize" value="1"/>
+    <AbilClassDisableArray index="CAbilTransport" value="1"/>
+    <AbilLinkDisableArray value="ArchonWarp"/>
+    <AbilLinkDisableArray value="SprayProtoss"/>
+    <AbilLinkDisableArray value="SprayTerran"/>
+    <AbilLinkDisableArray value="SprayZerg"/>
+    <AbilLinkDisableArray value="Clone"/>
+  </Modification>
+  <RemoveValidatorArray value="NotHidden"/>
+  <RemoveValidatorArray value="NotFrenzied"/>
+  <RemoveValidatorArray value="NotVortexd"/>
+  <RemoveValidatorArray value="NotOracleStasisTrapped"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Duration value="15"/>
+  <FinalEffect value="LegacyNeuralParasiteExpireSet"/>
+  <InitialEffect value="LegacyApplyNeuralAcquireToAllChildren"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNeuralParasiteChildren">
+  <Name value="Behavior/Name/NeuralParasiteChildren"/>
+  <Tooltip value="Behavior/Tooltip/NeuralParasiteChildren"/>
+  <InfoIcon value="Assets\Textures\BTN-Ability-Zerg-NeuralParasite.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Target" Effect="LegacyNeuralParasiteLaunchMissile"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="Channeling" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification RadarFilters="-;RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked">
+    <StateFlags index="Benign" value="1"/>
+  </Modification>
+  <Alignment value="Negative"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyOracleWeapon">
+  <Name value="Behavior/Name/OracleWeapon"/>
+  <Tooltip value="Behavior/Tooltip/OracleWeapon"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-oraclepulsarcannonon.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <RemoveValidatorArray value="CanSpendEnergy"/>
+  <RemoveValidatorArray value="OracleHasEnergy"/>
+  <Modification>
+    <VitalRegenArray index="Energy" value="-2"/>
+    <WeaponEnableArray value="Oracle"/>
+    <WeaponEnableArray value="OracleDisplayDummy"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyParasiticBombUnitKU">
+  <Name value="Behavior/Name/ParasiticBombUnitKU"/>
+  <Tooltip value="Behavior/Tooltip/ParasiticBombUnitKU"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.125"/>
+  <DisableValidatorArray value="LegacyNotHaveParasiticBombTimers"/>
+  <FinalEffect value="Suicide"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyAmorphousArmorcloud">
+  <Name value="Behavior/Name/AmorphousArmorcloud"/>
+  <Tooltip value="Behavior/Tooltip/AmorphousArmorcloud"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-darkswarm.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ModifyFraction="0.5">
+    <Kind index="Spell" value="0"/>
+    <ValidatorArray value="LegacyTargetIsNotGround"/>
+  </DamageResponse>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="0.625"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyPurificationNovaTargettedTarget">
+  <Name value="Behavior/Name/PurificationNovaTargettedTarget"/>
+  <Tooltip value="Behavior/Tooltip/PurificationNovaTargettedTarget"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-arcshield.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Duration value="3"/>
+  <Period value="0.125"/>
+  <PeriodicEffect value=""/>
+  <ExpireEffect value="LegacyPurificationNovaTargettedSearchSet"/>
+  <Modification MoveSpeedBonus="0">
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Benign" value="1"/>
+    <StateFlags index="Passive" value="1"/>
+    <StateFlags index="SuppressPassenger" value="1"/>
+  </Modification>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="CasterNotDead"/>
+  <RemoveValidatorArray value="CasterIsNotHidden"/>
+  <RemoveValidatorArray value="CasterIsNotStasisWarded"/>
+  <RemoveValidatorArray value="CasterIsNotYoinked"/>
+  <RemoveValidatorArray value="CasterIsNotGravitonBeamed"/>
+  <RemoveValidatorArray value="CasterIsNotMothershipCoreRecalling"/>
+  <RemoveValidatorArray value="CasterIsNotMothershipRecalling"/>
+  <RemoveValidatorArray value="CasterDoesNotHaveScramblerMissileBehavior"/>
+  <RemoveValidatorArray value="CasterIsNotMothershipMassRecalling"/>
+  <RemoveValidatorArray value="CasterIsNotNexusStrategicRecalling"/>
+  <FinalEffect value="Suicide"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyRavenShredderMissileArmorReductionUISubtruct">
+  <Name value="Behavior/Name/RavenShredderMissileArmorReductionUISubtruct"/>
+  <Tooltip value="Behavior/Tooltip/RavenShredderMissileArmorReductionUISubtruct"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-ignorearmor.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <RemoveValidatorArray value="LegacyNotOracleStasisTrapped"/>
+  <Duration value="30"/>
+  <Modification LifeArmorBonus="-3" ShieldArmorBonus="-3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+</CBehaviorBuff>
+<CBehaviorResource id="LegacyRawRichVespeneGeyserGas">
+  <Name value="Behavior/Name/RawRichVespeneGeyserGas"/>
+  <Tooltip value="Behavior/Tooltip/RawRichVespeneGeyserGas"/>
+  <InfoIcon value="Assets\Textures\icon-gas.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <CarryResourceBehavior value="CarryRawRichVespeneGeyserGas"/>
+  <EnabledSearchFilters value="Worker;Dead"/>
+  <EnabledSearchRadius value="5"/>
+  <Capacity value="2250"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DepletionVariationCount value="6"/>
+  <Contents value="2250"/>
+  <HarvestAmount value="8"/>
+</CBehaviorResource>
+<CBehaviorBuff id="LegacyTemporalField">
+  <Name value="Behavior/Name/TemporalField"/>
+  <Tooltip value="Behavior/Tooltip/TemporalField"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-timewarp.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="0.125"/>
+  <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.5"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTerranStructuresKnockbackBehavior">
+  <Name value="Behavior/Name/TerranStructuresKnockbackBehavior"/>
+  <Tooltip value="Behavior/Tooltip/TerranStructuresKnockbackBehavior"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Period value="0.25"/>
+  <PeriodicEffect value="LegacyTerranStructuresKnockbackSE"/>
+</CBehaviorBuff>
+<CBehaviorPowerSource id="LegacyFastEnablerPowerSourceNexus">
+  <Name value="Behavior/Name/FastEnablerPowerSourceNexus"/>
+  <Tooltip value="Behavior/Tooltip/FastEnablerPowerSourceNexus"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="FastEnablerPowerSource"/>
+  <CliffLevelFlags index="Lower" value="0"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Radius value="7"/>
+  <PowerLevel value="2"/>
+  <Flags index="ProvidePowerWhileUnderConstruction" value="1"/>
+</CBehaviorPowerSource>
+<CBehaviorBuff id="LegacyImmortalOverload">
+  <Name value="Behavior/Name/ImmortalOverload"/>
+  <Tooltip value="Behavior/Tooltip/ImmortalOverload"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" ModifyFraction="0" ModifyLimit="100" ModifyMinimumDamage="1"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="3"/>
+  <RemoveValidatorArray value="LegacyNotHaveScramblerMissileBehavior"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLightningBomb">
+  <Name value="Behavior/Name/LightningBomb"/>
+  <Tooltip value="Behavior/Tooltip/LightningBomb"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-disintegration.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="80"/>
+  <Period value="1"/>
+  <PeriodicEffect value="LegacyLightningBombDamage"/>
+  <DisableValidatorArray value="LegacyBattlecruiserNotJumping"/>
+  <RemoveValidatorArray value="NoPurificationNova"/>
+  <RemoveValidatorArray value="NotOracleStasisTrapped"/>
+  <Modification>
+    <StateFlags index="SuppressLifeRegen" value="1"/>
+    <StateFlags index="SuppressShieldsRegen" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLockOnDisableAttack">
+  <Name value="Behavior/Name/LockOnDisableAttack"/>
+  <Tooltip value="Behavior/Tooltip/LockOnDisableAttack"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-snipe.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="IsKiting" value="1"/>
+  </Modification>
+  <FinalEffect value="LegacyLockOnClearSet"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyLockOnTargetNotDead"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyLocustMPTimedLife">
+  <Name value="Behavior/Name/LocustMPTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/BroodlingFate"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-explode.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="25"/>
+  <DurationRandomMax value="0.5"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyNydusWormArmor">
+  <Name value="Behavior/Name/NydusWormArmor"/>
+  <Tooltip value="Behavior/Tooltip/NydusWormArmor"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyIsConstructing"/>
+  <Modification LifeArmorBonus="2"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyPointDefenseDroneTimedLife">
+  <Name value="Behavior/Name/PointDefenseDroneTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/PointDefenseDroneTimedLife"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="20"/>
+</CBehaviorBuff>
+<CBehaviorPowerUser id="LegacyPowerUserWarpable">
+  <Name value="Behavior/Name/PowerUserWarpable"/>
+  <Tooltip value="Behavior/Tooltip/PowerUserWarpable"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <PowerLink value="PowerSource"/>
+  <PlacementMinPowerLevel value="1"/>
+  <PoweredWhileUnderConstruction value="1"/>
+  <PowerStageArray/>
+  <PowerStageArray MinPowerLevel="2">
+    <Modification>
+      <RateMultiplierArray index="Progress" value="3.2"/>
+    </Modification>
+  </PowerStageArray>
+  <Alignment value="Positive"/>
+  <Flags index="KillIfUnpowered" value="1"/>
+</CBehaviorPowerUser>
+<CBehaviorBuff id="LegacyPurificationNova">
+  <Name value="Behavior/Name/PurificationNova"/>
+  <Tooltip value="Behavior/Tooltip/PurificationNova"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-arcshield.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Duration value="3"/>
+  <Period value="0.125"/>
+  <PeriodicEffect value="LegacyPurificationNovaNotificationSearch"/>
+  <ExpireEffect value="LegacyPurificationNovaSearchSet"/>
+  <Modification>
+    <StateFlags index="Invulnerable" value="1"/>
+    <StateFlags index="Benign" value="1"/>
+    <StateFlags index="Passive" value="1"/>
+    <StateFlags index="SuppressPassenger" value="0"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyPurify">
+  <Name value="Behavior/Name/Purify"/>
+  <Tooltip value="Behavior/Tooltip/Purify"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-purify.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="20"/>
+  <Modification Detect="0">
+    <WeaponArray Link="LegacyMothershipCoreWeapon" Turret="LegacyNexus"/>
+    <WeaponArray Link="LegacyMothershipCoreWeapon"/>
+  </Modification>
+  <InitialEffect value="LegacyPurifyMorphPylon"/>
+  <FinalEffect value="LegacyPurifyMorphPylonBack"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySwarmHostEggAnimationMP">
+  <Name value="Behavior/Name/SwarmHostEggAnimationMP"/>
+  <Tooltip value="Behavior/Tooltip/SwarmHostEggAnimationMP"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="NotStasis"/>
+  <DisableValidatorArray value="NotVortexd"/>
+  <DisableValidatorArray value="NotGravitonBeamd"/>
+  <DisableValidatorArray value="NotThunderCannond"/>
+  <Duration value="60"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBypassArmorStun">
+  <Name value="Behavior/Name/BypassArmorStun"/>
+  <Tooltip value="Behavior/Tooltip/BypassArmorStun"/>
+  <InfoIcon value="Assets\Textures\btn-ability-terran-ignorearmor.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <AbilClassDisableArray index="CAbilMove" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBypassArmorDroneTimedLife">
+  <Name value="Behavior/Name/BypassArmorDroneTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/BypassArmorDroneTimedLife"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <Duration value="15"/>
+  <DurationRandomMax value="0.5"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBypassArmorDroneInitialUnselectable">
+  <Name value="Behavior/Name/BypassArmorDroneInitialUnselectable"/>
+  <Tooltip value="Behavior/Tooltip/BypassArmorDroneInitialUnselectable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyBypassArmorNoCasterBehaviorValidator"/>
+  <Modification>
+    <StateFlags index="Unselectable" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySiegeTankDummyWeaponDisable">
+  <Name value="Behavior/Name/SiegeTankDummyWeaponDisable"/>
+  <Tooltip value="Behavior/Tooltip/SiegeTankDummyWeaponDisable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="4"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <WeaponDisableArray value="Legacy90mmCannonsFake"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySiegeTankUnmorphDummyWeaponDisable">
+  <Name value="Behavior/Name/SiegeTankUnmorphDummyWeaponDisable"/>
+  <Tooltip value="Behavior/Tooltip/SiegeTankUnmorphDummyWeaponDisable"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="3.5"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Modification>
+    <WeaponDisableArray value="Legacy90mmCannonsFake"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTimeWarpProduction">
+  <Name value="Behavior/Name/TimeWarpProduction"/>
+  <Tooltip value="Behavior/Tooltip/TimeWarpProduction"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-chronoboost.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Cost>
+    <Vital index="Energy" value="25"/>
+  </Cost>
+  <Duration value="0"/>
+  <Modification TimeScale="1.15" AttackSpeedMultiplier="0.85">
+    <VitalRegenArray index="Energy" value="-0.1015"/>
+  </Modification>
+  <ExpireEffect value=""/>
+  <BehaviorCategories index="Fast" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChargingAttackCheck">
+  <Name value="Behavior/Name/ChargingAttackCheck"/>
+  <Tooltip value="Behavior/Tooltip/ChargingAttackCheck"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Attacker" Chance="1" Handled="ChargingDamageSecondary"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyIsCharging"/>
+  <Duration value="3.5"/>
+  <FinalEffect value="LegacyChargeAttackApplyBuff"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChargingAttack">
+  <Name value="Behavior/Name/ChargingAttack"/>
+  <Tooltip value="Behavior/Tooltip/ChargingAttack"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Attacker" Chance="1" Handled="ChargingDamageSecondary"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="0.25"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacySiegeTankUnloadDelay">
+  <Name value="Behavior/Name/SiegeTankUnloadDelay"/>
+  <Tooltip value="Behavior/Tooltip/SiegeTankUnloadDelay"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="2"/>
+  <Modification>
+    <StateFlags index="SuppressAttack" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyVoidRaySwarmDamageBoost">
+  <Name value="Behavior/Name/VoidRaySwarmDamageBoost"/>
+  <Tooltip value="Behavior/Tooltip/VoidRaySwarmDamageBoost"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-prismaticbeam.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="20"/>
+  <Modification MoveSpeedMultiplier="0.75">
+    <DamageDealtAttributeScaled index="Armored" value="6"/>
+  </Modification>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <RemoveValidatorArray value="LegacyNotHaveScramblerMissileBehavior"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyUpgradeToWarpGateAutoCastDisabler">
+  <Name value="Behavior/Name/UpgradeToWarpGateAutoCastDisabler"/>
+  <Tooltip value="Behavior/Tooltip/UpgradeToWarpGateAutoCastDisabler"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="2"/>
+  <PeriodicEffect value="LegacyUpgradeToWarpGateAutoCastOff"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorPowerSource id="LegacyWarpPrismPowerSourceFast">
+  <Name value="Behavior/Name/WarpPrismPowerSourceFast"/>
+  <Tooltip value="Behavior/Tooltip/WarpPrismPowerSourceFast"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="PowerSource"/>
+  <CliffLevelFlags index="Lower" value="1"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <PowerLevel value="2"/>
+  <Radius value="3.75"/>
+  <Requirements value="LegacyNotHaveScramblerMissileBehavior"/>
+</CBehaviorPowerSource>
+<CBehaviorBuff id="LegacyWidowMineAnimationController">
+  <Name value="Behavior/Name/WidowMineAnimationController"/>
+  <Tooltip value="Behavior/Tooltip/WidowMineAnimationController"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="40"/>
+  <DisableValidatorArray value="NotStasis"/>
+  <DisableValidatorArray value="NotVortexd"/>
+  <DisableValidatorArray value="NotGravitonBeamd"/>
+  <DisableValidatorArray value="NotThunderCannond"/>
+  <DisableValidatorArray value="NotHaveScramblerMissileBehavior"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+</CBehaviorBuff>
+<CBehaviorCreepSource id="LegacymakeCreep2x2Overlord">
+  <Name value="Behavior/Name/makeCreep2x2Overlord"/>
+  <Tooltip value="Behavior/Tooltip/makeCreep2x2Overlord"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <DisableValidatorArray value="CasterIsStationary"/>
+  <DisableValidatorArray value="Pathable"/>
+  <DisableValidatorArray value="NoYoink"/>
+  <Delay value="2"/>
+  <Period value="0.63"/>
+  <Birth value="Footprint2x2OverlordCreepSourceStart"/>
+  <Start value="Footprint2x2OverlordCreepSourceStart"/>
+  <Grown value="Footprint2x2OverlordCreepSourceGrown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorCreepSource>
+<CBehaviorCreepSource id="LegacymakeCreep4x4">
+  <Name value="Behavior/Name/makeCreep4x4"/>
+  <Tooltip value="Behavior/Tooltip/makeCreep4x4"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <Period value="0.63"/>
+  <Birth value="Footprint4x4CreepSourceStart"/>
+  <Start value="Footprint4x4CreepSourceGrown"/>
+  <Grown value="Footprint4x4CreepSourceGrown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorCreepSource>
+<CBehaviorCreepSource id="LegacymakeCreep8x6">
+  <Name value="Behavior/Name/makeCreep8x6"/>
+  <Tooltip value="Behavior/Tooltip/makeCreep8x6"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+  <Period value="0.42"/>
+  <Build value="Footprint8x6CreepSourceBuild"/>
+  <Birth value="Footprint8x6CreepSourceStart"/>
+  <Start value="Footprint8x6CreepSourceGrown"/>
+  <Grown value="Footprint8x6CreepSourceGrown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorCreepSource>
+<CBehaviorBuff id="LegacyBarrierDamageResponse">
+  <Name value="Behavior/Name/BarrierDamageResponse"/>
+  <Tooltip value="Behavior/Tooltip/BarrierDamageResponse"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender" Chance="1" Handled="ImmortalOverloadAB">
+    <Cost>
+      <Cooldown TimeUse="45"/>
+    </Cost>
+  </DamageResponse>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyNotGravitonBeamd"/>
+  <Cost>
+    <Cooldown TimeUse="45"/>
+  </Cost>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyImmortalBarrierSupressed">
+  <Name value="Behavior/Name/ImmortalBarrierSupressed"/>
+  <Tooltip value="Behavior/Tooltip/ImmortalBarrierSupressed"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Cost>
+    <Cooldown TimeStart="45"/>
+  </Cost>
+  <InfoFlags index="Hidden" value="1"/>
+  <Duration value="45"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTakenDamage">
+  <Name value="Behavior/Name/TakenDamage"/>
+  <Tooltip value="Behavior/Tooltip/TakenDamage"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="0.0625"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChannelingCausticSpray">
+  <Name value="Behavior/Name/ChannelingCausticSpray"/>
+  <Tooltip value="Behavior/Tooltip/ChannelingCausticSpray"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <RemoveValidatorArray value="LegacyChannelingCausticSpray"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyIsTransportOverlord">
+  <Name value="Behavior/Name/IsTransportOverlord"/>
+  <Tooltip value="Behavior/Tooltip/IsTransportOverlord"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorPowerSource id="LegacyFastEnablerGatewayMorphingPowerSource">
+  <Name value="Behavior/Name/FastEnablerGatewayMorphingPowerSource"/>
+  <Tooltip value="Behavior/Tooltip/FastEnablerGatewayMorphingPowerSource"/>
+  <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+  <PowerLink value="FastEnablerPowerSource"/>
+  <CliffLevelFlags index="Lower" value="0"/>
+  <CliffLevelFlags index="Equal" value="1"/>
+  <CliffLevelFlags index="Higher" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <Radius value="6.5"/>
+  <PowerLevel value="2"/>
+  <Requirements value="LegacyIsGatewayMorphing"/>
+</CBehaviorPowerSource>
+<CBehaviorBuff id="LegacyMorphingintoWarpGate">
+  <Name value="Behavior/Name/MorphingintoWarpGate"/>
+  <Tooltip value="Behavior/Tooltip/MorphingintoWarpGate"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyGatewayMorphing"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyTempestDisruptionBlastStunBehavior">
+  <Name value="Behavior/Name/TempestDisruptionBlastStunBehavior"/>
+  <Tooltip value="Behavior/Tooltip/TempestDisruptionBlastStunBehavior"/>
+  <InfoIcon value="Assets\Textures\stunswirl1_orange.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="10"/>
+  <Modification>
+    <StateFlags index="Stun" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBeamTargetCD">
+  <Name value="Behavior/Name/BeamTargetCD"/>
+  <Tooltip value="Behavior/Tooltip/BeamTargetCD"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="65535"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Caster"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <MaxStackCountPerCaster value="1"/>
+  <Duration value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyWidowMineBurrowedCloakingBehavior">
+  <Name value="Behavior/Name/WidowMineBurrowedCloakingBehavior"/>
+  <Tooltip value="Behavior/Tooltip/WidowMineBurrowedCloakingBehavior"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="NotHaveArmory"/>
+  <DisableValidatorArray value="WidowMineAttackOnCooldown"/>
+  <Modification>
+    <StateFlags index="SuppressCloak" value="1"/>
+  </Modification>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyWidowMineArmoryTracker">
+  <Name value="Behavior/Name/WidowMineArmoryTracker"/>
+  <Tooltip value="Behavior/Tooltip/WidowMineArmoryTracker"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DisableValidatorArray value="LegacyHaveArmory"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyDetector13p75">
+  <Name value="Behavior/Name/Detector13p75"/>
+  <Tooltip value="Behavior/Tooltip/Detector13p75"/>
+  <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+  <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Modification DetectFilters="-;Missile" Detect="13.75"/>
+  <BehaviorCategories index="User14" value="1"/>
+  <Alignment value="Positive"/>
+  <InfoFlags index="Hidden" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyRavenScramblerMissile">
+  <Name value="Behavior/Name/RavenScramblerMissile"/>
+  <Tooltip value="Behavior/Tooltip/RavenScramblerMissile"/>
+  <InfoIcon value="Assets\Textures\btn-upgrade-terran-interferencematrix.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <BuffFlags index="UpdateDurationWhileDisabled" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="15"/>
+  <ExpireEffect value="LegacyImmortalBarrierCDFix"/>
+  <Modification>
+    <ModifyFlags index="DisableAbils" value="1"/>
+    <ModifyFlags index="EnableMove" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <BehaviorLinkDisableArray value="LegacyImmortalBarrierSupressed"/>
+  </Modification>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <RemoveValidatorArray value="LegacyNotOracleStasisTrapped"/>
+  <DisableValidatorArray value="LegacyTargetNotTacticalJumping"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyRavenShredderMissileTimeout">
+  <Name value="Behavior/Name/RavenShredderMissileTimeout"/>
+  <Tooltip value="Behavior/Tooltip/RavenShredderMissileTimeout"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Duration value="1.9"/>
+  <Modification MoveSpeedMaximum="0"/>
+  <RemoveValidatorArray value="LegacyNotInLastMotionPhase"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyChronoBoostEnergyCost">
+  <Name value="Behavior/Name/ChronoBoostEnergyCost"/>
+  <Tooltip value="Behavior/Tooltip/ChronoBoostEnergyCost"/>
+  <InfoIcon value="Assets\Textures\btn-ability-protoss-chronoboost.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <BehaviorCategories index="Fast" value="1"/>
+  <Duration value="28"/>
+  <Modification>
+    <RateMultiplierArray index="Charge" value="1.5"/>
+    <RateMultiplierArray index="Cooldown" value="1.5"/>
+    <RateMultiplierArray index="Morph" value="1.5"/>
+    <RateMultiplierArray index="Progress" value="1.5"/>
+    <RateMultiplierArray index="Queueable" value="1.5"/>
+    <RateMultiplierArray index="Spawn" value="1.5"/>
+    <RateMultiplierArray index="Creep" value="1.5"/>
+  </Modification>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyInfestorEnsnare">
+  <Name value="Behavior/Name/InfestorEnsnare"/>
+  <Tooltip value="Behavior/Tooltip/InfestorEnsnare"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zerg-stukov-ensnare.dds"/>
+  <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Negative"/>
+  <Duration value="10"/>
+  <InitialEffect value="LegacyInfestorEnsnareLaunchTargetToAPathableLocationPrecursor"/>
+  <FinalEffect value="LegacyInfestorEnsnareReheightSourceCreatePlaceholder"/>
+  <Modification>
+    <ModifyFlags index="SuppressMoving" value="1"/>
+    <StateFlags index="SuppressAttack" value="1"/>
+    <StateFlags index="SuppressCloak" value="1"/>
+    <HeightTime index="Start" value="2"/>
+    <HeightTime index="Stop" value="2"/>
+    <AbilClassDisableArray index="CAbilArmMagazine" value="1"/>
+    <AbilClassDisableArray index="CAbilAttack" value="1"/>
+    <AbilClassDisableArray index="CAbilMorph" value="1"/>
+    <AbilClassDisableArray index="CAbilMorphPlacement" value="1"/>
+    <AbilLinkEnableArray value="LegacyLiberatorMorphtoAA"/>
+    <PlaneDelta index="Ground" value="1"/>
+    <PlaneDelta index="Air" value="-1"/>
+  </Modification>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyBatteryOvercharge">
+  <Name value="Behavior/Name/BatteryOvercharge"/>
+  <Tooltip value="Behavior/Tooltip/BatteryOvercharge"/>
+  <InfoIcon value="Assets\Textures\btn-ability-zeratul-observer-sensorarray.dds"/>
+  <EditorCategories value="AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Global"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Unknown"/>
+  <RevealUnit Value="Unknown"/>
+  <Alignment value="Positive"/>
+  <Duration value="20"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <Modification HealDealtMultiplier="2"/>
+</CBehaviorBuff>
+<CBehaviorBuff id="LegacyStasisWardTimedLife">
+  <Name value="Behavior/Name/StasisWardTimedLife"/>
+  <Tooltip value="Behavior/Tooltip/StasisWardTimedLife"/>
+  <InfoIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+  <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+  <MaxStackCount value="1"/>
+  <DurationBonusMin value="-1"/>
+  <DurationBonusMax value="-1"/>
+  <TimeScaleSource Value="Target"/>
+  <Player Value="Unknown"/>
+  <AcquirePlayer Value="Unknown"/>
+  <BuffFlags index="Countdown" value="1"/>
+  <BuffFlags index="RemoveDamageResponseExhausted" value="1"/>
+  <DamageResponse Location="Defender"/>
+  <KillCredit Value="Caster"/>
+  <RevealUnit Value="Unknown"/>
+  <InfoFlags index="Hidden" value="1"/>
+  <DurationRandomMax value="0.3"/>
+  <DisplayDuration index="Self" value="1"/>
+  <DisplayDuration index="Ally" value="1"/>
+  <DisplayDuration index="Neutral" value="1"/>
+  <DisplayDuration index="Enemy" value="1"/>
+  <ExpireEffect value="TimedLifeFate"/>
+  <Modification>
+    <StateFlags index="Summoned" value="1"/>
+  </Modification>
+  <BehaviorFlags index="Permanent" value="1"/>
+  <BehaviorFlags index="EnabledWhileDead" value="1"/>
+  <Duration value="238"/>
+  <DisableValidatorArray value="LegacyNotUnderConstruction"/>
+</CBehaviorBuff>
+
+</Catalog>

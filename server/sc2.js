@@ -1,11 +1,9 @@
-
 import xml2js from "xml2js";
 import osd from "object-assign-deep";
 const collator = new Intl.Collator(undefined, {numeric: true, sensitivity: "base"})
 const builder = new xml2js.Builder();
 const NORACE =  {icon: "ui_ingame_help_techtree_questionmark"}
 const objectAssignDeep = (a, ...b) => osd.withOptions(a,b,{arrayBehaviour: 'merge'})
-
 
 function getTableColumns(DA,DO,fields){
     let columns =  [

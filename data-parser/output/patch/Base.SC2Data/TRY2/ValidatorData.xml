@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Catalog>
+<CValidatorUnitFilters id="LegacyIsConstructing">
+  <ResultFailed value="Error"/>
+  <Filters value="UnderConstruction;-"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyCasterIsNotHidden">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Filters value="-;Hidden"/>
+</CValidatorUnitFilters>
+<CValidatorUnitOrderQueue id="LegacyCasterIsAttacking">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="1"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="attack"/>
+</CValidatorUnitOrderQueue>
+<CValidatorLocationCompareCliffLevel id="LegacyCliffLevelGE1">
+  <ResultFailed value="MustTargetWalkableLocation"/>
+  <OtherLocation Value="Unknown"/>
+  <Compare value="GE"/>
+  <Value value="1"/>
+</CValidatorLocationCompareCliffLevel>
+<CValidatorLocationCreep id="LegacyOnCreep">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <WhichLocation Value="SourceUnit"/>
+</CValidatorLocationCreep>
+<CValidatorLocationCreep id="LegacyNotNearCreep">
+  <ResultFailed value="Error"/>
+  <Find value="0"/>
+  <WhichLocation Value="SourceUnit"/>
+  <RadiusBonus value="0.365"/>
+</CValidatorLocationCreep>
+<CValidatorFunction id="LegacyFailure">
+  <ResultFailed value="Error"/>
+  <ResultFallback value="Error"/>
+</CValidatorFunction>
+<CValidatorUnitFilters id="LegacyTargetIsEnemy">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Player,Ally,Neutral"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyCasterIsVisible">
+  <ResultFailed value="Error"/>
+  <Filters value="Visible;-"/>
+  <WhichUnit Value="Caster"/>
+</CValidatorUnitFilters>
+<CValidatorCombine id="Legacy250mmCannonValidators">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotInvulnerable"/>
+  <CombineArray value="NotGravitonBeamd"/>
+  <CombineArray value="NotDead"/>
+  <CombineArray value="TargetIsVisible"/>
+  <CombineArray value="NotFlyingTerranBuilding"/>
+</CValidatorCombine>
+<CValidatorUnitFilters id="LegacyNotUnderConstruction">
+  <ResultFailed value="Error"/>
+  <Filters value="-;UnderConstruction"/>
+</CValidatorUnitFilters>
+<CValidatorUnitCompareBehaviorCount id="LegacyRichVespeneGeyser">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Compare value="GT"/>
+  <Behavior value="LegacyRawRichVespeneGeyserGas"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitOrderQueue id="LegacyCasterNotAttacking">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="0"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="attack"/>
+</CValidatorUnitOrderQueue>
+<CValidatorUnitOrderQueue id="LegacyCasterNotHoldingPosition">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="0"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="move"/>
+  <AbilCmdIndex value="2"/>
+</CValidatorUnitOrderQueue>
+<CValidatorUnitCompareBehaviorCount id="LegacyDoubleDamage">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Value value="1"/>
+  <Behavior value="LegacyVoidRayPhase2"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorCombine id="LegacyNotQuadAndNotDoubleDamage">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotDoubleDamage"/>
+  <CombineArray value="NotQuadDamage"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyQuadDamage">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Value value="1"/>
+  <Behavior value="LegacyVoidRayPhase3"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareResourceContents id="LegacyHasVespene">
+  <ResultFailed value="CantBuildOnThat"/>
+  <Compare value="GT"/>
+  <ResultNoUnit value="OKPlaceholder"/>
+</CValidatorUnitCompareResourceContents>
+<CValidatorUnitType id="LegacyIsCommandCenterFlying">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <Value value="LegacyCommandCenterFlying"/>
+  <WhichUnit Value="Outer"/>
+</CValidatorUnitType>
+<CValidatorUnitFilters id="LegacyNotHidden">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Hidden"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacySourceNotHidden">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Hidden"/>
+  <WhichUnit Value="Source"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyIsStructure">
+  <ResultFailed value="Error"/>
+  <Filters value="Structure;-"/>
+</CValidatorUnitFilters>
+<CValidatorLocationType id="LegacyNotResourcesOrEnemyTargetType">
+  <ResultFailed value="Error"/>
+  <WhichLocation Value="TargetUnitOrPoint"/>
+  <Unit value="NotResourcesOrEnemyTarget"/>
+</CValidatorLocationType>
+<CValidatorCombine id="LegacyNotVortexd">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotVortexdFriendly"/>
+  <CombineArray value="NotVortexdEnemy"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotGravitonBeamd">
+  <ResultFailed value="CantTargetThatUnit,Error/CantTargetGravitonBeam"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyGravitonBeam"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitMover id="LegacyTargetIsGround">
+  <ResultFailed value="Error"/>
+  <Value value="Ground"/>
+  <Find value="1"/>
+</CValidatorUnitMover>
+<CValidatorUnitType id="LegacyTargetNotChangeling">
+  <ResultFailed value="Error"/>
+  <Find value="0"/>
+  <Value value="LegacyChangeling"/>
+  <Type value="SelectAlias"/>
+</CValidatorUnitType>
+<CValidatorUnitCompareField id="LegacyTargetRadiusLarge">
+  <ResultFailed value="Error"/>
+  <Compare value="GE"/>
+  <Field value="Radius"/>
+  <Value value="1.25"/>
+</CValidatorUnitCompareField>
+<CValidatorUnitCompareField id="LegacyTargetRadiusSmall">
+  <ResultFailed value="Error"/>
+  <Compare value="LT"/>
+  <Field value="Radius"/>
+  <Value value="1.25"/>
+</CValidatorUnitCompareField>
+<CValidatorUnitType id="LegacyIsInfestorBurrowed">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <WhichUnit Value="Caster"/>
+  <Value value="LegacyInfestorBurrowed"/>
+</CValidatorUnitType>
+<CValidatorUnitType id="LegacyIsSupplyDepotLowered">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <Value value="LegacySupplyDepotLowered"/>
+</CValidatorUnitType>
+<CValidatorLocationType id="LegacyMULETargetCheck">
+  <ResultFailed value="CantFindPlacementLocation"/>
+  <WhichLocation Value="TargetUnitOrPoint"/>
+  <Point value="MULEPlacementCheck"/>
+  <Unit value="MULEUnitCheck"/>
+</CValidatorLocationType>
+<CValidatorUnitCompareMoverPhase id="LegacyNotInLastMotionPhase">
+  <ResultFailed value="Error"/>
+  <Compare value="NE"/>
+  <Value value="3"/>
+</CValidatorUnitCompareMoverPhase>
+<CValidatorUnitCompareCargo id="LegacyHasNoCargo">
+  <ResultFailed value="NotWhileOccupied"/>
+  <Type value="Load"/>
+</CValidatorUnitCompareCargo>
+<CValidatorUnitFilters id="LegacyCasterNotDead">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Dead"/>
+  <WhichUnit Value="Caster"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyNotDead">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Dead"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyIsDead">
+  <ResultFailed value="Error"/>
+  <Filters value="Dead;-"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyNotHallucination">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Hallucination"/>
+  <WhichUnit Value="Caster"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyIsNotConstructing">
+  <ResultFailed value="Error"/>
+  <Filters value="-;UnderConstruction"/>
+</CValidatorUnitFilters>
+<CValidatorUnitCompareMarkerCount id="LegacynoMarkers">
+  <ResultFailed value="AlreadyTargeted"/>
+</CValidatorUnitCompareMarkerCount>
+<CValidatorUnitFilters id="LegacyPsiStormUTargetFilters">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+</CValidatorUnitFilters>
+<CValidatorUnitCompareVital id="LegacyShieldsNotFull">
+  <ResultFailed value="RequiresHealTarget"/>
+  <Compare value="LT"/>
+  <Value value="1"/>
+  <Type value="Fraction"/>
+  <Vital value="Shields"/>
+</CValidatorUnitCompareVital>
+<CValidatorUnitCompareVital id="LegacyEnergyNotFull">
+  <ResultFailed value="Error,Error/FullEnergy"/>
+  <Compare value="LT"/>
+  <Value value="1"/>
+  <Type value="Fraction"/>
+  <Vital value="Energy"/>
+</CValidatorUnitCompareVital>
+<CValidatorCombine id="LegacyBurnDownFire">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="LifeLTOneThird"/>
+  <CombineArray value="BurnDownValid"/>
+</CValidatorCombine>
+<CValidatorUnitType id="LegacyNotQueen">
+  <ResultFailed value="Error"/>
+  <Find value="0"/>
+  <Value value="LegacyQueen"/>
+</CValidatorUnitType>
+<CValidatorUnitCompareField id="LegacyDisguiseAsZealot">
+  <ResultFailed value="Error"/>
+  <Field value="Race"/>
+  <Value value="Prot"/>
+</CValidatorUnitCompareField>
+<CValidatorCombine id="LegacyDisguiseAsMarineWithoutShield">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="DisguiseAsMarine"/>
+  <CombineArray value="MissingMarineShieldUpgrade"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyDisguiseAsMarineWithShield">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="DisguiseAsMarine"/>
+  <CombineArray value="HasMarineShieldUpgrade"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyDisguiseAsZerglingWithoutWings">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="DisguiseAsZergling"/>
+  <CombineArray value="MissingZerglingWingsUpgrade"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyDisguiseAsZerglingWithWings">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="DisguiseAsZergling"/>
+  <CombineArray value="HasZerglingWingsUpgrade"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyIsTownHall">
+  <ResultFailed value="Error"/>
+  <Type value="Or"/>
+  <CombineArray value="IsNexus"/>
+  <CombineArray value="IsCommandCenter"/>
+  <CombineArray value="IsOrbitalCommand"/>
+  <CombineArray value="IsPlanetaryFortress"/>
+  <CombineArray value="IsHatchery"/>
+  <CombineArray value="IsLair"/>
+  <CombineArray value="IsHive"/>
+</CValidatorCombine>
+<CValidatorUnitFilters id="LegacyBroodlingEscortFilters">
+  <ResultFailed value="Error"/>
+  <WhichUnit Effect="LegacyBroodlingEscort"/>
+  <Filters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+</CValidatorUnitFilters>
+<CValidatorLocationCompareRange id="LegacyRangeCheckLE15">
+  <ResultFailed value="Error"/>
+  <WhichLocation Value="TargetUnit"/>
+  <Compare value="LE"/>
+  <Range value="15"/>
+</CValidatorLocationCompareRange>
+<CValidatorCombine id="LegacyDontHaveSpray">
+  <ResultFailed value="Error"/>
+  <Type value="Or"/>
+  <CombineArray value="HaveSprayProtoss"/>
+  <CombineArray value="HaveSprayZerg"/>
+  <CombineArray value="HaveSprayTerran"/>
+  <Negate value="1"/>
+</CValidatorCombine>
+<CValidatorUnitFilters id="LegacyNotHiddenSelf">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Filters value="-;Hidden"/>
+</CValidatorUnitFilters>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotFrenzied">
+  <ResultFailed value="MustTargetStructures,Error/CantTargetFrenziedUnits"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyFrenzy"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitWeaponFiring id="LegacyChargeTargetAttacked">
+  <ResultFailed value="Error"/>
+  <Find value="0"/>
+  <WhichUnit Value="Caster"/>
+  <Weapon value="PsiBlades"/>
+</CValidatorUnitWeaponFiring>
+<CValidatorPlayerRequirement id="LegacyHaveGhostAlternate">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <Value value="LegacyHaveGhostAlternate"/>
+</CValidatorPlayerRequirement>
+<CValidatorCombine id="LegacyTargetNotDeadAndCasterNotDeadAndEnergyNotFullCaster">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotDead"/>
+  <CombineArray value="CasterNotDead"/>
+  <CombineArray value="EnergyNotFullCaster"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotWidowMineTarget">
+  <ResultFailed value="Error,Error/NotWidowMineTarget"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyMineDroneCountdown"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitFilters id="LegacyNotStasis">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Stasis"/>
+</CValidatorUnitFilters>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotBuildingStasis">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Compare value="LE"/>
+  <Behavior value="LegacyBuildingStasis"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorCombine id="LegacyTargetNotPreordainedCombine">
+  <ResultFailed value="Error,Error/NotPreordained"/>
+  <Type value="And"/>
+  <CombineArray value="TargetNotPreordained"/>
+  <CombineArray value="TargetIsAllyorPlayer"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyCasterNotFungalGrowthed">
+  <ResultFailed value="Error,Error/CantBlinkWhileRooted"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyFungalGrowth"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorCombine id="LegacyGravitonBeamValidators">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotDead"/>
+  <CombineArray value="CasterNotDead"/>
+  <CombineArray value="NotVortexd"/>
+  <CombineArray value="NotFrenzied"/>
+  <CombineArray value="TargetIsVisible"/>
+  <CombineArray value="NotAbducted"/>
+  <CombineArray value="NotInvulnerable"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyMinerals">
+  <ResultFailed value="CantFindPlacementLocation"/>
+  <Type value="Or"/>
+  <CombineArray value="HighYield"/>
+  <CombineArray value="MineralField"/>
+  <CombineArray value="HighYield750"/>
+  <CombineArray value="MineralField750"/>
+  <CombineArray value="LabMineralField"/>
+  <CombineArray value="LabMineralField750"/>
+  <CombineArray value="PurifierMineralField"/>
+  <CombineArray value="PurifierMineralField750"/>
+  <CombineArray value="PurifierRichMineralField"/>
+  <CombineArray value="PurifierRichMineralField750"/>
+</CValidatorCombine>
+<CValidatorUnitType id="LegacyIsDisruptor">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <Value value="LegacyDisruptor"/>
+</CValidatorUnitType>
+<CValidatorCombine id="LegacyIsMothershipCoreAndHasPurifyNexus">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="IsMothershipCore"/>
+  <CombineArray value="HasMothershipCorePurifyNexus"/>
+  <CombineArray value="IsMothershipCore"/>
+  <CombineArray value="HasMothershipCorePurifyNexus"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyCycloneWeaponLaunchMissileAlternate">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Value value="1"/>
+  <Behavior value="LegacyCycloneWeaponLaunchMissileAlternate"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitType id="LegacySiegeTankLoadTargetIsSiegedTank">
+  <ResultFailed value="Error"/>
+  <Find value="1"/>
+  <Value value="LegacySiegeTankSieged"/>
+</CValidatorUnitType>
+<CValidatorLocationVision id="LegacyTargetHasVisionOfSource">
+  <ResultFailed value="MustTargetVisibleLocation"/>
+  <Find value="1"/>
+  <WhichLocation Value="SourceUnit"/>
+  <WhichPlayer Value="Target"/>
+</CValidatorLocationVision>
+<CValidatorUnitCompareVital id="LegacyOracleHasEnergy">
+  <ResultFailed value="NotEnoughEnergy"/>
+  <WhichUnit Value="Caster"/>
+  <Compare value="GE"/>
+  <Value value="0.1"/>
+  <Vital value="Energy"/>
+</CValidatorUnitCompareVital>
+<CValidatorLocationCompareRange id="LegacyGrappleMinTriggerDistance">
+  <ResultFailed value="TargetIsTooClose"/>
+  <WhichLocation Effect="LegacyGrappleCreatePlaceholder"/>
+  <Compare value="GT"/>
+  <Range value="1"/>
+  <Value Value="SourceUnit"/>
+</CValidatorLocationCompareRange>
+<CValidatorCombine id="LegacyBattlecruiserNotJumping">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="HyperjumpTeleport"/>
+  <CombineArray value="HyperjumpTeleportIn"/>
+  <CombineArray value="HyperjumpTeleportOut"/>
+</CValidatorCombine>
+<CValidatorLocationEnumArea id="LegacyActivateStasisWardTargetInRange">
+  <ResultFailed value="CantFindEnoughTargets"/>
+  <Compare value="GT"/>
+  <LaunchLocation Value="OuterUnit"/>
+  <CombinedVital value="Unknown"/>
+  <SearchFlags index="OffsetAreaByAngle" value="1"/>
+  <SearchFlags index="ExtendByUnitRadius" value="1"/>
+  <WhichLocation Value="SourceUnit"/>
+  <AreaArray Compare="GE" Count="1" Radius="3" Validator="LegacyActivateStasisWardValidators"/>
+  <SearchFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Dead,Hidden"/>
+</CValidatorLocationEnumArea>
+<CValidatorUnitCompareVital id="LegacyThorLifeNotFull">
+  <ResultFailed value="Error,ThorLifeNotFull"/>
+  <WhichUnit Value="Caster"/>
+  <Compare value="LT"/>
+  <Type value="Fraction"/>
+  <Value value="1"/>
+</CValidatorUnitCompareVital>
+<CValidatorUnitFilters id="LegacyCausticSprayTargetFilters">
+  <ResultFailed value="Error"/>
+  <Filters value="Structure,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+</CValidatorUnitFilters>
+<CValidatorUnitType id="LegacyNotSiegedTank">
+  <ResultFailed value="Error"/>
+  <Find value="0"/>
+  <Value value="LegacySiegeTankSieged"/>
+</CValidatorUnitType>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotOracleStasisTrapped">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyOracleStasisTrapTarget"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyLiberatorAGTargets">
+  <ResultFailed value="TargetIsOutOfRange"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Caster"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyLiberatorTargetMorphAGAttackable"/>
+  <Compare value="GT"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitFilters id="LegacyAirUnitFilter">
+  <ResultFailed value="Error"/>
+  <Filters value="Air;Stasis,Dead,Hidden,Invulnerable,Unstoppable"/>
+</CValidatorUnitFilters>
+<CValidatorUnitFilters id="LegacyLockOnTargetNotDead">
+  <ResultFailed value="Error"/>
+  <WhichUnit Effect="LegacyLockOnFireSet"/>
+  <Filters value="-;Dead"/>
+</CValidatorUnitFilters>
+<CValidatorCombine id="LegacyActivateStasisWardValidators">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="IsNotPhasedUnit"/>
+  <CombineArray value="NotFrenzied"/>
+  <CombineArray value="TargetNotUntargetable"/>
+  <CombineArray value="IsNotDisguisedChangeling"/>
+  <CombineArray value="NotLarva"/>
+  <CombineArray value="NotLarvaEgg"/>
+  <CombineArray value="IsNotBanelingCocoon"/>
+  <CombineArray value="NotRavagerCocoon"/>
+  <CombineArray value="NotLurkerCocoon"/>
+  <CombineArray value="IsNotInfestedTerransEgg"/>
+  <CombineArray value="IsNotNexusMassRecallWarpingOut"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyAddonIsNotWorking">
+  <ResultFailed value="NotWhileOccupied,Error/AddOnIsWorking"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyAddonIsWorking"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorCombine id="LegacyBattlecruiserIsNotYamatoing">
+  <ResultFailed value="Error"/>
+  <Type value="Or"/>
+  <CombineArray value="LegacyBattlecruiserIsYamatoing"/>
+  <Negate value="1"/>
+</CValidatorCombine>
+<CValidatorLocationEnumArea id="LegacyNexusBatteryOvercharge8RangePlacementVisual">
+  <ResultFailed value="TargetIsOutOfRange,Error/BatteryMustBeNearNexus"/>
+  <Compare value="GE"/>
+  <LaunchLocation Value="OuterUnit"/>
+  <CombinedVital value="Unknown"/>
+  <SearchFlags index="OffsetAreaByAngle" value="1"/>
+  <AreaArray Compare="GE" Count="1" Radius="10" Validator="LegacyNexusBatteryOverchargeisNexus"/>
+  <Count value="1"/>
+  <SearchFilters value="Ground,Structure;Ally,Neutral,Enemy,Air,Worker,RawResource,HarvestableResource,Missile,Destructible,Dead"/>
+</CValidatorLocationEnumArea>
+<CValidatorUnitType id="LegacyNexusBatteryOverchargeisNexus">
+  <ResultFailed value="Error,Error/IsNexus"/>
+  <Find value="1"/>
+  <Value value="LegacyNexus"/>
+</CValidatorUnitType>
+<CValidatorCombine id="LegacyTargetNotTacticalJumping">
+  <ResultFailed value="Error,Error/CantTargetBattlecruiserHyperjump"/>
+  <Type value="Or"/>
+  <CombineArray value="LegacyTargetTacticalJumping"/>
+  <Negate value="1"/>
+</CValidatorCombine>
+<CValidatorUnitOrderQueue id="LegacyTargetTacticalJumping">
+  <ResultFailed value="Error,Error/CantTargetBattlecruiserHyperjump"/>
+  <WhichUnit Value="Target"/>
+  <Find value="1"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="LegacyHyperjump"/>
+</CValidatorUnitOrderQueue>
+<CValidatorCombine id="LegacyHarvestableResourceandNearbyTownhall">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="HarvestableResources"/>
+  <CombineArray value="PlayerTownhallwithin10"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyLarvaNotConjoined">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacySpawnLarvaConjoined"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitOrder id="LegacyCasterCanCancelQueue5Addon">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Target Value="Unknown"/>
+  <AbilLink value="que5Addon"/>
+</CValidatorUnitOrder>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotHaveUpgradeToWarpGateAutoCastDisabler">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyUpgradeToWarpGateAutoCastDisabler"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorCombine id="LegacyLockOnGroundAirPeriodicValidators">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="LockOnCasterNearTargetUpgraded"/>
+  <CombineArray value="LockOnTargetFilters"/>
+  <CombineArray value="LockOnCasterFilters"/>
+  <CombineArray value="CasterLockingOn"/>
+  <CombineArray value="CasterDoesNotHaveScramblerMissileBehavior"/>
+</CValidatorCombine>
+<CValidatorCombine id="LegacyLiberatorMorphValidatorCombine">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="CasterNotDead"/>
+  <CombineArray value="HasLiberatorMorphBehavior"/>
+  <CombineArray value="HasNoLiberatorYoink"/>
+  <CombineArray value="LiberatorNotRecallingMothership"/>
+  <CombineArray value="LiberatorNotRecallingMothershipCore"/>
+  <CombineArray value="LiberatorAGNotOutOfRange"/>
+  <CombineArray value="HasNoLiberatorEnsnare"/>
+</CValidatorCombine>
+<CValidatorUnitCompareBehaviorCount id="LegacyCasterHasBatteryOverchargeBehavior">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyBatteryOvercharge"/>
+  <Compare value="GT"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyCasterIsNotBatteryOvercharged">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyBatteryOvercharge"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotDisintegrating">
+  <ResultFailed value="CantTargetThatUnit"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Value value="1"/>
+  <Behavior value="LegacyLightningBomb"/>
+  <Compare value="NE"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareOrderCount id="LegacyParasiticBombVikingFighterNotMorphing">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Target" Effect=""/>
+  <AbilLink value="LegacyAssaultMode"/>
+</CValidatorUnitCompareOrderCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyBypassArmorNoCasterBehaviorValidator">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyBypassArmorStun"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyIsCharging">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyCharging"/>
+  <Value value="1"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyHasTakenDamageBehaviorCheck">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Compare value="GT"/>
+  <Behavior value="LegacyTakenDamage"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotChannelingCausticSpray">
+  <ResultFailed value="CantQueueThatOrder"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <WhichUnit Value="Caster"/>
+  <Behavior value="LegacyChannelingCausticSpray"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitOrderQueue id="LegacyChannelingCausticSpray">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="1"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="LegacyCausticSpray"/>
+</CValidatorUnitOrderQueue>
+<CValidatorUnitOrderQueue id="LegacyGatewayMorphing">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="1"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="LegacyUpgradeToWarpGate"/>
+</CValidatorUnitOrderQueue>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotHaveBeamTargetCDBehavior">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Caster"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyBeamTargetCD"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorPlayerRequirement id="LegacyHaveArmory">
+  <ResultFailed value="Error"/>
+  <Value value="LegacyHaveArmory"/>
+  <Find value="1"/>
+</CValidatorPlayerRequirement>
+<CValidatorUnitCompareBehaviorCount id="LegacyNotHaveScramblerMissileBehavior">
+  <ResultFailed value="Error"/>
+  <ExcludeOriginPlayer Value="Unknown"/>
+  <ExcludeCasterUnit Value="Unknown"/>
+  <RequireOriginPlayer Value="Unknown"/>
+  <RequireCasterUnit Value="Unknown"/>
+  <BehaviorAlignment value="Any"/>
+  <Behavior value="LegacyRavenScramblerMissile"/>
+</CValidatorUnitCompareBehaviorCount>
+<CValidatorUnitCompareCooldown id="LegacyBarrierOnCooldown">
+  <ResultFailed value="Error"/>
+  <CooldownLink value="Abil/ImmortalOverload"/>
+  <Ability value="LegacyImmortalOverload"/>
+  <Compare value="GT"/>
+</CValidatorUnitCompareCooldown>
+<CValidatorUnitFilters id="LegacyTargetIsNotGround">
+  <ResultFailed value="Error"/>
+  <Filters value="-;Ground"/>
+</CValidatorUnitFilters>
+<CValidatorCombine id="LegacyNotHaveParasiticBombTimers">
+  <ResultFailed value="Error"/>
+  <Type value="And"/>
+  <CombineArray value="NotHaveParasiticBombTimer"/>
+  <CombineArray value="NotHaveParasiticBombDodgeTimer"/>
+</CValidatorCombine>
+<CValidatorUnitOrderQueue id="LegacyBattlecruiserIsYamatoing">
+  <ResultFailed value="Error"/>
+  <WhichUnit Value="Caster"/>
+  <Find value="1"/>
+  <Target Value="Unknown"/>
+  <AbilClass value="CAbilUnknown"/>
+  <AbilLink value="LegacyYamato"/>
+</CValidatorUnitOrderQueue>
+
+</Catalog>

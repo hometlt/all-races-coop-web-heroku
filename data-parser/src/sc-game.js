@@ -1,9 +1,23 @@
-import fs from "fs";
 import {SCMod} from "./sc-mod.js";
-import {deep,deepReplaceMatch, isNumeric} from "./sc-util.js";
+import {deep, deepReplaceMatch, isNumeric} from "./operations.js";
 import {SCEntity} from "./sc-entity.js";
+import {StarcraftSchema} from './sc-schema.js';
 
 export const SCGame = {
+    datafiles: [
+        "abil", "accumulator", "achievement", "achievementterm", "actor", "actorsupport", "alert", "armycategory", "armyunit",
+        "armyupgrade", "artifact", "artifactslot", "attachmethod", "bankcondition", "beam", "behavior", "boost", "bundle",
+        "button", "camera", "campaign", "character", "cliff", "cliffmesh", "colorstyle", "commander", "config", "consoleskin",
+        "conversation", "conversationstate", "cursor", "datacollection", "datacollectionpattern", "decalpack", "dsp", "effect",
+        "emoticon", "emoticonpack", "error", "footprint", "fow", "game", "gameui", "herd", "herdnode", "hero", "heroabil",
+        "herostat", "item", "itemclass", "itemcontainer", "kinetic", "lensflareset", "light", "location", "loot", "map",
+        "model", "mount", "mover", "objective", "physicsmaterial", "ping", "playerresponse", "portraitpack", "preload",
+        "premiummap", "racebannerpack", "race", "requirement", "requirementnode", "reverb", "reward", "scoreresult", "scorevalue",
+        "shape", "skin", "skinpack", "sound", "soundexclusivity", "soundmixsnapshot", "soundtrack", "spray", "spraypack",
+        "stimpack", "taccooldown", "tactical", "talent", "talentprofile", "targetfind", "targetsort", "terrain", "terrainobject",
+        "terraintex", "texture", "texturesheet", "tile", "trophy", "turret", "unit",
+        "upgrade","user","validator","voiceover","voicepack","warchest","warchestseason","water","weapon"
+    ],
     schema: {},
     classlist : {},
     defaultPickIgnoreObjects: {
@@ -42,9 +56,26 @@ export const SCGame = {
             'FreeRotate'
         ],
         behavior: [
+            'CloneDummy',
+            'ForceLowDeath',
             'KillsToCaster',
             'CloakFieldEffect',
             'CloakField',
+
+            'SCVHarvest',
+            'ProbeHarvest',
+            'DroneHarvest',
+            'CarryMineralFieldMinerals',
+            'CarryHighYieldMineralFieldMinerals',
+            'CarryHarvestableVespeneGeyserGas',
+            'CarryHarvestableVespeneGeyserGasProtoss',
+            'CarryHarvestableVespeneGeyserGasZerg',
+            'HarvestableVespeneGeyserGas',
+            'HarvestableVespeneGeyserGasProtoss',
+            'HarvestableVespeneGeyserGasZerg',
+            'HarvestableRichVespeneGeyserGas',
+            'HarvestableRichVespeneGeyserGasProtoss',
+            'HarvestableRichVespeneGeyserGasZerg',
         ],
         effect: [
             'Kill',
@@ -74,6 +105,7 @@ export const SCGame = {
             'AttackWorker',
         ],
         abil: [
+            '255',
             'RallyCommand',
             'HoldFire',
             'attack',
@@ -86,10 +118,15 @@ export const SCGame = {
             'que5PassiveCancelToSelection',
             'que1',
             'Rally',
-            'BuildInProgress'
+            'BuildInProgress',
+
+            'SCVHarvest',
+            'ProbeHarvest',
+            'DroneHarvest'
         ]
     },
     ignoredNamespaces: [
+        "sss",
         "achievement",
         "achievementterm",
         "alert",
@@ -162,359 +199,7 @@ export const SCGame = {
         "commander"
     ],
     pickIgnoreObjects: {},
-    makeCoreSchema(){
-        let namespaces = {
-            "sss": [
-                "SCameraSmooth",
-                "SCommanderDifficultyLevel",
-                "SCommanderMasteryTalent",
-                "SCommanderTalentTree",
-                "SConversationAction",
-                "SConversationCondition",
-                "SConversationFacialAnim",
-                "SConversationGroup",
-                "SConversationLine",
-                "SCost",
-                "SDeathResponse",
-                "SLightInfo",
-                "SMarker",
-                "SModification",
-                "SSoundAsset",
-                "SSoundData",
-                "SSpawnInfo",
-                "SAbil",
-                    "SAbilArmMagazineInfo", "SAbilCmdButton", "SAbilMorphInfo",
-                "SBehavior",
-                    "SBehaviorDuration", "SBehaviorFraction",
-            ],
-            "achievement": [
-                "CAchievement"
-            ],
-            "achievementterm": [
-                "CAchievementTerm",
-                    "CAchievementTermAbilInteract", "CAchievementTermAbilLoad", "CAchievementTermAbilUse", "CAchievementTermAchievement", "CAchievementTermBehaviorCount", "CAchievementTermBehaviorState", "CAchievementTermCombine", "CAchievementTermEffectAbsorbed", "CAchievementTermEffectDamaged", "CAchievementTermEffectDodged", "CAchievementTermEffectHealed", "CAchievementTermEffectKilled", "CAchievementTermEffectUse", "CAchievementTermGeneric", "CAchievementTermReplay", "CAchievementTermScoreValue", "CAchievementTermTime", "CAchievementTermUnitBirth", "CAchievementTermUnitDeath", "CAchievementTermUnitKills", "CAchievementTermUnitRegen", "CAchievementTermUnitSupplyLoss"
-            ],
-            "alert": [
-                "CAlert"
-            ],
-            "armycategory": [
-                "CArmyCategory"
-            ],
-            "armyunit": [
-                "CArmyUnit"
-            ],
-            "armyupgrade": [
-                "CArmyUpgrade"
-            ],
-            "artifact": [
-                "CArtifact"
-            ],
-            "artifactslot": [
-                "CArtifactSlot"
-            ],
-            "bankcondition": [
-                "CBankConditionCompare",
-                    "CBankConditionCompareValueCount","CBankConditionCompareValueSum"
-            ],
-            "boost": [
-                "CBoost"
-            ],
-            "bundle": [
-                "CBundle"
-            ],
-            "camera": [
-                "CCamera"
-            ],
-            "campaign": [
-                "CCampaign"
-            ],
-            "character": [
-                "CCharacter"
-            ],
-            "cliff": [
-                "CCliff",
-                    "CCliffDoodad"
-            ],
-            "cliffmesh": [
-                "CCliffMesh"
-            ],
-            "colorstyle": [
-                "CColorStyle"
-            ],
-            "conversation": [
-                "CConversation"
-            ],
-            "conversationstate": [
-                "CConversationState"
-            ],
-            "config": [
-                "CConfig"
-            ],
-            "consoleskin": [
-                "CConsoleSkin"
-            ],
-            "gameui": [
-                "CGameUI"
-            ],
-            "location": [
-                "CLocation"
-            ],
-            "map": [
-                "CMap"
-            ],
-            "objective": [
-                "CObjective"
-            ],
-            "premiummap": [
-                "CPremiumMap"
-            ],
-            "racebannerpack": [
-                "CRaceBannerPack"
-            ],
-            "reward": [
-                "CReward",
-                    "CRewardConsoleSkin", "CRewardDecal", "CRewardEmoticon", "CRewardIcon", "CRewardModel", "CRewardPoints", "CRewardPortrait", "CRewardPortraitInGame", "CRewardRaceBanner", "CRewardSpray", "CRewardSprayUseDecal", "CRewardTrophy", "CRewardVoicePack"
-            ],
-            "stimpack": [
-                "CStimPack"
-            ],
-            "trophy": [
-                "CTrophy"
-            ],
-            "warchest": [
-                "CWarChest"
-            ],
-            "warchestseason": [
-                "CWarChestSeason"
-            ],
-            "dsp": [
-                "CDSPChorus", "CDSPCompressor", "CDSPCustomCompressor", "CDSPDistortion", "CDSPEcho", "CDSPFlange", "CDSPHighPass", "CDSPLimiter", "CDSPLowPass", "CDSPLowPassSimple", "CDSPNormalize", "CDSPParamEQ", "CDSPPitchShift", "CDSPReverb"
-            ],
-            "decalpack": ["CDecalPack",],
-            "emoticon": ["CEmoticon",],
-            "emoticonpack": ["CEmoticonPack",],
-            "fow": [    "CFoW",],
-            "game": [    "CGame",],
-            "herd": [    "CHerd",],
-            "herdnode": [    "CHerdNode",],
-            "hero": [    "CHero",],
-            "heroabil": [    "CHeroAbil",],
-            "herostat": [    "CHeroStat",],
-            "lensflareset": [    "CLensFlareSet",],
-            "mount": [    "CMount",],
-            "physicsmaterial": [    "CPhysicsMaterial",],
-            "ping": [    "CPing",],
-            "playerresponse": [    "CPlayerResponse", "CPlayerResponseUnit", "CPlayerResponseUnitBirth", "CPlayerResponseUnitDamage", "CPlayerResponseUnitDeath",],
-            "portraitpack": [    "CPortraitPack",],
-            "preload": [    "CPreload", "CPreloadActor", "CPreloadConversation", "CPreloadModel", "CPreloadSound", "CPreloadUnit",],
-            "reverb": [    "CReverb",],
-            "scoreresult": [    "CScoreResult", "CScoreResultBuildOrder", "CScoreResultExperience", "CScoreResultGraph", "CScoreResultPerformance", "CScoreResultRoot", "CScoreResultScore",],
-            "scorevalue": [
-                "CScoreValue", "CScoreValueStandard",
-                "CScoreValueCombine",
-                "CScoreValueCustom"
-            ],
-            "skinpack": [    "CSkinPack",],
-            "soundexclusivity": [    "CSoundExclusivity",],
-            "soundmixsnapshot": [    "CSoundMixSnapshot",],
-            "soundtrack": [    "CSoundtrack",],
-            "spray": [    "CSpray",],
-            "spraypack": [    "CSprayPack",],
-            "talent": [    "CTalent",],
-            "talentprofile": [    "CTalentProfile",],
-            "terrain": [    "CTerrain",],
-            "terrainobject": [    "CTerrainObject",],
-            "terraintex": [    "CTerrainTex",],
-            "tile": [    "CTile",],
-            "voiceover": [ "CVoiceOver",],
-            "voicepack": [ "CVoicePack",],
-            "water": [ "CWater",],
-            "beam": [ "CBeamAsyncLinear"],
-            "commander": [
-                "CCommander"
-            ],
-
-
-
-
-            "datacollection": [ "CDataCollection", "CDataCollectionAbil", "CDataCollectionUnit", "CDataCollectionUpgrade",],
-            "datacollectionpattern": ["CDataCollectionPattern",],
-            "texture": [    "CTexture",],
-            "texturesheet": [    "CTextureSheet",],
-            "item": [
-                "CItem",
-                "CItemAbil", "CItemEffect", "CItemEffectInstant", "CItemEffectTarget"
-            ],
-            "itemclass": [
-                "CItemClass"
-            ],
-            "itemcontainer": [
-                "CItemContainer"
-            ],
-            "loot": [
-                "CLoot",
-                "CLootEffect", "CLootItem", "CLootSet", "CLootSpawn", "CLootUnit"
-            ],
-            "user": [
-                "CUser"
-            ],
-
-
-            "abil": [
-                "CAbil",
-                    "CAbilArmMagazine", "CAbilAttack", "CAbilAttackModifier", "CAbilAugment", "CAbilBattery", "CAbilBeacon", "CAbilBehavior", "CAbilBuild", "CAbilBuildable",              "CAbilHarvest", "CAbilInteract", "CAbilInventory", "CAbilLearn", "CAbilMerge", "CAbilMergeable", "CAbilMorph", "CAbilMorphPlacement", "CAbilMove", "CAbilPawn", "CAbilProgress", "CAbilQueue", "CAbilQueueable", "CAbilRally", "CAbilRedirect", "CAbilRedirectInstant", "CAbilRedirectTarget", "CAbilResearch", "CAbilRevive", "CAbilSpecialize", "CAbilStop", "CAbilTrain", "CAbilTransport", "CAbilWarpTrain", "CAbilWarpable",
-                    "CAbilEffect",
-                        "CAbilEffectInstant", "CAbilEffectTarget",
-            ],
-            "accumulator": [
-                "CAccumulator",
-                    "CAccumulatorConstant","CAccumulatorAbilLevel", "CAccumulatorArithmetic", "CAccumulatorAttributePoints", "CAccumulatorBehavior", "CAccumulatorCargo", "CAccumulatorDistance", "CAccumulatorEffectAmount", "CAccumulatorSwitch", "CAccumulatorUnitCustomValue", "CAccumulatorUserData", "CAccumulatorVitals"
-            ],
-            "actor": [
-                "CActor",
-                    "CActorAction", "CActorActionOverride", "CActorArc", "CActorBase", "CActorBatch", "CActorBeamStandard", "CActorBearings", "CActorCamera", "CActorCameraModel", "CActorCreep", "CActorCutscene", "CActorDoodad", "CActorDoodadPreserver", "CActorEditorCamera",  "CActorEventMacro", "CActorFoliageFXSpawner", "CActorForce", "CActorForceBox", "CActorForceConeRoundedEnd", "CActorForceCylinder", "CActorForceSphere", "CActorGlobalConfig", "CActorLightModel", "CActorLightOmni","CActorLightOmniModel","CActorLightSpot","CActorLightSpotModel","CActorList","CActorLookAt", "CActorPortrait","CActorPower","CActorProgress","CActorPropertyCurveSet","CActorQuad","CActorQueryResponse","CActorRange", "CActorScene","CActorSelection","CActorSetQueried","CActorShadow","CActorShield","CActorShieldImpact","CActorSimple","CActorSite","CActorSiteBillboard","CActorSiteMover","CActorSiteOp2DRotation","CActorSiteOpAction","CActorSiteOpAttach","CActorSiteOpAttachVolume","CActorSiteOpBanker","CActorSiteOpBankerUnit","CActorSiteOpBasic","CActorSiteOpCursor","CActorSiteOpDeathMotion","CActorSiteOpEffect","CActorSiteOpForward","CActorSiteOpGameCameraFollow","CActorSiteOpHeight","CActorSiteOpHigherOfTerrainAndWater","CActorSiteOpHostBearings","CActorSiteOpHostedOffset","CActorSiteOpIncoming","CActorSiteOpLocalOffset","CActorSiteOpOrbiter","CActorSiteOpPatch","CActorSiteOpPhysicsImpact","CActorSiteOpRandomPointInCircle","CActorSiteOpRandomPointInCrossbar","CActorSiteOpRandomPointInSphere","CActorSiteOpRotationExplicit","CActorSiteOpRotationRandom","CActorSiteOpRotationSmooth","CActorSiteOpRotationVariancer","CActorSiteOpRotator","CActorSiteOpSelectionOffset","CActorSiteOpSerpentHead","CActorSiteOpSerpentSegment","CActorSiteOpShadow","CActorSiteOpTilter","CActorSiteOpTipability","CActorSiteOpUp","CActorSiteOpZ","CActorSiteOrbiter","CActorSiteRocker","CActorSnapshot","CActorSound","CActorSplat","CActorSquib","CActorStateMonitor","CActorTerrain","CActorTerrainDeformer","CActorText","CActorTurret",
-                    "CActorModel",
-                        "CActorModelMaterial","CActorEditorPoint", "CActorBeamSimple",
-                    "CActorUnit",
-                        "CActorMissile",
-                    "CActorRegion",
-                        "CActorRegionArc","CActorRegionCircle","CActorRegionGame","CActorRegionQuad","CActorRegionWater"
-            ],
-            "attachmethod": [
-                "CAttachMethod",
-                    "CAttachMethodArcTest","CAttachMethodAttachType","CAttachMethodBestMatch","CAttachMethodFilter","CAttachMethodIncoming","CAttachMethodNodeOccupancy","CAttachMethodNodeOccupancy2","CAttachMethodNumericField","CAttachMethodPattern","CAttachMethodPortAllocator","CAttachMethodProximity","CAttachMethodRandom","CAttachMethodReduction","CAttachMethodVolumesRequery","CAttachMethodVolumesTargets","CAttachMethodVolumesWeightedPick"
-            ],
-            "behavior": [
-                "CBehavior","CBehaviorAttackModifier","CBehaviorAttribute","CBehaviorBuff","CBehaviorClickResponse","CBehaviorConjoined","CBehaviorCreepSource","CBehaviorJump","CBehaviorPowerSource","CBehaviorPowerUser","CBehaviorResource","CBehaviorReveal","CBehaviorSpawn","CBehaviorUnitTracker","CBehaviorVeterancy","CBehaviorWander"
-            ],
-            "button": [
-                "CButton"
-            ],
-            "cursor": [
-                "CCursor"
-            ],
-            "effect": [
-                "CEffect",
-                    "CEffectAddTrackedUnit","CEffectApplyBehavior","CEffectApplyForce","CEffectApplyKinetic","CEffectCancelOrder","CEffectCreateHealer","CEffectCreatePersistent","CEffectCreateUnit","CEffectCreep","CEffectDamage","CEffectDestroyPersistent","CEffectEnumArea","CEffectEnumMagazine","CEffectEnumTransport","CEffectIssueOrder","CEffectLastTarget","CEffectLaunchMissile","CEffectLoadContainer","CEffectModifyPlayer","CEffectModifyUnit","CEffectRandomPointInCircle","CEffectRedirectMissile","CEffectReleaseMagazine","CEffectRemoveBehavior","CEffectRemoveKinetic","CEffectReturnMagazine","CEffectSet","CEffectSwitch","CEffectTeleport","CEffectTransferBehavior","CEffectUseCalldown","CEffectUseMagazine","CEffectUserData"
-            ],
-            "footprint": [
-                "CFootprint"
-            ],
-            "kinetic": [
-                "CKinetic",
-                    "CKineticDistance", "CKineticFollow", "CKineticRotate", "CKineticSequence", "CKineticSet", "CKineticTranslate",],
-            "light": [
-                "CLight"
-            ],
-            "model": [
-                "CModel",
-                    "CModelFoliage"
-            ],
-            "mover": [
-                "CMover",
-                    "CMoverAvoid", "CMoverFlock", "CMoverMissile"
-            ],
-            "race": [
-                "CRace"
-            ],
-            "requirement": [
-                "CRequirement"
-            ],
-            "requirementnode": [
-                "CRequirementAllowAbil","CRequirementAllowBehavior","CRequirementAllowUnit","CRequirementAllowUpgrade","CRequirementAnd","CRequirementConst","CRequirementCountAbil","CRequirementCountBehavior","CRequirementCountUnit","CRequirementCountUpgrade","CRequirementDiv","CRequirementEq","CRequirementGT","CRequirementGTE","CRequirementLT","CRequirementLTE","CRequirementMod","CRequirementMul","CRequirementNE","CRequirementNode","CRequirementNot","CRequirementOdd","CRequirementOr","CRequirementSum","CRequirementXor"
-            ],
-            "shape": [
-                "CShape",
-                    "CShapeArc", "CShapeQuad"
-            ],
-            "skin": [
-                "CSkin"
-            ],
-            "sound": [
-                "CSound"
-            ],
-            "taccooldown": [
-                "CTacCooldown"
-            ],
-            "tactical": [
-                "CTactical",
-                    "CTacticalOrder", "CTacticalSet"
-            ],
-            "targetfind": [
-                "CTargetFind",
-                    "CTargetFindBestPoint","CTargetFindEffect","CTargetFindEnumArea","CTargetFindLastAttacker","CTargetFindOffset","CTargetFindOrder","CTargetFindRallyPoint","CTargetFindSet","CTargetFindWorkerRallyPoint"
-            ],
-            "targetsort": [
-                "CTargetSort",
-                    "CTargetSortValidator","CTargetSortField", "CTargetSortAlliance","CTargetSortAngle","CTargetSortBehaviorCount","CTargetSortChargeCount","CTargetSortChargeRegen","CTargetSortCooldown","CTargetSortDistance","CTargetSortInterruptible","CTargetSortMarker","CTargetSortPowerSourceLevel","CTargetSortPowerUserLevel","CTargetSortPriority","CTargetSortRandom","CTargetSortVital","CTargetSortVitalFraction"
-            ],
-            "turret": [
-                "CTurret"
-            ],
-            "unit": [
-                "CUnit"
-            ],
-            "upgrade": [
-                "CUpgrade"
-            ],
-            "validator": [
-                "CValidator",
-                    "CValidatorUnitCompareCooldown","CValidatorCombine","CValidatorCondition","CValidatorEffect","CValidatorEffectCompareDodged","CValidatorEffectCompareEvaded","CValidatorEffectTreeUserData","CValidatorFunction","CValidatorGameCommanderActive","CValidatorGameCompareTerrain","CValidatorGameCompareTimeEvent","CValidatorGameCompareTimeOfDay","CValidatorLocation","CValidatorLocationArc","CValidatorLocationCompareCliffLevel","CValidatorLocationComparePower","CValidatorLocationCompareRange","CValidatorLocationCreep","CValidatorLocationCrossChasm","CValidatorLocationCrossCliff","CValidatorLocationEnumArea","CValidatorLocationInPlayableMapArea","CValidatorLocationPathable","CValidatorLocationPlacement","CValidatorLocationShrub","CValidatorLocationType","CValidatorLocationVision","CValidatorPlayer","CValidatorPlayerAlliance","CValidatorPlayerCompareDifficulty","CValidatorPlayerCompareFoodAvailable","CValidatorPlayerCompareFoodUsed","CValidatorPlayerCompareRace","CValidatorPlayerCompareResource","CValidatorPlayerCompareResult","CValidatorPlayerCompareType","CValidatorPlayerFood","CValidatorPlayerRequirement","CValidatorUnit","CValidatorUnitAI","CValidatorUnitAbil","CValidatorUnitAlliance","CValidatorUnitBehaviorStackAlias","CValidatorUnitBehaviorState","CValidatorUnitCombatAI","CValidatorUnitCompareAIAreaEvalRatio","CValidatorUnitCompareAbilSkillPoint","CValidatorUnitCompareAttackPriority","CValidatorUnitCompareBehaviorCount","CValidatorUnitCompareCargo","CValidatorUnitCompareChargeUsed","CValidatorUnitCompareDamageDealtTime","CValidatorUnitCompareDamageTakenTime","CValidatorUnitCompareDeath","CValidatorUnitCompareField","CValidatorUnitCompareHeight","CValidatorUnitCompareKillCount","CValidatorUnitCompareMarkerCount","CValidatorUnitCompareMoverPhase","CValidatorUnitCompareOrderCount","CValidatorUnitCompareOrderTargetRange","CValidatorUnitComparePowerSourceLevel","CValidatorUnitComparePowerUserLevel","CValidatorUnitCompareRallyPointCount","CValidatorUnitCompareResourceContents","CValidatorUnitCompareResourceHarvesters","CValidatorUnitCompareSpeed","CValidatorUnitCompareVeterancyLevel","CValidatorUnitCompareVital","CValidatorUnitCompareVitality","CValidatorUnitDetected","CValidatorUnitFilters","CValidatorUnitFlying","CValidatorUnitInWeaponRange","CValidatorUnitInventory","CValidatorUnitInventoryContainsItem","CValidatorUnitInventoryIsFull","CValidatorUnitKinetic","CValidatorUnitLastDamagePlayer","CValidatorUnitMissileNullified","CValidatorUnitMover","CValidatorUnitOrder","CValidatorUnitOrderQueue","CValidatorUnitOrderTargetPathable","CValidatorUnitOrderTargetType","CValidatorUnitPathable","CValidatorUnitPathing","CValidatorUnitScanning","CValidatorUnitState","CValidatorUnitTestWeaponType","CValidatorUnitType","CValidatorUnitWeaponAnimating","CValidatorUnitWeaponFiring","CValidatorUnitWeaponPlane",],
-            "weapon": [
-                "CWeapon",
-                    "CWeaponLegacy", "CWeaponStrafe"
-            ],
-        }
-
-
-
-        let _cat = {
-            "const": "const"
-        }
-
-        for(let fname in namespaces){
-            for(let type of namespaces[fname]){
-                _cat[type] = fname
-            }
-        }
-
-        let classinfo = {
-            entity: {}
-        }
-        for(let namespace in namespaces){
-            if(SCGame.ignoredNamespaces.includes(namespace))return;
-            let prototype = namespaces[namespace][0]
-            classinfo[prototype] = {namespace}
-
-            for(let i= 1;i < namespaces[namespace].length ; i++){
-                let classname = namespaces[namespace][i]
-                classinfo[classname] = {prototype}
-            }
-        }
-
-        classinfo.CAbilEffectInstant.prototype = "CAbilEffect"
-        classinfo.CAbilEffectTarget.prototype = "CAbilEffect"
-
-        classinfo.CActorRegionArc.prototype = "CActorRegion"
-        classinfo.CActorRegionCircle.prototype = "CActorRegion"
-        classinfo.CActorRegionQuad.prototype = "CActorRegion"
-        classinfo.CActorRegionWater.prototype = "CActorRegion"
-        classinfo.CActorRegionGame.prototype = "CActorRegion"
-
-        classinfo.CActorMissile.prototype = "CActorUnit"
-
-        classinfo.CScoreValueCombine.prototype = "CScoreValueCustom"
-
-        classinfo.CActorEditorPoint.prototype = "CActorModel"
-        classinfo.CActorBeamSimple.prototype = "CActorModel"
-        classinfo.CActorModelMaterial.prototype = "CActorModel"
-
-
-        return classinfo
-    },
-    setSchema (file){
-        let schemaData = JSON.parse(fs.readFileSync(file,{encoding: 'utf-8'}))
-
+    setSchema (schemaData){
         let classlist = {}
 
         function _setSchemaInstance(entityID){
@@ -544,43 +229,30 @@ export const SCGame = {
                 classlist[entityID] = entity
             }
         }
-
         for (let entityID in schemaData){
             _setSchemaInstance(entityID)
         }
-
         this.classlist = classlist
     },
     _objectScheme(object,schema,path,options = {}){
-
         if(! this._matchPath(options.path,path)){
             return
         }
-
         for (let property in object) {
             if (['id', 'class', 'parent', 'default', 'removed'].includes(property)) continue;
             let _path = [...path,property].join(".")
-
             if(property === "Unit"){
                 property
             }
             if(! this._matchPath(options.path,_path))continue
-
             if(property === "Unit"){
                 property
             }
-
-
-
-
             let value = object[property]
-
             if(!this._schemaValues[_path]){
                 this._schemaValues[_path] = []
             }
             let values = this._schemaValues[_path];
-
-
             let isarray = property.endsWith("Array") || (value.constructor === Array && value.length > 1)
             if(isarray && value.constructor === String){
                 value = [{value}]
@@ -828,10 +500,8 @@ export const SCGame = {
         }
     },
     async makeSchema({files,path = '*',group = 'catalog' }){
-
+        let schema = deep({},CoreSchema)
         let mod = new SCMod()
-        let schema = this.makeCoreSchema()
-
         //Make Catalogs Data Schema and Save Catalogs Data as JSON
         for(let file of files){
             await mod.read(files);
@@ -840,20 +510,9 @@ export const SCGame = {
 
             this._schemaValues = {}
             for(let catalog in mod.catalogs){
-                if([
-                    "sss","const",
-                    "achievement","achievementterm","armycategory","armyunit","armyupgrade","bankcondition",
-                    "boost","bundle","camera","campaign","emoticon","emoticonpack","objective","preload","premiummap",
-                    "racebannerpack","reward","scoreresult","scorevalue","stimpack","talentprofile","trophy",
-                    "warchest","warchestseason","talent",
-
-                ].includes(catalog)){
-                    continue;
-                }
-                if(catalog === "sss")continue;
+                if(SCGame.ignoredNamespaces.includes(catalog))continue;
 
                 for(let entity of mod.catalogs[catalog]) {
-
                     let schemaName
                     if(group === "catalog"){
                         schemaName = catalog
@@ -913,4 +572,6 @@ export const SCGame = {
         return schema;
     }
 }
+SCGame.setSchema(StarcraftSchema)
+
 
