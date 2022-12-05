@@ -31,7 +31,7 @@
 
     </div>
   </div>
-
+<% if(data.users) { %>
   <div class="card-body">
     <% for(let user of data.users) { %>
       <img src="<%= user.avatar%>" width="40px" height="40px" style="border-radius:40px; float: left; margin-right: 10px">
@@ -39,6 +39,7 @@
       <%= user.folder %>
     <% } %>
   </div>
+<% } %>
 </div>
 
 <%- include('partials/footer') %>

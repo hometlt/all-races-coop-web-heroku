@@ -58,15 +58,15 @@ export class SCEntity {
     get $$relations(){
         let result
         // if(SCGame.useResolve){
-            result =  relations(this.$$resolved, this.$$schema,[this.$$namespace,this.id],SCGame.pickIgnoreObjects)
+            result =  relations(this.$$resolved, this.$$schema,[this.class,this.id],SCGame.pickIgnoreObjects)
         // }
         if(!SCGame.useResolve){
             for(let i in result){
                 result[i].path = ""
             }
-            result.push(...relations(this, this.$$schema,[this.$$namespace,this.id],SCGame.pickIgnoreObjects))
+            result.push(...relations(this, this.$$schema,[this.class,this.id],SCGame.pickIgnoreObjects))
             if(this.parent){
-                result.push({namespace: this.$$namespace, link: this.parent, path: [this.$$namespace,this.id, "parent"].join(".")})
+                result.push({namespace: this.$$namespace, link: this.parent, path: [this.class,this.id, "parent"].join(".")})
             }
         }
         Object.defineProperty(this, '$$relations',{ configurable:true, writable: true,enumerable: false,value: result })

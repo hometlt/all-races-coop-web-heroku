@@ -2115,12 +2115,12 @@ export const StarcraftSchema = {
     PowerSource: "word",
     SpawnTarget: "word",
     HostSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
     Host: {
-      Subject: "string",
+      Subject: "subject",
       Actor: "word",
       Scope: "word",
       FailOnNoHost: "bit",
@@ -2130,7 +2130,7 @@ export const StarcraftSchema = {
     TerrainDeformerFlags: "{bit}",
     FoliageFXDeathSpawnTarget: "word",
     Supporter: {
-      Subject: "string",
+      Subject: "subject",
       Actor: "word",
       Scope: "word",
       Effect: "effect"
@@ -2163,7 +2163,7 @@ export const StarcraftSchema = {
       Methods: "word"
     },
     TurretBody: {
-      Subject: "word",
+      Subject: "subject",
       Actor: "word"
     },
     Aliases: "[word]",
@@ -2350,7 +2350,7 @@ export const StarcraftSchema = {
     LaunchGuideAlias: "word",
     LaunchSite: "word",
     LaunchSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2369,7 +2369,7 @@ export const StarcraftSchema = {
     LaunchTerrainSquibSound: "word",
     ContainerSite: "word",
     ContainerSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     ContainerAttachQuery: {
       Methods: "string",
@@ -2387,7 +2387,7 @@ export const StarcraftSchema = {
     Missile: "word",
     ImpactGuideAlias: "word",
     ImpactSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2403,7 +2403,7 @@ export const StarcraftSchema = {
     },
     ImpactPointSite: "word",
     ImpactPointSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     ImpactMap: [
       {
@@ -2421,7 +2421,7 @@ export const StarcraftSchema = {
     ImpactTerrainSquibSound: "word",
     DamageSite: "word",
     DamageSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2462,7 +2462,7 @@ export const StarcraftSchema = {
       }
     ],
     HostTargetSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     Type: "word",
     SceneActor: "actor",
@@ -2515,7 +2515,7 @@ export const StarcraftSchema = {
         ActorModel: "actor",
         Model: "model",
         ModelSiteOps: {
-          Ops: "ops"
+          Ops: "actor"
         },
         ModelAttachQuery: {
           Methods: "string"
@@ -2523,7 +2523,7 @@ export const StarcraftSchema = {
         ActorSound: "actor",
         Sound: "word",
         SoundSiteOps: {
-          Ops: "ops"
+          Ops: "actor"
         },
         SoundAttachQuery: {
           Methods: "word"
@@ -2538,7 +2538,7 @@ export const StarcraftSchema = {
     HoldPosition: "bit",
     HoldRotation: "bit",
     HostIncoming: {
-      Subject: "string",
+      Subject: "subject",
       Actor: "word",
       Scope: "word"
     },
@@ -2551,19 +2551,19 @@ export const StarcraftSchema = {
     RollOutRemainderFractionForLevelOff: "real",
     BasicType: "word",
     HostForwardSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     Invert: "bit",
     ZOnly: "bit",
     HostForward: {
-      Subject: "string",
+      Subject: "subject",
       Scope: "word",
       Actor: "word",
       Effect: "effect"
     },
     Forward: "reals",
     HostHeight: {
-      Subject: "word",
+      Subject: "subject",
       Scope: "word",
       Actor: "word"
     },
@@ -2571,15 +2571,15 @@ export const StarcraftSchema = {
     TerrainAndWaterFlags: "{bit}",
     ForcedWadingMaxDepth: "real",
     HostBearings: {
-      Subject: "string",
+      Subject: "subject",
       Scope: "word",
       Actor: "word"
     },
     HostBearingsSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     HostImpact: {
-      Subject: "string",
+      Subject: "subject",
       Actor: "word",
       Scope: "word"
     },
@@ -2605,12 +2605,12 @@ export const StarcraftSchema = {
     TipabilityFlags: "{bit}",
     Sharing: "word",
     HostLaunch: {
-      Subject: "string",
+      Subject: "subject",
       Actor: "word",
       Scope: "word"
     },
     HostLaunchSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2629,7 +2629,7 @@ export const StarcraftSchema = {
     NotifyRadiusKey: "word",
     RegionFlags: "{bit}",
     HostForProps: {
-      Subject: "string",
+      Subject: "subject",
       Scope: "word",
       Actor: "word"
     },
@@ -2638,7 +2638,7 @@ export const StarcraftSchema = {
     InfluenceRange: "real",
     BlendTime: "real",
     HostInitialSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     PhysicsImpactDefault: {
       ActorModel: "actor",
@@ -2647,11 +2647,11 @@ export const StarcraftSchema = {
       AutoVolumeRangeMin: "real"
     },
     Receiver: {
-      Subject: "string"
+      Subject: "subject"
     },
     Direction: "word",
     HostEnd: {
-      Subject: "string",
+      Subject: "subject",
       Scope: "word"
     },
     Length: "reals",
@@ -2665,7 +2665,7 @@ export const StarcraftSchema = {
     Facing: "real",
     sprayIndex: "int",
     LaunchRequest: {
-      Subject: "word",
+      Subject: "subject",
       Actor: "word",
       Scope: "word"
     },
@@ -2724,6 +2724,13 @@ export const StarcraftSchema = {
     abil: "abil",
     Height: "reals",
     Width: "real",
+    //todo
+    // <Layers Sound="Disruptor_DisruptionOvercharge_Discharge">
+    // <Chance value="100"/>
+    // <Pitch value="0.000000,0.000000"/>
+    // <PlayDelay value="0,0"/>
+    // <Volume value="0.000000,0.000000"/>
+    // </Layers>
     Layers: [
       {
         Sound: "sound",
@@ -2733,7 +2740,7 @@ export const StarcraftSchema = {
         Chance: "int",
         Pitch: "reals",
         PlayDelay: "ints",
-        Volume: "reals"
+        Volume: "reals",
       }
     ],
     Weapon: "weapon",
@@ -2752,7 +2759,7 @@ export const StarcraftSchema = {
     AcquisitionPitchHalfArc: "real",
     AccuracyHalfArc: "real",
     HostEndSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2771,7 +2778,7 @@ export const StarcraftSchema = {
       Name: "link"
     },
     HostImpactSiteOps: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
@@ -2824,27 +2831,21 @@ export const StarcraftSchema = {
     VisualDirectionalHeader: "word",
     VisualDirectionless: "word",
     ActionFlags: "{bit}",
-    WireframeShieldVariations: [
-      {
-        Number: "bit",
-        Image: "[string]"
-      }
-    ],
-    GroupIconVariations: [
-      {
-        Number: "int",
-        Image: "string"
-      }
-    ],
-    WireframeVariations: [
-      {
-        Number: "int",
-        Image: "string"
-      }
-    ],
+
+
+      //todo
+      // <GroupIconVariations Number="0">
+      // <Image value="Assets\Textures\Wireframe-Protoss-DarkTemplar00.dds"/>
+      // </GroupIconVariations>
+
+    WireframeShieldVariations: [{Number: "bit", Image: "[string]"}],
+    GroupIconVariations: [{Number: "int", Image: "string"}],
+    WireframeVariations: [{Number: "int", Image: "string"}],
+
+
     CooldownDisplay: "words",
     HostImpactSource: {
-      Subject: "word",
+      Subject: "subject",
       ReachAcrossEffectTrees: "bit"
     },
     Elevation: "reals",
@@ -2868,7 +2869,7 @@ export const StarcraftSchema = {
     ],
     UnitModelFrameActor: "actor",
     HostFor2ndVisibilityTest: {
-      Subject: "word",
+      Subject: "subject",
       Actor: "word"
     },
     HostedAttaches: [
@@ -2878,24 +2879,24 @@ export const StarcraftSchema = {
           Methods: "string"
         },
         HostSiteOps: {
-          Ops: "ops"
+          Ops: "actor"
         }
       }
     ],
     ImpactSiteOpsReaction: {
-      Ops: "ops",
+      Ops: "actor",
       HoldPosition: "bit",
       HoldRotation: "bit"
     },
     CombatRevealDurationType: "word",
     HostReturn: {
-      Subject: "word",
+      Subject: "subject",
       Scope: "word",
       Actor: "word",
       Effect: "effect"
     },
     HostReturnSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     MovementHerdNode: "string",
     VisualArray: "[word]",
@@ -2915,11 +2916,11 @@ export const StarcraftSchema = {
     unitNameAlt: "unit",
     alt: "word",
     HostOffset: {
-      Subject: "word",
+      Subject: "subject",
       Scope: "word"
     },
     HostOffsetSiteOps: {
-      Ops: "ops"
+      Ops: "actor"
     },
     PhysicsImpacts: [
       {
@@ -2964,9 +2965,9 @@ export const StarcraftSchema = {
       UncoilingWhileIdleRotationRateMax: "real",
       Flags: "{bit}"
     },
-    Head: "word",
+    Head: "actor",
     HostZ: {
-      Subject: "string"
+      Subject: "subject"
     },
     Segment: {
       Radius: "real"
@@ -4637,6 +4638,7 @@ export const StarcraftSchema = {
     TechnologyTitle: "link"
   },
   model: {
+    tokens: ['Prefix','Race'],
     Flags: "{bit}",
     Lighting: "string",
     Quality: "bit",
@@ -4658,7 +4660,7 @@ export const StarcraftSchema = {
     Model: "file",
     FacialController: "file",
     PausedParticleSystemBehavior: "word",
-    Race: "race",
+    Race: "string",
     Prefix: "string",
     Occlusion: "word",
     RadiusLoose: "real",

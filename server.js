@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const session = require("express-session");
 const passport = require("passport");
+const cookieParser = require("cookie-parser");
+
 
 const stormRouter = require("./storm/router.js").stormRouter
 const dataRouter = require("./data/router.js").dataRouter
@@ -18,6 +20,7 @@ process.chdir(__dirname)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let app = express()
+app.use(cookieParser());
 app.use(cors());
 app.use(express.static("public"));
 app.set("view engine", "ejs");

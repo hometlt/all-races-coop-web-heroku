@@ -2,6 +2,7 @@ import {SCMod} from "./sc-mod.js";
 import {deep, deepReplaceMatch, isNumeric} from "./operations.js";
 import {SCEntity} from "./sc-entity.js";
 import {StarcraftSchema} from './sc-schema.js';
+import {deepFreeze} from "./console-debug.js";
 
 export const SCGame = {
     datafiles: [
@@ -28,6 +29,7 @@ export const SCGame = {
             'Pathable',
         ],
         path:  [
+            "*.*.Race",
             'CValidatorUnitFilters',
             'CValidatorUnitCompareDamageTakenTime',
             'CEffectRemoveBehavior',
@@ -37,19 +39,19 @@ export const SCGame = {
             'CValidatorUnitCompareResourceContents',
             'CValidatorUnitMover',
             'CValidatorUnitCompareMoverPhase',
-            "CEffectIssueOrder.Abil",
-            "CUpgrade.AffectedUnitArray",
-            "CUpgrade.EffectArray.Reference",
-            "CUnit.TechTreeProducedUnitArray.value",
-            "CBehaviorBuff.Modification.AbilLinkDisableArray",
-            "CBehaviorBuff.Modification.AbilLinkEnableArray",
-            "CBehaviorBuff.Modification.BehaviorLinkDisableArray",
-            "CBehaviorBuff.Modification.BehaviorLinkEnableArray.value",
-            "CUnit.TechTreeUnlockedUnitArray",
-            "CValidatorUnitCompareBehaviorCount.Behavior",
-            "CValidator*.*.Effect",
-            "CBehaviorBuff.DamageResponse.RequireEffectArray",
-            "CRequirement*.Count.Link"
+            "CEffectIssueOrder.*.Abil",
+            "CUpgrade.*.AffectedUnitArray",
+            "CUpgrade.*.EffectArray.Reference",
+            "CUnit.*.TechTreeProducedUnitArray.value",
+            "CBehaviorBuff.*.Modification.AbilLinkDisableArray",
+            "CBehaviorBuff.*.Modification.AbilLinkEnableArray",
+            "CBehaviorBuff.*.Modification.BehaviorLinkDisableArray",
+            "CBehaviorBuff.*.Modification.BehaviorLinkEnableArray.value",
+            "CUnit.*.TechTreeUnlockedUnitArray",
+            "CValidatorUnitCompareBehaviorCount.*.Behavior",
+            "CValidator*.*.*.Effect",
+            "CBehaviorBuff.*.DamageResponse.RequireEffectArray",
+            "CRequirement*.*.Count.Link"
         ],
         requirementnode: [1,2,3,4,5,6,7,8,9,10],
         turret: [

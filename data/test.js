@@ -4,7 +4,6 @@ import {SCMod} from "./src/sc-mod.js";
 import {stringValues, convertObjectsToIndexedArray} from "./src/operations.js";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import {deepFreeze} from "./src/console-debug.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 process.chdir(__dirname)
 
@@ -38,8 +37,9 @@ if(LOAD_METHOD === 'JSON' && JSON_CREATED){
 }
 
 //creating game patch
-if(FORCE_PATCH || !PATCH_CREATED) {
-    mod.cache.abil.SprayTerran.$$relations
+// if(FORCE_PATCH || !PATCH_CREATED) {
+    mod.cache.model.Barracks
+    mod.cache.actor.Barracks
 
     mod.pick({race: ["Terr"]},{
         unit: ['WarHound'],
@@ -99,13 +99,14 @@ if(FORCE_PATCH || !PATCH_CREATED) {
     console.log("Total Entities: " + mod.entities.length)
     mod.renameEntities("Legacy*")
 
+    mod.cache.model.Barracks
     await mod.saveCatalogs("./output/patch")
     // await mod.saveCatalogs("./output/patch.json")
     // await mod.saveCatalogs("./output/patch.yaml")
     // await mod.saveCatalogs("./output/patch.xml")
-}
-else{
-    await mod.read('./output/patch')
-}
+// }
+// else{
+//     await mod.read('./output/patch')
+// }
 
 

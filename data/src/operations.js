@@ -1,4 +1,5 @@
 import fs from "fs";
+import {SCGame} from "./sc-game.js";
 
 export function getAllFiles (dirPath, relativePath, arrayOfFiles = []) {
     let files = fs.readdirSync(dirPath)
@@ -154,6 +155,40 @@ export function convertIndexedArrayToObjects(object) {
     })
 }
 
+
+export function _addRelation({namespace, link, patharray, type, result, ignorelist}){
+    let path = patharray.join(".")
+
+    if(SCGame.ignoredNamespaces.includes(namespace)){
+        return
+    }
+    if(link === "*" || !namespace || !link || ignorelist[namespace]?.includes(link)){
+        return;
+    }
+
+
+    if(ignorelist.path) {
+        let ignorelistFiltered = ignorelist.path.map(item => item.split("."))
+        for (let index = 0; index < patharray.length; index++) {
+            ignorelistFiltered = ignorelistFiltered.filter(item => {
+                if (item[index].includes("*")) {
+                    if(item[index].indexOf("*") === item[index].length - 1){
+                        return patharray[index].startsWith(item[index].substring(0,item[index].length - 1))
+                    }
+                    else{
+                        console.log("not implemented")
+                    }
+                }
+                return item[index] === patharray[index]
+            })
+            if(ignorelistFiltered.find(item => item.length === index + 1)){
+                return;
+            }
+        }
+    }
+    result.push({namespace, link, path, type})
+}
+
 /**
  *
  * @param object
@@ -163,74 +198,89 @@ export function convertIndexedArrayToObjects(object) {
  * @returns {{}}
  */
 export function _propertyRelations(value,type,result,patharray,ignorelist){
-    let path = patharray.join(".")
 
     let link , namespace
-    if(type === "terms"){
-        let added = []
 
-        let [event,...conditions] = value.split(";").map(term => term.trim())
-        let [entityType, entityName] = event.split(".")
-        namespace = {
-            Behavior: "behavior",
-            Abil: "abil",
-            WeaponStart: "weapon",
-            Upgrade: "upgrade",
-            Confirmation: "unit",
-            UnitConstruction: "unit",
-            UnitDeath: "unit",
-            UnitBirth: "unit",
-            UnitRevive: "unit",
-            Effect: "effect",
-            Model: "model",
-            Actor: "actor",
-        }[entityType]
-        link = entityName
+    switch (type) {
+        case 'terms': {
+            let added = []
 
-
-        if(namespace && link && link !== "*"){
-            if(!ignorelist[namespace]?.includes(link)){
-                added.push(namespace+"."+link)
-                result.push({namespace, link, path, type: 'terms'})
-            }
-        }
-
-        for(let index =0; index < conditions.length; index++){
-            let condition = conditions[index]
-            let [entityType, entityName] = condition.split(" ").map(term => term.trim())
+            let [event,...conditions] = value.split(";").map(term => term.trim())
+            let [entityType, entityName] = event.split(".")
             namespace = {
-                MorphFrom: "unit",
-                MorphTo: "unit",
+                TurretEnable: "turret",
+                Behavior: "behavior",
+                Abil: "abil",
+                WeaponStart: "weapon",
+                Upgrade: "upgrade",
+                Confirmation: "unit",
+                UnitConstruction: "unit",
+                UnitDeath: "unit",
+                UnitBirth: "unit",
+                UnitRevive: "unit",
+                Effect: "effect",
+                Model: "model",
+                Actor: "actor",
             }[entityType]
             link = entityName
 
-            if(namespace && link && link !== "*"){
-                if(!ignorelist[namespace]?.includes(link) && !added.includes(namespace+"."+link)){
+            added.push(namespace+"."+link)
+            _addRelation({namespace, link, patharray,  type: 'terms', result, ignorelist})
+
+            for(let index =0; index < conditions.length; index++){
+                let condition = conditions[index]
+                let [entityType, entityName] = condition.split(" ").map(term => term.trim())
+                namespace = {
+                    MorphFrom: "unit",
+                    MorphTo: "unit",
+                }[entityType]
+                link = entityName
+
+                if(!added.includes(namespace+"."+link)){
                     added.push(namespace+"."+link)
-                    result.push({namespace, link, path, type: 'terms'})
+                    _addRelation({namespace, link, patharray,  type: 'terms', result, ignorelist})
                 }
             }
+            return;
         }
-    }
-    else{
-        if(["actor","model","race","unit","weapon","turret","upgrade","button","requirementnode",
-            "requirement","behavior","abil","validator","effect"].includes(type)) {
+        case 'subject':
+            if(/[a-zA-Z]/.test(value[0])){
+                type = 'actor'
+                link = value;
+                namespace = type
+            }
+            break;
+        case 'actor':
+        case 'model':
+        case 'race':
+        case 'unit':
+        case 'weapon':
+        case 'turret':
+        case 'upgrade':
+        case 'button':
+        case 'requirementnode':
+        case 'requirement':
+        case 'behavior':
+        case 'abil':
+        case 'validator':
+        case 'effect':
             link = value;
             namespace = type
-        }
-        else if(type === "reference"){
+            break;
+        case 'reference':
             let [entityType, entityName, entityProperty] = value.split(",")
             link = entityName; namespace = entityType.toLowerCase()
-        }
-        else if(type === "abilcmd"){
+            break;
+        case 'abilcmd':
             let [abilName, cmd] = value.split(",")
             link = abilName; namespace = "abil"
-        }
-
-        if(namespace && link && !ignorelist[namespace]?.includes(link)){
-            result.push({namespace, link, path})
-        }
+            break;
+        default:
+            return
     }
+
+    _addRelation({namespace, link, patharray,  type, result, ignorelist})
+
 
 }
 export function relations(object,schema,path = [], ignorelist = {}, result = []){
@@ -254,7 +304,11 @@ export function relations(object,schema,path = [], ignorelist = {}, result = [])
         if(type.constructor === String){
             if(value.constructor === Array){
                 for(let index =0; index< value.length; index++){
-                    _propertyRelations(value,type,result,[..._path,index],ignorelist)
+                    let _value = value[index]
+                    if(_value.constructor === Object){
+                        _value = _value.value
+                    }
+                    _propertyRelations(_value,type,result,[..._path,index],ignorelist)
                 }
             }
             else if(value.constructor === String){
@@ -387,7 +441,7 @@ export function optimiseForXML(object,schema = object.$$schema, path = [object.c
     if(!schema) return;
     for(let property in object){
         let type = resolveSchemaType(schema,property), value = object[property]
-        if(['id', 'parent', 'default', 'index', 'removed'].includes(property)) {
+        if(['id', 'parent', 'default', 'index', 'removed','tokens'].includes(property)) {
             type = 'string'
         }
 
@@ -399,8 +453,19 @@ export function optimiseForXML(object,schema = object.$$schema, path = [object.c
         }
 
         if(type.constructor === String) {
+
+            function isToken(){
+                if( /[a-z]/.test(property[0]))return true
+
+                if(schema.tokens?.includes(property)){
+                    return true;
+                }
+                return false;
+            }
+
+
             //['id', 'class', 'parent', 'default', 'index', 'removed']
-            if(path.length > 1 || /[a-z]/.test(property[0])) {
+            if(path.length > 1 || isToken()) {
                 if (!object.$) object.$ = {}
                 object.$[property] = value
                 delete object[property]
@@ -473,7 +538,11 @@ export function fromXMLToObject (object) {
         let value = object[property]
 
         if (/^__(.*)__$/.test(property)) {
-            object[property.substring(2, property.length - 2)] = object[property][0].value
+            if(property === "__Prefix__"){
+                property
+            }
+            // object[property.substring(2, property.length - 2)] = object[property][0].value
+            object[property.substring(2, property.length - 2)] = object[property][0].$.value
             delete object[property]
         }
         else if(property === "#name"){

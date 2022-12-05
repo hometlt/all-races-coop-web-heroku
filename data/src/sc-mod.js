@@ -251,7 +251,11 @@ export class SCMod {
             }
         }
     }
-    async write(path){
+    async write (path){
+        if(path.endsWith(".json")){
+            fs.writeFileSync('./input/voidmulti.json', JSON.stringify(this, null,"  "))
+            return;
+        }
         if(path){
             if(!path.endsWith("/"))path += "/"
             this.path = path;
@@ -261,7 +265,7 @@ export class SCMod {
         await this.saveLocalisations()
         await this.saveFontStyles()
         await this.saveLayouts()
-        await this.saveCatalogs(path)
+        await this.saveData(path)
         await this.copyFiles()
         // if(combo.dependenciesFiles.length) saveXMLData({Includes: {Path: combo.dependenciesFiles.map(dep => ({ $: {value: dep}}))}}, output + "Base.SC2Data/Includes.xml")
     }
@@ -336,7 +340,7 @@ export class SCMod {
         let output = CMBuilder.buildObject({Desc: {Include: this.layouts }});
         this._saveRawData(output,this.path + "Base.SC2Data/UI/Layout/DescIndex.SC2Layout")
     }
-    async saveCatalogs(path,{format= 'xml', writeToSingleFile = false} = {}) {
+    async saveData(path,{format= 'xml', writeToSingleFile = false} = {}) {
         if(path.endsWith(".json")){
             writeToSingleFile = true
             format = 'json'
@@ -449,7 +453,13 @@ export class SCMod {
         }
     }
     pickEntity(entity){
-        if(!entity)return
+        if(!entity) {
+            return
+        }
+        if(SCGame.pickIgnoreObjects[entity.$$namespace]?.includes(entity.id)){
+            return
+        }
+        // console.log(entity.class +" " + entity.id)
         for(let relation of entity.$$relations){
             let linkedEntity = this.cache[relation.namespace][relation.link]
             if(!linkedEntity)continue
@@ -590,6 +600,14 @@ export class SCMod {
                             console.warn("wrong reference " + reference)
                             continue;
                         }
+                        if(value.constructor === Object){
+                            valueObject = value
+                            valueProperty = "value"
+                            value = valueObject.value
+                        }
+                        //todo objects????
+
+
                         if(value.includes(".") || value.includes(" ") || value.includes(";")){
                             //this is a term
 
@@ -617,6 +635,7 @@ export class SCMod {
                                 let condition = conditions[index]
                                 let eventParts = condition.split(" ").map(term => term.trim())
                                 let namespace = {
+                                    // ModelSwap: "model",
                                     ValidateUnit: "validator",
                                     MorphFrom: "unit",
                                     MorphTo: "unit",
@@ -704,7 +723,7 @@ export class SCMod {
             if(existed) {
                 if (entityparent) {
                     Object.defineProperty(existed, '$overriden',{ configurable:true, writable: true,enumerable: false,value: true })
-                    console.log(entityid + ': overriding element parent ')
+                    // console.log(entityid + ': overriding element parent ')
                 }
                 else{
                     existed.mixin(entitydata)
