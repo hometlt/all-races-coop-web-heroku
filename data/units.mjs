@@ -13,6 +13,7 @@ const data = {
     Requirement: JSON.parse(fs.readFileSync("./data/WebData/requirements.json", {encoding: 'utf-8'})),
     RequirementNode: JSON.parse(fs.readFileSync("./data/WebData/requirementNodes.json", {encoding: 'utf-8'}))
 }
+
 const cache = {
     upgrades: Object.entries(data.Upgrade).map(([id,upgrade]) => ({id, upgrade})),
     units: Object.entries(data.Unit).map(([id,unit]) => ({id, unit})),
@@ -23,6 +24,7 @@ const cache = {
     images: getImagesList(),
     text: readTextFile("./data/LocalizedData/enUS.SC2Data/GameStrings.txt")
 }
+
 function gameText(id){
     let result = cache.text[id]
     if(!result)return ""
@@ -40,6 +42,7 @@ function gameText(id){
 
     return result
 }
+
 function quickInfo(catalog,id){
     let entity = data[catalog][id] || {}
     switch(catalog){
@@ -106,13 +109,16 @@ function quickInfo(catalog,id){
             }
     }
 }
+
 function produceAbilities(unitname){
     return cache.abilcmds.filter(entry => entry.info.Unit?.includes(unitname)).map(abilcmd => abilcmd.id)
 }
+
 function producingUnits (unitname){
     let abilCmds = produceAbilities(unitname).map(abilcmd => abilcmd.id)
     return cache.units.filter(entry => entry.unit.CardLayouts?.find(card => card.AbilCmd && abilCmds.includes(card.AbilCmd))).map(unit => unit.id)
 }
+
 function producingRequirements (unitname){
     let abilCmds = cache.abilcmds.filter(entry => entry.info.Unit?.includes(unitname))
     let abilCmdsIds = abilCmds.map(abilcmd => abilcmd.id)
@@ -129,6 +135,7 @@ function producingRequirements (unitname){
 
     return {requiredUnits,requiredUpgrades,producingUnits}
 }
+
 function trainingUnits (unitname){
     let unit = data.Unit[unitname]
     let result = []
@@ -147,9 +154,11 @@ function trainingUnits (unitname){
     }
     return result
 }
+
 function affectingUpgrades (unitname){
     return cache.upgrades.filter(entry => entry.upgrade.units?.includes(unitname)).map(entry => entry.id)
 }
+
 export function getUnits(params){
     let units = cache.units
         .filter(entry => !entry.unit.ignore)
@@ -160,6 +169,7 @@ export function getUnits(params){
     console.log(units.length)
     return units;
 }
+
 export function getCommands(unitname){
     let unit = data.Unit[unitname]
     return unit.CardLayouts?.filter(card => card.Face).map(card => ({
@@ -170,6 +180,7 @@ export function getCommands(unitname){
         ...quickInfo("Button",card.Face)
     }));
 }
+
 export function getUnitData(unitname){
     let unit = data.Unit[unitname]
     if(!unit) return null
