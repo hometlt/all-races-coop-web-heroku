@@ -1,6 +1,6 @@
 
 const express = require("express");
-// import {getUnitData,getUnits} from "./get-unit-data-by-id.mjs";
+import {getUnitData,getUnits} from "./units.mjs";
 
 const dataRouter = express.Router();
 
@@ -21,10 +21,10 @@ dataRouter.use(function timeLog(req, res, next) {
 });
 
 dataRouter.get('/unit/:unit', function(req, res){
-    // response(req, res, getUnitData(req.params.unit))
+    response(req, res, getUnitData(req.params.unit))
 });
 dataRouter.get('/units', function(req, res){
-    // response(req, res, getUnits(req.params))
+    response(req, res, getUnits(req.params))
 });
 
 module.exports = {

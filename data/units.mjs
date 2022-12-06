@@ -1,6 +1,7 @@
 import fs from 'fs'
 
 import {getImagesList,readTextFile,removeEmptyValues} from "./data-parser.mjs";
+
 const data = {
     Unit: JSON.parse(fs.readFileSync("./data/WebData/units.json", {encoding: 'utf-8'})),
     Ability: JSON.parse(fs.readFileSync("./data/WebData/abilities.json", {encoding: 'utf-8'})),
@@ -213,7 +214,7 @@ export function getUnitData(unitname){
         Commands: getCommands(unitname),
         Behaviors: unit.BehaviorArray?.map(x=>quickInfo("Behavior",x)),
         Weapons:  unit.WeaponArray?.map(x=>quickInfo("Weapon",x)),
-        Strengths: unit.GlossaryStrongArray?.map(x=>quickInfo("Unit",x)),
+        Strengths: unit.GlossaryStrongArray?.map(x=>quickInfo("Unit",x)),   
         Weaknesses: unit.GlossaryWeakArray?.map(x=>quickInfo("Unit",x)),
         Abilities: unit.AbilArray?.map(x=>quickInfo("Ability",x)),
         Upgrades: upgrades.map(x=>quickInfo("Upgrade",x)),
