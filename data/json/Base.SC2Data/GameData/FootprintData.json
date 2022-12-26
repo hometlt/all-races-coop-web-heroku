@@ -1,0 +1,2094 @@
+{
+  "CreepGrowthMediumNydusCreepSourceStart": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "ooooo",
+          "ooooo",
+          "ooooo",
+          ".oooo",
+          "..ooo"
+        ],
+        "Area": "-2,-2,3,3"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "ooooo",
+          "ooooo",
+          "ooooo",
+          ".oooo",
+          "..ooo"
+        ],
+        "Area": "-2,-2,3,3"
+      }
+    },
+    "Shape": {
+      "Radius": "3.5356",
+      "Offsets": "-2.5,-2.5;2.5,-2.5;-2.5,2.5;2.5,2.5",
+      "Borders": "0,2,1;1,0,1;2,3,1;3,1,1"
+    }
+  },
+  "Footprint2x2DarkPylonCreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0",
+              "Fogged": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.4143",
+      "Offsets": "-1,-1;1,-1;-1,1;1,1",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "Footprint3x3CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.1213",
+      "Offsets": "-1.5,-1.5;1.5,-1.5;-1.5,1.5;1.5,1.5",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "Footprint3x3CreepNormalContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.803",
+      "Offsets": "-1.5,-1;-1.5,1;-1,1.5;1,1.5;1.5,1;1.5,-1;1,-1.5;-1,-1.5",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "Footprint3x3NydusNetwork": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.4631",
+      "Offsets": "-0.5,-1.375;0.5,-1.375;-0.5,1.375;0.5,1.375;-1.375,-0.5;-1.375,0.5;1.375,-0.5;1.375,0.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    },
+    "parent": "Footprint3x3"
+  },
+  "Footprint4x4CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.8286",
+      "Offsets": "-2,-2;-2,2;2,2;2,-2",
+      "Borders": "3,0,2;0,1,2;1,2,2;2,3,2"
+    }
+  },
+  "Footprint4x4ContourCreepNormalContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.236",
+      "Offsets": "-2,-1;-2,1;-1,2;1,2;2,1;2,-1;1,-2;-1,-2",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "Footprint2x2CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.4143",
+      "Offsets": "-1,-1;-1,1;1,1;1,-1",
+      "Borders": "3,0,2;0,1,2;1,2,2;2,3,2"
+    }
+  },
+  "Footprint2x2CreepNormalContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-1,0.5;-0.5,1;0.5,1;1,0.5;1,-0.5;0.5,-1;-0.5,-1;-1,-0.5",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "Footprint3x3AddOn2x2CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "..xxx..",
+          "..xxxxx",
+          "..xxxxx"
+        ],
+        "Area": "-3,-1,4,2"
+      },
+      "Place": {
+        "Rows": [
+          "..xxx..",
+          "..xxxxx",
+          "..xxxxx"
+        ],
+        "Area": "-3,-1,4,2"
+      },
+      "Pathing": {
+        "Rows": [
+          ".......",
+          ".......",
+          "......."
+        ],
+        "Area": "-7,-3,7,3"
+      }
+    },
+    "Shape": {
+      "Radius": "3.808",
+      "Offsets": "-1.5,-1.5;3.5,-1.5;1.5,0.5;3.5,0.5;-1.5,1.5;1.5,1.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,1,2;4,5,2;5,2,2"
+    }
+  },
+  "Footprint3x3CreepAddOn2x2CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Negative": {
+              "Creep": "0",
+              "Fogged": "1"
+            }
+          },
+          {
+            "Negative": {
+              "NoBuild": "1",
+              "Masked": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "..xxx..",
+          "..xxxoo",
+          "..xxxoo"
+        ],
+        "Area": "-3,-1,4,2"
+      },
+      "Place": {
+        "Rows": [
+          "..xxx..",
+          "..xxxxx",
+          "..xxxxx"
+        ],
+        "Area": "-3,-1,4,2"
+      }
+    },
+    "Shape": {
+      "Radius": "3.808",
+      "Offsets": "-1.5,-1.5;3.5,-1.5;1.5,0.5;3.5,0.5;-1.5,1.5;1.5,1.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,1,2;4,5,2;5,2,2"
+    }
+  },
+  "Footprint1x1CreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "x"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "x"
+        ]
+      }
+    }
+  },
+  "CreepGrowthSunkenColony": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "............oooooooo............",
+          ".........oooooooooooooo.........",
+          ".......oooooooooooooooooo.......",
+          "......oooooooooooooooooooo......",
+          ".....oooooooooooooooooooooo.....",
+          "....oooooooooooooooooooooooo....",
+          "...oooooooooooooooooooooooooo...",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          "...oooooooooooooooooooooooooo...",
+          "....oooooooooooooooooooooooo....",
+          ".....oooooooooooooooooooooo.....",
+          "......oooooooooooooooooooo......",
+          ".......oooooooooooooooooo.......",
+          ".........oooooooooooooo.........",
+          "............oooooooo............"
+        ],
+        "Area": "-16,-16,16,16"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "............oooooooo............",
+          ".........oooooooooooooo.........",
+          ".......oooooooooooooooooo.......",
+          "......oooooooooooooooooooo......",
+          ".....oooooooooooooooooooooo.....",
+          "....oooooooooooooooooooooooo....",
+          "...oooooooooooooooooooooooooo...",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          "...oooooooooooooooooooooooooo...",
+          "....oooooooooooooooooooooooo....",
+          ".....oooooooooooooooooooooo.....",
+          "......oooooooooooooooooooo......",
+          ".......oooooooooooooooooo.......",
+          ".........oooooooooooooo.........",
+          "............oooooooo............"
+        ],
+        "Area": "-16,-16,16,16"
+      }
+    },
+    "Shape": {
+      "Radius": "22.6274",
+      "Offsets": "-16,-16;16,-16;-16,16;16,16",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "Footprint5x5NormalCreepContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NearResources": "1",
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "DropOff": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      }
+    },
+    "Shape": {
+      "Radius": "2.6926",
+      "Offsets": "-1,-2.5;-2.5,-1;-2.5,1;-1,2.5;1,2.5;2.5,1;2.5,-1;1,-2.5",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "Footprint5x5DropOffCreepNormal": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NearResources": "1",
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "DropOff": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      }
+    },
+    "Shape": {
+      "Radius": "3.5356",
+      "Offsets": "-2.5,-2.5;-2.5,2.5;2.5,2.5;2.5,-2.5",
+      "Borders": "3,0,2;0,1,2;1,2,2;2,3,2"
+    }
+  },
+  "FootprintMercenarySpaceStation": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NearResources": "1",
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx"
+        ],
+        "Area": "-4,-4,4,4"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "DropOff": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx",
+          "xxxxxxxx"
+        ],
+        "Area": "-4,-4,4,4"
+      }
+    },
+    "Shape": {
+      "Radius": "4.4721",
+      "Offsets": "-2,-4;2,-4;-1,3;3,3;-3,-3;-3,-1;-2,0;-2,2;4,-2;4,2",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,9,2;4,5,2;5,6,2;6,7,2;7,2,2;8,1,2;9,8,2"
+    }
+  },
+  "CocoonBlocker": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "x"
+        ],
+        "Area": "0,0,0,0"
+      },
+      "Place": {
+        "Area": "0,0,0,0"
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-1,0.5;-0.5,1;0.5,1;1,0.5;1,-0.5;0.5,-1;-0.5,-1;-1,-0.5",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "ReviveCocoonBlocker": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "...",
+          ".x.",
+          "..."
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          ".x.",
+          "xxx",
+          ".x."
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "0.9521",
+      "Offsets": "-0.375,-0.875;0.375,-0.875;-0.375,0.875;0.375,0.875;-0.875,-0.375;-0.875,0.375;0.875,-0.375;0.875,0.375",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "ACHeroSpawnPlacement": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.236",
+      "Offsets": "-1,-2;1,-2;-1,2;1,2;-2,-1;-2,1;2,-1;2,1",
+      "Borders": "0,4,1;1,0,1;2,3,1;3,7,1;4,5,1;5,2,1;6,1,1;7,6,1"
+    }
+  },
+  "MutatorLaserDrill": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.8286",
+      "Offsets": "-2,-2;-1.5,-2;-1,-1.5;-0.5,-1.5;0,-1;0.5,-1;1,-0.5;2,-0.5;1.5,0;2,0;-0.5,1;0,1;0.5,1;1,1;-0.5,2;0,2;-2,-1.5;-1.5,-1;-1.5,-0.5;-1,0;-1,0.5;0,1.5;1,0.5;-0.25,1.25",
+      "Borders": "0,16,2;1,0,2;2,1,2;3,2,2;4,3,2;5,4,2;6,5,2;7,6,2;8,9,2;9,7,2;10,11,2;10,14,2;11,23,2;12,13,2;13,22,2;14,15,2;15,21,2;16,17,2;17,18,2;18,19,2;19,20,2;20,10,2;21,12,2;22,8,2;23,10,2"
+    }
+  },
+  "SupplicantWarptrainDualPlacement": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "GroundNoSpawn": "1",
+              "NoBuild": "0",
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx"
+        ],
+        "Area": "-1,0,1,1"
+      },
+      "Place": {
+        "Rows": [
+          "xx"
+        ],
+        "Area": "-1,0,1,1"
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-1,-0.5;1,-0.5;-1,0.5;1,0.5",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    },
+    "EditorCategories": "FootprintGroup:Generic"
+  },
+  "UnfinishedDrakkenLaserDrillCoop": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.236",
+      "Offsets": "-1,-2;1,-2;-1,2;1,2;-2,-1;-2,1;2,-1;2,1",
+      "Borders": "0,4,0;1,0,0;2,3,0;3,7,0;4,5,0;5,2,0;6,1,0;7,6,0"
+    }
+  },
+  "CreepImpalerStart": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "c"
+          }
+        ],
+        "Rows": [
+          "cc",
+          "cc"
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "c"
+          }
+        ],
+        "Rows": [
+          "cc",
+          "cc"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.4143",
+      "Offsets": "-1,-1;-1,1;1,1;1,-1",
+      "Borders": "3,0,2;0,1,2;1,2,2;2,3,2"
+    }
+  },
+  "CreepImpalerGrown": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          ".....ooooo.....",
+          "...ooooooooo...",
+          "..ooooooooooo..",
+          ".ooooooooooooo.",
+          ".ooooooooooooo.",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          ".ooooooooooooo.",
+          ".ooooooooooooo.",
+          "..ooooooooooo..",
+          "...ooooooooo...",
+          ".....ooooo....."
+        ],
+        "Area": "-7,-7,8,8"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          ".....ooooo.....",
+          "...ooooooooo...",
+          "..ooooooooooo..",
+          ".ooooooooooooo.",
+          ".ooooooooooooo.",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          "ooooooooooooooo",
+          ".ooooooooooooo.",
+          ".ooooooooooooo.",
+          "..ooooooooooo..",
+          "...ooooooooo...",
+          ".....ooooo....."
+        ],
+        "Area": "-7,-7,8,8"
+      }
+    }
+  },
+  "Footprint4x4CreepSourceGrownUpgradedDouble": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          ".................................",
+          "........ooooo....................",
+          "......ooooooooo..................",
+          "....ooooooooooooo................",
+          "...ooooooooooooooo...............",
+          "..ooooooooooooooooo..............",
+          "..ooooooooooooooooo..............",
+          ".ooooooooooooooooooo.............",
+          ".ooooooooooooooooooo.............",
+          "ooooooooooooooooooooo............",
+          "ooooooooooooooooooooo............",
+          "ooooooooooooooooooooo............",
+          "ooooooooooooooooooooo............",
+          "ooooooooooooooooooooo............",
+          ".ooooooooooooooooooo.............",
+          ".ooooooooooooooooooo.............",
+          "..ooooooooooooooooo..............",
+          "..ooooooooooooooooo..............",
+          "...ooooooooooooooo...............",
+          "....ooooooooooooo................",
+          "......ooooooooo..................",
+          "........ooooo...................."
+        ],
+        "Area": "-16,-16,17,17"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "........ooooooooooooooooo........",
+          "......ooooooooooooooooooooo......",
+          ".....ooooooooooooooooooooooo.....",
+          "....ooooooooooooooooooooooooo....",
+          "...ooooooooooooooooooooooooooo...",
+          "..ooooooooooooooooooooooooooooo..",
+          "..ooooooooooooooooooooooooooooo..",
+          ".ooooooooooooooooooooooooooooooo.",
+          ".ooooooooooooooooooooooooooooooo.",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "ooooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo.",
+          ".ooooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo..",
+          "..ooooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo...",
+          "...oooooooooooooooooooooooooo....",
+          "....oooooooooooooooooooooo.......",
+          "......ooooooooooooooooooo........",
+          "........ooooooooooooooo.........."
+        ],
+        "Area": "-16,-16,17,17"
+      }
+    },
+    "Shape": {
+      "Radius": "7.75",
+      "Offsets": "-16.5,-16.5;16.5,-16.5;-16.5,16.5;16.5,16.5",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "Footprint1x1FlyingStructure": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "BoostHeight": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "x"
+        ],
+        "Area": "0,0,1,1"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0",
+              "NoBuild": "0",
+              "BoostHeight": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "x"
+        ],
+        "Area": "0,0,1,1"
+      }
+    }
+  },
+  "DehakaCoopReviveCocoon": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "EditorCategories": "FootprintGroup:SpecificStructures"
+  },
+  "DehakaCoopReviveCocoonFootprint": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "x..x",
+          "x..x",
+          "x..x"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "x..x",
+          "x..x",
+          "x..x"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.3522",
+      "Offsets": "-0.875,-1;-0.75,-1;0.75,-1;0.875,-1;-0.625,1;0.625,1;-0.625,1.125;0.625,1.125;-1.125,-0.75;-1.125,0.625;-1,-0.75;-1,0.625;1,-0.75;1,0.625;1.125,-0.75;1.125,0.625",
+      "Borders": "0,8,2;1,0,2;2,12,2;3,2,2;4,11,2;5,4,2;6,7,2;7,15,2;8,9,2;9,6,2;10,1,2;11,10,2;12,13,2;13,5,2;14,3,2;15,14,2"
+    },
+    "EditorCategories": "FootprintGroup:SpecificStructures"
+  },
+  "FootprintNovaACLaserTurret": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.0607",
+      "Offsets": "-0.75,-0.75;0.75,-0.75;-0.75,0.75;0.75,0.75",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "CreepGrowthStukov": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoCreep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "............oooooooo............",
+          ".........oooooooooooooo.........",
+          ".......oooooooooooooooooo.......",
+          "......oooooooooooooooooooo......",
+          ".....oooooooooooooooooooooo.....",
+          "....oooooooooooooooooooooooo....",
+          "...oooooooooooooooooooooooooo...",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          "...oooooooooooooooooooooooooo...",
+          "....oooooooooooooooooooooooo....",
+          ".....oooooooooooooooooooooo.....",
+          "......oooooooooooooooooooo......",
+          ".......oooooooooooooooooo.......",
+          ".........oooooooooooooo.........",
+          "............oooooooo............"
+        ],
+        "Area": "-16,-16,16,16"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          "............oooooooo............",
+          ".........oooooooooooooo.........",
+          ".......oooooooooooooooooo.......",
+          "......oooooooooooooooooooo......",
+          ".....oooooooooooooooooooooo.....",
+          "....oooooooooooooooooooooooo....",
+          "...oooooooooooooooooooooooooo...",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          "oooooooooooooooooooooooooooooooo",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          ".oooooooooooooooooooooooooooooo.",
+          "..oooooooooooooooooooooooooooo..",
+          "..oooooooooooooooooooooooooooo..",
+          "...oooooooooooooooooooooooooo...",
+          "....oooooooooooooooooooooooo....",
+          ".....oooooooooooooooooooooo.....",
+          "......oooooooooooooooooooo......",
+          ".......oooooooooooooooooo.......",
+          ".........oooooooooooooo.........",
+          "............oooooooo............"
+        ],
+        "Area": "-16,-16,16,16"
+      }
+    },
+    "Shape": {
+      "Radius": "22.6274",
+      "Offsets": "-16,-16;16,-16;-16,16;16,16",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "Footprint3x3CreepStukov": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.803",
+      "Offsets": "-1,-1.5;-1.5,-1;-1.5,1;-1,1.5;1,1.5;1.5,1;1.5,-1;1,-1.5",
+      "Borders": "7,0,2;0,1,2;1,2,2;2,3,2;3,4,2;4,5,2;5,6,2;6,7,2"
+    }
+  },
+  "Footprint3x3CreepStukovPlacement": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Positive": {
+              "Creep": "1"
+            },
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.803",
+      "Offsets": "-1,-1.5;1,-1.5;-1,1.5;1,1.5;-1.5,-1;-1.5,1;1.5,-1;1.5,1",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "CybrosEscortTowerDown": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1",
+      "Offsets": "-1,0;0,1;0,-1;1,0",
+      "Borders": "0,1,2;1,3,2;2,0,2;3,2,2"
+    }
+  },
+  "CybrosEscortTowerUp": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.236",
+      "Offsets": "-1,-2;1,-2;-1,2;1,2;-2,-1;-2,1;2,-1;2,1",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "TempleShakuras02": {
+    "class": "CFootprint",
+    "Layers": {
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Dense": "1"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "WarfieldBasePlatform": {
+    "class": "CFootprint",
+    "Shape": {
+      "Offsets": "2,-7;6,-7;-1,-5;0,-5;4,-1;7,-1;-1,4;0,4;-6,7;-4,7;-3,8;-2,8;-7,2;-7,6;-5,-1;-5,0;-1,7;4,0;7,-6;7,-4;8,-3;8,-2",
+      "Borders": "0,3,2;1,0,2;2,14,2;3,2,2;4,5,2;5,21,2;6,7,2;7,17,2;8,9,2;9,10,2;10,11,2;11,16,2;12,13,2;13,8,2;14,15,2;15,12,2;16,6,2;17,4,2;18,1,2;19,18,2;20,19,2;21,20,2"
+    }
+  },
+  "AcidNest": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "GroundNoSpawn": "1",
+              "NoBuild": "0",
+              "Creep": "0",
+              "Masked": "0",
+              "Dense": "1"
+            }
+          }
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Dense": "1"
+            }
+          }
+        ]
+      }
+    },
+    "Shape": {
+      "Offsets": "-0.5,-0.5;0.5,-0.5;-0.5,0.5;0.5,0.5",
+      "Borders": "0,2,1;1,0,1;2,3,1;3,1,1"
+    },
+    "parent": "Footprint1x1Underground"
+  },
+  "AcidNestPlacement": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "Masked": "0",
+              "Dense": "1"
+            }
+          }
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Dense": "1"
+            }
+          }
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "0",
+      "Offsets": "",
+      "Borders": ""
+    },
+    "parent": "Footprint1x1Underground"
+  },
+  "Footprint4x4ContourReduced": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.5",
+      "Offsets": "-1.5,-2;1.5,-2;-1.5,2;1.5,2;-2,-1.5;-2,1.5;2,-1.5;2,1.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "ProwlerAcidNest": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "GroundNoSpawn": "1",
+              "NoBuild": "0",
+              "Creep": "0",
+              "NoCreep": "1",
+              "Masked": "0",
+              "Dense": "1"
+            }
+          }
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0"
+            }
+          }
+        ]
+      }
+    },
+    "Shape": {
+      "Offsets": "-0.5,-0.5;0.5,-0.5;-0.5,0.5;0.5,0.5",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    },
+    "parent": "Footprint1x1"
+  },
+  "Footprint2x2Xayid": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-0.5,-1;0.5,-1;-0.5,1;0.5,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "Footprint3x3Xayid": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.803",
+      "Offsets": "-1,-1.5;1,-1.5;-1,1.5;1,1.5;-1.5,-1;-1.5,1;1.5,-1;1.5,1",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "Footprint5x5Xayid": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NearResources": "1",
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "DropOff": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      }
+    },
+    "Shape": {
+      "Radius": "2.6926",
+      "Offsets": "-1,-2.5;1,-2.5;-1,2.5;1,2.5;-2.5,-1;-2.5,1;2.5,-1;2.5,1",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "VolatileDischargeFootprint": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "GroundNoSpawn": "1",
+              "NoBuild": "0",
+              "Creep": "0",
+              "Masked": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "Dense": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "0.9016",
+      "Offsets": "-0.5,-0.75;0.5,-0.75;-0.5,0.75;0.5,0.75;-0.75,-0.5;-0.75,0.5;0.75,-0.5;0.75,0.5",
+      "Borders": "0,4,0;1,0,0;2,3,0;3,7,0;4,5,0;5,2,0;6,1,0;7,6,0"
+    },
+    "EditorCategories": "FootprintGroup:Generic"
+  },
+  "Footprint2x2AirContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0",
+              "NoBuild": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-0.5,-1;0.5,-1;-0.5,1;0.5,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5",
+      "Borders": "0,4,1;1,0,1;2,3,1;3,7,1;4,5,1;5,2,1;6,1,1;7,6,1"
+    }
+  },
+  "Footprint4x4Air": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0",
+              "NoBuild": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.1213",
+      "Offsets": "-1.5,-1.5;1.5,-1.5;-1.5,1.5;1.5,1.5",
+      "Borders": "0,2,1;1,0,1;2,3,1;3,1,1"
+    }
+  },
+  "Footprint2x2Air": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0",
+              "NoBuild": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xx",
+          "xx"
+        ]
+      }
+    },
+    "Shape": {
+      "Radius": "1.4143",
+      "Offsets": "-1,-1;1,-1;-1,1;1,1",
+      "Borders": "0,2,1;1,0,1;2,3,1;3,1,1"
+    }
+  },
+  "Footprint4x4AirContour": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "NoBuild": "0",
+              "Creep": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0",
+              "NoBuild": "0",
+              "Water": "1"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.5812",
+      "Offsets": "-0.5,-1.5;0.5,-1.5;-0.5,1.5;0.5,1.5;-1.5,-0.5;-1.5,0.5;1.5,-0.5;1.5,0.5",
+      "Borders": "0,4,1;1,0,1;2,3,1;3,7,1;4,5,1;5,2,1;6,1,1;7,6,1"
+    }
+  },
+  "Footprint3x3CappedGeyser2": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "Creep": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.1213",
+      "Offsets": "-1.5,-1.5;-1.5,1.5;1.5,1.5;1.5,-1.5",
+      "Borders": "3,0,2;0,1,2;1,2,2;2,3,2"
+    }
+  },
+  "Footprint4x4UED": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2.5",
+      "Offsets": "-1.5,-2;1.5,-2;-1.5,2;1.5,2;-2,-1.5;-2,1.5;2,-1.5;2,1.5",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "FootprintGeyserRoundedBuilt2": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Sets": [
+          {
+            "Negative": {
+              "DropOff": "1",
+              "Creep": "0"
+            }
+          },
+          {
+            "Negative": {
+              "DropOff": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          ".ooooooo.",
+          "ooooooooo",
+          "ooooooooo",
+          "oooxxxooo",
+          "oooxxxooo",
+          "oooxxxooo",
+          "ooooooooo",
+          "ooooooooo",
+          ".ooooooo."
+        ],
+        "Area": "-4,-4,5,5"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "NearResources": "1"
+            }
+          },
+          {
+            "Positive": {
+              "NearResources": "1"
+            },
+            "Character": "o"
+          }
+        ],
+        "Rows": [
+          ".ooooooo.",
+          "ooooooooo",
+          "ooooooooo",
+          "oooxxxooo",
+          "oooxxxooo",
+          "oooxxxooo",
+          "ooooooooo",
+          "ooooooooo",
+          ".ooooooo."
+        ],
+        "Area": "-4,-4,5,5"
+      }
+    },
+    "Shape": {
+      "Radius": "1.6772",
+      "Offsets": "-0.75,-1.5;0.75,-1.5;-0.75,1.5;0.75,1.5;-1.5,-0.75;-1.5,0.75;1.5,-0.75;1.5,0.75",
+      "Borders": "0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"
+    }
+  },
+  "DeepOne3x3": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "...",
+          "...",
+          "..."
+        ],
+        "Area": "-1,-1,2,2"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxx",
+          "xxx",
+          "xxx"
+        ],
+        "Area": "-1,-1,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "1.5",
+      "Offsets": "-1,-1;-0.5,-1;0.5,-1;1,-1;-1,1;-0.5,1;0.5,1;1,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5;-1.5,0;0,1.5;0,-1.5;1.5,0",
+      "Borders": "0,8,0;1,0,0;2,14,0;3,2,0;4,5,0;5,13,0;6,7,0;7,11,0;8,12,0;9,4,0;10,3,0;11,15,0;12,9,0;13,6,0;14,1,0;15,10,0"
+    }
+  },
+  "DeepOne4x4": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "....",
+          "....",
+          "....",
+          "...."
+        ],
+        "Area": "-2,-2,2,2"
+      },
+      "Place": {
+        "Sets": [
+          {
+            "Positive": {
+              "GroundNoSpawn": "0"
+            }
+          }
+        ],
+        "Rows": [
+          "xxxx",
+          "xxxx",
+          "xxxx",
+          "xxxx"
+        ],
+        "Area": "-2,-2,2,2"
+      }
+    },
+    "Shape": {
+      "Radius": "2",
+      "Offsets": "-1,-1.5;-0.5,-1.5;0.5,-1.5;1,-1.5;-1,1.5;-0.5,1.5;0.5,1.5;1,1.5;-1.5,-1;-1.5,-0.5;-1.5,0.5;-1.5,1;1.5,-1;1.5,-0.5;1.5,0.5;1.5,1;-2,0;0,2;0,-2;2,0",
+      "Borders": "0,8,0;1,0,0;2,18,0;3,2,0;4,5,0;5,17,0;6,7,0;7,15,0;8,9,0;9,16,0;10,11,0;11,4,0;12,3,0;13,12,0;14,19,0;15,14,0;16,10,0;17,6,0;18,1,0;19,13,0"
+    }
+  },
+  "DeepOne5x5": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          ".....",
+          ".....",
+          ".....",
+          ".....",
+          "....."
+        ],
+        "Area": "-2,-2,3,3"
+      },
+      "Place": {
+        "Rows": [
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx",
+          "xxxxx"
+        ],
+        "Area": "-2,-2,3,3"
+      }
+    },
+    "Shape": {
+      "Radius": "2.5",
+      "Offsets": "-1,-2;-0.5,-2;0.5,-2;1,-2;-1,2;-0.5,2;0.5,2;1,2;-2,-1;-2,-0.5;-2,0.5;-2,1;2,-1;2,-0.5;2,0.5;2,1;-2.5,0;0,2.5;0,-2.5;2.5,0",
+      "Borders": "0,8,0;1,0,0;2,18,0;3,2,0;4,5,0;5,17,0;6,7,0;7,15,0;8,9,0;9,16,0;10,11,0;11,4,0;12,3,0;13,12,0;14,19,0;15,14,0;16,10,0;17,6,0;18,1,0;19,13,0"
+    }
+  },
+  "FootprintUPLForwardOperatingBase": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "xxxxxx",
+          "xxxxxx",
+          "xxxxxx",
+          "xxxxxx"
+        ],
+        "Area": "-3,-2,3,2"
+      },
+      "Place": {
+        "Rows": [
+          "xxxxxx",
+          "xxxxxx",
+          "xxxxxx",
+          "xxxxxx"
+        ],
+        "Area": "-3,-2,3,2"
+      }
+    },
+    "Shape": {
+      "Radius": "3.6057",
+      "Offsets": "-3,-2;3,-2;-3,2;3,2",
+      "Borders": "0,2,2;1,0,2;2,3,2;3,1,2"
+    }
+  },
+  "CSVDeployedFP": {
+    "class": "CFootprint",
+    "Layers": {
+      "Check": {
+        "Rows": [
+          "."
+        ],
+        "Area": "0,0,1,1"
+      },
+      "Place": {
+        "Area": "0,0,0,0"
+      }
+    },
+    "Shape": {
+      "Radius": "1.1181",
+      "Offsets": "-0.5,-1;0.5,-1;-0.5,1;0.5,1;-1,-0.5;-1,0.5;1,-0.5;1,0.5",
+      "Borders": "0,4,0;1,0,0;2,3,0;3,7,0;4,5,0;5,2,0;6,1,0;7,6,0"
+    }
+  }
+}

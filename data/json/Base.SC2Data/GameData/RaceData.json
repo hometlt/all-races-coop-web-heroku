@@ -1,0 +1,2064 @@
+{
+  "Prot": {
+    "class": "CRace",
+    "StartingUnitArray": [
+      null,
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "Icon": "Assets\\Textures\\ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_prot.dds"
+  },
+  "Terr": {
+    "class": "CRace",
+    "StartingUnitArray": [
+      null,
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "SCV"
+      }
+    ],
+    "Icon": "Assets\\Textures\\ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_terr.dds"
+  },
+  "Zerg": {
+    "class": "CRace",
+    "StartingUnitArray": [
+      null,
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Drone"
+      }
+    ],
+    "Icon": "Assets\\Textures\\ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_zerg.dds"
+  },
+  "@Amon": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingResource": {
+      "Minerals": "50000",
+      "Vespene": "50000"
+    }
+  },
+  "@Neutral": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "@AmonAlly": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "@Bonus": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "@Hostile": {
+    "class": "CRace",
+    "RaceIcon": "@UI/RaceIcon/@Neutral",
+    "GameMusic": "Music_@NeutralLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "@Player": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingResource": {
+      "Minerals": "50"
+    }
+  },
+  "@AmonPlayer": {
+    "class": "CRace",
+    "RaceIcon": "@UI/RaceIcon/@Player",
+    "GameMusic": "Music_@PlayerLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingResource": {
+      "Minerals": "50"
+    }
+  },
+  "@PlayerAlly": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "Neut": {
+    "class": "CRace",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "BioDomeCommand"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Civilian"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Textures\\ui_battlenet_glues_multiplayer_racebutton_raceicon_normal_rand.dds"
+  },
+  "Hybr": {
+    "class": "CRace",
+    "AttributeId": "Hybr",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "HybridStasisChamberB"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "3,0",
+          "3,3",
+          "0,3",
+          "-3,3",
+          "-3,0",
+          "-3,-3"
+        ],
+        "Count": "12",
+        "Unit": "HybridDestroyer"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\AmonsArmadaLogo.dds"
+  },
+  "ProtT": {
+    "class": "CRace",
+    "AttributeId": "PTal",
+    "DefaultConsoleSkin": "ConsoleProtoss_Forged",
+    "RaceIcon": "@UI/RaceIcon/Prot",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "Icon": "Assets\\Factions\\TaldarimLogo.dds"
+  },
+  "ProtP": {
+    "class": "CRace",
+    "AttributeId": "PPur",
+    "DefaultConsoleSkin": "ConsoleProtoss_Fenix",
+    "RaceIcon": "@UI/RaceIcon/Prot",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "Icon": "Assets\\Factions\\PurifierLogo.dds"
+  },
+  "ProtN": {
+    "class": "CRace",
+    "AttributeId": "PNer",
+    "DefaultConsoleSkin": "ConsoleProtoss_Nerazim",
+    "RaceIcon": "@UI/RaceIcon/Prot",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "Icon": "Assets\\Factions\\NerazimLogo.dds"
+  },
+  "ProtL": {
+    "class": "CRace",
+    "Icon": "Assets\\Factions\\FistOfUlrezajLogo.dds",
+    "AttributeId": "PTal",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "DefaultConsoleSkin": "ConsoleProtoss_Forged"
+  },
+  "TerrM": {
+    "class": "CRace",
+    "AttributeId": "TMar",
+    "DefaultConsoleSkin": "ConsoleTerran_Horner",
+    "GameMusic": "Music_TerrLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "HHCommandCenter"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "HHSCV"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\MirasMaraudersLogo.dds"
+  },
+  "ZergE": {
+    "class": "CRace",
+    "AttributeId": "ZEnt",
+    "DefaultConsoleSkin": "ConsoleZerg_RCZ",
+    "Icon": "Assets\\Textures\\decal_terran_0088_01.dds",
+    "RaceIcon": "@UI/RaceIcon/Zerg",
+    "GameMusic": "Music_ZergLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Hatchery"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Drone"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "Overlord"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,245,140,70",
+    "PlacementGridColorBlindColor": "255,192,80,192",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "2",
+    "LevelAchievementId": "91475320767751"
+  },
+  "ZergM": {
+    "class": "CRace",
+    "AttributeId": "ZMec",
+    "DefaultConsoleSkin": "ConsoleZerg_Mecha",
+    "GameMusic": "Music_ZergLow",
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "HatcheryStetmann"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "DroneStetmann"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "OverlordStetmann"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,245,140,70",
+    "PlacementGridColorBlindColor": "255,192,80,192",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "2",
+    "LevelAchievementId": "91475320767751",
+    "Icon": "Assets\\Factions\\SimulantSwarmLogo.dds"
+  },
+  "ProtI": {
+    "class": "CRace",
+    "AttributeId": "Ihan",
+    "DefaultConsoleSkin": "ConsoleProtoss_Ihanrii",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "AncientNexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "ZeratulProbe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\XelNagaRemnantsLogo.dds"
+  },
+  "ProtA": {
+    "class": "CRace",
+    "AttributeId": "PArt",
+    "Icon": "Assets\\Factions\\AiurProtossLogo.dds",
+    "RaceIcon": "@UI/RaceIcon/Prot",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "DefaultConsoleSkin": "ConsoleProtoss_Classic"
+  },
+  "ProtK": {
+    "class": "CRace",
+    "AttributeId": "PKar",
+    "Icon": "Assets\\Textures\\decal_terran_0074_01.dds",
+    "RaceIcon": "@UI/RaceIcon/Prot",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Nexus"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Probe"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "2",
+    "MiniMapBorderColor": "100,12,149,250",
+    "PlacementGridColorBlindColor": "255,72,140,255",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "3",
+    "LevelAchievementId": "91475320767755",
+    "DefaultConsoleSkin": "ConsoleProtoss_Default"
+  },
+  "TerrC": {
+    "class": "CRace",
+    "AttributeId": "Outl",
+    "Icon": "Assets\\Factions\\HeavensDevilsLogo.dds",
+    "DefaultConsoleSkin": "ConsoleTerran_CovertOps",
+    "StartingUnitArray": [
+      {
+        "Unit": "CommandCenter"
+      },
+      {
+        "Unit": "SCV"
+      },
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "TychusCommandCenter"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "TychusSCV"
+      }
+    ],
+    "RaceIcon": "@UI/RaceIcon/TerrO",
+    "GameMusic": "Music_TerrLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed"
+  },
+  "TerrD": {
+    "class": "CRace",
+    "AttributeId": "Domi",
+    "DefaultConsoleSkin": "ConsoleTerran_Imperial",
+    "GameMusic": "Music_TerrLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "CommandCenterMengsk"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "SCVMengsk"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "1",
+    "LevelAchievementId": "91475320767753",
+    "Icon": "Assets\\Factions\\TerranDominionLogo.dds"
+  },
+  "TerrI": {
+    "class": "CRace",
+    "AttributeId": "Infe",
+    "DefaultConsoleSkin": "ConsoleZerg_RCZ",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "SICommandCenter"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "SISCV"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\InfestedTerranLogo.dds"
+  },
+  "TerrK": {
+    "class": "CRace",
+    "AttributeId": "TKel",
+    "Icon": "Assets\\Factions\\KelMorianCombineLogo.dds",
+    "DefaultConsoleSkin": "ConsoleTerran_Swann",
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Unit": "CommandCenter"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "SCV"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    }
+  },
+  "TerrR": {
+    "class": "CRace",
+    "AttributeId": "TRai",
+    "Icon": "Assets\\Factions\\RaynorsRaidersLogo.dds",
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Unit": "CommandCenter"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "SCV"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "DefaultConsoleSkin": "ConsoleTerran_Classic"
+  },
+  "TerrO": {
+    "class": "CRace",
+    "AttributeId": "Outl",
+    "DefaultConsoleSkin": "ConsoleTerran_Swann",
+    "GameMusic": "Music_TerrLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "TychusCommandCenter"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "TychusSCV"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\HeavensDevilsLogo.dds"
+  },
+  "ZergA": {
+    "class": "CRace",
+    "AttributeId": "ZAba",
+    "Icon": "Assets\\Factions\\AbathursRenegadeBroodsLogo.dds",
+    "DefaultConsoleSkin": "ConsoleZerg_Abathur",
+    "GameMusic": "Music_ZergLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Hatchery"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Drone"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "Overlord"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,245,140,70",
+    "PlacementGridColorBlindColor": "255,192,80,192",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "2",
+    "LevelAchievementId": "91475320767751"
+  },
+  "ZergK": {
+    "class": "CRace",
+    "AttributeId": "ZKer",
+    "Icon": "Assets\\Factions\\TheSwarmLogo.dds",
+    "GameMusic": "Music_ZergLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Hatchery"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Drone"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "Overlord"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,245,140,70",
+    "PlacementGridColorBlindColor": "255,192,80,192",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "2",
+    "LevelAchievementId": "91475320767751",
+    "DefaultConsoleSkin": "ConsoleZerg_Classic"
+  },
+  "ZergL": {
+    "class": "CRace",
+    "AttributeId": "Zlev",
+    "Icon": "Assets\\Factions\\LeviathanBroodLogo.dds",
+    "GameMusic": "Music_ZergLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Hatchery"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Drone"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "Overlord"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,245,140,70",
+    "PlacementGridColorBlindColor": "255,192,80,192",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ExpansionOrder": "2",
+    "LevelAchievementId": "91475320767751",
+    "DefaultConsoleSkin": "ConsoleZerg_Zagara"
+  },
+  "ZergP": {
+    "class": "CRace",
+    "AttributeId": "Prim",
+    "DefaultConsoleSkin": "ConsoleZerg_Dehaka",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "DehakaHatchery"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "DehakaDrone"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,40,172,68",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Icon": "Assets\\Factions\\PrimalZergLogo.dds"
+  },
+  "Gen": {
+    "class": "CRace",
+    "AttributeId": "Gen",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "ProcessingCore"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "ACR"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "3",
+    "MiniMapBorderColor": "100,128,255,255",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed"
+  },
+  "Xayi": {
+    "class": "CRace",
+    "AttributeId": "Xayi",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "ScavengerNest"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Scavenger"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "6",
+    "MiniMapBorderColor": "155,255,128,64",
+    "VictorySound": "MusicVictoryZerg3",
+    "DefeatSound": "TTosh03AMusicOutro"
+  },
+  "Keir": {
+    "class": "CRace",
+    "AttributeId": "Keir",
+    "GlossaryTeamColorIndex": "4",
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "Citadel"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Converter"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "MiniMapBorderColor": "100,255,255,128",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    }
+  },
+  "UED": {
+    "class": "CRace",
+    "AttributeId": "UED",
+    "GameMusic": "Music_TerrLow_SCI",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "OperationHeadquarters"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Salvager"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "1",
+    "MiniMapBorderColor": "100,255,255,0",
+    "PlacementGridColorBlindColor": "255,90,255,133",
+    "VictorySound": "UI_MissionComplete2",
+    "DefeatSound": "UI_MissionFailed2",
+    "ExpansionOrder": "1",
+    "LevelAchievementId": "91475320767753",
+    "DefaultConsoleSkin": "ConsoleUED"
+  },
+  "NHbr": {
+    "class": "CRace",
+    "AttributeId": "NHbr",
+    "Icon": "Assets\\Textures\\tip_Hybridbehemoth.dds",
+    "GameMusic": "Music_ProtLow",
+    "Flags": {
+      "Selectable": "1",
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "NHbrTemple"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "NHbrMinion"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "14",
+    "MiniMapBorderColor": "255,0,255,191",
+    "DefeatSound": "UI_MissionFailed",
+    "DefaultConsoleSkin": "ConsoleProtoss_Ihanrii"
+  },
+  "Dragon": {
+    "class": "CRace",
+    "AttributeId": "Drag",
+    "GameMusic": "Music_ZergLow",
+    "Flags": {
+      "TrialAllowed": "1"
+    },
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "DenizenoftheDeep"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "Plodder"
+      },
+      {
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Unit": "Razorback"
+      }
+    ],
+    "StartingResource": {
+      "Minerals": "50"
+    },
+    "GlossaryTeamColorIndex": "4",
+    "MiniMapBorderColor": "100,255,128,64",
+    "PlacementGridColorBlindColor": "100,255,128,64",
+    "VictorySound": "UI_MissionComplete",
+    "DefeatSound": "UI_MissionFailed",
+    "ShowResource": {
+      "Custom": "1"
+    },
+    "DefaultConsoleSkin": "ConsoleZerg_Abathur"
+  },
+  "UPL": {
+    "class": "CRace",
+    "AttributeId": "UPL",
+    "DefaultConsoleSkin": "ConsoleTerran_Default",
+    "StartingUnitArray": [
+      {
+        "Flags": {
+          "ResourceSetRally": "1"
+        },
+        "Unit": "UPLHeadquarters"
+      },
+      {
+        "Flags": {
+          "ResourceRally": "1"
+        },
+        "Offset": [
+          "0,-3",
+          "1,-3",
+          "2,-3",
+          "3,-3",
+          "3,-2",
+          "3,-1",
+          "3,0",
+          "3,1",
+          "3,2",
+          "3,3",
+          "2,3",
+          "1,3",
+          "0,3",
+          "-1,3",
+          "-2,3",
+          "-3,3",
+          "-3,2",
+          "-3,1",
+          "-3,0",
+          "-3,-1",
+          "-3,-2",
+          "-3,-3",
+          "-2,-3",
+          "-1,-3"
+        ],
+        "Count": "12",
+        "Unit": "MiningDrone"
+      }
+    ]
+  }
+}

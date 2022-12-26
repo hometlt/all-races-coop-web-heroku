@@ -1,0 +1,37 @@
+{
+  "RepairDroneFollow": {
+    "class": "CKineticFollow"
+  },
+  "RepairDroneRotate": {
+    "class": "CKineticRotate",
+    "Duration": "6",
+    "Yaw": "360"
+  },
+  "KineticSILiberatorFollowTarget": {
+    "class": "CKineticFollow",
+    "Where": {
+      "Effect": "SILiberatorLM",
+      "Value": "TargetUnit"
+    }
+  },
+  "KineticSILiberatorSwarmFormPermanentFollowTarget": {
+    "class": "CKineticTranslate",
+    "Cycles": "1",
+    "Duration": "0.25"
+  },
+  "FollowAnnexDummy": {
+    "class": "CKineticFollow",
+    "Where": {
+      "Effect": "GyreAnnexCUSet",
+      "Value": "TargetUnit"
+    },
+    "Follow": "Position"
+  },
+  "FollowTargetPosition": {
+    "class": "CKineticFollow",
+    "Where": {
+      "Value": "TargetUnit"
+    },
+    "Follow": "Position"
+  }
+}

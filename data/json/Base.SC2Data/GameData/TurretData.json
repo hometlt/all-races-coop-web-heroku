@@ -1,0 +1,529 @@
+{
+  "Cyclone": {
+    "class": "CTurret",
+    "Idle": "Reset"
+  },
+  "Lurker": {
+    "class": "CTurret"
+  },
+  "LaserTurret": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawIdleRate": "-45",
+    "parent": "FreeRotate"
+  },
+  "LaserDrillTripod": {
+    "class": "CTurret",
+    "YawRate": "249.961"
+  },
+  "MutatorLaserDrill": {
+    "class": "CTurret",
+    "YawRate": "249.961",
+    "parent": "FreeRotate"
+  },
+  "VorazunMothershipRotate": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawRate": "7.207",
+    "YawIdleRate": "-7.207",
+    "parent": "FreeRotate"
+  },
+  "BileLauncherZagara": {
+    "class": "CTurret",
+    "YawRate": "119.8828",
+    "parent": "FreeRotate"
+  },
+  "SolarForgeRotate": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawRate": "90",
+    "YawIdleRate": "-90",
+    "YawStart": "-29.9926",
+    "parent": "FreeRotate"
+  },
+  "SolarForgeBRotate": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawRate": "90",
+    "YawIdleRate": "90",
+    "YawStart": "29.9926",
+    "parent": "FreeRotate"
+  },
+  "SolarForgeHold": {
+    "class": "CTurret",
+    "YawRate": "0",
+    "parent": "FreeRotate"
+  },
+  "SolarForgeBHold": {
+    "class": "CTurret",
+    "YawRate": "0",
+    "parent": "FreeRotate"
+  },
+  "Symbiote": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawRate": "539.2968",
+    "parent": "FreeRotate"
+  },
+  "FenixDragoon": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawIdleRate": "360",
+    "parent": "FreeRotate"
+  },
+  "ArtilleryMengsk": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawIdleRate": "2.461",
+    "YawRate": "180",
+    "YawStart": "135",
+    "parent": "FreeRotate"
+  },
+  "MissileTurretMengsk": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawIdleRate": "45",
+    "parent": "FreeRotate"
+  },
+  "SiegeTankMengsk": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "parent": "FreeRotate"
+  },
+  "SiegeTankMengskSieged": {
+    "class": "CTurret",
+    "YawStart": "-180",
+    "YawRate": "360",
+    "parent": "FreeRotate"
+  },
+  "MedivacMengskSiegeTankAirliftTurret": {
+    "class": "CTurret",
+    "YawStart": "-180",
+    "YawRate": "360",
+    "parent": "FreeRotate"
+  },
+  "Liberator_BlackOps": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "100",
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "LiberatorAG_BlackOps": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "100",
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "AutoTurret_BlackOps": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawIdleRate": "-45",
+    "parent": "FreeRotate"
+  },
+  "GaryStetmannRotate": {
+    "class": "CTurret",
+    "Idle": "Reset",
+    "YawRate": "360",
+    "YawIdleRate": "-35.8593",
+    "Fidget": {
+      "ChanceArray": {
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "SporeCrawlerStetmann": {
+    "class": "CTurret",
+    "YawRate": "360",
+    "YawIdleRate": "360",
+    "parent": "FreeRotate"
+  },
+  "SporeCrawlerStetmannUprooted": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawRate": "360",
+    "YawIdleRate": "360",
+    "parent": "FreeRotate"
+  },
+  "SpineCrawlerStetmann": {
+    "class": "CTurret",
+    "YawRate": "360",
+    "parent": "FreeRotate"
+  },
+  "SpineCrawlerStetmannUprooted": {
+    "class": "CTurret",
+    "Idle": "FollowMovementReverse",
+    "YawIdleRate": "720",
+    "parent": "FreeRotate"
+  },
+  "InfestedSiegeTankTentacle": {
+    "class": "CTurret",
+    "YawRate": "360",
+    "YawIdleRate": "360",
+    "parent": "FreeRotate"
+  },
+  "ApocaliskTurret": {
+    "class": "CTurret",
+    "Idle": "Reset",
+    "parent": "FreeRotate"
+  },
+  "StukovInfestedDiamondBack": {
+    "class": "CTurret",
+    "YawRate": "539.2968",
+    "parent": "FreeRotate"
+  },
+  "TychusTurret": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawRate": "539.2968",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "50",
+        "Idle": "50",
+        "Turn": "0"
+      },
+      "TurnAngle": "0"
+    },
+    "parent": "FreeRotate"
+  },
+  "ACPirateCapitalShip": {
+    "class": "CTurret",
+    "YawArc": "90",
+    "YawRate": "1999.8632"
+  },
+  "TerrazineHarvesterGunRotate": {
+    "class": "CTurret",
+    "parent": "FreeRotate"
+  },
+  "TerrazineHarvesterRotate": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawRate": "8.9648",
+    "YawIdleRate": "-8.9648",
+    "parent": "FreeRotate"
+  },
+  "BadgerPointDefenseTurret": {
+    "class": "CTurret",
+    "YawRate": "2857.5",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "0",
+        "Turn": "0"
+      },
+      "DelayMax": "0",
+      "DelayMin": "0"
+    },
+    "parent": "FreeRotate"
+  },
+  "BadgerAATurret": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "0",
+        "Turn": "0"
+      },
+      "DelayMax": "0",
+      "DelayMin": "0"
+    },
+    "parent": "FreeRotate"
+  },
+  "HornetTurret": {
+    "class": "CTurret",
+    "YawRate": "720"
+  },
+  "Interdictor": {
+    "class": "CTurret",
+    "YawArc": "360",
+    "YawRate": "720",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "0",
+        "Turn": "0"
+      }
+    }
+  },
+  "RepulsorTurret": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawIdleRate": "14.9414",
+    "parent": "FreeRotate"
+  },
+  "MoleTurret": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawRate": "39.375",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "0",
+        "Turn": "0"
+      },
+      "DelayMax": "0",
+      "DelayMin": "0",
+      "TurnAngle": "0",
+      "TurningRate": "0"
+    },
+    "parent": "FreeRotate"
+  },
+  "Blitzer": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "parent": "FreeRotate"
+  },
+  "InterdictorMovement": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "14.9414",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "Nullifier": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "45"
+  },
+  "Stratus": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "45"
+  },
+  "StratusMovement": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "45"
+  },
+  "TitanMovement": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawArc": "360",
+    "YawRate": "360",
+    "YawIdleRate": "90",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "Titan": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawArc": "360",
+    "YawRate": "360",
+    "YawIdleRate": "180",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "NullifierMovement": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "45"
+  },
+  "CitadelAAT": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawArc": "360",
+    "YawRate": "299.8828",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "NapoleonMBT": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawArc": "360",
+    "YawRate": "499.9218",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "HeavyTower": {
+    "class": "CTurret",
+    "Idle": "Hold",
+    "YawArc": "360",
+    "YawRate": "299.8828",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "DrakkarAPC": {
+    "class": "CTurret",
+    "YawArc": "360",
+    "YawRate": "720.879",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "MissileTower": {
+    "class": "CTurret",
+    "Idle": "Hold",
+    "YawArc": "360",
+    "YawRate": "499.9218",
+    "YawIdleRate": "45",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "TurretStrikefighter": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "YawRate": "539.2968",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "50",
+        "Idle": "50",
+        "Turn": "0"
+      },
+      "TurnAngle": "0"
+    },
+    "parent": "FreeRotate"
+  },
+  "SuppressionTower": {
+    "class": "CTurret",
+    "Idle": "Hold",
+    "YawArc": "360",
+    "YawRate": "499.746",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "NHbrIonicCrystal@RingRotate": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "109.8632",
+    "YawIdleRate": "109.8632",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "SunkenGuardian": {
+    "class": "CTurret",
+    "YawRate": "360",
+    "parent": "FreeRotate"
+  },
+  "RoutheTank": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawArc": "360",
+    "YawRate": "720",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "A6Turret": {
+    "class": "CTurret",
+    "Idle": "ResetIfMoving",
+    "parent": "FreeRotate"
+  },
+  "SunkenColony": {
+    "class": "CTurret",
+    "YawRate": "540"
+  },
+  "CSVTurret": {
+    "class": "CTurret",
+    "YawIdleRate": "360",
+    "Idle": "Reset",
+    "YawRate": "360",
+    "Fidget": {
+      "ChanceArray": {
+        "Anim": "0",
+        "Idle": "0",
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "TR17Turret": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawArc": "129.9902",
+    "YawRate": "270",
+    "Fidget": {
+      "ChanceArray": {
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "RaptorTurret": {
+    "class": "CTurret",
+    "Idle": "FollowMovement",
+    "YawRate": "180",
+    "Fidget": {
+      "ChanceArray": {
+        "Turn": "0"
+      }
+    },
+    "parent": "FreeRotate"
+  },
+  "UPLSolitaireTurret": {
+    "class": "CTurret",
+    "Idle": "Hold",
+    "YawArc": "360",
+    "YawRate": "90",
+    "YawIdleRate": "29.8828",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "UPLElectrostaticDefenseTower": {
+    "class": "CTurret",
+    "Idle": "Spin",
+    "YawArc": "360",
+    "YawRate": "720",
+    "YawIdleRate": "45",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  },
+  "UPLNightjarTurret": {
+    "class": "CTurret",
+    "Idle": "Hold",
+    "YawArc": "360",
+    "YawRate": "180",
+    "YawIdleRate": "45",
+    "Fidget": {
+      "DelayMax": "30",
+      "DelayMin": "10"
+    }
+  }
+}

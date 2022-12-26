@@ -1,0 +1,192 @@
+{
+  "GroundTarget": {
+    "class": "CTargetSortField",
+    "Field": "PlaneArray[Ground]",
+    "Value": "1"
+  },
+  "TSGroundOrFiring": {
+    "class": "CTargetSortValidator",
+    "Validator": "TargetIsGroundorCasterIsFiringandNotMoving"
+  },
+  "TSMarkerDesc": {
+    "class": "CTargetSortMarker",
+    "Descending": "1"
+  },
+  "TSPriorityDesc": {
+    "class": "CTargetSortPriority",
+    "Descending": "1"
+  },
+  "TSThreatenBattlecruiser": {
+    "class": "CTargetSortValidator",
+    "Validator": "ThreatensBattlecruiser"
+  },
+  "TSTrackedByBattlecruiser": {
+    "class": "CTargetSortValidator",
+    "Validator": "AttackTrackedByBattlecruiser"
+  },
+  "TSTransientBattlecruiser": {
+    "class": "CTargetSortValidator",
+    "Validator": "TransientTrackedByBattlecruiser"
+  },
+  "CarryMineralFieldMinerals": {
+    "class": "CTargetSortBehaviorCount",
+    "Behavior": "CarryMineralFieldMinerals"
+  },
+  "CarryHighYieldMineralFieldMinerals": {
+    "class": "CTargetSortBehaviorCount",
+    "Behavior": "CarryHighYieldMineralFieldMinerals"
+  },
+  "CarryHarvestableVespeneGeyserGasZerg": {
+    "class": "CTargetSortBehaviorCount",
+    "Behavior": "CarryHarvestableVespeneGeyserGasZerg"
+  },
+  "StrongestSurviveLeechPoriority": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "StrongestSurviveLeechPriority",
+    "Descending": "1"
+  },
+  "TSCommanderPrestigeKerriganAbilitiesStun": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "CommanderPrestigeKerriganAbilitiesStun"
+  },
+  "TSInterruptibleFirst": {
+    "class": "CTargetSortInterruptible",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Descending": "1",
+    "Value": "1"
+  },
+  "TSNotDestructible": {
+    "class": "CTargetSortValidator",
+    "Validator": "NotDestructible"
+  },
+  "TSNotHeroicOrMapBoss": {
+    "class": "CTargetSortValidator",
+    "Validator": "NotMapBossOrHeroic"
+  },
+  "TSSupply": {
+    "class": "CTargetSortField",
+    "Field": "Food",
+    "Value": "0",
+    "Descending": "1"
+  },
+  "TSUnitsAndAttackingStructures": {
+    "class": "CTargetSortValidator",
+    "Validator": "UnitOrAttackingStructure"
+  },
+  "HighestUnitLevel": {
+    "class": "CTargetSortField",
+    "Descending": "1",
+    "Field": "Level",
+    "Value": "0"
+  },
+  "TSEnemy": {
+    "class": "CTargetSortValidator",
+    "Validator": "TargetIsEnemy"
+  },
+  "TSInCombat": {
+    "class": "CTargetSortValidator",
+    "Validator": "TargetInCombatLong"
+  },
+  "TSNeutral": {
+    "class": "CTargetSortValidator",
+    "Validator": "TargetIsNeutral"
+  },
+  "TSPlayer": {
+    "class": "CTargetSortValidator",
+    "Validator": "TargetIsPlayer"
+  },
+  "TSShieldLargestFirst": {
+    "class": "CTargetSortVital",
+    "Descending": "1",
+    "Vital": "Shields"
+  },
+  "TSEnergyLargestFirst": {
+    "class": "CTargetSortVital",
+    "Descending": "1",
+    "Vital": "Energy"
+  },
+  "LowestAscendantStacks": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "AscendantSacrificeSelfBuff"
+  },
+  "CommanderPrestigeAlarakMechLowestStacks": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "CommanderPrestigeAlarakMechBuff"
+  },
+  "TSNotDeathFleet": {
+    "class": "CTargetSortValidator",
+    "Descending": "1",
+    "Validator": "IsDeathFleet"
+  },
+  "TSBattlecruiserMengskYamatoTarget": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Descending": "1",
+    "Behavior": "BattlecruiserMengskYamatoTargetMarker"
+  },
+  "TSRavagerBileNoMarker": {
+    "class": "CTargetSortValidator",
+    "Validator": "RavagerStetmannCorrosiveBileNoNearbyMarker"
+  },
+  "TSGaryStetmannorSuperGaryStetmann": {
+    "class": "CTargetSortValidator",
+    "Validator": "IsGaryStetmannOrSuperGaryStetmann"
+  },
+  "TychusMedicHealPrioritizeTychus": {
+    "class": "CTargetSortBehaviorCount",
+    "Descending": "1",
+    "Behavior": "TychusHeroCount"
+  },
+  "TSZeratulDarkTemplarShadowFuryTargeted": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "ZeratulDarkTemplarShadowFuryTargeted"
+  },
+  "CommanderPrestigeZeratulTornadoes": {
+    "class": "CTargetSortBehaviorCount",
+    "Behavior": "CommanderPrestigeZeratulTornadoesDoT"
+  },
+  "TSCODXelNagaConstructMissiles": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Behavior": "CODXelNagaConstructMissilesTargeted"
+  },
+  "HighestUnitCharge": {
+    "class": "CTargetSortBehaviorCount",
+    "WhichUnit": {
+      "Value": "Target"
+    },
+    "Descending": "1",
+    "Behavior": "KeironUnitCharge"
+  },
+  "PrioritizeRelayTower": {
+    "class": "CTargetSortValidator",
+    "Validator": "IsRelayTower"
+  },
+  "TSPriority2": {
+    "class": "CTargetSortPriority",
+    "WhichUnit": {
+      "Value": "Target"
+    }
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "AMFilterTurretY": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "TurretY"
+      }
+    ]
+  },
+  "FilterForearmLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Forearm"
+      },
+      {
+        "Keyword": "Left"
+      }
+    ]
+  },
+  "FilterForearmRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Forearm"
+      },
+      {
+        "Keyword": "Right"
+      }
+    ]
+  },
+  "FilterWeapon0102": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMPatternOdinMKIIAA": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "OdinMKIIAALaunchMissile"
+  },
+  "AMPatternVulture": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "FragmentationGrenadeLM"
+  },
+  "AMFilterWeaponSetA": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon"
+      },
+      {
+        "Keyword": "SetA"
+      }
+    ]
+  },
+  "AMFilterWeaponSetB": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon"
+      },
+      {
+        "Keyword": "SetB"
+      }
+    ]
+  },
+  "AMPatternFenixArbiter": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "FenixArbiterWeaponLM",
+    "Base": "::RollingIndex"
+  },
+  "AMFilterHardpointSetA1": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Hardpoint"
+      },
+      {
+        "Keyword": "SetA",
+        "Index": "1"
+      }
+    ]
+  },
+  "AMPatternGriffon": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "HHGriffonDamage",
+    "Base": "::RollingIndex"
+  },
+  "AMPatternHHVikingFighter": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "HHLanzerTorpedoesLM"
+  },
+  "AMPatternHHWraith": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "HHWraithLaunchMissile",
+    "Base": "::RollingIndex"
+  },
+  "AMPatternHHHellion": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetA",
+    "Driver": "HHHellionPunisherGrenadesLM",
+    "Base": "::RollingIndex"
+  },
+  "AMPatternMiraStarport": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetA",
+    "Driver": "MiraStarportAttackWeaponLaunchMissile",
+    "Base": "::RollingIndex"
+  },
+  "FilterShoulder": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Shoulder"
+      }
+    ]
+  },
+  "FilterWeaponFullMatch": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon"
+      }
+    ],
+    "Logic": "FullMatch"
+  },
+  "ThorMengskPattern": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "ThorMengskSiegedLM"
+  },
+  "FilterWeapon01Thru04": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "3"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "TrooperMengskRocketPattern": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "TrooperMengskRocketLM"
+  },
+  "AMPatternVikingMengskFighter": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "LanzerTorpedoesMengskLM"
+  },
+  "AMPatternVikingMengskFighterMassive": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "VikingMengskAirMassiveLM"
+  },
+  "AMPatternThorMengskAA": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "JavelinMissileLaunchersMengskLM"
+  },
+  "AMPatternGoliathBlackOps": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetB",
+    "Base": "::RollingIndex",
+    "Multiplier": "2",
+    "Driver": "Goliath_BlackOpsALM",
+    "Offset": "1"
+  },
+  "AMPatternGoliathBlackOpsLockdown": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetB",
+    "Base": "::RollingIndex",
+    "Multiplier": "2",
+    "Driver": "Goliath_BlackOpsALMLockDown",
+    "Offset": "1"
+  },
+  "AMPatternBansheeBlackOps": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "Banshee_BlackOpsLaunchMissile"
+  },
+  "AMPatternHydraliskStetmann": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Shoulder",
+    "Base": "::RollingIndex",
+    "Driver": "HellfireMissilePackStetmannLaunchMissile"
+  },
+  "AMPatternHydraliskStetmannUpgraded": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Shoulder",
+    "Base": "::RollingIndex",
+    "Driver": "HellfireMissilePackUpgradedStetmannLaunchMissile"
+  },
+  "AMPatternStukovAleksanderAir": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetA",
+    "Driver": "StukovAleksanderAirAttackLaunchMissile"
+  },
+  "AMPatternStukovInfestedDiamondBackBileStream": {
+    "class": "CAttachMethodPattern",
+    "Driver": "StukovInfestedDiamondBackBileStreamSprayLaunchMissile"
+  },
+  "AMPatternStukovInfestedBanshee": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "StukovInfestedBacklashRocketsLM"
+  },
+  "AMPatternSIMissileTurret": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Multiplier": "2",
+    "Driver": "SILongboltMissileLM"
+  },
+  "AMPatternTychusFirebat": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "TychusPunisherGrenadesLM",
+    "Base": "::RollingIndex"
+  },
+  "AMPatternImmortalZeratulAir": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "ZeratulImmortalShadowCannonLM"
+  },
+  "AMPatternArchAngelPnPChaingun": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "ArchAngelPnPShootDamage"
+  },
+  "AMPatternCODXelNagaConstructMissiles": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetA",
+    "Driver": "CODXelNagaConstructMissilesAttackLM"
+  },
+  "AMFilterBadgerAG": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterAquila": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterBlitzer": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterVirtus": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "3"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterBoar": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterEqualizer": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "3"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterWeapon04": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      }
+    ]
+  },
+  "AMFilterWeapon05": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "5"
+      }
+    ]
+  },
+  "AMFilterWeapon06": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "6"
+      }
+    ]
+  },
+  "AMFilterWeapon14": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "3"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      }
+    ],
+    "Logic": "XOR"
+  },
+  "AMFilterWeapon12": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "0"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      }
+    ]
+  },
+  "AMPatternHornet": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "StingerDrillLM"
+  },
+  "AMPatternFixer": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "FixerFlashGun"
+  },
+  "AMPatternTorrentAG": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "TwinP1Dash0Guns"
+  },
+  "FilterNotWeapon00": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "0"
+      }
+    ],
+    "Logic": "XOR"
+  },
+  "AMPatternBadgerAG": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "HellraiserGunLM"
+  },
+  "AMPatternInciter": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Driver": "HalifaxGrenadesLM"
+  },
+  "AMPatternInterdictor": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "NullifierMissilesLM"
+  },
+  "AMPatternTorrent": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "HurricaneMissilesLM"
+  },
+  "AMPatternAvenger": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "NemesisMissilesLM"
+  },
+  "AMPatternEqualizerStratum": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "StratumMissilePod"
+  },
+  "AMPatternKraken": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Offset": "1",
+    "Driver": "BileSwarmLM"
+  },
+  "FilterKraken": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      }
+    ]
+  },
+  "FilterTarget01": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Target",
+        "Index": "1"
+      }
+    ]
+  },
+  "AMFilterSubjugatorLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "4"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "5"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMFilterSubjugatorGround": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "0"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "1"
+      }
+    ],
+    "Logic": "XOR"
+  },
+  "AMFilterSubjugatorRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Weapon",
+        "Index": "2"
+      },
+      {
+        "Keyword": "Weapon",
+        "Index": "3"
+      }
+    ],
+    "Logic": "OR"
+  },
+  "AMPatternHarbingerGround": {
+    "class": "CAttachMethodPattern",
+    "Type": "Bounce",
+    "Keyword": "SetB",
+    "Driver": "AuguryGunsLM"
+  },
+  "AMPatternHarbingerAir": {
+    "class": "CAttachMethodPattern",
+    "Type": "Bounce",
+    "Keyword": "SetA",
+    "Base": "::RollingIndex",
+    "Driver": "HeraldEnergyCannonsLM"
+  },
+  "AMPatternSubjugatorLeft": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "EnthrallerQuillsLML"
+  },
+  "AMPatternSubjugatorRight": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "Weapon",
+    "Base": "::RollingIndex",
+    "Driver": "EnthrallerQuillsLMR"
+  },
+  "AMPatternParagon": {
+    "class": "CAttachMethodPattern",
+    "Keyword": "SetA",
+    "Base": "::RollingIndex",
+    "Driver": "ParagonGroundWeapon"
+  },
+  "AMFilterFootRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Foot"
+      },
+      {
+        "Keyword": "Right"
+      }
+    ]
+  },
+  "AMFilterFootLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Foot"
+      },
+      {
+        "Keyword": "Left"
+      }
+    ]
+  },
+  "AMFilterWaistRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Waist"
+      },
+      {
+        "Keyword": "Right"
+      }
+    ]
+  },
+  "AMFilterWaistBack": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Waist"
+      },
+      {
+        "Keyword": "Back"
+      }
+    ]
+  },
+  "AMFilterShoulderRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Shoulder"
+      },
+      {
+        "Keyword": "Right"
+      }
+    ]
+  },
+  "AMFilterShoulderLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Shoulder"
+      },
+      {
+        "Keyword": "Left"
+      }
+    ]
+  },
+  "AMFilterWaistLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Waist"
+      },
+      {
+        "Keyword": "Left"
+      }
+    ]
+  },
+  "LotC_AMFilterHandLeft": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Hand"
+      },
+      {
+        "Keyword": "Left"
+      }
+    ]
+  },
+  "LotC_AMFilterHandRight": {
+    "class": "CAttachMethodFilter",
+    "Keys": [
+      {
+        "Keyword": "Hand"
+      },
+      {
+        "Keyword": "Right"
+      }
+    ]
+  },
+  "PatternAARocket": {
+    "class": "CAttachMethodPattern",
+    "Type": "Bounce",
+    "Keyword": "Weapon",
+    "Driver": "::RollingIndex"
+  }
+}

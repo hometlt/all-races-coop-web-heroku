@@ -4,6 +4,7 @@
   "description": "SC2 All Races",
   "main": "server.mjs",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node server.mjs",
     "postinstall": "npm install express"

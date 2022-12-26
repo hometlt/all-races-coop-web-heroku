@@ -1,0 +1,22 @@
+{
+  "ItemMercMines": {
+    "class": "CItemEffectTarget",
+    "Face": "ItemMines",
+    "Flags": {
+      "KillWhenDepleted": "1"
+    },
+    "EffectCost": {
+      "Charge": {
+        "CountMax": "5",
+        "CountStart": "5",
+        "CountUse": "1"
+      },
+      "Cooldown": {
+        "Location": "Unit",
+        "TimeUse": "1"
+      }
+    },
+    "Effect": "SpawnMercVultureSpiderMineSet",
+    "Range": "2"
+  }
+}

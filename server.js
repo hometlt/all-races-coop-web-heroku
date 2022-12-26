@@ -1,19 +1,21 @@
-require('dotenv').config();
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-const serveStatic = require("serve-static");
-const bodyParser = require("body-parser");
-const ejs = require("ejs");
-const session = require("express-session");
-const passport = require("passport");
-const cookieParser = require("cookie-parser");
+import dotenv from 'dotenv'
+dotenv.config();
 
+import express from "express"
+import cors from "cors"
+import path from "path"
+import url from "url"
+import serveStatic from "serve-static"
+import bodyParser from "body-parser"
+import ejs from "ejs"
+import session from "express-session"
+import passport from "passport"
+import cookieParser from "cookie-parser"
 
-const stormRouter = require("./storm/router.js").stormRouter
-const dataRouter = require("./data/router.js").dataRouter
-const authRouter = require("./auth/router.js").authRouter
-process.chdir(__dirname)
+// import stormRouter from "./storm/router.js"
+import dataRouter from "./data/router.js"
+import authRouter from "./auth/router.js"
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// App Configuration /////////////////////////////////////////////////////////////////////////////////////////////////

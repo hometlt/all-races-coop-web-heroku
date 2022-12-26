@@ -1,0 +1,36 @@
+{
+  "Background_None": {
+    "class": "CTexture",
+    "File": "Assets\\Textures\\btn-armor-general-blank.dds",
+    "Slot": "background"
+  },
+  "Decal_Spray_0059_01": {
+    "class": "CTexture",
+    "File": "Assets\\UnitedEarthDirectorate_SC1_Logo1.dds"
+  },
+  "plasmaburn2_orange": {
+    "class": "CTexture",
+    "Slot": "generic01"
+  },
+  "lightning_orange": {
+    "class": "CTexture",
+    "Slot": "generic05"
+  },
+  "flare1_orange4": {
+    "class": "CTexture",
+    "Slot": "generic04"
+  },
+  "glow_orange3": {
+    "class": "CTexture",
+    "Slot": "generic03"
+  },
+  "flare2borange": {
+    "class": "CTexture",
+    "Slot": "generic02"
+  },
+  "InfantryCamo": {
+    "class": "CTexture",
+    "File": "Assets\\Textures\\INF_DIFFUSE_death.dds",
+    "Slot": "main.diffuse"
+  }
+}

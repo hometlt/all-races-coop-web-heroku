@@ -1,8 +1,6 @@
-
-const express = require("express");
+import express from "express"
 import {getUnitData,getUnits} from "./units.mjs";
-
-const dataRouter = express.Router();
+export const dataRouter = express.Router();
 
 function response(req, res, data){
     if(req.query.beautify !== undefined){
@@ -27,6 +25,3 @@ dataRouter.get('/units', function(req, res){
     response(req, res, getUnits(req.params))
 });
 
-module.exports = {
-    dataRouter
-}

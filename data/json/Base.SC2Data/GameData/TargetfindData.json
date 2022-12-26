@@ -1,0 +1,257 @@
+{
+  "Blink": {
+    "class": "CTargetFindSet",
+    "CasterValidator": ""
+  },
+  "GravitonBeamTarget": {
+    "class": "CTargetFindSet",
+    "CasterValidator": "CasterIsNotAttacking"
+  },
+  "MindBlast": {
+    "class": "CTargetFindEnumArea",
+    "TargetValidator": "TargetLifeOrShieldsGE100",
+    "SearchFilters": "-;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Hallucination,Invulnerable,Summoned",
+    "Abil": "VoidHighTemplarMindBlast",
+    "AreaArray": [
+      {
+        "MaxCount": "1",
+        "Radius": "13",
+        "Validator": "TargetLifeGE200"
+      }
+    ],
+    "MaxCount": "1"
+  },
+  "PsiOrbBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "Flags": {
+      "EvaluateCmd": "1"
+    },
+    "DamageBase": "10",
+    "Effect": "VoidHighTemplarPsiOrbSearch",
+    "MinCount": "10",
+    "MinScore": "2.5"
+  },
+  "PsiOrb": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "PsiOrbSearch",
+      "PsiOrbBestPoint"
+    ]
+  },
+  "PsiOrbSearch": {
+    "class": "CTargetFindEffect",
+    "Effect": "VoidHighTemplarPsiOrbSearch",
+    "ExtendRadius": "3",
+    "TargetFilters": "Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Summoned"
+  },
+  "AvengerVengeanceMissile": {
+    "class": "CTargetFindEnumArea",
+    "TargetValidator": "AvengerTacticalAI",
+    "SearchFilters": "Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hallucination,Invulnerable",
+    "SearchFlags": {
+      "ExtendByUnitRadius": "1"
+    },
+    "AreaArray": [
+      {}
+    ],
+    "Abil": "VengeanceMissile",
+    "ExtendRadius": "2"
+  },
+  "ExplosiveGlob": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "ExplosiveGlobEffect",
+      "ExplosiveGlobBestPoint"
+    ]
+  },
+  "StagnatingBile": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "StagnatingBileEffect",
+      "StagnatingBileBestPoint"
+    ]
+  },
+  "ExplosiveGlobBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "DamageBase": "40",
+    "Effect": "ExplosiveGlobImpactSearch",
+    "MinCount": "3",
+    "MinScore": "2"
+  },
+  "ExplosiveGlobEffect": {
+    "class": "CTargetFindEffect",
+    "Effect": "ExplosiveGlobImpactSearch"
+  },
+  "IgnitionBlast": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "IgnitionBlastEffect",
+      "IgnitionBlastBestPoint"
+    ]
+  },
+  "IgnitionBlastBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "Flags": {
+      "EvaluateCmd": "1"
+    },
+    "DamageBase": "20",
+    "Effect": "IgnitionBlastSA",
+    "MinCount": "3",
+    "MinScore": "1"
+  },
+  "IgnitionBlastEffect": {
+    "class": "CTargetFindEffect",
+    "Effect": "IgnitionBlastSA",
+    "ExtendRadius": "0.125"
+  },
+  "IncendiaryInfusion": {
+    "class": "CTargetFindEnumArea",
+    "TargetValidator": "IncendiaryInfusionTargetFilters",
+    "AreaArray": [
+      {
+        "Validator": "noMarkers"
+      }
+    ],
+    "Abil": "IncendiaryInfusion"
+  },
+  "NaniteGrenade": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "NaniteGrenadeSearch",
+      "NaniteGrenadeBestPoint"
+    ]
+  },
+  "NaniteGrenadeBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "Flags": {
+      "EvaluateCmd": "1"
+    },
+    "Effect": "NaniteGrenadeImpact",
+    "MinCount": "6",
+    "MinScore": "2"
+  },
+  "NaniteGrenadeSearch": {
+    "class": "CTargetFindEffect",
+    "TargetFilters": "Visible;Player,Ally,Neutral,Structure,Worker",
+    "TargetValidator": "NoNaniteGrenadeBuff",
+    "Effect": "NaniteGrenadeImpact"
+  },
+  "ProcessorMoveSearch": {
+    "class": "CTargetFindEnumArea",
+    "CasterValidator": "NoOrdersAndNoMove",
+    "AreaArray": [
+      {
+        "Radius": "500",
+        "Validator": "IsProcessingCore"
+      }
+    ],
+    "TargetSorts": {
+      "SortArray": [
+        "TSRandom"
+      ]
+    }
+  },
+  "SchematicTransmit": {
+    "class": "CTargetFindEnumArea",
+    "AreaArray": [
+      {}
+    ],
+    "Abil": "SchematicTransmit",
+    "TargetSorts": {
+      "SortArray": [
+        "TSFarthestDistance"
+      ]
+    }
+  },
+  "Scour": {
+    "class": "CTargetFindEnumArea",
+    "CasterValidator": "AICasterInCombat",
+    "SearchFilters": "-;Visible",
+    "AreaArray": [
+      {
+        "Validator": "TargetAttackingCaster"
+      }
+    ],
+    "Abil": "Scour"
+  },
+  "StagnatingBileBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "Flags": {
+      "EvaluateCmd": "1"
+    },
+    "Effect": "StagnatingBileSA"
+  },
+  "StagnatingBileEffect": {
+    "class": "CTargetFindEffect",
+    "TargetValidator": "TacticalAICasnoliskStagnatingBile",
+    "Effect": "StagnatingBileSA"
+  },
+  "TeslaShockCharge": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "TeslaShockChargeSearch",
+      "TeslaShockChargeBestPoint"
+    ]
+  },
+  "RevenantBomb": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "RevenantBombSearch",
+      "RevenantBombBestPoint"
+    ]
+  },
+  "AnalyzeWeakness": {
+    "class": "CTargetFindSet",
+    "Type": "Sequential",
+    "Array": [
+      "AnalyzeWeaknessSearch",
+      "AnalyzeWeaknessBestPoint"
+    ]
+  },
+  "TeslaShockChargeBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "DamageBase": "20",
+    "Effect": "ShockChargeSA",
+    "MinCount": "3",
+    "MinScore": "0.5"
+  },
+  "RevenantBombBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "Flags": {
+      "EvaluateCmd": "1"
+    },
+    "DamageBase": "40",
+    "Effect": "JupiterShellShockedSearch",
+    "MinCount": "3",
+    "MinScore": "2"
+  },
+  "AnalyzeWeaknessBestPoint": {
+    "class": "CTargetFindBestPoint",
+    "DamageBase": "20",
+    "Effect": "ProcessorAnalyzeWeaknessSA",
+    "MinCount": "3",
+    "MinScore": "0.5",
+    "TargetValidator": "TargetCanAttack"
+  },
+  "TeslaShockChargeSearch": {
+    "class": "CTargetFindEffect",
+    "Effect": "ShockChargeSA"
+  },
+  "RevenantBombSearch": {
+    "class": "CTargetFindEffect",
+    "Effect": "JupiterShellShockedSearch"
+  },
+  "AnalyzeWeaknessSearch": {
+    "class": "CTargetFindEffect",
+    "TargetValidator": "NoAnalyzeWeaknessBuff",
+    "Effect": "ProcessorAnalyzeWeaknessSA",
+    "TargetFilters": "Visible;Player,Ally,Neutral,Worker"
+  }
+}

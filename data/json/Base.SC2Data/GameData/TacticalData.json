@@ -1,0 +1,253 @@
+{
+  "AscendantPsiOrb": {
+    "class": "CTacticalOrder",
+    "Abil": "VoidHighTemplarPsiOrb",
+    "TargetFind": "PsiOrb"
+  },
+  "AscendantMindBlast": {
+    "class": "CTacticalOrder",
+    "Abil": "VoidHighTemplarMindBlast",
+    "TargetFind": "MindBlast"
+  },
+  "Aquila": {
+    "class": "CTacticalOrder",
+    "Abil": "NaniteGrenade",
+    "TargetFind": "NaniteGrenade"
+  },
+  "AvengerGenetron": {
+    "class": "CTacticalOrder",
+    "Abil": "VengeanceMissile",
+    "TargetFind": "AvengerVengeanceMissile"
+  },
+  "Blaze": {
+    "class": "CTacticalOrder",
+    "Abil": "SpeedCloak",
+    "Validator": "EnemiesNearby"
+  },
+  "AssemblyArray": {
+    "class": "CTacticalOrder",
+    "Abil": "Rally",
+    "TargetFind": "DefaultRallyPoint"
+  },
+  "BoarIgnitionBlast": {
+    "class": "CTacticalOrder",
+    "Abil": "IgnitionBlast",
+    "Validator": "AICasterInCombat"
+  },
+  "BoarMove": {
+    "class": "CTacticalOrder",
+    "Abil": "move",
+    "TargetFind": "IgnitionBlast",
+    "Validator": "IgnitionBlastActive"
+  },
+  "Casnolisk": {
+    "class": "CTacticalSet",
+    "Array": [
+      "CasnoliskExplosiveGlob",
+      "CasnoliskStagnatingBile"
+    ]
+  },
+  "CasnoliskExplosiveGlob": {
+    "class": "CTacticalOrder",
+    "Abil": "ExplosiveGlob",
+    "Retreat": "1",
+    "TargetFind": "ExplosiveGlob"
+  },
+  "CasnoliskStagnatingBile": {
+    "class": "CTacticalOrder",
+    "Abil": "StagnatingBile",
+    "Retreat": "1",
+    "TargetFind": "StagnatingBile"
+  },
+  "Courier": {
+    "class": "CTacticalSet",
+    "Array": [
+      "CourierCloak",
+      "CourierCloakOff"
+    ]
+  },
+  "CourierCloakOff": {
+    "class": "CTacticalOrder",
+    "Abil": "CourierCloak",
+    "AbilCmdIndex": "1",
+    "Validator": "TacticalBansheeCloakOff"
+  },
+  "CourierCloak": {
+    "class": "CTacticalOrder",
+    "Abil": "CourierCloak",
+    "Validator": "TacticalCourierCloakOn"
+  },
+  "Exterminator": {
+    "class": "CTacticalOrder",
+    "Abil": "IncendiaryInfusion",
+    "TargetFind": "IncendiaryInfusion"
+  },
+  "Interdictor": {
+    "class": "CTacticalOrder",
+    "Abil": "InterdictorBurrow",
+    "Marker": {
+      "Link": "TacticalAI/Mole"
+    },
+    "Validator": "AICasterNotInCombat"
+  },
+  "InterdictorBurrowed": {
+    "class": "CTacticalOrder",
+    "Abil": "InterdictorUnburrow",
+    "Marker": {
+      "Link": "TacticalAI/MoleBurrowed"
+    },
+    "Validator": "InterdictorBurrowedTacticalAI"
+  },
+  "Jupiter": {
+    "class": "CTacticalOrder",
+    "Abil": "RevenantBomb",
+    "Retreat": "1",
+    "TargetFind": "RevenantBomb"
+  },
+  "Manufacturer": {
+    "class": "CTacticalOrder",
+    "Abil": "Rally",
+    "TargetFind": "DefaultRallyPoint"
+  },
+  "Fabricator": {
+    "class": "CTacticalOrder",
+    "Abil": "Rally",
+    "TargetFind": "DefaultRallyPoint"
+  },
+  "Massalisk": {
+    "class": "CTacticalOrder",
+    "Abil": "Hunker",
+    "Validator": "TacticalAIMassalisk"
+  },
+  "MassaliskHunkered": {
+    "class": "CTacticalOrder",
+    "Abil": "Mobile",
+    "Validator": "TacticalAIMassaliskHunkeredSearchEmptyAir"
+  },
+  "Mole": {
+    "class": "CTacticalOrder",
+    "Abil": "MoleActivate",
+    "Validator": "MoleTacticalAIActivate"
+  },
+  "MoleBurrowed": {
+    "class": "CTacticalOrder",
+    "Abil": "MoleDeactivate",
+    "Validator": "MoleTacticalAIDeactivate"
+  },
+  "ProcessingCore": {
+    "class": "CTacticalSet",
+    "Array": [
+      "ProcessingCoreRally",
+      "ProcessingCoreMiningPriority"
+    ]
+  },
+  "Blitzer": {
+    "class": "CTacticalOrder",
+    "Abil": "SuperCharge",
+    "Validator": "CasterIsAttacking"
+  },
+  "ProcessingCoreMiningPriority": {
+    "class": "CTacticalOrder",
+    "Abil": "MiningPriority",
+    "Validator": "CasterEnergyGE100"
+  },
+  "ProcessingCoreRally": {
+    "class": "CTacticalOrder",
+    "Abil": "RallyProcessingCore",
+    "TargetFind": "WorkerRallyPoint"
+  },
+  "Processor": {
+    "class": "CTacticalSet",
+    "Array": [
+      "ProcessorDetectionOn",
+      "ProcessorDetectionOff",
+      "ProcessorAnalyzeWeakness",
+      "ProcessorMove"
+    ]
+  },
+  "ProcessorMove": {
+    "class": "CTacticalOrder",
+    "Abil": "move",
+    "TargetFind": "ProcessorMoveSearch",
+    "Validator": "CasterEnergyLT50"
+  },
+  "ProcessorUpgradeAnalyzeWeakness": {
+    "class": "CTacticalOrder",
+    "Abil": "ProcessorAnalyzeWeakness",
+    "TargetFind": "AnalyzeWeakness",
+    "Validator": "TacticalAIProcessorSupport"
+  },
+  "ProcessorUpgrade": {
+    "class": "CTacticalSet",
+    "Array": [
+      "ProcessorUpgradeAnalyzeWeakness",
+      "ProcessorUpgradeMove"
+    ]
+  },
+  "ProcessorAnalyzeWeakness": {
+    "class": "CTacticalOrder",
+    "Abil": "ProcessorAnalyzeWeakness",
+    "TargetFind": "AnalyzeWeakness",
+    "Validator": "TacticalAIProcessorAnalyzeWeakness"
+  },
+  "ProcessorDetectionOff": {
+    "class": "CTacticalOrder",
+    "Abil": "ProcessorToggleDetection",
+    "AbilCmdIndex": "1",
+    "Validator": "NoEnemyCloakedUnitsNearby"
+  },
+  "ProcessorDetectionOn": {
+    "class": "CTacticalOrder",
+    "Abil": "ProcessorToggleDetection",
+    "Validator": "TacticalAIProcessorDetectionOn"
+  },
+  "ProcessorUpgradeMove": {
+    "class": "CTacticalOrder",
+    "Abil": "move",
+    "TargetFind": "ProcessorMoveSearch",
+    "Validator": "CasterEnergyLT75"
+  },
+  "Repulsor": {
+    "class": "CTacticalOrder",
+    "Abil": "RepulsorBurrow",
+    "Marker": {
+      "Link": "TacticalAI/Mole"
+    },
+    "Validator": "AICasterNotInCombat"
+  },
+  "RepulsorBurrowed": {
+    "class": "CTacticalOrder",
+    "Abil": "RepulsorUnburrow",
+    "Marker": {
+      "Link": "TacticalAI/MoleBurrowed"
+    },
+    "Validator": "RepulsorBurrowedTacticalAI"
+  },
+  "Roamer": {
+    "class": "CTacticalOrder",
+    "Abil": "Scour",
+    "TargetFind": "Scour"
+  },
+  "Tesla": {
+    "class": "CTacticalSet",
+    "Array": [
+      "TeslaConstructShockCharge",
+      "TeslaLaunchShockCharge"
+    ]
+  },
+  "TeslaConstructShockCharge": {
+    "class": "CTacticalOrder",
+    "Abil": "ConstructTeslaCharge"
+  },
+  "TeslaLaunchShockCharge": {
+    "class": "CTacticalOrder",
+    "Abil": "LaunchShockCharge",
+    "Retreat": "1",
+    "TargetFind": "TeslaShockCharge"
+  },
+  "Xayidling": {
+    "class": "CTacticalOrder",
+    "Abil": "XayidlingDash",
+    "TargetFind": "AttackOrderTarget"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "LotC_UnitBase": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "Unit,^ParamId^,Name"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Description"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Subtitle"
+      },
+      {
+        "Reference": "Actor,^ParamId^,UnitKillRank"
+      },
+      {
+        "Reference": "Model,^ParamId^,Model"
+      },
+      {
+        "Reference": "Model,^ParamId^Portrait,Model",
+        "NameOverride": "DataCollectionPattern/LotC_Building/PortraitModel"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeArmor"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Sight"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Food"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CostResource"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CardLayouts"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyRegenRate"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Speed"
+      },
+      {
+        "Reference": "Unit,^ParamId^,AbilArray"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Attributes"
+      }
+    ],
+    "default": "1"
+  },
+  "LotC_AbilTrain": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "Abil,^ParamId^,InfoArray"
+      }
+    ]
+  },
+  "LotC_Unit": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "DataCollection,^ParamId^,Name",
+        "UserData": "test"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Description"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Subtitle"
+      },
+      {
+        "Reference": "Actor,^ParamId^,UnitKillRank"
+      },
+      {
+        "Reference": "Model,^ParamId^,Model"
+      },
+      {
+        "Reference": "Model,^ParamId^Portrait,Model",
+        "NameOverride": "DataCollectionPattern/LotC_Building/PortraitModel"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeArmor"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Sight"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Food"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CostResource"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CardLayouts"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyRegenRate"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Speed"
+      },
+      {
+        "Reference": "Unit,^ParamId^,AbilArray"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Attributes"
+      }
+    ],
+    "default": "1",
+    "parent": "LotC_UnitBase"
+  },
+  "LotC_Building": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "Unit,^ParamId^,Name"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Description"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Subtitle"
+      },
+      {
+        "Reference": "Actor,^ParamId^,UnitKillRank"
+      },
+      {
+        "Reference": "Model,^ParamId^,Model"
+      },
+      {
+        "Reference": "Model,^ParamId^Portrait,Model",
+        "NameOverride": "DataCollectionPattern/LotC_Building/PortraitModel"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,LifeArmor"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Sight"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Food"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CostResource"
+      },
+      {
+        "Reference": "Unit,^ParamId^,CardLayouts"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyStart"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyMax"
+      },
+      {
+        "Reference": "Unit,^ParamId^,EnergyRegenRate"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Speed"
+      },
+      {
+        "Reference": "Unit,^ParamId^,AbilArray"
+      },
+      {
+        "Reference": "Unit,^ParamId^,Attributes"
+      }
+    ],
+    "default": "1",
+    "parent": "LotC_UnitBase"
+  },
+  "LotC_WeaponInstant": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "Effect,^ParamId^Damage,Amount"
+      }
+    ]
+  },
+  "LotC_Upgrade": {
+    "class": "CDataCollectionPattern",
+    "Fields": [
+      {
+        "Reference": "Button,^ParamId^,Icon"
+      },
+      {
+        "Reference": "Upgrade,^ParamId^,EffectArray"
+      }
+    ]
+  }
+}

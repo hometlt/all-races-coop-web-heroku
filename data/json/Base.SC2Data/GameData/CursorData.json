@@ -1,0 +1,57 @@
+{
+  "Arrow_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor_UED.dds"
+  },
+  "EditBar_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-ibeam_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "GripClosed_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-grip-closed_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "GripOpen_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-grip-open_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "Hyperlink_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-hyperlink_UED.dds",
+    "HotspotX": "15"
+  },
+  "ResizeDiagonalLeft_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-resize-diagonal-left_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "ResizeDiagonalRight_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-resize-diagonal-right_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "ResizeHorizontal_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-resize-horizontal_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "ResizeVertical_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor-resize-vertical_UED.dds",
+    "HotspotX": "15",
+    "HotspotY": "15"
+  },
+  "Wait_ued": {
+    "class": "CCursor",
+    "Texture": "Assets\\UI\\Cursor\\cursor_UED.dds"
+  }
+}

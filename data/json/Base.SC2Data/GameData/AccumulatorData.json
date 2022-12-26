@@ -1,0 +1,550 @@
+{
+  "0": {
+    "class": "CAccumulatorConstant"
+  },
+  "1": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "1"
+    ]
+  },
+  "2": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "2"
+    ]
+  },
+  "3": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "3"
+    ]
+  },
+  "4": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "4"
+    ]
+  },
+  "5": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "5"
+    ]
+  },
+  "15": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "15"
+    ]
+  },
+  "16": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "16"
+    ]
+  },
+  "21": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "21"
+    ]
+  },
+  "ShieldBatteryRechargeEx5@CostSwitch": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "CasterHasBatteryOverchargeBehavior",
+        "Accumulator": "ShieldBatteryRechargeEx5@CostMutiplierFree"
+      }
+    ],
+    "CaseDefault": "ShieldBatteryRechargeEx5@CostMutiplierNormal"
+  },
+  "ShieldBatteryRechargeEx5@CostMutiplierFree": {
+    "class": "CAccumulatorConstant",
+    "ApplicationRule": "Multiply"
+  },
+  "ShieldBatteryRechargeEx5@CostMutiplierNormal": {
+    "class": "CAccumulatorConstant",
+    "ApplicationRule": "Multiply",
+    "Amount": [
+      "1"
+    ]
+  },
+  "DehakaLeapStompDamage": {
+    "class": "CAccumulatorArithmetic",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "DehakaLeapStompLevelDamageFactor"
+        ],
+        "value": "0"
+      },
+      {
+        "AccumulatorArray": [
+          "DehakaLevelAttackDamageScaling"
+        ],
+        "value": "0"
+      }
+    ],
+    "Operation": "Multiply"
+  },
+  "DehakaLeapStompDamageBonus": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "25"
+    ]
+  },
+  "DehakaLeapStompLevelDamageFactor": {
+    "class": "CAccumulatorAbilLevel",
+    "Amount": [
+      "0.5",
+      "0.75"
+    ]
+  },
+  "DehakaLevelMammothBeamDamageFactor": {
+    "class": "CAccumulatorConstant",
+    "ApplicationRule": "Multiply",
+    "Amount": [
+      "0.25"
+    ]
+  },
+  "DehakaLevelPsiExplodeDamageFactor": {
+    "class": "CAccumulatorConstant",
+    "ApplicationRule": "Multiply",
+    "Amount": [
+      "2"
+    ]
+  },
+  "CommanderPrestigeVorazunTimeStopGuardCount": {
+    "class": "CAccumulatorAttributePoints",
+    "MinAccumulation": "0",
+    "Attribute": "CommanderPrestigeVorazunTimeStopCount"
+  },
+  "DefaultDataAdd": {
+    "class": "CAccumulatorUserData"
+  },
+  "RefundEnergyDataAdd": {
+    "class": "CAccumulatorUserData",
+    "Key": "RefundEnergy"
+  },
+  "EnergyCurrentCaster": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Energy",
+    "ModificationType": "PerUnit"
+  },
+  "EnergyMaxTarget": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Energy",
+    "UnitSource": {
+      "Value": "Target"
+    },
+    "ModificationType": "PerUnitMaxVital"
+  },
+  "EnergyCurrentTarget": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Energy",
+    "UnitSource": {
+      "Value": "Target"
+    },
+    "ModificationType": "PerUnit"
+  },
+  "EnergyMaxCaster": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Energy",
+    "ModificationType": "PerUnitMaxVital"
+  },
+  "FuseFusionShieldsApply": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Shields",
+    "ModificationType": "PerUnit"
+  },
+  "FuseUnfuseShieldCurrent": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Shields",
+    "UnitSource": {
+      "Value": "Target"
+    },
+    "ModificationType": "PerUnit"
+  },
+  "FuseUnfuseArithmetic": {
+    "class": "CAccumulatorArithmetic",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "FuseUnfuseShieldCurrent"
+        ],
+        "value": "0.001"
+      },
+      {
+        "AccumulatorArray": [
+          "FuseUnfuseShieldMax"
+        ],
+        "value": "0.001"
+      }
+    ],
+    "Operation": "Divide"
+  },
+  "FuseUnfuseShieldMax": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Shields",
+    "UnitSource": {
+      "Value": "Target"
+    },
+    "ModificationType": "PerUnitMaxVital"
+  },
+  "FuseUnfuseData": {
+    "class": "CAccumulatorUserData"
+  },
+  "RelayTowerLongRangeTransferArith": {
+    "class": "CAccumulatorArithmetic",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "25",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "EnergyCurrentTarget"
+        ],
+        "value": "25"
+      },
+      {
+        "AccumulatorArray": [
+          "EnergyMaxTarget"
+        ],
+        "value": "0"
+      }
+    ],
+    "Operation": "Subtract"
+  },
+  "GetNetwork": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "-0.01",
+    "VitalType": "Energy",
+    "ModificationType": "PerUnit"
+  },
+  "GetNetworkPositive": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Energy",
+    "ModificationType": "PerUnit"
+  },
+  "GetShields": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "VitalType": "Shields",
+    "ModificationType": "PerUnit"
+  },
+  "GetLife": {
+    "class": "CAccumulatorVitals",
+    "Ratio": "1",
+    "ModificationType": "PerUnit"
+  },
+  "NHbrHorrorPlasmaticBlast@DistanceAccumulator": {
+    "class": "CAccumulatorDistance",
+    "MinAccumulation": "-6",
+    "StartLocation": [
+      {
+        "Effect": "NHbrHorrorPlasmaticBlast@Search",
+        "Value": "TargetPoint"
+      }
+    ],
+    "EndLocation": [
+      {
+        "Value": "TargetUnit"
+      }
+    ],
+    "Scale": "-4.25"
+  },
+  "NHbrNemesisWeapon@Ionizer": {
+    "class": "CAccumulatorBehavior",
+    "ApplicationRule": "Multiply",
+    "Behavior": "NHbrNemesisDisintegrator@Ionizer"
+  },
+  "NHbrNemesisWeapon@IonizerArithmeticDuration": {
+    "class": "CAccumulatorArithmetic",
+    "ApplicationRule": "AdditiveMultiply",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "NHbrNemesisWeapon@Ionizer"
+        ],
+        "value": "-0.4"
+      }
+    ]
+  },
+  "NHbrDominatorUpgradeToAdvancedDominator@AdditionWeaponDamage": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "10"
+    ]
+  },
+  "NHbrDominatorUpgradeToAdvancedDominator@Switch": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "NHbrDominatorUpgradeToAdvancedDominator@HasUpgrade",
+        "Accumulator": "NHbrDominatorUpgradeToAdvancedDominator@AdditionWeaponDamage"
+      }
+    ]
+  },
+  "NHbrReaverUpgradeToAdvancedReaver@AdditionWeaponDamage": {
+    "class": "CAccumulatorConstant",
+    "Amount": [
+      "5"
+    ]
+  },
+  "NHbrReaverUpgradeToAdvancedReaver@Switch": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "NHbrReaverUpgradeToAdvancedReaver@HasUpgrade",
+        "Accumulator": "NHbrReaverUpgradeToAdvancedReaver@AdditionWeaponDamage"
+      }
+    ]
+  },
+  "NHbrWarbringerWeaponMaceStrike@DistanceAccumulator": {
+    "class": "CAccumulatorDistance",
+    "MinAccumulation": "-12",
+    "StartLocation": [
+      {
+        "Effect": "NHbrWarbringerWeaponMaceStrike@Search",
+        "Value": "TargetPoint"
+      }
+    ],
+    "EndLocation": [
+      {
+        "Value": "TargetUnit"
+      }
+    ],
+    "Scale": "-8"
+  },
+  "NHbrNetwork@ArithmeticVitals": {
+    "class": "CAccumulatorArithmetic",
+    "ApplicationRule": "Multiply",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "NHbrNetworkNEW@PowerSourceChargedMultiply"
+        ],
+        "value": "1.4"
+      },
+      {
+        "AccumulatorArray": [
+          "NHbrNetworkNEW@PowerSourceNonChargedMultiply"
+        ],
+        "value": "1.1"
+      }
+    ]
+  },
+  "NHbrNetwork@NetworkVitalityRegenRestriction": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "NHbrIonicCrystalTeleport@TargetIsTeleporting",
+        "Accumulator": "NHbrNetwork@0Multiply"
+      }
+    ],
+    "CaseDefault": "NHbrNetwork@ArithmeticVitals"
+  },
+  "NHbrNetwork@NetworkVitalRegenRestriction": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "NHbrIonicCrystalTeleport@TargetIsTeleporting",
+        "Accumulator": "NHbrNetwork@0Multiply"
+      }
+    ]
+  },
+  "NHbrNetworkNEW@PowerSourceNonChargedAdd": {
+    "class": "CAccumulatorConstant",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "12"
+  },
+  "NHbrNetworkNEW@PowerSourceNonChargedMultiply": {
+    "class": "CAccumulatorConstant",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "12",
+    "ApplicationRule": "Multiply"
+  },
+  "NHbrNetwork@NetworkEnergyRegenRestriction": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "NHbrCommon@DefaultEnergyUser",
+        "Accumulator": "NHbrNetwork@0Multiply"
+      },
+      {
+        "Validator": "NHbrTimeScaleBuff@NetworkRegenSupressed",
+        "Accumulator": "NHbrNetwork@0Multiply"
+      }
+    ],
+    "CaseDefault": "NHbrNetwork@Arithmetic"
+  },
+  "NHbrNetworkNEW@PowerSourceChargedAdd": {
+    "class": "CAccumulatorConstant",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "12"
+  },
+  "NHbrNetworkNEW@PowerSourceChargedMultiply": {
+    "class": "CAccumulatorConstant",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "12",
+    "ApplicationRule": "Multiply"
+  },
+  "NHbrNetwork@Arithmetic": {
+    "class": "CAccumulatorArithmetic",
+    "ApplicationRule": "Multiply",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "NHbrNetworkNEW@PowerSourceChargedMultiply"
+        ],
+        "value": "1.66"
+      },
+      {
+        "AccumulatorArray": [
+          "NHbrNetworkNEW@PowerSourceNonChargedMultiply"
+        ],
+        "value": "1.25"
+      }
+    ]
+  },
+  "NHbrNetwork@0Multiply": {
+    "class": "CAccumulatorConstant",
+    "ApplicationRule": "Multiply"
+  },
+  "NHbrProtection@SpellArmor": {
+    "class": "CAccumulatorUnitCustomValue",
+    "ApplicationRule": "Multiply",
+    "Index": "2",
+    "UnitSource": {
+      "Value": "Target"
+    }
+  },
+  "NHbrTimeScaleBuff@DrainingEnergy": {
+    "class": "CAccumulatorUnitCustomValue",
+    "ApplicationRule": "Multiply",
+    "Index": "1"
+  },
+  "CSVTransportCargoFree": {
+    "class": "CAccumulatorCargo",
+    "MinAccumulation": "0",
+    "Type": "Free"
+  },
+  "InfantryOfficerChargeSwitch": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "IsInfantryRocket",
+        "Accumulator": "3"
+      },
+      {
+        "Validator": "IsInfantryMortar",
+        "Accumulator": "5"
+      },
+      {
+        "Validator": "IsHeroic",
+        "Accumulator": "5"
+      }
+    ],
+    "CaseDefault": "1"
+  },
+  "InfantryOfficerCharge": {
+    "class": "CAccumulatorSwitch",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "1000",
+    "CaseArray": [
+      {
+        "Validator": "HaveInfantryOfficerAuraUpgrade",
+        "Accumulator": "WilliamGravesCharge"
+      }
+    ],
+    "CaseDefault": "InfantryOfficerChargeSwitch"
+  },
+  "UPLSolitairePersistentCount": {
+    "class": "CAccumulatorSwitch",
+    "CaseArray": [
+      {
+        "Validator": "HaveCommStationBuff",
+        "Accumulator": "21"
+      }
+    ],
+    "CaseDefault": "15"
+  },
+  "LotC_EP01M08_QueenAura@Radius": {
+    "class": "CAccumulatorArithmetic",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "LotC_EP01M08_QueenAura@TokenCountMultiplier"
+        ],
+        "value": "0"
+      },
+      {
+        "value": "10"
+      }
+    ]
+  },
+  "LotC_EP01M08_QueenAura@TokenCountMultiplier": {
+    "class": "CAccumulatorArithmetic",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "LotC_EP01M08_QueenAura@TokenCount"
+        ],
+        "value": "0"
+      },
+      {
+        "value": "2"
+      }
+    ],
+    "Operation": "Multiply"
+  },
+  "LotC_EP01M08_QueenAura@TokenCount": {
+    "class": "CAccumulatorBehavior",
+    "Behavior": "LotC_EP01M08_QueenAura@Token"
+  },
+  "WilliamGravesCharge": {
+    "class": "CAccumulatorArithmetic",
+    "MinAccumulation": "0",
+    "MaxAccumulation": "1000",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "InfantryOfficerChargeSwitch"
+        ],
+        "value": "0"
+      },
+      {
+        "value": "2"
+      }
+    ],
+    "Operation": "Multiply"
+  },
+  "RileyJericoLornaTokenCount": {
+    "class": "CAccumulatorBehavior",
+    "Behavior": "RileyJericoLornaToken"
+  },
+  "RileyJericoLornaRadius": {
+    "class": "CAccumulatorArithmetic",
+    "Parameters": [
+      {
+        "AccumulatorArray": [
+          "RileyJericoLornaTokenCount"
+        ],
+        "value": "0"
+      },
+      {
+        "value": "1"
+      }
+    ],
+    "Operation": "Multiply"
+  }
+}

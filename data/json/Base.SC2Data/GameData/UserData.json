@@ -1,0 +1,5934 @@
+{
+  "XAC_DehakaConsumeEffects": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Filter",
+        "Type": "String",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "Effect",
+        "Type": "GameLink",
+        "GameLinkType": "Effect",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "Text",
+        "Type": "Text",
+        "EditorColumn": "3"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectAirSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Air;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Air_Text"
+          }
+        ],
+        "Id": "Air"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectArmoredSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Armored;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Armored_Text"
+          }
+        ],
+        "Id": "Armored"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectBiologicalSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Biological;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Biological_Text"
+          }
+        ],
+        "Id": "Biological"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectLightSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Light;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Light_Text"
+          }
+        ],
+        "Id": "Light"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectMassiveSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Massive;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Massive_Text"
+          }
+        ],
+        "Id": "Massive"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectMechanicalSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Mechanical;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Mechanical_Text"
+          }
+        ],
+        "Id": "Mechanical"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Effect"
+            },
+            "GameLink": "DehakaConsumeEffectPsionicSet"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Filter"
+            },
+            "String": "Psionic;-"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Text"
+            },
+            "Text": "UserData/CoopAbilityDehakaConsumeEffects/Psionic_Text"
+          }
+        ],
+        "Id": "Psionic"
+      }
+    ]
+  },
+  "XAC_TheHornersMiraTakeOver": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Upgrade",
+        "Type": "GameLink",
+        "GameLinkType": "Upgrade",
+        "EditorColumn": "1",
+        "EditorText": "Name"
+      },
+      {
+        "Id": "Affected Units",
+        "Type": "GameLink",
+        "GameLinkType": "Unit",
+        "Count": "3",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "Skin",
+        "Type": "GameLink",
+        "GameLinkType": "Skin",
+        "EditorColumn": "3"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHVikingRockets"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHVikingJunker"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHVikingAssault"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "1"
+            },
+            "GameLink": "HHVikingFighter"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "2"
+            },
+            "GameLink": "HHViking_SpawnerUnit"
+          }
+        ],
+        "Id": "HHVikingRockets"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHVikingPiercingAttacks"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHVikingJunker"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHVikingAssault"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "1"
+            },
+            "GameLink": "HHVikingFighter"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "2"
+            },
+            "GameLink": "HHViking_SpawnerUnit"
+          }
+        ],
+        "Id": "HHVikingPiecingAttacks"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHRaven_SpawnerUnit"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "1"
+            },
+            "GameLink": "HHRaven"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "2"
+            },
+            "GameLink": "HHRavenSiegeMode"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHRavenJunker"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHMultiLock"
+          }
+        ],
+        "Id": "HHMultiLock"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHWraithPermaCloak"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHWraithJunker"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHWraith"
+          }
+        ],
+        "Id": "HHWraithPermaCloak"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHWraith"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHWraithJunker"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHWraithFury"
+          }
+        ],
+        "Id": "HHWraithFury"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHBomberNapalm"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHBomberPlatform"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "1"
+            },
+            "GameLink": "HHBomber"
+          },
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHBomberJunker"
+          }
+        ],
+        "Id": "HHBomberNapalm"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Skin"
+            },
+            "GameLink": "HHBattleCruiserJunker"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "HHBattlecruiserYamatoAttacks"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units"
+            },
+            "GameLink": "HHBattlecruiser"
+          },
+          {
+            "Field": {
+              "Id": "Affected Units",
+              "Index": "1"
+            },
+            "GameLink": "HHBattlecruiser_SpawnerUnit"
+          }
+        ],
+        "Id": "HHMiniYamato"
+      }
+    ]
+  },
+  "XAC_TheHornersStat": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Unit",
+        "Type": "Unit",
+        "EditorColumn": "1",
+        "EditorText": "Name"
+      },
+      {
+        "Id": "Faction",
+        "Type": "User",
+        "UserType": "XAC_TheHornersFactions",
+        "EditorColumn": "2"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHVikingFighter"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHVikingFighter"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHVikingAssault"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHVikingAssault"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHWraith"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHWraith"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHBattlecruiser"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHBattlecruiser"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHRaven"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHRaven"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHRavenSiegeMode"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHRavenSiegeMode"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHBomberPlatform"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHBomberPlatform"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHReaper"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHReaper"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHReaperFlying"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHReaperFlying"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHWidowMine"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHWidowMine"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHWidowMineBurrowed"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHWidowMineBurrowed"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHHellionTank"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHHellionTank"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHHellion"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHHellion"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHMercStarportUpgraded"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHStarportUpgraded"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHMercStarportNoArmy"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHStarportNoArmy"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHGriffon"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Mira"
+          }
+        ],
+        "Id": "HHGriffon"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit"
+            },
+            "Unit": "HHBomber"
+          }
+        ],
+        "User": [
+          {
+            "Field": {
+              "Id": "Faction"
+            },
+            "Type": "XAC_TheHornersFactions",
+            "Instance": "Matt"
+          }
+        ],
+        "Id": "HHBomber"
+      }
+    ]
+  },
+  "XAC_TheHornersFactions": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Bonus Life (%)",
+        "Type": "Fixed",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "Bonus Attack Speed (%)",
+        "Type": "Fixed",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "Max Stack",
+        "Type": "Int",
+        "EditorColumn": "3"
+      }
+    ],
+    "Instances": [
+      {
+        "Int": [
+          {
+            "Field": {
+              "Id": "Max Stack"
+            },
+            "Int": "100"
+          }
+        ],
+        "Id": "[Default]"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "Bonus Attack Speed (%)"
+            },
+            "Fixed": "0.5"
+          }
+        ],
+        "Id": "Matt"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "Bonus Life (%)"
+            },
+            "Fixed": "0.5"
+          }
+        ],
+        "Id": "Mira"
+      }
+    ]
+  },
+  "XAC_NovaUnitNames": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Name",
+        "Type": "Text",
+        "GameLinkType": "Abil",
+        "EditorColumn": "1"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName000_Name"
+          }
+        ],
+        "Id": "UnitName000"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName001_Name"
+          }
+        ],
+        "Id": "UnitName001"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName002_Name"
+          }
+        ],
+        "Id": "UnitName002"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName003_Name"
+          }
+        ],
+        "Id": "UnitName003"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName004_Name"
+          }
+        ],
+        "Id": "UnitName004"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName005_Name"
+          }
+        ],
+        "Id": "UnitName005"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName006_Name"
+          }
+        ],
+        "Id": "UnitName006"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName007_Name"
+          }
+        ],
+        "Id": "UnitName007"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName008_Name"
+          }
+        ],
+        "Id": "UnitName008"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName009_Name"
+          }
+        ],
+        "Id": "UnitName009"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName010_Name"
+          }
+        ],
+        "Id": "UnitName010"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName011_Name"
+          }
+        ],
+        "Id": "UnitName011"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName012_Name"
+          }
+        ],
+        "Id": "UnitName012"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName013_Name"
+          }
+        ],
+        "Id": "UnitName013"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName014_Name"
+          }
+        ],
+        "Id": "UnitName014"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName015_Name"
+          }
+        ],
+        "Id": "UnitName015"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName016_Name"
+          }
+        ],
+        "Id": "UnitName016"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName017_Name"
+          }
+        ],
+        "Id": "UnitName017"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName018_Name"
+          }
+        ],
+        "Id": "UnitName018"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName019_Name"
+          }
+        ],
+        "Id": "UnitName019"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName020_Name"
+          }
+        ],
+        "Id": "UnitName020"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName021_Name"
+          }
+        ],
+        "Id": "UnitName021"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName022_Name"
+          }
+        ],
+        "Id": "UnitName022"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName023_Name"
+          }
+        ],
+        "Id": "UnitName023"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName024_Name"
+          }
+        ],
+        "Id": "UnitName024"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName025_Name"
+          }
+        ],
+        "Id": "UnitName025"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName026_Name"
+          }
+        ],
+        "Id": "UnitName026"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName027_Name"
+          }
+        ],
+        "Id": "UnitName027"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName028_Name"
+          }
+        ],
+        "Id": "UnitName028"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName029_Name"
+          }
+        ],
+        "Id": "UnitName029"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName030_Name"
+          }
+        ],
+        "Id": "UnitName030"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName031_Name"
+          }
+        ],
+        "Id": "UnitName031"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName032_Name"
+          }
+        ],
+        "Id": "UnitName032"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName033_Name"
+          }
+        ],
+        "Id": "UnitName033"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName034_Name"
+          }
+        ],
+        "Id": "UnitName034"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName035_Name"
+          }
+        ],
+        "Id": "UnitName035"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName036_Name"
+          }
+        ],
+        "Id": "UnitName036"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName037_Name"
+          }
+        ],
+        "Id": "UnitName037"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName038_Name"
+          }
+        ],
+        "Id": "UnitName038"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName039_Name"
+          }
+        ],
+        "Id": "UnitName039"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName040_Name"
+          }
+        ],
+        "Id": "UnitName040"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName041_Name"
+          }
+        ],
+        "Id": "UnitName041"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName042_Name"
+          }
+        ],
+        "Id": "UnitName042"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName043_Name"
+          }
+        ],
+        "Id": "UnitName043"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName044_Name"
+          }
+        ],
+        "Id": "UnitName044"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName045_Name"
+          }
+        ],
+        "Id": "UnitName045"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName046_Name"
+          }
+        ],
+        "Id": "UnitName046"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName047_Name"
+          }
+        ],
+        "Id": "UnitName047"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName048_Name"
+          }
+        ],
+        "Id": "UnitName048"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName049_Name"
+          }
+        ],
+        "Id": "UnitName049"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName050_Name"
+          }
+        ],
+        "Id": "UnitName050"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName051_Name"
+          }
+        ],
+        "Id": "UnitName051"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName052_Name"
+          }
+        ],
+        "Id": "UnitName052"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName053_Name"
+          }
+        ],
+        "Id": "UnitName053"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName054_Name"
+          }
+        ],
+        "Id": "UnitName054"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName055_Name"
+          }
+        ],
+        "Id": "UnitName055"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName056_Name"
+          }
+        ],
+        "Id": "UnitName056"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName057_Name"
+          }
+        ],
+        "Id": "UnitName057"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName058_Name"
+          }
+        ],
+        "Id": "UnitName058"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName059_Name"
+          }
+        ],
+        "Id": "UnitName059"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName060_Name"
+          }
+        ],
+        "Id": "UnitName060"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName061_Name"
+          }
+        ],
+        "Id": "UnitName061"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName062_Name"
+          }
+        ],
+        "Id": "UnitName062"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName063_Name"
+          }
+        ],
+        "Id": "UnitName063"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName064_Name"
+          }
+        ],
+        "Id": "UnitName064"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName065_Name"
+          }
+        ],
+        "Id": "UnitName065"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName066_Name"
+          }
+        ],
+        "Id": "UnitName066"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName067_Name"
+          }
+        ],
+        "Id": "UnitName067"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName068_Name"
+          }
+        ],
+        "Id": "UnitName068"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName069_Name"
+          }
+        ],
+        "Id": "UnitName069"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName070_Name"
+          }
+        ],
+        "Id": "UnitName070"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName071_Name"
+          }
+        ],
+        "Id": "UnitName071"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName072_Name"
+          }
+        ],
+        "Id": "UnitName072"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName073_Name"
+          }
+        ],
+        "Id": "UnitName073"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName074_Name"
+          }
+        ],
+        "Id": "UnitName074"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName075_Name"
+          }
+        ],
+        "Id": "UnitName075"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName076_Name"
+          }
+        ],
+        "Id": "UnitName076"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName077_Name"
+          }
+        ],
+        "Id": "UnitName077"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName078_Name"
+          }
+        ],
+        "Id": "UnitName078"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName079_Name"
+          }
+        ],
+        "Id": "UnitName079"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName080_Name"
+          }
+        ],
+        "Id": "UnitName080"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName081_Name"
+          }
+        ],
+        "Id": "UnitName081"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName082_Name"
+          }
+        ],
+        "Id": "UnitName082"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName083_Name"
+          }
+        ],
+        "Id": "UnitName083"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName084_Name"
+          }
+        ],
+        "Id": "UnitName084"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName085_Name"
+          }
+        ],
+        "Id": "UnitName085"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName086_Name"
+          }
+        ],
+        "Id": "UnitName086"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName087_Name"
+          }
+        ],
+        "Id": "UnitName087"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName088_Name"
+          }
+        ],
+        "Id": "UnitName088"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName089_Name"
+          }
+        ],
+        "Id": "UnitName089"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName090_Name"
+          }
+        ],
+        "Id": "UnitName090"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName091_Name"
+          }
+        ],
+        "Id": "UnitName091"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName092_Name"
+          }
+        ],
+        "Id": "UnitName092"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName093_Name"
+          }
+        ],
+        "Id": "UnitName093"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName094_Name"
+          }
+        ],
+        "Id": "UnitName094"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName095_Name"
+          }
+        ],
+        "Id": "UnitName095"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName096_Name"
+          }
+        ],
+        "Id": "UnitName096"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName097_Name"
+          }
+        ],
+        "Id": "UnitName097"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName098_Name"
+          }
+        ],
+        "Id": "UnitName098"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName099_Name"
+          }
+        ],
+        "Id": "UnitName099"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName100_Name"
+          }
+        ],
+        "Id": "UnitName100"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName101_Name"
+          }
+        ],
+        "Id": "UnitName101"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName102_Name"
+          }
+        ],
+        "Id": "UnitName102"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName103_Name"
+          }
+        ],
+        "Id": "UnitName103"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName104_Name"
+          }
+        ],
+        "Id": "UnitName104"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName105_Name"
+          }
+        ],
+        "Id": "UnitName105"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName106_Name"
+          }
+        ],
+        "Id": "UnitName106"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName107_Name"
+          }
+        ],
+        "Id": "UnitName107"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName108_Name"
+          }
+        ],
+        "Id": "UnitName108"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName109_Name"
+          }
+        ],
+        "Id": "UnitName109"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName110_Name"
+          }
+        ],
+        "Id": "UnitName110"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName111_Name"
+          }
+        ],
+        "Id": "UnitName111"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName112_Name"
+          }
+        ],
+        "Id": "UnitName112"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName113_Name"
+          }
+        ],
+        "Id": "UnitName113"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName114_Name"
+          }
+        ],
+        "Id": "UnitName114"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName115_Name"
+          }
+        ],
+        "Id": "UnitName115"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName116_Name"
+          }
+        ],
+        "Id": "UnitName116"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName117_Name"
+          }
+        ],
+        "Id": "UnitName117"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName118_Name"
+          }
+        ],
+        "Id": "UnitName118"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName119_Name"
+          }
+        ],
+        "Id": "UnitName119"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName120_Name"
+          }
+        ],
+        "Id": "UnitName120"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName121_Name"
+          }
+        ],
+        "Id": "UnitName121"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName122_Name"
+          }
+        ],
+        "Id": "UnitName122"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName123_Name"
+          }
+        ],
+        "Id": "UnitName123"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName124_Name"
+          }
+        ],
+        "Id": "UnitName124"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName125_Name"
+          }
+        ],
+        "Id": "UnitName125"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName126_Name"
+          }
+        ],
+        "Id": "UnitName126"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName127_Name"
+          }
+        ],
+        "Id": "UnitName127"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName128_Name"
+          }
+        ],
+        "Id": "UnitName128"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName129_Name"
+          }
+        ],
+        "Id": "UnitName129"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName130_Name"
+          }
+        ],
+        "Id": "UnitName130"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName131_Name"
+          }
+        ],
+        "Id": "UnitName131"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName132_Name"
+          }
+        ],
+        "Id": "UnitName132"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName133_Name"
+          }
+        ],
+        "Id": "UnitName133"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName134_Name"
+          }
+        ],
+        "Id": "UnitName134"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName135_Name"
+          }
+        ],
+        "Id": "UnitName135"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName136_Name"
+          }
+        ],
+        "Id": "UnitName136"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName137_Name"
+          }
+        ],
+        "Id": "UnitName137"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName138_Name"
+          }
+        ],
+        "Id": "UnitName138"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName139_Name"
+          }
+        ],
+        "Id": "UnitName139"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName140_Name"
+          }
+        ],
+        "Id": "UnitName140"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName141_Name"
+          }
+        ],
+        "Id": "UnitName141"
+      },
+      {
+        "Text": [
+          {
+            "Field": {
+              "Id": "Name"
+            },
+            "Text": "UserData/NovaUnitNames/UnitName142_Name"
+          }
+        ],
+        "Id": "UnitName142"
+      }
+    ]
+  },
+  "XAC_NovaUnitRanks": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Rank",
+        "Type": "Text",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "RankUnitType",
+        "Type": "GameLink",
+        "GameLinkType": "Unit",
+        "EditorColumn": "2"
+      }
+    ],
+    "Instances": [
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Zergling"
+          }
+        ],
+        "Id": "[Default]"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Marine_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankMarine_Rank"
+          }
+        ],
+        "Id": "UnitRankMarine"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Marauder_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankMarauder_Rank"
+          }
+        ],
+        "Id": "UnitRankMarauder"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Ghost_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankGhost_Rank"
+          }
+        ],
+        "Id": "UnitRankGhost"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "GhostFemale_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankGhostFemale_Rank"
+          }
+        ],
+        "Id": "UnitRankGhostFemale"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HellionBlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHellbat_Rank"
+          }
+        ],
+        "Id": "UnitRankHellion"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HellbatBlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHellbat_Rank"
+          }
+        ],
+        "Id": "UnitRankHellbat"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Goliath_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankGoliath_Rank"
+          }
+        ],
+        "Id": "UnitRankGoliath"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "SiegeTank_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankSiegeTank_Rank"
+          }
+        ],
+        "Id": "UnitRankSiegeTank"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "SiegeTankSieged_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankSiegeTankSieged_Rank"
+          }
+        ],
+        "Id": "UnitRankSiegeTankSieged"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Liberator_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankLiberator_Rank"
+          }
+        ],
+        "Id": "UnitRankLiberator"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "LiberatorAG_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankLiberatorAG_Rank"
+          }
+        ],
+        "Id": "UnitRankLiberatorAG"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Raven_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankRaven_Rank"
+          }
+        ],
+        "Id": "UnitRankRaven"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "Banshee_BlackOps"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankBanshee_Rank"
+          }
+        ],
+        "Id": "UnitRankBanshee"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHWraith"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerWraith_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerWraith"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHVikingAssault"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerVikingAssault_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerVikingAssault"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHVikingFighter"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerVikingFighter_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerVikingFighter"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHBattlecruiser"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerBattlecruiser_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerBattlecruiser"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHRaven"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerRaven_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerRaven"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "RankUnitType"
+            },
+            "GameLink": "HHRavenSiegeMode"
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "Rank"
+            },
+            "Text": "UserData/NovaUnitRanks/UnitRankHornerRavenSieged_Rank"
+          }
+        ],
+        "Id": "UnitRankHornerRavenSieged"
+      }
+    ]
+  },
+  "XAC_TychusHeroAbilRequirements": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Cost",
+        "Type": "Int",
+        "Count": "4",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "Requirement",
+        "Type": "GameLink",
+        "GameLinkType": "Requirement",
+        "EditorColumn": "2"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "Int": [
+          {
+            "Field": {
+              "Id": "Cost"
+            },
+            "Int": "200"
+          },
+          {
+            "Field": {
+              "Id": "Cost",
+              "Index": "1"
+            },
+            "Int": "100"
+          }
+        ],
+        "Id": "Level1"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Requirement"
+            },
+            "GameLink": "TychusHasTechBuildingTier2"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "Cost",
+              "Index": "1"
+            },
+            "Int": "300"
+          },
+          {
+            "Field": {
+              "Id": "Cost"
+            },
+            "Int": "800"
+          }
+        ],
+        "Id": "Level2"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Requirement"
+            },
+            "GameLink": "TychusHasTechBuildingTier22"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "Cost"
+            },
+            "Int": "400"
+          },
+          {
+            "Field": {
+              "Id": "Cost",
+              "Index": "1"
+            },
+            "Int": "200"
+          }
+        ],
+        "Id": "Level3"
+      }
+    ]
+  },
+  "XAC_TechTychusSquad": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Unit Type",
+        "Type": "Unit",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "2D Portrait",
+        "Type": "Image",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "Active Abil",
+        "Type": "GameLink",
+        "GameLinkType": "Abil",
+        "EditorColumn": "3"
+      },
+      {
+        "Id": "Active Button",
+        "Type": "GameLink",
+        "GameLinkType": "Button",
+        "EditorColumn": "4"
+      },
+      {
+        "Flags": {
+          "Modifiable": "1"
+        },
+        "Id": "Squad Slot",
+        "Type": "Int",
+        "EditorColumn": "5"
+      },
+      {
+        "Id": "Revive Ability",
+        "Type": "AbilCmd",
+        "EditorColumn": "6"
+      },
+      {
+        "Id": "Portrait Model",
+        "Type": "Model",
+        "EditorColumn": "7"
+      },
+      {
+        "Id": "Equipment",
+        "Type": "Upgrade",
+        "Count": "4",
+        "EditorColumn": "8"
+      },
+      {
+        "Flags": {
+          "Modifiable": "1"
+        },
+        "Id": "EquipCount",
+        "Type": "Int",
+        "EditorColumn": "9"
+      },
+      {
+        "Id": "EquipmentStructure",
+        "Type": "Unit",
+        "EditorColumn": "10"
+      }
+    ],
+    "Instances": [
+      {
+        "Int": [
+          {
+            "Field": {
+              "Id": "Squad Slot"
+            },
+            "Int": "-1"
+          }
+        ],
+        "Id": "[Default]"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveTychus"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusShredderGrenade"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusShredderGrenade"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Tychus.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Tychus"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusCoop"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusMercCompound"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusACImplosionGrenades"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusACRageGrenades"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusACPiercingRounds"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusACBandofBrothers"
+          }
+        ],
+        "Id": "Tychus"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveGhost"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusGhostDominate"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusGhostDominate"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Ghost.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Ghost"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusGhost"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusGhostAcademy"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusGhostDominateBuff"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusGhostDominatingDomination"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusGhostPsychicSnare"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusGhostConcentrationHelmet"
+          }
+        ],
+        "Id": "Ghost"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveMedic"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusMedicAoE"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusMedicAoE"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Medic.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Medic"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusMedic"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusGhostAcademy"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusMedicAdvancedHealingSpray"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusMedicSuperHealing"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusMedicDoubleBeam"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusMedicDefensiveMatrix"
+          }
+        ],
+        "Id": "Medic"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveFirebat"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusFirebatOilBomb"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusFirebatOilBomb"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Firebat.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Firebat"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusFirebat"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusArmory"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusFirebatPremiumPetroleum"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusFirebatBlueFlameOil"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusFirebatIncendiaryPetroleum"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusFirebatShield"
+          }
+        ],
+        "Id": "Firebat"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveHERC"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusHercGrapple"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusHercGrapple"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_HERC.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_HERC"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusHERC"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusArmory"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusHercRage"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusHercGrappleStun"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusHercGrappleArmor"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusHercCrit"
+          }
+        ],
+        "Id": "HERC"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveSpectre"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusSpectreUltrasonicPulse"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusSpectreUltrasonicPulse"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Spectre.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Spectre"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusSpectre"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusGhostAcademy"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusSpectreExtendedPulseGun"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusSpectreSuperUltrasonicPulse"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusSpectreVisionSuit"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusSpectreBrillianceAura"
+          }
+        ],
+        "Id": "Spectre"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveWarhound"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusWarhoundBuildAutoTurret"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusWarhoundAutoTurret"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Warhound.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Warhound"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusWarhound"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusMercCompound"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusWarhoundHaywireMissiles"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusWarhoundFear"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusWarhoundDeathExplosion"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusWarhoundTurretUpgrade"
+          }
+        ],
+        "Id": "Warhound"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveReaper"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusReaperBomb"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusReaperBomb"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Reaper.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Reaper"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusReaper"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusMercCompound"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusReaperBombDamage"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusReaperBombStun"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusReaperEvasionBuff"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusReaperBombCharges"
+          }
+        ],
+        "Id": "Reaper"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "Revive Ability"
+            },
+            "Abil": "TychusFakeReviveMarauder"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Active Abil"
+            },
+            "GameLink": "TychusMarauderBuildHealingWard"
+          },
+          {
+            "Field": {
+              "Id": "Active Button"
+            },
+            "GameLink": "TychusMarauderHealingWard"
+          }
+        ],
+        "Image": [
+          {
+            "Field": {
+              "Id": "2D Portrait"
+            },
+            "Image": "Assets\\Textures\\UI_InGame_Coop_TopBar_Tychus_HeroPortrait_Marauder.dds"
+          }
+        ],
+        "Model": [
+          {
+            "Field": {
+              "Id": "Portrait Model"
+            },
+            "Model": "TychusTopBarPortrait_Marauder"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "Unit Type"
+            },
+            "Unit": "TychusMarauder"
+          },
+          {
+            "Field": {
+              "Id": "EquipmentStructure"
+            },
+            "Unit": "TychusArmory"
+          }
+        ],
+        "Upgrade": [
+          {
+            "Field": {
+              "Id": "Equipment"
+            },
+            "Upgrade": "TychusMarauderHealingWardBuff"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "1"
+            },
+            "Upgrade": "TychusMarauderHealingWardSpeedBuff"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "2"
+            },
+            "Upgrade": "TychusMarauderSuperStim"
+          },
+          {
+            "Field": {
+              "Id": "Equipment",
+              "Index": "3"
+            },
+            "Upgrade": "TychusMarauderAttackSplash"
+          }
+        ],
+        "Id": "Marauder"
+      }
+    ]
+  },
+  "XAC_ZeratulArtifactPlacement": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "minSearchRadius",
+        "Type": "Fixed",
+        "Count": "3",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "maxSearchRadius",
+        "Type": "Fixed",
+        "Count": "3",
+        "EditorColumn": "3"
+      },
+      {
+        "Id": "maxWalkingDistance",
+        "Type": "Fixed",
+        "Count": "3",
+        "EditorColumn": "5"
+      },
+      {
+        "Id": "MapLink",
+        "Type": "GameLink",
+        "GameLinkType": "Map",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "maxNearbyHealth",
+        "Type": "Fixed",
+        "Count": "3",
+        "EditorColumn": "4"
+      },
+      {
+        "Id": "distanceBetweenPoints",
+        "Type": "Fixed",
+        "EditorColumn": "7"
+      },
+      {
+        "Id": "useZeratulArtifactOrigin",
+        "Type": "Int",
+        "EditorColumn": "9"
+      },
+      {
+        "Id": "checkPathing",
+        "Type": "Int",
+        "Count": "3",
+        "EditorColumn": "6"
+      },
+      {
+        "Id": "minDifficulty",
+        "Type": "Int",
+        "Count": "3",
+        "EditorColumn": "8"
+      }
+    ],
+    "Instances": [
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "distanceBetweenPoints"
+            },
+            "Fixed": "8"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "50"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "80"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius"
+            },
+            "Fixed": "30"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "50"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "80"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "1"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "[Default]"
+      },
+      {
+        "Id": "GlobalDefault"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            }
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_ShakurasTemple"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "useZeratulArtifactOrigin"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          },
+          {
+            "Field": {
+              "Id": "checkPathing"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "checkPathing",
+              "Index": "1"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "checkPathing",
+              "Index": "2"
+            },
+            "Int": "1"
+          }
+        ],
+        "Id": "ShakurasTemple"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "minWalkingDistance"
+            },
+            "Fixed": "42"
+          },
+          {
+            "Field": {
+              "Id": "minWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "50"
+          },
+          {
+            "Field": {
+              "Id": "minWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_CharThrasher"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "CharThrasher"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "90"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "110"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "60"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_KorhalRift"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "KorhalRift"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance"
+            },
+            "Fixed": "80"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_UlnarLocks"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "UnlarLocks"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "50"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_AiurSiege"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "AiurSiege"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_BelshirEscort"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "BelshirEscort"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius"
+            },
+            "Fixed": "20"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance"
+            },
+            "Fixed": "50"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "70"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "70"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "80"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "110"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "90"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_CradleOfDeath"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "useZeratulArtifactOrigin"
+            },
+            "Int": "1"
+          },
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "CradleOfDeath"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "110"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "140"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "120"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_CybrosEscort"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "CybrosEscort"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "minSearchRadius"
+            },
+            "Fixed": "25"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "130"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_JarbanPointCapture"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "minDifficulty",
+              "Index": "2"
+            },
+            "Int": "2"
+          }
+        ],
+        "Id": "JarbanPointCapture"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance"
+            },
+            "Fixed": "60"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "100"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "150"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "60"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_MeinhoffDayNight"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "useZeratulArtifactOrigin"
+            },
+            "Int": "1"
+          }
+        ],
+        "Id": "MeinhoffDayNight"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "110"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_PartAndParcel"
+          }
+        ],
+        "Id": "PartAndParcel"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "110"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_SlaynPayload"
+          }
+        ],
+        "Id": "SlaynPayload"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "70"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "60"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance"
+            },
+            "Fixed": "60"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius"
+            },
+            "Fixed": "20"
+          },
+          {
+            "Field": {
+              "Id": "minSearchRadius",
+              "Index": "1"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "90"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "130"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius",
+              "Index": "2"
+            },
+            "Fixed": "90"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_TarsonisTrain"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "useZeratulArtifactOrigin"
+            },
+            "Int": "1"
+          }
+        ],
+        "Id": "TarsonisTrain"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "minSearchRadius"
+            },
+            "Fixed": "20"
+          },
+          {
+            "Field": {
+              "Id": "maxSearchRadius"
+            },
+            "Fixed": "40"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "2"
+            },
+            "Fixed": "150"
+          },
+          {
+            "Field": {
+              "Id": "maxWalkingDistance",
+              "Index": "1"
+            },
+            "Fixed": "110"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_VeridiaCourier"
+          }
+        ],
+        "Id": "VeridiaCourier"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "2"
+            },
+            "Fixed": "1000"
+          },
+          {
+            "Field": {
+              "Id": "maxNearbyHealth",
+              "Index": "1"
+            },
+            "Fixed": "1000"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MapLink"
+            },
+            "GameLink": "AC_KaldirShuttle"
+          }
+        ],
+        "Id": "KaldirShuttle"
+      }
+    ]
+  },
+  "XAC_ZeratulTopBarCallDown": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "UnitToCall",
+        "Type": "GameLink",
+        "GameLinkType": "Unit",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "MainUnitType",
+        "Type": "GameLink",
+        "GameLinkType": "Unit",
+        "EditorColumn": "2"
+      },
+      {
+        "Id": "Amount",
+        "Type": "Int",
+        "Count": "4",
+        "EditorColumn": "3"
+      },
+      {
+        "Id": "Upgrade",
+        "Type": "GameLink",
+        "GameLinkType": "Upgrade",
+        "EditorColumn": "4"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MainUnitType"
+            },
+            "GameLink": "Mohandar"
+          },
+          {
+            "Field": {
+              "Id": "UnitToCall"
+            },
+            "GameLink": "ZeratulSummonVoidRay"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulTopBarVoidRaySquad"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "1"
+            },
+            "Int": "5"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "2"
+            },
+            "Int": "6"
+          },
+          {
+            "Field": {
+              "Id": "Amount"
+            },
+            "Int": "4"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "3"
+            },
+            "Int": "6"
+          }
+        ],
+        "Id": "VoidRayCallDown"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "UnitToCall"
+            },
+            "GameLink": "ZeratulSummonZealot"
+          },
+          {
+            "Field": {
+              "Id": "MainUnitType"
+            },
+            "GameLink": "ZeratulSummonKarass"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulTopBarZealotSquad"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "Amount"
+            },
+            "Int": "10"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "2"
+            },
+            "Int": "16"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "1"
+            },
+            "Int": "13"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "3"
+            },
+            "Int": "16"
+          }
+        ],
+        "Id": "TemplarCallDown"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "MainUnitType"
+            },
+            "GameLink": "ZeratulSummonKarass"
+          },
+          {
+            "Field": {
+              "Id": "UnitToCall"
+            },
+            "GameLink": "HighTemplar"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulTopBarZealotSquad"
+          }
+        ],
+        "Id": "TemplarCallDownExtra"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "UnitToCall"
+            },
+            "GameLink": "ZeratulDarkArchon"
+          },
+          {
+            "Field": {
+              "Id": "MainUnitType"
+            },
+            "GameLink": "ZeratulHeroDarkArchon"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulTopBarZealotSquad"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "1"
+            },
+            "Int": "4"
+          },
+          {
+            "Field": {
+              "Id": "Amount"
+            },
+            "Int": "3"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "2"
+            },
+            "Int": "5"
+          },
+          {
+            "Field": {
+              "Id": "Amount",
+              "Index": "3"
+            },
+            "Int": "5"
+          }
+        ],
+        "Id": "DarkArchonCallDown"
+      }
+    ]
+  },
+  "XAC_TechBehaviorZeratul": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Behavior",
+        "Type": "GameLink",
+        "GameLinkType": "Behavior",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "Upgrade",
+        "Type": "GameLink",
+        "GameLinkType": "Upgrade",
+        "EditorColumn": "2"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier1AndCyberCore"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier1_CyberneticsCore"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier1AndCyberCore"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier1AndDarkShine"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier1_DarkShine"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier1AndDarkShine"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier1AndRoboticsBay"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier1_RoboticsBay"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier1AndRoboticsBay"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier2AndCyberCore"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier2_CyberneticsCore"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier2AndCyberCore"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier2AndDarkShine"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier2_DarkShine"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier2AndDarkShine"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier2AndRoboticsBay"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier2_RoboticsBay"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier2AndRoboticsBay"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier3AndCyberCore"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier3_CyberneticsCore"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier3AndCyberCore"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier3AndDarkShine"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier3_DarkShine"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier3AndDarkShine"
+      },
+      {
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "HaveZeratulArtifactTier3AndRoboticsBay"
+          },
+          {
+            "Field": {
+              "Id": "Upgrade"
+            },
+            "GameLink": "ZeratulArtifactTier3_RoboticsBay"
+          }
+        ],
+        "Id": "HaveZeratulArtifactTier3AndRoboticsBay"
+      }
+    ]
+  },
+  "DevolutionTiers": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "UnitsToDevolveInto",
+        "Type": "Unit",
+        "Count": "16",
+        "EditorColumn": "1"
+      },
+      {
+        "Id": "RoughSupply",
+        "Type": "Fixed",
+        "EditorColumn": "2"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "Probe"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "SCV"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "Drone"
+          }
+        ],
+        "Id": "Tier01"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "0.5"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "Zergling"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "Marine"
+          }
+        ],
+        "Id": "Tier02"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "1"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "Reaper"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "Zealot"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "Roach"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Hellion"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "WidowMine"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "HellionTank"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "6"
+            },
+            "Unit": "Vulture"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "7"
+            },
+            "Unit": "Baneling"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "8"
+            },
+            "Unit": "Medic"
+          }
+        ],
+        "Id": "Tier03"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "2"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "Marauder"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "Firebat"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "QueenCoop"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Queen"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "Adept"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "Sentry"
+          }
+        ],
+        "Id": "Tier04"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "2"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "WidowMine"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "WidowMineBurrowed"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "Ghost"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Medivac"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "Wraith"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "VikingAssault"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "6"
+            },
+            "Unit": "VikingFighter"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "10"
+            },
+            "Unit": "Stalker"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "11"
+            },
+            "Unit": "Dragoon"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "12"
+            },
+            "Unit": "HighTemplar"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "7"
+            },
+            "Unit": "Hydralisk"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "8"
+            },
+            "Unit": "Mutalisk"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "9"
+            },
+            "Unit": "Corruptor"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "13"
+            },
+            "Unit": "Phoenix"
+          }
+        ],
+        "Id": "Tier05"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "3"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "WarHound"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "Banshee"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Infestor"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "Ravager"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "QueenClassic"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "Cyclone"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "6"
+            },
+            "Unit": "Scout"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "7"
+            },
+            "Unit": "Oracle"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "8"
+            },
+            "Unit": "DarkTemplar"
+          }
+        ],
+        "Id": "Tier06"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "4"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "SiegeTank"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "SwarmHostMP"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "LurkerMP"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "6"
+            },
+            "Unit": "SiegeTankSieged"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "7"
+            },
+            "Unit": "LurkerMPBurrowed"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "8"
+            },
+            "Unit": "Raven"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "9"
+            },
+            "Unit": "ScienceVessel"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "10"
+            },
+            "Unit": "Viper"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "11"
+            },
+            "Unit": "Archon"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "12"
+            },
+            "Unit": "Immortal"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "13"
+            },
+            "Unit": "VoidRay"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Disruptor"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "Liberator"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "LiberatorAG"
+          }
+        ],
+        "Id": "Tier07"
+      },
+      {
+        "Fixed": [
+          {
+            "Field": {
+              "Id": "RoughSupply"
+            },
+            "Fixed": "6"
+          }
+        ],
+        "Unit": [
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto"
+            },
+            "Unit": "BroodLord"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "1"
+            },
+            "Unit": "Ultralisk"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "2"
+            },
+            "Unit": "Battlecruiser"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "3"
+            },
+            "Unit": "Thor"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "4"
+            },
+            "Unit": "Carrier"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "5"
+            },
+            "Unit": "Tempest"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "6"
+            },
+            "Unit": "Reaver"
+          },
+          {
+            "Field": {
+              "Id": "UnitsToDevolveInto",
+              "Index": "7"
+            },
+            "Unit": "Colossus"
+          }
+        ],
+        "Id": "Tier08"
+      }
+    ]
+  },
+  "LotC_Targetable": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "ActivateAbility",
+        "Type": "GameLink",
+        "GameLinkType": "Abil",
+        "EditorText": "Name"
+      },
+      {
+        "Id": "ExecuteCommand",
+        "Type": "AbilCmd"
+      },
+      {
+        "Id": "Cooldown",
+        "Type": "String",
+        "EditorText": "Name"
+      },
+      {
+        "Id": "Behavior",
+        "Type": "GameLink",
+        "GameLinkType": "Behavior"
+      },
+      {
+        "Id": "Model",
+        "Type": "GameLink",
+        "GameLinkType": "Actor"
+      },
+      {
+        "Id": "Order",
+        "Type": "AbilCmd"
+      },
+      {
+        "Id": "UnitType",
+        "Type": "GameLink",
+        "GameLinkType": "Unit"
+      },
+      {
+        "Id": "ChargesTotal",
+        "Type": "Int"
+      },
+      {
+        "Id": "InstructionsPrimary",
+        "Type": "Text"
+      },
+      {
+        "Id": "InstructionsSecondary",
+        "Type": "Text"
+      }
+    ],
+    "Instances": [
+      {
+        "Id": "[Default]"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "ExecuteCommand"
+            },
+            "Abil": "Test_HornerAirFleetExecute"
+          },
+          {
+            "Field": {
+              "Id": "Order"
+            },
+            "Abil": "Test_HornerAirFleetTargetingDummy"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "ActivateAbility"
+            },
+            "GameLink": "Test_HornerAirFleetActivate"
+          },
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "Test_HornerAirFleetActivate"
+          },
+          {
+            "Field": {
+              "Id": "Model"
+            },
+            "GameLink": "Test_HornerAirFleetTargetingModel"
+          },
+          {
+            "Field": {
+              "Id": "UnitType"
+            },
+            "GameLink": "Test_HornerAirFleetTargeter"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "ChargesTotal"
+            },
+            "Int": "1"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Cooldown"
+            },
+            "String": "\"Abil/Test_HornerAirFleetActivate\""
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "InstructionsPrimary"
+            },
+            "Text": "UserData/LotC_Targetable/Test_HornerAirFleet_InstructionsPrimary"
+          },
+          {
+            "Field": {
+              "Id": "InstructionsSecondary"
+            },
+            "Text": "UserData/LotC_Targetable/Test_HornerAirFleet_InstructionsSecondary"
+          }
+        ],
+        "Id": "Test_HornerAirFleet"
+      },
+      {
+        "AbilCmd": [
+          {
+            "Field": {
+              "Id": "ExecuteCommand"
+            },
+            "Abil": "ClaymoreMinePlaceExecute"
+          },
+          {
+            "Field": {
+              "Id": "Order"
+            },
+            "Abil": "ClaymoreMinePlaceTargetingDummy"
+          }
+        ],
+        "GameLink": [
+          {
+            "Field": {
+              "Id": "ActivateAbility"
+            },
+            "GameLink": "ClaymoreMinePlaceActivate"
+          },
+          {
+            "Field": {
+              "Id": "Behavior"
+            },
+            "GameLink": "ClaymoreMinePlaceActivate"
+          },
+          {
+            "Field": {
+              "Id": "Model"
+            },
+            "GameLink": "ClaymoreMinePlaceTargetingModel"
+          },
+          {
+            "Field": {
+              "Id": "UnitType"
+            },
+            "GameLink": "ClaymoreMinePlaceTargeter"
+          }
+        ],
+        "Int": [
+          {
+            "Field": {
+              "Id": "ChargesTotal"
+            },
+            "Int": "1"
+          }
+        ],
+        "String": [
+          {
+            "Field": {
+              "Id": "Cooldown"
+            },
+            "String": "\"Abil/ClaymoreMinePlaceActivate\""
+          }
+        ],
+        "Text": [
+          {
+            "Field": {
+              "Id": "InstructionsPrimary"
+            },
+            "Text": "UserData/LotC_Targetable/ClaymoreMinePlace_InstructionsPrimary"
+          },
+          {
+            "Field": {
+              "Id": "InstructionsSecondary"
+            },
+            "Text": "UserData/LotC_Targetable/ClaymoreMinePlace_InstructionsSecondary"
+          }
+        ],
+        "Id": "ClaymoreMinePlace"
+      }
+    ]
+  },
+  "LotC_UnitsPerMap": {
+    "class": "CUser",
+    "Fields": [
+      {
+        "Id": "Map",
+        "Type": "GameLink",
+        "GameLinkType": "Map"
+      },
+      {
+        "Id": "Available Units",
+        "Type": "GameLink",
+        "GameLinkType": "Unit"
+      }
+    ]
+  }
+}

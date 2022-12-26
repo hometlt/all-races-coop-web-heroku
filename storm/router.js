@@ -1,6 +1,5 @@
-const express = require("express");
-// const YandexDisk = require("yandex-disk");
-const fs = require("fs");
+import express from "express"
+import fs from "fs"
 const stormRouter = express.Router();
 // import  {YandexDisk} from 'yandex-disk'
 // let hots = new YandexDisk('y0_AgAAAAABtKHXAAhrwwAAAADPIH6Z4KcCiFKYQx-3gqSOJYYNt54ipbQ');

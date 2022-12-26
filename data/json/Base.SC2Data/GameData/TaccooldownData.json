@@ -1,0 +1,185 @@
+{
+  "GhostCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "10",
+          "5",
+          "2",
+          "2"
+        ],
+        "AbilLink": "Snipe"
+      },
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "-1",
+          "4",
+          "2",
+          "1"
+        ],
+        "AbilLink": "EMP"
+      },
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "-1",
+          "0"
+        ],
+        "AbilLink": "GhostCloak"
+      }
+    ]
+  },
+  "HighTemplarCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      null,
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "-1",
+          "0"
+        ],
+        "AbilLink": "Feedback"
+      }
+    ]
+  },
+  "InfestorCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      {
+        "Cooldown": [
+          "-1",
+          "15",
+          "15",
+          "7"
+        ],
+        "AbilLink": "FungalGrowth"
+      }
+    ]
+  },
+  "OrbitalCommandCooldowns": {
+    "class": "CTacCooldown",
+    "UnitLink": "CommandCenter"
+  },
+  "OverlordCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      {
+        "Cooldown": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "AbilLink": "GenerateCreep"
+      }
+    ]
+  },
+  "OverseerCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "0",
+          "0"
+        ],
+        "AbilLink": "SpawnChangeling"
+      }
+    ]
+  },
+  "RavenCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      null,
+      null,
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "-1",
+          "0"
+        ],
+        "AbilLink": "PlacePointDefenseDrone"
+      }
+    ]
+  },
+  "SpectreCooldowns": {
+    "class": "CTacCooldown",
+    "TacAbilData": [
+      null,
+      null,
+      {
+        "Cooldown": [
+          "-1",
+          "-1",
+          "-1",
+          "-1",
+          "0"
+        ],
+        "AbilLink": "GhostCloak"
+      }
+    ]
+  },
+  "AscendantCooldowns": {
+    "class": "CTacCooldown",
+    "UnitLink": "HighTemplarTaldarim",
+    "TacAbilData": [
+      {
+        "Cooldown": [
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5"
+        ],
+        "AbilLink": "VoidHighTemplarPsiOrb"
+      },
+      {
+        "AbilLink": "VoidHighTemplarMindBlast"
+      }
+    ]
+  }
+}

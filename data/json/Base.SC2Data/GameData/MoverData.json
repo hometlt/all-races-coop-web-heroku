@@ -1,0 +1,5772 @@
+{
+  "LocustMPFlyingSwoop": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1",
+      "IgnoreNoFlyZones": "1"
+    },
+    "RestoreHeightDuration": "0"
+  },
+  "KD8Charge": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "MaxSpeed": "20",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "KD8ChargeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "KD8ChargeWeaponCloseRange": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "6",
+        "MaxSpeed": "6",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "AdeptPiercingMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1600",
+        "MaxSpeed": "20",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      }
+    ]
+  },
+  "HighTemplarWeaponMover": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "RavenShredderMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "30",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "30",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "-2.25,-2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "30",
+        "Clearance": "0.25",
+        "ClearanceLookahead": "3",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "RavenShredderMissileDirect": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "-2.25,-2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "16",
+        "Clearance": "0.25",
+        "ClearanceLookahead": "3",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "InfestedAcidSpinesWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "30",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "RavenRepairDroneReleaseWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "LaunchTargetToAPathableLocationSlow": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "InfestorEnsnareAirLaunchMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "16",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "parent": "MissileDefault"
+  },
+  "FlyIgnoreAirPathingBlockers": {
+    "class": "CMoverFlock",
+    "Flags": {
+      "IgnoreNoFlyZones": "1"
+    },
+    "HeightMap": "Air",
+    "PathMode": "Flying"
+  },
+  "HHHellionPunisherGrenadesWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Gravity": "30",
+        "FlightTime": "0.5"
+      }
+    ]
+  },
+  "MiraStarportDroneLaunch": {
+    "class": "CMoverMissile",
+    "HeightMap": "Air",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "MaxSpeed": "7.5",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "2D",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "ArrivalTestType": "2D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "RestoreHeightDuration": "0"
+  },
+  "MissileDefault2": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "MissileDefaultFixedFacing": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1",
+      "RestoreHeight": "1"
+    },
+    "HeightMap": "Air",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "RespectUnitHeightAtDestination": "1"
+  },
+  "CommanderPrestigeArtanisOrbitalStrikesArchonEnergy": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "LurkerCoopWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MinSpeed": "8",
+        "MaxSpeed": "8",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InfernalFlameThrowerCoopWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MinSpeed": "16",
+        "MaxSpeed": "16",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "CorrosiveAcidMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "100",
+        "MaxSpeed": "12",
+        "IgnoresTerrain": "1",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "KelMorianGrenadeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "InstantHunterSeekerMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "1",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "0.9",
+        "Timeout": "0.9",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "FlightTime": "0.9"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "0.0078",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "4.9",
+        "Timeout": "4.1",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "FlightTime": "4.1"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "5",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "-2.25,-2",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "16",
+        "Clearance": "0.25",
+        "ClearanceLookahead": "3",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "BansheeAirstrikeFakeAttackWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MaxSpeed": "50",
+        "Outro": "2.5",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ]
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0.2,0.2"
+          }
+        ],
+        "Outro": "-1"
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ],
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "179.2968",
+        "RevolverSpeedRange": "179.2968",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "0",
+        "RevolverAccel": "337.5",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "LaserDrillNuke": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "50",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "BileLauncherZagaraBombardment": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "3200",
+        "Speed": "10",
+        "MaxSpeed": "18.75",
+        "Gravity": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "0",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "MutatorMissileSplitterChildMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.125,0.25",
+        "Timeout": "90",
+        "ThrowRotationType": "Vectored",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Gravity": "30",
+        "Outro": "0.625,0.75",
+        "Timeout": "90",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,265.5944,-360,82.8698",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "2",
+        "MaxSpeed": "7",
+        "Outro": "2,2.5",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "7",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "MutatorMissileNukeMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "2.2031",
+        "MaxSpeed": "2.2031",
+        "Clearance": "2",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "1000",
+        "TurnType": "Optimal",
+        "BlendType": "Logarithmic",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "MutatorMissileStandardPDDEscortMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "4",
+        "MaxSpeed": "4",
+        "Clearance": "2",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "1000",
+        "TurnType": "Optimal",
+        "BlendType": "Logarithmic",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "MutatorMissileNukePDDEscortMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "2.2031",
+        "MaxSpeed": "2.2031",
+        "Clearance": "2",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "1000",
+        "TurnType": "Optimal",
+        "BlendType": "Logarithmic",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "MutatorMissileStandardMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "4",
+        "MaxSpeed": "4",
+        "Clearance": "2",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "1000",
+        "TurnType": "Optimal",
+        "BlendType": "Logarithmic",
+        "Timeout": "90",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "UnitKnockbackMover8": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreNoFlyZones": "1"
+    }
+  },
+  "AbathurLocustEggMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "25",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.5"
+      }
+    ]
+  },
+  "AbathurLocustAirEggMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "25",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.75"
+      }
+    ]
+  },
+  "LocustNestMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "4",
+        "ClearanceLookahead": "2",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "HellbatChargeMissile": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "0",
+        "MinSpeed": "10",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "SiegeTankJumpJet": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "3",
+        "MaxSpeed": "3",
+        "ActorTracking": "Actual",
+        "Outro": "0,4",
+        "AdaptableParabolaClearance": "3"
+      },
+      {
+        "Driver": "Guidance",
+        "MinSpeed": "5",
+        "MaxSpeed": "5",
+        "Outro": "4.1,4.2"
+      },
+      {
+        "Driver": "Guidance",
+        "MinSpeed": "8",
+        "MaxSpeed": "8",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "RavagerCorrosiveBileAoe": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ]
+  },
+  "MutatorCloakedMineWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "PathMode": "Flying",
+    "parent": "MissileDefault"
+  },
+  "MutatorOrbitalStrikeMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "50",
+        "ArrivalTestType": "3D",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "RotationActorType": "LookAtTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "BiomassMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "MaxSpeed": "6",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "SymbioteStab": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "MutatorWidowMineWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "3",
+        "MaxSpeed": "3",
+        "Outro": "1.4,1.45",
+        "Timeout": "10",
+        "ThrowVector": "0,0,1",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "MaxSpeed": "28",
+        "Outro": "1.5,2.5",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "28",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "MutatorWidowMineAirWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "3",
+        "MaxSpeed": "3",
+        "Outro": "1.4,1.45",
+        "Timeout": "10",
+        "ThrowVector": "0,0,1",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "MaxSpeed": "28",
+        "Outro": "1.5,2.5",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "28",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "MutatorInfestedTurkeyWeaponMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "MutatorAmonDehakaDragMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "MutatorAmonDehakaDragMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "25",
+        "MaxSpeed": "25",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.1",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "0.65,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "PathMode": "Flying"
+  },
+  "MutatorFireworksMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "10",
+        "ClearanceLookahead": "3",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "2",
+        "Overlays": [
+          {
+            "Scale": "0.75,0.75"
+          }
+        ]
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "179.2968",
+        "RevolverSpeedRange": "179.2968",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "0",
+        "RevolverAccel": "337.5",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "HHReaperLand": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "40",
+        "ArrivalTestType": "3D",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1",
+      "IgnoreNoFlyZones": "1"
+    },
+    "RestoreHeightDuration": "0.625",
+    "RotationIgnoredByUnit": "1"
+  },
+  "HHReaperFly": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "40",
+        "ArrivalTestType": "3D",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "HHMagneticMineWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "PathMode": "Flying",
+    "parent": "MissileDefault"
+  },
+  "HHCapitalShipEMPWave": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "RavenInstantShredderMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "1",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "0.9",
+        "Timeout": "0.9",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "FlightTime": "0.9"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "0.0078",
+        "MaxSpeed": "5",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "4.9",
+        "Timeout": "4.1",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "FlightTime": "4.1"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "5",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "-2.25,-2",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "16",
+        "Clearance": "0.25",
+        "ClearanceLookahead": "3",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "RavenScramblerMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "HHBomberSelfTurn": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "10",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "10",
+        "ClearanceIgnoresTargetProximity": "1",
+        "ArrivalTestType": "Never",
+        "Outro": "1,2",
+        "Timeout": "1",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "0.7031"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "MaxSpeed": "10",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "10",
+        "ClearanceIgnoresTargetProximity": "1",
+        "ArrivalTestType": "3D",
+        "BlendType": "Linear",
+        "Timeout": "2",
+        "YawPitchRoll": "49.9218"
+      }
+    ]
+  },
+  "HornerAirFleetMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "MinSpeed": "1",
+        "MaxSpeed": "1",
+        "Gravity": "0",
+        "Timeout": "40",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      }
+    ]
+  },
+  "HHWraithWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "HHVikingRocketsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "10",
+        "Speed": "1",
+        "MaxSpeed": "8",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "5.5,7.5",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "16",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968",
+        "Overlays": [
+          {
+            "Scale": "1,1"
+          }
+        ]
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0.15,0.15"
+          }
+        ],
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "119.5312",
+        "RevolverSpeedRange": "119.5312",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "719.2968",
+        "RevolverAccel": "45",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "MiraStarportMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "100",
+        "Speed": "20",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "0.5,1.5",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "2,3",
+        "YawPitchRoll": "9.8437"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "BanelingStetmannJumpMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "120",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.4"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "BroodLordStetmannYamatoWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "GaryStetmannOrbMissileEmpowered": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "LurkerTunnelingBurst": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "5",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "GaryStetmannOrbMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "SupplicantWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "AlarakACDeadlyCharge": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "ArrivalTestType": "2D",
+        "Timeout": "0.5",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1"
+    }
+  },
+  "AlarakACBaneBladesCharge": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "ArrivalTestType": "2D",
+        "Timeout": "0.5",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1"
+    }
+  },
+  "DehakaConsumeTargetMissile": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "25",
+        "MaxSpeed": "25",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Acceleration": "200",
+        "MaxSpeed": "20"
+      }
+    ],
+    "RotationIgnoredByUnit": "1"
+  },
+  "DehakaCreeperFlyingAirSwoopUnnamed": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreNoFlyZones": "1"
+    },
+    "HeightMap": "Air",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "40",
+        "ArrivalTestType": "2D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "RespectUnitHeightAtDestination": "1"
+  },
+  "MammothBreath": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "PrimalSlashUpgradedMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "ArrivalTestType": "3D",
+        "Timeout": "3"
+      }
+    ]
+  },
+  "DehakaTownHallWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "15",
+        "MaxSpeed": "15",
+        "ActorTracking": "Actual",
+        "Outro": "2,5",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "3,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaUltraliskAA": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "40",
+        "MaxSpeed": "40",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaRavasaurWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "MinSpeed": "7",
+        "MaxSpeed": "7",
+        "Gravity": "35"
+      }
+    ]
+  },
+  "DehakaCreeperFlyingSwoop": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1",
+      "IgnoreNoFlyZones": "1"
+    },
+    "RestoreHeightDuration": "0.5"
+  },
+  "DehakaGuardianMineCharge": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "20",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "MaxSpeed": "20",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaGuardianMineChargeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaGuardianMineChargeWeaponCloseRange": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "6",
+        "MaxSpeed": "6",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaDakrunCrashingCharge": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "ArrivalTestType": "2D",
+        "Timeout": "0.75",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1"
+    }
+  },
+  "DehakaLeapStompCloseMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "10",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "3,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DehakaLeapStompMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Gravity": "30",
+        "ClearanceLookahead": "3",
+        "RotationActorType": "Upright",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "FlightTime": "1",
+        "OutroAltitude": "-0.5,-0.1"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "200",
+        "MaxSpeed": "300",
+        "ActorTracking": "Actual",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FenixTalisShadeWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "FenixPurificationNova": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "MaxSpeed": "4.25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "FenixTalisAdeptWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "FenixTalisAdeptUpgradeWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "FenixTalisAdeptBounceMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "FenixMojoScoutAirWeaponLeft": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "10",
+        "Speed": "5",
+        "MaxSpeed": "15",
+        "Outro": "0.4,0.85",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "-0.4,-1,0"
+      },
+      {
+        "Outro": "1,1.5",
+        "ThrowVector": "-0.4,-1,0"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "60",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FenixMojoScoutAirWeaponRight": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "10",
+        "Speed": "5",
+        "MaxSpeed": "15",
+        "Outro": "0.4,0.85",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0.4,-1,0"
+      },
+      {
+        "Outro": "1,1.5",
+        "ThrowVector": "0.4,-1,0"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "60",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FenixKaldalisZealotChargeMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "45",
+        "ClearanceLookahead": "3",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.5"
+      }
+    ]
+  },
+  "FenixThunderousChargeCoop": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "10",
+        "ArrivalTestType": "2D",
+        "Timeout": "1",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "Flags": {
+      "RestoreHeight": "1"
+    }
+  },
+  "ChargedBuster": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "FenixDragoonAirBombWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "MinSpeed": "20",
+        "MaxSpeed": "20",
+        "Gravity": "70"
+      }
+    ]
+  },
+  "FenixDragoonAirBombUpgradedWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "MinSpeed": "20",
+        "MaxSpeed": "20",
+        "Gravity": "70"
+      }
+    ]
+  },
+  "FenixAdeptShadeWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "FenixImmortalUnitKnockbackMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "5",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.5"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "PathMode": "Flying"
+  },
+  "FenixClolarionBomber": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "-1"
+      }
+    ]
+  },
+  "FenixWarbringerColossusPowerShotMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "50",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "GhostMengskIrradiateWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "ArtilleryMengskExperimentalStrikeMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "TrooperMengskRocketAttackMissile": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.2,0.55",
+        "Timeout": "10",
+        "ThrowRotationType": "LookAtTarget",
+        "ThrowVector": "0,-1,1",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "2",
+        "MaxSpeed": "28",
+        "Outro": "0.56,1.5",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "HellionBlackOpsInfernalFlameThrowerCoopWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MinSpeed": "16",
+        "MaxSpeed": "16",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "NovaPenetratorRoundMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "16",
+        "YawPitchRoll": "719.2968"
+      }
+    ]
+  },
+  "Liberator_BlackOpsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "1",
+        "MaxSpeed": "8",
+        "Outro": "2.5,3.5",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "74.9926,-74.9926,64.995,-64.995",
+        "ThrowBandPitch": "45,-45,4.9987,-4.9987"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "AccelerationRange": "7",
+        "MaxSpeed": "16",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968",
+        "Overlays": [
+          {
+            "Scale": "1,1"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "0.5,0.5"
+          }
+        ]
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "119.5312",
+        "RevolverSpeedRange": "119.5312",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "719.2968",
+        "RevolverAccel": "45",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "LiberatorAG_BlackOpsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "40",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "DeploySpiderMines": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "22",
+        "MaxSpeed": "22",
+        "Outro": "-4",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "50",
+        "MaxSpeed": "50",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "MarauderMagrailMunitionsLaunchMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "AutoTurret_BlackOpsReleaseWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "Speed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "NovaGriffinTransportUnloadUnitsLM": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "0",
+        "MinSpeed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "NovaGriffinBombingRunGriffinMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "MinSpeed": "12",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "ArrivalTestType": "Never",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "ThrowForward": "0,-1,0",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "FlightTime": "-1,16",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ]
+  },
+  "NovaGriffinBombingRunDummyAttackMissile": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "8",
+        "MinSpeed": "4",
+        "MaxSpeed": "4",
+        "Clearance": "0",
+        "ClearanceAcceleration": "0",
+        "ClearanceIgnoresTargetProximity": "1",
+        "ArrivalTestType": "3D",
+        "BlendType": "Exponential",
+        "Outro": "1.1,1.55",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "ThrowForward": "0,1,1",
+        "YawPitchRoll": "506.25",
+        "FlightTime": "2,3"
+      },
+      {
+        "Driver": "Ballistic",
+        "MaxSpeed": "0.5",
+        "Gravity": "0.4",
+        "ArrivalTestType": "3D",
+        "RotationActorType": "Upright",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75",
+        "FlightTime": "3,-1"
+      }
+    ]
+  },
+  "NovaGriffinBombingRunDummyAttackMissileLeft": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "8",
+        "MinSpeed": "4",
+        "MaxSpeed": "4",
+        "Clearance": "0",
+        "ClearanceAcceleration": "0",
+        "ClearanceIgnoresTargetProximity": "1",
+        "ArrivalTestType": "3D",
+        "BlendType": "Exponential",
+        "Outro": "1.1,1.55",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "1,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "ThrowForward": "1,0,1",
+        "YawPitchRoll": "506.25",
+        "FlightTime": "2,3"
+      },
+      {
+        "Driver": "Ballistic",
+        "MaxSpeed": "0.5",
+        "Gravity": "0.6",
+        "ArrivalTestType": "3D",
+        "RotationActorType": "Upright",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75",
+        "FlightTime": "2.7,-1"
+      }
+    ]
+  },
+  "NovaGriffinBombingRunDummyAttackMissileRight": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "4",
+        "MinSpeed": "2",
+        "MaxSpeed": "2",
+        "Clearance": "0",
+        "ClearanceAcceleration": "0",
+        "ClearanceIgnoresTargetProximity": "1",
+        "ArrivalTestType": "3D",
+        "BlendType": "Exponential",
+        "Outro": "1.1,1.55",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "-1,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "ThrowForward": "1,0,1",
+        "YawPitchRoll": "506.25",
+        "FlightTime": "2,3"
+      },
+      {
+        "Driver": "Ballistic",
+        "MaxSpeed": "0.5",
+        "Gravity": "0.6",
+        "ArrivalTestType": "3D",
+        "RotationActorType": "Upright",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75",
+        "FlightTime": "2.7,-1"
+      }
+    ]
+  },
+  "SIClusterRocketsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "10",
+        "Speed": "1",
+        "MaxSpeed": "8",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "5.5,7.5",
+        "ThrowVector": "0,1,2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "16",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968",
+        "Overlays": [
+          {
+            "Scale": "1,1"
+          }
+        ]
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0.15,0.15"
+          }
+        ],
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "119.5312",
+        "RevolverSpeedRange": "119.5312",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "719.2968",
+        "RevolverAccel": "45",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "SILiberatorSwarmFormPermanentCloseDistanceLM": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "3.3828",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "CommanderPrestigeStukovBansheesDeploy": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "20",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ]
+  },
+  "InfestedStukovCoopDevastatingShotWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "6",
+        "MaxSpeed": "6",
+        "ClearanceAcceleration": "75",
+        "Outro": "1.5,3",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,0.5",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "6",
+        "MaxSpeed": "20",
+        "Outro": "6,10",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "PathMode": "Flying",
+    "parent": "MissileDefault"
+  },
+  "ApocaliskAirAttackMissile": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.2,0.55",
+        "Timeout": "10",
+        "ThrowRotationType": "LookAtTarget",
+        "ThrowVector": "0,-1,1",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "2",
+        "MaxSpeed": "28",
+        "Outro": "0.56,1.5",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "CreateCocoonMissileWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "9.8",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.75"
+      }
+    ]
+  },
+  "StukovAleksanderTentacleMissileExtend": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "8",
+        "Speed": "8",
+        "MaxSpeed": "20",
+        "IgnoresTerrain": "1",
+        "TurnType": "RevertToUp",
+        "RotationLaunchActorType": "Supplied",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "StukovAleksanderTentacleMissileRetract": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "IgnoresTerrain": "1",
+        "TurnType": "RevertToUp",
+        "Outro": "1,3.8,0.1,0.1",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "0,-14.9963",
+        "ThrowBandPitch": "0,-1.9995"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "25",
+        "IgnoresTerrain": "1",
+        "ActorTracking": "Actual",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "StukovAleksanderInfestedDropPodMissile": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "10",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "0.5,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "StukovAleksanderYamatoWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "StukovInfestedDiamondBackBileStreamSprayMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "Outro": "0.1,4,0.1,0.1",
+        "ThrowVector": "0,-1,0.25",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "20",
+        "ActorTracking": "Actual",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "StukovInfestedDiamondBackBileStreamSprayMissileClose": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "Outro": "0.1,4,0.1,0.1",
+        "ThrowVector": "0,-1,-0.25",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MaxSpeed": "20",
+        "ActorTracking": "Actual",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "StukovInfestedDiamondBackEnsnareAirLaunchMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "parent": "MissileDefault"
+  },
+  "SILiberatorLM": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "9",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "2D",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "ArrivalTestType": "2D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "HeightMap": "Air",
+    "PathMode": "Flying",
+    "RespectUnitHeightAtDestination": "1",
+    "parent": "MissileDefault"
+  },
+  "SILiberatorReturnLM": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationLaunchActorType": "Supplied",
+        "ThrowRotationType": "LauncherForward",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "ThrowRotationType": "LauncherForward",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "PathMode": "Flying",
+    "RotationIgnoredByUnit": "1",
+    "parent": "MissileDefault"
+  },
+  "StukovInfestedInfestedCivilianLeapMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "0",
+        "MinSpeed": "10",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "SILongboltMissileWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "Outro": "-4",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Acceleration": "200",
+        "MaxSpeed": "20"
+      }
+    ]
+  },
+  "AleksanderCrashToAPathableLocation": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1",
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Gravity": "0.01",
+        "ArrivalTestType": "3D",
+        "RotationActorType": "Upright",
+        "FlightTime": "1.5,-1"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "RestoreHeightDuration": "0"
+  },
+  "SIQueenWeapon": {
+    "class": "CMoverMissile",
+    "parent": "MissileDefault"
+  },
+  "TychusShredderGrenadeUnitKnockbackMover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "IgnoreMovementSuppression": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "5",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.5"
+      }
+    ],
+    "RotationIgnoredByUnit": "1",
+    "PathMode": "Flying"
+  },
+  "TychusReaperBombMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "20",
+        "MaxSpeed": "20",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "2,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ]
+  },
+  "ZeratulEntropicBlastCyanWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "1",
+        "ClearanceLookahead": "3",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "0.5"
+      }
+    ]
+  },
+  "ArchAngelCoopMissileWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "10",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "75",
+        "Outro": "2.5,3",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,0",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "14",
+        "MaxSpeed": "28",
+        "Outro": "3.5,4",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX",
+        "Overlays": [
+          {
+            "Scale": "2,1"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "PathMode": "Flying",
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "Axis": "0.15,0.25,0"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "ACPirateCapitalShipLeftLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "5",
+        "Speed": "6",
+        "MaxSpeed": "5",
+        "Outro": "0.4,0.85",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "1.75,-1.25,-0.7"
+      },
+      {
+        "Outro": "1,1.5",
+        "ThrowVector": "0,-1.25,0.2"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "MaxSpeed": "10",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "ACPirateCapitalShipRightLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "5",
+        "Speed": "6",
+        "MaxSpeed": "5",
+        "Outro": "0.4,0.85",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "-1.75,-1.25,-0.7"
+      },
+      {
+        "Outro": "1,1.5",
+        "ThrowVector": "0,-1.25,0.2"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "MaxSpeed": "10",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "ACPirateCapitalShipTractor": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "2",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "VoidShardACVoidZoneWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "0.01",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "3"
+      }
+    ]
+  },
+  "ACPirateBombingRun": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "4",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "SlaynElementalGrabAOEWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "30",
+        "MaxSpeed": "30",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FuelCellWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "MaxSpeed": "1",
+        "ArrivalTestType": "2D",
+        "BlendType": "Linear",
+        "Outro": "4,4.5",
+        "RotationActorType": "Upright",
+        "ThrowVector": "0,0,5"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "10",
+        "TurnType": "Optimal",
+        "ArrivalTestType": "2D",
+        "BlendType": "Linear",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "BioDischargeMissile": {
+    "class": "CMoverMissile",
+    "HeightMap": "Air",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "12",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "SpitMissile": {
+    "class": "CMoverMissile",
+    "HeightMap": "Air",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "12",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "Spew": {
+    "class": "CMoverMissile",
+    "HeightMap": "Air",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "Gravity": "10",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968",
+        "FlightTime": "1,-1"
+      }
+    ]
+  },
+  "HunterlingLeapAttackMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Gravity": "10",
+        "ClearanceLookahead": "3",
+        "RotationActorType": "Upright",
+        "YawPitchRoll": "MAX",
+        "FlightTime": "2"
+      }
+    ]
+  },
+  "CybrosEscortTowerWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "CybrosEscortTowerGroundWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "ArchangelPnPEMPAirWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.5,0.55",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,-1",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Gravity": "30",
+        "Outro": "0.625,0.75",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "2",
+        "MaxSpeed": "28",
+        "Outro": "2,2.5",
+        "Timeout": "10",
+        "YawPitchRoll": "MAX"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "28",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "MoebiusSeekerWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "100",
+        "Speed": "20",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "0.5,1.5",
+        "ThrowVector": "0,1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "2,3",
+        "YawPitchRoll": "9.8437"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "KorhalSporeCannonMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      null,
+      {
+        "MaxSpeed": "30",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "StetmannSparePartsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "9",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "BilePitMissileShort": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "75",
+        "MinSpeed": "24",
+        "MaxSpeed": "150",
+        "IgnoresTerrain": "1",
+        "ActorTracking": "Actual",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "1.5,1",
+        "AdaptableParabolaDistances": {
+          "PreApex": "2",
+          "PostApex": "2"
+        },
+        "AdaptableParabolaAccels": {
+          "Ascent": "3",
+          "Apex": "-2",
+          "Descent": "2"
+        },
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "EnervatorSporeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "100",
+        "MaxSpeed": "17",
+        "IgnoresTerrain": "1",
+        "ActorTracking": "Actual",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "LynxCannonWeaponStraight": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "100",
+        "Speed": "60",
+        "MaxSpeed": "75",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "GyreShackleWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "6",
+        "Outro": "1,5",
+        "ThrowRotationType": "Vectored",
+        "ThrowVector": "0,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "1,1"
+          }
+        ]
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "StratumMissileLauncherWeaponHigh": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MaxSpeed": "25",
+        "Outro": "2,4",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "309.9792,309.9792,-360,-360",
+        "Overlays": [
+          {},
+          {}
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "MinSpeed": "12",
+        "MaxSpeed": "25",
+        "Outro": "3.5,5",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "0.25,0.25"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "Polarity": "Alternating",
+        "Axis": "1,1,1"
+      }
+    ]
+  },
+  "StratumMissileLauncherWeaponMed": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MaxSpeed": "25",
+        "Outro": "1.5,3",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "299.9926,299.9926,-360,-360",
+        "Overlays": [
+          {},
+          {}
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MinSpeed": "12",
+        "MaxSpeed": "25",
+        "Outro": "3.5,5",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "0.25,0.25"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "Polarity": "Alternating",
+        "Axis": "1,1,1"
+      }
+    ]
+  },
+  "TeslaChargeMoverLow": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "8",
+        "MaxSpeed": "8",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1.25,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1.2",
+          "PreApex": "0.5",
+          "PostApex": "0.5",
+          "Land": "0.8"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "20",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "NaniteGrenadeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "5",
+        "MinSpeed": "10",
+        "MaxSpeed": "24",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "1,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "0.75",
+          "PreApex": "0.2",
+          "PostApex": "0.2",
+          "Land": "0.3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "24",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "HurricaneMissilesLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "4",
+        "Speed": "20",
+        "MaxSpeed": "35",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "0.2,0.2"
+          }
+        ]
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ],
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "Wavelength": "1,-1",
+        "RevolverSpeed": "99.8437",
+        "RevolverSpeedRange": "1699.4531",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "0",
+        "RevolverAccel": "337.5",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "StratumMissileLauncherWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "3.5,4",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "1,0.5"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "RevenantBombLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "9",
+        "Speed": "0",
+        "MinSpeed": "2",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "StingerDrillLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "250",
+        "Speed": "40",
+        "MaxSpeed": "40",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "HellraiserGunsWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "80",
+        "MaxSpeed": "80",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "NeutralizerBeamLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "-500",
+        "Speed": "100",
+        "MinSpeed": "8.75",
+        "MaxSpeed": "200",
+        "ActorTracking": "Actual",
+        "Outro": "-4",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "MaxSpeed": "200",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      }
+    ]
+  },
+  "LynxCannonWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "100",
+        "MinSpeed": "60",
+        "MaxSpeed": "100",
+        "ActorTracking": "Actual",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "2,-1",
+        "AdaptableParabolaAccels": {
+          "Launch": "1",
+          "Ascent": "1",
+          "Apex": "1",
+          "Descent": "1",
+          "Land": "1"
+        },
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "LancerAutogunWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "40",
+        "MaxSpeed": "40",
+        "ActorTracking": "Actual",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Acceleration": "-35",
+        "MinSpeed": "15",
+        "MaxSpeed": "40",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "LaunchShockChargeWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "8",
+        "MaxSpeed": "8",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "4,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1.2",
+          "PreApex": "0.5",
+          "PostApex": "0.5",
+          "Land": "0.8"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "20",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "HalifaxGrenadesLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "16",
+        "MaxSpeed": "16",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "1,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "0.75",
+          "PreApex": "0.2",
+          "PostApex": "0.2",
+          "Land": "0.3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ]
+  },
+  "TheGreatEqualizerWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "14",
+        "MinSpeed": "12",
+        "MaxSpeed": "28",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "3.5,4",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "1,0.5"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "NemesisMissilesLMWeapon": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "0",
+        "Speed": "3",
+        "MaxSpeed": "3",
+        "ClearanceAcceleration": "75",
+        "Outro": "1,1.4",
+        "Timeout": "10",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25",
+        "Overlays": [
+          {
+            "Scale": "0.1,0.1"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "3",
+        "MaxSpeed": "12",
+        "Outro": "1.5,2",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "0.25,0.25"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "3200",
+        "Timeout": "10",
+        "YawPitchRoll": "5568.75"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "Axis": "1,1,1"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "VengeanceMissilesLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "100",
+        "Speed": "20",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "ArrivalTestType": "3D",
+        "Outro": "0,0.5",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "0.5,1.5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "9.8437"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3",
+        "AccelerationRange": "7",
+        "MaxSpeed": "30",
+        "ActorTracking": "Actual",
+        "Outro": "-2,-1.25",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "359.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "ExplosiveGobMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1000",
+        "Speed": "100",
+        "MaxSpeed": "6.5",
+        "ActorTracking": "Actual",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "EyeStalkWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "MaxSpeed": "7.5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      }
+    ]
+  },
+  "ScoutMPAirWeaponLeft": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "ThrowVector": "-0.6,-1.5,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "ThrowVector": "-0.6,-1.5,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "Acceleration": "30",
+        "MaxSpeed": "20",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "ScoutMPAirWeaponRight": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "ThrowVector": "0.6,-1.5,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "ThrowVector": "0.6,-1.5,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "Acceleration": "30",
+        "MaxSpeed": "20",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "SpitterAcidMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "40",
+        "MinSpeed": "12",
+        "MaxSpeed": "60",
+        "IgnoresTerrain": "1",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "5.5,-1",
+        "AdaptableParabolaDistances": {
+          "PreApex": "2",
+          "PostApex": "2"
+        },
+        "AdaptableParabolaAccels": {
+          "Ascent": "3",
+          "Apex": "-2",
+          "Descent": "2"
+        },
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "MassaliskSporeMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "75",
+        "MinSpeed": "10",
+        "MaxSpeed": "100",
+        "IgnoresTerrain": "1",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "2.5,-1",
+        "AdaptableParabolaDistances": {
+          "PreApex": "2",
+          "PostApex": "2"
+        },
+        "AdaptableParabolaAccels": {
+          "Ascent": "3",
+          "Apex": "-2",
+          "Descent": "2"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "BilePitMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "75",
+        "MinSpeed": "24",
+        "MaxSpeed": "150",
+        "IgnoresTerrain": "1",
+        "ActorTracking": "Actual",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "3,1",
+        "AdaptableParabolaDistances": {
+          "PreApex": "2",
+          "PostApex": "2"
+        },
+        "AdaptableParabolaAccels": {
+          "Ascent": "3",
+          "Apex": "-2",
+          "Descent": "2"
+        },
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "StagnatingBileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "100",
+        "MinSpeed": "5",
+        "MaxSpeed": "150",
+        "IgnoresTerrain": "1",
+        "BlendType": "Linear",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaClearance": "18,-1",
+        "AdaptableParabolaDistances": {
+          "PreApex": "2",
+          "PostApex": "2"
+        },
+        "AdaptableParabolaAccels": {
+          "Ascent": "3",
+          "Apex": "-2",
+          "Descent": "2"
+        },
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "ParagonEmissaryOrb": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "0.5",
+        "MinSpeed": "2",
+        "MaxSpeed": "15",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "ParagonAirWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1250",
+        "MinSpeed": "0",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "1719.1406"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "ElectronBoltWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1250",
+        "MinSpeed": "0",
+        "MaxSpeed": "75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "1719.1406"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "ElectronBoltWeaponBounce": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1250",
+        "MinSpeed": "0",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "1719.1406"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InducerAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1",
+        "MinSpeed": "13",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "EmanatorMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "Elytron": {
+    "class": "CMoverAvoid",
+    "HeightMap": "Glide",
+    "PathMode": "Scaler",
+    "parent": "Ground"
+  },
+  "AuroraAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1250",
+        "MinSpeed": "0",
+        "MaxSpeed": "-1",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "1719.1406"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InducerReturnGamutOrb": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "0.5",
+        "MinSpeed": "7.5",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "HeraldEnergyCannon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "12",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "ParagonGroundWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1250",
+        "MinSpeed": "0",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "1719.1406"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "StratusAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "MeridianWeaponMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InciterELORProtocol": {
+    "class": "CMoverMissile",
+    "PlacementArray": {
+      "Prevent": {
+        "Bits": {
+          "GroundNoSpawn": "1"
+        }
+      }
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Speed": "40",
+        "MinSpeed": "5",
+        "MaxSpeed": "45",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "2.5,0.3",
+        "AdaptableParabolaDistances": {
+          "Launch": "0.75",
+          "PreApex": "0.2",
+          "PostApex": "0.2",
+          "Land": "0.3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "80",
+          "Ascent": "-5",
+          "Descent": "-10",
+          "Land": "-15"
+        }
+      }
+    ]
+  },
+  "GarmrWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "Outro": "-1",
+        "ThrowVector": "1,0,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DesolatorWeaponMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Speed": "10",
+        "MaxSpeed": "20",
+        "Gravity": "30",
+        "ClearanceLookahead": "3",
+        "ThrowVector": "-1,0,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "PeenemundeMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "-1",
+        "Speed": "10",
+        "MaxSpeed": "20",
+        "Gravity": "55",
+        "ClearanceLookahead": "3",
+        "Outro": "1.5,2.5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "TachyonLaser": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "Speed": "1",
+        "MaxSpeed": "8",
+        "Outro": "2.5,3.5",
+        "ThrowRotationType": "ThrowForward",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "74.9926,-74.9926,64.995,-64.995",
+        "ThrowBandPitch": "45,-45,4.9987,-4.9987"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "AccelerationRange": "7",
+        "MaxSpeed": "16",
+        "ActorTracking": "Actual",
+        "Outro": "-2.5,-1.5",
+        "YawPitchRoll": "359.2968",
+        "Overlays": [
+          {
+            "Scale": "1,1"
+          }
+        ]
+      },
+      {
+        "Driver": "Guidance",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "Overlays": [
+          {
+            "Scale": "0.5,0.5"
+          }
+        ]
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "119.5312",
+        "RevolverSpeedRange": "119.5312",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "719.2968",
+        "RevolverAccel": "45",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "BacklashRocketsLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "20",
+        "Speed": "10",
+        "MaxSpeed": "50",
+        "Outro": "2.5",
+        "YawPitchRoll": "719.2968",
+        "Overlays": [
+          {
+            "Scale": "0"
+          }
+        ]
+      },
+      {
+        "Overlays": [
+          {
+            "Scale": "0.2,0.2"
+          }
+        ],
+        "Outro": "-1"
+      }
+    ],
+    "MotionOverlays": [
+      {
+        "Type": "Revolver",
+        "RevolverSpeed": "179.2968",
+        "RevolverSpeedRange": "179.2968",
+        "RevolverMaxSpeed": "719.2968",
+        "RevolverMaxSpeedRange": "0",
+        "RevolverAccel": "337.5",
+        "RevolverAccelRange": "337.5"
+      }
+    ]
+  },
+  "TossGrenade": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Gravity": "12",
+        "FlightTime": "0.5"
+      }
+    ]
+  },
+  "OpticalFlareLMWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "25",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25",
+        "PowerslideAngle": "358.9892"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "VikingFighterMissileWithTracking": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.125,0.25",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Gravity": "30",
+        "Outro": "0.625,0.75",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "56",
+        "Speed": "2",
+        "MaxSpeed": "28",
+        "ActorTracking": "Actual",
+        "Outro": "2,2.5",
+        "RotationActorType": "LookAtTarget",
+        "Timeout": "10",
+        "ThrowRotationType": "LookAtTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "28",
+        "ActorTracking": "Actual",
+        "RotationActorType": "LookAtTarget",
+        "Timeout": "10",
+        "ThrowRotationType": "LookAtTarget",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "YoinkMissile2": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "YoinkVikingAirMissile2": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "YoinkVikingGroundMissile2": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrHorrorPlasmaticCharge@DynamicParabolaArc": {
+    "class": "CMoverMissile",
+    "HeightMap": "Air",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "MinSpeed": "25",
+        "MaxSpeed": "25",
+        "Outro": "0,2",
+        "ThrowVector": "0,-0.5,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "PowerslideAngle": "358.9892"
+      },
+      {
+        "Outro": "2,8",
+        "ThrowVector": "0,-1,0",
+        "PowerslideAngle": "358.9892"
+      },
+      {
+        "Driver": "Guidance",
+        "YawPitchRoll": "5568.75",
+        "PowerslideAngle": "358.9892"
+      }
+    ]
+  },
+  "NHbrConstructWeaponAntiAir@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrVoidRiftTrain@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "1",
+        "Speed": "12",
+        "MaxSpeed": "12",
+        "Outro": "2,4",
+        "ThrowVector": "0,0,1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "1",
+        "Speed": "6",
+        "MaxSpeed": "12",
+        "ActorTracking": "Actual",
+        "YawPitchRoll": "119.8828",
+        "YawPitchRollAccel": "180"
+      }
+    ]
+  },
+  "NHbrDreadnokWeaponRanged@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrFlayerWeaponRanged@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "40",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrReaverConsumeDNA@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "3200",
+        "MaxSpeed": "7",
+        "ArrivalTestType": "2D",
+        "BlendType": "Linear",
+        "Outro": "4,4.5",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "180,-180,14.9963,-14.9963",
+        "ThrowBandPitch": "90,4.9987"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "10",
+        "TurnType": "Optimal",
+        "ArrivalTestType": "2D",
+        "BlendType": "Linear",
+        "RotationActorType": "LookAtTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrSentinelJump@Mover": {
+    "class": "CMoverMissile",
+    "Flags": {
+      "RestoreHeight": "1"
+    },
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "16",
+        "MaxSpeed": "10",
+        "ActorTracking": "Actual",
+        "Outro": "-0.5,-0.1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "3,0.1",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      },
+      {
+        "Driver": "Guidance",
+        "MaxSpeed": "40",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrSilentWeapon@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MinSpeed": "5",
+        "MaxSpeed": "30",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrWarbringerWeaponMaceCannon@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "NHbrWarriorWeapon@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "Arkwyrm500": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "12",
+        "Gravity": "60",
+        "BlendType": "Linear",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "RotationActorType": "LookAtTarget2D",
+        "OutroAltitude": "-0.75,-0.5"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "16",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "Arkwyrm1": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "60",
+        "Speed": "12",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonBuildMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "8",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonLesserDeepOneMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "5",
+        "Gravity": "50",
+        "BlendType": "Linear",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "RotationActorType": "LookAtTarget2D",
+        "OutroAltitude": "-0.75,-0.5"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "8",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonGenesisPitMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "5",
+        "Gravity": "100",
+        "BlendType": "Linear",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "RotationActorType": "LookAtTarget2D",
+        "OutroAltitude": "-0.75,-0.5"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "8",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonToweringDeepOneMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonGreaterDeepOneMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "8",
+        "Gravity": "80",
+        "BlendType": "Linear",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "RotationActorType": "LookAtTarget2D",
+        "OutroAltitude": "-0.75,-0.5"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "16",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FlamespitterAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "18",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonTrainMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "6",
+        "Gravity": "30",
+        "BlendType": "Linear",
+        "RotationLaunchActorType": "LaunchToTarget2D",
+        "RotationActorType": "LookAtTarget2D",
+        "OutroAltitude": "-0.25,-0.125"
+      },
+      {
+        "Driver": "Guidance",
+        "Speed": "12",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FleshrenderAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "24",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "Fleshrender": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "18",
+        "Speed": "6",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "AuroraConduitAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "3",
+        "Outro": "0.5,1",
+        "ThrowVector": "0,-1,0",
+        "YawPitchRoll": "360"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "30",
+        "MaxSpeed": "30",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "AuroraConduitAttackBounce": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "30",
+        "Speed": "12",
+        "MaxSpeed": "30",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FleshrenderInfernalAscendBounce": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FleshrenderInfernalEffigyMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "28",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "FleshrenderInfernalAscendMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "5",
+        "Speed": "10",
+        "MaxSpeed": "20",
+        "Outro": "2,3",
+        "ThrowVector": "0,0,1",
+        "YawPitchRoll": "360"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "5",
+        "Speed": "10",
+        "MaxSpeed": "20",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "RazorbackUrticatingQuillsMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "20",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "PhlogistonGuardianAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "28",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "SunkenGuardianAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "10.5",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "HornedMagusAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "28",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "DragonHunterAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "640",
+        "TurnType": "RevertToUp",
+        "ActorTracking": "Actual",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "Hunter": {
+    "class": "CMoverMissile",
+    "PathMode": "Jumper",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Speed": "9",
+        "ActorTracking": "Actual",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1.25,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.9",
+          "PostApex": "0.1",
+          "Land": "3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "15",
+          "Ascent": "1",
+          "Apex": "-13",
+          "Descent": "12",
+          "Land": "-6"
+        }
+      }
+    ],
+    "RespectUnitHeightAtDestination": "1"
+  },
+  "HunterJumpDown": {
+    "class": "CMoverMissile",
+    "PathMode": "Jumper",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "5",
+        "Speed": "1",
+        "MinSpeed": "6",
+        "MaxSpeed": "20",
+        "ActorTracking": "Actual",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "2",
+          "PreApex": "0.9",
+          "PostApex": "0.1",
+          "Land": "3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "5",
+          "Ascent": "1",
+          "Apex": "-13",
+          "Descent": "17",
+          "Land": "17"
+        }
+      }
+    ]
+  },
+  "HunterJumpUp": {
+    "class": "CMoverMissile",
+    "PathMode": "Jumper",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "5",
+        "Speed": "1",
+        "MinSpeed": "6",
+        "MaxSpeed": "20",
+        "ActorTracking": "Actual",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "1.5,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "2",
+          "PreApex": "0.9",
+          "PostApex": "0.1",
+          "Land": "3"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "10",
+          "Ascent": "1",
+          "Apex": "-20",
+          "Descent": "17",
+          "Land": "17"
+        }
+      }
+    ]
+  },
+  "HunterReturnMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "80",
+        "Speed": "10",
+        "TurnType": "RevertToUp",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "SkyrazerAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "18",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "SkyrazerEmberCoreMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Speed": "24",
+        "RotationLaunchActorType": "LaunchToTarget",
+        "YawPitchRoll": "MAX"
+      }
+    ],
+    "parent": "SkyrazerAttackMissile"
+  },
+  "CARRAARocketMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "10",
+        "Speed": "4",
+        "MaxSpeed": "10",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "AltonPetersArmorDecayMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "36",
+        "MaxSpeed": "9",
+        "Gravity": "6",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "PrimalSunkenColonyWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "18.75",
+        "Gravity": "-1",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968",
+        "FlightTime": "-1,-1"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "MiningDroneWeapon": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "20",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ]
+  },
+  "InfantryRocketMissilemover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "25",
+        "Speed": "6",
+        "MinSpeed": "1",
+        "MaxSpeed": "14",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "GrenadeLauncherMissilemover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "40",
+        "MaxSpeed": "10",
+        "Gravity": "5",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "APCSmokeGrenadeMissilemover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "7",
+        "MaxSpeed": "7",
+        "Gravity": "12",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "WillliamGravesArtilleryStrike@Mover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "50",
+        "ArrivalTestType": "3D",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "UPLSpecOpsAttackMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Guidance",
+        "Acceleration": "3200",
+        "MaxSpeed": "22",
+        "ClearanceAcceleration": "75",
+        "Outro": "-1",
+        "YawPitchRoll": "719.2968"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "Z1FreezeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "8",
+        "MaxSpeed": "8",
+        "Gravity": "8",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ]
+  },
+  "Z1BadgerBombMissile": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Acceleration": "1200",
+        "Speed": "1",
+        "MaxSpeed": "1",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "0.9",
+        "Timeout": "0.9",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "FlightTime": "0.2"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "0.0078",
+        "MaxSpeed": "0.0078",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "ClearanceAcceleration": "75",
+        "ClearanceIgnoresTargetProximity": "1",
+        "Outro": "4.9",
+        "Timeout": "4.1",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484",
+        "FlightTime": "0.5"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "16",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "7",
+        "MaxSpeed": "16",
+        "Clearance": "0.5",
+        "ClearanceLookahead": "3",
+        "Outro": "-2.25,-2",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "2",
+        "MaxSpeed": "16",
+        "Clearance": "0.25",
+        "ClearanceLookahead": "3",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ]
+  },
+  "InfantryMortarMissileMoverUpgraded": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "10",
+        "MinSpeed": "16",
+        "MaxSpeed": "22",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaClearance": "3,0.5",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InfantryMortarMissileMoverClose": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "10",
+        "MinSpeed": "12",
+        "MaxSpeed": "18",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaClearance": "1,0.2",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "0.5",
+          "PreApex": "0.2",
+          "PostApex": "0.2",
+          "Land": "0.5"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "InfantryMortarMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "Acceleration": "10",
+        "MinSpeed": "12",
+        "MaxSpeed": "18",
+        "ClearanceAcceleration": "75",
+        "ActorTracking": "Actual",
+        "Outro": "0",
+        "AdaptableParabolaClearance": "3,0.5",
+        "YawPitchRoll": "0",
+        "AdaptableParabolaDistances": {
+          "Launch": "1",
+          "PreApex": "0.3",
+          "PostApex": "0.3",
+          "Land": "1"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "0",
+          "Ascent": "0",
+          "Apex": "0",
+          "Descent": "0",
+          "Land": "0"
+        }
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "TR17StarburstMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "12.5",
+        "MaxSpeed": "12.5",
+        "Gravity": "14.5",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "OspreyAirMissilemover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.125,0.2",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Gravity": "30",
+        "Outro": "0.5,0.55",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "15",
+        "MinSpeed": "7",
+        "MaxSpeed": "12",
+        "Outro": "1,1.25",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "MinSpeed": "7",
+        "MaxSpeed": "12",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "RaptorGroundSecondaryMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "1",
+        "SpeedRange": "1.1015",
+        "MaxSpeed": "3",
+        "Gravity": "5",
+        "ClearanceAcceleration": "-1024",
+        "ArrivalTestType": "2D",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "0",
+        "Overlays": [
+          {},
+          {}
+        ]
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "RaptorGroundMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Acceleration": "0",
+        "Speed": "7",
+        "MaxSpeed": "8",
+        "Gravity": "5",
+        "ClearanceAcceleration": "-1024",
+        "Outro": "0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      }
+    ],
+    "parent": "MissileDefault"
+  },
+  "RaptorAirMissileMover": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Outro": "0.125,0.2",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Throw",
+        "Speed": "2",
+        "MaxSpeed": "2",
+        "Gravity": "30",
+        "Outro": "0.5,0.55",
+        "Timeout": "10",
+        "ThrowVector": "0,-1,0",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "506.25"
+      },
+      {
+        "Driver": "Guidance",
+        "Acceleration": "18",
+        "MinSpeed": "5",
+        "MaxSpeed": "15",
+        "Outro": "1,1.25",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "Driver": "Guidance",
+        "MinSpeed": "5",
+        "MaxSpeed": "18",
+        "Timeout": "10",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5568.75"
+      }
+    ]
+  },
+  "CARRGrenadeLauncherBoss@MissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "40",
+        "MaxSpeed": "10",
+        "Gravity": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "MyraDavisFlameGrenadeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Gravity": "12",
+        "FlightTime": "0.75"
+      }
+    ]
+  },
+  "MyraDavisFlashBangGrenadeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "10",
+        "MinSpeed": "10",
+        "Gravity": "12",
+        "FlightTime": "0.75"
+      }
+    ]
+  },
+  "TrevorRandGrenadeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "40",
+        "MaxSpeed": "10",
+        "Gravity": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "UPLScoutFlameGrenadeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "40",
+        "MaxSpeed": "10",
+        "Gravity": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "UPLScoutGrenadeMissileMover": {
+    "class": "CMoverMissile",
+    "MotionPhases": [
+      {
+        "Driver": "Ballistic",
+        "Speed": "40",
+        "MaxSpeed": "10",
+        "Gravity": "5",
+        "ThrowBandYaw": "-360,-360,-360,-360",
+        "ThrowBandPitch": "-360,-360,-360,-360",
+        "YawPitchRoll": "5759.6484"
+      },
+      {
+        "YawPitchRoll": "MAX"
+      }
+    ]
+  },
+  "RileyJericoJumpJet": {
+    "class": "CMoverMissile",
+    "PathMode": "Flying",
+    "MotionPhases": [
+      {
+        "Driver": "AdaptableParabola",
+        "MinSpeed": "3",
+        "MaxSpeed": "15",
+        "ActorTracking": "Actual",
+        "AdaptableParabolaIsUpright": "1",
+        "AdaptableParabolaClearance": "2.2,0.5",
+        "AdaptableParabolaDistances": {
+          "Launch": "3",
+          "PreApex": "2.5",
+          "PostApex": "0",
+          "Land": "2.5"
+        },
+        "AdaptableParabolaAccels": {
+          "Launch": "25",
+          "Ascent": "20",
+          "Apex": "15",
+          "Descent": "10",
+          "Land": "-10"
+        }
+      }
+    ],
+    "RespectUnitHeightAtDestination": "1"
+  }
+}
