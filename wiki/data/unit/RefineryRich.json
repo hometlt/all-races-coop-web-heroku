@@ -1,0 +1,199 @@
+{
+  "Name": "Refinery",
+  "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "RefineryRich",
+  "HotkeyAlias": "Refinery",
+  "SelectAlias": "Refinery",
+  "SubgroupAlias": "Refinery",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "RefineryRich",
+  "AIEvaluateAlias": "RefineryRich",
+  "ReviveType": "RefineryRich",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "RefineryRich/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "RefineryRich/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 9,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "RepairTime": 30,
+  "AttackTargetPriority": 11,
+  "EffectArray": {
+    "Create": "RefineryRichSearch"
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Halt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "SelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "Footprint": "FootprintGeyserRoundedBuilt",
+  "PlacementFootprint": "Footprint3x3CappedGeyser",
+  "BuiltOn": [
+    "RichVespeneGeyser"
+  ],
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 1,
+  "GlossaryPriority": 11,
+  "GlossaryAlias": "Refinery",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "Icon": "btn-building-terran-refinery",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "RefineryRich",
+  "Behaviors": [
+    {
+      "Link": "HarvestableRichVespeneGeyserGas",
+      "Id": "HarvestableRichVespeneGeyserGas"
+    },
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "BuildInProgress,Halt"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

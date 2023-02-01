@@ -1,0 +1,176 @@
+{
+  "Name": "Immortal Revive Corpse",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 200,
+  "LifeMax": 200,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "UseLineOfSight",
+    "Invulnerable",
+    "AISplash",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "VoidMPImmortalReviveCorpse",
+  "HotkeyAlias": "VoidMPImmortalReviveCorpse",
+  "SelectAlias": "VoidMPImmortalReviveCorpse",
+  "SubgroupAlias": "VoidMPImmortalReviveCorpse",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "VoidMPImmortalReviveCorpse",
+  "AIEvaluateAlias": "VoidMPImmortalReviveCorpse",
+  "ReviveType": "VoidMPImmortalReviveCorpse",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 90,
+      "Anim": 5
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "VoidMPImmortalReviveCorpse/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "VoidMPImmortalReviveCorpse/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "ShieldRegenDelay": 10,
+  "Speed": 2.25,
+  "Acceleration": 1000,
+  "Food": -4,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 250,
+    "Vespene": 100
+  },
+  "RepairTime": 55,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 35,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 2,
+          "Column": 3
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "VoidMPImmortalRevive",
+          "Type": "AbilCmd",
+          "AbilCmd": "VoidMPImmortalReviveRebuild,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ],
+      "CardId": "0002"
+    }
+  ],
+  "InnerRadius": 0.5,
+  "CargoSize": 4,
+  "ScoreMake": 350,
+  "ScoreKill": 350,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 2,
+  "GlossaryPriority": 120,
+  "TauntDuration": {
+    "Dance": 5
+  },
+  "Icon": "btn-unit-protoss-immortal",
+  "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "VoidMPImmortalReviveCorpse",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "VoidMPImmortalReviveRebuild",
+      "Id": "VoidMPImmortalReviveRebuild",
+      "Name": "Void MPImmortal Revive Rebuild"
+    },
+    {
+      "Link": "que1",
+      "Id": "que1",
+      "Name": "Queue (1)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "VoidMPImmortalRevive",
+      "Icon": "btn-techupgrade-terran-immortalityprotocol",
+      "Name": "Immortal Revive",
+      "AbilCmd": "VoidMPImmortalReviveRebuild,Execute"
+    }
+  ]
+}

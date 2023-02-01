@@ -1,0 +1,382 @@
+{
+  "Name": "Mothership",
+  "Description": "Ultimate Protoss vessel. Can use Strategic Recall and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 350,
+  "LifeMax": 350,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.375,
+  "SeparationRadius": 1.375,
+  "MinimapRadius": 1.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.8,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Mothership",
+  "HotkeyAlias": "Mothership",
+  "SelectAlias": "Mothership",
+  "SubgroupAlias": "Mothership",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Mothership",
+  "AIEvaluateAlias": "Mothership",
+  "ReviveType": "Mothership",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Mothership/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Mothership/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 45,
+  "Mob": "Multiplayer",
+  "LifeArmor": 2,
+  "ShieldsStart": 350,
+  "ShieldsMax": 350,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "Speed": 1.875,
+  "Acceleration": 1.375,
+  "Deceleration": 1,
+  "Height": 3.75,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "ScoreMake": 800,
+  "ScoreKill": 800,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 96,
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "VisionHeight": 4,
+  "Sight": 14,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "CloakingField",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "MassRecall",
+          "Type": "AbilCmd",
+          "AbilCmd": "MassRecall,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "TemporalField",
+          "Type": "AbilCmd",
+          "AbilCmd": "TemporalField,Execute",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Psionic",
+    "Massive",
+    "Heroic"
+  ],
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "GlossaryCategory": "Unit/Category/ProtossUnits",
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "GlossaryPriority": 190,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 400,
+    "Vespene": 400
+  },
+  "TacticalAIThink": "AIThinkMothership",
+  "Food": -8,
+  "ShieldRegenDelay": 10,
+  "GlossaryWeakArray": [
+    "VikingFighter",
+    "Corruptor",
+    "Tempest"
+  ],
+  "Icon": "btn-unit-protoss-mothership",
+  "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Mothership",
+  "Weapons": [
+    {
+      "Link": "MothershipBeam",
+      "Turret": "FreeRotate",
+      "Id": "MothershipBeam",
+      "Icon": "btn-upgrade-protoss-airweaponslevel0",
+      "Name": "Purifier Beam",
+      "Amount": 6,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 6,
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 2.21
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "CloakField",
+      "Id": "CloakField"
+    },
+    {
+      "Link": "MothershipResetEnergy",
+      "Id": "MothershipResetEnergy",
+      "Name": "Mothership Reset Energy"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "ProtossAirArmors",
+      "Id": "ProtossAirArmors",
+      "Name": "Protoss Air Armors"
+    },
+    {
+      "Link": "ProtossAirWeapons",
+      "Id": "ProtossAirWeapons",
+      "Name": "Protoss Air Weapons"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel1",
+      "Id": "ProtossAirArmorsLevel1",
+      "Icon": "btn-upgrade-protoss-airarmorlevel1",
+      "Name": "Protoss Air Armor Level 1"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel2",
+      "Id": "ProtossAirArmorsLevel2",
+      "Icon": "btn-upgrade-protoss-airarmorlevel2",
+      "Name": "Protoss Air Armor Level 2"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel3",
+      "Id": "ProtossAirArmorsLevel3",
+      "Icon": "btn-upgrade-protoss-airarmorlevel3",
+      "Name": "Protoss Air Armor Level 3"
+    },
+    {
+      "Link": "ProtossAirWeaponsLevel1",
+      "Id": "ProtossAirWeaponsLevel1",
+      "Icon": "btn-upgrade-protoss-airweaponslevel1",
+      "Name": "Protoss Air Weapons Level 1"
+    },
+    {
+      "Link": "ProtossAirWeaponsLevel2",
+      "Id": "ProtossAirWeaponsLevel2",
+      "Icon": "btn-upgrade-protoss-airweaponslevel2",
+      "Name": "Protoss Air Weapons Level 2"
+    },
+    {
+      "Link": "ProtossAirWeaponsLevel3",
+      "Id": "ProtossAirWeaponsLevel3",
+      "Icon": "btn-upgrade-protoss-airweaponslevel3",
+      "Name": "Protoss Air Weapons Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "TemporalField",
+      "Id": "TemporalField",
+      "Name": "Time Warp"
+    },
+    {
+      "Link": "MassRecall",
+      "Id": "MassRecall",
+      "Name": "Mass Recall"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Nexus",
+      "Icon": "btn-building-protoss-nexus",
+      "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
+      "Name": "Nexus"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MassRecall",
+      "Icon": "btn-ability-protoss-wormholetransit-color",
+      "Tooltip": "Recalls all player units in the target area to the Mothership.",
+      "Name": "Mass Recall",
+      "AbilCmd": "MassRecall,Execute"
+    },
+    {
+      "Id": "TemporalField",
+      "Icon": "btn-ability-protoss-timewarp-red",
+      "Tooltip": "After a <b>3</b> second delay, warps spacetime within the target area for <b>10</b> seconds. All enemy units and structures within the field will have attack and movement speeds reduced by <b>50</b>%.",
+      "Name": "Time Warp",
+      "AbilCmd": "TemporalField,Execute"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "Name": "APC",
+  "Description": "Tactical Police Transport",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 150,
+  "LifeMax": 150,
+  "LifeArmorName": "UPL Vehicle Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 360,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.5,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TurnBeforeMove",
+    "AlwaysThreatens",
+    "AIPressForwardDisabled",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "APC",
+  "HotkeyAlias": "APC",
+  "SelectAlias": "APC",
+  "SubgroupAlias": "APC",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "APC",
+  "AIEvaluateAlias": "APC",
+  "ReviveType": "APC",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "APC/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "APC/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "LifeArmor": 4,
+  "Speed": 2.25,
+  "Acceleration": 1000,
+  "LateralAcceleration": 64,
+  "Sight": 11,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 125
+  },
+  "RepairTime": 45,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "APCOpenDoor",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCOpenDoor,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "APCSmokeGrenade",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCSmokeGrenade,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "APCCloseDoor",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCCloseDoor,Execute",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "APCLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCTransport,LoadAll",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "APCUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCTransport,UnloadAll",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 1.5,
+  "CargoSize": 4,
+  "ScoreMake": 275,
+  "ScoreKill": 275,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 13,
+  "GlossaryPriority": 130,
+  "AlliedPushPriority": 15,
+  "GlossaryCategory": "Unit/Category/1UPLNeutral",
+  "Id": "APC",
+  "Behaviors": [
+    {
+      "Link": "APCnotmovingflag"
+    },
+    {
+      "Link": "SuppressFidget",
+      "Id": "SuppressFidget"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UPLVehicleArmor",
+      "Id": "UPLVehicleArmor",
+      "Name": "UPL Vehicle Plating"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel1",
+      "Id": "UPLVehiclePlatingLevel1",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl1",
+      "Name": "UPL Vehicle Plating Level 1"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel2",
+      "Id": "UPLVehiclePlatingLevel2",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl2",
+      "Name": "UPL Vehicle Plating Level 2"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel3",
+      "Id": "UPLVehiclePlatingLevel3",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl3",
+      "Name": "UPL Vehicle Plating Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "APCTransport"
+    },
+    {
+      "Link": "APCOpenDoor"
+    },
+    {
+      "Link": "APCCloseDoor"
+    },
+    {
+      "Link": "APCSmokeGrenade",
+      "Id": "APCSmokeGrenade",
+      "Name": "APC Smoke Grenade"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "APCOpenDoor",
+      "Icon": "btn-ability-upl-deploy",
+      "Tooltip": "Allows Officers to load into the APC",
+      "Name": "Open Door",
+      "AbilCmd": "APCOpenDoor,Execute"
+    },
+    {
+      "Id": "APCSmokeGrenade",
+      "Tooltip": "Chemical smoke cloud makes friendly units invisible and provide them limited vision on enemy cloaked objects within the chemical cloud",
+      "Name": "Smoke Grenade",
+      "AbilCmd": "APCSmokeGrenade,Execute"
+    },
+    {
+      "Id": "APCCloseDoor",
+      "Icon": "btn-ability-upl-undeploy",
+      "Tooltip": "Closes the APC doors",
+      "Name": "Close Door",
+      "AbilCmd": "APCCloseDoor,Execute"
+    },
+    {
+      "Id": "APCLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads personnel into the APC.",
+      "Name": "Load",
+      "AbilCmd": "APCTransport,LoadAll"
+    },
+    {
+      "Id": "APCUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "APCTransport,UnloadAll"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    }
+  ]
+}

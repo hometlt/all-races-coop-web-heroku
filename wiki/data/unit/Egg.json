@@ -1,0 +1,158 @@
+{
+  "Name": "Zerg Cocoon",
+  "Description": "Zerg units morph in the safety of these cocoons.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 200,
+  "LifeMax": 200,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.125,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "NoScore",
+    "AILifetime"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "",
+  "HotkeyAlias": "Larva",
+  "SelectAlias": "Egg",
+  "SubgroupAlias": "Egg",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Egg",
+  "AIEvaluateAlias": "Egg",
+  "ReviveType": "Egg",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Egg/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Egg/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "LifeArmor": 10,
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 10,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 10,
+  "SubgroupPriority": 54,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Sight": 5,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "CancelCocoon",
+          "Type": "AbilCmd",
+          "AbilCmd": "que1,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Biological"
+  ],
+  "Icon": "btn-unit-zerg-egg",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Egg",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "que1",
+      "Id": "que1",
+      "Name": "Queue (1)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "CancelCocoon",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the build order, killing the larva in the process.",
+      "Name": "Cancel",
+      "AbilCmd": "que1,CancelLast"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    }
+  ]
+}

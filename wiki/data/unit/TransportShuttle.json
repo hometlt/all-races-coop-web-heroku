@@ -1,0 +1,434 @@
+{
+  "Name": "Transport Shuttle",
+  "Description": "Large transport ship, capable of transporting big squads of infantry & armored vehicles.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 180,
+  "LifeMax": 180,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 1.5,
+  "SeparationRadius": 1,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.2,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AIThreatGround",
+    "AIThreatAir",
+    "AISupport",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "TransportShuttle",
+  "HotkeyAlias": "TransportShuttle",
+  "SelectAlias": "TransportShuttle",
+  "SubgroupAlias": "TransportShuttle",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "TransportShuttle",
+  "AIEvaluateAlias": "TransportShuttle",
+  "ReviveType": "TransportShuttle",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "TransportShuttle/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "TransportShuttle/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "Speed": 2.9492,
+  "Acceleration": 2.5,
+  "LateralAcceleration": 1000,
+  "Sight": 11,
+  "Height": 3.95,
+  "VisionHeight": 4,
+  "Food": -2,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 100,
+    "Vespene": 25
+  },
+  "RepairTime": 41.6667,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "TransportShuttleLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "MedivacTransport2,Load",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "TransportShuttleUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "MedivacTransport2,UnloadAt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "DropArsenal",
+          "Type": "AbilCmd",
+          "AbilCmd": "DropArsenal,Build2",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "DropHeavyTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "DropHeavyTower,Build2",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "DropInfusionTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "DropInfusionTower,Build2",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "DropMissileTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "DropMissleTower,Build2",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "DropSuppressionTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "DropSuppressionTower,Build2",
+          "Row": 2,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 60,
+  "TacticalAIThink": "AIThinkMedivac",
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 185,
+  "GlossaryWeakArray": [
+    "MissileTurret",
+    "SporeCrawler",
+    "PhotonCannon"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-ued-dropship",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "TransportShuttle",
+  "Upgrades": [
+    {
+      "Link": "UEDArmorLevel1",
+      "Id": "UEDArmorLevel1",
+      "Name": "Beathanium Defensive Programming, level 1"
+    },
+    {
+      "Link": "UEDArmorLevel2",
+      "Id": "UEDArmorLevel2",
+      "Name": "Beathanium Defensive Programming, level 2"
+    },
+    {
+      "Link": "UEDArmorLevel3",
+      "Id": "UEDArmorLevel3",
+      "Name": "Beathanium Defensive Programming, level 3"
+    },
+    {
+      "Link": "UEDVehicalsLevel2",
+      "Id": "UEDVehicalsLevel2",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 2"
+    },
+    {
+      "Link": "UEDVehicalsLevel3",
+      "Id": "UEDVehicalsLevel3",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "MedivacTransport2",
+      "Id": "MedivacTransport2",
+      "Name": "Load-Unload (Shuttle)"
+    },
+    {
+      "Link": "DropArsenal",
+      "Id": "DropArsenal",
+      "Name": "Drop Arsenal"
+    },
+    {
+      "Link": "DropHeavyTower",
+      "Id": "DropHeavyTower",
+      "Name": "Drop Heavy Tower"
+    },
+    {
+      "Link": "DropInfusionTower",
+      "Id": "DropInfusionTower",
+      "Name": "Drop Infusion Tower"
+    },
+    {
+      "Link": "DropMissleTower",
+      "Id": "DropMissleTower",
+      "Name": "Drop Missle Tower"
+    },
+    {
+      "Link": "DropSuppressionTower",
+      "Id": "DropSuppressionTower",
+      "Name": "Drop Suppression Tower"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "StarshipMaintenancePlant",
+      "Icon": "btn-ued-starship-plant",
+      "Description": "Starship support structure. Provides equipment authorizations for basic vessels.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Strikefighters<br/>- Valkyries<br/>- Transport Shuttles<br/>- Support Shuttles",
+      "Name": "Starship Maintenance Plant"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "ArsenalHelpDrop",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal Help Drop"
+    },
+    {
+      "Id": "ArsenalHelpDrop",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal Help Drop"
+    },
+    {
+      "Id": "ArsenalHelpDrop",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal Help Drop"
+    },
+    {
+      "Id": "ArsenalHelpDrop",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal Help Drop"
+    },
+    {
+      "Id": "ArsenalHelpDrop",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal Help Drop"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "TransportShuttleLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Shuttle's hold.",
+      "Name": "Load",
+      "AbilCmd": "MedivacTransport2,Load"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "TransportShuttleUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "MedivacTransport2,UnloadAt"
+    },
+    {
+      "Id": "DropArsenal",
+      "Icon": "btn-building-supplydepotbronze",
+      "Tooltip": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Drop Arsenal",
+      "AbilCmd": "DropArsenal,Build2"
+    },
+    {
+      "Id": "DropHeavyTower",
+      "Icon": "btn-building-guardianturretbronze",
+      "Tooltip": "Anti-ground defensive structure, effective against armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Drop Heavy Tower",
+      "AbilCmd": "DropHeavyTower,Build2"
+    },
+    {
+      "Id": "DropInfusionTower",
+      "Icon": "btn-structure-ued-hivemindemulator",
+      "Tooltip": "Support structure. Regenerates health for all nearby allied units.",
+      "Name": "Drop Infusion Tower",
+      "AbilCmd": "DropInfusionTower,Build2"
+    },
+    {
+      "Id": "DropMissileTower",
+      "Icon": "btn-building-missileturretbronze",
+      "Tooltip": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Drop Missile Tower",
+      "AbilCmd": "DropMissleTower,Build2"
+    },
+    {
+      "Id": "DropSuppressionTower",
+      "Icon": "btn-building-laserturretbronze",
+      "Tooltip": "Anti-ground defensive structure, effective against lightly-armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drop Suppression Tower",
+      "AbilCmd": "DropSuppressionTower,Build2"
+    }
+  ]
+}

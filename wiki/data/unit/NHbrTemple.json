@@ -1,0 +1,294 @@
+{
+  "Name": "Temple",
+  "Description": "Primary structure. Can receive gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Minions",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 2,
+  "SeparationRadius": 2,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "PreventReveal",
+    "TownCamera"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrTemple",
+  "HotkeyAlias": "NHbrTemple",
+  "SelectAlias": "NHbrTemple",
+  "SubgroupAlias": "NHbrTemple",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Nexus",
+  "AIEvaluateAlias": "NHbrTemple",
+  "ReviveType": "NHbrTemple",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrTemple/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrTemple/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 28,
+  "DataCollection": "NHbrTemple",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5Passive,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrTemple@Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrTempleTrain@WarpInMinion",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrTempleTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrTempleVoidImmunity",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrTempleVoidImmunity,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 11,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "EnergyStart": 20,
+  "EnergyMax": 100,
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 400
+  },
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ScoreMake": 400,
+  "ScoreKill": 400,
+  "TacticalAIThink": "AIThinkNexus",
+  "GlossaryPriority": 1,
+  "KillDisplay": "Never",
+  "TechTreeProducedUnitArray": [
+    "Probe",
+    "Mothership"
+  ],
+  "Icon": "btn-hybrid-building-temple",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrTemple",
+  "Weapons": [],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "NHbrTemple@Supplies",
+      "Id": "NHbrTemple@Supplies"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5Passive",
+      "Id": "que5Passive",
+      "Name": "Queue (5) Passive"
+    },
+    {
+      "Link": "NHbrTemple@Rally",
+      "Id": "NHbrTemple@Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "NHbrTempleTrain",
+      "Id": "NHbrTempleTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "NHbrTempleVoidImmunity",
+      "Id": "NHbrTempleVoidImmunity",
+      "Name": "Void Immunity"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "NHbrIonicCrystal",
+      "Icon": "btn-hybrid-building-pylon",
+      "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+      "Name": "Ionic Crystal"
+    },
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5Passive,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "NHbrTemple@Rally,Rally1"
+    },
+    {
+      "Id": "NHbrTempleTrain@WarpInMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Tooltip": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Minion",
+      "AbilCmd": "NHbrTempleTrain,Train1"
+    },
+    {
+      "Id": "NHbrTempleVoidImmunity",
+      "Icon": "btn-ability-protoss-oracle-stasiscalibration",
+      "Tooltip": "Increases Movespeed of all Minions in range by <span style=\"color: #ffff8a\"><b>50</b>%</span> and also reduces their maximum damage taken to <span style=\"color: #ffff8a\"><b>2.00</b></span>. Lasts <span style=\"color: #ffff8a\"><b>8.40</b></span> seconds.",
+      "Name": "Void Immunity",
+      "AbilCmd": "NHbrTempleVoidImmunity,Execute"
+    }
+  ]
+}

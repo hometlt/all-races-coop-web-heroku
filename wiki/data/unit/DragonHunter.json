@@ -1,0 +1,448 @@
+{
+  "Name": "Dragonhunter",
+  "Description": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 75,
+  "LifeMax": 75,
+  "Mover": "CliffJumper",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.625,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "DragonHunter",
+  "HotkeyAlias": "DragonHunter",
+  "SelectAlias": "DragonHunter",
+  "SubgroupAlias": "DragonHunter",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "DragonHunter",
+  "AIEvaluateAlias": "Reaper",
+  "ReviveType": "DragonHunter",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "DragonHunter/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "DragonHunter/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Armored"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Acceleration": 1000,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AscendedHunter",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 4,
+          "AbilCmd": "AscendedHunter,Execute"
+        },
+        {
+          "Face": "AscendedHunter",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "AscendedHunterFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "HunterFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "AbilCmd": "DragonFissionDisabled,Execute",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "DragonHunterCliffJumper",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "HunterTongueLash",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "HunterFeast",
+          "Type": "Passive",
+          "Requirements": "HunterFeast",
+          "Row": 1,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/DragonUnits",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "LifeArmor": 1,
+  "Speed": 3.5,
+  "Sight": 11,
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 75,
+    "Vespene": 75
+  },
+  "KillXP": 15,
+  "InnerRadius": 0.5,
+  "CargoSize": 2,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "SubgroupPriority": 9,
+  "GlossaryPriority": 22,
+  "GlossaryStrongArray": [
+    "SCV",
+    "Drone",
+    "Probe"
+  ],
+  "GlossaryWeakArray": [
+    "Marauder",
+    "Roach",
+    "Stalker"
+  ],
+  "Icon": "btn-unit-zerg-ravasaur",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "DragonHunter",
+  "Weapons": [
+    {
+      "Link": "DragonHunterClaws",
+      "Id": "DragonHunterClaws",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Claws",
+      "Amount": 8,
+      "AttributeBonus": {
+        "Light": 0
+      },
+      "Kind": "Melee",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "Ground",
+      "Range": 0.25,
+      "Period": 1.05
+    },
+    {
+      "Link": "DragonHunterTongueLash",
+      "Id": "DragonHunterTongueLash",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Tongue Lash",
+      "Amount": 9,
+      "AttributeBonus": {
+        "Light": 6
+      },
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 5,
+      "Period": 1.05
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "DragonLineageLesser",
+      "Id": "DragonLineageLesser",
+      "Name": "Dragon Lineage"
+    },
+    {
+      "Link": "DragonHunter",
+      "Id": "DragonHunter"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonMeleeAttacks",
+      "Id": "DragonMeleeAttacks",
+      "Name": "Dragon Melee Attacks"
+    },
+    {
+      "Link": "DragonPlateArmors",
+      "Id": "DragonPlateArmors",
+      "Name": "Dragon Plate Armors"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel1",
+      "Id": "DragonMeleeAttacksLevel1",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level1",
+      "Name": "Dragon Melee Attacks Level 1"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel2",
+      "Id": "DragonMeleeAttacksLevel2",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level2",
+      "Name": "Dragon Melee Attacks Level 2"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel3",
+      "Id": "DragonMeleeAttacksLevel3",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level3",
+      "Name": "Dragon Melee Attacks Level 3"
+    },
+    {
+      "Link": "DragonPlateArmorLevel1",
+      "Id": "DragonPlateArmorLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Dragon Plate Armor Level 1"
+    },
+    {
+      "Link": "DragonPlateArmorLevel2",
+      "Id": "DragonPlateArmorLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Dragon Plate Armor Level 2"
+    },
+    {
+      "Link": "DragonPlateArmorLevel3",
+      "Id": "DragonPlateArmorLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Dragon Plate Armor Level 3"
+    },
+    {
+      "Link": "HunterFeast",
+      "Id": "HunterFeast",
+      "Icon": "btn-upgrade-zerg-adrenaloverload",
+      "Name": "Hunter - Feast"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "AscendedHunter",
+      "Id": "AscendedHunter",
+      "Name": "Ascended Hunter"
+    },
+    {
+      "Link": "AscendedHunterFission",
+      "Id": "AscendedHunterFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "HunterFission",
+      "Id": "HunterFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "DragonFissionDisabled",
+      "Id": "DragonFissionDisabled",
+      "Name": "Fission"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "GenesisPitLesser",
+      "Icon": "wireframe-zerg-broodlingnest",
+      "Description": "Spawns lesser Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Genesis Pit"
+    },
+    {
+      "Id": "LesserDeepOne",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Description": "Spawns lesser Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Lesser Deep One"
+    },
+    {
+      "Id": "LesserDeepOneNoFootprint",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Description": "Spawns lesser Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Lesser Deep One"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AscendedHunter",
+      "Icon": "btn-ability-zerg-dehakaspawn",
+      "Tooltip": "<span style=\"color: #00FF00\">+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
+      "Name": "Ascend",
+      "AbilCmd": "AscendedHunter,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "AscendedHunterFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "HunterFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "DragonFissionDisabled,Execute"
+    }
+  ]
+}

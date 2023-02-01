@@ -1,0 +1,500 @@
+{
+  "Name": "UED Beacon",
+  "Description": "UED engineering vehicle. Can be deployed at a specified site in order to calldown Operation Headquarters from orbit.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Defensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 120,
+  "LifeMax": 120,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 159.961,
+  "Radius": 0.5,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "BeaconUED",
+  "HotkeyAlias": "BeaconUED",
+  "SelectAlias": "BeaconUED",
+  "SubgroupAlias": "BeaconUED",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Drone",
+  "AIEvaluateAlias": "BeaconUED",
+  "ReviveType": "BeaconUED",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "BeaconUED/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "BeaconUED/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Locust",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Robotic"
+  ],
+  "Speed": 2.3984,
+  "Acceleration": 3,
+  "LateralAcceleration": 46.0625,
+  "Sight": 8,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 50
+  },
+  "AttackTargetPriority": 20,
+  "AIOverideTargetPriority": 10,
+  "DamageDealtXP": 2,
+  "DamageTakenXP": 2,
+  "KillXP": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "UEDBuildEazy",
+          "Type": "Submenu",
+          "SubmenuCardId": "ZBl1",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "UEDBuildAdvanced",
+          "Type": "Submenu",
+          "SubmenuCardId": "0003",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "MothershipCoreAttack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attackUED,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "OperationHeadquarters",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "VespenePurificationPlant",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "TeleportationNode",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build4",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "BuildArsenal",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build2",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "TacticsAcademy",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build10",
+          "Row": 1,
+          "Column": 1
+        }
+      ],
+      "CardId": "ZBl1"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "MilitaryResearchStation",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build7",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "TachyonRelay",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build5",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "StarshipMaintenancePlant",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build9",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "MunitionsFactory",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build8",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "FieldBureau",
+          "Type": "AbilCmd",
+          "AbilCmd": "BeaconBuild,Build6",
+          "Row": 0,
+          "Column": 0
+        }
+      ],
+      "CardId": "0003"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "AbilCmd": "BeaconBuild,Build1",
+          "Row": 2,
+          "Column": 4
+        }
+      ],
+      "CardId": "0004"
+    }
+  ],
+  "InnerRadius": 0.5,
+  "CargoSize": 2,
+  "ScoreMake": 50,
+  "ScoreKill": 50,
+  "ScoreResult": "Units",
+  "SubgroupPriority": 95,
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 20,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "AlliedPushPriority": 100,
+  "PlacementFootprint": "FootprintSieged",
+  "Icon": "btn-unit-terran-nova-shredder",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "BeaconUED",
+  "Upgrades": [
+    {
+      "Link": "UEDArmorLevel1",
+      "Id": "UEDArmorLevel1",
+      "Name": "Beathanium Defensive Programming, level 1"
+    },
+    {
+      "Link": "UEDArmorLevel2",
+      "Id": "UEDArmorLevel2",
+      "Name": "Beathanium Defensive Programming, level 2"
+    },
+    {
+      "Link": "UEDArmorLevel3",
+      "Id": "UEDArmorLevel3",
+      "Name": "Beathanium Defensive Programming, level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "BeaconBuild",
+      "Id": "BeaconBuild",
+      "Name": "BeaconBuild"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "OperationHeadquarters",
+      "Icon": "btn-structure-ued-biodome",
+      "Description": "Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Salvagers<br/>- Beacons",
+      "Name": "Operation Headquarters"
+    },
+    {
+      "Id": "VespenePurificationPlant",
+      "Icon": "btn-structure-ued-refineryautomated",
+      "Description": "Calldown onto a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Vespene Purification Plant"
+    },
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    },
+    {
+      "Id": "Arsenal",
+      "Icon": "btn-building-supplydepotbronze",
+      "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Arsenal"
+    },
+    {
+      "Id": "TacticsAcademy",
+      "Icon": "btn-structure-ued-sciencefacility",
+      "Description": "Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Taranises<br/>- Lazaruses<br/>- Drakkar APCs<br/>- Defense Towers",
+      "Name": "Tactics Academy"
+    },
+    {
+      "Id": "MilitaryResearchStation",
+      "Icon": "btn-ued-engineering",
+      "Description": "Advanced upgrade structure. Unlocks various equipment authorizations for spacecraft & vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Peenemunde MRLS<br/>- Citadel AAT",
+      "Name": "Military Research Station"
+    },
+    {
+      "Id": "TachyonRelay",
+      "Icon": "btn-ued-tychon_relay",
+      "Description": "Long-range communications array. Provides equipment authorizations for the Directorate Navy assets.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Honorguards",
+      "Name": "Tachyon Relay"
+    },
+    {
+      "Id": "StarshipMaintenancePlant",
+      "Icon": "btn-ued-starship-plant",
+      "Description": "Starship support structure. Provides equipment authorizations for basic vessels.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Strikefighters<br/>- Valkyries<br/>- Transport Shuttles<br/>- Support Shuttles",
+      "Name": "Starship Maintenance Plant"
+    },
+    {
+      "Id": "MunitionsFactory",
+      "Icon": "btn-ued-munitions-factory",
+      "Description": "Vehicle support structure. Provides equipment authorizations for basic vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Sentinel MBT<br/>- Typhoon LMT",
+      "Name": "Munitions Factory"
+    },
+    {
+      "Id": "FieldBureau",
+      "Icon": "btn-structure-ued-merccompound",
+      "Description": "An upgrade structure that supports Political Advisors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Political Advisors",
+      "Name": "Field Bureau"
+    },
+    {
+      "Id": "OperationHeadquarters",
+      "Icon": "btn-structure-ued-biodome",
+      "Description": "Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Salvagers<br/>- Beacons",
+      "Name": "Operation Headquarters"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "MothershipCoreAttack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attackUED,Execute"
+    },
+    {
+      "Id": "OperationHeadquarters",
+      "Icon": "btn-structure-ued-biodome",
+      "Tooltip": "Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Salvagers<br/>- Beacons",
+      "Name": "Calldown Operation Headquarters",
+      "AbilCmd": "BeaconBuild,Build1"
+    },
+    {
+      "Id": "VespenePurificationPlant",
+      "Icon": "btn-structure-ued-refineryautomated",
+      "Tooltip": "Calldown onto a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Calldown Vespene Purification Plant",
+      "AbilCmd": "BeaconBuild,Build3"
+    },
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Calldown Teleportation Node",
+      "AbilCmd": "BeaconBuild,Build4"
+    },
+    {
+      "Id": "BuildArsenal",
+      "Icon": "btn-building-supplydepotbronze",
+      "Tooltip": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+      "Name": "Calldown Arsenal",
+      "AbilCmd": "BeaconBuild,Build2"
+    },
+    {
+      "Id": "TacticsAcademy",
+      "Icon": "btn-structure-ued-sciencefacility",
+      "Tooltip": "Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Taranises<br/>- Lazaruses<br/>- Drakkar APCs<br/>- Defense Towers",
+      "Name": "Calldown Tactics Academy",
+      "AbilCmd": "BeaconBuild,Build10"
+    },
+    {
+      "Id": "MilitaryResearchStation",
+      "Icon": "btn-ued-engineering",
+      "Tooltip": "Advanced upgrade structure. Unlocks various equipment authorizations for spacecraft & vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Peenemunde MRLS<br/>- Citadel AAT",
+      "Name": "Calldown Military Research Station",
+      "AbilCmd": "BeaconBuild,Build7"
+    },
+    {
+      "Id": "TachyonRelay",
+      "Icon": "btn-ued-tychon_relay",
+      "Tooltip": "Long-range communications array. Provides equipment authorizations for the Directorate Navy assets.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Honorguards",
+      "Name": "Calldown Tachyon Relay",
+      "AbilCmd": "BeaconBuild,Build5"
+    },
+    {
+      "Id": "StarshipMaintenancePlant",
+      "Icon": "btn-ued-starship-plant",
+      "Tooltip": "Starship support structure. Provides equipment authorizations for basic vessels.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Strikefighters<br/>- Valkyries<br/>- Transport Shuttles<br/>- Support Shuttles",
+      "Name": "Calldown Starship Maintenance Plant",
+      "AbilCmd": "BeaconBuild,Build9"
+    },
+    {
+      "Id": "MunitionsFactory",
+      "Icon": "btn-ued-munitions-factory",
+      "Tooltip": "Vehicle support structure. Provides equipment authorizations for basic vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Sentinel MBT<br/>- Typhoon LMT",
+      "Name": "Calldown Munitions Factory",
+      "AbilCmd": "BeaconBuild,Build8"
+    },
+    {
+      "Id": "FieldBureau",
+      "Icon": "btn-structure-ued-merccompound",
+      "Tooltip": "An upgrade structure that supports Political Advisors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Political Advisors",
+      "Name": "Calldown Field Bureau",
+      "AbilCmd": "BeaconBuild,Build6"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "BeaconBuild,Build1"
+    }
+  ]
+}

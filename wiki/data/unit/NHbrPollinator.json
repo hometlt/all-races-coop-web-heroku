@@ -1,0 +1,370 @@
+{
+  "Name": "Pollinator",
+  "Description": "Air unit. Posions its target from the void.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 80,
+  "LifeMax": 80,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 1499.9414,
+  "TurningRate": 1499.9414,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrPollinator",
+  "HotkeyAlias": "NHbrPollinator",
+  "SelectAlias": "NHbrPollinator",
+  "SubgroupAlias": "NHbrPollinator",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrPollinator",
+  "AIEvaluateAlias": "NHbrPollinator",
+  "ReviveType": "NHbrPollinator",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrPollinator/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrPollinator/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "Acceleration": 3.5,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrPollinatorShadowMantle@On",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrPollinatorShadowMantle@ShadowMantle,On",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrPollinatorShadowMantle@Off",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrPollinatorShadowMantle@ShadowMantle,Off",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrPollinatorVoidToxicity",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrPollinatorExpressMantle@ExpressMantle",
+          "Type": "Passive",
+          "Requirements": "NHbrPollinatorExpressMantle@Use",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/NHbrUnits",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "DataCollection": "NHbrPollinator",
+  "Sight": 11,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "EnergyStart": 100,
+  "EnergyMax": 100,
+  "ShieldsStart": 30,
+  "ShieldsMax": 30,
+  "Speed": 3.8007,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 175,
+    "Vespene": 125
+  },
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "SubgroupPriority": 49,
+  "GlossaryPriority": 32,
+  "GlossaryStrongArray": [
+    "SCV",
+    "Drone",
+    "Probe"
+  ],
+  "GlossaryWeakArray": [
+    "Thor",
+    "Viper",
+    "Phoenix"
+  ],
+  "Icon": "btn-hybrid-unit-pollinator",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrPollinator",
+  "Weapons": [
+    {
+      "Link": "NHbrPollinatorVoidToxicity",
+      "Id": "NHbrPollinatorVoidToxicity",
+      "Icon": "btn-ability-stetmann-corruptorcausticspray",
+      "Name": "Void Toxicity",
+      "Amount": 5,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 0.76
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "NHbrAirArmors",
+      "Id": "NHbrAirArmors",
+      "Name": "Hybrid Air Armors"
+    },
+    {
+      "Link": "NHbrAirWeapons",
+      "Id": "NHbrAirWeapons",
+      "Name": "Hybrid Air Weapons"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+      "Id": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-airattacks-level1",
+      "Name": "Hybrid Air Weapons Level 1"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-airattacks-level2",
+      "Name": "Hybrid Air Weapons Level 2"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-airattacks-level3",
+      "Name": "Hybrid Air Weapons Level 3"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Hybrid Air Armor Level 1"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Hybrid Air Armor Level 2"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Hybrid Air Armor Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "NHbrPollinatorShadowMantle@ShadowMantle",
+      "Id": "NHbrPollinatorShadowMantle@ShadowMantle",
+      "Name": "ShadowMantle"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrVoidPortal",
+      "Icon": "btn-hybrid-structure-shield-generator",
+      "Description": "<span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Screamers<br/>- Pollinators<br/>- Navigators",
+      "Name": "Void Portal"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NHbrVoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+      "Name": "Void Rift"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "NHbrPollinatorShadowMantle@On",
+      "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
+      "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><c val=\"#Network\">Drains <b>7.1</b> Network per second.</span>",
+      "Name": "Cloak",
+      "AbilCmd": "NHbrPollinatorShadowMantle@ShadowMantle,On"
+    },
+    {
+      "Id": "NHbrPollinatorShadowMantle@Off",
+      "Icon": "btn-ability-terran-decloak-color",
+      "Tooltip": "Decloaks the selected unit, making it visible to enemies.",
+      "Name": "Decloak",
+      "AbilCmd": "NHbrPollinatorShadowMantle@ShadowMantle,Off"
+    }
+  ]
+}

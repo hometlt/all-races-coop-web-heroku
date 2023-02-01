@@ -1,0 +1,217 @@
+{
+  "Name": "Aquifer",
+  "Description": "Can create workers. Can use x.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Keiron Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Aquifer",
+  "HotkeyAlias": "Aquifer",
+  "SelectAlias": "Aquifer",
+  "SubgroupAlias": "Aquifer",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Aquifer",
+  "AIEvaluateAlias": "Aquifer",
+  "ReviveType": "Aquifer",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Aquifer/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Aquifer/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 12,
+  "CostCategory": "Technology",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "",
+  "LifeRegenRate": 0.25,
+  "Food": 0,
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "Row": 2,
+          "Column": 4,
+          "AbilCmd": "BuildInProgress,Cancel"
+        },
+        {
+          "Face": "SelectBuilderKeiron",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Converter",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironAquiferTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Facing": 45,
+  "EnergyStart": 50,
+  "EnergyMax": 100,
+  "EnergyRegenRate": 0.5625,
+  "ShieldsStart": 150,
+  "ShieldsMax": 150,
+  "CostResource": {
+    "Minerals": 200
+  },
+  "ScoreMake": 150,
+  "ScoreLost": 150,
+  "GlossaryPriority": 53,
+  "Icon": "btn-building-keiron-oculus",
+  "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Aquifer",
+  "Behaviors": [
+    {
+      "Link": "Detector12",
+      "Id": "Detector12",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "KeironAquiferTrain",
+      "Id": "KeironAquiferTrain",
+      "Name": "Keiron - Aquifer Train"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Converter"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Tooltip": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Materialize Converter",
+      "AbilCmd": "KeironAquiferTrain,Train1"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    }
+  ]
+}

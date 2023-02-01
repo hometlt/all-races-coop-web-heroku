@@ -1,0 +1,463 @@
+{
+  "Name": "Flamespitter",
+  "Description": "Fragile ranged unit. Projectiles may retarget.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Damage<br/>Can Attack air units</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 75,
+  "LifeMax": 75,
+  "LifeArmorName": "Dragon Scale Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Flamespitter",
+  "HotkeyAlias": "Flamespitter",
+  "SelectAlias": "Flamespitter",
+  "SubgroupAlias": "Flamespitter",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Flamespitter",
+  "AIEvaluateAlias": "Marauder",
+  "ReviveType": "Flamespitter",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Flamespitter/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Flamespitter/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Light"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Acceleration": 1000,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AscendedFlamespitter",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 4,
+          "AbilCmd": "AscendedFlamespitter,Execute"
+        },
+        {
+          "Face": "AscendedFlamespitter",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "AscendedFlamespitterFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "FlamespitterFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "AbilCmd": "DragonFissionDisabled,Execute",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "DragonRetarget",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "FlamespitterFervor",
+          "Type": "Passive",
+          "Requirements": "FlamespitterFervidReconstitution",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "FlamespitterOverheat",
+          "Type": "Passive",
+          "Requirements": "FlamespitterFervidReconstitutionNegate",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/DragonUnits",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Speed": 3,
+  "Sight": 9,
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 100
+  },
+  "KillXP": 15,
+  "CargoSize": 2,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "SubgroupPriority": 8,
+  "GlossaryPriority": 21,
+  "GlossaryWeakArray": [
+    "Marine",
+    "Zergling",
+    "Sentry"
+  ],
+  "GlossaryStrongArray": [
+    "Marauder",
+    "Roach",
+    "Stalker"
+  ],
+  "Icon": "btn-unit-zerg-primalzergling",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Flamespitter",
+  "Weapons": [
+    {
+      "Link": "FlamespitterClaws",
+      "Id": "FlamespitterClaws",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Claws",
+      "Amount": 6,
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.25,
+      "Period": 0.56
+    },
+    {
+      "Link": "FlamespitterSeekerFlame",
+      "Id": "FlamespitterSeekerFlame",
+      "Name": "Seeker Flame",
+      "Amount": 7,
+      "AttributeBonus": {
+        "Armored": 2
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 0.56
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "DragonLineageLesser",
+      "Id": "DragonLineageLesser",
+      "Name": "Dragon Lineage"
+    },
+    {
+      "Link": "Negative1Armor",
+      "Id": "Negative1Armor",
+      "Name": "-1 Armor"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonFireAttacks",
+      "Id": "DragonFireAttacks",
+      "Name": "Dragon Fire Attacks"
+    },
+    {
+      "Link": "DragonMeleeAttacks",
+      "Id": "DragonMeleeAttacks",
+      "Name": "Dragon Melee Attacks"
+    },
+    {
+      "Link": "DragonScaleArmors",
+      "Id": "DragonScaleArmors",
+      "Name": "Dragon Scale Armors"
+    },
+    {
+      "Link": "DragonFireAttacksLevel1",
+      "Id": "DragonFireAttacksLevel1",
+      "Name": "Dragon Fire Attacks Level 1"
+    },
+    {
+      "Link": "DragonFireAttacksLevel2",
+      "Id": "DragonFireAttacksLevel2",
+      "Name": "Dragon Fire Attacks Level 2"
+    },
+    {
+      "Link": "DragonFireAttacksLevel3",
+      "Id": "DragonFireAttacksLevel3",
+      "Name": "Dragon Fire Attacks Level 3"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel1",
+      "Id": "DragonMeleeAttacksLevel1",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level1",
+      "Name": "Dragon Melee Attacks Level 1"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel2",
+      "Id": "DragonMeleeAttacksLevel2",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level2",
+      "Name": "Dragon Melee Attacks Level 2"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel3",
+      "Id": "DragonMeleeAttacksLevel3",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level3",
+      "Name": "Dragon Melee Attacks Level 3"
+    },
+    {
+      "Link": "DragonScaleArmorLevel1",
+      "Id": "DragonScaleArmorLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Dragon Scale Armor Level 1"
+    },
+    {
+      "Link": "DragonScaleArmorLevel2",
+      "Id": "DragonScaleArmorLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Dragon Scale Armor Level 2"
+    },
+    {
+      "Link": "DragonScaleArmorLevel3",
+      "Id": "DragonScaleArmorLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Dragon Scale Armor Level 3"
+    },
+    {
+      "Link": "FlamespitterFervidReconstitution",
+      "Id": "FlamespitterFervidReconstitution",
+      "Icon": "btn-ability-kerrigan-wildmutation",
+      "Name": "Flamespitter - Fervid Reconstitution"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "AscendedFlamespitter",
+      "Id": "AscendedFlamespitter",
+      "Name": "Ascended Flamespitter"
+    },
+    {
+      "Link": "AscendedFlamespitterFission",
+      "Id": "AscendedFlamespitterFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "FlamespitterFission",
+      "Id": "FlamespitterFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "DragonFissionDisabled",
+      "Id": "DragonFissionDisabled",
+      "Name": "Fission"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "GenesisPitLesser",
+      "Icon": "wireframe-zerg-broodlingnest",
+      "Description": "Spawns lesser Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Genesis Pit"
+    },
+    {
+      "Id": "LesserDeepOne",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Description": "Spawns lesser Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Lesser Deep One"
+    },
+    {
+      "Id": "LesserDeepOneNoFootprint",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Description": "Spawns lesser Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+      "Name": "Lesser Deep One"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AscendedFlamespitter",
+      "Icon": "btn-ability-zerg-dehakaspawn",
+      "Tooltip": "<span style=\"color: #00FF00\">+30 Life<br/>+1 Damage<br/>Can Attack air units</span>",
+      "Name": "Ascend",
+      "AbilCmd": "AscendedFlamespitter,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "AscendedFlamespitterFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "FlamespitterFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "DragonFissionDisabled,Execute"
+    }
+  ]
+}

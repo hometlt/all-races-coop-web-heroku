@@ -1,0 +1,316 @@
+{
+  "Name": "Hive",
+  "Description": "Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vipers from Larvae",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 2500,
+  "LifeMax": 2500,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 2,
+  "SeparationRadius": 2,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventReveal",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "TownCamera",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Hive",
+  "HotkeyAlias": "Hive",
+  "SelectAlias": "Hive",
+  "SubgroupAlias": "Hive",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Hive",
+  "AIEvaluateAlias": "Hive",
+  "ReviveType": "Hive",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Hive/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Hive/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_Hatchery",
+    "Alias_Lair"
+  ],
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "Food": 6,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint6x5DropOffCreepSourceContour",
+  "PlacementFootprint": "Footprint6x5DropOffCreepSource",
+  "ScoreMake": 900,
+  "ScoreKill": 950,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 28,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 12,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Larva",
+          "Type": "SelectLarva",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5CancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "RallyEgg",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyHatchery,Rally2",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "SetRallyPoint2",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyHatchery,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "Queen",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainQueen,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "overlordspeed",
+          "Type": "AbilCmd",
+          "AbilCmd": "LairResearch,Research2",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "ResearchBurrow",
+          "Type": "AbilCmd",
+          "AbilCmd": "LairResearch,Research4",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 18,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 700,
+    "Vespene": 250
+  },
+  "TechTreeUnlockedUnitArray": [
+    "Viper",
+    "SnakeCaster"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Icon": "btn-building-zerg-hive",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Hive",
+  "Behaviors": [
+    {
+      "Link": "makeCreep8x6",
+      "Id": "makeCreep8x6"
+    },
+    {
+      "Link": "SpawnLarva",
+      "Id": "SpawnLarva"
+    },
+    {
+      "Link": "ZergBuildingDies9",
+      "Id": "ZergBuildingDies9"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5CancelToSelection",
+      "Id": "que5CancelToSelection",
+      "Name": "Queue (5) (Cancel To Selection)"
+    },
+    {
+      "Link": "LairResearch",
+      "Id": "LairResearch",
+      "Name": "Research (LairHive)"
+    },
+    {
+      "Link": "RallyHatchery",
+      "Id": "RallyHatchery",
+      "Name": "Hatchery - Rally"
+    },
+    {
+      "Link": "TrainQueen",
+      "Id": "TrainQueen",
+      "Name": "Train Queen"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Queen",
+      "Icon": "btn-unit-zerg-queen",
+      "Description": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Queen"
+    },
+    {
+      "Id": "overlordspeed",
+      "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
+      "Name": "Pneumatized Carapace"
+    },
+    {
+      "Id": "Burrow",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Name": "Burrow"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5CancelToSelection,CancelLast"
+    },
+    {
+      "Id": "RallyEgg",
+      "Icon": "btn-ability-zerg-setworkerrallypoint",
+      "Tooltip": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
+      "Name": "Set Worker Rally Point",
+      "AbilCmd": "RallyHatchery,Rally2"
+    },
+    {
+      "Id": "SetRallyPoint2",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends morphed units to the designated point.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyHatchery,Rally1"
+    },
+    {
+      "Id": "Queen",
+      "Icon": "btn-unit-zerg-queen",
+      "Tooltip": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Birth Queen",
+      "AbilCmd": "TrainQueen,Train1"
+    },
+    {
+      "Id": "overlordspeed",
+      "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
+      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Overlords</span> and <span style=\"color: #ffff8a\">Overseers</span>.",
+      "Name": "Evolve Pneumatized Carapace",
+      "AbilCmd": "LairResearch,Research2"
+    },
+    {
+      "Id": "ResearchBurrow",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
+      "Name": "Evolve Burrow",
+      "AbilCmd": "LairResearch,Research4"
+    }
+  ]
+}

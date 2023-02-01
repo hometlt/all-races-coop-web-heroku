@@ -1,0 +1,405 @@
+{
+  "Name": "Forge",
+  "Description": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 400,
+  "LifeMax": 400,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Forge",
+  "HotkeyAlias": "Forge",
+  "SelectAlias": "Forge",
+  "SubgroupAlias": "Forge",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Forge",
+  "AIEvaluateAlias": "Forge",
+  "ReviveType": "Forge",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Forge/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Forge/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "ShieldsStart": 400,
+  "ShieldsMax": 400,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 150,
+  "ScoreKill": 150,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 18,
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "ProtossGroundWeaponsLevel1",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ProtossGroundWeaponsLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ProtossGroundWeaponsLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research3",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ProtossGroundArmorLevel1",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research4",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ProtossGroundArmorLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research5",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ProtossGroundArmorLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research6",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ProtossShieldsLevel1",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research7",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "ProtossShieldsLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research8",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "ProtossShieldsLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "ForgeResearch,Research9",
+          "Row": 0,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 26,
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150
+  },
+  "ShieldRegenDelay": 10,
+  "Icon": "btn-building-protoss-forge",
+  "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Forge",
+  "Behaviors": [
+    {
+      "Link": "PowerUserQueue",
+      "Id": "PowerUserQueue"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    },
+    {
+      "Link": "CinematicMode",
+      "Id": "CinematicMode",
+      "Name": "Cinematic Mode"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "ForgeResearch",
+      "Id": "ForgeResearch",
+      "Name": "Research (Forge)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Nexus",
+      "Icon": "btn-building-protoss-nexus",
+      "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
+      "Name": "Nexus"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "ProtossGroundWeaponsLevel1",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel1",
+      "Name": "Protoss Ground Weapons Level 1"
+    },
+    {
+      "Id": "ProtossGroundWeaponsLevel2",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel2",
+      "Name": "Protoss Ground Weapons Level 2"
+    },
+    {
+      "Id": "ProtossGroundWeaponsLevel3",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel3",
+      "Name": "Protoss Ground Weapons Level 3"
+    },
+    {
+      "Id": "ProtossGroundArmorsLevel1",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel1",
+      "Name": "Protoss Ground Armor Level 1"
+    },
+    {
+      "Id": "ProtossGroundArmorsLevel2",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel2",
+      "Name": "Protoss Ground Armor Level 2"
+    },
+    {
+      "Id": "ProtossGroundArmorsLevel3",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel3",
+      "Name": "Protoss Ground Armor Level 3"
+    },
+    {
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "ProtossGroundWeaponsLevel1",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel1",
+      "Tooltip": "Upgrades the damage dealt by Protoss ground units.",
+      "Name": "Upgrade Ground Weapons Level 1",
+      "AbilCmd": "ForgeResearch,Research1"
+    },
+    {
+      "Id": "ProtossGroundWeaponsLevel2",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel2",
+      "Tooltip": "Further upgrades the damage dealt by Protoss ground units.",
+      "Name": "Upgrade Ground Weapons Level 2",
+      "AbilCmd": "ForgeResearch,Research2"
+    },
+    {
+      "Id": "ProtossGroundWeaponsLevel3",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel3",
+      "Tooltip": "Maximizes the damage dealt by Protoss ground units.",
+      "Name": "Upgrade Ground Weapons Level 3",
+      "AbilCmd": "ForgeResearch,Research3"
+    },
+    {
+      "Id": "ProtossGroundArmorLevel1",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel1",
+      "Tooltip": "Upgrades the armor of Protoss ground units.",
+      "Name": "Upgrade Ground Armor Level 1",
+      "AbilCmd": "ForgeResearch,Research4"
+    },
+    {
+      "Id": "ProtossGroundArmorLevel2",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel2",
+      "Tooltip": "Further upgrades the armor of Protoss ground units.",
+      "Name": "Upgrade Ground Armor Level 2",
+      "AbilCmd": "ForgeResearch,Research5"
+    },
+    {
+      "Id": "ProtossGroundArmorLevel3",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel3",
+      "Tooltip": "Maximizes the armor of Protoss ground units.",
+      "Name": "Upgrade Ground Armor Level 3",
+      "AbilCmd": "ForgeResearch,Research6"
+    },
+    {
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Tooltip": "Upgrades the shields of all Protoss units and structures.",
+      "Name": "Upgrade Shields Level 1",
+      "AbilCmd": "ForgeResearch,Research7"
+    },
+    {
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Tooltip": "Further upgrades the shields of all Protoss units and structures.",
+      "Name": "Upgrade Shields Level 2",
+      "AbilCmd": "ForgeResearch,Research8"
+    },
+    {
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Tooltip": "Maximizes the shields of all Protoss units and structures.",
+      "Name": "Upgrade Shields Level 3",
+      "AbilCmd": "ForgeResearch,Research9"
+    }
+  ]
+}

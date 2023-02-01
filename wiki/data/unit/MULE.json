@@ -1,0 +1,303 @@
+{
+  "Name": "MULE",
+  "Description": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Defensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 60,
+  "LifeMax": 60,
+  "LifeArmorName": "Terran Infantry Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "Worker",
+    "UseLineOfSight",
+    "NoScore",
+    "AILifetime",
+    "HideFromHarvestingCount"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "MULE",
+  "HotkeyAlias": "MULE",
+  "SelectAlias": "MULE",
+  "SubgroupAlias": "MULE",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "MULE",
+  "AIEvaluateAlias": "MULE",
+  "ReviveType": "MULE",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "MULE/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "MULE/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Attributes": [
+    "Light",
+    "Mechanical"
+  ],
+  "Speed": 2.8125,
+  "Acceleration": 2.5,
+  "LateralAcceleration": 46,
+  "Sight": 8,
+  "CostResource": {
+    "Minerals": 50
+  },
+  "RepairTime": 16.667,
+  "AttackTargetPriority": 20,
+  "AIOverideTargetPriority": 10,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "AttackWorker",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "GatherMULE",
+          "Type": "AbilCmd",
+          "AbilCmd": "MULEGather,Gather",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Repair",
+          "Type": "AbilCmd",
+          "AbilCmd": "MULERepair,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "ReturnCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "MULEGather,Return",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "ReturnCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "SCVHarvest,Return",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.375,
+  "SubgroupPriority": 2,
+  "GlossaryPriority": 20,
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "ScoreMake": 0,
+  "ScoreKill": 0,
+  "Icon": "btn-unit-terran-mule",
+  "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "MULE",
+  "Upgrades": [
+    {
+      "Link": "RewardDanceMule",
+      "Id": "RewardDanceMule",
+      "Icon": "btn-unit-terran-mule",
+      "Name": "Reward Dance - Mule"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "MULEGather",
+      "Id": "MULEGather",
+      "Name": "Gather"
+    },
+    {
+      "Link": "MULERepair",
+      "Id": "MULERepair",
+      "Name": "Repair"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "AttackWorker",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "GatherMULE",
+      "Icon": "btn-ability-terran-gather",
+      "Tooltip": "Orders MULE to gather minerals from a selected Mineral Field.",
+      "Name": "Gather",
+      "AbilCmd": "MULEGather,Gather"
+    },
+    {
+      "Id": "Repair",
+      "Icon": "btn-ability-terran-repair",
+      "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
+      "Name": "Repair",
+      "AbilCmd": "MULERepair,Execute"
+    },
+    {
+      "Id": "ReturnCargo",
+      "Icon": "btn-command-returncargo",
+      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
+      "Name": "Return Cargo",
+      "AbilCmd": "MULEGather,Return"
+    },
+    {
+      "Id": "ReturnCargo",
+      "Icon": "btn-command-returncargo",
+      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
+      "Name": "Return Cargo",
+      "AbilCmd": "SCVHarvest,Return"
+    }
+  ]
+}

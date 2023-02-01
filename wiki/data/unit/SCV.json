@@ -1,0 +1,670 @@
+{
+  "Name": "SCV",
+  "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Defensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 45,
+  "LifeMax": 45,
+  "LifeArmorName": "Terran Infantry Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "Worker",
+    "PreventDestroy",
+    "UseLineOfSight"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SCV",
+  "HotkeyAlias": "SCV",
+  "SelectAlias": "SCV",
+  "SubgroupAlias": "SCV",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SCV",
+  "AIEvaluateAlias": "SCV",
+  "ReviveType": "SCV",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SCV/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SCV/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "Speed": 2.8125,
+  "Acceleration": 2.5,
+  "LateralAcceleration": 46,
+  "Food": -1,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 50
+  },
+  "RepairTime": 16.667,
+  "AttackTargetPriority": 20,
+  "AIOverideTargetPriority": 10,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 10,
+  "InnerRadius": 0.375,
+  "CargoSize": 1,
+  "ScoreMake": 50,
+  "ScoreKill": 50,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 3,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Sight": 8,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "AttackWorker",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Repair",
+          "Type": "AbilCmd",
+          "AbilCmd": "Repair,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "GatherTerr",
+          "Type": "AbilCmd",
+          "AbilCmd": "SCVHarvest,Gather",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "ReturnCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "SCVHarvest,Return",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "TerranBuild",
+          "Type": "Submenu",
+          "SubmenuCardId": "TBl1",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "TerranBuildAdvanced",
+          "Type": "Submenu",
+          "SubmenuCardId": "TBl2",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Halt",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Spray",
+          "Type": "AbilCmd",
+          "AbilCmd": "SprayTerran,Execute",
+          "Row": 2,
+          "Column": 3
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CommandCenter",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Refinery",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "SupplyDepot",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build2",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Barracks",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build4",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "EngineeringBay",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build5",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Bunker",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build7",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "MissileTurret",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build6",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "SensorTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build9",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        }
+      ],
+      "CardId": "TBl1"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "GhostAcademy",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build10",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Factory",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build11",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Armory",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build14",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Starport",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build12",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "FusionCore",
+          "Type": "AbilCmd",
+          "AbilCmd": "TerranBuild,Build16",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        }
+      ],
+      "CardId": "TBl2"
+    }
+  ],
+  "Attributes": [
+    "Light",
+    "Biological",
+    "Mechanical"
+  ],
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "GlossaryPriority": 10,
+  "Icon": "btn-unit-terran-scv",
+  "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "SCV",
+  "Weapons": [
+    {
+      "Link": "FusionCutter",
+      "Id": "FusionCutter",
+      "Icon": "btn-upgrade-terran-infantryweaponslevel0",
+      "Name": "Fusion Cutter",
+      "Amount": 5,
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.1,
+      "Period": 1.5
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranInfantryArmors",
+      "Id": "TerranInfantryArmors",
+      "Name": "Terran Infantry Armors"
+    },
+    {
+      "Link": "TerranInfantryArmorsLevel1",
+      "Id": "TerranInfantryArmorsLevel1",
+      "Icon": "btn-upgrade-terran-infantryarmorlevel1",
+      "Name": "Terran Infantry Armor Level 1"
+    },
+    {
+      "Link": "TerranInfantryArmorsLevel2",
+      "Id": "TerranInfantryArmorsLevel2",
+      "Icon": "btn-upgrade-terran-infantryarmorlevel2",
+      "Name": "Terran Infantry Armor Level 2"
+    },
+    {
+      "Link": "TerranInfantryArmorsLevel3",
+      "Id": "TerranInfantryArmorsLevel3",
+      "Icon": "btn-upgrade-terran-infantryarmorlevel3",
+      "Name": "Terran Infantry Armor Level 3"
+    },
+    {
+      "Link": "SprayTerran",
+      "Id": "SprayTerran"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "Repair",
+      "Id": "Repair",
+      "Name": "Repair"
+    },
+    {
+      "Link": "SCVHarvest",
+      "Id": "SCVHarvest",
+      "Name": "Gather (SCV)"
+    },
+    {
+      "Link": "TerranBuild",
+      "Id": "TerranBuild",
+      "Name": "Build (SCV)"
+    },
+    {
+      "Link": "SprayTerran",
+      "Id": "SprayTerran"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "CommandCenter",
+      "Icon": "btn-building-terran-commandcenter",
+      "Description": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
+      "Name": "Command Center"
+    },
+    {
+      "Id": "Refinery",
+      "Icon": "btn-building-terran-refinery",
+      "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Refinery"
+    },
+    {
+      "Id": "SupplyDepot",
+      "Icon": "btn-building-terran-supplydepot",
+      "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+      "Name": "Supply Depot"
+    },
+    {
+      "Id": "Barracks",
+      "Icon": "btn-building-terran-barracks",
+      "Description": "Infantry-production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+      "Name": "Barracks"
+    },
+    {
+      "Id": "EngineeringBay",
+      "Icon": "btn-building-terran-engineeringbay",
+      "Description": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
+      "Name": "Engineering Bay"
+    },
+    {
+      "Id": "Bunker",
+      "Icon": "btn-building-terran-bunker",
+      "Description": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><c val=\"#ColorAttackInfo\">Bonus: +1 range to units inside.</span>",
+      "Name": "Bunker"
+    },
+    {
+      "Id": "MissileTurret",
+      "Icon": "btn-building-terran-missileturret",
+      "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Missile Turret"
+    },
+    {
+      "Id": "SensorTower",
+      "Icon": "btn-building-terran-sensordome",
+      "Description": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+      "Name": "Sensor Tower"
+    },
+    {
+      "Id": "GhostAcademy",
+      "Icon": "btn-building-terran-ghostacademy",
+      "Description": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
+      "Name": "Ghost Academy"
+    },
+    {
+      "Id": "Factory",
+      "Icon": "btn-building-terran-factory",
+      "Description": "Vehicle-production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines<br/>- Cyclones",
+      "Name": "Factory"
+    },
+    {
+      "Id": "Armory",
+      "Icon": "btn-building-terran-armory",
+      "Description": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory",
+      "Name": "Armory"
+    },
+    {
+      "Id": "Starport",
+      "Icon": "btn-building-terran-starport",
+      "Description": "Air-unit production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs<br/>- Liberators",
+      "Name": "Starport"
+    },
+    {
+      "Id": "FusionCore",
+      "Icon": "btn-building-terran-fusioncore",
+      "Description": "Contains Medivac, Liberator, and Battlecruiser upgrades. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
+      "Name": "Fusion Core"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "CommandCenter",
+      "Icon": "btn-building-terran-commandcenter",
+      "Description": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
+      "Name": "Command Center"
+    },
+    {
+      "Id": "OrbitalCommand",
+      "Icon": "btn-building-terran-surveillancestation",
+      "Description": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+      "Name": "Orbital Command"
+    },
+    {
+      "Id": "PlanetaryFortress",
+      "Icon": "btn-building-terran-planetaryfortress",
+      "Description": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Planetary Fortress"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "AttackWorker",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Repair",
+      "Icon": "btn-ability-terran-repair",
+      "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
+      "Name": "Repair",
+      "AbilCmd": "Repair,Execute"
+    },
+    {
+      "Id": "GatherTerr",
+      "Icon": "btn-ability-terran-gather",
+      "Tooltip": "Orders SCV to gather resources from a selected Mineral Field or Vespene Geyser.",
+      "Name": "Gather",
+      "AbilCmd": "SCVHarvest,Gather"
+    },
+    {
+      "Id": "ReturnCargo",
+      "Icon": "btn-command-returncargo",
+      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
+      "Name": "Return Cargo",
+      "AbilCmd": "SCVHarvest,Return"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "TerranBuild,Halt"
+    },
+    {
+      "Id": "Spray",
+      "Icon": "btn-command-spray",
+      "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+      "Name": "Spray",
+      "AbilCmd": "SprayTerran,Execute"
+    },
+    {
+      "Id": "CommandCenter",
+      "Icon": "btn-building-terran-commandcenter",
+      "Tooltip": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
+      "Name": "Build Command Center",
+      "AbilCmd": "TerranBuild,Build1"
+    },
+    {
+      "Id": "Refinery",
+      "Icon": "btn-building-terran-refinery",
+      "Tooltip": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Build Refinery",
+      "AbilCmd": "TerranBuild,Build3"
+    },
+    {
+      "Id": "SupplyDepot",
+      "Icon": "btn-building-terran-supplydepot",
+      "Tooltip": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+      "Name": "Build Supply Depot",
+      "AbilCmd": "TerranBuild,Build2"
+    },
+    {
+      "Id": "Barracks",
+      "Icon": "btn-building-terran-barracks",
+      "Tooltip": "Infantry-production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+      "Name": "Build Barracks",
+      "AbilCmd": "TerranBuild,Build4"
+    },
+    {
+      "Id": "EngineeringBay",
+      "Icon": "btn-building-terran-engineeringbay",
+      "Tooltip": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
+      "Name": "Build Engineering Bay",
+      "AbilCmd": "TerranBuild,Build5"
+    },
+    {
+      "Id": "Bunker",
+      "Icon": "btn-building-terran-bunker",
+      "Tooltip": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><c val=\"#ColorAttackInfo\">Bonus: +1 range to units inside.</span>",
+      "Name": "Build Bunker",
+      "AbilCmd": "TerranBuild,Build7"
+    },
+    {
+      "Id": "MissileTurret",
+      "Icon": "btn-building-terran-missileturret",
+      "Tooltip": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Build Missile Turret",
+      "AbilCmd": "TerranBuild,Build6"
+    },
+    {
+      "Id": "SensorTower",
+      "Icon": "btn-building-terran-sensordome",
+      "Tooltip": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+      "Name": "Build Sensor Tower",
+      "AbilCmd": "TerranBuild,Build9"
+    },
+    {
+      "Id": "GhostAcademy",
+      "Icon": "btn-building-terran-ghostacademy",
+      "Tooltip": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
+      "Name": "Build Ghost Academy",
+      "AbilCmd": "TerranBuild,Build10"
+    },
+    {
+      "Id": "Factory",
+      "Icon": "btn-building-terran-factory",
+      "Tooltip": "Vehicle-production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines<br/>- Cyclones",
+      "Name": "Build Factory",
+      "AbilCmd": "TerranBuild,Build11"
+    },
+    {
+      "Id": "Armory",
+      "Icon": "btn-building-terran-armory",
+      "Tooltip": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory",
+      "Name": "Build Armory",
+      "AbilCmd": "TerranBuild,Build14"
+    },
+    {
+      "Id": "Starport",
+      "Icon": "btn-building-terran-starport",
+      "Tooltip": "Air-unit production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs<br/>- Liberators",
+      "Name": "Build Starport",
+      "AbilCmd": "TerranBuild,Build12"
+    },
+    {
+      "Id": "FusionCore",
+      "Icon": "btn-building-terran-fusioncore",
+      "Tooltip": "Contains Medivac, Liberator, and Battlecruiser upgrades. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
+      "Name": "Build Fusion Core",
+      "AbilCmd": "TerranBuild,Build16"
+    }
+  ]
+}

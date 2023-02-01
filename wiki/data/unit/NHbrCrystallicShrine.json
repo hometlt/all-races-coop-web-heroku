@@ -1,0 +1,363 @@
+{
+  "Name": "Crystallic Shrine",
+  "Description": "Contains weapon and armor upgrades for Hybrid units <br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Horrors",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 250,
+  "LifeMax": 250,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.5,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrCrystallicShrine",
+  "HotkeyAlias": "NHbrCrystallicShrine",
+  "SelectAlias": "NHbrCrystallicShrine",
+  "SubgroupAlias": "NHbrCrystallicShrine",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrCrystallicShrine",
+  "AIEvaluateAlias": "NHbrCrystallicShrine",
+  "ReviveType": "NHbrCrystallicShrine",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrCrystallicShrine/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrCrystallicShrine/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 3,
+  "DataCollection": "NHbrCrystallicShrine",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirArmorLevel1",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research3",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirArmorLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research4",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirArmorLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research5",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirWeaponsLevel1",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research6",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirWeaponsLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research7",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidPortalUpgrades@AirWeaponsLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research8",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrNavigatorInterdimensionalOverload",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrCrystallicShrineResearch,Research2",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "ShieldsStart": 150,
+  "ShieldsMax": 150,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150
+  },
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "GlossaryPriority": 24,
+  "KillDisplay": "Always",
+  "EnergyStart": 20,
+  "EnergyMax": 100,
+  "Icon": "btn-hybrid-building-darkshrine",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrCrystallicShrine",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "NHbrNetworkNEW@NetworkController",
+      "Id": "NHbrNetworkNEW@NetworkController"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "NHbrCrystallicShrineResearch",
+      "Id": "NHbrCrystallicShrineResearch",
+      "Name": "Research"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrVoidPortal",
+      "Icon": "btn-hybrid-structure-shield-generator",
+      "Description": "<span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Screamers<br/>- Pollinators<br/>- Navigators",
+      "Name": "Void Portal"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Hybrid Air Armor Level 1"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Hybrid Air Armor Level 2"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Hybrid Air Armor Level 3"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-airattacks-level1",
+      "Name": "Hybrid Air Weapons Level 1"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-airattacks-level2",
+      "Name": "Hybrid Air Weapons Level 2"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-airattacks-level3",
+      "Name": "Hybrid Air Weapons Level 3"
+    },
+    {
+      "Id": "NHbrNavigatorInterdimensionalOverload@InterdimensionalOverload",
+      "Icon": "btn-upgrade-terran-nova-personaldefensivematrix",
+      "Name": "Interdimensional Overload"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "NHbrIonicCrystal",
+      "Icon": "btn-hybrid-building-pylon",
+      "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+      "Name": "Ionic Crystal"
+    },
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Tooltip": "Upgrades armor of Hybrid air units.",
+      "Name": "Upgrade Air Armor Level 1",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research3"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Tooltip": "Upgrades armor of Hybrid air units.",
+      "Name": "Upgrade Air Armor Level 2",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research4"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirArmorLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Tooltip": "Upgrades armor of Hybrid air units.",
+      "Name": "Upgrade Air Armor Level 3",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research5"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-airattacks-level1",
+      "Tooltip": "Upgrades weapon of Hybrid air units.",
+      "Name": "Upgrade Air Weapons Level 1 ",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research6"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirWeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-airattacks-level2",
+      "Tooltip": "Upgrades weapon of Hybrid air units.",
+      "Name": "Upgrade Air Weapons Level 2",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research7"
+    },
+    {
+      "Id": "NHbrVoidPortalUpgrades@AirWeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-airattacks-level3",
+      "Tooltip": "Upgrades weapon of Hybrid air units.",
+      "Name": "Upgrade Air Weapons Level 3",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research8"
+    },
+    {
+      "Id": "NHbrNavigatorInterdimensionalOverload",
+      "Icon": "btn-upgrade-terran-nova-personaldefensivematrix",
+      "Tooltip": "Reduces the preparation time for <span style=\"color: #FFFF80\">«Navigation»</span> by <span style=\"color: #FFFF80\"><b>50.00</b>%</span>.",
+      "Name": "Interdimensional Overload",
+      "AbilCmd": "NHbrCrystallicShrineResearch,Research2"
+    }
+  ]
+}

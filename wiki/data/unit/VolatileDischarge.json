@@ -1,0 +1,153 @@
+{
+  "Name": "Volatile Discharge",
+  "Description": "After a charge up of <b>10</b> seconds, the <span style=\"color: #FFFF80\">Volatile Discharge</span> will explode for 200 damage in a large area. If destroyed before charge up is complete, the detonation will be cancelled.<br/><br/><span style=\"color: #FFFF80\">Damages air and ground units, including friendlies.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 750,
+  "LifeMax": 750,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.875,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "AISplash"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "VolatileDischarge",
+  "HotkeyAlias": "VolatileDischarge",
+  "SelectAlias": "VolatileDischarge",
+  "SubgroupAlias": "VolatileDischarge",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "VolatileDischarge",
+  "AIEvaluateAlias": "VolatileDischarge",
+  "ReviveType": "VolatileDischarge",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "VolatileDischarge/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "VolatileDischarge/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 5,
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 5,
+  "CostCategory": "Army",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "CostResource": {
+    "Minerals": 75,
+    "Vespene": 75
+  },
+  "ScoreMake": 150,
+  "ScoreKill": 150,
+  "SubgroupPriority": 43,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "VolatileDischargeCancel,Execute",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 10,
+  "GlossaryCategory": "Unit/Category/XayidUnits",
+  "GlossaryPriority": 50,
+  "Icon": "btn-ability-xayid-volatiledischarge",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "VolatileDischarge",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "VolatileDischargeCancel",
+      "Id": "VolatileDischargeCancel",
+      "Name": "Volatile Discharge Cancel"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "VolatileDischargeCancel,Execute"
+    }
+  ]
+}

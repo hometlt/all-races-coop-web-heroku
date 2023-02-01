@@ -1,0 +1,204 @@
+{
+  "Name": "Avian Nest",
+  "Description": "Creates Wasps, which are mutated into Xayid flyers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Raptors<br/>- Assailants",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.625,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "AvianNest",
+  "HotkeyAlias": "AvianNest",
+  "SelectAlias": "AvianNest",
+  "SubgroupAlias": "AvianNest",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AvianNest",
+  "AIEvaluateAlias": "AvianNest",
+  "ReviveType": "AvianNest",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AvianNest/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AvianNest/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 10,
+  "CostCategory": "Technology",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "Facing": 45,
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 150
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "SelectWasp",
+          "Type": "SelectLarva",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint3x3Xayid",
+  "PlacementFootprint": "Footprint3x3Xayid",
+  "TechTreeProducedUnitArray": [
+    "Wasp"
+  ],
+  "ScoreMake": 300,
+  "ScoreKill": 300,
+  "TechAliasArray": [
+    "Alias_AvianNest"
+  ],
+  "SubgroupPriority": 37,
+  "GlossaryPriority": 24,
+  "Icon": "btn-building-xayid-aviannest",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AvianNest",
+  "Behaviors": [
+    {
+      "Link": "AvianNestSpawnWasp",
+      "Id": "AvianNestSpawnWasp"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "MutagenChamber",
+      "Icon": "btn-building-xayid-mutagenchambernew",
+      "Description": "Contains upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers from the Xayid Den<br/>- Scorpalisks from the Xayid Den<br/>- Mendlings from the Xayid Den",
+      "Name": "Mutagen Chamber"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Scavenger",
+      "Icon": "btn-unit-xayid-scavenger",
+      "Description": "Basic builder and worker unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Scavenger"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    }
+  ]
+}

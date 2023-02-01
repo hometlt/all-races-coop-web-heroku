@@ -1,0 +1,47 @@
+[
+  {
+    "Id": "Neut",
+    "Name": "Neutral"
+  },
+  {
+    "Id": "Terr",
+    "Name": "Terran"
+  },
+  {
+    "Id": "Prot",
+    "Name": "Protoss"
+  },
+  {
+    "Id": "Zerg",
+    "Name": "Zerg"
+  },
+  {
+    "Id": "Gen",
+    "Name": "Genetron"
+  },
+  {
+    "Id": "Xayi",
+    "Name": "Xayid"
+  },
+  {
+    "Id": "Keir",
+    "Name": "Keiron"
+  },
+  {
+    "Id": "UED",
+    "Name": "UED"
+  },
+  {
+    "Id": "NHbr",
+    "Icon": "Assets\\Textures\\tip_Hybridbehemoth.dds",
+    "Name": "Network Hybrids"
+  },
+  {
+    "Id": "Dragon",
+    "Name": "Dragon"
+  },
+  {
+    "Id": "UPL",
+    "Name": "UPL"
+  }
+]

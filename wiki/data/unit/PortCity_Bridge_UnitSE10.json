@@ -1,0 +1,101 @@
+{
+  "Name": "Port City Bridge Unit SE10",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "PortCity_Bridge_UnitSE10",
+  "HotkeyAlias": "PortCity_Bridge_UnitSE10",
+  "SelectAlias": "PortCity_Bridge_UnitSE10",
+  "SubgroupAlias": "PortCity_Bridge_UnitSE10",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "PortCity_Bridge_UnitSE10",
+  "AIEvaluateAlias": "PortCity_Bridge_UnitSE10",
+  "ReviveType": "PortCity_Bridge_UnitSE10",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "PortCity_Bridge_UnitSE10/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "PortCity_Bridge_UnitSE10/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Dimmed",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 225,
+  "Height": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeExtend",
+          "Type": "AbilCmd",
+          "AbilCmd": "PortCity_Bridge_UnitSE10Out,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "PortCity_Bridge_UnitSE",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "PortCity_Bridge_UnitSE10",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "PortCity_Bridge_UnitSE10Out",
+      "Id": "PortCity_Bridge_UnitSE10Out",
+      "Name": "Port City Bridge Unit SE10 Out"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeExtend",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Extend",
+      "AbilCmd": "PortCity_Bridge_UnitSE10Out,Execute"
+    }
+  ]
+}

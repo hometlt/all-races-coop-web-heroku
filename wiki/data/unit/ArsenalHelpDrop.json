@@ -1,0 +1,274 @@
+{
+  "Name": "Arsenal Help Drop",
+  "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.25,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ArsenalHelpDrop",
+  "HotkeyAlias": "ArsenalHelpDrop",
+  "SelectAlias": "ArsenalHelpDrop",
+  "SubgroupAlias": "ArsenalHelpDrop",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ArsenalHelpDrop",
+  "AIEvaluateAlias": "ArsenalHelpDrop",
+  "ReviveType": "ArsenalHelpDrop",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ArsenalHelpDrop/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ArsenalHelpDrop/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 9,
+  "CostCategory": "Economy",
+  "RepairTime": 30,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelUEDMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToInfusionTower,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelUEDMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToSuppressionTower,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelUEDMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToMissileTower,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelUEDMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToHeavyTower,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "MissileTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToMissileTower,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "MissileSuppressionTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToSuppressionTower,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "InfusionTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToInfusionTower,Execute",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "HeavyTower",
+          "Type": "AbilCmd",
+          "AbilCmd": "UpgradeToHeavyTower,Execute",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "TechAliasArray": [
+    "Alias_SupplyDepot"
+  ],
+  "GlossaryPriority": 248,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "CargoSize": 8,
+  "Icon": "btn-building-supplydepotbronze",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ArsenalHelpDrop",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "TransportShuttle",
+      "Icon": "btn-ued-dropship",
+      "Description": "Large transport ship, capable of transporting big squads of infantry & armored vehicles.",
+      "Name": "Transport Shuttle"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "CancelUEDMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
+      "Name": "Cancel",
+      "AbilCmd": "UpgradeToInfusionTower,Cancel"
+    },
+    {
+      "Id": "CancelUEDMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
+      "Name": "Cancel",
+      "AbilCmd": "UpgradeToSuppressionTower,Cancel"
+    },
+    {
+      "Id": "CancelUEDMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
+      "Name": "Cancel",
+      "AbilCmd": "UpgradeToMissileTower,Cancel"
+    },
+    {
+      "Id": "CancelUEDMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
+      "Name": "Cancel",
+      "AbilCmd": "UpgradeToHeavyTower,Cancel"
+    },
+    {
+      "Id": "MissileTower",
+      "Icon": "btn-building-missileturretbronze",
+      "Tooltip": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Upgrade to Missile Tower",
+      "AbilCmd": "UpgradeToMissileTower,Execute"
+    },
+    {
+      "Id": "MissileSuppressionTower",
+      "Icon": "btn-building-laserturretbronze",
+      "Tooltip": "Anti-ground defensive structure, effective against lightly-armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Upgrade to Suppression Tower",
+      "AbilCmd": "UpgradeToSuppressionTower,Execute"
+    },
+    {
+      "Id": "InfusionTower",
+      "Icon": "btn-structure-ued-hivemindemulator",
+      "Tooltip": "Support structure. Regenerates health for all nearby allied units.<br/><span style=\"color: #FFE303\"><br/>There is a detection function</span>",
+      "Name": "Upgrade to Infusion Tower",
+      "AbilCmd": "UpgradeToInfusionTower,Execute"
+    },
+    {
+      "Id": "HeavyTower",
+      "Icon": "btn-building-guardianturretbronze",
+      "Tooltip": "Anti-ground defensive structure, effective against armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Upgrade to Heavy Tower",
+      "AbilCmd": "UpgradeToHeavyTower,Execute"
+    }
+  ]
+}

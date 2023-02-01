@@ -1,0 +1,216 @@
+{
+  "Name": "Protoss Snake Segment Demo",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 200,
+  "LifeMax": 200,
+  "LifeArmorName": "Protoss Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 1,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Storymode"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "AISupport",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ProtossSnakeSegmentDemo",
+  "HotkeyAlias": "ProtossSnakeSegmentDemo",
+  "SelectAlias": "ProtossSnakeSegmentDemo",
+  "SubgroupAlias": "ProtossSnakeSegmentDemo",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ProtossSnakeSegmentDemo",
+  "AIEvaluateAlias": "ProtossSnakeSegmentDemo",
+  "ReviveType": "ProtossSnakeSegmentDemo",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ProtossSnakeSegmentDemo/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ProtossSnakeSegmentDemo/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 45,
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Speed": 4,
+  "Acceleration": 3.25,
+  "LateralAcceleration": 46.0625,
+  "Sight": 11,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": 8,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 30,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 200,
+  "ScoreKill": 400,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 18,
+  "TacticalAIThink": "AIThinkCarrier",
+  "Icon": "btn-unit-protoss-observer",
+  "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ProtossSnakeSegmentDemo",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

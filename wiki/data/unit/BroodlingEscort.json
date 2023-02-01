@@ -1,0 +1,127 @@
+{
+  "Name": "Broodling",
+  "Description": "Fast melee creature that will last for a short duration.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 30,
+  "LifeMax": 30,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Uncommandable",
+    "Unselectable",
+    "Untargetable",
+    "Invulnerable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "",
+  "HotkeyAlias": "",
+  "SelectAlias": "Broodling",
+  "SubgroupAlias": "BroodlingEscort",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Broodling",
+  "AIEvaluateAlias": "Broodling",
+  "ReviveType": "BroodlingEscort",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "BroodlingEscort/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "BroodlingEscort/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "LifeRegenRate": 0.2734,
+  "Sight": 7,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 5,
+  "InnerRadius": 0.375,
+  "SubgroupPriority": 14,
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "FlyingEscorts"
+  ],
+  "Speed": 6,
+  "Acceleration": 4,
+  "Height": 4.25,
+  "Icon": "btn-unit-zerg-symbiote",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "BroodlingEscort",
+  "Weapons": [
+    {
+      "Link": "BroodlingEscort",
+      "Id": "BroodlingEscort",
+      "Icon": "btn-upgrade-zerg-airattacks-level0",
+      "Name": "Broodling Escort",
+      "TargetFilters": "Ground",
+      "Range": 9,
+      "Period": 10
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "StandardMissile"
+    },
+    {
+      "Link": "BroodlingAttackDelay",
+      "Id": "BroodlingAttackDelay"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

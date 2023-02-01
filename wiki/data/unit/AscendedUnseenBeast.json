@@ -1,0 +1,420 @@
+{
+  "Name": "Ascended Unseen Beast",
+  "Description": "Mobile melee assassin. Cloak renders the unit invisible to enemies without detection.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>Teleport Assault</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 105,
+  "LifeMax": 105,
+  "LifeArmorName": "Dragon Scale Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "UnseenBeast",
+  "HotkeyAlias": "UnseenBeast",
+  "SelectAlias": "UnseenBeast",
+  "SubgroupAlias": "UnseenBeast",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "UnseenBeast",
+  "AIEvaluateAlias": "DarkTemplar",
+  "ReviveType": "UnseenBeast",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UnseenBeast/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UnseenBeast/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Light",
+    "Psionic",
+    "Heroic"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Acceleration": 1000,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AscendedUnseenBeast",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 4,
+          "AbilCmd": "AscendedUnseenBeast,Execute"
+        },
+        {
+          "Face": "AscendedUnseenBeast",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "AscendedUnseenBeastFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "UnseenBeastFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "AbilCmd": "DragonFissionDisabled,Execute",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "UnseenBeastTeleportAssault",
+          "Type": "AbilCmd",
+          "AbilCmd": "UnseenBeastTeleportAssault,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "UnseenBeastKeenSenses",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "UnseenBeastStealthyHunter",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "LifeArmor": 2,
+  "Speed": 5,
+  "Sight": 13.625,
+  "Food": -3,
+  "CostResource": {
+    "Minerals": 100,
+    "Vespene": 150,
+    "Custom": 920
+  },
+  "KillXP": 15,
+  "InnerRadius": 0.5,
+  "CargoSize": 2,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "SubgroupPriority": 10,
+  "GlossaryPriority": 24,
+  "GlossaryStrongArray": [
+    "SCV",
+    "Drone",
+    "Probe"
+  ],
+  "GlossaryWeakArray": [
+    "MissileTurret",
+    "SporeCrawler",
+    "PhotonCannon"
+  ],
+  "Icon": "wireframe-critter-matriarchsnowbeast",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AscendedUnseenBeast",
+  "Weapons": [
+    {
+      "Link": "UnseenBeastSpiritSmashWeapon",
+      "Id": "UnseenBeastSpiritSmashWeapon",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Spirit Smash",
+      "Amount": 18,
+      "AttributeBonus": {
+        "Light": 18,
+        "Structure": 18
+      },
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.25,
+      "Period": 0.77
+    },
+    {
+      "Link": "UnseenBeastSpiritSmashDummy",
+      "Id": "UnseenBeastSpiritSmashDummy",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Spirit Smash",
+      "Amount": 18,
+      "AttributeBonus": {
+        "Light": 18,
+        "Structure": 18
+      },
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 5,
+      "Period": 0
+    },
+    {
+      "Link": "UnseenBeastSpiritSmashDisplay",
+      "Id": "UnseenBeastSpiritSmashDisplay",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Spirit Smash",
+      "Amount": 18,
+      "AttributeBonus": {
+        "Light": 18,
+        "Structure": 18
+      },
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.25,
+      "Period": 0.77
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "DragonLineageLesser",
+      "Id": "DragonLineageLesser",
+      "Name": "Dragon Lineage"
+    },
+    {
+      "Link": "UnseenBeast",
+      "Id": "UnseenBeast",
+      "Name": "Unseen Beast"
+    },
+    {
+      "Link": "UnseenBeastRadar",
+      "Id": "UnseenBeastRadar",
+      "Name": "Unseen Beast (Radar)"
+    },
+    {
+      "Link": "DragonAscended",
+      "Id": "DragonAscended",
+      "Tooltip": "This Dragon is more powerful. If it dies in combat it will provide its owner with a small amount of Rage.",
+      "Name": "Ascended"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "AscendedUnseenBeast",
+      "Id": "AscendedUnseenBeast",
+      "Name": "Ascended Unseen Beast"
+    },
+    {
+      "Link": "AscendedUnseenBeastFission",
+      "Id": "AscendedUnseenBeastFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "UnseenBeastFission",
+      "Id": "UnseenBeastFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "DragonFissionDisabled",
+      "Id": "DragonFissionDisabled",
+      "Name": "Fission"
+    },
+    {
+      "Link": "UnseenBeastTeleportAssault",
+      "Id": "UnseenBeastTeleportAssault",
+      "Name": "Unseen Beast - Teleport Assault"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AscendedUnseenBeast",
+      "Icon": "btn-ability-zerg-dehakaspawn",
+      "Tooltip": "<span style=\"color: #00FF00\">+15 Life<br/>+1 Armor<br/>Teleport Assault</span>",
+      "Name": "Ascend",
+      "AbilCmd": "AscendedUnseenBeast,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "AscendedUnseenBeastFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "UnseenBeastFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "DragonFissionDisabled,Execute"
+    },
+    {
+      "Id": "UnseenBeastTeleportAssault",
+      "Icon": "btn-ability-protoss-blink-zeratul",
+      "Tooltip": "Teleports to the opposite side of a target unit to attack it.",
+      "Name": "Teleport Assault",
+      "AbilCmd": "UnseenBeastTeleportAssault,Execute"
+    }
+  ]
+}

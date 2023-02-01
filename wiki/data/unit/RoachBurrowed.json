@@ -1,0 +1,630 @@
+{
+  "Name": "Roach",
+  "Description": "Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 145,
+  "LifeMax": 145,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Burrowed",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "Cloaked",
+    "Buried",
+    "AIThreatGround",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Roach",
+  "HotkeyAlias": "Roach",
+  "SelectAlias": "Roach",
+  "SubgroupAlias": "Roach",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "RoachBurrowed",
+  "AIEvaluateAlias": "Roach",
+  "ReviveType": "RoachBurrowed",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "RoachBurrowed/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "RoachBurrowed/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "SpeedMultiplierCreep": 1.3,
+  "LifeRegenRate": 5,
+  "Food": -2,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 15,
+  "InnerRadius": 0.625,
+  "ScoreKill": 100,
+  "SubgroupPriority": 80,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 5,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowRoachUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "RapidRegeneration",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "StopRoachBurrowed",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Requirements": "PlayerHasTunnelingClaws",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowDroneDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowZerglingDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowBanelingDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowRoachDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowHydraliskDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowRavagerDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowQueenDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowInfestorTerranDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowInfestorDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowDown",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowUltraliskDown,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowDroneUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowZerglingUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowBanelingUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowRoachUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowHydraliskUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowRavagerUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "MorphToSwarmHostMP,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowQueenUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowInfestorTerranUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowInfestorUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowUltraliskUp,Execute",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological"
+  ],
+  "LifeArmor": 1,
+  "Collide": [
+    "RoachBurrow"
+  ],
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 75,
+    "Vespene": 25
+  },
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Acceleration": 0,
+  "ScoreMake": 100,
+  "Icon": "btn-unit-zerg-roach",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "RoachBurrowed",
+  "Upgrades": [
+    {
+      "Link": "ZergMissileWeapons",
+      "Id": "ZergMissileWeapons",
+      "Name": "Zerg Missile Weapons"
+    },
+    {
+      "Link": "ZergGroundArmors",
+      "Id": "ZergGroundArmors",
+      "Name": "Zerg Ground Armors"
+    },
+    {
+      "Link": "TunnelingClaws",
+      "Id": "TunnelingClaws",
+      "Icon": "btn-upgrade-zerg-tunnelingclaws",
+      "Name": "Tunneling Claws"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel1",
+      "Id": "ZergGroundArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Zerg Ground Carapace Level 1"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel2",
+      "Id": "ZergGroundArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Zerg Ground Carapace Level 2"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel3",
+      "Id": "ZergGroundArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Zerg Ground Carapace Level 3"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel1",
+      "Id": "ZergMissileWeaponsLevel1",
+      "Icon": "btn-upgrade-zerg-missileattacks-level1",
+      "Name": "Zerg Missile Attacks Level 1"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel2",
+      "Id": "ZergMissileWeaponsLevel2",
+      "Icon": "btn-upgrade-zerg-missileattacks-level2",
+      "Name": "Zerg Missile Attacks Level 2"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel3",
+      "Id": "ZergMissileWeaponsLevel3",
+      "Icon": "btn-upgrade-zerg-missileattacks-level3",
+      "Name": "Zerg Missile Attacks Level 3"
+    },
+    {
+      "Link": "OrganicCarapace",
+      "Id": "OrganicCarapace",
+      "Icon": "btn-upgrade-zerg-organiccarapace",
+      "Name": "Organic Carapace"
+    },
+    {
+      "Link": "Burrow",
+      "Id": "Burrow",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Name": "Burrow"
+    },
+    {
+      "Link": "GlialReconstitution",
+      "Id": "GlialReconstitution",
+      "Icon": "btn-upgrade-zerg-glialreconstitution",
+      "Name": "Glial Reconstitution"
+    },
+    {
+      "Link": "RewardDanceRoach",
+      "Id": "RewardDanceRoach",
+      "Icon": "btn-unit-zerg-roach",
+      "Name": "Reward Dance - Roach"
+    },
+    {
+      "Link": "RoachSupply",
+      "Id": "RoachSupply",
+      "Name": "Roach Supply"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BurrowRoachUp",
+      "Id": "BurrowRoachUp",
+      "Name": "Unburrow (Roach)"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowRoachUp,Execute"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "StopRoachBurrowed",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowDroneDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowZerglingDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowBanelingDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowRoachDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowHydraliskDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowRavagerDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowQueenDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowInfestorTerranDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowInfestorDown,Execute"
+    },
+    {
+      "Id": "BurrowDown",
+      "Icon": "btn-ability-zerg-burrow-color",
+      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+      "Name": "Burrow",
+      "AbilCmd": "BurrowUltraliskDown,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowDroneUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowZerglingUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowBanelingUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowRoachUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowHydraliskUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowRavagerUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "MorphToSwarmHostMP,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowQueenUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowInfestorTerranUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowInfestorUp,Execute"
+    },
+    {
+      "Id": "BurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowUltraliskUp,Execute"
+    }
+  ]
+}

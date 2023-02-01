@@ -1,0 +1,164 @@
+{
+  "Name": "Acid Nest",
+  "Description": "The <span style=\"color: #FFFF80\">Acid Nest</span> explodes for 50 damage to a enemy ground unit that comes into contact with it. Deals 35 splash damage to other units around it.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 50,
+  "LifeMax": 50,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [],
+  "PushPriority": 10,
+  "LeaderAlias": "AcidNest",
+  "HotkeyAlias": "AcidNest",
+  "SelectAlias": "AcidNest",
+  "SubgroupAlias": "AcidNest",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AcidNest",
+  "AIEvaluateAlias": "AcidNest",
+  "ReviveType": "AcidNest",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AcidNest/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AcidNest/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 5,
+  "CostCategory": "Army",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "Facing": 45,
+  "CostResource": {
+    "Minerals": 10,
+    "Vespene": 10
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "AcidNest",
+          "Type": "AbilCmd",
+          "Row": 2,
+          "Column": 0,
+          "AbilCmd": "AcidNestMorph,Execute",
+          "ShowInGlossary": 0
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "ShowInGlossary": 1,
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "ResidualAcid",
+          "Type": "Passive",
+          "AbilCmd": "",
+          "Row": 2,
+          "Column": 1,
+          "Requirements": "UseResidualAcid"
+        }
+      ]
+    }
+  ],
+  "Footprint": "AcidNest",
+  "PlacementFootprint": "AcidNestPlacement",
+  "ScoreMake": 20,
+  "ScoreKill": 20,
+  "GlossaryPriority": 0,
+  "SubgroupPriority": 41,
+  "GlossaryAlias": "",
+  "GlossaryCategory": "",
+  "Icon": "btn-ability-xayid-prowlerexplosive",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AcidNestBuild",
+  "Behaviors": [],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "AcidNestMorph",
+      "Id": "AcidNestMorph",
+      "Name": "Acid Nest Morph"
+    },
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que1",
+      "Id": "que1",
+      "Name": "Queue (1)"
+    },
+    {
+      "Link": "AcidNestAttack",
+      "Id": "AcidNestAttack",
+      "Name": "Acid Nest Attack"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Prowler",
+      "Icon": "btn-unit-xayid-prowler",
+      "Description": "Quick specialist unit. Can use Acid Nest and Blinding Burst.",
+      "Name": "Prowler"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "AcidNest",
+      "Icon": "btn-ability-zerg-banelingspooge",
+      "Tooltip": "The <span style=\"color: #FFFF80\">Acid Nest</span> explodes for 50 damage to a enemy ground unit that comes into contact with it. Deals 35 splash damage to other units around it.",
+      "Name": "Volatile Acid",
+      "AbilCmd": "AcidNestMorph,Execute"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

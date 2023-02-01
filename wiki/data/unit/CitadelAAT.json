@@ -1,0 +1,325 @@
+{
+  "Name": "Citadel AAT",
+  "Description": "Advanced armored unit, equipped with heavy composite armor, powerful primary cannon and long-range ATGMs.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 425,
+  "LifeMax": 425,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 360,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.5,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TurnBeforeMove",
+    "AIPressForwardDisabled",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "CitadelAAT",
+  "HotkeyAlias": "CitadelAAT",
+  "SelectAlias": "CitadelAAT",
+  "SubgroupAlias": "CitadelAAT",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SiegeTank",
+  "AIEvaluateAlias": "CitadelAAT",
+  "ReviveType": "CitadelAAT",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "CitadelAAT/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "CitadelAAT/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Locust",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Massive"
+  ],
+  "LifeArmor": 4,
+  "Speed": 2,
+  "Acceleration": 3,
+  "LateralAcceleration": 64,
+  "Sight": 11,
+  "Food": -6,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 300,
+    "Vespene": 200
+  },
+  "RepairTime": 45,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop2,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attackUED,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "SongoftheDead",
+          "Type": "AbilCmd",
+          "AbilCmd": "Yamato3,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 1,
+  "CargoSize": 8,
+  "ScoreMake": 275,
+  "ScoreKill": 275,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 80,
+  "TechAliasArray": [
+    "Alias_SiegeTank"
+  ],
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 130,
+  "GlossaryStrongArray": [
+    "Marine",
+    "Hydralisk",
+    "Stalker"
+  ],
+  "GlossaryWeakArray": [
+    "Banshee",
+    "Mutalisk",
+    "Immortal"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-unit-predatortankbronze",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "CitadelAAT",
+  "Weapons": [
+    {
+      "Link": "CitadelCannon",
+      "Turret": "CitadelAAT",
+      "Id": "CitadelCannon",
+      "Name": "M25 armor - piercing cannon",
+      "Amount": 40,
+      "AttributeBonus": {
+        "Armored": 20
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 1.89
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "FieldReloadingProtocols",
+      "Id": "FieldReloadingProtocols",
+      "Icon": "btn-upgrade-tychus-warhound-thunderboltmissiles",
+      "Name": "Field Reloading Protocols"
+    },
+    {
+      "Link": "UEDArmorLevel1",
+      "Id": "UEDArmorLevel1",
+      "Name": "Beathanium Defensive Programming, level 1"
+    },
+    {
+      "Link": "UEDArmorLevel2",
+      "Id": "UEDArmorLevel2",
+      "Name": "Beathanium Defensive Programming, level 2"
+    },
+    {
+      "Link": "UEDArmorLevel3",
+      "Id": "UEDArmorLevel3",
+      "Name": "Beathanium Defensive Programming, level 3"
+    },
+    {
+      "Link": "UEDVehicalsLevel2",
+      "Id": "UEDVehicalsLevel2",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 2"
+    },
+    {
+      "Link": "UEDVehicalsLevel3",
+      "Id": "UEDVehicalsLevel3",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 3"
+    },
+    {
+      "Link": "UEDVehicalsLevel1",
+      "Id": "UEDVehicalsLevel1",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 1"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop2",
+      "Id": "stop2",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attackUED",
+      "Id": "attackUED",
+      "Name": "Attack UED"
+    },
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "Yamato3",
+      "Id": "Yamato3",
+      "Name": "Song of the Dead"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "MilitaryResearchStation",
+      "Icon": "btn-ued-engineering",
+      "Description": "Advanced upgrade structure. Unlocks various equipment authorizations for spacecraft & vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Peenemunde MRLS<br/>- Citadel AAT",
+      "Name": "Military Research Station"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop2,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attackUED,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "SongoftheDead",
+      "Icon": "btn-upgrade-raynor-ripwavemissiles",
+      "Tooltip": "Launches an ATGM at the target, causing <b>160</b> damage.",
+      "Name": "Song of the Dead",
+      "AbilCmd": "Yamato3,Execute"
+    }
+  ]
+}

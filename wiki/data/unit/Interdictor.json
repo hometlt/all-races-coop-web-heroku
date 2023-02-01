@@ -1,0 +1,315 @@
+{
+  "Name": "Interdictor",
+  "Description": "Anti-air defensive structure. Can burrow, disabling its weapon, and rendering itself invisible to enemies.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "AIDefense"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Interdictor",
+  "HotkeyAlias": "Interdictor",
+  "SelectAlias": "Interdictor",
+  "SubgroupAlias": "Interdictor",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Interdictor",
+  "AIEvaluateAlias": "Interdictor",
+  "ReviveType": "Interdictor",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Interdictor/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Interdictor/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "Interdictor",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 10,
+  "AttackTargetPriority": 20,
+  "GlossaryCategory": "Unit/Category/GenetronUnits",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 315,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Requirements": "NotUnderConstruction",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "StaticDBurrow",
+          "Type": "AbilCmd",
+          "AbilCmd": "InterdictorBurrow,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "StaticDUnburrow",
+          "Type": "AbilCmd",
+          "AbilCmd": "InterdictorUnburrow,Execute",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "CostResource": {
+    "Minerals": 100
+  },
+  "RepairTime": 30,
+  "SubgroupPriority": 4,
+  "GlossaryPriority": 18,
+  "TechAliasArray": [
+    "Alias_Interdictor"
+  ],
+  "Icon": "btn-building-genetron-interdictor",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Interdictor",
+  "Weapons": [
+    {
+      "Link": "NeutralizerBeam",
+      "Turret": "Interdictor",
+      "Id": "NeutralizerBeam",
+      "Icon": "btn-building-genetron-interdictor",
+      "Name": "Neutralizer Beam",
+      "Amount": 30,
+      "Kind": "Ranged",
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 1.25
+    },
+    {
+      "Link": "NeutralizerBeamDummy",
+      "Turret": "InterdictorMovement",
+      "Id": "NeutralizerBeamDummy",
+      "Icon": "btn-building-genetron-interdictor",
+      "Name": "Neutralizer Beam Dummy",
+      "Amount": 30,
+      "Kind": "Ranged",
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 1.25
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    },
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    },
+    {
+      "Link": "RepulsorInterdictorBurrowCD",
+      "Id": "RepulsorInterdictorBurrowCD"
+    },
+    {
+      "Link": "GenetronTurretFreeze",
+      "Id": "GenetronTurretFreeze"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "InterdictorBurrow",
+      "Id": "InterdictorBurrow",
+      "Name": "Burrow"
+    },
+    {
+      "Link": "InterdictorUnburrow",
+      "Id": "InterdictorUnburrow",
+      "Name": "Unburrow"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "AnalysisTerminal",
+      "Icon": "btn-building-genetron-analysisterminal",
+      "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+      "Name": "Analysis Terminal"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "StaticDBurrow",
+      "Icon": "btn-ability-genetron-conceal",
+      "Tooltip": "Buries the structure underground. While burrowed, the structure is unable to attack, and cannot be seen without detection.",
+      "Name": "Conceal",
+      "AbilCmd": "InterdictorBurrow,Execute"
+    },
+    {
+      "Id": "StaticDUnburrow",
+      "Icon": "btn-ability-genetron-ambush",
+      "Tooltip": "Unburies the structure, allowing it to resume a normal state.",
+      "Name": "Reveal",
+      "AbilCmd": "InterdictorUnburrow,Execute"
+    }
+  ]
+}

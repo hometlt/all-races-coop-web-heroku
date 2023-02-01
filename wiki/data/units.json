@@ -1,0 +1,4588 @@
+[
+  {
+    "Id": "AssimilatorRich",
+    "Icon": "btn-building-protoss-assimilator",
+    "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Assimilator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "ExtractorRich",
+    "Icon": "btn-building-zerg-extractor",
+    "Description": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Extractor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "LurkerDenMP",
+    "Icon": "btn-building-zerg-lurkerden",
+    "Description": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks",
+    "Name": "Lurker Den",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 235
+  },
+  {
+    "Id": "LurkerMP",
+    "Icon": "btn-unit-zerg-lurker",
+    "Description": "Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.<br/>Must burrow to attack.</span>",
+    "Name": "Lurker",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 71
+  },
+  {
+    "Id": "Ravager",
+    "Icon": "btn-unit-zerg-ravager",
+    "Description": "Ranged artillery. Can use Corrosive Bile.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Ravager",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 66
+  },
+  {
+    "Id": "RefineryRich",
+    "Icon": "btn-building-terran-refinery",
+    "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Refinery",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "ShieldBattery",
+    "Icon": "btn-building-protoss-shieldbattery",
+    "Description": "Defensive structure. Recharges shields of nearby units.",
+    "Name": "Shield Battery",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 201
+  },
+  {
+    "Id": "StarportReactor",
+    "Icon": "btn-building-terran-reactor",
+    "Description": "Allows 2 units to be created simultaneously.",
+    "Name": "Reactor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 27
+  },
+  {
+    "Id": "PointDefenseDrone",
+    "Icon": "btn-unit-terran-targetingdrone",
+    "Description": "Uses a laser to shoot down enemy missiles.  <br/>Cannot target special attacks. <br/>Times out after <b>20</b> seconds.<br/><br/><span style=\"color: #f078ff\">Each shot consumes 10 energy.</span>",
+    "Name": "Point Defense Drone",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 315
+  },
+  {
+    "Id": "MULE",
+    "Icon": "btn-unit-terran-mule",
+    "Description": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
+    "Name": "MULE",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "InfestationPit",
+    "Icon": "btn-building-zerg-infestationpit",
+    "Description": "Contains upgrades for Infestors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
+    "Name": "Infestation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 237
+  },
+  {
+    "Id": "Probe",
+    "Icon": "btn-unit-protoss-probe",
+    "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Probe",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Zealot",
+    "Icon": "btn-unit-protoss-zealot",
+    "Description": "Powerful melee warrior.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Zealot",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "HighTemplar",
+    "Icon": "btn-unit-protoss-hightemplar",
+    "Description": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "High Templar",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 80
+  },
+  {
+    "Id": "DarkTemplar",
+    "Icon": "btn-unit-protoss-darktemplar",
+    "Description": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Dark Templar",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "Observer",
+    "Icon": "btn-unit-protoss-observer",
+    "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Observer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "Carrier",
+    "Icon": "btn-unit-protoss-carrier",
+    "Description": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Carrier",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 170
+  },
+  {
+    "Id": "Archon",
+    "Icon": "btn-unit-protoss-archon",
+    "Description": "Powerful psionic attacker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Archon",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 90
+  },
+  {
+    "Id": "Phoenix",
+    "Icon": "btn-unit-protoss-phoenix",
+    "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
+    "Name": "Phoenix",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 140
+  },
+  {
+    "Id": "VoidRay",
+    "Icon": "btn-unit-protoss-warpray",
+    "Description": "Surgical strike craft.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Void Ray",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 160
+  },
+  {
+    "Id": "WarpPrism",
+    "Icon": "btn-unit-protoss-warpprism",
+    "Description": "Flying transport. Can load units from a distance. Can also deploy to create a power field.",
+    "Name": "Warp Prism",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "Stalker",
+    "Icon": "btn-unit-protoss-stalker",
+    "Description": "Ranged support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Stalker",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 30
+  },
+  {
+    "Id": "Colossus",
+    "Icon": "btn-unit-protoss-colossus",
+    "Description": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Colossus",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 130
+  },
+  {
+    "Id": "Assimilator",
+    "Icon": "btn-building-protoss-assimilator",
+    "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Assimilator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "Nexus",
+    "Icon": "btn-building-protoss-nexus",
+    "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
+    "Name": "Nexus",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Mothership",
+    "Icon": "btn-unit-protoss-mothership",
+    "Description": "Ultimate Protoss vessel. Can use Strategic Recall and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Mothership",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 190
+  },
+  {
+    "Id": "Pylon",
+    "Icon": "btn-building-protoss-pylon",
+    "Description": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
+    "Name": "Pylon",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "Gateway",
+    "Icon": "btn-building-protoss-gateway",
+    "Description": "Warps in Protoss ground units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Zealots",
+    "Name": "Gateway",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "WarpGate",
+    "Icon": "btn-building-protoss-warpgate",
+    "Description": "Enables warp in of Protoss ground units.",
+    "Name": "Warp Gate",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "Forge",
+    "Icon": "btn-building-protoss-forge",
+    "Description": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
+    "Name": "Forge",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 26
+  },
+  {
+    "Id": "TwilightCouncil",
+    "Icon": "btn-building-protoss-twilightcouncil",
+    "Description": "Contains upgrades for Zealots, Stalkers, and Adepts.",
+    "Name": "Twilight Council",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 203
+  },
+  {
+    "Id": "TemplarArchive",
+    "Icon": "btn-building-protoss-templararchives",
+    "Description": "Contains an upgrade for High Templar.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- High Templar at the Gateway<br/>- Archon Merge from High Templar",
+    "Name": "Templar Archives",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 214
+  },
+  {
+    "Id": "SCV",
+    "Icon": "btn-unit-terran-scv",
+    "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "SCV",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Marine",
+    "Icon": "btn-unit-terran-marine",
+    "Description": "General-purpose infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Marine",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "Reaper",
+    "Icon": "btn-unit-terran-reaper",
+    "Description": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Reaper",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 50
+  },
+  {
+    "Id": "Ghost",
+    "Icon": "btn-unit-terran-ghost",
+    "Description": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Ghost",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "SiegeTank",
+    "Icon": "btn-unit-terran-siegetank",
+    "Description": "Heavy tank. Can switch into Siege Mode to provide long-range artillery support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+    "Name": "Siege Tank",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 130
+  },
+  {
+    "Id": "SiegeTankSieged",
+    "Icon": "btn-unit-terran-siegetanksiegemode",
+    "Description": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Siege Tank",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 135
+  },
+  {
+    "Id": "Thor",
+    "Icon": "btn-unit-terran-thor",
+    "Description": "Heavy assault mech.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Thor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 140
+  },
+  {
+    "Id": "ThorAP",
+    "Icon": "btn-unit-terran-thor",
+    "Description": "Heavy assault mech.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Thor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 141
+  },
+  {
+    "Id": "Banshee",
+    "Icon": "btn-unit-terran-banshee",
+    "Description": "Tactical-strike aircraft. Can be upgraded to use cloak.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Banshee",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 210
+  },
+  {
+    "Id": "Medivac",
+    "Icon": "btn-unit-terran-medivac",
+    "Description": "Air transport. Heals nearby biological units. Can use Afterburners.",
+    "Name": "Medivac",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 185
+  },
+  {
+    "Id": "Battlecruiser",
+    "Icon": "btn-unit-terran-battlecruiser",
+    "Description": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Battlecruiser",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 210
+  },
+  {
+    "Id": "Raven",
+    "Icon": "btn-unit-terran-raven",
+    "Description": "Aerial support unit. Can use Auto-Turret, Interference Matrix, and Anti-Armor Missile.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Raven",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 190
+  },
+  {
+    "Id": "SupplyDepot",
+    "Icon": "btn-building-terran-supplydepot",
+    "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+    "Name": "Supply Depot",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 248
+  },
+  {
+    "Id": "Refinery",
+    "Icon": "btn-building-terran-refinery",
+    "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Refinery",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 244
+  },
+  {
+    "Id": "Barracks",
+    "Icon": "btn-building-terran-barracks",
+    "Description": "Infantry-production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+    "Name": "Barracks",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 252
+  },
+  {
+    "Id": "EngineeringBay",
+    "Icon": "btn-building-terran-engineeringbay",
+    "Description": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
+    "Name": "Engineering Bay",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 256
+  },
+  {
+    "Id": "MissileTurret",
+    "Icon": "btn-building-terran-missileturret",
+    "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Missile Turret",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 310
+  },
+  {
+    "Id": "AutoTurret",
+    "Icon": "btn-building-terran-autoturret",
+    "Description": "Automated defensive turret. Times out after <b>14</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Auto-Turret",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 346
+  },
+  {
+    "Id": "Bunker",
+    "Icon": "btn-building-terran-bunker",
+    "Description": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><c val=\"#ColorAttackInfo\">Bonus: +1 range to units inside.</span>",
+    "Name": "Bunker",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 300
+  },
+  {
+    "Id": "Factory",
+    "Icon": "btn-building-terran-factory",
+    "Description": "Vehicle-production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines<br/>- Cyclones",
+    "Name": "Factory",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 322
+  },
+  {
+    "Id": "Starport",
+    "Icon": "btn-building-terran-starport",
+    "Description": "Air-unit production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs<br/>- Liberators",
+    "Name": "Starport",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 329
+  },
+  {
+    "Id": "Armory",
+    "Icon": "btn-building-terran-armory",
+    "Description": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory",
+    "Name": "Armory",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 326
+  },
+  {
+    "Id": "Reactor",
+    "Icon": "btn-building-terran-reactor",
+    "Description": "Allows 2 units to be created simultaneously.",
+    "Name": "Reactor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 341
+  },
+  {
+    "Id": "TechLab",
+    "Icon": "btn-building-terran-techlab",
+    "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "Name": "Tech Lab",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 337
+  },
+  {
+    "Id": "BarracksTechLab",
+    "Icon": "btn-building-terran-techlab",
+    "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "Name": "Tech Lab",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 337
+  },
+  {
+    "Id": "FactoryTechLab",
+    "Icon": "btn-building-terran-techlab",
+    "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "Name": "Tech Lab",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 337
+  },
+  {
+    "Id": "StarportTechLab",
+    "Icon": "btn-building-terran-techlab",
+    "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "Name": "Tech Lab",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 337
+  },
+  {
+    "Id": "VikingAssault",
+    "Icon": "btn-unit-terran-vikingassault",
+    "Description": "Durable support unit. Can switch into Fighter Mode to attack air units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Viking",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 155
+  },
+  {
+    "Id": "VikingFighter",
+    "Icon": "btn-unit-terran-vikingfighter",
+    "Description": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+    "Name": "Viking",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 150
+  },
+  {
+    "Id": "Larva",
+    "Icon": "btn-unit-zerg-larva",
+    "Description": "Morphs into Zerg units.",
+    "Name": "Larva",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Drone",
+    "Icon": "btn-unit-zerg-drone",
+    "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Drone",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "Roach",
+    "Icon": "btn-unit-zerg-roach",
+    "Description": "Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Roach",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 65
+  },
+  {
+    "Id": "Overlord",
+    "Icon": "btn-unit-zerg-overlord",
+    "Description": "Provides supply.<br/>Supply allows you to create more units.",
+    "Name": "Overlord",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 201
+  },
+  {
+    "Id": "Overseer",
+    "Icon": "btn-unit-zerg-overseer",
+    "Description": "Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Oversight, Spawn Changeling, and Contaminate abilities.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Overseer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 210
+  },
+  {
+    "Id": "Zergling",
+    "Icon": "btn-unit-zerg-zergling",
+    "Description": "Fast melee creature. Can morph into a Baneling.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+    "Name": "Zergling",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 50
+  },
+  {
+    "Id": "Hydralisk",
+    "Icon": "btn-unit-zerg-hydralisk",
+    "Description": "Ranged attacker. Can morph into a Lurker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Hydralisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "Mutalisk",
+    "Icon": "btn-unit-zerg-mutalisk",
+    "Description": "Air unit. Bounces its shot to strike multiple targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Mutalisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 130
+  },
+  {
+    "Id": "Ultralisk",
+    "Icon": "btn-unit-zerg-omegalisk",
+    "Description": "Heavy assault beast. Has an area-damage attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Ultralisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 180
+  },
+  {
+    "Id": "Extractor",
+    "Icon": "btn-building-zerg-extractor",
+    "Description": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Extractor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "Hatchery",
+    "Icon": "btn-building-zerg-hatchery",
+    "Description": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+    "Name": "Hatchery",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Lair",
+    "Icon": "btn-building-zerg-lair",
+    "Description": "Evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Overseers from Overlords",
+    "Name": "Lair",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "Hive",
+    "Icon": "btn-building-zerg-hive",
+    "Description": "Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vipers from Larvae",
+    "Name": "Hive",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "EvolutionChamber",
+    "Icon": "btn-building-zerg-evolutionchamber",
+    "Description": "Contains upgrades for Zerg ground units. ",
+    "Name": "Evolution Chamber",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 29
+  },
+  {
+    "Id": "CreepTumorBurrowed",
+    "Icon": "btn-building-zerg-creeptumor",
+    "Description": "A burrowed creep generator. Creep feeds nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+    "Name": "Creep Tumor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 257
+  },
+  {
+    "Id": "SpineCrawler",
+    "Icon": "btn-building-zerg-spinecrawler",
+    "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Spine Crawler",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 220
+  },
+  {
+    "Id": "SporeCrawler",
+    "Icon": "btn-building-zerg-sporecrawler",
+    "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Spore Crawler",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 230
+  },
+  {
+    "Id": "SpawningPool",
+    "Icon": "btn-building-zerg-spawningpool",
+    "Description": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
+    "Name": "Spawning Pool",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 26
+  },
+  {
+    "Id": "HydraliskDen",
+    "Icon": "btn-building-zerg-hydraliskden",
+    "Description": "Contains upgrades for Hydralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
+    "Name": "Hydralisk Den",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 234
+  },
+  {
+    "Id": "Spire",
+    "Icon": "btn-building-zerg-spire",
+    "Description": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
+    "Name": "Spire",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 241
+  },
+  {
+    "Id": "GreaterSpire",
+    "Icon": "btn-building-zerg-greaterspire",
+    "Description": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors",
+    "Name": "Greater Spire",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 244
+  },
+  {
+    "Id": "NydusCanal",
+    "Icon": "btn-building-zerg-nydusworm",
+    "Description": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+    "Name": "Nydus Worm",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 261
+  },
+  {
+    "Id": "UltraliskCavern",
+    "Icon": "btn-building-zerg-ultraliskcavern",
+    "Description": "Contains upgrades for Ultralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
+    "Name": "Ultralisk Cavern",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 253
+  },
+  {
+    "Id": "Baneling",
+    "Icon": "btn-unit-zerg-baneling",
+    "Description": "Suicide unit. Does damage over a small area on death. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Baneling",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 60
+  },
+  {
+    "Id": "SensorTower",
+    "Icon": "btn-building-terran-sensordome",
+    "Description": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+    "Name": "Sensor Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 314
+  },
+  {
+    "Id": "DarkShrine",
+    "Icon": "btn-building-protoss-darkshrine",
+    "Description": "Contains an upgrade for Dark Templar.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Dark Templar at the Gateway<br/>- Archon Merge from Dark Templar",
+    "Name": "Dark Shrine",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 221
+  },
+  {
+    "Id": "RoboticsFacility",
+    "Icon": "btn-building-protoss-roboticsfacility",
+    "Description": "Warps in Protoss robotic units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Observers<br/>- Warp Prisms<br/>- Immortals",
+    "Name": "Robotics Facility",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 211
+  },
+  {
+    "Id": "Stargate",
+    "Icon": "btn-building-protoss-stargate",
+    "Description": "Warps in Protoss air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles",
+    "Name": "Stargate",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 207
+  },
+  {
+    "Id": "FleetBeacon",
+    "Icon": "btn-building-protoss-fleetbeacon",
+    "Description": "Contains upgrades for Phoenixes and Void Rays.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate</n>- Carriers at the Stargate<br/>- Mothership from the Nexus",
+    "Name": "Fleet Beacon",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 217
+  },
+  {
+    "Id": "GhostAcademy",
+    "Icon": "btn-building-terran-ghostacademy",
+    "Description": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
+    "Name": "Ghost Academy",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 318
+  },
+  {
+    "Id": "RoboticsBay",
+    "Icon": "btn-building-protoss-roboticssupportbay",
+    "Description": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility",
+    "Name": "Robotics Bay",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 219
+  },
+  {
+    "Id": "NydusNetwork",
+    "Icon": "btn-building-zerg-nydusnetwork",
+    "Description": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
+    "Name": "Nydus Network",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 249
+  },
+  {
+    "Id": "BanelingNest",
+    "Icon": "btn-building-zerg-banelingnest",
+    "Description": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
+    "Name": "Baneling Nest",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 37
+  },
+  {
+    "Id": "Infestor",
+    "Icon": "btn-unit-zerg-infestor",
+    "Description": "Infestation specialist. Can use the Fungal Growth, Microbial Shroud, and Neural Parasite abilities.",
+    "Name": "Infestor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 150
+  },
+  {
+    "Id": "InfestorTerran",
+    "Icon": "btn-unit-zerg-infestedmarine",
+    "Description": "An Infested Terran does moderate damage and lasts for <b>30</b> seconds.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground and air units.</span>",
+    "Name": "Infested Terran",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 219
+  },
+  {
+    "Id": "CommandCenter",
+    "Icon": "btn-building-terran-commandcenter",
+    "Description": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
+    "Name": "Command Center",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 30
+  },
+  {
+    "Id": "OrbitalCommand",
+    "Icon": "btn-building-terran-surveillancestation",
+    "Description": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+    "Name": "Orbital Command",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 32
+  },
+  {
+    "Id": "PlanetaryFortress",
+    "Icon": "btn-building-terran-planetaryfortress",
+    "Description": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Planetary Fortress",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 240
+  },
+  {
+    "Id": "Immortal",
+    "Icon": "btn-unit-protoss-immortal",
+    "Description": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Immortal",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 120
+  },
+  {
+    "Id": "CyberneticsCore",
+    "Icon": "btn-building-protoss-cyberneticscore",
+    "Description": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Shield Batteries from Probes",
+    "Name": "Cybernetics Core",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 29
+  },
+  {
+    "Id": "FusionCore",
+    "Icon": "btn-building-terran-fusioncore",
+    "Description": "Contains Medivac, Liberator, and Battlecruiser upgrades. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
+    "Name": "Fusion Core",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 333
+  },
+  {
+    "Id": "Marauder",
+    "Icon": "btn-unit-terran-marauder",
+    "Description": "Heavy assault infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Marauder",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 60
+  },
+  {
+    "Id": "PhotonCannon",
+    "Icon": "btn-building-protoss-photoncannon",
+    "Description": "Primary defensive structure.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Photon Cannon",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 200
+  },
+  {
+    "Id": "BroodLord",
+    "Icon": "btn-unit-zerg-mantalisk",
+    "Description": "Flying heavy-assault unit. Shoots Broodlings at its target. A Broodling is a small creature that can attack ground units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Brood Lord",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 190
+  },
+  {
+    "Id": "Broodling",
+    "Icon": "btn-unit-zerg-symbiote",
+    "Description": "Fast melee creature that will last for a short duration.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Broodling",
+    "EditorCategories": {
+      "ObjectType": "Other",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 200
+  },
+  {
+    "Id": "Corruptor",
+    "Icon": "btn-unit-zerg-corruptor",
+    "Description": "Anti-air flyer. Can use Caustic Spray. Can morph into a Brood Lord.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+    "Name": "Corruptor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 140
+  },
+  {
+    "Id": "Sentry",
+    "Icon": "btn-unit-protoss-sentry",
+    "Description": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Sentry",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "Queen",
+    "Icon": "btn-unit-zerg-queen",
+    "Description": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Queen",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 217
+  },
+  {
+    "Id": "Hellion",
+    "Icon": "btn-unit-terran-hellion",
+    "Description": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Hellion",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 80
+  },
+  {
+    "Id": "RoachWarren",
+    "Icon": "btn-building-zerg-roachwarren",
+    "Description": "Contains upgrades for Roaches.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
+    "Name": "Roach Warren",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 33
+  },
+  {
+    "Id": "Changeling",
+    "Icon": "btn-unit-zerg-changeling",
+    "Description": "Changelings cannot attack. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race. Dies after <b>150</b>.",
+    "Name": "Changeling",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 218
+  },
+  {
+    "Id": "MothershipCore",
+    "Icon": "btn-unit-protoss-mothershipcore",
+    "Description": "Mobile flying caster. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Can upgrade into the Mothership.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Mothership Core",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 190
+  },
+  {
+    "Id": "Oracle",
+    "Icon": "btn-unit-protoss-oracle",
+    "Description": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+    "Name": "Oracle",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 168
+  },
+  {
+    "Id": "HellionTank",
+    "Icon": "btn-unit-terran-hellionbattlemode",
+    "Description": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Hellbat",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 81
+  },
+  {
+    "Id": "WarHound",
+    "Icon": "btn-unit-terran-warhound",
+    "Description": "Anti-vehicle mech. Haywire missiles do bonus damage to mechanical units. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Warhound",
+    "EditorCategories": {
+      "ObjectFamily": "Campaign",
+      "ObjectType": "Unit"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 126
+  },
+  {
+    "Id": "SwarmHostMP",
+    "Icon": "btn-unit-zerg-swarmhost",
+    "Description": "Siege unit that attacks by spawning Locust minions.<br/><br/><c val=\"#ColorAttackInfo\">Locusts can attack ground units.</span>",
+    "Name": "Swarm Host",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 146
+  },
+  {
+    "Id": "LocustMP",
+    "Icon": "btn-unit-zerg-locust",
+    "Description": "Timed life creature. Durable and dangerous.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Locust",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 148
+  },
+  {
+    "Id": "Tempest",
+    "Icon": "btn-unit-protoss-tempest",
+    "Description": "Siege artillery craft. Attacks from long range.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Tempest",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 170
+  },
+  {
+    "Id": "Viper",
+    "Icon": "btn-unit-zerg-viper",
+    "Description": "Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consume, Blinding Cloud, and Abduct abilities.",
+    "Name": "Viper",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 80
+  },
+  {
+    "Id": "WidowMine",
+    "Icon": "btn-unit-terran-widowmine",
+    "Description": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. Widow Mine is revealed when Sentinel Missile is on cooldown. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Widow Mine",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 129
+  },
+  {
+    "Id": "Cyclone",
+    "Icon": "btn-unit-terran-cyclone",
+    "Description": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Cyclone",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 136
+  },
+  {
+    "Id": "LocustMPFlying",
+    "Icon": "btn-unit-zerg-locustflyer",
+    "Description": "Timed life creature. Durable and dangerous.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Locust",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 148
+  },
+  {
+    "Id": "Disruptor",
+    "Icon": "btn-unit-protoss-disruptor",
+    "Description": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
+    "Name": "Disruptor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 135
+  },
+  {
+    "Id": "VoidMPImmortalReviveCorpse",
+    "Icon": "btn-unit-protoss-immortal",
+    "Name": "Immortal Revive Corpse",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Campaign"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 120
+  },
+  {
+    "Id": "GuardianMP",
+    "Icon": "btn-unit-zerg-primalguardian",
+    "Name": "Guardian",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Campaign"
+    },
+    "Race": "Zerg",
+    "GlossaryPriority": 200
+  },
+  {
+    "Id": "OracleStasisTrap",
+    "Icon": "btn-ability-protoss-oracle-stasisward",
+    "Description": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection.",
+    "Name": "Stasis Ward",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 250
+  },
+  {
+    "Id": "Adept",
+    "Icon": "btn-unit-protoss-adept",
+    "Description": "Ranged specialist. Can use Psionic Transfer.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Adept",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "Liberator",
+    "Icon": "btn-ability-terran-liberator-aamode",
+    "Description": "Artillery fighter. Loaded with missiles that deal area damage to enemy air targets. Can switch into Defender Mode to provide siege support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+    "Name": "Liberator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 188
+  },
+  {
+    "Id": "GhostAlternate",
+    "Icon": "btn-unit-terran-ghost",
+    "Description": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Ghost",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "GhostNova",
+    "Icon": "btn-unit-terran-ghost",
+    "Description": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Ghost",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "ObserverSiegeMode",
+    "Icon": "btn-unit-protoss-observer",
+    "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Observer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "PylonOvercharged",
+    "Icon": "btn-building-protoss-pylon",
+    "Description": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
+    "Name": "Pylon",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Prot",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "RavenRepairDrone",
+    "Icon": "btn-unit-biomechanicaldrone",
+    "Description": "Repairs nearby friendly mechanical units for <b>126</b> seconds.",
+    "Name": "Repair Drone",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Campaign"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 315
+  },
+  {
+    "Id": "Aquila",
+    "Icon": "btn-unit-genetron-aquila",
+    "Description": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Aquila",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 6
+  },
+  {
+    "Id": "Blaze",
+    "Icon": "btn-unit-genetron-blaze",
+    "Description": "Melee anti-light specialist. Can use Speed Cloak.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+    "Name": "Blaze",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 5
+  },
+  {
+    "Id": "Fixer",
+    "Icon": "btn-unit-genetron-fixer",
+    "Description": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+    "Name": "Fixer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 4
+  },
+  {
+    "Id": "Blitzer",
+    "Icon": "btn-unit-genetron-blitzer",
+    "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Blitzer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 3
+  },
+  {
+    "Id": "Equalizer",
+    "Icon": "btn-unit-genetron-equalizer-v2",
+    "Description": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Equalizer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 5
+  },
+  {
+    "Id": "AssemblyArray",
+    "Icon": "btn-building-genetron-assemblyarray",
+    "Description": "Aircraft production facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Avengers<br/>- Hornets",
+    "Name": "Assembly Array",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "Eroder",
+    "Icon": "btn-unit-xayid-eroder",
+    "Description": "Long ranged anti-armor beast.<br/><br/><span style=\"color: #FFFF80\">Can target ground units.</span>",
+    "Name": "Eroder",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 7
+  },
+  {
+    "Id": "Interdictor",
+    "Icon": "btn-building-genetron-interdictor",
+    "Description": "Anti-air defensive structure. Can burrow, disabling its weapon, and rendering itself invisible to enemies.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Interdictor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "Inciter",
+    "Icon": "btn-unit-genetron-inciter",
+    "Description": "Grenade attacker. Can jump up and down cliffs. Can use ELOR Protocol.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Inciter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 9
+  },
+  {
+    "Id": "FilteringPlant",
+    "Icon": "btn-building-genetron-filteringplant",
+    "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Filtering Plant",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "FilteringPlantRich",
+    "Icon": "btn-building-genetron-filteringplant",
+    "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Filtering Plant",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "OutfittingStation",
+    "Icon": "btn-building-genetron-outfittingstation",
+    "Description": "Contains upgrades for Genetron units.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Equalizers at the Manufacturer<br/>- Inciters at the Fabricator<br/>- Teslas at the Fabricator<br/>- Jupiters at the Assembly Array<br/>- Boars at the Assembly Array",
+    "Name": "Outfitting Station",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "RelayTower",
+    "Icon": "btn-building-genetron-relaytower",
+    "Description": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+    "Name": "Relay Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "Generator",
+    "Icon": "btn-building-genetron-generator",
+    "Description": "Provides energy. Contains upgrades for the Processor.",
+    "Name": "Generator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "Repulsor",
+    "Icon": "btn-building-genetron-repulsor",
+    "Description": "Anti-ground defensive structure. Can burrow, disabling its weapon, and rendering itself invisible to enemies.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Repulsor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 17
+  },
+  {
+    "Id": "RepulsorBurrowed",
+    "Icon": "btn-building-genetron-repulsor",
+    "Description": "Anti-ground defensive structure. Can burrow, disabling its weapon, and rendering itself invisible to enemies.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Repulsor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 17
+  },
+  {
+    "Id": "ScavengerSpawn",
+    "Icon": "btn-unit-xayid-scavengerspawn",
+    "Description": "Rapid spawn defense unit with timed life. Can harvest resources.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Scavenger Spawn",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "TechVault",
+    "Icon": "btn-building-genetron-techvault",
+    "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
+    "Name": "Tech Vault",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 26
+  },
+  {
+    "Id": "AnalysisTerminal",
+    "Icon": "btn-building-genetron-analysisterminal",
+    "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+    "Name": "Analysis Terminal",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 4
+  },
+  {
+    "Id": "Uploader",
+    "Icon": "btn-building-genetron-uploader",
+    "Description": "Key tech structure. Can link to a production facility to increase it's production speed, and unlock tech. Contains research for units that come from the linked structure.",
+    "Name": "Uploader",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "ProcessingCore",
+    "Icon": "btn-building-genetron-processingcore",
+    "Description": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+    "Name": "Processing Core",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "Manufacturer",
+    "Icon": "btn-building-genetron-manufacturer",
+    "Description": "Produces light-weight machines.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Spitfires",
+    "Name": "Manufacturer",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 19
+  },
+  {
+    "Id": "Fabricator",
+    "Icon": "btn-building-genetron-fabricator",
+    "Description": "Produces heavy machines.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Torrents<br/>- Moles",
+    "Name": "Fabricator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "Mole",
+    "Icon": "btn-unit-genetron-mole",
+    "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Mole",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 8
+  },
+  {
+    "Id": "MoleBurrowed",
+    "Icon": "btn-unit-genetron-mole",
+    "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Mole",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 8
+  },
+  {
+    "Id": "MoleBuried",
+    "Icon": "btn-unit-genetron-mole",
+    "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Mole",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 8
+  },
+  {
+    "Id": "Node",
+    "Icon": "btn-building-genetron-node",
+    "Description": "Provides supply and energy.",
+    "Name": "Node",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 3
+  },
+  {
+    "Id": "Spitfire",
+    "Icon": "btn-unit-genetron-spitfire",
+    "Description": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Spitfire",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "Tesla",
+    "Icon": "btn-unit-genetron-tesla",
+    "Description": "Area control specialist. Can construct and launch specialized charges.",
+    "Name": "Tesla",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Torrent",
+    "Icon": "btn-unit-genetron-torrent",
+    "Description": "Anti-air artillary.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Torrent",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 7
+  },
+  {
+    "Id": "Virtus",
+    "Icon": "btn-unit-genetron-virtus",
+    "Description": "Heavy tank. Weapons and movement disabled and gains armor after taking critical damage.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Virtus",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "AvengerGenetron",
+    "Icon": "btn-unit-genetron-avenger",
+    "Description": "Quick interceptor. Can use Vengeance Missile.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+    "Name": "Avenger",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "Badger",
+    "Icon": "btn-unit-genetron-badger",
+    "Description": "Large gunship.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+    "Name": "Badger",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 17
+  },
+  {
+    "Id": "Boar",
+    "Icon": "btn-unit-genetron-boar",
+    "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Boar",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 15
+  },
+  {
+    "Id": "Courier",
+    "Icon": "btn-unit-genetron-courier",
+    "Description": "Stealth transport. Can use Cloak.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+    "Name": "Courier",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "Hornet",
+    "Icon": "btn-unit-genetron-hornet",
+    "Description": "Fast anti-ground fighter that excels against armored targets.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Hornet",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "Jupiter",
+    "Icon": "btn-unit-genetron-jupiter",
+    "Description": "Bomber aircraft. Can use Revenant Bomb to damage enemies, and apply napalm on the ground for damage over time.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+    "Name": "Jupiter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 16
+  },
+  {
+    "Id": "Processor",
+    "Icon": "btn-unit-genetron-processor",
+    "Description": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+    "Name": "Processor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Gen",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "Wasp",
+    "Icon": "btn-unit-zerg-locustflyerex3",
+    "Description": "Can mutate into various Xayid flyers.",
+    "Name": "Wasp",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "AvianNest",
+    "Icon": "btn-building-xayid-aviannest",
+    "Description": "Creates Wasps, which are mutated into Xayid flyers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Raptors<br/>- Assailants",
+    "Name": "Avian Nest",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "BilePit",
+    "Icon": "btn-building-xayid-bilepit",
+    "Description": "Defensive structure with a quick fire rate. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF00\">Detector</span><br/><span style=\"color: #FFFF80\">Can attack air and ground units.</span>",
+    "Name": "Bile Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "BiomassCavern",
+    "Icon": "btn-building-xayid-biomasscavern",
+    "Description": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Massalisks from the Biomass Hatchery",
+    "Name": "Biomass Cavern",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "BiomassHatchery",
+    "Icon": "btn-building-xayid-biomasshatchery",
+    "Description": "Creates larva, which can mutate into various Xayid beasts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Revilers<br/>- Ferrions<br/> - Prowlers<br/>- Spitters",
+    "Name": "Biomass Hatchery",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "Casnolisk",
+    "Icon": "btn-unit-xayid-casnolisk",
+    "Description": "Armored spell caster. Can use Stagnating Bile and Explosive Glob.",
+    "Name": "Casnolisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 7
+  },
+  {
+    "Id": "CasnoliskDen",
+    "Icon": "btn-building-xayid-casnoliskden",
+    "Description": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Casnolisks from the Xayid Den",
+    "Name": "Casnolisk Den",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "CatalystPit",
+    "Icon": "btn-building-xayid-catalystpit",
+    "Description": "Contains various upgrades for Xayid fliers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Exterminators from the Avian Nest<br/>- Xayithoans from the Avian Nest",
+    "Name": "Catalyst Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "Raptor",
+    "Icon": "btn-unit-xayid-raptor",
+    "Description": "Fast, weak flyer. Effective against Armored targets. Two Raptors hatch from a single egg.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Raptor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 15
+  },
+  {
+    "Id": "Assailant",
+    "Icon": "btn-unit-xayid-assailant",
+    "Description": "Anti-ground assault flyer.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Assailant",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 16
+  },
+  {
+    "Id": "Exterminator",
+    "Icon": "btn-unit-xayid-exterminator",
+    "Description": "Anti-air fighter that excels vs Light targets.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+    "Name": "Exterminator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 17
+  },
+  {
+    "Id": "FeedingPool",
+    "Icon": "btn-building-xayid-feedingpool",
+    "Description": "<span style=\"color: #FFFF80\">Provides supply.</span><br/>Supply allows you to create more units.<br/>Boosts production of nearby structures and heals nearby damaged units.",
+    "Name": "Feeding Pool",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 3
+  },
+  {
+    "Id": "Ferrion",
+    "Icon": "btn-unit-xayid-ferrion",
+    "Description": "Transport and detector flyer.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
+    "Name": "Ferrion",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Kraken",
+    "Icon": "btn-unit-xayid-kraken",
+    "Description": "A huge powerful beast, with a devastating attack. Can use Volatile Discharge.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Kraken",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 19
+  },
+  {
+    "Id": "Massalisk",
+    "Icon": "btn-unit-xayid-massalisk",
+    "Description": "Large, low ranged durable beast with splash damage. Can use Hunker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Massalisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "MassaliskHunkered",
+    "Icon": "btn-unit-xayid-massalisk",
+    "Description": "Large, low ranged durable beast with splash damage. Currently using Hunker, which gives long range anti-air capabilities.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Massalisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "MutagenChamber",
+    "Icon": "btn-building-xayid-mutagenchambernew",
+    "Description": "Contains upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers from the Xayid Den<br/>- Scorpalisks from the Xayid Den<br/>- Mendlings from the Xayid Den",
+    "Name": "Mutagen Chamber",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 5
+  },
+  {
+    "Id": "ScavengerNest",
+    "Icon": "btn-building-xayid-scavengernest",
+    "Description": "Base structure for the Xayid race. Acts as a resource drop-off point and can create Scavengers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
+    "Name": "Scavenger Nest",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "Siphoner",
+    "Icon": "btn-building-xayid-siphoner",
+    "Description": "Formed over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Siphoner",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "SiphonerRich",
+    "Icon": "btn-building-xayid-siphoner",
+    "Description": "Formed over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Siphoner",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "SacrificialMutation",
+    "Icon": "btn-ability-zerg-ultralisk-revive",
+    "Description": "Heals <b>100</b> life in an area over the lifetime of the unit.",
+    "Name": "Sacrificial Mutation",
+    "EditorCategories": {
+      "ObjectType": "Other",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "Scavenger",
+    "Icon": "btn-unit-xayid-scavenger",
+    "Description": "Basic builder and worker unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Scavenger",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "SunkenWarren",
+    "Icon": "btn-building-xayid-sunkenwarren",
+    "Description": "Contains upgrades for the Kraken and the Raptor.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Krakens from the Avian Nest",
+    "Name": "Sunken Warren",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 26
+  },
+  {
+    "Id": "Mendling",
+    "Icon": "btn-unit-xayid-mendling",
+    "Description": "Healer unit. Can use Mend, Covering Spray and Sacrificial Mutation.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Mendling",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 6
+  },
+  {
+    "Id": "Prowler",
+    "Icon": "btn-unit-xayid-prowler",
+    "Description": "Quick specialist unit. Can use Acid Nest and Blinding Burst.",
+    "Name": "Prowler",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "Reviler",
+    "Icon": "btn-unit-xayid-reviler",
+    "Description": "Ranged attacker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Reviler",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 9
+  },
+  {
+    "Id": "Scorpalisk",
+    "Icon": "btn-unit-xayid-scorpalisk",
+    "Description": "Armored melee attacker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Scorpalisk",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 5
+  },
+  {
+    "Id": "AcidNest",
+    "Icon": "btn-ability-xayid-prowlerexplosive",
+    "Description": "The <span style=\"color: #FFFF80\">Acid Nest</span> explodes for 50 damage to a enemy ground unit that comes into contact with it. Deals 35 splash damage to other units around it.",
+    "Name": "Acid Nest",
+    "EditorCategories": {
+      "ObjectType": "Other",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "Spitter",
+    "Icon": "btn-unit-xayid-spitter",
+    "Description": "Long ranged beast that spits acid at enemies, dealing damage in an area. Can issue attacks to specific points on the ground<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Spitter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "Roamer",
+    "Icon": "btn-unit-xayid-roamer",
+    "Description": "Quick ranged anti-light fighter. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Roamer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 4
+  },
+  {
+    "Id": "VolatileDischarge",
+    "Icon": "btn-ability-xayid-volatiledischarge",
+    "Description": "After a charge up of <b>10</b> seconds, the <span style=\"color: #FFFF80\">Volatile Discharge</span> will explode for 200 damage in a large area. If destroyed before charge up is complete, the detonation will be cancelled.<br/><br/><span style=\"color: #FFFF80\">Damages air and ground units, including friendlies.</span>",
+    "Name": "Volatile Discharge",
+    "EditorCategories": {
+      "ObjectType": "Other",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 50
+  },
+  {
+    "Id": "XayidDen",
+    "Icon": "btn-building-xayid-xayidden",
+    "Description": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pit from Scavengers",
+    "Name": "Xayid Den",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 4
+  },
+  {
+    "Id": "Worm",
+    "Icon": "btn-unit-zerg-larvalqueen",
+    "Description": "Can mutate into various Xayid ground units.",
+    "Name": "Worm",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "Grub",
+    "Icon": "btn-unit-xayidling-grub",
+    "Description": "Can mutate into various Xayid units.",
+    "Name": "Grub",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 8
+  },
+  {
+    "Id": "Xayidling",
+    "Icon": "btn-unit-xayid-xayidling",
+    "Description": "Mid-ranged fighter.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units</span>",
+    "Name": "Xayidling",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 3
+  },
+  {
+    "Id": "Xayithoan",
+    "Icon": "btn-unit-xayid-xayithoan",
+    "Description": "Aerial detector and spell caster. Can use Adaptive Injection and Protective cloud.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
+    "Name": "Xayithoan",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Xayi",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "Aegis",
+    "Icon": "btn-unit-keiron-aegis",
+    "Description": "Powerful defense structure. Can use Relocate and Activate Shield.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Aegis",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 140
+  },
+  {
+    "Id": "AegisShielded",
+    "Icon": "btn-unit-keiron-aegis",
+    "Description": "Powerful defense structure. Can use Relocate and Activate Shield.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Aegis",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 140
+  },
+  {
+    "Id": "Aperture",
+    "Icon": "btn-unit-keiron-aperture",
+    "Description": "Transport unit. Can be upgraded to use Keyhole.",
+    "Name": "Aperture",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 34
+  },
+  {
+    "Id": "Aquifer",
+    "Icon": "btn-building-keiron-oculus",
+    "Description": "Can create workers. Can use x.",
+    "Name": "Aquifer",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 53
+  },
+  {
+    "Id": "Fuse",
+    "Icon": "btn-unit-keiron-fuse",
+    "Description": "Support unit. Can use Fusion.",
+    "Name": "Fuse",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 31
+  },
+  {
+    "Id": "Zenith",
+    "Icon": "btn-building-keiron-zenith",
+    "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+    "Name": "Zenith",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 64
+  },
+  {
+    "Id": "Formulator",
+    "Icon": "btn-building-keiron-formulator",
+    "Description": "Shaped over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Formulator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "Aurora",
+    "Icon": "btn-unit-keiron-aurora",
+    "Description": "Tactical-strike aircraft. Can use Emanator.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Aurora",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 33
+  },
+  {
+    "Id": "Conduit",
+    "Icon": "btn-building-keiron-conduit",
+    "Description": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+    "Name": "Conduit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 61
+  },
+  {
+    "Id": "FormulatorRich",
+    "Icon": "btn-building-keiron-formulator",
+    "Description": "Shaped over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Formulator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "Harbinger",
+    "Icon": "btn-unit-keiron-harbinger",
+    "Description": "Assault frigate. Can use Judgement Mode.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Harbinger",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 36
+  },
+  {
+    "Id": "Atrium",
+    "Icon": "btn-building-keiron-atrium",
+    "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Inducers from the Citadel<br/>  - Myriads from the Citadel",
+    "Name": "Atrium",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 59
+  },
+  {
+    "Id": "Nullifier",
+    "Icon": "btn-building-keiron-nullifier",
+    "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Nullifier",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 50
+  },
+  {
+    "Id": "Meridian",
+    "Icon": "btn-unit-keiron-meridian",
+    "Description": "Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Meridian",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "Elysium",
+    "Icon": "btn-building-keiron-elysium",
+    "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Meridians from the Citadel",
+    "Name": "Elysium",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 57
+  },
+  {
+    "Id": "Stratus",
+    "Icon": "btn-building-keiron-stratus",
+    "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Stratus",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 51
+  },
+  {
+    "Id": "Oculus",
+    "Icon": "btn-building-keiron-oculus",
+    "Description": "Able to grant vision of areas on the map at a long range.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Oculus",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 53
+  },
+  {
+    "Id": "Gyre",
+    "Icon": "btn-unit-keiron-paradox",
+    "Description": "Support unit. Can use Annex and Shackle.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Gyre",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 37
+  },
+  {
+    "Id": "Empyrean",
+    "Icon": "btn-building-keiron-empyrean",
+    "Description": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+    "Name": "Empyrean",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 63
+  },
+  {
+    "Id": "Paragon",
+    "Icon": "btn-unit-keiron-paragon",
+    "Description": "Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Paragon",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "Converter",
+    "Icon": "btn-unit-keiron-converter",
+    "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Converter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Emanator",
+    "Icon": "btn-unit-keiron-emanator",
+    "Description": "Stationary timed-life unit which provides vision in an area.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Emanator",
+    "EditorCategories": {
+      "ObjectType": "Other",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 55
+  },
+  {
+    "Id": "Elytron",
+    "Icon": "btn-unit-keiron-elytron",
+    "Description": "Combat escorts that automatically attack their Myriad's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Elytron",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "Inducer",
+    "Icon": "btn-unit-keiron-inducer",
+    "Description": "Siege unit that launches an orb which must return before firing again.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Inducer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "Pulsar",
+    "Icon": "btn-unit-keiron-pulsar",
+    "Description": "Durable close range combat unit. Can be upgraded to use the Dampener ability.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Pulsar",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 15
+  },
+  {
+    "Id": "Myriad",
+    "Icon": "btn-unit-keiron-myriad",
+    "Description": "Siege unit. Can produce and attack with Elytra.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Myriad",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "Sanctum",
+    "Icon": "btn-building-keiron-sanctum",
+    "Description": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+    "Name": "Sanctum",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 56
+  },
+  {
+    "Id": "Titan",
+    "Icon": "btn-unit-keiron-titan",
+    "Description": "Heavy assault walker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Titan",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "Pantheon",
+    "Icon": "btn-building-keiron-pantheon",
+    "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Titans from the Citadel",
+    "Name": "Pantheon",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 60
+  },
+  {
+    "Id": "Umbra",
+    "Icon": "btn-unit-keiron-umbra",
+    "Description": "Tactical cloaking anti-armored specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+    "Name": "Umbra",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "Pariah",
+    "Icon": "btn-unit-keiron-pariah",
+    "Description": "Light melee warrior. Can use Projection.<br/><br/><span style=\"color: #FFFF80\">Can target ground units.</span>",
+    "Name": "Pariah",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "Subjecter",
+    "Icon": "btn-unit-keiron-subjecter",
+    "Description": "Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can target ground and air units.</span>",
+    "Name": "Subjecter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 16
+  },
+  {
+    "Id": "Echo",
+    "Icon": "btn-unit-keiron-echo",
+    "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+    "Name": "Echo",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 30
+  },
+  {
+    "Id": "Edifice",
+    "Icon": "btn-building-keiron-edifice",
+    "Description": "Basic tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pariah from the Citadel<br/>  - Volts from the Citadel<br/>  - Oculi from the Converter",
+    "Name": "Edifice",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 55
+  },
+  {
+    "Id": "Foundry",
+    "Icon": "btn-building-keiron-foundry",
+    "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Umbrae from the Citadel",
+    "Name": "Foundry",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 58
+  },
+  {
+    "Id": "Outlet",
+    "Icon": "btn-building-keiron-outlet",
+    "Description": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Apertures from the Citadel<br/>  - Auroras from the Citadel",
+    "Name": "Outlet",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 62
+  },
+  {
+    "Id": "Volt",
+    "Icon": "btn-unit-keiron-volt",
+    "Description": "Light ranged warrior.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Volt",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "Reliquary",
+    "Icon": "btn-building-keiron-reliquary",
+    "Description": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+    "Name": "Reliquary",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Keir",
+    "GlossaryPriority": 16
+  },
+  {
+    "Id": "Arsenal",
+    "Icon": "btn-building-supplydepotbronze",
+    "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+    "Name": "Arsenal",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 248
+  },
+  {
+    "Id": "ArsenalHelpDrop",
+    "Icon": "btn-building-supplydepotbronze",
+    "Description": "Provides Logistics Capacity.<br/>Logistics allow you to deploy additional units.<br/>Can be transformed into a variety of defense towers.",
+    "Name": "Arsenal Help Drop",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 248
+  },
+  {
+    "Id": "CitadelAAT",
+    "Icon": "btn-unit-predatortankbronze",
+    "Description": "Advanced armored unit, equipped with heavy composite armor, powerful primary cannon and long-range ATGMs.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+    "Name": "Citadel AAT",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 130
+  },
+  {
+    "Id": "DrakkarAPC",
+    "Icon": "btn-unit-ued-militarizedtransport",
+    "Description": "Infantry armored personnel carrier, from the inside you can attack only ground targets and from a maximum distance of 5. When the Drakkar is destroyed, the soldiers inside do not die and safely leave the car.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground targets.</span>",
+    "Name": "Drakkar APC",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 80
+  },
+  {
+    "Id": "Huracan",
+    "Icon": "btn-unit-terran-flametank",
+    "Description": "Autonomous combat drone. It is extremely effective when storming fortifications.<br/><br/><span style=\"color: #ffff8a\">Can attack ground targets.</span>",
+    "Name": "Huracan",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "PoliticalAdvisor",
+    "Icon": "btn-unit-terran-ghostmengsk",
+    "Description": "Master of ideological warfare. Can inspire troops around her to fight harder, and is also equipped with Strike Grenades.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">",
+    "Name": "Political Advisor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "Lazarus",
+    "Icon": "btn-unit-ued-spectre",
+    "Description": "Combat medic. Capable of reanimating deceased Directorate infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Lazarus",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 70
+  },
+  {
+    "Id": "Garmr",
+    "Icon": "btn-ued-dog",
+    "Description": "Genetically engineered monstrosity. Its fiery breath is effective against lightly-armored targets, and it can tunnel through the ground to cross vast distances quickly.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Garmr",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 65
+  },
+  {
+    "Id": "SuppressionTower",
+    "Icon": "btn-building-laserturretbronze",
+    "Description": "Anti-ground defensive structure, effective against lightly-armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Suppression Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 310
+  },
+  {
+    "Id": "PeenemundeMRLS",
+    "Icon": "btn-ued-peenemudre",
+    "Description": "Long-range artillery. Launches missiles that deal devastating damage in the target area, but can potentially be avoided.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Peenemunde MRLS",
+    "EditorCategories": {
+      "ObjectFamily": "Melee",
+      "ObjectType": "Unit"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 126
+  },
+  {
+    "Id": "EnrichmentTower",
+    "Icon": "btn-building-terran-sensortower-silver",
+    "Description": "Being installed next to mineral druses allows you to extract more minerals.",
+    "Name": "Enrichment Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 248
+  },
+  {
+    "Id": "HonorguardCruiser",
+    "Icon": "btn-ued-shieldwall",
+    "Description": "Versatile screening ship.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Honorguard",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 210
+  },
+  {
+    "Id": "HeavyTower",
+    "Icon": "btn-building-guardianturretbronze",
+    "Description": "Anti-ground defensive structure, effective against armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Heavy Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 310
+  },
+  {
+    "Id": "Taranis",
+    "Icon": "btn-unit-terran-troopermengskrocket",
+    "Description": "Heavily-armed infantry, effective against clustered targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Taranis",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "SupportShuttle",
+    "Icon": "btn-ued-supportshuttle",
+    "Description": "Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.",
+    "Name": "Support Shuttle",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 185
+  },
+  {
+    "Id": "TransportShuttle",
+    "Icon": "btn-ued-dropship",
+    "Description": "Large transport ship, capable of transporting big squads of infantry & armored vehicles.",
+    "Name": "Transport Shuttle",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 185
+  },
+  {
+    "Id": "MissileTower",
+    "Icon": "btn-building-missileturretbronze",
+    "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Missile Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 310
+  },
+  {
+    "Id": "Napoleon",
+    "Icon": "btn-unit-object188bronze",
+    "Description": "Versatile main battle tank, effective against lightly-armored targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+    "Name": "Napoleon MBT",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 130
+  },
+  {
+    "Id": "CrimsonEye",
+    "Icon": "btn-ued-crimsoneye",
+    "Description": "Low-altitude scouting drone.<br/><br/><span style=\"color: #FFE303\">There is a detection function</span>",
+    "Name": "Crimson Eye",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "TachyonRelay",
+    "Icon": "btn-ued-tychon_relay",
+    "Description": "Long-range communications array. Provides equipment authorizations for the Directorate Navy assets.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Honorguards",
+    "Name": "Tachyon Relay",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 333
+  },
+  {
+    "Id": "MunitionsFactory",
+    "Icon": "btn-ued-munitions-factory",
+    "Description": "Vehicle support structure. Provides equipment authorizations for basic vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Sentinel MBT<br/>- Typhoon LMT",
+    "Name": "Munitions Factory",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 326
+  },
+  {
+    "Id": "Strikefighter",
+    "Icon": "btn-ued-pacifier",
+    "Description": "Armored multirole fighter.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+    "Name": "Strikefighter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 210
+  },
+  {
+    "Id": "BeaconUED",
+    "Icon": "btn-unit-terran-nova-shredder",
+    "Description": "UED engineering vehicle. Can be deployed at a specified site in order to calldown Operation Headquarters from orbit.",
+    "Name": "UED Beacon",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "MilitaryResearchStation",
+    "Icon": "btn-ued-engineering",
+    "Description": "Advanced upgrade structure. Unlocks various equipment authorizations for spacecraft & vehicles.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Peenemunde MRLS<br/>- Citadel AAT",
+    "Name": "Military Research Station",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 326
+  },
+  {
+    "Id": "StarshipMaintenancePlant",
+    "Icon": "btn-ued-starship-plant",
+    "Description": "Starship support structure. Provides equipment authorizations for basic vessels.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Strikefighters<br/>- Valkyries<br/>- Transport Shuttles<br/>- Support Shuttles",
+    "Name": "Starship Maintenance Plant",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 326
+  },
+  {
+    "Id": "TacticsAcademy",
+    "Icon": "btn-structure-ued-sciencefacility",
+    "Description": "Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Taranises<br/>- Lazaruses<br/>- Drakkar APCs<br/>- Defense Towers",
+    "Name": "Tactics Academy",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 256
+  },
+  {
+    "Id": "FieldBureau",
+    "Icon": "btn-structure-ued-merccompound",
+    "Description": "An upgrade structure that supports Political Advisors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Political Advisors",
+    "Name": "Field Bureau",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 256
+  },
+  {
+    "Id": "TeleportationNode",
+    "Icon": "btn-ued-teleportation-node",
+    "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+    "Name": "Teleportation Node",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 329
+  },
+  {
+    "Id": "Valkyrie",
+    "Icon": "btn-unit-ued-valkyrie",
+    "Description": "Dedicated AA corvette, capable of eliminating entire squadrons with a single salvo.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+    "Name": "Valkyrie",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 188
+  },
+  {
+    "Id": "OperationHeadquarters",
+    "Icon": "btn-structure-ued-biodome",
+    "Description": "Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Salvagers<br/>- Beacons",
+    "Name": "Operation Headquarters",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 30
+  },
+  {
+    "Id": "VespenePurificationPlant",
+    "Icon": "btn-structure-ued-refineryautomated",
+    "Description": "Calldown onto a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Vespene Purification Plant",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "VespenePurificationPlantRich",
+    "Icon": "btn-structure-ued-refineryautomated",
+    "Name": "Rich Vespene Purification Plant",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 244
+  },
+  {
+    "Id": "Salvager",
+    "Icon": "btn-unit-terran-watcher",
+    "Description": "Basic resource gathering unit for the Directorate army.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Salvager",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "StrikeTrooper",
+    "Icon": "btn-ued_striketrooper",
+    "Description": "Highly-trained Directorate infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Strike Trooper",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 110
+  },
+  {
+    "Id": "InfusionTower",
+    "Icon": "btn-structure-ued-hivemindemulator",
+    "Description": "Support structure. Regenerates health for all nearby allied units.<br/><span style=\"color: #FFE303\"><br/>There is a detection function</span>",
+    "Name": "Infusion Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 248
+  },
+  {
+    "Id": "Typhoon",
+    "Icon": "btn-ued-desolator",
+    "Description": "Artillery vehicle. Supports the offensive with devastating missile salvos.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Typhoon LMT",
+    "EditorCategories": {
+      "ObjectFamily": "Melee",
+      "ObjectType": "Unit"
+    },
+    "Race": "UED",
+    "GlossaryPriority": 126
+  },
+  {
+    "Id": "NHbrHorror",
+    "Icon": "btn-hybrid-unit-horror",
+    "Description": "Late-game assault-tanky air unit. Deals splash damage to enemy air units and slows down ground units.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Horror",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 35
+  },
+  {
+    "Id": "NHbrNavigator",
+    "Icon": "btn-hybrid-unit-transport",
+    "Description": "Mid-game flying transport. Can teleport to any <span style=\"color: #FF8080\">Void Portal</span>.<br/><br/><c val=\"#Network\">Network Power Source.</span>",
+    "Name": "Navigator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 34
+  },
+  {
+    "Id": "NHbrNemesisAdvanced",
+    "Icon": "btn-hybrid-unit-advanced-nemesis",
+    "Description": "Flagship air unit. Can use two attack modes.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Advanced Nemesis",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 36
+  },
+  {
+    "Id": "NHbrNemesis",
+    "Icon": "btn-hybrid-unit-nemesis",
+    "Description": "Flagship air unit. Can use two attack modes.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Nemesis",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 36
+  },
+  {
+    "Id": "NHbrPollinator",
+    "Icon": "btn-hybrid-unit-pollinator",
+    "Description": "Air unit. Posions its target from the void.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Pollinator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 32
+  },
+  {
+    "Id": "NHbrScreamer",
+    "Icon": "btn-hybrid-unit-screamer",
+    "Description": "Support mid-game air unit. Can restore <c val=\"#Network\">Network</span> to friendly units. Can use «Desolation» to cloak allies.<br/><br/><span style=\"color: #f078ff\">Restores <b>1.10</b> energy per second.</span><br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+    "Name": "Screamer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 31
+  },
+  {
+    "Id": "NHbrSpirit",
+    "Icon": "btn-unit-protoss-zeratulconstructmini",
+    "Description": "Fast Hybrid Scout unit. Gets cloaking after upgrade.",
+    "Name": "Spirit",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "NHbrConstruct@AntiAir",
+    "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+    "Description": "Powerful Anti-Air guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Ground construct.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Construct (Anti-Air)",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "NHbrConstruct@AntiGround",
+    "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+    "Description": "Powerful Anti-Ground guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Air construct.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Construct (Anti-Ground)",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 15
+  },
+  {
+    "Id": "NHbrVespeneConcentrator",
+    "Icon": "btn-hybrid-building-forge",
+    "Description": "Contains specific upgrades for Hybrids. Build nearby Harvesters to increase their vespene amount.",
+    "Name": "Vespene Concentrator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "NHbrCrystallicShrine",
+    "Icon": "btn-hybrid-building-darkshrine",
+    "Description": "Contains weapon and armor upgrades for Hybrid units <br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Horrors",
+    "Name": "Crystallic Shrine",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "NHbrHarvesterRich",
+    "Icon": "btn-building-protoss-assimilator-ihanrii",
+    "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Harvester",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "NHbrHarvester",
+    "Icon": "btn-building-protoss-assimilator-ihanrii",
+    "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Harvester",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "NHbrProcessor",
+    "Icon": "btn-hybrid-building-roboticsfacility",
+    "Description": "Contains upgrades for Hybrid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Upgrade Reaver to Advanced Reaver<br/>- Upgrade Dominator to Advanced Dominator",
+    "Name": "Processor",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "NHbrProcessingCore",
+    "Icon": "btn-hybrid-building-artifactcontainmentfieldvoid",
+    "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>. <span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Reavers<br/>- Dominators",
+    "Name": "Processing Core",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "NHbrIonicCrystal@Moveable",
+    "Icon": "btn-hybrid-building-pylon",
+    "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+    "Name": "Ionic Crystal",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 18
+  },
+  {
+    "Id": "NHbrIonicCrystal",
+    "Icon": "btn-hybrid-building-pylon",
+    "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+    "Name": "Ionic Crystal",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 3
+  },
+  {
+    "Id": "NHbrNemesisCatacomb",
+    "Icon": "btn-hybrid-building-fleshbender",
+    "Description": "Contains upgrades for Hybrid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Nemesis",
+    "Name": "Nemesis Catacomb",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 26
+  },
+  {
+    "Id": "NHbrEngine",
+    "Icon": "btn-hybrid-building-roboticssupportbay",
+    "Description": "<span style=\"color: #FFFF80\">Containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Silents<br/>- Dreadnoks",
+    "Name": "Engine",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "NHbrStasisCell",
+    "Icon": "btn-hybrid-building-stasiscell",
+    "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>, <span style=\"color: #FFFF80\">containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Flayers<br/>- Warbringers<br/>- Sentinels",
+    "Name": "Stasis Cell",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "NHbrTemple",
+    "Icon": "btn-hybrid-building-temple",
+    "Description": "Primary structure. Can receive gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Minions",
+    "Name": "Temple",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "NHbrVoidPortal",
+    "Icon": "btn-hybrid-structure-shield-generator",
+    "Description": "<span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Screamers<br/>- Pollinators<br/>- Navigators",
+    "Name": "Void Portal",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "NHbrVoidRift",
+    "Icon": "btn-hybrid-building-voidrift",
+    "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+    "Name": "Void Rift",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "NHbrChimera",
+    "Icon": "btn-hybrid-unit-chimera",
+    "Description": "Powerful early game melee warrior.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Chimera",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 2
+  },
+  {
+    "Id": "NHbrDominator",
+    "Icon": "btn-hybrid-unit-destroyer",
+    "Description": "Late-game psionic monstrous creature. Has a devastating ranged attack.<br/><br/><span style=\"color: #ffff8a\">Can attack air and ground units.</span>",
+    "Name": "Dominator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "NHbrDreadnok",
+    "Icon": "btn-hybrid-unit-dreadnok",
+    "Description": "Strong support unit that can disable casters.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Dreadnok",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "NHbrFlayer",
+    "Icon": "btn-hybrid-unit-flayer",
+    "Description": "Ferocious mid-game annihilator of light-units.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Flayer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "NHbrMinion",
+    "Icon": "btn-hybrid-unit-harvester",
+    "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Minion",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "NHbrReaver",
+    "Icon": "btn-hybrid-unit-reaver",
+    "Description": "Late-game monstrous creature. Has a devastating melee attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Reaver",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "NHbrSentinel",
+    "Icon": "btn-hybrid-unit-sentinel",
+    "Description": "Mid-game fast unit. Can use <span style=\"color: #FFFF80\">Jump</span> ability.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Sentinel",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 14
+  },
+  {
+    "Id": "NHbrSilent",
+    "Icon": "btn-hybrid-unit-silent",
+    "Description": "Ranged mid-game support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "Name": "Silent",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "NHbrWarbringer",
+    "Icon": "btn-hybrid-unit-shifter",
+    "Description": "Potent mid-game destroyer of armored units. Can use «Mace Strike» to provide long-range support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+    "Name": "Warbringer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 13
+  },
+  {
+    "Id": "NHbrWarrior",
+    "Icon": "btn-hybrid-unit-warrior",
+    "Description": "General-purpose early-game infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Warrior",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "NHbr",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "GenesisPit",
+    "Icon": "wireframe-zerg-broodlingnest",
+    "Description": "Spawns units like its parent Deep One.",
+    "Name": "Genesis Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "AugmentationPit",
+    "Icon": "wireframe-zerg-primalproductiona",
+    "Description": "Contains upgrades for Dragon units.",
+    "Name": "Augmentation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "AugmentationPitFrontier",
+    "Icon": "wireframe-zerg-primalproductiona",
+    "Description": "Contains upgrades for Dragon units.",
+    "Name": "Augmentation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "AugmentationPitGreater",
+    "Icon": "wireframe-zerg-primalproductiona",
+    "Description": "Contains upgrades for Dragon units.",
+    "Name": "Augmentation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "AugmentationPitLesser",
+    "Icon": "wireframe-zerg-primalproductiona",
+    "Description": "Contains upgrades for Dragon units.",
+    "Name": "Augmentation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "AugmentationPitTowering",
+    "Icon": "wireframe-zerg-primalproductiona",
+    "Description": "Contains upgrades for Dragon units.",
+    "Name": "Augmentation Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "UnseenBeast",
+    "Icon": "wireframe-critter-matriarchsnowbeast",
+    "Description": "Mobile melee assassin. Cloak renders the unit invisible to enemies without detection.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>Teleport Assault</span>",
+    "Name": "Unseen Beast",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "Fleshrender",
+    "Icon": "btn-unit-zerg-scourge",
+    "Description": "Fast flying melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+15 Life<br/>Infernal Effigy</span>",
+    "Name": "Fleshrender",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 41
+  },
+  {
+    "Id": "AuroraConduit",
+    "Icon": "btn-unit-zerg-mutalisk-broodlord",
+    "Description": "Flying ranged support unit. Reduces enemy armor on attack.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Range<br/>Nether Shock chain deals damage</span>",
+    "Name": "Aurora Conduit",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "BrimstoneDemolisher",
+    "Icon": "btn-unit-zerg-brakk",
+    "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+    "Name": "Brimstone Demolisher",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 34
+  },
+  {
+    "Id": "GenesisPitGreater",
+    "Icon": "wireframe-zerg-broodlingnest",
+    "Description": "Spawns greater Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Berserkers<br/>- Skyrazers",
+    "Name": "Genesis Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "GenesisPitLesser",
+    "Icon": "wireframe-zerg-broodlingnest",
+    "Description": "Spawns lesser Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+    "Name": "Genesis Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "GenesisPitTowering",
+    "Icon": "wireframe-zerg-broodlingnest",
+    "Description": "Spawns flying Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Fleshreders<br/>- Aurora Conduits<br/>- Arkwyrms",
+    "Name": "Genesis Pit",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "Skyrazer",
+    "Icon": "btn-unit-zerg-tyrannozor",
+    "Description": "Ranged unit. Projectiles may retarget. Powerful anti-air attack.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Attack Projectile</span>",
+    "Name": "Skyrazer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 32
+  },
+  {
+    "Id": "SunkenGuardian",
+    "Icon": "btn-building-zerg-impalercolony",
+    "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "Name": "Sunken Guardian",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 51
+  },
+  {
+    "Id": "DenizenoftheDeep",
+    "Icon": "btn-building-zerg-primalhive",
+    "Description": "Primary structure. Used to receive gathered resources. Propogates economic Dragon structures.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Plodders<br/>- Razorbacks<br/>- Coagulaters",
+    "Name": "Denizen of the Deep",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "Coagulater",
+    "Icon": "btn-building-zerg-lurkerden",
+    "Description": "Propogated over a Vespene Geyser to allow harvesting of vespene gas.",
+    "Name": "Coagulater",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 20
+  },
+  {
+    "Id": "GrimGlider",
+    "Icon": "btn-critter-sporeray",
+    "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+    "Name": "Grim Glider",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 45
+  },
+  {
+    "Id": "HandofPower",
+    "Icon": "btn-unit-zerg-impaler",
+    "Description": "Caster unit. Can use Crushing Gravity and Portal. Can be upgraded to use Frenzy.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration</span>",
+    "Name": "Hand of Power",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 33
+  },
+  {
+    "Id": "PhlogistonGuardian",
+    "Icon": "talent-zagara-level13-bilelauncherresearchbundle",
+    "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Phlogiston Guardian",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 52
+  },
+  {
+    "Id": "LesserDeepOne",
+    "Icon": "btn-building-zerg-nydusworm",
+    "Description": "Spawns lesser Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Flamespitters<br/>- Hunters",
+    "Name": "Lesser Deep One",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "FrontierDeepOne",
+    "Icon": "btn-unit-zerg-nyduscreeptower",
+    "Description": "Propogates basic Dragon structures. Heals nearby biological units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Razorbacks<br/>- Augmentation Pits<br/>- Sunken Guardians<br/>- Phlogiston Guardians",
+    "Name": "Frontier Deep One",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 15
+  },
+  {
+    "Id": "GreaterDeepOne",
+    "Icon": "btn-unit-zerg-nydusdragon",
+    "Description": "Spawns greater Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Berserkers<br/>- Skyrazers",
+    "Name": "Greater Deep One",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "ToweringDeepOne",
+    "Icon": "btn-unit-zerg-nydusdestroyer",
+    "Description": "Spawns flying Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Fleshrenders<br/>- Aurora Conduits<br/>- Arkwyrms",
+    "Name": "Towering Deep One",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "Arkwyrm",
+    "Icon": "btn-unit-zerg-leviathan",
+    "Description": "Flying transport. Can load and unload units. Ranged unload.<br/><br/><span style=\"color: #00FF00\">Ascend:<br/>+75 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
+    "Name": "Arkwyrm",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 43
+  },
+  {
+    "Id": "Plodder",
+    "Icon": "btn-critter-crabeetle",
+    "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can excavate structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+10 Life<br/>+1 Armor<br/>+3 Minerals Gathered<br/>+2 Vespene Gathered</span>",
+    "Name": "Plodder",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "Razorback",
+    "Icon": "btn-unit-zerg-quillgore",
+    "Description": "Provides supply.<br/>Supply allows you to create more units.",
+    "Name": "Razorback",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "Flamespitter",
+    "Icon": "btn-unit-zerg-primalzergling",
+    "Description": "Fragile ranged unit. Projectiles may retarget.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Damage<br/>Can Attack air units</span>",
+    "Name": "Flamespitter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "DragonHunter",
+    "Icon": "btn-unit-zerg-ravasaur",
+    "Description": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
+    "Name": "Dragonhunter",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "HornedMagus",
+    "Icon": "btn-critter-tastelope",
+    "Description": "Ranged caster unit. Projectiles may retarget. Can use Fire Shield and Invigorate. Can be upgraded to use Shroud.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+60 Life<br/>+100% Energy Regeneration</span>",
+    "Name": "Horned Magus",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "Berserker",
+    "Icon": "btn-unit-zerg-primalultralisk",
+    "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+    "Name": "Berserker",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 31
+  },
+  {
+    "Id": "VolcanicHarbinger",
+    "Icon": "btn-lostvinking-swarmguardian",
+    "Description": "Heavy siege flyer that charges up attacks.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+50% Attack Speed<br/>+1 Attack Range</span>",
+    "Name": "Volcanic Harbinger",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Dragon",
+    "GlossaryPriority": 44
+  },
+  {
+    "Id": "InfantryOfficer",
+    "Icon": "btn-unit-upl-infantryofficer",
+    "Description": "Company Commander<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span> <br/>Grants detection to all transport units and turrets when inside. Condors grants 25% wider detection range. <br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Infantry Officer",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 30
+  },
+  {
+    "Id": "InfantryRifle",
+    "Icon": "btn-unit-upl-infantryrifle",
+    "Description": "Shock Trooper<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Combat Infantry",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "InfantryRifleM3Sniper",
+    "Icon": "btn-unit-upl-infantryrifle",
+    "Description": "Shock Trooper<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Combat Infantry",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "MiningDrone",
+    "Icon": "btn-unit-upl-miningdrone",
+    "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "Mining Drone",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "InfantryRocket",
+    "Icon": "btn-unit-upl-infantryrocket",
+    "Description": "Anti-Armor<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Rocket Trooper",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 25
+  },
+  {
+    "Id": "InfantryFlamethrower",
+    "Icon": "btn-unit-upl-infantryflamethrower",
+    "Description": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "Incinerator",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 23
+  },
+  {
+    "Id": "InfantryMortar",
+    "Icon": "btn-unit-upl-infantrymortar",
+    "Description": "Artillery Support<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "Mortar Trooper",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 24
+  },
+  {
+    "Id": "InfantryHeavy",
+    "Icon": "btn-unit-upl-infantryheavy",
+    "Description": "Heavy Assault<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "Heavy Gunner",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 22
+  },
+  {
+    "Id": "CondorLanded",
+    "Icon": "btn-unit-upl-condortransport",
+    "Description": "Reinforced Aerial Transport",
+    "Name": "Condor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 53
+  },
+  {
+    "Id": "OspreyLanded",
+    "Icon": "btn-unit-upl-ospreyhelicopter",
+    "Description": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Osprey",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 52
+  },
+  {
+    "Id": "CSVDeployed",
+    "Icon": "btn-unit-upl-csvdeployed",
+    "Description": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "CSV",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 44
+  },
+  {
+    "Id": "CSV",
+    "Icon": "btn-unit-upl-csv",
+    "Description": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "CSV",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 44
+  },
+  {
+    "Id": "Condor",
+    "Icon": "btn-unit-upl-condortransport",
+    "Description": "Reinforced Aerial Transport",
+    "Name": "Condor",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 53
+  },
+  {
+    "Id": "RoutheTank",
+    "Icon": "btn-unit-upl-routhetank",
+    "Description": "Armored Assault<br/><br/><span style=\"color: #FFFF8A\">Can Attack Ground units.</span>",
+    "Name": "Routhe Tank",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 43
+  },
+  {
+    "Id": "A6",
+    "Icon": "btn-unit-upl-a6",
+    "Description": "Mobile Anti-Air Platform<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units</span>",
+    "Name": "A-6",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 41
+  },
+  {
+    "Id": "Osprey",
+    "Icon": "btn-unit-upl-ospreyhelicopter",
+    "Description": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Osprey",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 52
+  },
+  {
+    "Id": "TR17",
+    "Icon": "btn-unit-upl-tr17",
+    "Description": "Mobile Artillery<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "TR-17",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 42
+  },
+  {
+    "Id": "RaptorJet",
+    "Icon": "btn-unit-upl-raptofighterjet",
+    "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
+    "Name": "Raptor Jet",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 51
+  },
+  {
+    "Id": "Z1",
+    "Icon": "btn-unit-upl-z1",
+    "Description": "Enhanced Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "Z-1",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "UPLBuildingBase",
+    "EditorCategories": {
+      "ObjectType": "Permanent",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 250
+  },
+  {
+    "Id": "UPLSolitaire",
+    "Icon": "btn-building-upl-uplsolitaire",
+    "Description": "Manned Defensive structure.  <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+    "Name": "Solitaire",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 250
+  },
+  {
+    "Id": "UPLRnDFacility",
+    "Icon": "btn-building-upl-uplr&d",
+    "Description": "Research and Development.  <br/><br/>Research upgrades for your forces.",
+    "Name": "R & D Facility",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "UPLAirstrip",
+    "Icon": "btn-building-upl-uplairstrip",
+    "Description": "Aircraft production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>-  <b>Raptor Jet</b><br/>-  <b>Osprey</b><br/>-  <b>Condor</b>",
+    "Name": "Airstrip",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 32
+  },
+  {
+    "Id": "UPLElectrostaticDefenseTower",
+    "Icon": "btn-building-upl-uplelectrostaticdefensetower",
+    "Description": "Automated Defensive Structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+    "Name": "Electrostatic Defense Tower",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 250
+  },
+  {
+    "Id": "UPLCommStation",
+    "Icon": "btn-building-upl-uplcommstation",
+    "Description": "SatNet Communications<br/><br/>Increases speed of nearby allied units and detects cloaked units.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+    "Name": "Comm Station",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 12
+  },
+  {
+    "Id": "UPLExhumer",
+    "Icon": "btn-building-upl-uplexhumer",
+    "Description": "Resource Production Facility <br/><br/>Built over a Fluorine Deposit to Allow Production of Francine Gas",
+    "Name": "Exhumer",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "UPLExhumerRich",
+    "Icon": "btn-building-upl-uplexhumer",
+    "Description": "Resource Production Facility <br/><br/>Built over a Fluorine Deposit to Allow Production of Francine Gas",
+    "Name": "Exhumer",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 11
+  },
+  {
+    "Id": "UPLGenerator",
+    "Icon": "btn-building-upl-uplgenerator",
+    "Description": "Provides supply.<br/>Supply allows you to create more units.",
+    "Name": "Fusion Generator",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 10
+  },
+  {
+    "Id": "UPLHeadquarters",
+    "Icon": "btn-building-upl-uplheadquarters",
+    "Description": "Primary structure. Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Mining Drone</b><br/>- <b>CARR</b>",
+    "Name": "Headquarters",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 1
+  },
+  {
+    "Id": "UPLForwardOperatingBase",
+    "Icon": "btn-building-upl-uplforwardoperatingbase",
+    "Description": "Support Unit Production<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Infantry Officer</b><br/>- <b>CSV</b>",
+    "Name": "Forward Operating Base",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 21
+  },
+  {
+    "Id": "UPLNightjar",
+    "Icon": "btn-building-upl-uplnightjar",
+    "Description": "Anti-Armor / Anti-Air Cannon<br/><br/><c val=\"#ColorAttackInfo\">Can Attack Ground and Air units.</span>",
+    "Name": "Nightjar",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 250
+  },
+  {
+    "Id": "UPLBillet",
+    "Icon": "btn-building-upl-uplbillet",
+    "Description": "Infantry training facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Combat Infantry</b><br/>- <b>Heavy Gunner</b><br/>- <b>Incinerator</b><br/>- <b>Mortar Trooper</b><br/>- <b>Rocket Trooper</b>",
+    "Name": "Billet",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 31
+  },
+  {
+    "Id": "UPLManufacturingFacility",
+    "Icon": "btn-building-upl-uplmanufacturingfacility",
+    "Description": "Ground Vehicle Production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>-  <b>Z-1</b><br/>-  <b>A-6</b><br/>-  <b>TR-17</b><br/>-  <b>Routhe Tank</b>",
+    "Name": "Manufacturing Facility",
+    "EditorCategories": {
+      "ObjectType": "Structure",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 32
+  },
+  {
+    "Id": "CARR",
+    "Icon": "btn-unit-upl-carr",
+    "Description": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+    "Name": "CARR",
+    "EditorCategories": {
+      "ObjectType": "Hero",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 5
+  },
+  {
+    "Id": "Z2",
+    "Icon": "btn-unit-upl-z2",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "UPL",
+    "GlossaryPriority": 40
+  },
+  {
+    "Id": "Battlecruiser22",
+    "Icon": "btn-unit-terran-cerberus",
+    "EditorCategories": {
+      "ObjectType": "Unit",
+      "ObjectFamily": "Melee"
+    },
+    "Race": "Terr",
+    "GlossaryPriority": 210
+  }
+]

@@ -1,0 +1,329 @@
+{
+  "Name": "Honorguard",
+  "Description": "Versatile screening ship.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 375,
+  "LifeMax": 375,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 2,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.9,
+  "Mass": 0.6,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "HonorguardCruiser",
+  "HotkeyAlias": "HonorguardCruiser",
+  "SelectAlias": "HonorguardCruiser",
+  "SubgroupAlias": "HonorguardCruiser",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "HonorguardCruiser",
+  "AIEvaluateAlias": "HonorguardCruiser",
+  "ReviveType": "HonorguardCruiser",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "HonorguardCruiser/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "HonorguardCruiser/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Massive"
+  ],
+  "LifeArmor": 4,
+  "Speed": 1.9843,
+  "Acceleration": 1.8125,
+  "Sight": 12,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -6,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 400,
+    "Vespene": 300
+  },
+  "RepairTime": 100,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 140,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserStop2,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attackUED,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 700,
+  "ScoreKill": 700,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 80,
+  "TacticalAIThink": "AIThinkBattleCruiser",
+  "TechAliasArray": [
+    "Alias_BattlecruiserClass"
+  ],
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 210,
+  "GlossaryStrongArray": [
+    "Liberator",
+    "Mutalisk",
+    "Carrier"
+  ],
+  "GlossaryWeakArray": [
+    "VikingFighter",
+    "Corruptor",
+    "VoidRay"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-ued-shieldwall",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "HonorguardCruiser",
+  "Weapons": [
+    {
+      "Link": "TachyonLaserCannons",
+      "Id": "TachyonLaserCannons",
+      "Name": "Tachyon Laser Cannons",
+      "Amount": 32,
+      "AttributeBonus": {
+        "Armored": 16
+      },
+      "Kind": "Ranged",
+      "DisplayAttackCount": 1,
+      "TargetFilters": "",
+      "Range": 8.5,
+      "Period": 2.2
+    },
+    {
+      "Link": "BoomerangMissileLaunchers",
+      "Id": "BoomerangMissileLaunchers",
+      "Name": "Boomerang Missile Launchers",
+      "Amount": 4,
+      "AttributeBonus": {
+        "Armored": 4
+      },
+      "Kind": "Ranged",
+      "DisplayAttackCount": 11,
+      "TargetFilters": "",
+      "Range": 4.499,
+      "Period": 4.25
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "PrototypePositronicWeaponry",
+      "Id": "PrototypePositronicWeaponry",
+      "Icon": "btn-ability-mengsk-ghost-tacticalmissilestrike",
+      "Name": "Prototype Positronic Weaponry"
+    },
+    {
+      "Link": "EnrichedUraniumOrdinance",
+      "Id": "EnrichedUraniumOrdinance",
+      "Icon": "btn-ability-mengsk-topbar-nuclearannihilation",
+      "Name": "Enriched Uranium Ordinance"
+    },
+    {
+      "Link": "UEDArmorLevel1",
+      "Id": "UEDArmorLevel1",
+      "Name": "Beathanium Defensive Programming, level 1"
+    },
+    {
+      "Link": "UEDArmorLevel2",
+      "Id": "UEDArmorLevel2",
+      "Name": "Beathanium Defensive Programming, level 2"
+    },
+    {
+      "Link": "UEDArmorLevel3",
+      "Id": "UEDArmorLevel3",
+      "Name": "Beathanium Defensive Programming, level 3"
+    },
+    {
+      "Link": "UEDVehicalsLevel2",
+      "Id": "UEDVehicalsLevel2",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 2"
+    },
+    {
+      "Link": "UEDVehicalsLevel3",
+      "Id": "UEDVehicalsLevel3",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 3"
+    },
+    {
+      "Link": "UEDVehicalsLevel1",
+      "Id": "UEDVehicalsLevel1",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 1"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BattlecruiserStop2",
+      "Id": "BattlecruiserStop2",
+      "Name": "Battlecruiser Stop"
+    },
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "que12",
+      "Id": "que12",
+      "Name": "Queue (1)"
+    },
+    {
+      "Link": "attackUED",
+      "Id": "attackUED",
+      "Name": "Attack UED"
+    },
+    {
+      "Link": "PositronicMissileStrike",
+      "Id": "PositronicMissileStrike",
+      "Name": "Positronic Missile Strike"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "TachyonRelay",
+      "Icon": "btn-ued-tychon_relay",
+      "Description": "Long-range communications array. Provides equipment authorizations for the Directorate Navy assets.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Honorguards",
+      "Name": "Tachyon Relay"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "BattlecruiserStop2,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attackUED,Execute"
+    }
+  ]
+}

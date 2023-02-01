@@ -1,0 +1,203 @@
+{
+  "Name": "Reactor",
+  "Description": "Allows 2 units to be created simultaneously.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 400,
+  "LifeMax": 400,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Reactor",
+  "HotkeyAlias": "Reactor",
+  "SelectAlias": "Reactor",
+  "SubgroupAlias": "Reactor",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Reactor",
+  "AIEvaluateAlias": "Reactor",
+  "ReviveType": "Reactor",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Reactor/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Reactor/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_Reactor"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 50
+  },
+  "RepairTime": 50,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint3x3AddOn2x2",
+  "AddOnOffsetX": 2.5,
+  "AddOnOffsetY": -0.5,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 1,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "AddedOnArray": [
+    {
+      "UnitLink": "Barracks",
+      "BehaviorLink": "BarracksReactor"
+    },
+    {
+      "UnitLink": "Factory",
+      "BehaviorLink": "FactoryReactor"
+    },
+    {
+      "UnitLink": "Starport",
+      "BehaviorLink": "StarportReactor"
+    }
+  ],
+  "GlossaryPriority": 341,
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "Icon": "btn-building-terran-reactor",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Reactor",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "BarracksReactorMorph",
+      "Id": "BarracksReactorMorph",
+      "Name": "Nuclear Reactor Morph (Barracks)"
+    },
+    {
+      "Link": "FactoryReactorMorph",
+      "Id": "FactoryReactorMorph",
+      "Name": "Nuclear Reactor Morph (Factory)"
+    },
+    {
+      "Link": "StarportReactorMorph",
+      "Id": "StarportReactorMorph",
+      "Name": "Nuclear Reactor Morph (Starport)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

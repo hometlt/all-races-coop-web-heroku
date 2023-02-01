@@ -1,0 +1,317 @@
+{
+  "Name": "Observer",
+  "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 40,
+  "LifeMax": 40,
+  "LifeArmorName": "Protoss Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 0,
+  "TurningRate": 0,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "Cloaked",
+    "AISupport",
+    "ArmySelect",
+    "UseLineOfSight"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Observer",
+  "HotkeyAlias": "Observer",
+  "SelectAlias": "Observer",
+  "SubgroupAlias": "Observer",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Observer",
+  "AIEvaluateAlias": "Observer",
+  "ReviveType": "Observer",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Observer/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Observer/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "ShieldsStart": 20,
+  "ShieldsMax": 20,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "Speed": 0,
+  "Acceleration": 0,
+  "Height": 5,
+  "Food": -1,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 20,
+  "ScoreMake": 0,
+  "ScoreKill": 100,
+  "ScoreResult": "",
+  "SubgroupPriority": 36,
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "VisionHeight": 4,
+  "Sight": 13.75,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "PermanentlyCloakedObserver",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "MorphtoObserver",
+          "Type": "AbilCmd",
+          "AbilCmd": "ObserverSiegeMorphtoObserver,Execute",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Light",
+    "Mechanical"
+  ],
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "GlossaryPriority": 110,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 25,
+    "Vespene": 75
+  },
+  "ShieldRegenDelay": 10,
+  "RepairTime": 40,
+  "GlossaryStrongArray": [
+    "Banshee",
+    "LurkerMP",
+    "DarkTemplar"
+  ],
+  "GlossaryWeakArray": [
+    "MissileTurret",
+    "SporeCrawler",
+    "PhotonCannon"
+  ],
+  "Icon": "btn-unit-protoss-observer",
+  "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ObserverSiegeMode",
+  "Behaviors": [
+    {
+      "Link": "Detector13p75",
+      "Id": "Detector13p75"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel1",
+      "Id": "ProtossAirArmorsLevel1",
+      "Icon": "btn-upgrade-protoss-airarmorlevel1",
+      "Name": "Protoss Air Armor Level 1"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel2",
+      "Id": "ProtossAirArmorsLevel2",
+      "Icon": "btn-upgrade-protoss-airarmorlevel2",
+      "Name": "Protoss Air Armor Level 2"
+    },
+    {
+      "Link": "ProtossAirArmorsLevel3",
+      "Id": "ProtossAirArmorsLevel3",
+      "Icon": "btn-upgrade-protoss-airarmorlevel3",
+      "Name": "Protoss Air Armor Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "ObserverSiegeMorphtoObserver",
+      "Id": "ObserverSiegeMorphtoObserver",
+      "Name": "Observer Siege Morph to Observer"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "MorphtoObserver",
+      "Icon": "btn-unit-protoss-observer",
+      "Tooltip": "Transforms the Observer to standard Observer Mode. Allows the Observer to move at the cost of decreased sight radius.",
+      "Name": "Observer Mode",
+      "AbilCmd": "ObserverSiegeMorphtoObserver,Execute"
+    }
+  ]
+}

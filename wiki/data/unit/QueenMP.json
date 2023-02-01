@@ -1,0 +1,249 @@
+{
+  "Name": "Brood Queen",
+  "Description": "Support flyer. Can use Ensnare, Spawn Broodlings, and Infest Command Center.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 150,
+  "LifeMax": 150,
+  "LifeArmorName": "Zerg Flyer Carapace",
+  "Mover": "Fly",
+  "StationaryTurningRate": 799.9804,
+  "TurningRate": 799.9804,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "QueenMP",
+  "HotkeyAlias": "QueenMP",
+  "SelectAlias": "QueenMP",
+  "SubgroupAlias": "QueenMP",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "QueenMP",
+  "AIEvaluateAlias": "QueenMP",
+  "ReviveType": "QueenMP",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "QueenMP/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "QueenMP/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Biological"
+  ],
+  "LifeRegenRate": 0.2734,
+  "Speed": 3.25,
+  "Acceleration": 3.5,
+  "Sight": 11,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": 2,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "QueenMPEnsnare",
+          "Type": "AbilCmd",
+          "AbilCmd": "QueenMPEnsnare,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "QueenMPSpawnBroodlings",
+          "Type": "AbilCmd",
+          "AbilCmd": "QueenMPSpawnBroodlings,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "QueenMPInfestCommandCenter",
+          "Type": "AbilCmd",
+          "AbilCmd": "QueenMPInfestCommandCenter,Execute",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 13,
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Icon": "btn-unit-zerg-queen",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "QueenMP",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "QueenMPEnsnare",
+      "Id": "QueenMPEnsnare",
+      "Name": "Queen MPEnsnare"
+    },
+    {
+      "Link": "QueenMPSpawnBroodlings",
+      "Id": "QueenMPSpawnBroodlings",
+      "Name": "Queen MPSpawn Broodlings"
+    },
+    {
+      "Link": "QueenMPInfestCommandCenter",
+      "Id": "QueenMPInfestCommandCenter",
+      "Name": "Queen MPInfest Command Center"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "QueenMPEnsnare",
+      "Icon": "btn-ability-zerg-fungalgrowth-color",
+      "Tooltip": "Reduces movement of units in the targeted area by <b>50</b>% for <b>0</b> seconds. Reveals cloaked and burrowed units.",
+      "Name": "Ensnare",
+      "AbilCmd": "QueenMPEnsnare,Execute"
+    },
+    {
+      "Id": "QueenMPSpawnBroodlings",
+      "Icon": "btn-ability-zerg-swarmseeds-color",
+      "Tooltip": "Kills target biological unit and spawns <b>2</b> Broodlings.",
+      "Name": "Spawn Broodlings",
+      "AbilCmd": "QueenMPSpawnBroodlings,Execute"
+    },
+    {
+      "Id": "QueenMPInfestCommandCenter",
+      "Icon": "btn-building-terran-commandcenter",
+      "Name": "Infest Command Center",
+      "AbilCmd": "QueenMPInfestCommandCenter,Execute"
+    }
+  ]
+}

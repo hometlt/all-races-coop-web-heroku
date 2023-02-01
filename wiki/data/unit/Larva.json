@@ -1,0 +1,409 @@
+{
+  "Name": "Larva",
+  "Description": "Morphs into Zerg units.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 25,
+  "LifeMax": 25,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Creep",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.125,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0.25,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoScore",
+    "AILifetime"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Larva",
+  "HotkeyAlias": "Larva",
+  "SelectAlias": "Larva",
+  "SubgroupAlias": "Larva",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Larva",
+  "AIEvaluateAlias": "Larva",
+  "ReviveType": "Larva",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Larva/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Larva/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "LifeArmor": 10,
+  "LifeRegenRate": 0.2734,
+  "Speed": 0.5625,
+  "Acceleration": 1000,
+  "AttackTargetPriority": 10,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 10,
+  "SubgroupPriority": 58,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Larva"
+  ],
+  "Sight": 5,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Drone",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Zergling",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train2",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Overlord",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Roach",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train10",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Mutalisk",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train5",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Infestor",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train11",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Ultralisk",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train7",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "",
+          "Type": "Undefined",
+          "AbilCmd": "",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que1,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Hydralisk",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train4",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Viper",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train13",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Corruptor",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train12",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "SwarmHostMP",
+          "Type": "AbilCmd",
+          "AbilCmd": "LarvaTrain,Train15",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Mob": "Multiplayer",
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "GlossaryCategory": "Unit/Category/ZergUnits",
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "GlossaryPriority": 10,
+  "TechTreeProducedUnitArray": [
+    "Drone",
+    "Overlord",
+    "Zergling",
+    "Roach",
+    "Hydralisk",
+    "Viper",
+    "Mutalisk",
+    "Corruptor",
+    "SwarmHostMP",
+    "Infestor",
+    "Ultralisk"
+  ],
+  "Icon": "btn-unit-zerg-larva",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Larva",
+  "Behaviors": [
+    {
+      "Link": "LarvaWander",
+      "Id": "LarvaWander"
+    },
+    {
+      "Link": "DeathOffCreep",
+      "Id": "DeathOffCreep"
+    },
+    {
+      "Link": "LarvaPauseWander",
+      "Id": "LarvaPauseWander"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "LarvaTrain",
+      "Id": "LarvaTrain",
+      "Name": "Morph Unit (Larva -> Basic)"
+    },
+    {
+      "Link": "que1",
+      "Id": "que1",
+      "Name": "Queue (1)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drone"
+    },
+    {
+      "Id": "Zergling",
+      "Icon": "btn-unit-zerg-zergling",
+      "Description": "Fast melee creature. Can morph into a Baneling.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Zergling"
+    },
+    {
+      "Id": "Zergling",
+      "Icon": "btn-unit-zerg-zergling",
+      "Description": "Fast melee creature. Can morph into a Baneling.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Zergling"
+    },
+    {
+      "Id": "Overlord",
+      "Icon": "btn-unit-zerg-overlord",
+      "Description": "Provides supply.<br/>Supply allows you to create more units.",
+      "Name": "Overlord"
+    },
+    {
+      "Id": "Roach",
+      "Icon": "btn-unit-zerg-roach",
+      "Description": "Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Roach"
+    },
+    {
+      "Id": "Mutalisk",
+      "Icon": "btn-unit-zerg-mutalisk",
+      "Description": "Air unit. Bounces its shot to strike multiple targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Mutalisk"
+    },
+    {
+      "Id": "Infestor",
+      "Icon": "btn-unit-zerg-infestor",
+      "Description": "Infestation specialist. Can use the Fungal Growth, Microbial Shroud, and Neural Parasite abilities.",
+      "Name": "Infestor"
+    },
+    {
+      "Id": "Ultralisk",
+      "Icon": "btn-unit-zerg-omegalisk",
+      "Description": "Heavy assault beast. Has an area-damage attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Ultralisk"
+    },
+    {
+      "Id": "Hydralisk",
+      "Icon": "btn-unit-zerg-hydralisk",
+      "Description": "Ranged attacker. Can morph into a Lurker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Hydralisk"
+    },
+    {
+      "Id": "Viper",
+      "Icon": "btn-unit-zerg-viper",
+      "Description": "Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consume, Blinding Cloud, and Abduct abilities.",
+      "Name": "Viper"
+    },
+    {
+      "Id": "Corruptor",
+      "Icon": "btn-unit-zerg-corruptor",
+      "Description": "Anti-air flyer. Can use Caustic Spray. Can morph into a Brood Lord.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+      "Name": "Corruptor"
+    },
+    {
+      "Id": "SwarmHostMP",
+      "Icon": "btn-unit-zerg-swarmhost",
+      "Description": "Siege unit that attacks by spawning Locust minions.<br/><br/><c val=\"#ColorAttackInfo\">Locusts can attack ground units.</span>",
+      "Name": "Swarm Host"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Tooltip": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Morph to Drone",
+      "AbilCmd": "LarvaTrain,Train1"
+    },
+    {
+      "Id": "Zergling",
+      "Icon": "btn-unit-zerg-zergling",
+      "Tooltip": "Fast melee creature. Can morph into a Baneling.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Morph to Zergling",
+      "AbilCmd": "LarvaTrain,Train2"
+    },
+    {
+      "Id": "Overlord",
+      "Icon": "btn-unit-zerg-overlord",
+      "Tooltip": "Provides supply.<br/>Supply allows you to create more units.",
+      "Name": "Morph to Overlord",
+      "AbilCmd": "LarvaTrain,Train3"
+    },
+    {
+      "Id": "Roach",
+      "Icon": "btn-unit-zerg-roach",
+      "Tooltip": "Assault unit. Regenerates life quickly when burrowed. Can morph into a Ravager.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Morph to Roach",
+      "AbilCmd": "LarvaTrain,Train10"
+    },
+    {
+      "Id": "Mutalisk",
+      "Icon": "btn-unit-zerg-mutalisk",
+      "Tooltip": "Air unit. Bounces its shot to strike multiple targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Morph to Mutalisk",
+      "AbilCmd": "LarvaTrain,Train5"
+    },
+    {
+      "Id": "Infestor",
+      "Icon": "btn-unit-zerg-infestor",
+      "Tooltip": "Infestation specialist. Can use the Fungal Growth, Microbial Shroud, and Neural Parasite abilities.",
+      "Name": "Morph to Infestor",
+      "AbilCmd": "LarvaTrain,Train11"
+    },
+    {
+      "Id": "Ultralisk",
+      "Icon": "btn-unit-zerg-ultralisk",
+      "Tooltip": "Heavy assault beast. Has an area-damage attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Morph to Ultralisk",
+      "AbilCmd": "LarvaTrain,Train7"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que1,CancelLast"
+    },
+    {
+      "Id": "Hydralisk",
+      "Icon": "btn-unit-zerg-hydralisk",
+      "Tooltip": "Ranged attacker. Can morph into a Lurker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Morph to Hydralisk",
+      "AbilCmd": "LarvaTrain,Train4"
+    },
+    {
+      "Id": "Viper",
+      "Icon": "btn-unit-zerg-viper",
+      "Tooltip": "Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consume, Blinding Cloud, and Abduct abilities.",
+      "Name": "Morph to Viper",
+      "AbilCmd": "LarvaTrain,Train13"
+    },
+    {
+      "Id": "Corruptor",
+      "Icon": "btn-unit-zerg-corruptor",
+      "Tooltip": "Anti-air flyer. Can use Caustic Spray. Can morph into a Brood Lord.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+      "Name": "Morph to Corruptor",
+      "AbilCmd": "LarvaTrain,Train12"
+    },
+    {
+      "Id": "SwarmHostMP",
+      "Icon": "btn-unit-zerg-swarmhost",
+      "Tooltip": "Siege unit that attacks by spawning Locust minions.<br/><br/><c val=\"#ColorAttackInfo\">Locusts can attack ground units.</span>",
+      "Name": "Morph to Swarm Host",
+      "AbilCmd": "LarvaTrain,Train15"
+    }
+  ]
+}

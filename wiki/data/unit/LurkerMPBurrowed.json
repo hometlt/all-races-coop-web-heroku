@@ -1,0 +1,335 @@
+{
+  "Name": "Lurker",
+  "Description": "Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.<br/>Must burrow to attack.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 200,
+  "LifeMax": 200,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Burrowed",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "Cloaked",
+    "Buried",
+    "AIThreatGround",
+    "AISplash",
+    "AIPressForwardDisabled",
+    "AIPreferBurrow",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "LurkerMP",
+  "HotkeyAlias": "LurkerMP",
+  "SelectAlias": "LurkerMP",
+  "SubgroupAlias": "LurkerMP",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "LurkerMPBurrowed",
+  "AIEvaluateAlias": "LurkerMP",
+  "ReviveType": "LurkerMPBurrowed",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "LurkerMPBurrowed/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "LurkerMPBurrowed/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "Sight": 10,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 150
+  },
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "LurkerBurrowUp",
+          "Type": "AbilCmd",
+          "AbilCmd": "BurrowLurkerMPUp,Execute",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "LurkerHoldFire",
+          "Type": "AbilCmd",
+          "AbilCmd": "LurkerHoldFire,Execute",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "LurkerCancelHoldFire",
+          "Type": "AbilCmd",
+          "AbilCmd": "LurkerRemoveHoldFire,Execute",
+          "Row": 1,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.25,
+  "ScoreKill": 300,
+  "SubgroupPriority": 90,
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Icon": "btn-unit-zerg-lurker",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "LurkerMPBurrowed",
+  "Weapons": [
+    {
+      "Link": "LurkerMP",
+      "Turret": "Lurker",
+      "Id": "LurkerMP",
+      "Icon": "btn-upgrade-zerg-missileattacks-level0",
+      "Name": "Spines",
+      "Amount": {
+        "value": 20
+      },
+      "AttributeBonus": {
+        "Armored": 10
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 8,
+      "Period": 2
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ZergGroundArmorsLevel1",
+      "Id": "ZergGroundArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Zerg Ground Carapace Level 1"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel2",
+      "Id": "ZergGroundArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Zerg Ground Carapace Level 2"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel3",
+      "Id": "ZergGroundArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Zerg Ground Carapace Level 3"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel1",
+      "Id": "ZergMissileWeaponsLevel1",
+      "Icon": "btn-upgrade-zerg-missileattacks-level1",
+      "Name": "Zerg Missile Attacks Level 1"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel2",
+      "Id": "ZergMissileWeaponsLevel2",
+      "Icon": "btn-upgrade-zerg-missileattacks-level2",
+      "Name": "Zerg Missile Attacks Level 2"
+    },
+    {
+      "Link": "ZergMissileWeaponsLevel3",
+      "Id": "ZergMissileWeaponsLevel3",
+      "Icon": "btn-upgrade-zerg-missileattacks-level3",
+      "Name": "Zerg Missile Attacks Level 3"
+    },
+    {
+      "Link": "LurkerRange",
+      "Id": "LurkerRange",
+      "Icon": "btn-upgrade-kerrigan-seismicspines",
+      "Name": "Seismic Spines"
+    },
+    {
+      "Link": "DiggingClaws",
+      "Id": "DiggingClaws",
+      "Icon": "btn-upgrade-zerg-adaptivetalons",
+      "Name": "Adaptive Talons"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "BurrowLurkerMPUp",
+      "Id": "BurrowLurkerMPUp",
+      "Name": "Burrow Lurker MPUp"
+    },
+    {
+      "Link": "BurrowLurkerMPDown",
+      "Id": "BurrowLurkerMPDown",
+      "Name": "Burrow Lurker MPDown"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "LurkerHoldFire",
+      "Id": "LurkerHoldFire",
+      "Name": "Lurker Hold Fire"
+    },
+    {
+      "Link": "LurkerRemoveHoldFire",
+      "Id": "LurkerRemoveHoldFire",
+      "Name": "Lurker Remove Hold Fire"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "LurkerBurrowUp",
+      "Icon": "btn-ability-zerg-upburrow-color",
+      "Tooltip": "Returns the unit to the surface.",
+      "Name": "Unburrow",
+      "AbilCmd": "BurrowLurkerMPUp,Execute"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "LurkerHoldFire",
+      "Icon": "btn-ability-terran-holdfire",
+      "Tooltip": "Orders selected units to ignore enemies that are within range.",
+      "Name": "Hold Fire",
+      "AbilCmd": "LurkerHoldFire,Execute"
+    },
+    {
+      "Id": "LurkerCancelHoldFire",
+      "Icon": "btn-ability-terran-weaponsfree",
+      "Tooltip": "Orders selected units to fire at will.",
+      "Name": "Cancel Hold Fire",
+      "AbilCmd": "LurkerRemoveHoldFire,Execute"
+    }
+  ]
+}

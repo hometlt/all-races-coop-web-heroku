@@ -1,0 +1,371 @@
+{
+  "Name": "Viking",
+  "Description": "Durable support unit. Can switch into Fighter Mode to attack air units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 135,
+  "LifeMax": 135,
+  "LifeArmorName": "Terran Ship Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AIThreatGround",
+    "AIThreatAir",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "VikingFighter",
+  "HotkeyAlias": "VikingFighter",
+  "SelectAlias": "VikingAssault",
+  "SubgroupAlias": "VikingAssault",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "VikingAssault",
+  "AIEvaluateAlias": "VikingAssault",
+  "ReviveType": "VikingAssault",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 55,
+      "Anim": 15,
+      "Turn": 30
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "VikingAssault/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "VikingAssault/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "GlossaryAlias": "VikingFighter",
+  "TechAliasArray": [
+    "Alias_Viking"
+  ],
+  "Mob": "Multiplayer",
+  "Speed": 2.25,
+  "Acceleration": 1000,
+  "Food": -2,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 75
+  },
+  "RepairTime": 41.6667,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 30,
+  "InnerRadius": 0.375,
+  "CargoSize": 2,
+  "ScoreKill": 225,
+  "SubgroupPriority": 68,
+  "TacticalAIThink": "AIThinkVikingAssault",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Sight": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "FighterMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "FighterMode,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "GlossaryPriority": 155,
+  "GlossaryStrongArray": [],
+  "GlossaryWeakArray": [
+    "Marine"
+  ],
+  "Icon": "btn-unit-terran-vikingassault",
+  "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "VikingAssault",
+  "Weapons": [
+    {
+      "Link": "TwinGatlingCannon",
+      "Id": "TwinGatlingCannon",
+      "Icon": "btn-upgrade-terran-shipweaponslevel0",
+      "Name": "Gatling Cannon",
+      "Amount": 12,
+      "AttributeBonus": {
+        "Mechanical": 8
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 1
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranShipWeapons",
+      "Id": "TerranShipWeapons",
+      "Name": "Terran Ship Weapons"
+    },
+    {
+      "Link": "TerranShipArmors",
+      "Id": "TerranShipArmors",
+      "Name": "Terran Ship Armors"
+    },
+    {
+      "Link": "TerranShipWeaponsLevel1",
+      "Id": "TerranShipWeaponsLevel1",
+      "Icon": "btn-upgrade-terran-shipweaponslevel1",
+      "Name": "Terran Ship Weapons Level 1"
+    },
+    {
+      "Link": "TerranShipWeaponsLevel2",
+      "Id": "TerranShipWeaponsLevel2",
+      "Icon": "btn-upgrade-terran-shipweaponslevel2",
+      "Name": "Terran Ship Weapons Level 2"
+    },
+    {
+      "Link": "TerranShipWeaponsLevel3",
+      "Id": "TerranShipWeaponsLevel3",
+      "Icon": "btn-upgrade-terran-shipweaponslevel3",
+      "Name": "Terran Ship Weapons Level 3"
+    },
+    {
+      "Link": "TerranShipArmorsLevel1",
+      "Id": "TerranShipArmorsLevel1",
+      "Icon": "btn-upgrade-terran-shipplatinglevel1",
+      "Name": "Terran Ship Plating Level 1"
+    },
+    {
+      "Link": "TerranShipArmorsLevel2",
+      "Id": "TerranShipArmorsLevel2",
+      "Icon": "btn-upgrade-terran-shipplatinglevel2",
+      "Name": "Terran Ship Plating Level 2"
+    },
+    {
+      "Link": "TerranShipArmorsLevel3",
+      "Id": "TerranShipArmorsLevel3",
+      "Icon": "btn-upgrade-terran-shipplatinglevel3",
+      "Name": "Terran Ship Plating Level 3"
+    },
+    {
+      "Link": "RewardDanceViking",
+      "Id": "RewardDanceViking",
+      "Icon": "btn-unit-terran-ghost",
+      "Name": "Reward Dance - Viking"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeapons",
+      "Id": "TerranVehicleAndShipWeapons",
+      "Name": "Terran Vehicle And Ship Weapons"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmors",
+      "Id": "TerranVehicleAndShipArmors",
+      "Name": "Terran Vehicle And Ship Plating"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel1",
+      "Id": "TerranVehicleAndShipWeaponsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel1",
+      "Name": "Terran Vehicle And Ship Weapons Level 1"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel2",
+      "Id": "TerranVehicleAndShipWeaponsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel2",
+      "Name": "Terran Vehicle And Ship Weapons Level 2"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel3",
+      "Id": "TerranVehicleAndShipWeaponsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel3",
+      "Name": "Terran Vehicle And Ship Weapons Level 3"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel1",
+      "Id": "TerranVehicleAndShipArmorsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "Name": "Terran Vehicle and Ship Plating Level 1"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel2",
+      "Id": "TerranVehicleAndShipArmorsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "Name": "Terran Vehicle and Ship Plating Level 2"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel3",
+      "Id": "TerranVehicleAndShipArmorsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "Name": "Terran Vehicle and Ship Plating Level 3"
+    },
+    {
+      "Link": "SmartServos",
+      "Id": "SmartServos",
+      "Icon": "btn-upgrade-terran-transformationservos",
+      "Name": "Smart Servos"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "FighterMode",
+      "Id": "FighterMode",
+      "Name": "Fighter Mode"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "FighterMode",
+      "Icon": "btn-unit-terran-vikingfighter",
+      "Tooltip": "Transforms the Viking to Fighter Mode. In this mode Vikings fly, but they can only attack air targets.",
+      "Name": "Fighter Mode",
+      "AbilCmd": "FighterMode,Execute"
+    }
+  ]
+}

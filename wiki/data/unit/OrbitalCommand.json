@@ -1,0 +1,330 @@
+{
+  "Name": "Orbital Command",
+  "Description": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1500,
+  "LifeMax": 1500,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 2.5,
+  "SeparationRadius": 2.5,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventReveal",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "TownCamera",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "OrbitalCommand",
+  "HotkeyAlias": "OrbitalCommand",
+  "SelectAlias": "OrbitalCommand",
+  "SubgroupAlias": "OrbitalCommand",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "OrbitalCommand",
+  "AIEvaluateAlias": "OrbitalCommand",
+  "ReviveType": "OrbitalCommand",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "OrbitalCommand/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "OrbitalCommand/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_CommandCenter"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Food": 15,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 550
+  },
+  "RepairTime": 135,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ScoreMake": 550,
+  "ScoreKill": 550,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 34,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 11,
+  "TacticalAIThink": "AIThinkOrbitalCommand",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "SCV",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Lift",
+          "Type": "AbilCmd",
+          "AbilCmd": "OrbitalLiftOff,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5CancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Scan",
+          "Type": "AbilCmd",
+          "AbilCmd": "ScannerSweep,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyCommand,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "CalldownMULE",
+          "Type": "AbilCmd",
+          "AbilCmd": "CalldownMULE,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "SupplyDrop",
+          "Type": "AbilCmd",
+          "AbilCmd": "SupplyDrop,Execute",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 32,
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "KillXP": 80,
+  "Icon": "btn-building-terran-surveillancestation",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "OrbitalCommand",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    },
+    {
+      "Link": "CommandCenterKnockbackBehavior",
+      "Id": "CommandCenterKnockbackBehavior"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "CalldownMULE",
+      "Id": "CalldownMULE",
+      "Name": "Calldown MULE"
+    },
+    {
+      "Link": "SupplyDrop",
+      "Id": "SupplyDrop",
+      "Name": "Supply Drop"
+    },
+    {
+      "Link": "que5CancelToSelection",
+      "Id": "que5CancelToSelection",
+      "Name": "Queue (5) (Cancel To Selection)"
+    },
+    {
+      "Link": "RallyCommand",
+      "Id": "RallyCommand",
+      "Name": "Command Center - Rally"
+    },
+    {
+      "Link": "CommandCenterTrain",
+      "Id": "CommandCenterTrain",
+      "Name": "Train (Command Center)"
+    },
+    {
+      "Link": "ScannerSweep",
+      "Id": "ScannerSweep",
+      "Name": "Scanner Sweep"
+    },
+    {
+      "Link": "OrbitalLiftOff",
+      "Id": "OrbitalLiftOff",
+      "Name": "Lift Off (Orbital Command)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "SCV"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Train SCV",
+      "AbilCmd": "CommandCenterTrain,Train1"
+    },
+    {
+      "Id": "Lift",
+      "Icon": "btn-ability-terran-liftoff",
+      "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+      "Name": "Lift Off",
+      "AbilCmd": "OrbitalLiftOff,Execute"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5CancelToSelection,CancelLast"
+    },
+    {
+      "Id": "Scan",
+      "Icon": "btn-ability-terran-scannersweep-color",
+      "Tooltip": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>.",
+      "Name": "Scanner Sweep",
+      "AbilCmd": "ScannerSweep,Execute"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyCommand,Rally1"
+    },
+    {
+      "Id": "CalldownMULE",
+      "Icon": "btn-unit-terran-mule",
+      "Tooltip": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> seconds before their systems fail.",
+      "Name": "Calldown: MULE",
+      "AbilCmd": "CalldownMULE,Execute"
+    },
+    {
+      "Id": "SupplyDrop",
+      "Icon": "btn-ability-terran-calldownextrasupplies-color",
+      "Tooltip": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>.",
+      "Name": "Calldown: Extra Supplies",
+      "AbilCmd": "SupplyDrop,Execute"
+    }
+  ]
+}

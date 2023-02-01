@@ -1,0 +1,290 @@
+{
+  "Name": "Twilight Council",
+  "Description": "Contains upgrades for Zealots, Stalkers, and Adepts.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "TwilightCouncil",
+  "HotkeyAlias": "TwilightCouncil",
+  "SelectAlias": "TwilightCouncil",
+  "SubgroupAlias": "TwilightCouncil",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "TwilightCouncil",
+  "AIEvaluateAlias": "TwilightCouncil",
+  "ReviveType": "TwilightCouncil",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "TwilightCouncil/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "TwilightCouncil/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 250,
+  "ScoreKill": 250,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 12,
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "ResearchStalkerTeleport",
+          "Type": "AbilCmd",
+          "AbilCmd": "TwilightCouncilResearch,Research2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ResearchCharge",
+          "Type": "AbilCmd",
+          "AbilCmd": "TwilightCouncilResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "AdeptResearchPiercingUpgrade",
+          "Type": "AbilCmd",
+          "AbilCmd": "TwilightCouncilResearch,Research3",
+          "Row": 0,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 203,
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "ShieldRegenDelay": 10,
+  "Icon": "btn-building-protoss-twilightcouncil",
+  "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "TwilightCouncil",
+  "Behaviors": [
+    {
+      "Link": "PowerUserQueue",
+      "Id": "PowerUserQueue"
+    },
+    {
+      "Link": "StalkerIcon"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "TwilightCouncilResearch",
+      "Id": "TwilightCouncilResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "CyberneticsCore",
+      "Icon": "btn-building-protoss-cyberneticscore",
+      "Description": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Shield Batteries from Probes",
+      "Name": "Cybernetics Core"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "BlinkTech",
+      "Icon": "btn-ability-protoss-blink-color",
+      "Name": "Blink"
+    },
+    {
+      "Id": "Charge",
+      "Icon": "btn-ability-protoss-charge-color",
+      "Name": "Charge"
+    },
+    {
+      "Id": "AdeptPiercingAttack",
+      "Icon": "btn-upgrade-protoss-resonatingglaives-orange",
+      "Name": "Resonating Glaives"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "ResearchStalkerTeleport",
+      "Icon": "btn-ability-protoss-blink-color",
+      "Tooltip": "Allows <span style=\"color: #ffff8a\">Stalkers</span> to teleport to a nearby target location.",
+      "Name": "Research Blink",
+      "AbilCmd": "TwilightCouncilResearch,Research2"
+    },
+    {
+      "Id": "ResearchCharge",
+      "Icon": "btn-ability-protoss-charge-color",
+      "Tooltip": "Allows <span style=\"color: #ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: #ffff8a\">Zealots</span>. Ability can only be used once every <b>10</b> seconds.",
+      "Name": "Research Charge",
+      "AbilCmd": "TwilightCouncilResearch,Research1"
+    },
+    {
+      "Id": "AdeptResearchPiercingUpgrade",
+      "Icon": "btn-upgrade-protoss-resonatingglaives-orange",
+      "Tooltip": "Increases the attack speed of <span style=\"color: #ffff8a\">Adepts</span> by 45%.",
+      "Name": "Research Resonating Glaives",
+      "AbilCmd": "TwilightCouncilResearch,Research3"
+    }
+  ]
+}

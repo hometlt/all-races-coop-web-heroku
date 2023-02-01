@@ -1,0 +1,80 @@
+{
+  "Name": "UEDDrop-Pod",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 0,
+  "DeathRevealDuration": 0,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Nothing",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 25,
+  "LifeMax": 25,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 0,
+  "TurningRate": 0,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Undetectable",
+    "Unradarable",
+    "Invulnerable",
+    "NoScore"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "TerranDropPod",
+  "HotkeyAlias": "TerranDropPod",
+  "SelectAlias": "TerranDropPod",
+  "SubgroupAlias": "TerranDropPod",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "UEDDropPod",
+  "AIEvaluateAlias": "TerranDropPod",
+  "ReviveType": "TerranDropPod",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 0,
+    "DelayMin": 0,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UEDDropPod/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UEDDropPod/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Hidden",
+  "Mob": "Campaign",
+  "InnerRadius": 0.5,
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "UEDDropPod",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

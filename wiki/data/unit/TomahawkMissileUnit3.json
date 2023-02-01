@@ -1,0 +1,73 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 0,
+  "DeathRevealDuration": 0,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10,
+  "LifeMax": 10,
+  "LifeArmorName": "None",
+  "Mover": "VikingFighterMissile",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "PushPriority": 10,
+  "LeaderAlias": "",
+  "HotkeyAlias": "",
+  "SelectAlias": "TomahawkMissileUnit3",
+  "SubgroupAlias": "TomahawkMissileUnit3",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "TomahawkMissileUnit3",
+  "AIEvaluateAlias": "TomahawkMissileUnit3",
+  "ReviveType": "TomahawkMissileUnit3",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 0,
+    "DelayMin": 0,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "TomahawkMissileProjectile/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "TomahawkMissileProjectile/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "CostResource": {
+    "Minerals": 25,
+    "Vespene": 25
+  },
+  "Id": "TomahawkMissileUnit3",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

@@ -1,0 +1,275 @@
+{
+  "Name": "Locust",
+  "Description": "Timed life creature. Durable and dangerous.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 50,
+  "LifeMax": 50,
+  "LifeArmorName": "Zerg Ground Carapace",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "NoScore",
+    "AILifetime",
+    "AcquireRally",
+    "IgnoreAttackAlert",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "LocustMP",
+  "HotkeyAlias": "LocustMP",
+  "SelectAlias": "LocustMPFlying",
+  "SubgroupAlias": "LocustMPFlying",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "LocustMPFlying",
+  "AIEvaluateAlias": "LocustMPFlying",
+  "ReviveType": "LocustMPFlying",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "LocustMPFlying/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "LocustMPFlying/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "LifeRegenRate": 0.2734,
+  "Speed": 1.875,
+  "Acceleration": 1000,
+  "LateralAcceleration": 46.0625,
+  "Sight": 6,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 30,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "LocustMPFlyingSwoop",
+          "Type": "AbilCmd",
+          "AbilCmd": "LocustMPFlyingSwoop,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "SubgroupPriority": 56,
+  "GlossaryPriority": 148,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "KillDisplay": "Never",
+  "RankDisplay": "Never",
+  "CostCategory": "Army",
+  "Icon": "btn-unit-zerg-locustflyer",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "LocustMPFlying",
+  "Weapons": [
+    {
+      "Link": "LocustMPFlyingSwoopWeapon",
+      "Id": "LocustMPFlyingSwoopWeapon",
+      "Icon": "btn-ability-neutral-ursadonleap",
+      "Name": "Locust MP Flying Swoop Weapon",
+      "Amount": 10,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 0.8
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ZergGroundArmorsLevel1",
+      "Id": "ZergGroundArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Zerg Ground Carapace Level 1"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel2",
+      "Id": "ZergGroundArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Zerg Ground Carapace Level 2"
+    },
+    {
+      "Link": "ZergGroundArmorsLevel3",
+      "Id": "ZergGroundArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Zerg Ground Carapace Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "LocustMPFlyingMorphToGround",
+      "Id": "LocustMPFlyingMorphToGround",
+      "Name": "Morph To Ground"
+    },
+    {
+      "Link": "LocustMPFlyingSwoop",
+      "Id": "LocustMPFlyingSwoop",
+      "Name": "Swoop"
+    },
+    {
+      "Link": "LocustMPFlyingSwoopAttack",
+      "Id": "LocustMPFlyingSwoopAttack",
+      "Name": "Locust MP Flying Swoop Attack"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "LocustMPFlyingSwoop",
+      "Icon": "btn-ability-neutral-ursadonleap",
+      "Tooltip": "Orders the Locust to land at the targeted location, allowing it to attack.",
+      "Name": "Swoop",
+      "AbilCmd": "LocustMPFlyingSwoop,Execute"
+    }
+  ]
+}

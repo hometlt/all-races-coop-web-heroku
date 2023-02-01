@@ -1,0 +1,89 @@
+{
+  "Name": "Protoss Crate",
+  "Description": "Crates. There may be things inside of them.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Nothing",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10,
+  "LifeMax": 10,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 0,
+  "TurningRate": 0,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Destructible",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "UseLineOfSight",
+    "KillCredit"
+  ],
+  "EditorFlags": [
+    "NeutralDefault"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ProtossCrates",
+  "HotkeyAlias": "ProtossCrates",
+  "SelectAlias": "ProtossCrates",
+  "SubgroupAlias": "ProtossCrates",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ProtossCrates",
+  "AIEvaluateAlias": "ProtossCrates",
+  "ReviveType": "ProtossCrates",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 0,
+    "DelayMin": 0,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ProtossCrates/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ProtossCrates/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Small",
+    "Structure"
+  ],
+  "Footprint": "Footprint1x1",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ProtossCrates",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

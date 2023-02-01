@@ -1,0 +1,296 @@
+{
+  "Name": "Ghost Academy",
+  "Description": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1250,
+  "LifeMax": 1250,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "GhostAcademy",
+  "HotkeyAlias": "GhostAcademy",
+  "SelectAlias": "GhostAcademy",
+  "SubgroupAlias": "GhostAcademy",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "GhostAcademy",
+  "AIEvaluateAlias": "GhostAcademy",
+  "ReviveType": "GhostAcademy",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "GhostAcademy/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "GhostAcademy/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_ShadowOps"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 50
+  },
+  "RepairTime": 40,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 8,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Halt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "NukeArm",
+          "Type": "AbilCmd",
+          "AbilCmd": "ArmSiloWithNuke,Ammo1",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "SelectBuilder",
+          "Type": "SelectBuilder",
+          "AbilCmd": "",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "ResearchPersonalCloaking",
+          "Type": "AbilCmd",
+          "AbilCmd": "GhostAcademyResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ResearchEnhancedShockwaves",
+          "Type": "AbilCmd",
+          "Row": 0,
+          "Column": 1,
+          "AbilCmd": "GhostAcademyResearch,Research3"
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 318,
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "TechTreeUnlockedUnitArray": [
+    "Ghost"
+  ],
+  "Icon": "btn-building-terran-ghostacademy",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "GhostAcademy",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    },
+    {
+      "Link": "ReactorQueue",
+      "Id": "ReactorQueue"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "ArmSiloWithNuke",
+      "Id": "ArmSiloWithNuke",
+      "Name": "Arm Magazine (Nuke)"
+    },
+    {
+      "Link": "GhostAcademyResearch",
+      "Id": "GhostAcademyResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Nuke",
+      "Icon": "btn-ability-terran-armnuke",
+      "Name": "Nuke"
+    },
+    {
+      "Id": "PersonalCloaking",
+      "Icon": "btn-ability-terran-cloak-color",
+      "Name": "Personal Cloaking"
+    },
+    {
+      "Id": "EnhancedShockwaves",
+      "Icon": "btn-ability-terran-electricfield",
+      "Name": "Enhanced Shockwaves"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "SCV"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "BuildInProgress,Halt"
+    },
+    {
+      "Id": "NukeArm",
+      "Icon": "btn-ability-terran-armnuke",
+      "Tooltip": "Arms the Silo with a Tactical Nuke.<br/><br/>Nukes take <b>20</b> to land, but they deal up to 300 (+200 vs. structures) damage in a large radius.<br/><br/>Use a Ghost to designate the target.",
+      "Name": "Arm Silo with Nuke",
+      "AbilCmd": "ArmSiloWithNuke,Ammo1"
+    },
+    {
+      "Id": "ResearchPersonalCloaking",
+      "Icon": "btn-ability-terran-cloak-color",
+      "Tooltip": "Enables <span style=\"color: #ffff8a\">Ghosts</span> to use the Cloak ability. Cloak renders a unit invisible to enemies unless it's revealed by detectors or effects.",
+      "Name": "Research Personal Cloaking",
+      "AbilCmd": "GhostAcademyResearch,Research1"
+    },
+    {
+      "Id": "ResearchEnhancedShockwaves",
+      "Icon": "btn-ability-terran-electricfield",
+      "Tooltip": "Increases the <span style=\"color: #ffff8a\">Ghost's</span> EMP Round radius by +<b>0.5</b>.",
+      "Name": "Research Enhanced Shockwaves",
+      "AbilCmd": "GhostAcademyResearch,Research3"
+    }
+  ]
+}

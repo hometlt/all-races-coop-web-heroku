@@ -1,0 +1,313 @@
+{
+  "Name": "Processing Core",
+  "Description": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1500,
+  "LifeMax": 1500,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 2.5,
+  "SeparationRadius": 2.5,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "PreventReveal",
+    "TownCamera"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ProcessingCore",
+  "HotkeyAlias": "ProcessingCore",
+  "SelectAlias": "ProcessingCore",
+  "SubgroupAlias": "ProcessingCore",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ProcessingCore",
+  "AIEvaluateAlias": "ProcessingCore",
+  "ReviveType": "ProcessingCore",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ProcessingCore/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ProcessingCore/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 11,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 315,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Economy",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "ACR",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessingCoreTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MiningPriority",
+          "Type": "AbilCmd",
+          "AbilCmd": "MiningPriority,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "CoreSystemRecharge",
+          "Type": "AbilCmd",
+          "AbilCmd": "CoreSystemRecharge,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Processor",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessingCoreTrain,Train2",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "EnergyMax": 300,
+  "Food": 15,
+  "CostResource": {
+    "Minerals": 400
+  },
+  "RepairTime": 100,
+  "SubgroupPriority": 11,
+  "GlossaryPriority": 1,
+  "TechTreeProducedUnitArray": [
+    "ACR",
+    "Processor"
+  ],
+  "Mob": "Multiplayer",
+  "Icon": "btn-building-genetron-processingcore",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ProcessingCore",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "RallyProcessingCore",
+      "Id": "RallyProcessingCore",
+      "Name": "Processing Core - Rally"
+    },
+    {
+      "Link": "ProcessingCoreTrain",
+      "Id": "ProcessingCoreTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "MiningPriority",
+      "Id": "MiningPriority",
+      "Name": "Mining Priority"
+    },
+    {
+      "Link": "CoreSystemRecharge",
+      "Id": "CoreSystemRecharge",
+      "Name": "System Recharge"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    },
+    {
+      "Id": "Processor",
+      "Icon": "btn-unit-genetron-processor",
+      "Description": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Processor"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Tooltip": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Fabricate ACR",
+      "AbilCmd": "ProcessingCoreTrain,Train1"
+    },
+    {
+      "Id": "MiningPriority",
+      "Icon": "btn-ability-genetron-miningtap",
+      "Tooltip": "Increases the resource yield of owned nearby harvesters by <b>1</b>. The effect lasts <b>46</b> seconds.",
+      "Name": "Mining Priority",
+      "AbilCmd": "MiningPriority,Execute"
+    },
+    {
+      "Id": "CoreSystemRecharge",
+      "Icon": "btn-upgrade-terran-nova-snipeenergyrefund",
+      "Tooltip": "Transfers energy directly to the target unit.",
+      "Name": "System Recharge",
+      "AbilCmd": "CoreSystemRecharge,Execute"
+    },
+    {
+      "Id": "Processor",
+      "Icon": "btn-unit-genetron-processor",
+      "Tooltip": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Fabricate Processor",
+      "AbilCmd": "ProcessingCoreTrain,Train2"
+    }
+  ]
+}

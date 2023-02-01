@@ -1,0 +1,182 @@
+{
+  "Name": "Siphoner",
+  "Description": "Formed over a Vespene Geyser to allow harvesting of vespene gas.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Siphoner",
+  "HotkeyAlias": "Siphoner",
+  "SelectAlias": "Siphoner",
+  "SubgroupAlias": "Siphoner",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Extractor",
+  "AIEvaluateAlias": "Siphoner",
+  "ReviveType": "Siphoner",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Extractor/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Extractor/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 329.9963,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.5,
+  "AttackTargetPriority": 11,
+  "Footprint": "FootprintGeyserRoundedBuilt",
+  "PlacementFootprint": "Footprint3x3CappedGeyser",
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 29,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "BuiltOn": [
+    "VespeneGeyser",
+    "SpacePlatformGeyser",
+    "RichVespeneGeyser",
+    "ProtossVespeneGeyser",
+    "PurifierVespeneGeyser",
+    "ShakurasVespeneGeyser"
+  ],
+  "GlossaryPriority": 2,
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "BuildOnAs": [
+    "SiphonerRich"
+  ],
+  "Icon": "btn-building-xayid-siphoner",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "LifeRegenDelay": 3,
+  "Id": "Siphoner",
+  "Behaviors": [
+    {
+      "Link": "HarvestableVespeneGeyserGasZerg",
+      "Id": "HarvestableVespeneGeyserGasZerg"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Scavenger",
+      "Icon": "btn-unit-xayid-scavenger",
+      "Description": "Basic builder and worker unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Scavenger"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

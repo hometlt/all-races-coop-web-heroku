@@ -1,0 +1,101 @@
+{
+  "Name": "Shakuras Light Bridge - NE - Height 12 - Retracted",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ShakurasLightBridgeNE12",
+  "HotkeyAlias": "ShakurasLightBridgeNE12",
+  "SelectAlias": "ShakurasLightBridgeNE12",
+  "SubgroupAlias": "ShakurasLightBridgeNE12",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ShakurasLightBridgeNE12",
+  "AIEvaluateAlias": "ShakurasLightBridgeNE12",
+  "ReviveType": "ShakurasLightBridgeNE12",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ShakurasLightBridgeNE12/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ShakurasLightBridgeNE12/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 135,
+  "Height": 12,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeExtend",
+          "Type": "AbilCmd",
+          "AbilCmd": "ShakurasLightBridgeNE12Out,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "AiurLightBridgeNE",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ShakurasLightBridgeNE12",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "ShakurasLightBridgeNE12Out",
+      "Id": "ShakurasLightBridgeNE12Out",
+      "Name": "Shakuras Light Bridge NE12 Out"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeExtend",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Extend",
+      "AbilCmd": "ShakurasLightBridgeNE12Out,Execute"
+    }
+  ]
+}

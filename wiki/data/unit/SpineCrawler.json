@@ -1,0 +1,272 @@
+{
+  "Name": "Spine Crawler",
+  "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.875,
+  "SeparationRadius": 0.875,
+  "MinimapRadius": 0.875,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.7,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIThreatGround",
+    "AIDefense",
+    "ArmorDisabledWhileConstructing",
+    "AIPressForwardDisabled"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SpineCrawler",
+  "HotkeyAlias": "SpineCrawler",
+  "SelectAlias": "SpineCrawlerUprooted",
+  "SubgroupAlias": "SpineCrawlerUprooted",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SpineCrawler",
+  "AIEvaluateAlias": "SpineCrawler",
+  "ReviveType": "SpineCrawler",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SpineCrawler/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SpineCrawler/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 2,
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 20,
+  "Footprint": "Footprint2x2ZergSpineCrawler",
+  "PlacementFootprint": "Footprint2x2Creep2",
+  "ScoreMake": 100,
+  "ScoreKill": 150,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 4,
+  "TacticalAIThink": "AIThinkCrawler",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "SpineCrawlerUproot",
+          "Type": "AbilCmd",
+          "AbilCmd": "SpineCrawlerUproot,Execute",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150
+  },
+  "GlossaryPriority": 220,
+  "GlossaryCategory": "Unit/Category/ZergUnits",
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "GlossaryStrongArray": [
+    "Marine",
+    "Roach",
+    "Zealot"
+  ],
+  "GlossaryWeakArray": [
+    "SiegeTank",
+    "Baneling",
+    "Immortal"
+  ],
+  "Icon": "btn-building-zerg-spinecrawler",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "SpineCrawler",
+  "Weapons": [
+    {
+      "Link": "ImpalerTentacle",
+      "Turret": "SpineCrawler",
+      "Id": "ImpalerTentacle",
+      "Icon": "btn-upgrade-zerg-seismicspines",
+      "Name": "Impaler Tentacle",
+      "Amount": 25,
+      "AttributeBonus": {
+        "Armored": 5
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 1.85
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "OnCreep",
+      "Id": "OnCreep"
+    },
+    {
+      "Link": "ZergBuildingNotOnCreep",
+      "Id": "ZergBuildingNotOnCreep"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "SpineCrawlerUproot",
+      "Id": "SpineCrawlerUproot",
+      "Name": "Uproot"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "SpawningPool",
+      "Icon": "btn-building-zerg-spawningpool",
+      "Description": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
+      "Name": "Spawning Pool"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "SpineCrawlerUproot",
+      "Icon": "btn-ability-zerg-uproot-color",
+      "Tooltip": "Uproots the Spine Crawler. An uprooted Spine Crawler has the ability to move but cannot attack. Moves much faster on creep.",
+      "Name": "Uproot",
+      "AbilCmd": "SpineCrawlerUproot,Execute"
+    }
+  ]
+}

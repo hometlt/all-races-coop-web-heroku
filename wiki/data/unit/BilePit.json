@@ -1,0 +1,276 @@
+{
+  "Name": "Bile Pit",
+  "Description": "Defensive structure with a quick fire rate. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF00\">Detector</span><br/><span style=\"color: #FFFF80\">Can attack air and ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 350,
+  "LifeMax": 350,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "AIDefense"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "BilePit",
+  "HotkeyAlias": "BilePit",
+  "SelectAlias": "BilePit",
+  "SubgroupAlias": "BilePit",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "BilePit",
+  "AIEvaluateAlias": "BilePit",
+  "ReviveType": "BilePit",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "BilePit/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "BilePit/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 2,
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 10,
+  "CostCategory": "Technology",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "Facing": 45,
+  "CostResource": {
+    "Minerals": 150
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Requirements": "NotUnderConstruction",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Xayid",
+  "PlacementFootprint": "Footprint2x2Xayid",
+  "ScoreMake": 150,
+  "ScoreKill": 150,
+  "SubgroupPriority": 31,
+  "GlossaryCategory": "Unit/Category/XayidUnits",
+  "GlossaryPriority": 20,
+  "GlossaryAlias": "BilePit",
+  "Icon": "btn-building-xayid-bilepit",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "BilePit",
+  "Weapons": [
+    {
+      "Link": "BileGlob",
+      "Id": "BileGlob",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bile Glob",
+      "Amount": 10,
+      "AttributeBonus": {
+        "Armored": 4
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 0.7
+    },
+    {
+      "Link": "BileGlobAG",
+      "Id": "BileGlobAG",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bile Glob",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 0.7
+    },
+    {
+      "Link": "BileGlobEquipment",
+      "Id": "BileGlobEquipment",
+      "Icon": "btn-building-xayid-bilepit",
+      "Name": "Bile Glob",
+      "Amount": 10,
+      "AttributeBonus": {
+        "Armored": 4
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 0.7
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "Link": "FeedingPoolPowerUser",
+      "Id": "FeedingPoolPowerUser",
+      "Name": "Feeding Pool Power User"
+    },
+    {
+      "Link": "BilePitSustain",
+      "Id": "BilePitSustain"
+    },
+    {
+      "Link": "BilePitNotInRangeOfFeedingPool",
+      "Id": "BilePitNotInRangeOfFeedingPool",
+      "Tooltip": "Currently taking damage, due to the fact that there is no <span style=\"color: #FFFF80\">Feeding Pool</span> nearby.",
+      "Name": "Bile Pit Not In Range Of Feeding Pool"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "XayidDen",
+      "Icon": "btn-building-xayid-xayidden",
+      "Description": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pit from Scavengers",
+      "Name": "Xayid Den"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Scavenger",
+      "Icon": "btn-unit-xayid-scavenger",
+      "Description": "Basic builder and worker unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Scavenger"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

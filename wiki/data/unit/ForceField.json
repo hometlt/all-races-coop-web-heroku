@@ -1,0 +1,117 @@
+{
+  "Name": "Force Field",
+  "Description": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 0,
+  "DeathRevealDuration": 0,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 15,
+  "LifeMax": 15,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Uncommandable",
+    "Unselectable",
+    "Untargetable",
+    "Uncloakable",
+    "Unradarable",
+    "Invulnerable",
+    "Destructible",
+    "NoScore",
+    "ForceCollisionCheck"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ForceField",
+  "HotkeyAlias": "ForceField",
+  "SelectAlias": "ForceField",
+  "SubgroupAlias": "ForceField",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ForceField",
+  "AIEvaluateAlias": "ForceField",
+  "ReviveType": "ForceField",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ForceField/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ForceField/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "InnerRadius": 0.5,
+  "SubgroupPriority": 31,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "ForceField",
+    "LocustForceField"
+  ],
+  "PlacementFootprint": "Footprint3x3ForceField",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Shatter",
+          "Type": "AbilCmd",
+          "AbilCmd": "Shatter,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Icon": "btn-ability-terran-scannersweep",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ForceField",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "Shatter",
+      "Id": "Shatter",
+      "Name": "Shatter"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "AbilCmd": "Shatter,Execute"
+    }
+  ]
+}

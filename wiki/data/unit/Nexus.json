@@ -1,0 +1,384 @@
+{
+  "Name": "Nexus",
+  "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 2,
+  "SeparationRadius": 2,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventReveal",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "TownCamera",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Nexus",
+  "HotkeyAlias": "Nexus",
+  "SelectAlias": "Nexus",
+  "SubgroupAlias": "Nexus",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Nexus",
+  "AIEvaluateAlias": "Nexus",
+  "ReviveType": "Nexus",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Nexus/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Nexus/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "ShieldsStart": 1000,
+  "ShieldsMax": 1000,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "Food": 15,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ScoreMake": 400,
+  "ScoreKill": 400,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 28,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "TacticalAIThink": "AIThinkNexus",
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5Passive,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Probe",
+          "Type": "AbilCmd",
+          "AbilCmd": "NexusTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyNexus,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "ChronoBoostEnergyCost",
+          "Type": "AbilCmd",
+          "AbilCmd": "ChronoBoostEnergyCost,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Mothership",
+          "Type": "AbilCmd",
+          "AbilCmd": "NexusTrainMothership,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NexusMassRecall",
+          "Type": "AbilCmd",
+          "AbilCmd": "NexusMassRecall,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "BatteryOvercharge",
+          "Type": "AbilCmd",
+          "AbilCmd": "BatteryOvercharge,Execute",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 10,
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 400
+  },
+  "TechTreeProducedUnitArray": [
+    "Probe",
+    "Mothership"
+  ],
+  "ShieldRegenDelay": 10,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "EffectArray": {
+    "Create": "NexusCreateSet",
+    "Birth": "NexusBirthSet"
+  },
+  "KillDisplay": "Never",
+  "EnergyStart": 50,
+  "Icon": "btn-building-protoss-nexus",
+  "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Nexus",
+  "Weapons": [],
+  "Behaviors": [
+    {
+      "Link": "NexusDeath",
+      "Id": "NexusDeath",
+      "Name": "Nexus Death"
+    },
+    {
+      "Link": "FastEnablerPowerSourceNexus",
+      "Id": "FastEnablerPowerSourceNexus"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "SnowVisualMP",
+      "Id": "SnowVisualMP"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "ChronoBoostEnergyCost",
+      "Id": "ChronoBoostEnergyCost",
+      "Name": "Chrono Boost Energy Cost"
+    },
+    {
+      "Link": "que5Passive",
+      "Id": "que5Passive",
+      "Name": "Queue (5) Passive"
+    },
+    {
+      "Link": "NexusTrain",
+      "Id": "NexusTrain",
+      "Name": "Train (Nexus)"
+    },
+    {
+      "Link": "RallyNexus",
+      "Id": "RallyNexus",
+      "Name": "Nexus - Rally"
+    },
+    {
+      "Link": "stopProtossBuilding",
+      "Id": "stopProtossBuilding",
+      "Name": "stop Protoss Building"
+    },
+    {
+      "Link": "NexusInvulnerability",
+      "Id": "NexusInvulnerability",
+      "Name": "Invulnerability"
+    },
+    {
+      "Link": "NexusTrainMothership",
+      "Id": "NexusTrainMothership",
+      "Name": "Train Mothership"
+    },
+    {
+      "Link": "NexusMassRecall",
+      "Id": "NexusMassRecall",
+      "Name": "Nexus Mass Recall"
+    },
+    {
+      "Link": "BatteryOvercharge",
+      "Id": "BatteryOvercharge",
+      "Name": "Battery Overcharge"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    },
+    {
+      "Id": "Mothership",
+      "Icon": "btn-unit-protoss-mothership",
+      "Description": "Ultimate Protoss vessel. Can use Strategic Recall and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Mothership"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5Passive,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Tooltip": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Probe",
+      "AbilCmd": "NexusTrain,Train1"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyNexus,Rally1"
+    },
+    {
+      "Id": "ChronoBoostEnergyCost",
+      "Icon": "btn-ability-protoss-protoncharge-color",
+      "Tooltip": "Places target structure in a Chrono Boost, causing it to operate <b>50.0</b>% faster for <b>28</b> seconds.",
+      "Name": "Chrono Boost",
+      "AbilCmd": "ChronoBoostEnergyCost,Execute"
+    },
+    {
+      "Id": "Mothership",
+      "Icon": "btn-unit-protoss-mothership",
+      "Tooltip": "Ultimate Protoss vessel. Can use Strategic Recall and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Warp In Mothership",
+      "AbilCmd": "NexusTrainMothership,Train1"
+    },
+    {
+      "Id": "NexusMassRecall",
+      "Icon": "btn-ability-protoss-massrecall",
+      "Tooltip": "Recalls all units owned by the player in the target area to the Nexus.",
+      "Name": "Strategic Recall",
+      "AbilCmd": "NexusMassRecall,Execute"
+    },
+    {
+      "Id": "BatteryOvercharge",
+      "Icon": "btn-ability-zeratul-observer-sensorarray",
+      "Tooltip": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by 100% and allowing it to restore shields without consuming energy for <b>20</b> seconds.",
+      "Name": "Battery Overcharge",
+      "AbilCmd": "BatteryOvercharge,Execute"
+    }
+  ]
+}

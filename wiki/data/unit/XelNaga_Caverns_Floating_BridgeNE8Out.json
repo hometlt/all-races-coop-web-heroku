@@ -1,0 +1,101 @@
+{
+  "Name": "Xel'Naga Caverns Floating Bridge - NE - 8 - Extended",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "HotkeyAlias": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "SelectAlias": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "SubgroupAlias": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "AIEvaluateAlias": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "ReviveType": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "XelNaga_Caverns_Floating_BridgeNE8Out/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "XelNaga_Caverns_Floating_BridgeNE8Out/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 315,
+  "Height": 8,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeRetract",
+          "Type": "AbilCmd",
+          "AbilCmd": "XelNaga_Caverns_Floating_BridgeNE8,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "XelNaga_Caverns_Floating_BridgeNEOut",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "XelNaga_Caverns_Floating_BridgeNE8Out",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "XelNaga_Caverns_Floating_BridgeNE8",
+      "Id": "XelNaga_Caverns_Floating_BridgeNE8",
+      "Name": "Xel'Naga Caverns Floating Bridge - NE - Height - 8 - Retract"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeRetract",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Retract",
+      "AbilCmd": "XelNaga_Caverns_Floating_BridgeNE8,Execute"
+    }
+  ]
+}

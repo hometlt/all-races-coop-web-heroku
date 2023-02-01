@@ -1,0 +1,149 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "DefaultSettingsNHbrBuilding",
+  "HotkeyAlias": "DefaultSettingsNHbrBuilding",
+  "SelectAlias": "DefaultSettingsNHbrBuilding",
+  "SubgroupAlias": "DefaultSettingsNHbrBuilding",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "DefaultSettingsNHbrBuilding",
+  "AIEvaluateAlias": "DefaultSettingsNHbrBuilding",
+  "ReviveType": "DefaultSettingsNHbrBuilding",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "DefaultSettingsNHbrBuilding/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "DefaultSettingsNHbrBuilding/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 2,
+  "DataCollection": "DefaultSettingsNHbrBuilding",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Id": "DefaultSettingsNHbrBuilding",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "Name": "Relay Tower",
+  "Description": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 600,
+  "LifeMax": 600,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "RelayTower",
+  "HotkeyAlias": "RelayTower",
+  "SelectAlias": "RelayTower",
+  "SubgroupAlias": "RelayTower",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "RelayTower",
+  "AIEvaluateAlias": "RelayTower",
+  "ReviveType": "RelayTower",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "RelayTower/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "RelayTower/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 9,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 45,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "RelayTowerLongRangeTransfer",
+          "Type": "AbilCmd",
+          "AbilCmd": "RelayTowerLongRangeTransfer,Execute",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "CoreSystemRecharge",
+          "Type": "AbilCmd",
+          "AbilCmd": "CoreSystemRecharge,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "EnergyMax": 300,
+  "CostResource": {
+    "Minerals": 100,
+    "Vespene": 50
+  },
+  "TechTreeUnlockedUnitArray": [
+    "Processor"
+  ],
+  "GlossaryPriority": 23,
+  "Icon": "btn-building-genetron-relaytower",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "RelayTower",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "RelayTowerLongRangeTransfer",
+      "Id": "RelayTowerLongRangeTransfer",
+      "Name": "Relay Tower - Long Range Transfer"
+    },
+    {
+      "Link": "CoreSystemRecharge",
+      "Id": "CoreSystemRecharge",
+      "Name": "System Recharge"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Manufacturer",
+      "Icon": "btn-building-genetron-manufacturer",
+      "Description": "Produces light-weight machines.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Spitfires",
+      "Name": "Manufacturer"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "RelayTowerLongRangeTransfer",
+      "Icon": "btn-progression-stetmann-02-energyconfiguration",
+      "Tooltip": "Moves energy from the caster to the target.",
+      "Name": "Long Range Transfer",
+      "AbilCmd": "RelayTowerLongRangeTransfer,Execute"
+    },
+    {
+      "Id": "CoreSystemRecharge",
+      "Icon": "btn-upgrade-terran-nova-snipeenergyrefund",
+      "Tooltip": "Transfers energy directly to the target unit.",
+      "Name": "System Recharge",
+      "AbilCmd": "CoreSystemRecharge,Execute"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "Name": "Nydus Worm",
+  "Description": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.2,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIThreatGround",
+    "AIThreatAir",
+    "AIHighPrioTarget",
+    "AIDefense"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NydusCanal",
+  "HotkeyAlias": "NydusCanal",
+  "SelectAlias": "NydusCanal",
+  "SubgroupAlias": "NydusCanal",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NydusCanal",
+  "AIEvaluateAlias": "NydusCanal",
+  "ReviveType": "NydusCanal",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NydusCanal/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NydusCanal/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 29.9707,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3IgnoreCreepContour",
+  "PlacementFootprint": "Footprint3x3IgnoreCreepContour",
+  "SubgroupPriority": 10,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "SetRallyPoint",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "Load",
+          "Type": "AbilCmd",
+          "AbilCmd": "NydusWormTransport,Load",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NydusCanalUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "NydusWormTransport,UnloadAll",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 261,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 75,
+    "Vespene": 75
+  },
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/ZergUnits",
+  "Icon": "btn-building-zerg-nydusworm",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "NydusCanal",
+  "Behaviors": [
+    {
+      "Link": "NydusCreepGrowth",
+      "Id": "NydusCreepGrowth",
+      "Name": "Nydus Creep Growth"
+    },
+    {
+      "Link": "NydusDetect",
+      "Id": "NydusDetect"
+    },
+    {
+      "Link": "NydusWormArmor",
+      "Id": "NydusWormArmor"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "SecretedCoating",
+      "Id": "SecretedCoating",
+      "Icon": "btn-upgrade-zerg-demolition",
+      "Name": "Secreted Coating"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "BuildinProgressNydusCanal",
+      "Id": "BuildinProgressNydusCanal",
+      "Name": "Buildin Progress Nydus Canal"
+    },
+    {
+      "Link": "NydusWormTransport",
+      "Id": "NydusWormTransport",
+      "Name": "Nydus Worm Transport"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NydusNetwork",
+      "Icon": "btn-building-zerg-nydusnetwork",
+      "Description": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
+      "Name": "Nydus Network"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NydusNetwork",
+      "Icon": "btn-building-zerg-nydusnetwork",
+      "Description": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
+      "Name": "Nydus Network"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "SetRallyPoint",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "Load",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Nydus Worm.",
+      "Name": "Load",
+      "AbilCmd": "NydusWormTransport,Load"
+    },
+    {
+      "Id": "NydusCanalUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "NydusWormTransport,UnloadAll"
+    }
+  ]
+}

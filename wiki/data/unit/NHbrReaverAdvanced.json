@@ -1,0 +1,299 @@
+{
+  "Name": "Advanced Reaver",
+  "Description": "Late-game colossal creature made from both Protoss and Zerg DNA. Capable of powerful attacks.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 525,
+  "LifeMax": 525,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.25,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrReaver",
+  "HotkeyAlias": "NHbrReaver",
+  "SelectAlias": "NHbrReaver",
+  "SubgroupAlias": "NHbrReaver",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrReaverAdvanced",
+  "AIEvaluateAlias": "NHbrReaver",
+  "ReviveType": "NHbrReaverAdvanced",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100,
+      "Anim": 0,
+      "Turn": 0
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrReaverAdvanced/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrReaverAdvanced/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "DataCollection": "NHbrReaverAdvanced",
+  "ShieldArmorName": "Hybrid Protection",
+  "Acceleration": 6.25,
+  "LateralAcceleration": 46,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 80,
+  "LifeArmor": 4,
+  "ShieldArmor": 4,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrReaverConsumeDNA",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrReaverConsumeDNA,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrReaverUpgradeToAdvancedReaver",
+          "Type": "Passive",
+          "Requirements": "NHbrReaverUpgradeToAdvancedReaver@Use",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "",
+  "TauntDuration": {
+    "Cheer": 0,
+    "Dance": 0
+  },
+  "Mob": "Multiplayer",
+  "AttackTargetPriority": 20,
+  "Collide": [],
+  "HotkeyCategory": "",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "ScoreResult": "BuildOrder",
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Massive"
+  ],
+  "ShieldsStart": 400,
+  "ShieldsMax": 400,
+  "Speed": 2.9687,
+  "Sight": 9,
+  "Food": -6,
+  "CostResource": {
+    "Minerals": 350,
+    "Vespene": 250
+  },
+  "InnerRadius": 0.75,
+  "CargoSize": 8,
+  "ScoreKill": 1600,
+  "SubgroupPriority": 57,
+  "EnergyStart": 100,
+  "EnergyMax": 200,
+  "LifeArmorIcon": "btn-upgrade-dehaka-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrReaverAdvanced",
+  "Weapons": [
+    {
+      "Link": "NHbrReaverWeapon",
+      "Id": "NHbrReaverWeapon",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Claws",
+      "Amount": {
+        "AccumulatorArray": [
+          "NHbrReaverUpgradeToAdvancedReaver@Switch"
+        ],
+        "value": 18
+      },
+      "Kind": "Melee",
+      "DisplayAttackCount": 1,
+      "TargetFilters": "Ground",
+      "Range": 0.5,
+      "Period": 1.2
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "NHbrReaverConsumeDNA@Autocast",
+      "Id": "NHbrReaverConsumeDNA@Autocast"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "NHbrGroundArmors",
+      "Id": "NHbrGroundArmors",
+      "Name": "Hybrid Ground Armors"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level1",
+      "Name": "Hybrid Ground Armor Level 1"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level2",
+      "Name": "Hybrid Ground Armor Level 2"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level3",
+      "Name": "Hybrid Ground Armor Level 3"
+    },
+    {
+      "Link": "NHbrReaverUpgradeToAdvancedReaver",
+      "Id": "NHbrReaverUpgradeToAdvancedReaver",
+      "Icon": "tip_hybridbehemoth",
+      "Name": "Advanced Reaver"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "NHbrReaverConsumeDNA",
+      "Id": "NHbrReaverConsumeDNA",
+      "Name": "Consume DNA"
+    },
+    {
+      "Link": "NHbrFAoEStun"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "NHbrReaverConsumeDNA",
+      "Icon": "btn-ability-zerg-dehaka-consume",
+      "Tooltip": "Deals <span style=\"color: #ffff8a\"><b>10</b></span> Damage to each non-structure enemy nearby and restore <span style=\"color: #ffff8a\"><b>7</b></span> life per enemy hit upon activatation and each <span style=\"color: #FFFF80\"><b>1.40</b></span> second during <span style=\"color: #FFFF80\"><b>5.60</b></span> seconds.<br/>",
+      "Name": "Consume DNA",
+      "AbilCmd": "NHbrReaverConsumeDNA,Execute"
+    }
+  ]
+}

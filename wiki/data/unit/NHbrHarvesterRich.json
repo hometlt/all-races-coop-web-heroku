@@ -1,0 +1,186 @@
+{
+  "Name": "Harvester",
+  "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 350,
+  "LifeMax": 350,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrHarvesterRich",
+  "HotkeyAlias": "NHbrHarvester",
+  "SelectAlias": "NHbrHarvester",
+  "SubgroupAlias": "NHbrHarvester",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrHarvesterRich",
+  "AIEvaluateAlias": "NHbrHarvesterRich",
+  "ReviveType": "NHbrHarvesterRich",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrHarvesterRich/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrHarvesterRich/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "SubgroupPriority": 1,
+  "DataCollection": "NHbrHarvesterRich",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "ShieldsStart": 150,
+  "ShieldsMax": 150,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "Footprint": "FootprintGeyserRoundedBuilt",
+  "PlacementFootprint": "Footprint3x3CappedGeyser",
+  "BuiltOn": [
+    "RichVespeneGeyser"
+  ],
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "GlossaryPriority": 14,
+  "GlossaryAlias": "NHbrHarvester",
+  "Icon": "btn-building-protoss-assimilator-ihanrii",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrHarvesterRich",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "HarvestableRichVespeneGeyserGasProtoss",
+      "Id": "HarvestableRichVespeneGeyserGasProtoss"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

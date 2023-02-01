@@ -1,0 +1,104 @@
+{
+  "Name": "ClaymoreMineDummy",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "None",
+  "Mover": "",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Permanent",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Uncursorable",
+    "Undetectable",
+    "Invulnerable",
+    "NoScore",
+    "NoDeathEvent",
+    "Unstoppable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ClaymoreMineDummy",
+  "HotkeyAlias": "ClaymoreMineDummy",
+  "SelectAlias": "ClaymoreMineDummy",
+  "SubgroupAlias": "ClaymoreMineDummy",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ClaymoreMineDummy",
+  "AIEvaluateAlias": "ClaymoreMineDummy",
+  "ReviveType": "ClaymoreMineDummy",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ClaymoreMineDummy/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ClaymoreMineDummy/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "ClaymoreMinePlaceDirection",
+          "Type": "AbilCmd",
+          "AbilCmd": "ClaymoreMineSetDirection,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Id": "ClaymoreMineDummy",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "ClaymoreMineSetDirection",
+      "Id": "ClaymoreMineSetDirection",
+      "Name": "ClaymoreMineSetDirection"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "ClaymoreMinePlaceDirection",
+      "Icon": "btn-ability-zeratul-topbar-directlegions",
+      "Name": "Set Claymore Mine Direction",
+      "AbilCmd": "ClaymoreMineSetDirection,Execute"
+    }
+  ]
+}

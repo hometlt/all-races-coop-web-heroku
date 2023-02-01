@@ -1,0 +1,495 @@
+{
+  "Name": "Fleshrender",
+  "Description": "Fast flying melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+15 Life<br/>Infernal Effigy</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 45,
+  "LifeMax": 45,
+  "LifeArmorName": "Dragon Scale Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Fleshrender",
+  "HotkeyAlias": "Fleshrender",
+  "SelectAlias": "Fleshrender",
+  "SubgroupAlias": "Fleshrender",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Fleshrender",
+  "AIEvaluateAlias": "Mutalisk",
+  "ReviveType": "Fleshrender",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Fleshrender/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Fleshrender/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Attributes": [
+    "Biological",
+    "Light"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Acceleration": 9,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AscendedFleshrender",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 4,
+          "AbilCmd": "AscendedFleshrender,Execute"
+        },
+        {
+          "Face": "AscendedFleshrender",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "AscendedFleshrenderFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "FleshrenderFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "AbilCmd": "DragonFissionDisabled,Execute",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "FleshrenderKite",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "DragonRetarget",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "FleshrenderInfernalEffigy",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "Row": 1,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/DragonUnits",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "Collide": [
+    "Flying"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "Speed": 4.5,
+  "Sight": 9,
+  "Height": 3.75,
+  "Food": -1,
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 25
+  },
+  "KillXP": 15,
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "SubgroupPriority": 14,
+  "GlossaryPriority": 41,
+  "GlossaryStrongArray": [
+    "VikingFighter",
+    "Mutalisk",
+    "VoidRay"
+  ],
+  "GlossaryWeakArray": [
+    "Marine",
+    "Corruptor",
+    "Phoenix"
+  ],
+  "Icon": "btn-unit-zerg-scourge",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Fleshrender",
+  "Weapons": [
+    {
+      "Link": "FleshrenderAir",
+      "Id": "FleshrenderAir",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Fleshrender",
+      "TargetFilters": "Air",
+      "Range": 6,
+      "Period": 0.56
+    },
+    {
+      "Link": "FleshrenderGround",
+      "Id": "FleshrenderGround",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Fleshrender",
+      "TargetFilters": "Ground",
+      "Range": 2.5,
+      "Period": 0.91
+    },
+    {
+      "Link": "FleshrenderShred",
+      "Id": "FleshrenderShred",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Shred",
+      "Amount": 5,
+      "Kind": "Melee",
+      "TargetFilters": "Air",
+      "Range": 0.25,
+      "Period": 0.56
+    },
+    {
+      "Link": "FleshrenderCinderSpike",
+      "Id": "FleshrenderCinderSpike",
+      "Name": "Cinder Spike",
+      "Amount": 4,
+      "AttributeBonus": {
+        "Light": 2
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 3,
+      "Period": 0.91
+    },
+    {
+      "Link": "FleshrenderCinderSpikeDummy"
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "DragonLineageLesser",
+      "Id": "DragonLineageLesser",
+      "Name": "Dragon Lineage"
+    },
+    {
+      "Link": "Negative1Armor",
+      "Id": "Negative1Armor",
+      "Name": "-1 Armor"
+    },
+    {
+      "Link": "Fleshrender",
+      "Id": "Fleshrender",
+      "Name": "Fleshrender"
+    },
+    {
+      "Link": "FleshrenderInfernalEffigy",
+      "Id": "FleshrenderInfernalEffigy",
+      "Name": "Fleshrender - Infernal Effigy"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonFireAttacks",
+      "Id": "DragonFireAttacks",
+      "Name": "Dragon Fire Attacks"
+    },
+    {
+      "Link": "DragonMeleeAttacks",
+      "Id": "DragonMeleeAttacks",
+      "Name": "Dragon Melee Attacks"
+    },
+    {
+      "Link": "DragonScaleArmors",
+      "Id": "DragonScaleArmors",
+      "Name": "Dragon Scale Armors"
+    },
+    {
+      "Link": "DragonFireAttacksLevel1",
+      "Id": "DragonFireAttacksLevel1",
+      "Name": "Dragon Fire Attacks Level 1"
+    },
+    {
+      "Link": "DragonFireAttacksLevel2",
+      "Id": "DragonFireAttacksLevel2",
+      "Name": "Dragon Fire Attacks Level 2"
+    },
+    {
+      "Link": "DragonFireAttacksLevel3",
+      "Id": "DragonFireAttacksLevel3",
+      "Name": "Dragon Fire Attacks Level 3"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel1",
+      "Id": "DragonMeleeAttacksLevel1",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level1",
+      "Name": "Dragon Melee Attacks Level 1"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel2",
+      "Id": "DragonMeleeAttacksLevel2",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level2",
+      "Name": "Dragon Melee Attacks Level 2"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel3",
+      "Id": "DragonMeleeAttacksLevel3",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level3",
+      "Name": "Dragon Melee Attacks Level 3"
+    },
+    {
+      "Link": "DragonScaleArmorLevel1",
+      "Id": "DragonScaleArmorLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Dragon Scale Armor Level 1"
+    },
+    {
+      "Link": "DragonScaleArmorLevel2",
+      "Id": "DragonScaleArmorLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Dragon Scale Armor Level 2"
+    },
+    {
+      "Link": "DragonScaleArmorLevel3",
+      "Id": "DragonScaleArmorLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Dragon Scale Armor Level 3"
+    },
+    {
+      "Link": "FleshrenderProliferation",
+      "Id": "FleshrenderProliferation",
+      "Icon": "btn-ability-kerrigan-broodlingnest",
+      "Name": "Fleshrender - Proliferation"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "AscendedFleshrender",
+      "Id": "AscendedFleshrender",
+      "Name": "Ascended Fleshrender"
+    },
+    {
+      "Link": "AscendedFleshrenderFission",
+      "Id": "AscendedFleshrenderFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "FleshrenderFission",
+      "Id": "FleshrenderFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "DragonFissionDisabled",
+      "Id": "DragonFissionDisabled",
+      "Name": "Fission"
+    },
+    {
+      "Link": "AscendedFleshrenderFree",
+      "Id": "AscendedFleshrenderFree",
+      "Name": "Ascended Fleshrender (Free)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "GenesisPitTowering",
+      "Icon": "wireframe-zerg-broodlingnest",
+      "Description": "Spawns flying Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Fleshreders<br/>- Aurora Conduits<br/>- Arkwyrms",
+      "Name": "Genesis Pit"
+    },
+    {
+      "Id": "ToweringDeepOne",
+      "Icon": "btn-unit-zerg-nydusdestroyer",
+      "Description": "Spawns flying Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Fleshrenders<br/>- Aurora Conduits<br/>- Arkwyrms",
+      "Name": "Towering Deep One"
+    },
+    {
+      "Id": "ToweringDeepOneNoFootprint",
+      "Icon": "btn-unit-zerg-nydusdestroyer",
+      "Description": "Spawns flying Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Fleshrenders<br/>- Aurora Conduits<br/>- Arkwyrms",
+      "Name": "Towering Deep One"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AscendedFleshrender",
+      "Icon": "btn-ability-zerg-dehakaspawn",
+      "Tooltip": "<span style=\"color: #00FF00\">+15 Life<br/>Infernal Effigy</span>",
+      "Name": "Ascend",
+      "AbilCmd": "AscendedFleshrender,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "AscendedFleshrenderFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "FleshrenderFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "DragonFissionDisabled,Execute"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "Name": "Rich Vespene Purification Plant",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "VespenePurificationPlantRich",
+  "HotkeyAlias": "VespenePurificationPlantRich",
+  "SelectAlias": "VespenePurificationPlantRich",
+  "SubgroupAlias": "VespenePurificationPlantRich",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "VespenePurificationPlantRich",
+  "AIEvaluateAlias": "VespenePurificationPlantRich",
+  "ReviveType": "VespenePurificationPlantRich",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "VespenePurificationPlantRich/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "VespenePurificationPlantRich/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 9,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "RepairTime": 30,
+  "AttackTargetPriority": 11,
+  "EffectArray": {
+    "Create": "RefineryRichSearch"
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "FootprintGeyserRoundedBuilt2",
+  "PlacementFootprint": "Footprint3x3CappedGeyser2",
+  "BuiltOn": [
+    "RichVespeneGeyser"
+  ],
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 1,
+  "GlossaryPriority": 244,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-structure-ued-refineryautomated",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "VespenePurificationPlantRich",
+  "Behaviors": [
+    {
+      "Link": "HarvestableRichVespeneGeyserGas",
+      "Id": "HarvestableRichVespeneGeyserGas"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

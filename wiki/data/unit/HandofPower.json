@@ -1,0 +1,474 @@
+{
+  "Name": "Hand of Power",
+  "Description": "Caster unit. Can use Crushing Gravity and Portal. Can be upgraded to use Frenzy.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 90,
+  "LifeMax": 90,
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.875,
+  "SeparationRadius": 0.875,
+  "MinimapRadius": 0.875,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "HandofPower",
+  "HotkeyAlias": "HandofPower",
+  "SelectAlias": "HandofPower",
+  "SubgroupAlias": "HandofPower",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "HandofPower",
+  "AIEvaluateAlias": "HighTemplar",
+  "ReviveType": "HandofPower",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "HandofPower/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "HandofPower/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Armored",
+    "Psionic"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Acceleration": 1000,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AscendedHandofPower",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 4,
+          "AbilCmd": "AscendedHandofPower,Execute"
+        },
+        {
+          "Face": "AscendedHandofPower",
+          "Type": "Passive",
+          "Requirements": "Ascended",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "AscendedHandofPowerFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "Row": 1,
+          "Column": 3,
+          "AbilCmd": "HandofPowerFission,Execute"
+        },
+        {
+          "Face": "DragonFission",
+          "Type": "AbilCmd",
+          "AbilCmd": "DragonFissionDisabled,Execute",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "HandofPowerCrushingGravity",
+          "Type": "AbilCmd",
+          "AbilCmd": "HandofPowerCrushingGravity,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "HandofPowerFrenzy",
+          "Type": "AbilCmd",
+          "AbilCmd": "HandofPowerFrenzy,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "HandofPowerPortalEntrance",
+          "Type": "AbilCmd",
+          "AbilCmd": "HandofPowerPortalEntrance,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "HandofPowerPortalExit",
+          "Type": "AbilCmd",
+          "AbilCmd": "HandofPowerPortalExit,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/DragonUnits",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Speed": 2.5,
+  "Sight": 11,
+  "Food": -3,
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 150
+  },
+  "KillXP": 15,
+  "CargoSize": 4,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "SubgroupPriority": 20,
+  "GlossaryPriority": 33,
+  "GlossaryStrongArray": [
+    "Banshee",
+    "Mutalisk",
+    "VoidRay"
+  ],
+  "GlossaryWeakArray": [
+    "HighTemplar",
+    "Ultralisk",
+    "Ghost"
+  ],
+  "Icon": "btn-unit-zerg-impaler",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "HandofPower",
+  "Behaviors": [
+    {
+      "Link": "DragonLineageLesser",
+      "Id": "DragonLineageLesser",
+      "Name": "Dragon Lineage"
+    },
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonPlateArmors",
+      "Id": "DragonPlateArmors",
+      "Name": "Dragon Plate Armors"
+    },
+    {
+      "Link": "DragonPlateArmorLevel1",
+      "Id": "DragonPlateArmorLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Dragon Plate Armor Level 1"
+    },
+    {
+      "Link": "DragonPlateArmorLevel2",
+      "Id": "DragonPlateArmorLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Dragon Plate Armor Level 2"
+    },
+    {
+      "Link": "DragonPlateArmorLevel3",
+      "Id": "DragonPlateArmorLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Dragon Plate Armor Level 3"
+    },
+    {
+      "Link": "HandofPowerMightyFist",
+      "Id": "HandofPowerMightyFist",
+      "Icon": "ui_tipicon_campaign_hyb02-nullzone",
+      "Name": "Hand of Power - Mighty Fist"
+    },
+    {
+      "Link": "HandofPowerFrenzy",
+      "Id": "HandofPowerFrenzy",
+      "Icon": "btn-ability-zerg-genemutation-attackspeed",
+      "Name": "Hand of Power - Frenzy"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "HandofPowerCrushingGravity",
+      "Id": "HandofPowerCrushingGravity",
+      "Name": "Hand of Power - Crushing Gravity"
+    },
+    {
+      "Link": "AscendedHandofPower",
+      "Id": "AscendedHandofPower",
+      "Name": "Ascended Hand of Power"
+    },
+    {
+      "Link": "AscendedHandofPowerFission",
+      "Id": "AscendedHandofPowerFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "HandofPowerFission",
+      "Id": "HandofPowerFission",
+      "Name": "Fission"
+    },
+    {
+      "Link": "DragonFissionDisabled",
+      "Id": "DragonFissionDisabled",
+      "Name": "Fission"
+    },
+    {
+      "Link": "HandofPowerFrenzy",
+      "Id": "HandofPowerFrenzy",
+      "Name": "Hand of Power - Frenzy"
+    },
+    {
+      "Link": "HandofPowerPortalEntrance",
+      "Id": "HandofPowerPortalEntrance",
+      "Name": "Hand of Power - Portal Entrance"
+    },
+    {
+      "Link": "HandofPowerPortalExit",
+      "Id": "HandofPowerPortalExit",
+      "Name": "Hand of Power - Portal Exit"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "GenesisPitGreater",
+      "Icon": "wireframe-zerg-broodlingnest",
+      "Description": "Spawns greater Dragon units. Inherits Augmentation Pit status from its parent.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Berserkers<br/>- Skyrazers",
+      "Name": "Genesis Pit"
+    },
+    {
+      "Id": "GreaterDeepOne",
+      "Icon": "btn-unit-zerg-nydusdragon",
+      "Description": "Spawns greater Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Berserkers<br/>- Skyrazers",
+      "Name": "Greater Deep One"
+    },
+    {
+      "Id": "GreaterDeepOneNoFootprint",
+      "Icon": "btn-unit-zerg-nydusdragon",
+      "Description": "Spawns greater Dragon units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Berserkers<br/>- Skyrazers",
+      "Name": "Greater Deep One"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AscendedHandofPower",
+      "Icon": "btn-ability-zerg-dehakaspawn",
+      "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+100% Energy Regeneration</span>",
+      "Name": "Ascend",
+      "AbilCmd": "AscendedHandofPower,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "AscendedHandofPowerFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "HandofPowerFission,Execute"
+    },
+    {
+      "Id": "DragonFission",
+      "Icon": "btn-ability-zerg-disguise",
+      "Tooltip": "Splits into two identical clones that start with 40% life and damage. These clones have 2 regeneration and when they reach full life their damage is restored to 100%.",
+      "Name": "Fission",
+      "AbilCmd": "DragonFissionDisabled,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "HandofPowerCrushingGravity",
+      "Icon": "btn-ability-swarm-kerrigan-crushinggrip",
+      "Tooltip": "Immobilizes units in the target area for up to <b>5</b> seconds. Forces air units to the ground and disables their abilities. Reveals cloaked and burrowed units.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
+      "Name": "Crushing Gravity",
+      "AbilCmd": "HandofPowerCrushingGravity,Execute"
+    },
+    {
+      "Id": "HandofPowerFrenzy",
+      "Icon": "btn-ability-kerrigan-wildmutation",
+      "Tooltip": "Biological units in the target area to go mad for <b>10</b> seconds. Increases attack and movement speed by 50% but reduces armor by 2 and prevents control.",
+      "Name": "Frenzy",
+      "AbilCmd": "HandofPowerFrenzy,Execute"
+    },
+    {
+      "Id": "HandofPowerPortalEntrance",
+      "Icon": "btn-ability-protoss-blackhole-color",
+      "Tooltip": "Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <b>14</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
+      "Name": "Portal Entrance",
+      "AbilCmd": "HandofPowerPortalEntrance,Execute"
+    },
+    {
+      "Id": "HandofPowerPortalExit",
+      "Icon": "btn-ability-neutral-ursadonleap",
+      "Tooltip": "Activates the nearest inactive portal entrance in range linking it to the created portal exit.",
+      "Name": "Portal Exit",
+      "AbilCmd": "HandofPowerPortalExit,Execute"
+    }
+  ]
+}

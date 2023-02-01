@@ -1,0 +1,232 @@
+{
+  "Name": "Heavy Tower",
+  "Description": "Anti-ground defensive structure, effective against armored targets.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 400,
+  "LifeMax": 400,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIDefense",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "HeavyTower",
+  "HotkeyAlias": "HeavyTower",
+  "SelectAlias": "HeavyTower",
+  "SubgroupAlias": "HeavyTower",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "HeavyTower",
+  "AIEvaluateAlias": "HeavyTower",
+  "ReviveType": "HeavyTower",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "HeavyTower/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "HeavyTower/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 11,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 225,
+    "Vespene": 25
+  },
+  "AttackTargetPriority": 19,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 14,
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 310,
+  "GlossaryStrongArray": [
+    "Banshee",
+    "Mutalisk",
+    "Phoenix"
+  ],
+  "GlossaryWeakArray": [
+    "Marine",
+    "Zergling",
+    "Zealot"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Food": 8,
+  "Facing": 315,
+  "LifeArmor": 2,
+  "CargoSize": 8,
+  "Icon": "btn-building-guardianturretbronze",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "HeavyTower",
+  "Weapons": [
+    {
+      "Link": "90mmCannons23",
+      "Turret": "HeavyTower",
+      "Id": "90mmCannons23",
+      "Icon": "btn-upgrade-terran-hisecautotracking",
+      "Name": "125mm Gauss Cannon",
+      "Amount": 20,
+      "AttributeBonus": {
+        "Armored": 20
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 1.4
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

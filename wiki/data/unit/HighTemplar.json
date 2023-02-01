@@ -1,0 +1,469 @@
+{
+  "Name": "High Templar",
+  "Description": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 40,
+  "LifeMax": 40,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.8,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AlwaysThreatens",
+    "AIThreatGround",
+    "AIThreatAir",
+    "AISplash",
+    "AIHighPrioTarget",
+    "AICaster",
+    "AIPressForwardDisabled",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "HighTemplar",
+  "HotkeyAlias": "HighTemplar",
+  "SelectAlias": "HighTemplar",
+  "SubgroupAlias": "HighTemplar",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "HighTemplar",
+  "AIEvaluateAlias": "HighTemplar",
+  "ReviveType": "HighTemplar",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "HighTemplar/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "HighTemplar/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "ShieldsStart": 40,
+  "ShieldsMax": 40,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "Speed": 1.875,
+  "Acceleration": 1000,
+  "Deceleration": 1000,
+  "LateralAcceleration": 46,
+  "Food": -2,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "InnerRadius": 0.375,
+  "CargoSize": 2,
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 93,
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Sight": 10,
+  "TacticalAIThink": "AIThinkHighTemplar",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProgressRally,Rally1",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "AWrp",
+          "Type": "AbilCmd",
+          "AbilCmd": "ArchonWarp,SelectedUnits",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "PsiStorm",
+          "Type": "AbilCmd",
+          "AbilCmd": "PsiStorm,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Feedback",
+          "Type": "AbilCmd",
+          "AbilCmd": "Feedback,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Light",
+    "Biological",
+    "Psionic"
+  ],
+  "GlossaryCategory": "Unit/Category/ProtossUnits",
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "GlossaryPriority": 80,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 150
+  },
+  "GlossaryStrongArray": [
+    "Marine",
+    "Hydralisk",
+    "Sentry"
+  ],
+  "GlossaryWeakArray": [
+    "Ghost",
+    "Roach",
+    "Colossus"
+  ],
+  "ShieldRegenDelay": 10,
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "Icon": "btn-unit-protoss-hightemplar",
+  "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "HighTemplar",
+  "Weapons": [
+    {
+      "Link": "HighTemplarWeapon",
+      "Id": "HighTemplarWeapon",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel0",
+      "Name": "Psi Blast",
+      "Amount": 4,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 1.754
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossGroundArmors",
+      "Id": "ProtossGroundArmors",
+      "Name": "Protoss Ground Armors"
+    },
+    {
+      "Link": "ProtossGroundWeapons",
+      "Id": "ProtossGroundWeapons",
+      "Name": "Protoss Ground Weapons"
+    },
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "HighTemplarKhaydarinAmulet",
+      "Id": "HighTemplarKhaydarinAmulet",
+      "Icon": "btn-upgrade-protoss-khaydarinamulet",
+      "Name": "Khaydarin Amulet"
+    },
+    {
+      "Link": "ProtossGroundArmorsLevel1",
+      "Id": "ProtossGroundArmorsLevel1",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel1",
+      "Name": "Protoss Ground Armor Level 1"
+    },
+    {
+      "Link": "ProtossGroundArmorsLevel2",
+      "Id": "ProtossGroundArmorsLevel2",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel2",
+      "Name": "Protoss Ground Armor Level 2"
+    },
+    {
+      "Link": "ProtossGroundArmorsLevel3",
+      "Id": "ProtossGroundArmorsLevel3",
+      "Icon": "btn-upgrade-protoss-groundarmorlevel3",
+      "Name": "Protoss Ground Armor Level 3"
+    },
+    {
+      "Link": "ProtossGroundWeaponsLevel1",
+      "Id": "ProtossGroundWeaponsLevel1",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel1",
+      "Name": "Protoss Ground Weapons Level 1"
+    },
+    {
+      "Link": "ProtossGroundWeaponsLevel2",
+      "Id": "ProtossGroundWeaponsLevel2",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel2",
+      "Name": "Protoss Ground Weapons Level 2"
+    },
+    {
+      "Link": "ProtossGroundWeaponsLevel3",
+      "Id": "ProtossGroundWeaponsLevel3",
+      "Icon": "btn-upgrade-protoss-groundweaponslevel3",
+      "Name": "Protoss Ground Weapons Level 3"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    },
+    {
+      "Link": "PsiStormTech",
+      "Id": "PsiStormTech",
+      "Icon": "btn-ability-protoss-psistorm-color",
+      "Name": "Psionic Storm"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "PsiStorm",
+      "Id": "PsiStorm",
+      "Name": "Psi Storm"
+    },
+    {
+      "Link": "ArchonWarp",
+      "Id": "ArchonWarp",
+      "Name": "Archon Merge"
+    },
+    {
+      "Link": "Warpable",
+      "Id": "Warpable",
+      "Name": "Warpable"
+    },
+    {
+      "Link": "ProgressRally",
+      "Id": "ProgressRally",
+      "Name": "Progress Rally"
+    },
+    {
+      "Link": "Feedback",
+      "Id": "Feedback",
+      "Name": "Feedback"
+    },
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "TemplarArchive",
+      "Icon": "btn-building-protoss-templararchives",
+      "Description": "Contains an upgrade for High Templar.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- High Templar at the Gateway<br/>- Archon Merge from High Templar",
+      "Name": "Templar Archives"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Gateway",
+      "Icon": "btn-building-protoss-gateway",
+      "Description": "Warps in Protoss ground units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Zealots",
+      "Name": "Gateway"
+    },
+    {
+      "Id": "WarpGate",
+      "Icon": "btn-building-protoss-warpgate",
+      "Description": "Enables warp in of Protoss ground units.",
+      "Name": "Warp Gate"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "ProgressRally,Rally1"
+    },
+    {
+      "Id": "AWrp",
+      "Icon": "btn-unit-protoss-archon",
+      "Tooltip": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Archon Merge",
+      "AbilCmd": "ArchonWarp,SelectedUnits"
+    },
+    {
+      "Id": "PsiStorm",
+      "Icon": "btn-ability-protoss-psistorm-color",
+      "Tooltip": "Creates a storm of psionic energy that lasts <b>4</b>, causing up to 80 damage to all units in the target area.",
+      "Name": "Psionic Storm",
+      "AbilCmd": "PsiStorm,Execute"
+    },
+    {
+      "Id": "Feedback",
+      "Icon": "btn-ability-protoss-feedback-color",
+      "Tooltip": "Drains all energy from the target. Deals <b>1</b> damage per point of energy.",
+      "Name": "Feedback",
+      "AbilCmd": "Feedback,Execute"
+    }
+  ]
+}

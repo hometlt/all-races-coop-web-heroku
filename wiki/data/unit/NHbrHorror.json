@@ -1,0 +1,336 @@
+{
+  "Name": "Horror",
+  "Description": "Late-game assault-tanky air unit. Deals splash damage to enemy air units and slows down ground units.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 50,
+  "LifeMax": 50,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 1699.9804,
+  "TurningRate": 819.8437,
+  "Radius": 0.75,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrHorror",
+  "HotkeyAlias": "NHbrHorror",
+  "SelectAlias": "NHbrHorror",
+  "SubgroupAlias": "NHbrHorror",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrHorror",
+  "AIEvaluateAlias": "NHbrHorror",
+  "ReviveType": "NHbrHorror",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrHorror/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrHorror/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "Acceleration": 2.25,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 20,
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrHorror@NetworksProtection",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrNemesisCatacombEnhancedArmor@Button",
+          "Type": "Passive",
+          "Requirements": "NHbrNemesisCatacombEnhancedArmor@Use",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/NHbrUnits",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "DataCollection": "NHbrHorror",
+  "Sight": 10,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Attributes": [
+    "Armored",
+    "Biological"
+  ],
+  "EnergyMax": 100,
+  "EnergyDamageRatio": 1,
+  "ShieldsStart": 60,
+  "ShieldsMax": 60,
+  "Speed": 2.6914,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -5,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 225,
+    "Vespene": 175
+  },
+  "SubgroupPriority": 50,
+  "GlossaryPriority": 35,
+  "EnergyStart": 100,
+  "Icon": "btn-hybrid-unit-horror",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrHorror",
+  "Weapons": [
+    {
+      "Link": "NHbrHorrorPlasmaticBlast",
+      "Id": "NHbrHorrorPlasmaticBlast",
+      "Icon": "btn-upgrade-terran-plasmashot",
+      "Name": "Plasmatic Blast",
+      "Amount": 12,
+      "AttributeBonus": {
+        "Light": 2
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 1.06
+    },
+    {
+      "Link": "NHbrHorrorPlasmaticCharge",
+      "Id": "NHbrHorrorPlasmaticCharge",
+      "Icon": "btn-upgrade-artanis-scarabsplashradius",
+      "Name": "Plasmatic Charge",
+      "Amount": 30,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 1.56
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "NHbrAirArmors",
+      "Id": "NHbrAirArmors",
+      "Name": "Hybrid Air Armors"
+    },
+    {
+      "Link": "NHbrAirWeapons",
+      "Id": "NHbrAirWeapons",
+      "Name": "Hybrid Air Weapons"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+      "Id": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-airattacks-level1",
+      "Name": "Hybrid Air Weapons Level 1"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-airattacks-level2",
+      "Name": "Hybrid Air Weapons Level 2"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+      "Id": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-airattacks-level3",
+      "Name": "Hybrid Air Weapons Level 3"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Hybrid Air Armor Level 1"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Hybrid Air Armor Level 2"
+    },
+    {
+      "Link": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+      "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Hybrid Air Armor Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrCrystallicShrine",
+      "Name": "Crystallic Shrine"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NHbrVoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+      "Name": "Void Rift"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

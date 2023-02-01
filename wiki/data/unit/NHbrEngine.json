@@ -1,0 +1,261 @@
+{
+  "Name": "Engine",
+  "Description": "<span style=\"color: #FFFF80\">Containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Silents<br/>- Dreadnoks",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 700,
+  "LifeMax": 700,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.75,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrEngine",
+  "HotkeyAlias": "NHbrEngine",
+  "SelectAlias": "NHbrEngine",
+  "SubgroupAlias": "NHbrEngine",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrEngine",
+  "AIEvaluateAlias": "NHbrEngine",
+  "ReviveType": "NHbrEngine",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrEngine/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrEngine/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 2,
+  "DataCollection": "NHbrEngine",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 344.9926,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrEngineResearch@ResearchProtectionArmor",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrEngineResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrSpiritCloaking@Cloaking",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrEngineResearch,Research2",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "ShieldsStart": 200,
+  "ShieldsMax": 200,
+  "CostResource": {
+    "Minerals": 200,
+    "Vespene": 175
+  },
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "EnergyStart": 20,
+  "EnergyMax": 100,
+  "GlossaryPriority": 21,
+  "Icon": "btn-hybrid-building-roboticssupportbay",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrEngine",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "NHbrEngineResearch",
+      "Id": "NHbrEngineResearch",
+      "Name": "Research"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrStasisCell",
+      "Icon": "btn-hybrid-building-stasiscell",
+      "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>, <span style=\"color: #FFFF80\">containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Flayers<br/>- Warbringers<br/>- Sentinels",
+      "Name": "Stasis Cell"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "NHbrEngineResearch@ProtectionArmor",
+      "Icon": "btn-ability-zeratul-warpprism-shieldboosters",
+      "Name": "Protection Armor"
+    },
+    {
+      "Id": "NHbrSpiritCloaking@Cloaking",
+      "Icon": "btn-upgrade-protoss-alarak-permanentcloak",
+      "Name": "Cloaking"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "NHbrIonicCrystal",
+      "Icon": "btn-hybrid-building-pylon",
+      "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+      "Name": "Ionic Crystal"
+    },
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "NHbrEngineResearch@ResearchProtectionArmor",
+      "Icon": "btn-ability-zeratul-warpprism-shieldboosters",
+      "Tooltip": "Increases <span style=\"color: #FFFFFF\">Protection</span> Armor of units and structures while they are connected to <c val=\"#Network\">Network</span>  by <span style=\"color: #ffff8a\"><b>2</b></span>.",
+      "Name": "Research Protection Armor",
+      "AbilCmd": "NHbrEngineResearch,Research1"
+    },
+    {
+      "Id": "NHbrSpiritCloaking@Cloaking",
+      "Icon": "btn-upgrade-protoss-alarak-permanentcloak",
+      "Tooltip": "Spirit gains <span style=\"color: #FFFF80\">permanent cloak</span>.",
+      "Name": "Cloaking",
+      "AbilCmd": "NHbrEngineResearch,Research2"
+    }
+  ]
+}

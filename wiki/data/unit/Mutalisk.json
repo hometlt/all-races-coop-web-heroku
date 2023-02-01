@@ -1,0 +1,300 @@
+{
+  "Name": "Mutalisk",
+  "Description": "Air unit. Bounces its shot to strike multiple targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 120,
+  "LifeMax": 120,
+  "LifeArmorName": "Zerg Flyer Carapace",
+  "Mover": "Fly",
+  "StationaryTurningRate": 1499.9414,
+  "TurningRate": 1499.9414,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Mutalisk",
+  "HotkeyAlias": "Mutalisk",
+  "SelectAlias": "Mutalisk",
+  "SubgroupAlias": "Mutalisk",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Mutalisk",
+  "AIEvaluateAlias": "Mutalisk",
+  "ReviveType": "Mutalisk",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Mutalisk/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Mutalisk/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "LifeRegenRate": 1,
+  "Speed": 4,
+  "Acceleration": 3.5,
+  "Height": 3.75,
+  "Food": -2,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 76,
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "VisionHeight": 4,
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "MutaliskRegeneration",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "GlossaryCategory": "Unit/Category/ZergUnits",
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "GlossaryPriority": 130,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 100,
+    "Vespene": 100
+  },
+  "GlossaryWeakArray": [
+    "Thor",
+    "Viper",
+    "Phoenix"
+  ],
+  "GlossaryStrongArray": [
+    "SCV",
+    "Drone",
+    "Probe"
+  ],
+  "Icon": "btn-unit-zerg-mutalisk",
+  "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Mutalisk",
+  "Weapons": [
+    {
+      "Link": "GlaiveWurm",
+      "Id": "GlaiveWurm",
+      "Icon": "btn-upgrade-zerg-airattacks-level0",
+      "Name": "Glave Wurm",
+      "Amount": 9,
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 3,
+      "Period": 1.5246
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ZergFlyerArmors",
+      "Id": "ZergFlyerArmors",
+      "Name": "Zerg Flyer Armors"
+    },
+    {
+      "Link": "ZergFlyerWeapons",
+      "Id": "ZergFlyerWeapons",
+      "Name": "Zerg Flyer Weapons"
+    },
+    {
+      "Link": "ZergFlyerArmorsLevel1",
+      "Id": "ZergFlyerArmorsLevel1",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level1",
+      "Name": "Zerg Flyer Carapace Level 1"
+    },
+    {
+      "Link": "ZergFlyerArmorsLevel2",
+      "Id": "ZergFlyerArmorsLevel2",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level2",
+      "Name": "Zerg Flyer Carapace Level 2"
+    },
+    {
+      "Link": "ZergFlyerArmorsLevel3",
+      "Id": "ZergFlyerArmorsLevel3",
+      "Icon": "btn-upgrade-zerg-flyercarapace-level3",
+      "Name": "Zerg Flyer Carapace Level 3"
+    },
+    {
+      "Link": "ZergFlyerWeaponsLevel1",
+      "Id": "ZergFlyerWeaponsLevel1",
+      "Icon": "btn-upgrade-zerg-airattacks-level1",
+      "Name": "Zerg Flyer Attacks Level 1"
+    },
+    {
+      "Link": "ZergFlyerWeaponsLevel2",
+      "Id": "ZergFlyerWeaponsLevel2",
+      "Icon": "btn-upgrade-zerg-airattacks-level2",
+      "Name": "Zerg Flyer Attacks Level 2"
+    },
+    {
+      "Link": "ZergFlyerWeaponsLevel3",
+      "Id": "ZergFlyerWeaponsLevel3",
+      "Icon": "btn-upgrade-zerg-airattacks-level3",
+      "Name": "Zerg Flyer Attacks Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Larva",
+      "Icon": "btn-unit-zerg-larva",
+      "Description": "Morphs into Zerg units.",
+      "Name": "Larva"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

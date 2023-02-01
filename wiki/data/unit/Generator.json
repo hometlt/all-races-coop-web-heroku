@@ -1,0 +1,257 @@
+{
+  "Name": "Generator",
+  "Description": "Provides energy. Contains upgrades for the Processor.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 850,
+  "LifeMax": 850,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Generator",
+  "HotkeyAlias": "Generator",
+  "SelectAlias": "Generator",
+  "SubgroupAlias": "Generator",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Generator",
+  "AIEvaluateAlias": "Generator",
+  "ReviveType": "Generator",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Generator/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Generator/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 9,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 45,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Economy",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "GeneratorEnergyGrid",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "ResearchProcessorIntegratedOptics",
+          "Type": "AbilCmd",
+          "AbilCmd": "GeneratorResearch,Research2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ResearchProcessorCloakingGenerator",
+          "Type": "AbilCmd",
+          "AbilCmd": "GeneratorResearch,Research1",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3Contour",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 50
+  },
+  "RepairTime": 40,
+  "GlossaryPriority": 24,
+  "Icon": "btn-building-genetron-generator",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Generator",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    },
+    {
+      "Link": "GeneratorPower",
+      "Id": "GeneratorPower"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "GeneratorResearch",
+      "Id": "GeneratorResearch",
+      "Name": "Generator - Research"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "RelayTower",
+      "Icon": "btn-building-genetron-relaytower",
+      "Description": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+      "Name": "Relay Tower"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "IntegratedOptics",
+      "Icon": "btn-upgrade-genetron-integratedoptics",
+      "Name": "Integrated Optics"
+    },
+    {
+      "Id": "CloakingGenerator",
+      "Icon": "btn-upgrade-genetron-processorcloak",
+      "Name": "Cloaking Generator"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "ResearchProcessorIntegratedOptics",
+      "Icon": "btn-upgrade-genetron-integratedoptics",
+      "Tooltip": "Allows the <span style=\"color: #FFFF80\">Processor</span> to detect permanently, removing the energy consumption of detection.",
+      "Name": "Research Integrated Optics",
+      "AbilCmd": "GeneratorResearch,Research2"
+    },
+    {
+      "Id": "ResearchProcessorCloakingGenerator",
+      "Icon": "btn-upgrade-genetron-processorcloak",
+      "Tooltip": "Causes the <span style=\"color: #FFFF80\">Processor</span> to become permanently cloaked.",
+      "Name": "Research Cloaking Generator",
+      "AbilCmd": "GeneratorResearch,Research1"
+    }
+  ]
+}

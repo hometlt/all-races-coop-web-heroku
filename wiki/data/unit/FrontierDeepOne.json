@@ -1,0 +1,349 @@
+{
+  "Name": "Frontier Deep One",
+  "Description": "Propogates basic Dragon structures. Heals nearby biological units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Razorbacks<br/>- Augmentation Pits<br/>- Sunken Guardians<br/>- Phlogiston Guardians",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 750,
+  "LifeMax": 750,
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "FrontierDeepOne",
+  "HotkeyAlias": "FrontierDeepOne",
+  "SelectAlias": "FrontierDeepOne",
+  "SubgroupAlias": "FrontierDeepOne",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "FrontierDeepOne",
+  "AIEvaluateAlias": "FrontierDeepOne",
+  "ReviveType": "FrontierDeepOne",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "FrontierDeepOne/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "FrontierDeepOne/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Armored",
+    "Structure"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased"
+  ],
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "AttackTargetPriority": 11,
+  "FogVisibility": "Snapshot",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneBuild,Halt",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Razorback",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneBuild,Build1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "AugmentationPitFrontier",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneBuild,Build2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "SunkenGuardian",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneBuild,Build3",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "FrontierDeepOneActivateInvigorate",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneInvigorate,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Halt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "PhlogistonGuardian",
+          "Type": "AbilCmd",
+          "AbilCmd": "FrontierDeepOneBuild,Build4",
+          "Row": 0,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Sight": 9,
+  "CostResource": {
+    "Minerals": 100
+  },
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "GlossaryPriority": 15,
+  "SubgroupPriority": 2,
+  "Icon": "btn-unit-zerg-nyduscreeptower",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "FrontierDeepOne",
+  "Behaviors": [
+    {
+      "Link": "DragonLineageGreater",
+      "Id": "DragonLineageGreater",
+      "Name": "Dragon Lineage"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonPlateArmors",
+      "Id": "DragonPlateArmors",
+      "Name": "Dragon Plate Armors"
+    },
+    {
+      "Link": "DragonPlateArmorLevel1",
+      "Id": "DragonPlateArmorLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Dragon Plate Armor Level 1"
+    },
+    {
+      "Link": "DragonPlateArmorLevel2",
+      "Id": "DragonPlateArmorLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Dragon Plate Armor Level 2"
+    },
+    {
+      "Link": "DragonPlateArmorLevel3",
+      "Id": "DragonPlateArmorLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Dragon Plate Armor Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "FrontierDeepOneInvigorate",
+      "Id": "FrontierDeepOneInvigorate",
+      "Name": "Frontier Deep One - Invigorate"
+    },
+    {
+      "Link": "FrontierDeepOneBuild",
+      "Id": "FrontierDeepOneBuild",
+      "Name": "Frontier Deep One - Build"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Razorback",
+      "Icon": "btn-unit-zerg-quillgore",
+      "Description": "Provides supply.<br/>Supply allows you to create more units.",
+      "Name": "Razorback"
+    },
+    {
+      "Id": "AugmentationPitFrontier",
+      "Icon": "wireframe-zerg-primalproductiona",
+      "Description": "Contains upgrades for Dragon units.",
+      "Name": "Augmentation Pit"
+    },
+    {
+      "Id": "SunkenGuardian",
+      "Icon": "btn-building-zerg-impalercolony",
+      "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Sunken Guardian"
+    },
+    {
+      "Id": "PhlogistonGuardian",
+      "Icon": "talent-zagara-level13-bilelauncherresearchbundle",
+      "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Phlogiston Guardian"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Plodder",
+      "Icon": "btn-critter-crabeetle",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can excavate structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+10 Life<br/>+1 Armor<br/>+3 Minerals Gathered<br/>+2 Vespene Gathered</span>",
+      "Name": "Plodder"
+    },
+    {
+      "Id": "AscendedPlodder",
+      "Icon": "btn-critter-crabeetle",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can excavate structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+10 Life<br/>+1 Armor<br/>+3 Minerals Gathered<br/>+2 Vespene Gathered</span>",
+      "Name": "Ascended Plodder"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5PassiveCancelToSelection,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "FrontierDeepOneBuild,Halt"
+    },
+    {
+      "Id": "Razorback",
+      "Icon": "btn-unit-zerg-quillgore",
+      "Tooltip": "Provides supply.<br/>Supply allows you to create more units.",
+      "Name": "Propogate Razorback",
+      "AbilCmd": "FrontierDeepOneBuild,Build1"
+    },
+    {
+      "Id": "AugmentationPitFrontier",
+      "Icon": "wireframe-zerg-primalproductiona",
+      "Tooltip": "Contains attack, armor and other miscellaneous upgrades for Dragon units.",
+      "Name": "Propogate Augmentation Pit",
+      "AbilCmd": "FrontierDeepOneBuild,Build2"
+    },
+    {
+      "Id": "SunkenGuardian",
+      "Icon": "btn-building-zerg-impalercolony",
+      "Tooltip": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Propogate Sunken Guardian",
+      "AbilCmd": "FrontierDeepOneBuild,Build3"
+    },
+    {
+      "Id": "FrontierDeepOneActivateInvigorate",
+      "Icon": "btn-ability-kerrigan-vespeneefficiency",
+      "Tooltip": "Heals up to <b>8</b> nearby friendly biological units and structures each second.<br/><br/><span style=\"color: #f078ff\">Heals <b>3</b> life for <b>1</b> energy each second per target.</span>",
+      "Name": "Invigorate",
+      "AbilCmd": "FrontierDeepOneInvigorate,Execute"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "BuildInProgress,Halt"
+    },
+    {
+      "Id": "PhlogistonGuardian",
+      "Icon": "talent-zagara-level13-bilelauncherresearchbundle",
+      "Tooltip": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Propogate Phlogiston Guardian",
+      "AbilCmd": "FrontierDeepOneBuild,Build4"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "Name": "Aiur Light Bridge Abandoned – NW – Height 12 - Extended",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "AiurLightBridgeAbandonedNW12Out",
+  "HotkeyAlias": "AiurLightBridgeAbandonedNW12Out",
+  "SelectAlias": "AiurLightBridgeAbandonedNW12Out",
+  "SubgroupAlias": "AiurLightBridgeAbandonedNW12Out",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AiurLightBridgeAbandonedNW12Out",
+  "AIEvaluateAlias": "AiurLightBridgeAbandonedNW12Out",
+  "ReviveType": "AiurLightBridgeAbandonedNW12Out",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AiurLightBridgeAbandonedNW12Out/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AiurLightBridgeAbandonedNW12Out/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 225,
+  "Height": 12,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeRetract",
+          "Type": "AbilCmd",
+          "AbilCmd": "AiurLightBridgeAbandonedNW12,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "AiurLightBridgeNWOut",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AiurLightBridgeAbandonedNW12Out",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "AiurLightBridgeAbandonedNW12",
+      "Id": "AiurLightBridgeAbandonedNW12",
+      "Name": "Aiur Light Bridge Abandoned – NW – Height 12 - Retract"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeRetract",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Retract",
+      "AbilCmd": "AiurLightBridgeAbandonedNW12,Execute"
+    }
+  ]
+}

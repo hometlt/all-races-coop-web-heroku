@@ -1,0 +1,240 @@
+{
+  "Name": "Zenith",
+  "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 800,
+  "LifeMax": 800,
+  "LifeArmorName": "Keiron Structure Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Zenith",
+  "HotkeyAlias": "Zenith",
+  "SelectAlias": "Zenith",
+  "SubgroupAlias": "Zenith",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Zenith",
+  "AIEvaluateAlias": "Zenith",
+  "ReviveType": "Zenith",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Zenith/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Zenith/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 10,
+  "CostCategory": "Technology",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "LifeRegenRate": 0.25,
+  "Food": 6,
+  "Footprint": "Footprint4x4AirContour",
+  "PlacementFootprint": "Footprint4x4Air",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "KeironCharges",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "SelectBuilderKeiron",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Height": 4,
+  "VisionHeight": 4,
+  "Facing": 45,
+  "ShieldsStart": 400,
+  "ShieldsMax": 400,
+  "CostResource": {
+    "Minerals": 300,
+    "Vespene": 200
+  },
+  "EffectArray": {
+    "Death": "ZenithParagonDeathCP"
+  },
+  "GlossaryPriority": 64,
+  "ScoreMake": 500,
+  "ScoreKill": 500,
+  "TechTreeUnlockedUnitArray": [
+    "Paragon"
+  ],
+  "Icon": "btn-building-keiron-zenith",
+  "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Zenith",
+  "Behaviors": [
+    {
+      "Link": "ZenithParagonBase",
+      "Id": "ZenithParagonBase"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "KeironCitadelMaterialize",
+      "Id": "KeironCitadelMaterialize",
+      "Name": "Keiron - Citadel Materialize"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Empyrean",
+      "Icon": "btn-building-keiron-empyrean",
+      "Description": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+      "Name": "Empyrean"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Converter"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    }
+  ]
+}

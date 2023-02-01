@@ -1,0 +1,636 @@
+{
+  "Name": "Teleportation Node",
+  "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.75,
+  "SeparationRadius": 1.75,
+  "MinimapRadius": 1.625,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "TeleportationNode",
+  "HotkeyAlias": "TeleportationNode",
+  "SelectAlias": "TeleportationNode",
+  "SubgroupAlias": "TeleportationNode",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Starport",
+  "AIEvaluateAlias": "TeleportationNode",
+  "ReviveType": "TeleportationNode",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "TeleportationNode/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "TeleportationNode/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 9,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 225
+  },
+  "RepairTime": 50,
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que52,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "RequestInfantry",
+          "Type": "Submenu",
+          "SubmenuCardId": "0002",
+          "SubmenuIsSticky": 1,
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "RequestVehicles",
+          "Type": "Submenu",
+          "SubmenuCardId": "0003",
+          "SubmenuIsSticky": 1,
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "RequestStarships",
+          "Type": "Submenu",
+          "SubmenuCardId": "0004",
+          "SubmenuIsSticky": 1,
+          "Row": 0,
+          "Column": 2
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BuildStrikeTrooper",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "PoliticalAdvisor",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train14",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Lazarus",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train12",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Garmr",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train16",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Taranis",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train13",
+          "Row": 0,
+          "Column": 2
+        }
+      ],
+      "CardId": "0002"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "MainBattleTank",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train5",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "DrakkarAPC",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train10",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "DesolatorMissileTank",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train8",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "PeenemundeMRLS",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train11",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "AssaultTank",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train7",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Huracan",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train17",
+          "Row": 0,
+          "Column": 0
+        }
+      ],
+      "CardId": "0003"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CrimsonEye",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train6",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "BuildStrikefighter",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Cancel",
+          "Type": "Submenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "TransportShuttle",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train9",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "SupporttShuttle",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train15",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "BuildValkyrie",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train3",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Honorguard",
+          "Type": "AbilCmd",
+          "AbilCmd": "TeleportationNodeTrain,Train4",
+          "Row": 1,
+          "Column": 1
+        }
+      ],
+      "CardId": "0004"
+    }
+  ],
+  "Footprint": "Footprint4x4UED",
+  "PlacementFootprint": "Footprint4x4",
+  "ScoreMake": 250,
+  "ScoreKill": 250,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 20,
+  "TechAliasArray": [
+    "Alias_Starport"
+  ],
+  "GlossaryPriority": 329,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "TechTreeProducedUnitArray": [
+    "VikingFighter",
+    "Medivac",
+    "Liberator",
+    "Raven",
+    "Banshee",
+    "Battlecruiser"
+  ],
+  "Icon": "btn-ued-teleportation-node",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "TeleportationNode",
+  "Behaviors": [
+    {
+      "Link": "ReactorQueue",
+      "Id": "ReactorQueue"
+    },
+    {
+      "Link": "TerranStructuresKnockbackBehavior",
+      "Id": "TerranStructuresKnockbackBehavior"
+    },
+    {
+      "Link": "UEDConstructionVisionDebuff",
+      "Id": "UEDConstructionVisionDebuff"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que52",
+      "Id": "que52",
+      "Name": "UED Warp Queue"
+    },
+    {
+      "Link": "TeleportationNodeTrain",
+      "Id": "TeleportationNodeTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "StrikeTrooper",
+      "Icon": "btn-ued_striketrooper",
+      "Description": "Highly-trained Directorate infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Strike Trooper"
+    },
+    {
+      "Id": "PoliticalAdvisor",
+      "Icon": "btn-unit-terran-ghostmengsk",
+      "Description": "Master of ideological warfare. Can inspire troops around her to fight harder, and is also equipped with Strike Grenades.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">",
+      "Name": "Political Advisor"
+    },
+    {
+      "Id": "Lazarus",
+      "Icon": "btn-unit-ued-spectre",
+      "Description": "Combat medic. Capable of reanimating deceased Directorate infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Lazarus"
+    },
+    {
+      "Id": "Garmr",
+      "Icon": "btn-ued-dog",
+      "Description": "Genetically engineered monstrosity. Its fiery breath is effective against lightly-armored targets, and it can tunnel through the ground to cross vast distances quickly.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Garmr"
+    },
+    {
+      "Id": "Taranis",
+      "Icon": "btn-unit-terran-troopermengskrocket",
+      "Description": "Heavily-armed infantry, effective against clustered targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Taranis"
+    },
+    {
+      "Id": "Napoleon",
+      "Icon": "btn-unit-object188bronze",
+      "Description": "Versatile main battle tank, effective against lightly-armored targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Napoleon MBT"
+    },
+    {
+      "Id": "DrakkarAPC",
+      "Icon": "btn-unit-ued-militarizedtransport",
+      "Description": "Infantry armored personnel carrier, from the inside you can attack only ground targets and from a maximum distance of 5. When the Drakkar is destroyed, the soldiers inside do not die and safely leave the car.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground targets.</span>",
+      "Name": "Drakkar APC"
+    },
+    {
+      "Id": "Typhoon",
+      "Icon": "btn-ued-desolator",
+      "Description": "Artillery vehicle. Supports the offensive with devastating missile salvos.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Typhoon LMT"
+    },
+    {
+      "Id": "PeenemundeMRLS",
+      "Icon": "btn-ued-peenemudre",
+      "Description": "Long-range artillery. Launches missiles that deal devastating damage in the target area, but can potentially be avoided.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Peenemunde MRLS"
+    },
+    {
+      "Id": "CitadelAAT",
+      "Icon": "btn-unit-predatortankbronze",
+      "Description": "Advanced armored unit, equipped with heavy composite armor, powerful primary cannon and long-range ATGMs.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Citadel AAT"
+    },
+    {
+      "Id": "Huracan",
+      "Icon": "btn-unit-terran-flametank",
+      "Description": "Autonomous combat drone. It is extremely effective when storming fortifications.<br/><br/><span style=\"color: #ffff8a\">Can attack ground targets.</span>",
+      "Name": "Huracan"
+    },
+    {
+      "Id": "CrimsonEye",
+      "Icon": "btn-ued-crimsoneye",
+      "Description": "Low-altitude scouting drone.<br/><br/><span style=\"color: #FFE303\">There is a detection function</span>",
+      "Name": "Crimson Eye"
+    },
+    {
+      "Id": "Strikefighter",
+      "Icon": "btn-ued-pacifier",
+      "Description": "Armored multirole fighter.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Strikefighter"
+    },
+    {
+      "Id": "TransportShuttle",
+      "Icon": "btn-ued-dropship",
+      "Description": "Large transport ship, capable of transporting big squads of infantry & armored vehicles.",
+      "Name": "Transport Shuttle"
+    },
+    {
+      "Id": "SupportShuttle",
+      "Icon": "btn-ued-supportshuttle",
+      "Description": "Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.",
+      "Name": "Support Shuttle"
+    },
+    {
+      "Id": "Valkyrie",
+      "Icon": "btn-unit-ued-valkyrie",
+      "Description": "Dedicated AA corvette, capable of eliminating entire squadrons with a single salvo.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+      "Name": "Valkyrie"
+    },
+    {
+      "Id": "HonorguardCruiser",
+      "Icon": "btn-ued-shieldwall",
+      "Description": "Versatile screening ship.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Honorguard"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "BeaconUED",
+      "Icon": "btn-unit-terran-nova-shredder",
+      "Description": "UED engineering vehicle. Can be deployed at a specified site in order to calldown Operation Headquarters from orbit.",
+      "Name": "UED Beacon"
+    },
+    {
+      "Id": "OperationHeadquarters",
+      "Icon": "btn-structure-ued-biodome",
+      "Description": "Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Salvagers<br/>- Beacons",
+      "Name": "Operation Headquarters"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que52,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "BuildStrikeTrooper",
+      "Icon": "btn-ued_striketrooper",
+      "Tooltip": "Highly-trained Directorate infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Request Strike Trooper",
+      "AbilCmd": "TeleportationNodeTrain,Train1"
+    },
+    {
+      "Id": "PoliticalAdvisor",
+      "Icon": "btn-unit-terran-dom-femaleghost",
+      "Tooltip": "Master of ideological warfare. Can inspire troops around her to fight harder, and is also equipped with Strike Grenades.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">",
+      "Name": "Request Political Advisor",
+      "AbilCmd": "TeleportationNodeTrain,Train14"
+    },
+    {
+      "Id": "Lazarus",
+      "Icon": "btn-unit-ued-spectre",
+      "Tooltip": "Combat medic. Capable of reanimating deceased Directorate infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Request Lazarus",
+      "AbilCmd": "TeleportationNodeTrain,Train12"
+    },
+    {
+      "Id": "Garmr",
+      "Icon": "btn-ued-dog",
+      "Tooltip": "Genetically engineered monstrosity. Its fiery breath is effective against lightly-armored targets, and it can tunnel through the ground to cross vast distances quickly.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Request Garmr",
+      "AbilCmd": "TeleportationNodeTrain,Train16"
+    },
+    {
+      "Id": "Taranis",
+      "Icon": "btn-unit-terran-troopermengskrocket",
+      "Tooltip": "Heavily-armed infantry, effective against clustered targets.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Request Taranis",
+      "AbilCmd": "TeleportationNodeTrain,Train13"
+    },
+    {
+      "Id": "MainBattleTank",
+      "Icon": "btn-unit-object188bronze",
+      "Tooltip": "Versatile main battle tank, effective against lightly-armored targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Request Napoleon MBT",
+      "AbilCmd": "TeleportationNodeTrain,Train5"
+    },
+    {
+      "Id": "DrakkarAPC",
+      "Icon": "btn-unit-ued-militarizedtransport",
+      "Tooltip": "Infantry armored personnel carrier, from the inside you can attack only ground targets and from a maximum distance of 5. When the Drakkar is destroyed, the soldiers inside do not die and safely leave the car.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground targets.</span>",
+      "Name": "Request Drakkar APC",
+      "AbilCmd": "TeleportationNodeTrain,Train10"
+    },
+    {
+      "Id": "DesolatorMissileTank",
+      "Icon": "btn-ued-desolator",
+      "Tooltip": "Artillery vehicle. Supports the offensive with devastating missile salvos.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Request Typhoon LMT",
+      "AbilCmd": "TeleportationNodeTrain,Train8"
+    },
+    {
+      "Id": "PeenemundeMRLS",
+      "Icon": "btn-ued-peenemudre",
+      "Tooltip": "Long-range artillery. Launches missiles that deal devastating damage in the target area, but can potentially be avoided.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Request Peenemunde MRLS",
+      "AbilCmd": "TeleportationNodeTrain,Train11"
+    },
+    {
+      "Id": "AssaultTank",
+      "Icon": "btn-unit-predatortankbronze",
+      "Tooltip": "Advanced armored unit, equipped with heavy composite armor, powerful primary cannon and long-range ATGMs.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Request Citadel AAT",
+      "AbilCmd": "TeleportationNodeTrain,Train7"
+    },
+    {
+      "Id": "Huracan",
+      "Icon": "btn-unit-terran-flametank",
+      "Tooltip": "Autonomous combat drone. It is extremely effective when storming fortifications.<br/><br/><span style=\"color: #ffff8a\">Can attack ground targets.</span>",
+      "Name": "Request Huracan",
+      "AbilCmd": "TeleportationNodeTrain,Train17"
+    },
+    {
+      "Id": "CrimsonEye",
+      "Icon": "btn-ued-crimsoneye",
+      "Tooltip": "Low-altitude scouting drone.<br/><br/><span style=\"color: #FFE303\">There is a detection function</span>",
+      "Name": "Request Crimson Eye",
+      "AbilCmd": "TeleportationNodeTrain,Train6"
+    },
+    {
+      "Id": "BuildStrikefighter",
+      "Icon": "btn-ued-pacifier",
+      "Tooltip": "Armored multirole fighter.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Request Strikefighter",
+      "AbilCmd": "TeleportationNodeTrain,Train2"
+    },
+    {
+      "Id": "TransportShuttle",
+      "Icon": "btn-ued-dropship",
+      "Tooltip": "Large transport ship, capable of transporting big squads of infantry & armored vehicles.",
+      "Name": "Request Transport Shuttle",
+      "AbilCmd": "TeleportationNodeTrain,Train9"
+    },
+    {
+      "Id": "SupporttShuttle",
+      "Icon": "btn-ued-supportshuttle",
+      "Tooltip": "Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.",
+      "Name": "Request Support Shuttle",
+      "AbilCmd": "TeleportationNodeTrain,Train15"
+    },
+    {
+      "Id": "BuildValkyrie",
+      "Icon": "btn-unit-ued-valkyrie",
+      "Tooltip": "Dedicated AA corvette, capable of eliminating entire squadrons with a single salvo.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+      "Name": "Request Valkyrie",
+      "AbilCmd": "TeleportationNodeTrain,Train3"
+    },
+    {
+      "Id": "Honorguard",
+      "Icon": "btn-ued-shieldwall",
+      "Tooltip": "Versatile screening ship.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Request Honorguard",
+      "AbilCmd": "TeleportationNodeTrain,Train4"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "Name": "Claymore Mine",
+  "Description": "Directional Anti-Personnel Device",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 0.5,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 25,
+  "LifeMax": 25,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 2292.8906,
+  "TurningRate": 720,
+  "Radius": 0.125,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0.25,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "UseLineOfSight",
+    "Cloaked",
+    "Buried",
+    "NoScore",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ClaymoreMine",
+  "HotkeyAlias": "ClaymoreMine",
+  "SelectAlias": "ClaymoreMine",
+  "SubgroupAlias": "ClaymoreMine",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ClaymoreMine",
+  "AIEvaluateAlias": "ClaymoreMine",
+  "ReviveType": "ClaymoreMine",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ClaymoreMine/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ClaymoreMine/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow"
+  ],
+  "Attributes": [
+    "Light",
+    "Mechanical"
+  ],
+  "Acceleration": 1000,
+  "Sight": 4,
+  "CostResource": {
+    "Minerals": 25
+  },
+  "RepairTime": 10,
+  "AttackTargetPriority": 19,
+  "SubgroupPriority": 15,
+  "Icon": "btn-upgrade-terran-spidermineex3",
+  "LifeArmorIcon": "btn-upgrades-upl-vehicleplating-lvl0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ClaymoreMine",
+  "Behaviors": [
+    {
+      "Link": "ClaymoreMineSearch",
+      "Id": "ClaymoreMineSearch"
+    }
+  ],
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

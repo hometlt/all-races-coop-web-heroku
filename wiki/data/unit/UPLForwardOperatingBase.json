@@ -1,0 +1,334 @@
+{
+  "Name": "Forward Operating Base",
+  "Description": "Support Unit Production<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Infantry Officer</b><br/>- <b>CSV</b>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1250,
+  "LifeMax": 1250,
+  "LifeArmorName": "UPL Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "UPLForwardOperatingBase",
+  "HotkeyAlias": "UPLForwardOperatingBase",
+  "SelectAlias": "UPLForwardOperatingBase",
+  "SubgroupAlias": "UPLForwardOperatingBase",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "UPLForwardOperatingBase",
+  "AIEvaluateAlias": "UPLForwardOperatingBase",
+  "ReviveType": "UPLForwardOperatingBase",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UPLForwardOperatingBase/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UPLForwardOperatingBase/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 9,
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UPLSelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CSV",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLForwardOperatingBaseTrain,Train2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "InfantryOfficer",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLForwardOperatingBaseTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "ResearchCSVSupplyLineManagement",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLForwardOperatingBaseResearch,Research2",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "ResearchCSVPersonnelCarrier",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLForwardOperatingBaseResearch,Research3",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "InfantryMedkit@Research",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLBilletResearch,Research3",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 3,
+  "GlossaryCategory": "Unit/Category/0UPLBuildings",
+  "GlossaryPriority": 21,
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "Facing": 315,
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 50
+  },
+  "RepairTime": 50,
+  "Footprint": "Footprint4x4Contour",
+  "PlacementFootprint": "Footprint4x4",
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "TechAliasArray": [
+    "Alias_UPLForwardOperatingBase"
+  ],
+  "TechTreeProducedUnitArray": [
+    "InfantryOfficer",
+    "CSV"
+  ],
+  "DeathTime": 1,
+  "DeadFootprint": "Footprint4x4Contour",
+  "Icon": "btn-building-upl-uplforwardoperatingbase",
+  "LifeArmorIcon": "btn-upgrade-upl-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "UPLForwardOperatingBase",
+  "Behaviors": [
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "UPLForwardOperatingBaseTrain",
+      "Id": "UPLForwardOperatingBaseTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "UPLForwardOperatingBaseResearch",
+      "Id": "UPLForwardOperatingBaseResearch",
+      "Name": "Research"
+    },
+    {
+      "Link": "UPLBilletResearch",
+      "Id": "UPLBilletResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "CSV",
+      "Icon": "btn-unit-upl-csv",
+      "Description": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "CSV"
+    },
+    {
+      "Id": "InfantryOfficer",
+      "Icon": "btn-unit-upl-infantryofficer",
+      "Description": "Company Commander<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span> <br/>Grants detection to all transport units and turrets when inside. Condors grants 25% wider detection range. <br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Infantry Officer"
+    },
+    {
+      "Id": "CSVSupplyLineManagement",
+      "Icon": "btn-ability-upl-supplymanagement",
+      "Name": "CSVSupplyLineManagement"
+    },
+    {
+      "Id": "CSVPersonnelCarrier",
+      "Icon": "btn-ability-upl-personnelcarrier",
+      "Name": "CSVPersonnelCarrier"
+    },
+    {
+      "Id": "InfantryMedkit",
+      "Name": "Upgrade"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Mining Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CSV",
+      "Icon": "btn-unit-upl-csv",
+      "Tooltip": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "Build CSV",
+      "AbilCmd": "UPLForwardOperatingBaseTrain,Train2"
+    },
+    {
+      "Id": "InfantryOfficer",
+      "Icon": "btn-unit-upl-infantryofficer",
+      "Tooltip": "Company Commander<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span> <br/>Grants detection to all transport units and turrets when inside. Condors grants 25% wider detection range. <br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Infantry Officer",
+      "AbilCmd": "UPLForwardOperatingBaseTrain,Train1"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "ResearchCSVSupplyLineManagement",
+      "Icon": "btn-ability-upl-supplymanagement",
+      "Tooltip": "When the CSV is deployed nearby mechanical vehicles gain <span style=\"color: #80FFFF\"><b>25</b>%</span> increased weapon speed",
+      "Name": "Research Supply Line Management",
+      "AbilCmd": "UPLForwardOperatingBaseResearch,Research2"
+    },
+    {
+      "Id": "ResearchCSVPersonnelCarrier",
+      "Icon": "btn-ability-upl-personnelcarrier",
+      "Tooltip": "Allows infantry to load into the CSV.<br/>Infantry loaded into a CSV are healed by <span style=\"color: #f078ff\"><b>5</b> life per <b>1</b> energy.</span>",
+      "Name": "Research Personnel Carrier",
+      "AbilCmd": "UPLForwardOperatingBaseResearch,Research3"
+    },
+    {
+      "Id": "InfantryMedkit@Research",
+      "Tooltip": "Allows some of the infantry to use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+      "Name": "Research Personal Medkit",
+      "AbilCmd": "UPLBilletResearch,Research3"
+    }
+  ]
+}

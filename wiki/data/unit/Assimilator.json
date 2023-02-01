@@ -1,0 +1,208 @@
+{
+  "Name": "Assimilator",
+  "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Assimilator",
+  "HotkeyAlias": "Assimilator",
+  "SelectAlias": "Assimilator",
+  "SubgroupAlias": "Assimilator",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Assimilator",
+  "AIEvaluateAlias": "Assimilator",
+  "ReviveType": "Assimilator",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Assimilator/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Assimilator/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "ShieldsStart": 300,
+  "ShieldsMax": 300,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "AttackTargetPriority": 11,
+  "Footprint": "FootprintGeyserRoundedBuilt",
+  "PlacementFootprint": "Footprint3x3CappedGeyser",
+  "ScoreMake": 75,
+  "ScoreKill": 75,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 1,
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "BuiltOn": [
+    "VespeneGeyser",
+    "SpacePlatformGeyser",
+    "RichVespeneGeyser",
+    "ProtossVespeneGeyser",
+    "PurifierVespeneGeyser",
+    "ShakurasVespeneGeyser"
+  ],
+  "GlossaryPriority": 14,
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "ShieldRegenDelay": 10,
+  "BuildOnAs": [
+    "AssimilatorRich"
+  ],
+  "Icon": "btn-building-protoss-assimilator",
+  "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Assimilator",
+  "Behaviors": [
+    {
+      "Link": "HarvestableVespeneGeyserGasProtoss",
+      "Id": "HarvestableVespeneGeyserGasProtoss"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

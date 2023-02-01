@@ -1,0 +1,304 @@
+{
+  "Name": "Sunken Guardian",
+  "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SunkenGuardian",
+  "HotkeyAlias": "SunkenGuardian",
+  "SelectAlias": "SunkenGuardian",
+  "SubgroupAlias": "SunkenGuardian",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SunkenGuardian",
+  "AIEvaluateAlias": "SunkenGuardian",
+  "ReviveType": "SunkenGuardian",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SunkenGuardian/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SunkenGuardian/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological",
+    "Armored",
+    "Structure"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Mob": "Multiplayer",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased"
+  ],
+  "LifeArmor": 2,
+  "CostCategory": "Technology",
+  "AttackTargetPriority": 20,
+  "FogVisibility": "Snapshot",
+  "HotkeyCategory": "Unit/Category/DragonUnits",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Facing": 45,
+  "Sight": 11,
+  "CostResource": {
+    "Minerals": 150
+  },
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 150,
+  "ScoreKill": 150,
+  "SubgroupPriority": 10,
+  "EquipmentArray": [
+    {
+      "Weapon": "SunkenGuardianImpale"
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/DragonUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "GlossaryPriority": 51,
+  "GlossaryStrongArray": [
+    "Marine",
+    "Zergling",
+    "Zealot"
+  ],
+  "GlossaryWeakArray": [
+    "Marauder",
+    "Baneling",
+    "Immortal"
+  ],
+  "Icon": "btn-building-zerg-impalercolony",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "SunkenGuardian",
+  "Weapons": [
+    {
+      "Link": "SunkenGuardianImpale1",
+      "Turret": "SunkenGuardian",
+      "Id": "SunkenGuardianImpale1",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level0",
+      "Name": "Impale",
+      "Amount": 35,
+      "AttributeBonus": {
+        "Armored": 15
+      },
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 7,
+      "Period": 2.03
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "DragonLineage",
+      "Id": "DragonLineage",
+      "Name": "Dragon Lineage"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "DragonMeleeAttacks",
+      "Id": "DragonMeleeAttacks",
+      "Name": "Dragon Melee Attacks"
+    },
+    {
+      "Link": "DragonPlateArmors",
+      "Id": "DragonPlateArmors",
+      "Name": "Dragon Plate Armors"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel1",
+      "Id": "DragonMeleeAttacksLevel1",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level1",
+      "Name": "Dragon Melee Attacks Level 1"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel2",
+      "Id": "DragonMeleeAttacksLevel2",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level2",
+      "Name": "Dragon Melee Attacks Level 2"
+    },
+    {
+      "Link": "DragonMeleeAttacksLevel3",
+      "Id": "DragonMeleeAttacksLevel3",
+      "Icon": "btn-upgrade-zerg-meleeattacks-level3",
+      "Name": "Dragon Melee Attacks Level 3"
+    },
+    {
+      "Link": "DragonPlateArmorLevel1",
+      "Id": "DragonPlateArmorLevel1",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level1",
+      "Name": "Dragon Plate Armor Level 1"
+    },
+    {
+      "Link": "DragonPlateArmorLevel2",
+      "Id": "DragonPlateArmorLevel2",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level2",
+      "Name": "Dragon Plate Armor Level 2"
+    },
+    {
+      "Link": "DragonPlateArmorLevel3",
+      "Id": "DragonPlateArmorLevel3",
+      "Icon": "btn-upgrade-zerg-groundcarapace-level3",
+      "Name": "Dragon Plate Armor Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "FrontierDeepOne",
+      "Icon": "btn-unit-zerg-nyduscreeptower",
+      "Description": "Propogates basic Dragon structures. Heals nearby biological units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Razorbacks<br/>- Augmentation Pits<br/>- Sunken Guardians<br/>- Phlogiston Guardians",
+      "Name": "Frontier Deep One"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5PassiveCancelToSelection,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

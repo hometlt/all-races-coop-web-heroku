@@ -1,0 +1,400 @@
+{
+  "Name": "Processor",
+  "Description": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 100,
+  "LifeMax": 100,
+  "LifeArmorName": "Mechanical Aircraft Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect",
+    "AICaster",
+    "AISupport",
+    "AIPressForwardDisabled"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Processor",
+  "HotkeyAlias": "Processor",
+  "SelectAlias": "Processor",
+  "SubgroupAlias": "Processor",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Processor",
+  "AIEvaluateAlias": "Processor",
+  "ReviveType": "Processor",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Processor/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Processor/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Mechanical"
+  ],
+  "LifeArmor": 0,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "Processor",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Sight": 11,
+  "AttackTargetPriority": 20,
+  "GlossaryCategory": "Unit/Category/GenetronUnits",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Speed": 4.25,
+  "Acceleration": 3.5,
+  "CostCategory": "Army",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AnalyzeWeakness",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessorAnalyzeWeakness,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "SystemRecharge",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessorSystemRecharge,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "ToggleDetector",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessorToggleDetection,On",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "IntegratedOptics",
+          "Type": "Passive",
+          "Requirements": "UseIntegratedOptics",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProcessorToggleDetection,Off",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CloakingGenerator",
+          "Type": "Passive",
+          "Requirements": "UseCloakingGenerator",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "InternalRepairSystem",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "CargoSize": 0,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "LifeRegenDelay": 10,
+  "LifeRegenRate": 1.25,
+  "EnergyMax": 200,
+  "CostResource": {
+    "Minerals": 75,
+    "Vespene": 75
+  },
+  "RepairTime": 17,
+  "SubgroupPriority": 49,
+  "GlossaryPriority": 1,
+  "AIEvalConstant": 1,
+  "Food": -2,
+  "EnergyStart": 200,
+  "Icon": "btn-unit-genetron-processor",
+  "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Processor",
+  "Behaviors": [
+    {
+      "Link": "GenetronUnitEnergyRegenx3",
+      "Id": "GenetronUnitEnergyRegenx3"
+    },
+    {
+      "Link": "IntegratedOptics",
+      "Id": "IntegratedOptics"
+    },
+    {
+      "Link": "CloakingGenerator",
+      "Id": "CloakingGenerator"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "GenetronAircraftPlating",
+      "Id": "GenetronAircraftPlating",
+      "Name": "Genetron Aircraft Plating"
+    },
+    {
+      "Link": "GenetronAircraftPlatingLevel1",
+      "Id": "GenetronAircraftPlatingLevel1",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level1",
+      "Name": "Genetron Aircraft Plating Level 1"
+    },
+    {
+      "Link": "GenetronAircraftPlatingLevel2",
+      "Id": "GenetronAircraftPlatingLevel2",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level2",
+      "Name": "Genetron Aircraft Plating Level 2"
+    },
+    {
+      "Link": "GenetronAircraftPlatingLevel3",
+      "Id": "GenetronAircraftPlatingLevel3",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level3",
+      "Name": "Genetron Aircraft Plating Level 3"
+    },
+    {
+      "Link": "CloakingGenerator",
+      "Id": "CloakingGenerator",
+      "Icon": "btn-upgrade-genetron-processorcloak",
+      "Name": "Cloaking Generator"
+    },
+    {
+      "Link": "IntegratedOptics",
+      "Id": "IntegratedOptics",
+      "Icon": "btn-upgrade-genetron-integratedoptics",
+      "Name": "Integrated Optics"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "SystemOffload",
+      "Id": "SystemOffload",
+      "Name": "System Offload"
+    },
+    {
+      "Link": "ProcessorAnalyzeWeakness",
+      "Id": "ProcessorAnalyzeWeakness",
+      "Name": "Analyze Weakness"
+    },
+    {
+      "Link": "ProcessorToggleDetection",
+      "Id": "ProcessorToggleDetection",
+      "Name": "Toggle Detection"
+    },
+    {
+      "Link": "ProcessorSystemRecharge",
+      "Id": "ProcessorSystemRecharge",
+      "Name": "System Recharge"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "RelayTower",
+      "Icon": "btn-building-genetron-relaytower",
+      "Description": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+      "Name": "Relay Tower"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "ProcessingCore",
+      "Icon": "btn-building-genetron-processingcore",
+      "Description": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+      "Name": "Processing Core"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "AnalyzeWeakness",
+      "Icon": "btn-ability-hornerhan-raven-analyzetarget",
+      "Tooltip": "Analyzes enemy units in an area, causing them to receive 20% more damage.",
+      "Name": "Analyze Weakness",
+      "AbilCmd": "ProcessorAnalyzeWeakness,Execute"
+    },
+    {
+      "Id": "SystemRecharge",
+      "Icon": "btn-upgrade-terran-nova-snipeenergyrefund",
+      "Tooltip": "Transfers energy directly to the target unit.",
+      "Name": "System Recharge",
+      "AbilCmd": "ProcessorSystemRecharge,Execute"
+    },
+    {
+      "Id": "ToggleDetector",
+      "Icon": "btn-status-detector",
+      "Tooltip": "When active, this unit is a detector, allowing it to see cloaked and burrowed units, while draining energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy per second.</span>",
+      "Name": "Detector",
+      "AbilCmd": "ProcessorToggleDetection,On"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "ProcessorToggleDetection,Off"
+    }
+  ]
+}

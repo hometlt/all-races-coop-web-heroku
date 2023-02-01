@@ -1,0 +1,295 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 550,
+  "LifeMax": 550,
+  "LifeArmorName": "Terran Ship Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.25,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.9,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Battlecruiser22",
+  "HotkeyAlias": "Battlecruiser22",
+  "SelectAlias": "Battlecruiser22",
+  "SubgroupAlias": "Battlecruiser22",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Battlecruiser22",
+  "AIEvaluateAlias": "Battlecruiser",
+  "ReviveType": "Battlecruiser22",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Battlecruiser/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Battlecruiser/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Massive"
+  ],
+  "LifeArmor": 4,
+  "EnergyStart": 75,
+  "EnergyMax": 250,
+  "Speed": 1.875,
+  "Acceleration": 1,
+  "Sight": 12,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -6,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 400,
+    "Vespene": 400
+  },
+  "RepairTime": 120,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 140,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserMove,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserStop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserMove,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserMove,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "BattlecruiserAttack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "BuildPointDefenseDrone",
+          "Type": "AbilCmd",
+          "AbilCmd": "UnknownAbil,255",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "CycloneMissiles433",
+          "Type": "AbilCmd",
+          "AbilCmd": "ReaverHangar222,0",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Cancel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "HangarQueue5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 800,
+  "ScoreKill": 800,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 80,
+  "TechAliasArray": [
+    "Alias_BattlecruiserClass"
+  ],
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "GlossaryPriority": 210,
+  "GlossaryStrongArray": [
+    "Liberator",
+    "Mutalisk",
+    "Carrier"
+  ],
+  "GlossaryWeakArray": [
+    "VikingFighter",
+    "Corruptor",
+    "VoidRay"
+  ],
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "Icon": "btn-unit-terran-cerberus",
+  "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Battlecruiser22",
+  "Weapons": [
+    {
+      "Link": "ATSLaserBattery22",
+      "Id": "ATSLaserBattery22",
+      "Icon": "btn-upgrade-terran-shipweaponslevel0",
+      "Amount": 36,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "",
+      "Range": 11,
+      "Period": 3.5
+    },
+    {
+      "Link": "MeteorMissileBarrage2",
+      "Id": "MeteorMissileBarrage2",
+      "Icon": "btn-upgrade-terran-shipweaponslevel0",
+      "DisplayAttackCount": 6,
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 3.5
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BattlecruiserStop",
+      "Id": "BattlecruiserStop",
+      "Name": "Battlecruiser Stop"
+    },
+    {
+      "Link": "BattlecruiserAttack",
+      "Id": "BattlecruiserAttack",
+      "Name": "Battlecruiser Attack"
+    },
+    {
+      "Link": "BattlecruiserMove",
+      "Id": "BattlecruiserMove",
+      "Name": "Battlecruiser Move"
+    },
+    {
+      "Link": "HangarQueue5",
+      "Id": "HangarQueue5",
+      "Name": "Queue (5) (Hangar)"
+    },
+    {
+      "Link": "ReaverHangar222",
+      "Id": "ReaverHangar222"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "BattlecruiserMove,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "BattlecruiserStop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "BattlecruiserMove,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "BattlecruiserMove,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "BattlecruiserAttack,Execute"
+    },
+    {
+      "AbilCmd": "UnknownAbil,255"
+    },
+    {
+      "Id": "CycloneMissiles433",
+      "Icon": "btn-ability-mengsk-ghostacademy-armsilowithtacticalmissile",
+      "AbilCmd": "ReaverHangar222,0"
+    },
+    {
+      "AbilCmd": "HangarQueue5,CancelLast"
+    }
+  ]
+}

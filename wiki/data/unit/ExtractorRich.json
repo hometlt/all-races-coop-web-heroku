@@ -1,0 +1,165 @@
+{
+  "Name": "Extractor",
+  "Description": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Harvestable",
+  "ResourceType": "Vespene",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ExtractorRich",
+  "HotkeyAlias": "Extractor",
+  "SelectAlias": "Extractor",
+  "SubgroupAlias": "Extractor",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ExtractorRich",
+  "AIEvaluateAlias": "ExtractorRich",
+  "ReviveType": "ExtractorRich",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ExtractorRich/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ExtractorRich/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 329.9963,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "Sight": 9,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 75
+  },
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "FootprintGeyserRoundedBuilt",
+  "PlacementFootprint": "Footprint3x3CappedGeyser",
+  "BuiltOn": [
+    "RichVespeneGeyser"
+  ],
+  "ScoreMake": 25,
+  "ScoreKill": 50,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 1,
+  "GlossaryPriority": 10,
+  "GlossaryAlias": "Extractor",
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "Icon": "btn-building-zerg-extractor",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ExtractorRich",
+  "Behaviors": [
+    {
+      "Link": "HarvestableRichVespeneGeyserGasZerg",
+      "Id": "HarvestableRichVespeneGeyserGasZerg"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

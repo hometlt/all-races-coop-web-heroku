@@ -1,0 +1,447 @@
+{
+  "Name": "Assembly Array",
+  "Description": "Aircraft production facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Avengers<br/>- Hornets",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1400,
+  "LifeMax": 1400,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.875,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 2,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "AssemblyArray",
+  "HotkeyAlias": "AssemblyArray",
+  "SelectAlias": "AssemblyArray",
+  "SubgroupAlias": "AssemblyArray",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AssemblyArray",
+  "AIEvaluateAlias": "AssemblyArray",
+  "ReviveType": "AssemblyArray",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AssemblyArray/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AssemblyArray/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 10,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 45,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "AvengerGenetron",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Courier",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Jupiter",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train3",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Boar",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train4",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Hornet",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train7",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "GenetronPerformanceMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModePerformance,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "GenetronPerformanceMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "GenetronStandardMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModeStandard,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "GenetronStandardMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "GenetronOverclockMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModeOverclock,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "GenetronOverclockMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Badger",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildAircraft,Train5",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint4x4ContourReduced",
+  "PlacementFootprint": "Footprint4x4Contour",
+  "CostResource": {
+    "Minerals": 200,
+    "Vespene": 100
+  },
+  "RepairTime": 65,
+  "SubgroupPriority": 8,
+  "GlossaryPriority": 21,
+  "TechTreeProducedUnitArray": [
+    "AvengerGenetron",
+    "Hornet",
+    "Courier",
+    "Boar",
+    "Jupiter",
+    "Badger"
+  ],
+  "Icon": "btn-building-genetron-assemblyarray",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AssemblyArray",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    },
+    {
+      "Link": "GenetronProductionModePerformanceBuff",
+      "Id": "GenetronProductionModePerformanceBuff"
+    },
+    {
+      "Link": "AssemblyArrayIsTraining",
+      "Id": "AssemblyArrayIsTraining"
+    },
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "BuildAircraft",
+      "Id": "BuildAircraft",
+      "Name": "Build Aircraft"
+    },
+    {
+      "Link": "GenetronProductionModePerformance",
+      "Id": "GenetronProductionModePerformance",
+      "Name": "Genetron Production Mode (Performance)"
+    },
+    {
+      "Link": "GenetronProductionModeStandard",
+      "Id": "GenetronProductionModeStandard",
+      "Name": "Genetron Production Mode (Standard)"
+    },
+    {
+      "Link": "GenetronProductionModeOverclock",
+      "Id": "GenetronProductionModeOverclock",
+      "Name": "Genetron Production Mode (Overclock)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Fabricator",
+      "Icon": "btn-building-genetron-fabricator",
+      "Description": "Produces heavy machines.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Torrents<br/>- Moles",
+      "Name": "Fabricator"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "AvengerGenetron",
+      "Icon": "btn-unit-genetron-avenger",
+      "Description": "Quick interceptor. Can use Vengeance Missile.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+      "Name": "Avenger"
+    },
+    {
+      "Id": "Courier",
+      "Icon": "btn-unit-genetron-courier",
+      "Description": "Stealth transport. Can use Cloak.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Courier"
+    },
+    {
+      "Id": "Jupiter",
+      "Icon": "btn-unit-genetron-jupiter",
+      "Description": "Bomber aircraft. Can use Revenant Bomb to damage enemies, and apply napalm on the ground for damage over time.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Jupiter"
+    },
+    {
+      "Id": "Boar",
+      "Icon": "btn-unit-genetron-boar",
+      "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Boar"
+    },
+    {
+      "Id": "Hornet",
+      "Icon": "btn-unit-genetron-hornet",
+      "Description": "Fast anti-ground fighter that excels against armored targets.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Hornet"
+    },
+    {
+      "Id": "Badger",
+      "Icon": "btn-unit-genetron-badger",
+      "Description": "Large gunship.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+      "Name": "Badger"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "AvengerGenetron",
+      "Icon": "btn-unit-genetron-avenger",
+      "Tooltip": "Quick interceptor. Can use Vengeance Missile.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+      "Name": "Fabricate Avenger",
+      "AbilCmd": "BuildAircraft,Train1"
+    },
+    {
+      "Id": "Courier",
+      "Icon": "btn-unit-genetron-courier",
+      "Tooltip": "Stealth transport. Can use Cloak.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Fabricate Courier",
+      "AbilCmd": "BuildAircraft,Train2"
+    },
+    {
+      "Id": "Jupiter",
+      "Icon": "btn-unit-genetron-jupiter",
+      "Tooltip": "Bomber aircraft. Can use Revenant Bomb to damage enemies, and apply napalm on the ground for damage over time.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Name": "Fabricate Jupiter",
+      "AbilCmd": "BuildAircraft,Train3"
+    },
+    {
+      "Id": "Boar",
+      "Icon": "btn-unit-genetron-boar",
+      "Tooltip": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Fabricate Boar",
+      "AbilCmd": "BuildAircraft,Train4"
+    },
+    {
+      "Id": "Hornet",
+      "Icon": "btn-unit-genetron-hornet",
+      "Tooltip": "Fast anti-ground fighter that excels against armored targets.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Fabricate Hornet",
+      "AbilCmd": "BuildAircraft,Train7"
+    },
+    {
+      "Id": "GenetronPerformanceMode",
+      "Icon": "btn-ability-genetron-productionmode-performance",
+      "Tooltip": "Production occurs at the base rate and requires no energy.<br/><br/><span style=\"color: #78ff78\">Production drains no energy.</span>",
+      "Name": "Performance Mode",
+      "AbilCmd": "GenetronProductionModePerformance,Execute"
+    },
+    {
+      "Id": "GenetronStandardMode",
+      "Icon": "btn-ability-genetron-productionmode-standard",
+      "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>0.71</b> energy per second.</span>",
+      "Name": "Standard Mode",
+      "AbilCmd": "GenetronProductionModeStandard,Execute"
+    },
+    {
+      "Id": "GenetronOverclockMode",
+      "Icon": "btn-ability-genetron-productionmode-overclock",
+      "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>1.43</b> energy per second.</span>",
+      "Name": "Overclock Mode",
+      "AbilCmd": "GenetronProductionModeOverclock,Execute"
+    },
+    {
+      "Id": "Badger",
+      "Icon": "btn-unit-genetron-badger",
+      "Tooltip": "Large gunship.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+      "Name": "Fabricate Badger",
+      "AbilCmd": "BuildAircraft,Train5"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "Name": "Nightjar",
+  "Description": "Anti-Armor / Anti-Air Cannon<br/><br/><c val=\"#ColorAttackInfo\">Can Attack Ground and Air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "UPL Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "HiddenCargoUI",
+    "AIDefense"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "UPLNightjar",
+  "HotkeyAlias": "UPLNightjar",
+  "SelectAlias": "UPLNightjar",
+  "SubgroupAlias": "UPLNightjar",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "UPLNightjar",
+  "AIEvaluateAlias": "UPLNightjar",
+  "ReviveType": "UPLNightjar",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UPLNightjar/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UPLNightjar/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 6,
+  "AttackTargetPriority": 19,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UPLSelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "UPLTurretCargoLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLTurretCargo,Load",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "UPLTurretCargoUnload",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLTurretCargo,UnloadAll",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "SetRallyPointTransport",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 3,
+  "GlossaryCategory": "Unit/Category/0UPLBuildings",
+  "GlossaryPriority": 250,
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 225,
+    "Vespene": 50
+  },
+  "RepairTime": 20,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "KillDisplay": "Never",
+  "RankDisplay": "Never",
+  "Facing": 45,
+  "LifeArmor": 2,
+  "DeadFootprint": "Footprint3x3Contour",
+  "Icon": "btn-building-upl-uplnightjar",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "UPLNightjar",
+  "Weapons": [
+    {
+      "Link": "UPLNightjarWeapon",
+      "Turret": "UPLNightjarTurret",
+      "Id": "UPLNightjarWeapon",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl0",
+      "Name": "GAL 8.5mm Dual Barrel Rotating Assembly",
+      "Amount": 26,
+      "AttributeBonus": {
+        "Armored": 10
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 1.2
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    },
+    {
+      "Link": "UPLTurretCargoEmpty",
+      "Id": "UPLTurretCargoEmpty"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UPLVehicleWeapons",
+      "Id": "UPLVehicleWeapons",
+      "Name": "UPL Vehicle Weapons"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel1",
+      "Id": "UPLVehicleWeaponsLevel1",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl1",
+      "Name": "UPL Vehicle Weapons Level 1"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel2",
+      "Id": "UPLVehicleWeaponsLevel2",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl2",
+      "Name": "UPL Vehicle Weapons Level 2"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel3",
+      "Id": "UPLVehicleWeaponsLevel3",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl3",
+      "Name": "UPL Vehicle Weapons Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "UPLTurretCargo",
+      "Id": "UPLTurretCargo",
+      "Name": "UPLTurretCargo"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Mining Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "UPLTurretCargoLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Infantry unit pilots the structure.  Structure can attack while it has an active pilot.  If the structure is destroyed, the pilot is killed.",
+      "Name": "Enter Structure",
+      "AbilCmd": "UPLTurretCargo,Load"
+    },
+    {
+      "Id": "UPLTurretCargoUnload",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Infantry unit leaves the structure.  The structure deactivates without a pilot and cannot attack.",
+      "Name": "Exit Structure",
+      "AbilCmd": "UPLTurretCargo,UnloadAll"
+    },
+    {
+      "Id": "SetRallyPointTransport",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends unloaded units to designated point.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    }
+  ]
+}

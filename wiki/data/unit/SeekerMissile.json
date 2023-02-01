@@ -1,0 +1,126 @@
+{
+  "Name": "Seeker Missile",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "None",
+  "Mover": "Fly",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Projectile",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Invulnerable",
+    "Unstoppable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SeekerMissile",
+  "HotkeyAlias": "SeekerMissile",
+  "SelectAlias": "SeekerMissile",
+  "SubgroupAlias": "SeekerMissile",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SeekerMissile",
+  "AIEvaluateAlias": "SeekerMissile",
+  "ReviveType": "SeekerMissile",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SeekerMissile/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SeekerMissile/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Height": 3,
+  "Speed": 0.0976,
+  "Acceleration": 0.0625,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "SeekerDummyChannel,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Id": "SeekerMissile",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "SeekerDummyChannel",
+      "Id": "SeekerDummyChannel",
+      "Name": "Seeker Dummy Channel"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "SeekerDummyChannel,Execute"
+    }
+  ]
+}

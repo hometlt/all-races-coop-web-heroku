@@ -1,0 +1,402 @@
+{
+  "Name": "Aperture",
+  "Description": "Transport unit. Can be upgraded to use Keyhole.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 100,
+  "LifeMax": 100,
+  "LifeArmorName": "Keiron Mechanical Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.8125,
+  "MinimapRadius": 0.875,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect",
+    "AISupport"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Aperture",
+  "HotkeyAlias": "Aperture",
+  "SelectAlias": "Aperture",
+  "SubgroupAlias": "Aperture",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Aperture",
+  "AIEvaluateAlias": "Aperture",
+  "ReviveType": "Aperture",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Aperture/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Aperture/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "LifeRegenRate": 0.1718,
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "Acceleration": 3,
+  "Sight": 9,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "ApetureLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "ApertureLoadUnload,Load",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "ApertureUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "ApertureLoadUnload,UnloadAt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProgressRally,Rally1",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "ApertureTeleport",
+          "Type": "AbilCmd",
+          "AbilCmd": "ApertureKeyhole,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Unfuse",
+          "Type": "AbilCmd",
+          "AbilCmd": "FuseUnfuse,Execute",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/KeironUnits",
+  "GlossaryAlias": "Aperture",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "EnergyStart": 25,
+  "EnergyMax": 100,
+  "EnergyRegenRate": 0.5664,
+  "ShieldsStart": 100,
+  "ShieldsMax": 100,
+  "Speed": 3.125,
+  "EffectArray": {
+    "Create": "CelestialOutletAurApeDelay"
+  },
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 100,
+    "Vespene": 125
+  },
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "GlossaryPriority": 34,
+  "SubgroupPriority": 26,
+  "Icon": "btn-unit-keiron-aperture",
+  "LifeArmorIcon": "btn-upgrade-keiron-mechanicalarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Aperture",
+  "Behaviors": [
+    {
+      "Link": "ApertureRequirementDummy",
+      "Id": "ApertureRequirementDummy"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironMechArmor",
+      "Id": "KeironMechArmor",
+      "Name": "Keiron Mech Armor"
+    },
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironMechArmorLevel1",
+      "Id": "KeironMechArmorLevel1",
+      "Icon": "btn-upgrade-keiron-mechanicalarmorlevel1",
+      "Name": "Keiron Mechanical Armor Level 1"
+    },
+    {
+      "Link": "KeironMechArmorLevel2",
+      "Id": "KeironMechArmorLevel2",
+      "Icon": "btn-upgrade-keiron-mechanicalarmorlevel2",
+      "Name": "Keiron Mechanical Armor Level 2"
+    },
+    {
+      "Link": "KeironMechArmorLevel3",
+      "Id": "KeironMechArmorLevel3",
+      "Icon": "btn-upgrade-keiron-mechanicalarmorlevel3",
+      "Name": "Keiron Mechanical Armor Level 3"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "KeironWarpable",
+      "Id": "KeironWarpable",
+      "Name": "Keiron Warpable"
+    },
+    {
+      "Link": "ProgressRally",
+      "Id": "ProgressRally",
+      "Name": "Progress Rally"
+    },
+    {
+      "Link": "FuseUnfuse",
+      "Id": "FuseUnfuse",
+      "Name": "Unfuse"
+    },
+    {
+      "Link": "ApertureLoadUnload",
+      "Id": "ApertureLoadUnload",
+      "Name": "Aperture - Load-Unload"
+    },
+    {
+      "Link": "ApertureKeyhole",
+      "Id": "ApertureKeyhole",
+      "Name": "Aperture - Keyhole"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Citadel",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+      "Name": "Citadel"
+    },
+    {
+      "Id": "CitadelCharged",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can use Energize.",
+      "Name": "Citadel"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "ApetureLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Aperture's hold.",
+      "Name": "Load",
+      "AbilCmd": "ApertureLoadUnload,Load"
+    },
+    {
+      "Id": "ApertureUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "ApertureLoadUnload,UnloadAt"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "ProgressRally,Rally1"
+    },
+    {
+      "Id": "ApertureTeleport",
+      "Icon": "btn-ability-keiron-keyhole",
+      "Tooltip": "Teleports the target unit to the caster. Costs energy. The cost varies based on the target's cargo size.",
+      "Name": "Keyhole",
+      "AbilCmd": "ApertureKeyhole,Execute"
+    },
+    {
+      "Id": "Unfuse",
+      "Icon": "btn-ability-zerg-dehaka-levelup",
+      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Name": "Unfuse",
+      "AbilCmd": "FuseUnfuse,Execute"
+    }
+  ]
+}

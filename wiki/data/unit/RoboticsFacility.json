@@ -1,0 +1,361 @@
+{
+  "Name": "Robotics Facility",
+  "Description": "Warps in Protoss robotic units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Observers<br/>- Warp Prisms<br/>- Immortals",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 450,
+  "LifeMax": 450,
+  "LifeArmorName": "Protoss Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "RoboticsFacility",
+  "HotkeyAlias": "RoboticsFacility",
+  "SelectAlias": "RoboticsFacility",
+  "SubgroupAlias": "RoboticsFacility",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "RoboticsFacility",
+  "AIEvaluateAlias": "RoboticsFacility",
+  "ReviveType": "RoboticsFacility",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "RoboticsFacility/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "RoboticsFacility/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "ShieldsStart": 450,
+  "ShieldsMax": 450,
+  "ShieldRegenRate": 2,
+  "ShieldArmorName": "Protoss Plasma Shields",
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "SubgroupPriority": 22,
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Colossus",
+          "Type": "AbilCmd",
+          "AbilCmd": "RoboticsFacilityTrain,Train3",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Observer",
+          "Type": "AbilCmd",
+          "AbilCmd": "RoboticsFacilityTrain,Train2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "WarpPrism",
+          "Type": "AbilCmd",
+          "AbilCmd": "RoboticsFacilityTrain,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Immortal",
+          "Type": "AbilCmd",
+          "AbilCmd": "RoboticsFacilityTrain,Train4",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "WarpinDisruptor",
+          "Type": "AbilCmd",
+          "AbilCmd": "RoboticsFacilityTrain,Train19",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 211,
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "TechTreeProducedUnitArray": [
+    "Observer",
+    "WarpPrism",
+    "Immortal",
+    "Colossus",
+    "Disruptor"
+  ],
+  "ScoreMake": 300,
+  "ScoreKill": 300,
+  "ScoreResult": "BuildOrder",
+  "ShieldRegenDelay": 10,
+  "Icon": "btn-building-protoss-roboticsfacility",
+  "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "RoboticsFacility",
+  "Behaviors": [
+    {
+      "Link": "PowerUserQueue",
+      "Id": "PowerUserQueue"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ProtossShields",
+      "Id": "ProtossShields",
+      "Name": "Protoss Shields"
+    },
+    {
+      "Link": "ProtossShieldsLevel1",
+      "Id": "ProtossShieldsLevel1",
+      "Icon": "btn-upgrade-protoss-shieldslevel1",
+      "Name": "Protoss Shields Level 1"
+    },
+    {
+      "Link": "ProtossShieldsLevel2",
+      "Id": "ProtossShieldsLevel2",
+      "Icon": "btn-upgrade-protoss-shieldslevel2",
+      "Name": "Protoss Shields Level 2"
+    },
+    {
+      "Link": "ProtossShieldsLevel3",
+      "Id": "ProtossShieldsLevel3",
+      "Icon": "btn-upgrade-protoss-shieldslevel3",
+      "Name": "Protoss Shields Level 3"
+    },
+    {
+      "Link": "CinematicMode",
+      "Id": "CinematicMode",
+      "Name": "Cinematic Mode"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "RoboticsFacilityTrain",
+      "Id": "RoboticsFacilityTrain",
+      "Name": "Train (Robotics Facility)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "CyberneticsCore",
+      "Icon": "btn-building-protoss-cyberneticscore",
+      "Description": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Shield Batteries from Probes",
+      "Name": "Cybernetics Core"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "Colossus",
+      "Icon": "btn-unit-protoss-colossus",
+      "Description": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Colossus"
+    },
+    {
+      "Id": "Observer",
+      "Icon": "btn-unit-protoss-observer",
+      "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Observer"
+    },
+    {
+      "Id": "WarpPrism",
+      "Icon": "btn-unit-protoss-warpprism",
+      "Description": "Flying transport. Can load units from a distance. Can also deploy to create a power field.",
+      "Name": "Warp Prism"
+    },
+    {
+      "Id": "Immortal",
+      "Icon": "btn-unit-protoss-immortal",
+      "Description": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Immortal"
+    },
+    {
+      "Id": "Disruptor",
+      "Icon": "btn-unit-protoss-disruptor",
+      "Description": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
+      "Name": "Disruptor"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Probe",
+      "Icon": "btn-unit-protoss-probe",
+      "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Probe"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Colossus",
+      "Icon": "btn-unit-protoss-colossus",
+      "Tooltip": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Colossus",
+      "AbilCmd": "RoboticsFacilityTrain,Train3"
+    },
+    {
+      "Id": "Observer",
+      "Icon": "btn-unit-protoss-observer",
+      "Tooltip": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Warp In Observer",
+      "AbilCmd": "RoboticsFacilityTrain,Train2"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "WarpPrism",
+      "Icon": "btn-unit-protoss-warpprism",
+      "Tooltip": "Flying transport. Can load units from a distance. Can also deploy to create a power field.",
+      "Name": "Warp In Warp Prism",
+      "AbilCmd": "RoboticsFacilityTrain,Train1"
+    },
+    {
+      "Id": "Immortal",
+      "Icon": "btn-unit-protoss-immortal",
+      "Tooltip": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Immortal",
+      "AbilCmd": "RoboticsFacilityTrain,Train4"
+    },
+    {
+      "Id": "WarpinDisruptor",
+      "Icon": "btn-unit-protoss-disruptor",
+      "Tooltip": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Disruptor",
+      "AbilCmd": "RoboticsFacilityTrain,Train19"
+    }
+  ]
+}

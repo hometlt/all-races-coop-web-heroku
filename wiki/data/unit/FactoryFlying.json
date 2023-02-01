@@ -1,0 +1,265 @@
+{
+  "Name": "Factory",
+  "Description": "Factory must land to start unit production.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1250,
+  "LifeMax": 1250,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.625,
+  "SeparationRadius": 1.625,
+  "MinimapRadius": 1.625,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Factory",
+  "HotkeyAlias": "Factory",
+  "SelectAlias": "FactoryFlying",
+  "SubgroupAlias": "FactoryFlying",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "FactoryFlying",
+  "AIEvaluateAlias": "FactoryFlying",
+  "ReviveType": "FactoryFlying",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "FactoryFlying/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "FactoryFlying/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "GlossaryAlias": "Factory",
+  "TechAliasArray": [
+    "Alias_Factory"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "LifeArmor": 1,
+  "Speed": 0.9375,
+  "Acceleration": 1.3125,
+  "Height": 3.25,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "RepairTime": 60,
+  "AttackTargetPriority": 11,
+  "ScoreKill": 250,
+  "SubgroupPriority": 3,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "VisionHeight": 4,
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Land",
+          "Type": "AbilCmd",
+          "AbilCmd": "FactoryLand,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Reactor",
+          "Type": "AbilCmd",
+          "AbilCmd": "FactoryAddOns,Build2",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "BuildTechLabFactory",
+          "Type": "AbilCmd",
+          "AbilCmd": "FactoryAddOns,Build1",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "Icon": "btn-building-terran-factory",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "FactoryFlying",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "FactoryAddOns",
+      "Id": "FactoryAddOns",
+      "Name": "AddOns"
+    },
+    {
+      "Link": "FactoryLand",
+      "Id": "FactoryLand",
+      "Name": "Land"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "FactoryReactor",
+      "Icon": "btn-building-terran-reactor",
+      "Description": "Allows 2 units to be created simultaneously.",
+      "Name": "Reactor"
+    },
+    {
+      "Id": "FactoryTechLab",
+      "Icon": "btn-building-terran-techlab",
+      "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+      "Name": "Tech Lab"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Land",
+      "Icon": "btn-ability-terran-land",
+      "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+      "Name": "Land ",
+      "AbilCmd": "FactoryLand,Execute"
+    },
+    {
+      "Id": "Reactor",
+      "Icon": "btn-building-terran-reactor",
+      "Tooltip": "Allows 2 units to be created simultaneously.",
+      "Name": "Build Reactor",
+      "AbilCmd": "FactoryAddOns,Build2"
+    },
+    {
+      "Id": "BuildTechLabFactory",
+      "Icon": "btn-building-terran-techlab",
+      "Tooltip": "Vehicle-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Cyclones<br/>- Siege Tanks<br/>- Thor with Armory",
+      "Name": "Build Tech Lab",
+      "AbilCmd": "FactoryAddOns,Build1"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

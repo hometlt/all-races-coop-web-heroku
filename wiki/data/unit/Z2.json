@@ -1,0 +1,283 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 125,
+  "LifeMax": 125,
+  "LifeArmorName": "UPL Vehicle Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.625,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Z2",
+  "HotkeyAlias": "Z2",
+  "SelectAlias": "Z2",
+  "SubgroupAlias": "Z2",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Z2",
+  "AIEvaluateAlias": "Z2",
+  "ReviveType": "Z2",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Z2/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Z2/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Speed": 3.5,
+  "Acceleration": 1000,
+  "LateralAcceleration": 69.125,
+  "Sight": 10,
+  "Food": -2,
+  "CostCategory": "Army",
+  "RepairTime": 25,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 15,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "RileyJericoJumpJet",
+          "Type": "AbilCmd",
+          "AbilCmd": "RileyJericoJumpJet,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "RileyJericoLorna",
+          "Type": "AbilCmd",
+          "AbilCmd": "RileyJericoLorna,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "AltonPetersZ1Adrenaline",
+          "Type": "AbilCmd",
+          "AbilCmd": "AltonPetersZ1Adrenaline,Execute",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.5,
+  "CargoSize": 2,
+  "ScoreMake": 125,
+  "ScoreKill": 125,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 94,
+  "GlossaryCategory": "Unit/Category/0UPLUnits",
+  "HotkeyCategory": "Unit/Category/UPLStory",
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "Subtitle": "Unit/Subtitle/Z2",
+  "Gender": "Female",
+  "Attributes": [
+    "Light",
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "EnergyStart": 150,
+  "EnergyMax": 150,
+  "EnergyRegenRate": 1,
+  "GlossaryPriority": 40,
+  "Icon": "btn-unit-upl-z2",
+  "LifeArmorIcon": "btn-upgrades-upl-vehicleplating-lvl0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Z2",
+  "Weapons": [
+    {
+      "Link": "RileyJerico"
+    },
+    {
+      "Link": "Z1DummyWeapon",
+      "Id": "Z1DummyWeapon",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl0",
+      "Name": "Z1 Dummy Weapon",
+      "TargetFilters": "",
+      "Range": 3,
+      "Period": 0.8332
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "RileyJericoJumpJet"
+    },
+    {
+      "Link": "RileyJericoLorna"
+    },
+    {
+      "Link": "RileyJericoBadgerBomb",
+      "Id": "RileyJericoBadgerBomb",
+      "Name": "Riley Jerico Badger Bomb"
+    },
+    {
+      "Link": "AltonPetersZ1Adrenaline"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "AbilCmd": "RileyJericoJumpJet,Execute"
+    },
+    {
+      "AbilCmd": "RileyJericoLorna,Execute"
+    },
+    {
+      "AbilCmd": "AltonPetersZ1Adrenaline,Execute"
+    }
+  ]
+}

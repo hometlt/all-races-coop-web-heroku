@@ -1,0 +1,243 @@
+{
+  "Name": "Lurker Den",
+  "Description": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 850,
+  "LifeMax": 850,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "LurkerDenMP",
+  "HotkeyAlias": "LurkerDenMP",
+  "SelectAlias": "LurkerDenMP",
+  "SubgroupAlias": "LurkerDenMP",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "LurkerDenMP",
+  "AIEvaluateAlias": "LurkerDenMP",
+  "ReviveType": "LurkerDenMP",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "LurkerDenMP/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "LurkerDenMP/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 29.9926,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "Sight": 9,
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 150
+  },
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "EvolveDiggingClaws",
+          "Type": "AbilCmd",
+          "AbilCmd": "LurkerDenResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ResearchLurkerRange",
+          "Type": "AbilCmd",
+          "AbilCmd": "LurkerDenResearch,Research2",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint3x3CreepContour",
+  "PlacementFootprint": "Footprint3x3Creep",
+  "ScoreMake": 300,
+  "ScoreKill": 350,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 16,
+  "TechAliasArray": [],
+  "GlossaryPriority": 235,
+  "TechTreeUnlockedUnitArray": [
+    "LurkerMP"
+  ],
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "Icon": "btn-building-zerg-lurkerden",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "LurkerDenMP",
+  "Behaviors": [
+    {
+      "Link": "OnCreep",
+      "Id": "OnCreep"
+    },
+    {
+      "Link": "ZergBuildingNotOnCreep",
+      "Id": "ZergBuildingNotOnCreep"
+    },
+    {
+      "Link": "ZergBuildingDies6",
+      "Id": "ZergBuildingDies6"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "LurkerDenResearch",
+      "Id": "LurkerDenResearch",
+      "Name": "Lurker Den Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "DiggingClaws",
+      "Icon": "btn-upgrade-zerg-adaptivetalons",
+      "Name": "Adaptive Talons"
+    },
+    {
+      "Id": "LurkerRange",
+      "Icon": "btn-upgrade-kerrigan-seismicspines",
+      "Name": "Seismic Spines"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "EvolveDiggingClaws",
+      "Icon": "btn-upgrade-zerg-adaptivetalons",
+      "Tooltip": "Reduces the time <span style=\"color: #ffff8a\">Lurkers</span> take to burrow from <b>2.5</b> to 1.07 seconds and increases their movement speed.",
+      "Name": "Evolve Adaptive Talons",
+      "AbilCmd": "LurkerDenResearch,Research1"
+    },
+    {
+      "Id": "ResearchLurkerRange",
+      "Icon": "btn-upgrade-kerrigan-seismicspines",
+      "Tooltip": "Increases the attack range of <span style=\"color: #ffff8a\">Lurkers</span> by +<b>2</b>.",
+      "Name": "Evolve Seismic Spines",
+      "AbilCmd": "LurkerDenResearch,Research2"
+    }
+  ]
+}

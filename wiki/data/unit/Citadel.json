@@ -1,0 +1,697 @@
+{
+  "Name": "Citadel",
+  "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1250,
+  "LifeMax": 1250,
+  "LifeArmorName": "Keiron Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 2,
+  "SeparationRadius": 2,
+  "MinimapRadius": 2.5,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventReveal",
+    "TownCamera",
+    "TownStructureTownHall"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Citadel",
+  "HotkeyAlias": "Citadel",
+  "SelectAlias": "Citadel",
+  "SubgroupAlias": "Citadel",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Citadel",
+  "AIEvaluateAlias": "Citadel",
+  "ReviveType": "Citadel",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Citadel/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Citadel/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "Sight": 10,
+  "CostCategory": "Economy",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "LifeRegenRate": 0.25,
+  "Food": 18,
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "Row": 2,
+          "Column": 4,
+          "AbilCmd": "que5,CancelLast"
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelUpgradeMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "CitadelCharge,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "SelectBuilderKeiron",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyCommand,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "Converter",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MaterializeAirUnits",
+          "Type": "Submenu",
+          "SubmenuCardId": "0003",
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "MaterializeGroundUnits",
+          "Type": "Submenu",
+          "SubmenuCardId": "0002",
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Aegis",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelAegisTrain,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ChargeCitadel",
+          "Type": "AbilCmd",
+          "AbilCmd": "CitadelChargeMorph,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "MaterializePariah",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MaterializeVolt",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MaterializePulsar",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train3",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MaterializeSubjecter",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train4",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "MaterializeTitan",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train9",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "MaterializeMeridian",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train5",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MaterializeUmbra",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train6",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "MaterializeInducer",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train7",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "MaterializeMyriad",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train8",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "MaterializeAirUnits",
+          "Type": "Submenu",
+          "SubmenuCardId": "0003",
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 1
+        }
+      ],
+      "CardId": "0002"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "MaterializeEcho",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train10",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MaterializeFuse",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train17",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MaterializeAurora",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train11",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MaterializeAperture",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train12",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "MaterializeHarbinger",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train13",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "MaterializeGyre",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train14",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "MaterializeParagon",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironCitadelMaterialize,Train15",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "MaterializeGroundUnits",
+          "Type": "Submenu",
+          "SubmenuCardId": "0002",
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 0
+        }
+      ],
+      "CardId": "0003"
+    }
+  ],
+  "Facing": 315,
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "CostResource": {
+    "Minerals": 400
+  },
+  "ScoreMake": 400,
+  "ScoreKill": 400,
+  "TechAliasArray": [
+    "Alias_Citadel"
+  ],
+  "TechTreeProducedUnitArray": [
+    "Converter",
+    "Pariah",
+    "Volt",
+    "Pulsar",
+    "Subjecter",
+    "Meridian",
+    "Umbra",
+    "Inducer",
+    "Myriad",
+    "Titan",
+    "Echo",
+    "Fuse",
+    "Aurora",
+    "Aperture",
+    "Harbinger",
+    "Gyre",
+    "Paragon",
+    "Aegis"
+  ],
+  "Icon": "btn-building-keiron-citadel",
+  "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Citadel",
+  "Behaviors": [
+    {
+      "Link": "CitadelPowerSource",
+      "Id": "CitadelPowerSource"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "RallyCommand",
+      "Id": "RallyCommand",
+      "Name": "Command Center - Rally"
+    },
+    {
+      "Link": "KeironCitadelTrain",
+      "Id": "KeironCitadelTrain",
+      "Name": "Keiron - Citadel Train"
+    },
+    {
+      "Link": "KeironCitadelAegisTrain",
+      "Id": "KeironCitadelAegisTrain",
+      "Name": "Keiron - Citadel Aegis Train"
+    },
+    {
+      "Link": "KeironCitadelMaterialize",
+      "Id": "KeironCitadelMaterialize",
+      "Name": "Keiron - Citadel Materialize"
+    },
+    {
+      "Link": "CitadelChargeMorph",
+      "Id": "CitadelChargeMorph",
+      "Name": "Citadel Charge Instant"
+    },
+    {
+      "Link": "CitadelEnergize",
+      "Id": "CitadelEnergize",
+      "Name": "Citadel - Energize"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Converter"
+    },
+    {
+      "Id": "Aegis",
+      "Icon": "btn-unit-keiron-aegis",
+      "Description": "Powerful defense structure. Can use Relocate and Activate Shield.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Aegis"
+    },
+    {
+      "Id": "Pariah",
+      "Icon": "btn-unit-keiron-pariah",
+      "Description": "Light melee warrior. Can use Projection.<br/><br/><span style=\"color: #FFFF80\">Can target ground units.</span>",
+      "Name": "Pariah"
+    },
+    {
+      "Id": "Volt",
+      "Icon": "btn-unit-keiron-volt",
+      "Description": "Light ranged warrior.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Volt"
+    },
+    {
+      "Id": "Pulsar",
+      "Icon": "btn-unit-keiron-pulsar",
+      "Description": "Durable close range combat unit. Can be upgraded to use the Dampener ability.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Pulsar"
+    },
+    {
+      "Id": "Subjecter",
+      "Icon": "btn-unit-keiron-subjecter",
+      "Description": "Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can target ground and air units.</span>",
+      "Name": "Subjecter"
+    },
+    {
+      "Id": "Titan",
+      "Icon": "btn-unit-keiron-titan",
+      "Description": "Heavy assault walker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Titan"
+    },
+    {
+      "Id": "Meridian",
+      "Icon": "btn-unit-keiron-meridian",
+      "Description": "Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Meridian"
+    },
+    {
+      "Id": "Umbra",
+      "Icon": "btn-unit-keiron-umbra",
+      "Description": "Tactical cloaking anti-armored specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Umbra"
+    },
+    {
+      "Id": "Inducer",
+      "Icon": "btn-unit-keiron-inducer",
+      "Description": "Siege unit that launches an orb which must return before firing again.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Inducer"
+    },
+    {
+      "Id": "Myriad",
+      "Icon": "btn-unit-keiron-myriad",
+      "Description": "Siege unit. Can produce and attack with Elytra.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Myriad"
+    },
+    {
+      "Id": "Echo",
+      "Icon": "btn-unit-keiron-echo",
+      "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+      "Name": "Echo"
+    },
+    {
+      "Id": "Fuse",
+      "Icon": "btn-unit-keiron-fuse",
+      "Description": "Support unit. Can use Fusion.",
+      "Name": "Fuse"
+    },
+    {
+      "Id": "Aurora",
+      "Icon": "btn-unit-keiron-aurora",
+      "Description": "Tactical-strike aircraft. Can use Emanator.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Aurora"
+    },
+    {
+      "Id": "Aperture",
+      "Icon": "btn-unit-keiron-aperture",
+      "Description": "Transport unit. Can be upgraded to use Keyhole.",
+      "Name": "Aperture"
+    },
+    {
+      "Id": "Harbinger",
+      "Icon": "btn-unit-keiron-harbinger",
+      "Description": "Assault frigate. Can use Judgement Mode.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Harbinger"
+    },
+    {
+      "Id": "Gyre",
+      "Icon": "btn-unit-keiron-paradox",
+      "Description": "Support unit. Can use Annex and Shackle.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Gyre"
+    },
+    {
+      "Id": "Paragon",
+      "Icon": "btn-unit-keiron-paragon",
+      "Description": "Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Paragon"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Converter"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "CancelUpgradeMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
+      "Name": "Cancel",
+      "AbilCmd": "CitadelCharge,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyCommand,Rally1"
+    },
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Tooltip": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Materialize Converter",
+      "AbilCmd": "KeironCitadelTrain,Train1"
+    },
+    {
+      "Id": "Aegis",
+      "Icon": "btn-unit-keiron-aegis",
+      "Tooltip": "Powerful defense structure. Can use Relocate and Activate Shield.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Aegis",
+      "AbilCmd": "KeironCitadelAegisTrain,Train1"
+    },
+    {
+      "Id": "ChargeCitadel",
+      "Icon": "btn-ability-keiron-citadelcharge",
+      "Tooltip": "Upgrades the Citadel, unlocking the Energize ability.",
+      "Name": "Charge Citadel",
+      "AbilCmd": "CitadelChargeMorph,Execute"
+    },
+    {
+      "Id": "MaterializePariah",
+      "Icon": "btn-unit-keiron-pariah",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light melee warrior. Can use Projection.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Pariah",
+      "AbilCmd": "KeironCitadelMaterialize,Train1"
+    },
+    {
+      "Id": "MaterializeVolt",
+      "Icon": "btn-unit-keiron-volt",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light ranged warrior.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Volt",
+      "AbilCmd": "KeironCitadelMaterialize,Train2"
+    },
+    {
+      "Id": "MaterializePulsar",
+      "Icon": "btn-unit-keiron-pulsar",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Durable close range combat unit. Can be upgraded to use the Dampener ability.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Pulsar",
+      "AbilCmd": "KeironCitadelMaterialize,Train3"
+    },
+    {
+      "Id": "MaterializeSubjecter",
+      "Icon": "btn-unit-keiron-subjecter",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Subjecter",
+      "AbilCmd": "KeironCitadelMaterialize,Train4"
+    },
+    {
+      "Id": "MaterializeTitan",
+      "Icon": "btn-unit-keiron-titan",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>Heavy assault walker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Titan",
+      "AbilCmd": "KeironCitadelMaterialize,Train9"
+    },
+    {
+      "Id": "MaterializeMeridian",
+      "Icon": "btn-unit-keiron-meridian",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Elysium</span>.<br/><br/>Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Meridian",
+      "AbilCmd": "KeironCitadelMaterialize,Train5"
+    },
+    {
+      "Id": "MaterializeUmbra",
+      "Icon": "btn-unit-keiron-umbra",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>Tactical cloaking anti-armored specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Umbra",
+      "AbilCmd": "KeironCitadelMaterialize,Train6"
+    },
+    {
+      "Id": "MaterializeInducer",
+      "Icon": "btn-unit-keiron-inducer",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit which launches an orb that must return before firing again.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Inducer",
+      "AbilCmd": "KeironCitadelMaterialize,Train7"
+    },
+    {
+      "Id": "MaterializeMyriad",
+      "Icon": "btn-unit-keiron-myriad",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit. Can produce and attack with Elytra.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Myriad",
+      "AbilCmd": "KeironCitadelMaterialize,Train8"
+    },
+    {
+      "Id": "MaterializeEcho",
+      "Icon": "btn-unit-keiron-echo",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+      "Name": "Materialize Echo",
+      "AbilCmd": "KeironCitadelMaterialize,Train10"
+    },
+    {
+      "Id": "MaterializeFuse",
+      "Icon": "btn-unit-keiron-fuse",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Support unit. Can use Fusion.",
+      "Name": "Materialize Fuse",
+      "AbilCmd": "KeironCitadelMaterialize,Train17"
+    },
+    {
+      "Id": "MaterializeAurora",
+      "Icon": "btn-unit-keiron-aurora",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Tactical-strike aircraft. Can use Emanator.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Materialize Aurora",
+      "AbilCmd": "KeironCitadelMaterialize,Train11"
+    },
+    {
+      "Id": "MaterializeAperture",
+      "Icon": "btn-unit-keiron-aperture",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Transport unit. Can be upgraded to use Keyhole.",
+      "Name": "Materialize Aperture",
+      "AbilCmd": "KeironCitadelMaterialize,Train12"
+    },
+    {
+      "Id": "MaterializeHarbinger",
+      "Icon": "btn-unit-keiron-harbinger",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Assault frigate. Can use Judgement Mode.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Harbinger",
+      "AbilCmd": "KeironCitadelMaterialize,Train13"
+    },
+    {
+      "Id": "MaterializeGyre",
+      "Icon": "btn-unit-keiron-paradox",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Support unit. Can use Annex and Shackle.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Materialize Gyre",
+      "AbilCmd": "KeironCitadelMaterialize,Train14"
+    },
+    {
+      "Id": "MaterializeParagon",
+      "Icon": "btn-unit-keiron-paragon",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Zenith</span>.<br/><br/>Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Materialize Paragon",
+      "AbilCmd": "KeironCitadelMaterialize,Train15"
+    }
+  ]
+}

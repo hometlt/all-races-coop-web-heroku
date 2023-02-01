@@ -1,0 +1,101 @@
+{
+  "Name": "Extending Bridge - NE - Height 12 - Wide - Extended",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ExtendingBridgeNEWide12Out",
+  "HotkeyAlias": "ExtendingBridgeNEWide12Out",
+  "SelectAlias": "ExtendingBridgeNEWide12Out",
+  "SubgroupAlias": "ExtendingBridgeNEWide12Out",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ExtendingBridgeNEWide12Out",
+  "AIEvaluateAlias": "ExtendingBridgeNEWide12Out",
+  "ReviveType": "ExtendingBridgeNEWide12Out",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ExtendingBridgeNEWide12Out/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ExtendingBridgeNEWide12Out/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 225,
+  "Height": 12,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeRetract",
+          "Type": "AbilCmd",
+          "AbilCmd": "ExtendingBridgeNEWide12,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "ExtendingBridgeNEWideOut",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ExtendingBridgeNEWide12Out",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "ExtendingBridgeNEWide12",
+      "Id": "ExtendingBridgeNEWide12",
+      "Name": "ExtendingBridge - NE - Height 12 - Wide - Retract"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeRetract",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Retract",
+      "AbilCmd": "ExtendingBridgeNEWide12,Execute"
+    }
+  ]
+}

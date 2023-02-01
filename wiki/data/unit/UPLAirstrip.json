@@ -1,0 +1,372 @@
+{
+  "Name": "Airstrip",
+  "Description": "Aircraft production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>-  <b>Raptor Jet</b><br/>-  <b>Osprey</b><br/>-  <b>Condor</b>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1250,
+  "LifeMax": 1250,
+  "LifeArmorName": "UPL Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.625,
+  "SeparationRadius": 1.625,
+  "MinimapRadius": 1.625,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "UPLAirstrip",
+  "HotkeyAlias": "UPLAirstrip",
+  "SelectAlias": "UPLAirstrip",
+  "SubgroupAlias": "UPLAirstrip",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Factory",
+  "AIEvaluateAlias": "UPLAirstrip",
+  "ReviveType": "UPLAirstrip",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UPLAirstrip/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UPLAirstrip/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 9,
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UPLSelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "RaptorJet",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripTrain,Train1",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Osprey",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripTrain,Train2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Condor",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripTrain,Train3",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "FrancineFuelInjection",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripResearch,Research2",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "RaptorCloakAbilUpgrade",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripResearch,Research1",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "ResearchCondorEnhancedCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripResearch,Research3",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "ResearchRaptorIncendiary",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLAirstripResearch,Research4",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 3,
+  "GlossaryCategory": "Unit/Category/0UPLBuildings",
+  "GlossaryPriority": 32,
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "Facing": 315,
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "RepairTime": 50,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 250,
+  "ScoreKill": 250,
+  "TechAliasArray": [
+    "Alias_UPLManufacturingFacility"
+  ],
+  "TechTreeProducedUnitArray": [
+    "RaptorJet",
+    "Osprey",
+    "Condor"
+  ],
+  "DataCollection": "UPLManufacturingFacility",
+  "DeathTime": 0.5,
+  "DeadFootprint": "Footprint3x3Contour",
+  "Icon": "btn-building-upl-uplairstrip",
+  "LifeArmorIcon": "btn-upgrade-upl-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "UPLAirstrip",
+  "Behaviors": [
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "UPLAirstripTrain",
+      "Id": "UPLAirstripTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "UPLAirstripResearch",
+      "Id": "UPLAirstripResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "RaptorJet",
+      "Icon": "btn-unit-upl-raptofighterjet",
+      "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
+      "Name": "Raptor Jet"
+    },
+    {
+      "Id": "Osprey",
+      "Icon": "btn-unit-upl-ospreyhelicopter",
+      "Description": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "Osprey"
+    },
+    {
+      "Id": "Condor",
+      "Icon": "btn-unit-upl-condortransport",
+      "Description": "Reinforced Aerial Transport",
+      "Name": "Condor"
+    },
+    {
+      "Id": "FrancineFuelInjection",
+      "Icon": "btn-ability-upl-advancedenergyprocessing",
+      "Name": "Francine Fuel Injection"
+    },
+    {
+      "Id": "RaptorCloakAbilUpgrade",
+      "Icon": "btn-ability-upl-metamateria-suit",
+      "Name": "Metamateria Coating"
+    },
+    {
+      "Id": "CondorEnhancedCargo",
+      "Icon": "btn-ability-upl-enlargecargobay",
+      "Name": "Expanded Cargo Hold"
+    },
+    {
+      "Id": "UPLRaptorIncendiary",
+      "Icon": "btn-ability-upl-thermite",
+      "Name": "UPLRaptorIncendiary"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Mining Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "RaptorJet",
+      "Icon": "btn-unit-upl-raptofighterjet",
+      "Tooltip": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
+      "Name": "Build Raptor Jet",
+      "AbilCmd": "UPLAirstripTrain,Train1"
+    },
+    {
+      "Id": "Osprey",
+      "Icon": "btn-unit-upl-ospreyhelicopter",
+      "Tooltip": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "Build Osprey",
+      "AbilCmd": "UPLAirstripTrain,Train2"
+    },
+    {
+      "Id": "Condor",
+      "Icon": "btn-unit-upl-condortransport",
+      "Tooltip": "Reinforced Aerial Transport",
+      "Name": "Build Condor",
+      "AbilCmd": "UPLAirstripTrain,Train3"
+    },
+    {
+      "Id": "FrancineFuelInjection",
+      "Icon": "btn-ability-upl-advancedenergyprocessing",
+      "Tooltip": "Increases movement speed of <span style=\"color: #FFFF8A\"><b>Condor</b>s</span> and <span style=\"color: #FFFF8A\"><b>Osprey</b>s</span>.",
+      "Name": "Research Francine Fuel Injection",
+      "AbilCmd": "UPLAirstripResearch,Research2"
+    },
+    {
+      "Id": "RaptorCloakAbilUpgrade",
+      "Icon": "btn-ability-upl-metamateria-suit",
+      "Tooltip": "Enables <span style=\"color: #FFFF80\"><b>Raptor Jet</b>s</span>  to use <span style=\"color: #FFFF80\"><b>Metamateria Coating</b> </span>ability. This allows <span style=\"color: #FFFF80\"><b>Raptor Jet</b>s</span> to become temporarily cloaked when activated, unless the unit is revealed by detectors or effects. Also enable cloaking for landed <span style=\"color: #FFFF80\"><b>Condor</b>s</span>",
+      "Name": "Research Metamateria Coating",
+      "AbilCmd": "UPLAirstripResearch,Research1"
+    },
+    {
+      "Id": "ResearchCondorEnhancedCargo",
+      "Icon": "btn-ability-upl-enlargecargobay",
+      "Tooltip": "Increases <span style=\"color: #FFFF8A\">Condors </span>cargo capacity by 6",
+      "Name": "Research Expanded Cargo Hold",
+      "AbilCmd": "UPLAirstripResearch,Research3"
+    },
+    {
+      "Id": "ResearchRaptorIncendiary",
+      "Icon": "btn-ability-upl-thermite",
+      "Tooltip": "Raptor Jet Targets burn for 3 seconds, receiving additional <b>6</b> Damage / sec</span>",
+      "Name": "Research Plasma Infused White Phosphorous",
+      "AbilCmd": "UPLAirstripResearch,Research4"
+    }
+  ]
+}

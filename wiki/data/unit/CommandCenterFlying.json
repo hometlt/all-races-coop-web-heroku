@@ -1,0 +1,262 @@
+{
+  "Name": "Command Center",
+  "Description": "Primary structure. Must land to receive resources, produce units, or use abilities.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1500,
+  "LifeMax": 1500,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 2.5,
+  "SeparationRadius": 2.5,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventReveal",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "CommandCenter",
+  "HotkeyAlias": "CommandCenter",
+  "SelectAlias": "CommandCenterFlying",
+  "SubgroupAlias": "CommandCenterFlying",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "CommandCenterFlying",
+  "AIEvaluateAlias": "CommandCenterFlying",
+  "ReviveType": "CommandCenterFlying",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "CommandCenterFlying/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "CommandCenterFlying/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "GlossaryAlias": "CommandCenter",
+  "TechAliasArray": [
+    "Alias_CommandCenter"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "LifeArmor": 1,
+  "Speed": 0.9375,
+  "Acceleration": 1.3125,
+  "Height": 3.25,
+  "Food": 15,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 400
+  },
+  "RepairTime": 100,
+  "AttackTargetPriority": 11,
+  "ScoreKill": 400,
+  "SubgroupPriority": 5,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "VisionHeight": 4,
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Land",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterLand,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "CommandCenterLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTransport,LoadAll",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "CommandCenterUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTransport,UnloadAll",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "Icon": "btn-building-terran-commandcenter",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "CommandCenterFlying",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "SnowVisualMP",
+      "Id": "SnowVisualMP"
+    },
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    },
+    {
+      "Link": "NeosteelFrame",
+      "Id": "NeosteelFrame",
+      "Icon": "btn-upgrade-terran-neosteelframe",
+      "Name": "Neosteel Frame"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "CommandCenterLand",
+      "Id": "CommandCenterLand",
+      "Name": "Land (Command Center)"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "CommandCenterTransport",
+      "Id": "CommandCenterTransport",
+      "Name": "Load-Unload (Command Center)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Land",
+      "Icon": "btn-ability-terran-land",
+      "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+      "Name": "Land ",
+      "AbilCmd": "CommandCenterLand,Execute"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "CommandCenterLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads nearby SCVs into Command Center.",
+      "Name": "Load",
+      "AbilCmd": "CommandCenterTransport,LoadAll"
+    },
+    {
+      "Id": "CommandCenterUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "CommandCenterTransport,UnloadAll"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

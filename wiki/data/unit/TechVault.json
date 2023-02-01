@@ -1,0 +1,386 @@
+{
+  "Name": "Tech Vault",
+  "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.25,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "TechVault",
+  "HotkeyAlias": "TechVault",
+  "SelectAlias": "TechVault",
+  "SubgroupAlias": "TechVault",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "TechVault",
+  "AIEvaluateAlias": "TechVault",
+  "ReviveType": "TechVault",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "TechVault/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "TechVault/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 10,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 45,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UpgradeHeavyWeapons",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeHeavyWeaponsLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeHeavyWeaponsLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research3",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeAircraftWeapons",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research7",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeAircraftWeaponsLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research8",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeAircraftWeaponsLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research9",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "UpgradeAircraftPlating",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research4",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "UpgradeAircraftPlatingLevel2",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research5",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "UpgradeAircraftPlatingLevel3",
+          "Type": "AbilCmd",
+          "AbilCmd": "TechVaultResearch,Research6",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3Contour",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 100
+  },
+  "RepairTime": 65,
+  "SubgroupPriority": 3,
+  "GlossaryPriority": 26,
+  "TechTreeUnlockedUnitArray": [
+    "Aquila",
+    "Virtus",
+    "Badger"
+  ],
+  "Icon": "btn-building-genetron-techvault",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "TechVault",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "TechVaultResearch",
+      "Id": "TechVaultResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "OutfittingStation",
+      "Icon": "btn-building-genetron-outfittingstation",
+      "Description": "Contains upgrades for Genetron units.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Equalizers at the Manufacturer<br/>- Inciters at the Fabricator<br/>- Teslas at the Fabricator<br/>- Jupiters at the Assembly Array<br/>- Boars at the Assembly Array",
+      "Name": "Outfitting Station"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "GenetronHeavyWeaponsLevel1",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level1",
+      "Name": "Genetron Heavy Weapons Level 1"
+    },
+    {
+      "Id": "GenetronHeavyWeaponsLevel2",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level2",
+      "Name": "Genetron Heavy Weapons Level 2"
+    },
+    {
+      "Id": "GenetronHeavyWeaponsLevel3",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level3",
+      "Name": "Genetron Heavy Weapons Level 3"
+    },
+    {
+      "Id": "GenetronAircraftWeaponsLevel1",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level1",
+      "Name": "Genetron Aircraft Weapons Level 1"
+    },
+    {
+      "Id": "GenetronAircraftWeaponsLevel2",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level2",
+      "Name": "Genetron Aircraft Weapons Level 2"
+    },
+    {
+      "Id": "GenetronAircraftWeaponsLevel3",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level3",
+      "Name": "Genetron Aircraft Weapons Level 3"
+    },
+    {
+      "Id": "GenetronAircraftPlatingLevel1",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level1",
+      "Name": "Genetron Aircraft Plating Level 1"
+    },
+    {
+      "Id": "GenetronAircraftPlatingLevel2",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level2",
+      "Name": "Genetron Aircraft Plating Level 2"
+    },
+    {
+      "Id": "GenetronAircraftPlatingLevel3",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level3",
+      "Name": "Genetron Aircraft Plating Level 3"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "UpgradeHeavyWeapons",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level1",
+      "Tooltip": "Upgrades the damage of units produced from the <span style=\"color: #FFFF80\">Fabricator</span>.",
+      "Name": "Upgrade Heavy Weapons Level 1",
+      "AbilCmd": "TechVaultResearch,Research1"
+    },
+    {
+      "Id": "UpgradeHeavyWeaponsLevel2",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level2",
+      "Tooltip": "Further upgrades the damage of units produced from the <span style=\"color: #FFFF80\">Fabricator</span>.",
+      "Name": "Upgrade Heavy Weapons Level 2",
+      "AbilCmd": "TechVaultResearch,Research2"
+    },
+    {
+      "Id": "UpgradeHeavyWeaponsLevel3",
+      "Icon": "btn-upgrade-genetron-heavymechweapons-level3",
+      "Tooltip": "Maximizes the damage of units produced from the <span style=\"color: #FFFF80\">Fabricator</span>.",
+      "Name": "Upgrade Heavy Weapons Level 3",
+      "AbilCmd": "TechVaultResearch,Research3"
+    },
+    {
+      "Id": "UpgradeAircraftWeapons",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level1",
+      "Tooltip": "Upgrades the damage of aircraft weapons.",
+      "Name": "Upgrade Aircraft Weapons Level 1",
+      "AbilCmd": "TechVaultResearch,Research7"
+    },
+    {
+      "Id": "UpgradeAircraftWeaponsLevel2",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level2",
+      "Tooltip": "Further upgrades the damage of aircraft weapons.",
+      "Name": "Upgrade Aircraft Weapons Level 2",
+      "AbilCmd": "TechVaultResearch,Research8"
+    },
+    {
+      "Id": "UpgradeAircraftWeaponsLevel3",
+      "Icon": "btn-upgrade-genetron-rocketweapons-level3",
+      "Tooltip": "Maximizes the damage of aircraft weapons.",
+      "Name": "Upgrade Aircraft Weapons Level 3",
+      "AbilCmd": "TechVaultResearch,Research9"
+    },
+    {
+      "Id": "UpgradeAircraftPlating",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level1",
+      "Tooltip": "Upgrades the armor of Genetron air units.",
+      "Name": "Upgrade Aircraft Plating Level 1",
+      "AbilCmd": "TechVaultResearch,Research4"
+    },
+    {
+      "Id": "UpgradeAircraftPlatingLevel2",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level2",
+      "Tooltip": "Further upgrades the armor of Genetron air units.",
+      "Name": "Upgrade Aircraft Plating Level 2",
+      "AbilCmd": "TechVaultResearch,Research5"
+    },
+    {
+      "Id": "UpgradeAircraftPlatingLevel3",
+      "Icon": "btn-upgrade-genetron-aircraftplating-level3",
+      "Tooltip": "Maximizes the armor of Genetron air units.",
+      "Name": "Upgrade Aircraft Plating Level 3",
+      "AbilCmd": "TechVaultResearch,Research6"
+    }
+  ]
+}

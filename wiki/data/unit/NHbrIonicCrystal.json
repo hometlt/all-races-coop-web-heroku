@@ -1,0 +1,558 @@
+{
+  "Name": "Ionic Crystal",
+  "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "AcquireNoFlee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 250,
+  "LifeMax": 250,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrIonicCrystal",
+  "HotkeyAlias": "NHbrIonicCrystal",
+  "SelectAlias": "NHbrIonicCrystal",
+  "SubgroupAlias": "NHbrIonicCrystal",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrIonicCrystal",
+  "AIEvaluateAlias": "NHbrIonicCrystal",
+  "ReviveType": "NHbrIonicCrystal",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrIonicCrystal/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrIonicCrystal/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 3,
+  "DataCollection": "NHbrIonicCrystal",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Halt",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharged",
+          "Type": "Passive",
+          "Requirements": "NHbrNetwork@NetworkChargedShow",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharging",
+          "Type": "Passive",
+          "Behavior": "NHbrNetworkCharging@TimerFull",
+          "Requirements": "NHbrNetwork@NetworkChargingTimerFull",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharging",
+          "Type": "Passive",
+          "Behavior": "NHbrNetworkCharging@TimerFullReduced",
+          "Requirements": "NHbrNetworkCharging@HasTimerReduced",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrIonicCrystalMorph@TransformToMoveableIonicCrystal",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalMorph@TransfromToMoveableIonicCrystal,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrNetworkFastCharging@FastCharging",
+          "Type": "Passive",
+          "Requirements": "NHbrNetworkFastCharging@Completed",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "NHbrIonicCrystalTeleport@Temple",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@Harvester",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build2",
+          "ShowInGlossary": 0,
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@Engine",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build8",
+          "ShowInGlossary": 0,
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@VoidPortal",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build11",
+          "ShowInGlossary": 0,
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@VoidRift",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build3",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@StasisCell",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build4",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@VespeneConcentrator",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build5",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@ProcessingCore",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build9",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@CrystallicShrine",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build12",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@ConstructAntiAir",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build6",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@ConstructAntiGround",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build7",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@Processor",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build10",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrIonicCrystalTeleport@NemesisCatacomb",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build13",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 4
+        }
+      ],
+      "CardId": "0002"
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "EnergyStart": 20,
+  "EnergyMax": 100,
+  "ShieldsStart": 175,
+  "ShieldsMax": 175,
+  "Food": 8,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 125
+  },
+  "TurretArray": [
+    "PylonRingRotate"
+  ],
+  "EffectArray": {
+    "Birth": "NHbrNetworkNEW@PowerSourceCreatedDummySet",
+    "Death": "NHbrNetworkNEW@PowerSourceDestroyedDummySet"
+  },
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "TechAliasArray": [
+    "Alias_NHbrIonicCrystal"
+  ],
+  "GlossaryPriority": 3,
+  "Icon": "btn-hybrid-building-pylon",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrIonicCrystal",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "NHbrNetworkCharging",
+      "Id": "NHbrNetworkCharging"
+    },
+    {
+      "Link": "NHbrNetworkNEW@PeriodicSearch",
+      "Id": "NHbrNetworkNEW@PeriodicSearch"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "NHbrIonicCrystalMorph@TransfromToMoveableIonicCrystal",
+      "Id": "NHbrIonicCrystalMorph@TransfromToMoveableIonicCrystal",
+      "Name": "Transfrom To Moveable Ionic Crystal"
+    },
+    {
+      "Link": "NHbrIonicCrystalTeleport",
+      "Id": "NHbrIonicCrystalTeleport",
+      "Name": "Teleport"
+    },
+    {
+      "Link": "NHbrIonicCrystalTeleport@Build",
+      "Id": "NHbrIonicCrystalTeleport@Build",
+      "Name": "Build"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "NHbrTemple",
+      "Icon": "btn-hybrid-building-temple",
+      "Description": "Primary structure. Can receive gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Minions",
+      "Name": "Temple"
+    },
+    {
+      "Id": "NHbrHarvester",
+      "Icon": "btn-building-protoss-assimilator-ihanrii",
+      "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Harvester"
+    },
+    {
+      "Id": "NHbrEngine",
+      "Icon": "btn-hybrid-building-roboticssupportbay",
+      "Description": "<span style=\"color: #FFFF80\">Containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Silents<br/>- Dreadnoks",
+      "Name": "Engine"
+    },
+    {
+      "Id": "NHbrVoidPortal",
+      "Icon": "btn-hybrid-structure-shield-generator",
+      "Description": "<span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Screamers<br/>- Pollinators<br/>- Navigators",
+      "Name": "Void Portal"
+    },
+    {
+      "Id": "NHbrVoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+      "Name": "Void Rift"
+    },
+    {
+      "Id": "NHbrStasisCell",
+      "Icon": "btn-hybrid-building-stasiscell",
+      "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>, <span style=\"color: #FFFF80\">containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Flayers<br/>- Warbringers<br/>- Sentinels",
+      "Name": "Stasis Cell"
+    },
+    {
+      "Id": "NHbrVespeneConcentrator",
+      "Icon": "btn-hybrid-building-forge",
+      "Description": "Contains specific upgrades for Hybrids. Build nearby Harvesters to increase their vespene amount.",
+      "Name": "Vespene Concentrator"
+    },
+    {
+      "Id": "NHbrProcessingCore",
+      "Icon": "btn-hybrid-building-artifactcontainmentfieldvoid",
+      "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>. <span style=\"color: #FFFF80\">Contains upgrades for Hybrid units.</span><br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Reavers<br/>- Dominators",
+      "Name": "Processing Core"
+    },
+    {
+      "Id": "NHbrCrystallicShrine",
+      "Icon": "btn-hybrid-building-darkshrine",
+      "Description": "Contains weapon and armor upgrades for Hybrid units <br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Horrors",
+      "Name": "Crystallic Shrine"
+    },
+    {
+      "Id": "NHbrConstruct@AntiAir",
+      "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+      "Description": "Powerful Anti-Air guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Ground construct.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Construct (Anti-Air)"
+    },
+    {
+      "Id": "NHbrConstruct@AntiGround",
+      "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+      "Description": "Powerful Anti-Ground guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Air construct.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Construct (Anti-Ground)"
+    },
+    {
+      "Id": "NHbrProcessor",
+      "Icon": "btn-hybrid-building-roboticsfacility",
+      "Description": "Contains upgrades for Hybrid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Upgrade Reaver to Advanced Reaver<br/>- Upgrade Dominator to Advanced Dominator",
+      "Name": "Processor"
+    },
+    {
+      "Id": "NHbrNemesisCatacomb",
+      "Icon": "btn-hybrid-building-fleshbender",
+      "Description": "Contains upgrades for Hybrid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Nemesis",
+      "Name": "Nemesis Catacomb"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Halt"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport",
+      "Icon": "btn-ability-zeratul-warpprism-autounloadon",
+      "Tooltip": "Teleport any Structure inside <span style=\"color: #ffff8a\">current</span> Ionic Crystal's <c val=\"#Network\">Network</span> field (excluding other Ionic Crystals) to the target <c val=\"#Network\">Network</span> location in <span style=\"color: #ffff8a\"><b>0.00</b></span> seconds. ",
+      "Name": "Teleport",
+      "AbilCmd": "NHbrIonicCrystalTeleport,Execute"
+    },
+    {
+      "Id": "NHbrIonicCrystalMorph@TransformToMoveableIonicCrystal",
+      "Icon": "btn-ability-terran-liftoff",
+      "Tooltip": "Allows Ionic Crystal to move.",
+      "Name": "Transform To Moveable Ionic Crystal",
+      "AbilCmd": "NHbrIonicCrystalMorph@TransfromToMoveableIonicCrystal,Execute"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@Temple",
+      "Icon": "btn-hybrid-building-temple",
+      "Name": "Teleport Temple",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build1"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@Harvester",
+      "Icon": "btn-building-protoss-assimilator-ihanrii",
+      "Name": "Teleport Harvester",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build2"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@Engine",
+      "Icon": "btn-hybrid-building-roboticssupportbay",
+      "Name": "Teleport Engine",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build8"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@VoidPortal",
+      "Icon": "btn-hybrid-structure-shield-generator",
+      "Name": "Teleport Void Portal",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build11"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@VoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Name": "Teleport Void Rift",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build3"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@StasisCell",
+      "Icon": "btn-hybrid-building-stasiscell",
+      "Name": "Teleport Stasis Cell",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build4"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@VespeneConcentrator",
+      "Icon": "btn-hybrid-building-forge",
+      "Name": "Teleport Vespene Concentrator",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build5"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@ProcessingCore",
+      "Icon": "btn-hybrid-building-artifactcontainmentfieldvoid",
+      "Name": "Teleport Processing Core",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build9"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@CrystallicShrine",
+      "Icon": "btn-hybrid-building-darkshrine",
+      "Name": "Teleport Crystallic Shrine",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build12"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@ConstructAntiAir",
+      "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+      "Name": "Teleport Construct (Anti-Air)",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build6"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@ConstructAntiGround",
+      "Icon": "btn-hybrid-unit-construct-sentinel-antiground",
+      "Name": "Teleport Construct (Anti-Ground)",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build7"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@Processor",
+      "Icon": "btn-hybrid-building-roboticsfacility",
+      "Name": "Teleport Processor",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build10"
+    },
+    {
+      "Id": "NHbrIonicCrystalTeleport@NemesisCatacomb",
+      "Icon": "btn-hybrid-building-fleshbender",
+      "Name": "Teleport Nemesis Catacomb",
+      "AbilCmd": "NHbrIonicCrystalTeleport@Build,Build13"
+    }
+  ]
+}

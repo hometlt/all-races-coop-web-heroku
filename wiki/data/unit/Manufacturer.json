@@ -1,0 +1,425 @@
+{
+  "Name": "Manufacturer",
+  "Description": "Produces light-weight machines.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Spitfires",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1000,
+  "LifeMax": 1000,
+  "LifeArmorName": "Mechanical Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "PreventDefeat",
+    "PenaltyRevealed",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Manufacturer",
+  "HotkeyAlias": "Manufacturer",
+  "SelectAlias": "Manufacturer",
+  "SubgroupAlias": "Manufacturer",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Manufacturer",
+  "AIEvaluateAlias": "Manufacturer",
+  "ReviveType": "Manufacturer",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Manufacturer/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Manufacturer/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Burrow",
+    "Structure",
+    "RoachBurrow",
+    "Small"
+  ],
+  "Attributes": [
+    "Mechanical",
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "ScoreResult": "BuildOrder",
+  "GlossaryAlias": "",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Sight": 9,
+  "AttackTargetPriority": 11,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/GenetronUnits",
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Facing": 45,
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "Spitfire",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainLightweightMechs,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Fixer",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainLightweightMechs,Train6",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Blitzer",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainLightweightMechs,Train3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Equalizer",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainLightweightMechs,Train2",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "GenetronPerformanceMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModePerformance,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "GenetronPerformanceMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "GenetronStandardMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModeStandard,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "GenetronStandardMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "GenetronOverclockMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "GenetronProductionModeOverclock,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "GenetronOverclockMode",
+          "Type": "Passive",
+          "Requirements": "ShowNotUnderConstruction",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Aquila",
+          "Type": "AbilCmd",
+          "AbilCmd": "TrainLightweightMechs,Train5",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3Contour",
+  "CostResource": {
+    "Minerals": 150
+  },
+  "RepairTime": 65,
+  "SubgroupPriority": 10,
+  "GlossaryPriority": 19,
+  "TechTreeProducedUnitArray": [
+    "Spitfire",
+    "Blitzer",
+    "Fixer",
+    "Equalizer",
+    "Aquila"
+  ],
+  "Icon": "btn-building-genetron-manufacturer",
+  "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Manufacturer",
+  "Behaviors": [
+    {
+      "Link": "LockdownMode",
+      "Id": "LockdownMode",
+      "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
+      "Name": "Lockdown Mode"
+    },
+    {
+      "Link": "GenetronProductionModePerformanceBuff",
+      "Id": "GenetronProductionModePerformanceBuff"
+    },
+    {
+      "Link": "ManufacturerIsTraining",
+      "Id": "ManufacturerIsTraining"
+    },
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "TrainLightweightMechs",
+      "Id": "TrainLightweightMechs",
+      "Name": "Train Lightweight Mechs"
+    },
+    {
+      "Link": "GenetronProductionModePerformance",
+      "Id": "GenetronProductionModePerformance",
+      "Name": "Genetron Production Mode (Performance)"
+    },
+    {
+      "Link": "GenetronProductionModeStandard",
+      "Id": "GenetronProductionModeStandard",
+      "Name": "Genetron Production Mode (Standard)"
+    },
+    {
+      "Link": "GenetronProductionModeOverclock",
+      "Id": "GenetronProductionModeOverclock",
+      "Name": "Genetron Production Mode (Overclock)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Node",
+      "Icon": "btn-building-genetron-node",
+      "Description": "Provides supply and energy.",
+      "Name": "Node"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "Spitfire",
+      "Icon": "btn-unit-genetron-spitfire",
+      "Description": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Spitfire"
+    },
+    {
+      "Id": "Fixer",
+      "Icon": "btn-unit-genetron-fixer",
+      "Description": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+      "Name": "Fixer"
+    },
+    {
+      "Id": "Blitzer",
+      "Icon": "btn-unit-genetron-blitzer",
+      "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Blitzer"
+    },
+    {
+      "Id": "Equalizer",
+      "Icon": "btn-unit-genetron-equalizer-v2",
+      "Description": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Equalizer"
+    },
+    {
+      "Id": "Aquila",
+      "Icon": "btn-unit-genetron-aquila",
+      "Description": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Aquila"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "ACR",
+      "Icon": "btn-unit-genetron-acr",
+      "Description": "Basic worker unit. Can gather resources, build Genetron structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "ACR"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "Spitfire",
+      "Icon": "btn-unit-genetron-spitfire",
+      "Tooltip": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Fabricate Spitfire",
+      "AbilCmd": "TrainLightweightMechs,Train1"
+    },
+    {
+      "Id": "Fixer",
+      "Icon": "btn-unit-genetron-fixer",
+      "Tooltip": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+      "Name": "Fabricate Fixer",
+      "AbilCmd": "TrainLightweightMechs,Train6"
+    },
+    {
+      "Id": "Blitzer",
+      "Icon": "btn-unit-genetron-blitzer",
+      "Tooltip": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Fabricate Blitzer",
+      "AbilCmd": "TrainLightweightMechs,Train3"
+    },
+    {
+      "Id": "Equalizer",
+      "Icon": "btn-unit-genetron-equalizer-v2",
+      "Tooltip": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Name": "Fabricate Equalizer",
+      "AbilCmd": "TrainLightweightMechs,Train2"
+    },
+    {
+      "Id": "GenetronPerformanceMode",
+      "Icon": "btn-ability-genetron-productionmode-performance",
+      "Tooltip": "Production occurs at the base rate and requires no energy.<br/><br/><span style=\"color: #78ff78\">Production drains no energy.</span>",
+      "Name": "Performance Mode",
+      "AbilCmd": "GenetronProductionModePerformance,Execute"
+    },
+    {
+      "Id": "GenetronStandardMode",
+      "Icon": "btn-ability-genetron-productionmode-standard",
+      "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>0.71</b> energy per second.</span>",
+      "Name": "Standard Mode",
+      "AbilCmd": "GenetronProductionModeStandard,Execute"
+    },
+    {
+      "Id": "GenetronOverclockMode",
+      "Icon": "btn-ability-genetron-productionmode-overclock",
+      "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>1.43</b> energy per second.</span>",
+      "Name": "Overclock Mode",
+      "AbilCmd": "GenetronProductionModeOverclock,Execute"
+    },
+    {
+      "Id": "Aquila",
+      "Icon": "btn-unit-genetron-aquila",
+      "Tooltip": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Fabricate Aquila",
+      "AbilCmd": "TrainLightweightMechs,Train5"
+    }
+  ]
+}

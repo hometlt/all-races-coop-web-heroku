@@ -1,0 +1,108 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "None",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Invulnerable",
+    "NoPortraitTalk",
+    "Unstoppable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Test_HornerAirFleetTargeter",
+  "HotkeyAlias": "Test_HornerAirFleetTargeter",
+  "SelectAlias": "Test_HornerAirFleetTargeter",
+  "SubgroupAlias": "Test_HornerAirFleetTargeter",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Test_HornerAirFleetTargeter",
+  "AIEvaluateAlias": "Test_HornerAirFleetTargeter",
+  "ReviveType": "Test_HornerAirFleetTargeter",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Test_HornerAirFleetTargeter/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Test_HornerAirFleetTargeter/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Test_HornerAirFleet",
+          "Type": "AbilCmd",
+          "AbilCmd": "Test_HornerAirFleetExecute,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Test_HornerAirFleetTargeter",
+  "Behaviors": [
+    {
+      "Link": "AbilityTargetExclusionBehavior"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "Test_HornerAirFleetExecute",
+      "Id": "Test_HornerAirFleetExecute"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Test_HornerAirFleet",
+      "Icon": "btn-progression-hornerhan-5-fleetcalldown",
+      "AbilCmd": "Test_HornerAirFleetExecute,Execute"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "Name": "Z1 Badger Bomb",
+  "Description": "Roll incendiary explosive toward enemies.  Explosives then detonate and burn all enemies in the area where it exploded, and any enemies that later run through the fire.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 2,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Nothing",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 25,
+  "LifeMax": 25,
+  "LifeArmorName": "UPL Vehicle Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 0,
+  "TurningRate": 0,
+  "Radius": 0.1875,
+  "SeparationRadius": 0.1875,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Unradarable",
+    "UseLineOfSight",
+    "Invulnerable",
+    "NoScore"
+  ],
+  "PushPriority": 0,
+  "LeaderAlias": "Z1BadgerBomb",
+  "HotkeyAlias": "Z1BadgerBomb",
+  "SelectAlias": "Z1BadgerBomb",
+  "SubgroupAlias": "Z1BadgerBomb",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Z1BadgerBomb",
+  "AIEvaluateAlias": "Z1BadgerBomb",
+  "ReviveType": "Z1BadgerBomb",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 0
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Z1BadgerBomb/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Z1BadgerBomb/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "KillDisplay": "Never",
+  "RankDisplay": "Never",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Speed": 7.8007,
+  "Acceleration": 1000,
+  "Sight": 3,
+  "CostResource": {
+    "Minerals": 25
+  },
+  "RepairTime": 10,
+  "Deceleration": 3.5625,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 2,
+  "Id": "Z1BadgerBomb",
+  "Behaviors": [
+    {
+      "Link": "Z1BadgerBombDummy",
+      "Id": "Z1BadgerBombDummy"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    }
+  ]
+}

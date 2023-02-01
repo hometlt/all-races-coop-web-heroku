@@ -1,0 +1,349 @@
+{
+  "Name": "Planetary Fortress",
+  "Description": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1500,
+  "LifeMax": 1500,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 2.5,
+  "SeparationRadius": 2.5,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.7,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventReveal",
+    "PreventDefeat",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "TownCamera",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "PlanetaryFortress",
+  "HotkeyAlias": "PlanetaryFortress",
+  "SelectAlias": "PlanetaryFortress",
+  "SubgroupAlias": "PlanetaryFortress",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "PlanetaryFortress",
+  "AIEvaluateAlias": "PlanetaryFortress",
+  "ReviveType": "PlanetaryFortress",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "PlanetaryFortress/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "PlanetaryFortress/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_CommandCenter"
+  ],
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 3,
+  "Food": 15,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 550,
+    "Vespene": 150
+  },
+  "RepairTime": 150,
+  "AttackTargetPriority": 20,
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ScoreMake": 700,
+  "ScoreKill": 700,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 30,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 11,
+  "TacticalAIThink": "AIThinkCommandCenter",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "PlanetaryFortressLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTransport,LoadAll",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "CommandCenterUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTransport,UnloadAll",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "StopPlanetaryFortress",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "AttackBuildingPFort",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "SCV",
+          "Type": "AbilCmd",
+          "AbilCmd": "CommandCenterTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyCommand,Rally1",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 240,
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "GlossaryStrongArray": [
+    "Marine",
+    "Zergling",
+    "Zealot"
+  ],
+  "GlossaryWeakArray": [
+    "SiegeTank",
+    "Mutalisk",
+    "VoidRay"
+  ],
+  "Icon": "btn-building-terran-planetaryfortress",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "PlanetaryFortress",
+  "Weapons": [
+    {
+      "Link": "TwinIbiksCannon",
+      "Turret": "PlanetaryFortress",
+      "Id": "TwinIbiksCannon",
+      "Icon": "btn-upgrade-terran-hisecautotracking",
+      "Name": "Ibiks Cannon",
+      "Amount": 40,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 2
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    },
+    {
+      "Link": "HiSecAutoTracking",
+      "Id": "HiSecAutoTracking",
+      "Icon": "btn-upgrade-terran-hisecautotracking",
+      "Name": "Hi-Sec Auto Tracking"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "RallyCommand",
+      "Id": "RallyCommand",
+      "Name": "Command Center - Rally"
+    },
+    {
+      "Link": "CommandCenterTrain",
+      "Id": "CommandCenterTrain",
+      "Name": "Train (Command Center)"
+    },
+    {
+      "Link": "que5PassiveCancelToSelection",
+      "Id": "que5PassiveCancelToSelection",
+      "Name": "Queue (5) Passive (Cancel to Selection)"
+    },
+    {
+      "Link": "CommandCenterTransport",
+      "Id": "CommandCenterTransport",
+      "Name": "Load-Unload (Command Center)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "SCV"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "PlanetaryFortressLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads nearby SCVs into the Planetary Fortress.",
+      "Name": "Load ",
+      "AbilCmd": "CommandCenterTransport,LoadAll"
+    },
+    {
+      "Id": "CommandCenterUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "CommandCenterTransport,UnloadAll"
+    },
+    {
+      "Id": "StopPlanetaryFortress",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuildingPFort",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5PassiveCancelToSelection,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Train SCV",
+      "AbilCmd": "CommandCenterTrain,Train1"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyCommand,Rally1"
+    }
+  ]
+}

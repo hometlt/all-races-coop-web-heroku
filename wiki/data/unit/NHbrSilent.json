@@ -1,0 +1,341 @@
+{
+  "Name": "Silent",
+  "Description": "Ranged mid-game support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 140,
+  "LifeMax": 140,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrSilent",
+  "HotkeyAlias": "NHbrSilent",
+  "SelectAlias": "NHbrSilent",
+  "SubgroupAlias": "NHbrSilent",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrSilent",
+  "AIEvaluateAlias": "NHbrSilent",
+  "ReviveType": "NHbrSilent",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 70,
+      "Anim": 20,
+      "Turn": 10
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrSilent/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrSilent/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "DataCollection": "NHbrSilent",
+  "ShieldArmorName": "Hybrid Protection",
+  "Acceleration": 1000,
+  "LateralAcceleration": 46.0625,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 20,
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrSilentWeapon",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/NHbrUnits",
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "Mob": "Multiplayer",
+  "AttackTargetPriority": 20,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "Locust",
+    "Small",
+    "ForceField"
+  ],
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "ScoreResult": "BuildOrder",
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "ShieldsStart": 120,
+  "ShieldsMax": 120,
+  "Speed": 3.211,
+  "Sight": 9,
+  "Food": -4,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 200,
+    "Vespene": 100
+  },
+  "InnerRadius": 0.75,
+  "CargoSize": 4,
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "SubgroupPriority": 51,
+  "GlossaryPriority": 21,
+  "GlossaryStrongArray": [
+    "Marauder",
+    "Zergling",
+    "Immortal"
+  ],
+  "GlossaryWeakArray": [
+    "HellionTank",
+    "Roach",
+    "Colossus"
+  ],
+  "EnergyStart": 75,
+  "EnergyMax": 100,
+  "Icon": "btn-hybrid-unit-silent",
+  "LifeArmorIcon": "btn-upgrade-dehaka-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrSilent",
+  "Weapons": [
+    {
+      "Link": "NHbrSilentWeapon",
+      "Id": "NHbrSilentWeapon",
+      "Icon": "btn-ability-spearofadun-solarlance",
+      "Name": "Oblivion Shredder",
+      "Amount": 15,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 1,
+      "TargetFilters": "",
+      "Range": 7.5,
+      "Period": 1
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "NHbrGroundArmors",
+      "Id": "NHbrGroundArmors",
+      "Name": "Hybrid Ground Armors"
+    },
+    {
+      "Link": "NHbrGroundWeapons",
+      "Id": "NHbrGroundWeapons",
+      "Name": "Hybrid Ground Weapons"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level1",
+      "Name": "Hybrid Ground Armor Level 1"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level2",
+      "Name": "Hybrid Ground Armor Level 2"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level3",
+      "Name": "Hybrid Ground Armor Level 3"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundWeaponsLevel1",
+      "Id": "NHbrEngineUpgrades@GroundWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level1",
+      "Name": "Hybrid Ground Weapons Level 1"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@WeaponsLevel2",
+      "Id": "NHbrEngineUpgrades@WeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level2",
+      "Name": "Hybrid Ground Weapons Level 2"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@WeaponsLevel3",
+      "Id": "NHbrEngineUpgrades@WeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level3",
+      "Name": "Hybrid Ground Weapons Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrEngine",
+      "Icon": "btn-hybrid-building-roboticssupportbay",
+      "Description": "<span style=\"color: #FFFF80\">Containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Silents<br/>- Dreadnoks",
+      "Name": "Engine"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NHbrVoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+      "Name": "Void Rift"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "Name": "Nydus Destroyer",
+  "Description": "Nydus Destroyer has a ranged attack that can attack air and ground structures.<br/><br/><c val=\"#ColorAttackInfo\">Attacks structures only.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 200,
+  "LifeMax": 200,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.5,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIDefense",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NydusCanalAttacker",
+  "HotkeyAlias": "NydusCanalAttacker",
+  "SelectAlias": "NydusCanalAttacker",
+  "SubgroupAlias": "NydusCanalAttacker",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NydusCanalAttacker",
+  "AIEvaluateAlias": "NydusCanalAttacker",
+  "ReviveType": "NydusCanalAttacker",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NydusCanalAttacker/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NydusCanalAttacker/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 29.9707,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Small",
+    "Structure",
+    "RoachBurrow",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "Sight": 10,
+  "Food": -2,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 200
+  },
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint2x2IgnoreCreepContour",
+  "PlacementFootprint": "Footprint2x2IgnoreCreepContour",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 200,
+  "ScoreKill": 600,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 2,
+  "Icon": "btn-unit-zerg-nydusdestroyer",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "NydusCanalAttacker",
+  "Weapons": [
+    {
+      "Link": "NydusCanalAttackerWeapon",
+      "Turret": "NydusCanalAttacker",
+      "Id": "NydusCanalAttackerWeapon",
+      "Icon": "btn-upgrade-zerg-missileattacks-level0",
+      "Name": "Viscous Bile",
+      "Amount": {
+        "value": 10
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Structure",
+      "Range": 7,
+      "Period": 2
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "MakeCreepNydusAttacker",
+      "Id": "MakeCreepNydusAttacker",
+      "Name": "Make Creep Nydus Attacker"
+    },
+    {
+      "Link": "NydusDestroyerInvulnerability",
+      "Id": "NydusDestroyerInvulnerability",
+      "Name": "Nydus Destroyer Invulnerability"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildinProgressNydusCanal",
+      "Id": "BuildinProgressNydusCanal",
+      "Name": "Buildin Progress Nydus Canal"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

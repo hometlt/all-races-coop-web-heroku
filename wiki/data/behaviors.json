@@ -1,0 +1,4086 @@
+[
+  {
+    "Id": "Detector",
+    "Name": "Default Behavior (Detector)"
+  },
+  {
+    "Id": "Radar",
+    "Name": "Default Behavior (Radar)"
+  },
+  {
+    "Id": "TimedLife",
+    "Name": "Timed Life"
+  },
+  {
+    "Id": "DamageDealtDouble"
+  },
+  {
+    "Id": "DamageTakenDouble"
+  },
+  {
+    "Id": "PrivateTimedLife"
+  },
+  {
+    "Id": "PublicTimedLife"
+  },
+  {
+    "Id": "PermanentlyCloaked",
+    "Name": "Permanently Cloaked"
+  },
+  {
+    "Id": "Radar25",
+    "Name": "Radar"
+  },
+  {
+    "Id": "PermanentlyInvulnerable"
+  },
+  {
+    "Id": "tauntb",
+    "Name": "Taunted"
+  },
+  {
+    "Id": "PermanentlyUncommandable"
+  },
+  {
+    "Id": "PermanentShareVision"
+  },
+  {
+    "Id": "PermanentSuppressFoodUsed"
+  },
+  {
+    "Id": "DamageTakenMinimal"
+  },
+  {
+    "Id": "DamageTakenNone"
+  },
+  {
+    "Id": "DamageDealtMinimal"
+  },
+  {
+    "Id": "DamageDealtNone"
+  },
+  {
+    "Id": "DamageDealtMega"
+  },
+  {
+    "Id": "DamageTakenMega"
+  },
+  {
+    "Id": "Precursor"
+  },
+  {
+    "Id": "AttackReveal",
+    "Name": "Attack Reveal"
+  },
+  {
+    "Id": "DeathOffCreep"
+  },
+  {
+    "Id": "Rescued"
+  },
+  {
+    "Id": "DisableAbils",
+    "Name": "Disable Abils"
+  },
+  {
+    "Id": "TransientMorph",
+    "Name": "Transient Morph"
+  },
+  {
+    "Id": "Grabbed"
+  },
+  {
+    "Id": "InhibitorZoneBase"
+  },
+  {
+    "Id": "Salvage",
+    "Name": "Salvage"
+  },
+  {
+    "Id": "AccelerationZoneBase"
+  },
+  {
+    "Id": "AccelerationZoneFlyingBase"
+  },
+  {
+    "Id": "InhibitorZoneFlyingBase"
+  },
+  {
+    "Id": "AccelerationZoneLarge"
+  },
+  {
+    "Id": "AccelerationZoneMedium"
+  },
+  {
+    "Id": "AccelerationZoneSmall"
+  },
+  {
+    "Id": "AccelerationZoneTemporalField",
+    "Name": "Acceleration Zone"
+  },
+  {
+    "Id": "AccelerationZoneFlyingTemporalField",
+    "Name": "Acceleration Zone"
+  },
+  {
+    "Id": "AccelerationZoneFlyingLarge"
+  },
+  {
+    "Id": "AccelerationZoneFlyingMedium"
+  },
+  {
+    "Id": "AccelerationZoneFlyingSmall"
+  },
+  {
+    "Id": "InhibitorZoneFlyingTemporalField",
+    "Name": "Inhibitor Zone"
+  },
+  {
+    "Id": "InhibitorZoneFlyingLarge"
+  },
+  {
+    "Id": "InhibitorZoneFlyingMedium"
+  },
+  {
+    "Id": "InhibitorZoneFlyingSmall"
+  },
+  {
+    "Id": "CarryHarvestableRichVespeneGeyserGas"
+  },
+  {
+    "Id": "CarryHarvestableRichVespeneGeyserGasZerg"
+  },
+  {
+    "Id": "CarryHarvestableRichVespeneGeyserGasProtoss"
+  },
+  {
+    "Id": "HarvestableRichVespeneGeyserGas"
+  },
+  {
+    "Id": "HarvestableRichVespeneGeyserGasZerg"
+  },
+  {
+    "Id": "HarvestableRichVespeneGeyserGasProtoss"
+  },
+  {
+    "Id": "InhibitorZoneLarge"
+  },
+  {
+    "Id": "InhibitorZoneMedium"
+  },
+  {
+    "Id": "InhibitorZoneSmall"
+  },
+  {
+    "Id": "InstantMorph"
+  },
+  {
+    "Id": "KillsToCaster"
+  },
+  {
+    "Id": "AutoTurretTimedLife"
+  },
+  {
+    "Id": "ChangelingDisguise"
+  },
+  {
+    "Id": "ChangelingDisguiseEx3"
+  },
+  {
+    "Id": "Corruption",
+    "Name": "Corruption"
+  },
+  {
+    "Id": "CritterWander"
+  },
+  {
+    "Id": "CritterWanderLeash"
+  },
+  {
+    "Id": "CritterWanderLeashShort"
+  },
+  {
+    "Id": "GhostHoldFire",
+    "Name": "Hold Fire"
+  },
+  {
+    "Id": "GhostHoldFireB",
+    "Name": "Hold Fire"
+  },
+  {
+    "Id": "Leech",
+    "Name": "Leech"
+  },
+  {
+    "Id": "LeechDisableAbilities",
+    "Name": "Leech"
+  },
+  {
+    "Id": "LoadOutSpray@Tracker",
+    "Name": "Tracker"
+  },
+  {
+    "Id": "SurfaceForSpellCastChanneled"
+  },
+  {
+    "Id": "InhibitorZoneTemporalField",
+    "Name": "Inhibitor Zone"
+  },
+  {
+    "Id": "VoidRayPhase2"
+  },
+  {
+    "Id": "NoDraw"
+  },
+  {
+    "Id": "PointDefenseReady"
+  },
+  {
+    "Id": "VoidRayPhase3"
+  },
+  {
+    "Id": "EMPDecloak",
+    "Name": "EMP Decloak"
+  },
+  {
+    "Id": "FungalGrowth",
+    "Name": "Fungal Growth"
+  },
+  {
+    "Id": "FungalGrowthMovement"
+  },
+  {
+    "Id": "GuardianShield",
+    "Name": "Guardian Shield"
+  },
+  {
+    "Id": "PointDefenseDroneTimedLife"
+  },
+  {
+    "Id": "SeekerMissileTimeout",
+    "Name": "Seeker Missile timeout"
+  },
+  {
+    "Id": "QueenBirthUnburrow"
+  },
+  {
+    "Id": "Recalled"
+  },
+  {
+    "Id": "Recalling"
+  },
+  {
+    "Id": "SupplyDepotMorphing"
+  },
+  {
+    "Id": "TimeWarpProduction",
+    "Name": "Chrono Boost"
+  },
+  {
+    "Id": "UnderConstruction"
+  },
+  {
+    "Id": "WarpPrismPowerSource"
+  },
+  {
+    "Id": "DisableEnergyRegen"
+  },
+  {
+    "Id": "DisablePhoenixWeapons"
+  },
+  {
+    "Id": "MULETimedLife"
+  },
+  {
+    "Id": "InfestedTerransEggTimedLife"
+  },
+  {
+    "Id": "GravitonBeam",
+    "Name": "Graviton Beam"
+  },
+  {
+    "Id": "GravitonBeamHeight"
+  },
+  {
+    "Id": "Ethereal",
+    "Name": "Phase Shift"
+  },
+  {
+    "Id": "NeuralParasite",
+    "Name": "Neural Parasite"
+  },
+  {
+    "Id": "NeuralParasiteWait",
+    "Name": "Neural Parasite"
+  },
+  {
+    "Id": "QueenSpawnLarva"
+  },
+  {
+    "Id": "QueenSpawnLarvaTimer",
+    "Name": "Spawn Larvae"
+  },
+  {
+    "Id": "StimpackMarauder",
+    "Name": "Stimpack"
+  },
+  {
+    "Id": "SupplyDrop",
+    "Name": "Supply drop"
+  },
+  {
+    "Id": "SupplyDropEnRoute"
+  },
+  {
+    "Id": "SurfaceForSpellCast"
+  },
+  {
+    "Id": "250mmStrikeCannons",
+    "Name": "250mm Strike Cannons"
+  },
+  {
+    "Id": "BroodlingFate"
+  },
+  {
+    "Id": "BroodlingWander"
+  },
+  {
+    "Id": "Changeling"
+  },
+  {
+    "Id": "ChangelingDisable"
+  },
+  {
+    "Id": "Stimpack",
+    "Name": "Stimpack"
+  },
+  {
+    "Id": "GhostCloak",
+    "Name": "Cloak"
+  },
+  {
+    "Id": "BansheeCloak",
+    "Name": "Cloak"
+  },
+  {
+    "Id": "PsiStorm",
+    "Name": "Psionic Storm"
+  },
+  {
+    "Id": "CloakField"
+  },
+  {
+    "Id": "CloakFieldEffect",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "Conjoined"
+  },
+  {
+    "Id": "MineralFieldMinerals"
+  },
+  {
+    "Id": "MineralFieldMineralsOpaque"
+  },
+  {
+    "Id": "MineralFieldMineralsOpaque900"
+  },
+  {
+    "Id": "HighYieldMineralFieldMinerals"
+  },
+  {
+    "Id": "RawVespeneGeyserGas"
+  },
+  {
+    "Id": "RawRichVespeneGeyserGas"
+  },
+  {
+    "Id": "HarvestableVespeneGeyserGas"
+  },
+  {
+    "Id": "HarvestableVespeneGeyserGasProtoss"
+  },
+  {
+    "Id": "HarvestableVespeneGeyserGasZerg"
+  },
+  {
+    "Id": "ReaperJump"
+  },
+  {
+    "Id": "CarryMineralFieldMinerals"
+  },
+  {
+    "Id": "CarryHighYieldMineralFieldMinerals"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGas"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGasProtoss"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGasZerg"
+  },
+  {
+    "Id": "PowerSource"
+  },
+  {
+    "Id": "PowerUserQueue"
+  },
+  {
+    "Id": "PowerUserWarpable",
+    "Name": "Warping In"
+  },
+  {
+    "Id": "PowerUserQueueSmall"
+  },
+  {
+    "Id": "PowerUserBaseDefenseSmall"
+  },
+  {
+    "Id": "Charging",
+    "Name": "Charging"
+  },
+  {
+    "Id": "HardenedShield"
+  },
+  {
+    "Id": "LarvaWander"
+  },
+  {
+    "Id": "SpawnLarva"
+  },
+  {
+    "Id": "SpawnLarvaConjoined"
+  },
+  {
+    "Id": "WormholeTransitHeight"
+  },
+  {
+    "Id": "makeCreep4x4"
+  },
+  {
+    "Id": "makeCreep8x6"
+  },
+  {
+    "Id": "makeCreep2x2Overlord"
+  },
+  {
+    "Id": "ReactorQueue"
+  },
+  {
+    "Id": "BunkerWeaponRangeBonus"
+  },
+  {
+    "Id": "BarracksReactor"
+  },
+  {
+    "Id": "FactoryReactor"
+  },
+  {
+    "Id": "StarportReactor"
+  },
+  {
+    "Id": "BarracksTechLab"
+  },
+  {
+    "Id": "FactoryTechLab"
+  },
+  {
+    "Id": "StarportTechLab"
+  },
+  {
+    "Id": "SensorTowerRadar"
+  },
+  {
+    "Id": "Immobilize"
+  },
+  {
+    "Id": "BanelingExplode"
+  },
+  {
+    "Id": "AIDangerBuff",
+    "Name": "AIDanger Buff"
+  },
+  {
+    "Id": "InfestedTerranTimedLife"
+  },
+  {
+    "Id": "Detector10",
+    "Name": "Detector"
+  },
+  {
+    "Id": "Detector11",
+    "Name": "Detector"
+  },
+  {
+    "Id": "Detector12",
+    "Name": "Detector"
+  },
+  {
+    "Id": "Detector20"
+  },
+  {
+    "Id": "ForceFieldFate"
+  },
+  {
+    "Id": "SalvageShared"
+  },
+  {
+    "Id": "SalvageBunker"
+  },
+  {
+    "Id": "VortexBehavior",
+    "Name": "Vortex"
+  },
+  {
+    "Id": "VortexBehaviorEnemy",
+    "Name": "Vortex"
+  },
+  {
+    "Id": "VortexEventHorizon"
+  },
+  {
+    "Id": "OnCreep"
+  },
+  {
+    "Id": "Slow",
+    "Name": "Slow"
+  },
+  {
+    "Id": "ZergBuildingNotOnCreep"
+  },
+  {
+    "Id": "ZergBuildingDies6"
+  },
+  {
+    "Id": "ZergBuildingDies9"
+  },
+  {
+    "Id": "Hallucination"
+  },
+  {
+    "Id": "HallucinationTimedLife"
+  },
+  {
+    "Id": "TerranBuildingBurnDown"
+  },
+  {
+    "Id": "TemporalRiftUnit",
+    "Name": "Temporal Rift"
+  },
+  {
+    "Id": "CritterExplode"
+  },
+  {
+    "Id": "CritterBurrow"
+  },
+  {
+    "Id": "BroodlingAttackDelay"
+  },
+  {
+    "Id": "WarpInEffect"
+  },
+  {
+    "Id": "WarpInEffect15"
+  },
+  {
+    "Id": "MultiKillObjectTimedLife"
+  },
+  {
+    "Id": "SheepBusy",
+    "Name": "Sheep busy"
+  },
+  {
+    "Id": "RepulserField6"
+  },
+  {
+    "Id": "RepulserField8"
+  },
+  {
+    "Id": "RepulserField10"
+  },
+  {
+    "Id": "RepulserField12"
+  },
+  {
+    "Id": "Frenzy"
+  },
+  {
+    "Id": "TransportDummy"
+  },
+  {
+    "Id": "CCTransportDummy"
+  },
+  {
+    "Id": "Contaminated",
+    "Name": "Contaminated"
+  },
+  {
+    "Id": "NeuralParasiteDrone"
+  },
+  {
+    "Id": "ForceLowDeath"
+  },
+  {
+    "Id": "SightReduction"
+  },
+  {
+    "Id": "UnitKnockback"
+  },
+  {
+    "Id": "PrecursorUnitKnockback"
+  },
+  {
+    "Id": "TimeScaleConversionBehavior",
+    "Name": "Time Scale Conversion Behavior"
+  },
+  {
+    "Id": "MineralFieldMinerals450"
+  },
+  {
+    "Id": "MineralFieldMinerals750"
+  },
+  {
+    "Id": "HighYieldMineralFieldMinerals750"
+  },
+  {
+    "Id": "Uncommandable"
+  },
+  {
+    "Id": "SwarmHostEggAnimationDefault",
+    "Name": "Swarm Host Egg Animation Default"
+  },
+  {
+    "Id": "ExtendBridgeExtend",
+    "Name": "Extend Bridge Extend"
+  },
+  {
+    "Id": "BlindingCloudStructure",
+    "Name": "Blinding Cloud"
+  },
+  {
+    "Id": "CollapsibleRockTowerConjoinedSearch",
+    "Name": "Collapsible Rock Tower (Conjoined Search)"
+  },
+  {
+    "Id": "CollapsibleRockTowerRampDiagonalConjoinedSearch",
+    "Name": "Collapsible Rock Tower Ramp/Diagonal (Conjoined Search)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerConjoinedSearch",
+    "Name": "Collapsible Terran Tower (Conjoined Search)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerRampDiagonalConjoinedSearch",
+    "Name": "Collapsible Terran Tower Ramp/Diagonal (Conjoined Search)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerRampLeft",
+    "Name": "Collapsible Terran Tower (Ramp Left)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerRampLeftFalling",
+    "Name": "Collapsible Terran Tower (Ramp Left)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerRampRight",
+    "Name": "Collapsible Terran Tower (Ramp Right)"
+  },
+  {
+    "Id": "CollapsibleTerranTowerRampRightFalling",
+    "Name": "Collapsible Terran Tower (Ramp Right)"
+  },
+  {
+    "Id": "DigesterCreepSprayVision",
+    "Name": "DigesterCreepSprayVision"
+  },
+  {
+    "Id": "InvulnerabilityShield",
+    "Name": "Invulnerability Shield"
+  },
+  {
+    "Id": "MothershipCoreRecalled",
+    "Name": "Mothership Core Recalled"
+  },
+  {
+    "Id": "MothershipCoreRecalling",
+    "Name": "Mothership Core Recalling"
+  },
+  {
+    "Id": "MineDroneCountdown",
+    "Name": "Widow Mine Detonating"
+  },
+  {
+    "Id": "MothershipStasis",
+    "Name": "Stasis"
+  },
+  {
+    "Id": "MothershipStasisCaster",
+    "Name": "Stasis"
+  },
+  {
+    "Id": "MothershipCoreEnergizeVisual",
+    "Name": "Energize"
+  },
+  {
+    "Id": "NydusDestroyerInvulnerability",
+    "Name": "Nydus Destroyer Invulnerability"
+  },
+  {
+    "Id": "Revelation",
+    "Name": "Revealed"
+  },
+  {
+    "Id": "OracleRevelation",
+    "Name": "Revealed"
+  },
+  {
+    "Id": "SalvageBaneling",
+    "Name": "Salvage Baneling"
+  },
+  {
+    "Id": "SalvageDrone",
+    "Name": "Salvage Drone"
+  },
+  {
+    "Id": "SalvageHydralisk",
+    "Name": "Salvage Hydralisk"
+  },
+  {
+    "Id": "SalvageInfestor",
+    "Name": "Salvage Infestor"
+  },
+  {
+    "Id": "SalvageQueen",
+    "Name": "Salvage Queen"
+  },
+  {
+    "Id": "DigesterCreep",
+    "Name": "Digester Creep"
+  },
+  {
+    "Id": "DigesterCreepSprayUnitTimedLife",
+    "Name": "Digester Creep Spray Unit Timed Life"
+  },
+  {
+    "Id": "DigesterCreepSprayFinal",
+    "Name": "Digester Creep Spray Final"
+  },
+  {
+    "Id": "SalvageRoach",
+    "Name": "Salvage Roach"
+  },
+  {
+    "Id": "SalvageSwarmHost",
+    "Name": "Salvage Swarm Host"
+  },
+  {
+    "Id": "SalvageUltralisk",
+    "Name": "Salvage Ultralisk"
+  },
+  {
+    "Id": "SalvageZergling",
+    "Name": "Salvage Zergling"
+  },
+  {
+    "Id": "GhostSnipeDoT",
+    "Name": "Ghost Snipe Do "
+  },
+  {
+    "Id": "NexusPhaseShift",
+    "Name": "Nexus Phase Shift"
+  },
+  {
+    "Id": "QueenFlying",
+    "Name": "Queen Flying"
+  },
+  {
+    "Id": "NexusInvulnerability",
+    "Name": "Nexus Invulnerability"
+  },
+  {
+    "Id": "RoughTerrainSearch",
+    "Name": "Rough Terrain Search"
+  },
+  {
+    "Id": "RoughTerrainSlow",
+    "Name": "Rough Terrain Slow"
+  },
+  {
+    "Id": "OracleCloakField",
+    "Name": "Cloak Field"
+  },
+  {
+    "Id": "OracleCloakFieldEffect",
+    "Name": "Cloaked"
+  },
+  {
+    "Id": "OracleNoCloak",
+    "Name": "Oracle No Cloak"
+  },
+  {
+    "Id": "Detector9",
+    "Name": "Detector9"
+  },
+  {
+    "Id": "ScryerFriendly",
+    "Name": "Preordain"
+  },
+  {
+    "Id": "SpectreShield",
+    "Name": "Spectre Shield"
+  },
+  {
+    "Id": "ViperConsumeStructure",
+    "Name": "Consume"
+  },
+  {
+    "Id": "RestoreShields",
+    "Name": "Restore Shields"
+  },
+  {
+    "Id": "CollapsibleTowerInvulnerable",
+    "Name": "Collapsible Tower Invulnerable"
+  },
+  {
+    "Id": "FlyerShield",
+    "Name": "Flyer Shield"
+  },
+  {
+    "Id": "BurrowCharging",
+    "Name": "Burrow Charging"
+  },
+  {
+    "Id": "BurrowChargingRevD",
+    "Name": "Burrow Charging Rev D"
+  },
+  {
+    "Id": "ReaperRegen",
+    "Name": "Reaper Regen"
+  },
+  {
+    "Id": "HellionTankReady",
+    "Name": "Hellion Tank Ready"
+  },
+  {
+    "Id": "MercenaryCycloneMissiles",
+    "Name": "Mercenary Cyclone Missiles"
+  },
+  {
+    "Id": "MercenarySensorDish",
+    "Name": "Mercenary Sensor Dish"
+  },
+  {
+    "Id": "MercenaryShield",
+    "Name": "Mercenary Shield"
+  },
+  {
+    "Id": "Scryer",
+    "Name": "Preordain"
+  },
+  {
+    "Id": "Clone",
+    "Name": "Replicant"
+  },
+  {
+    "Id": "CloneDummy",
+    "Name": "Clone Dummy"
+  },
+  {
+    "Id": "CollapsibleRockTowerFalling",
+    "Name": "Collapsible Rock Tower"
+  },
+  {
+    "Id": "CollapsibleTerranTowerFalling",
+    "Name": "Collapsible Terran Tower Falling"
+  },
+  {
+    "Id": "StunRoundInitialBehavior",
+    "Name": "Stun Round Initial Behavior"
+  },
+  {
+    "Id": "PostWarp",
+    "Name": "Post Warp"
+  },
+  {
+    "Id": "BuildingShield",
+    "Name": "Building Shield"
+  },
+  {
+    "Id": "LocustMPStun"
+  },
+  {
+    "Id": "LocustMPTimedLife",
+    "Name": "Locust MP Timed Life"
+  },
+  {
+    "Id": "LaserSight",
+    "Name": "Laser Sight"
+  },
+  {
+    "Id": "ProtectiveBarrier",
+    "Name": "Protective Barrier"
+  },
+  {
+    "Id": "CorruptorGroundAttackDebuff",
+    "Name": "Weakening Goo"
+  },
+  {
+    "Id": "BattlecruiserAntiAirDisable",
+    "Name": "Battlecruiser Anti Air Disable"
+  },
+  {
+    "Id": "BuildingStasis",
+    "Name": "Phase Shift"
+  },
+  {
+    "Id": "SmokeScreenTimedLife",
+    "Name": "Smoke Screen Timed Life"
+  },
+  {
+    "Id": "Stasis",
+    "Name": "Stasis"
+  },
+  {
+    "Id": "MakeNeutral",
+    "Name": "Make Neutral"
+  },
+  {
+    "Id": "ResourceBlocker",
+    "Name": "Mineral Shield"
+  },
+  {
+    "Id": "ResourceBlockerConjoined",
+    "Name": "Mineral Shield Conjoined"
+  },
+  {
+    "Id": "CollapsibleRockTowerConjoined",
+    "Name": "Collapsible Rock Tower Conjoined"
+  },
+  {
+    "Id": "CollapsibleTerranTowerConjoined",
+    "Name": "Collapsible Terran Tower Conjoined"
+  },
+  {
+    "Id": "ResourceStun",
+    "Name": "Mineral Shield"
+  },
+  {
+    "Id": "MakeCreep5x5",
+    "Name": "Make Creep 5x5"
+  },
+  {
+    "Id": "MaximumThrust",
+    "Name": "Maximum Thrust"
+  },
+  {
+    "Id": "ChargeUp",
+    "Name": "Charge Up"
+  },
+  {
+    "Id": "CloakUnit",
+    "Name": "Cloak Unit"
+  },
+  {
+    "Id": "NullField",
+    "Name": "Null Field"
+  },
+  {
+    "Id": "Rescue",
+    "Name": "Rescue"
+  },
+  {
+    "Id": "SalvageReaper",
+    "Name": "Salvage Reaper"
+  },
+  {
+    "Id": "Angry",
+    "Name": "Angry"
+  },
+  {
+    "Id": "Benign",
+    "Name": "Benign"
+  },
+  {
+    "Id": "VortexExit",
+    "Name": "Vortex Exit"
+  },
+  {
+    "Id": "RawTerrazineGeyserGas",
+    "Name": "Raw Terrazine Geyser Gas"
+  },
+  {
+    "Id": "HarvestableTerrazineGeyserGas",
+    "Name": "Harvestable Terrazine Geyser Gas"
+  },
+  {
+    "Id": "HarvestableTerrazineGeyserGasProtoss",
+    "Name": "Harvestable Terrazine Geyser Gas Protoss"
+  },
+  {
+    "Id": "HarvestableTerrazineGeyserGasZerg",
+    "Name": "Harvestable Terrazine Geyser Gas Zerg"
+  },
+  {
+    "Id": "CarryHarvestableTerrazineGeyserGas",
+    "Name": "Carry Harvestable Terrazine Geyser Gas"
+  },
+  {
+    "Id": "CarryHarvestableTerrazineGeyserGasProtoss",
+    "Name": "Carry Harvestable Terrazine Geyser Gas Protoss"
+  },
+  {
+    "Id": "CarryHarvestableTerrazineGeyserGasZerg",
+    "Name": "Carry Harvestable Terrazine Geyser Gas Zerg"
+  },
+  {
+    "Id": "KickBlocker",
+    "Name": "Kick Blocker"
+  },
+  {
+    "Id": "LaserTargeting",
+    "Name": "Laser Targeting"
+  },
+  {
+    "Id": "MultiplayerLootSpawner",
+    "Name": "Multiplayer Loot Spawner"
+  },
+  {
+    "Id": "SpawnInfestedMarines",
+    "Name": "Spawn Infested Marines"
+  },
+  {
+    "Id": "Engage",
+    "Name": "Engage"
+  },
+  {
+    "Id": "TentaclesForce",
+    "Name": "Tentacles Force"
+  },
+  {
+    "Id": "TrainInfestedTerran",
+    "Name": "Train Infested Terran"
+  },
+  {
+    "Id": "MassiveVoidRayVulnerability",
+    "Name": "Massive Void Ray Vulnerability"
+  },
+  {
+    "Id": "CapResource",
+    "Name": "Cap Resource"
+  },
+  {
+    "Id": "BlindingCloud",
+    "Name": "Blinding Cloud"
+  },
+  {
+    "Id": "DestructibleStatue4x4",
+    "Name": "Destructible Statue"
+  },
+  {
+    "Id": "DestructibleStatueRubbleTimedLife",
+    "Name": "Destructible Statue Rubble Timed Life"
+  },
+  {
+    "Id": "CollapsibleRockTower",
+    "Name": "Collapsible Rock Tower"
+  },
+  {
+    "Id": "CollapsibleRockTowerDiagonal",
+    "Name": "Collapsible Rock Tower Diagonal"
+  },
+  {
+    "Id": "CollapsibleTerranTower",
+    "Name": "Collapsible Terran Tower"
+  },
+  {
+    "Id": "CollapsibleTerranTowerDiagonal",
+    "Name": "Collapsible Terran Tower Diagonal"
+  },
+  {
+    "Id": "BurrowChargeMPKnockback",
+    "Name": "Burrow Charge MP Knockback"
+  },
+  {
+    "Id": "UltraliskBurrowChargeKnockback",
+    "Name": "Ultralisk Burrow Charge Knockback"
+  },
+  {
+    "Id": "UltraliskBurrowChargeHold",
+    "Name": "Ultralisk Burrow Charge Hold"
+  },
+  {
+    "Id": "Yoink",
+    "Name": "Abduct"
+  },
+  {
+    "Id": "YoinkMarker",
+    "Name": "Yoink Marker"
+  },
+  {
+    "Id": "YoinkTentacle",
+    "Name": "Yoink Tentacle"
+  },
+  {
+    "Id": "PrecursorYoink",
+    "Name": "Precursor Yoink"
+  },
+  {
+    "Id": "YoinkWait",
+    "Name": "Yoink Wait"
+  },
+  {
+    "Id": "ZergArtilleryDeath",
+    "Name": "Zerg Artillery Death"
+  },
+  {
+    "Id": "DoomDamageDelay",
+    "Name": "Doom Damage Delay"
+  },
+  {
+    "Id": "EyeStalk",
+    "Name": "Eye Stalk"
+  },
+  {
+    "Id": "BurrowCharge",
+    "Name": "Burrow Charge"
+  },
+  {
+    "Id": "NeuralParasiteEffect",
+    "Name": "Neural Parasite Effect"
+  },
+  {
+    "Id": "PatrolSpeed",
+    "Name": "Patrol Speed"
+  },
+  {
+    "Id": "Remove",
+    "Name": "Remove"
+  },
+  {
+    "Id": "MineralFieldMineralsNoRemove",
+    "Name": "Mineral Field Minerals No Remove"
+  },
+  {
+    "Id": "CarryMineralFieldMineralsNoRemove",
+    "Name": "Carry Mineral Field Minerals No Remove"
+  },
+  {
+    "Id": "SuppressMoving",
+    "Name": "Suppress Moving"
+  },
+  {
+    "Id": "SuppressCollision",
+    "Name": "Suppress Collision"
+  },
+  {
+    "Id": "VolatileBurstBuilding",
+    "Name": "Volatile Burst Building"
+  },
+  {
+    "Id": "Hidden",
+    "Name": "Hidden"
+  },
+  {
+    "Id": "Reveal",
+    "Name": "Reveal"
+  },
+  {
+    "Id": "SingleRecalling",
+    "Name": "Single Recalling"
+  },
+  {
+    "Id": "SingleRecalled",
+    "Name": "Single Recalled"
+  },
+  {
+    "Id": "MakeCreepNydusCreeper",
+    "Name": "Make Creep Nydus Creeper"
+  },
+  {
+    "Id": "MakeCreepNydusAttacker",
+    "Name": "Make Creep Nydus Attacker"
+  },
+  {
+    "Id": "MineDroneDOT",
+    "Name": "Mine Drone "
+  },
+  {
+    "Id": "MothershipCoreWeapon",
+    "Name": "Mothership Core Weapon"
+  },
+  {
+    "Id": "NexusDeath",
+    "Name": "Nexus Death"
+  },
+  {
+    "Id": "MothershipCoreDisableAttack",
+    "Name": "Mothership Core Disable Attack"
+  },
+  {
+    "Id": "PrecursorCreepTumor",
+    "Name": "Precursor Creep Tumor"
+  },
+  {
+    "Id": "WidowMineDelayRemoveAB",
+    "Name": "Widow Mine Delay Remove AB"
+  },
+  {
+    "Id": "MedivacSpeedBoost",
+    "Name": "Afterburners Active"
+  },
+  {
+    "Id": "PrecursorLocust",
+    "Name": "Precursor Locust"
+  },
+  {
+    "Id": "SwarmHostEggAnimationMP",
+    "Name": "Swarm Host Egg Animation "
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNEWide8Out",
+    "Name": "Extend Bridge Extending Bridge NE Wide 8 Out"
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNWWide8Out",
+    "Name": "Extend Bridge Extending Bridge NW Wide 8 Out"
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNEWide10Out",
+    "Name": "Extend Bridge Extending Bridge NE Wide 10 Out"
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNWWide10Out",
+    "Name": "Extend Bridge Extending Bridge NW Wide 10 Out"
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNEWide12Out",
+    "Name": "Extend Bridge Extending Bridge NE Wide 12 Out"
+  },
+  {
+    "Id": "ExtendBridgeExtendingBridgeNWWide12Out",
+    "Name": "Extend Bridge Extending Bridge NW Wide 12 Out"
+  },
+  {
+    "Id": "CritterFlee",
+    "Name": "Critter Flee"
+  },
+  {
+    "Id": "CollapsibleRockTowerFallingRampRight",
+    "Name": "Collapsible Rock Tower Ramp Right"
+  },
+  {
+    "Id": "CollapsibleRockTowerRampRight",
+    "Name": "Collapsible Rock Tower (Ramp Right)"
+  },
+  {
+    "Id": "CollapsibleRockTowerFallingRampLeft",
+    "Name": "Collapsible Rock Tower Ramp Left"
+  },
+  {
+    "Id": "CollapsibleRockTowerRampLeft",
+    "Name": "Collapsible Rock Tower (Ramp Left)"
+  },
+  {
+    "Id": "MothershipResetEnergy",
+    "Name": "Mothership Reset Energy"
+  },
+  {
+    "Id": "PhaseShield",
+    "Name": "Phase Shield"
+  },
+  {
+    "Id": "Purify",
+    "Name": "Photon Overcharge"
+  },
+  {
+    "Id": "VoidSiphon",
+    "Name": "Void Siphon"
+  },
+  {
+    "Id": "MothershipCorePurifyNexus",
+    "Name": "Mothership Core Purify Nexus"
+  },
+  {
+    "Id": "WidowMineAnimationController",
+    "Name": "Widow Mine Animation Controller"
+  },
+  {
+    "Id": "WidowMineArmed",
+    "Name": "Widow Mine Armed"
+  },
+  {
+    "Id": "PrecursorCore",
+    "Name": "Precursor Core"
+  },
+  {
+    "Id": "PrecursorBurrowChargeImpact",
+    "Name": "Precursor Burrow Charge Impact"
+  },
+  {
+    "Id": "RockCrushSearch",
+    "Name": "Rock Crush Search"
+  },
+  {
+    "Id": "AntiAirWeaponSwitch"
+  },
+  {
+    "Id": "AntiAirWeaponSwitchCooldown",
+    "Name": "Anti Air Weapon Switch (Cooldown)"
+  },
+  {
+    "Id": "ArbiterMPStasisField",
+    "Name": "Stasis Field"
+  },
+  {
+    "Id": "ArmorpiercingMode"
+  },
+  {
+    "Id": "ArbiterMPStasisFieldTimedLife"
+  },
+  {
+    "Id": "CollapsibleRockTowerFallingRampLeftGreen"
+  },
+  {
+    "Id": "CollapsibleRockTowerFallingRampRightGreen"
+  },
+  {
+    "Id": "CollapsibleRockTowerRampLeftGreen"
+  },
+  {
+    "Id": "CollapsibleRockTowerRampRightGreen"
+  },
+  {
+    "Id": "ImmortalOverload",
+    "Name": "Barrier"
+  },
+  {
+    "Id": "CloakingFieldTargeted",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "LightningBomb",
+    "Name": "Disintegration"
+  },
+  {
+    "Id": "LocustMPFlyingSwoopPrecursor"
+  },
+  {
+    "Id": "OraclePhaseShift",
+    "Name": "Oracle Phase Shift"
+  },
+  {
+    "Id": "ReleaseInterceptorsCooldown",
+    "Name": "Release Interceptors Cooldown"
+  },
+  {
+    "Id": "ReleaseInterceptorsTimedLife"
+  },
+  {
+    "Id": "ReleaseInterceptorsTimedLifeWarning",
+    "Name": "Release Interceptors Timed Life Warning"
+  },
+  {
+    "Id": "ReleaseInterceptorsWander"
+  },
+  {
+    "Id": "ReleaseInterceptorsWanderDelay",
+    "Name": "Release Interceptors Wander Delay"
+  },
+  {
+    "Id": "ReleaseInterceptorsBeacon",
+    "Name": "Release Interceptors Beacon"
+  },
+  {
+    "Id": "AdeptPhaseShiftCaster"
+  },
+  {
+    "Id": "ArbiterMPCloakField"
+  },
+  {
+    "Id": "ArbiterMPCloakFieldEffect",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "PurificationNova",
+    "Name": "Phased"
+  },
+  {
+    "Id": "PurificationNovaCooldownVisual"
+  },
+  {
+    "Id": "PurificationNovaSpeedBoost"
+  },
+  {
+    "Id": "CorruptionBombDamage",
+    "Name": "Corruption Bomb (Damage)"
+  },
+  {
+    "Id": "CorsairMPDisruptionWeb",
+    "Name": "Disruption Web"
+  },
+  {
+    "Id": "DisruptorPush",
+    "Name": "Disruptor (Push)"
+  },
+  {
+    "Id": "ExplosiveMode"
+  },
+  {
+    "Id": "HyperjumpTeleportOutTargetSuppressCollision"
+  },
+  {
+    "Id": "HyperjumpTeleportOut"
+  },
+  {
+    "Id": "HyperjumpTeleport"
+  },
+  {
+    "Id": "HyperjumpTeleportIn"
+  },
+  {
+    "Id": "LightofAiur",
+    "Name": "Envision"
+  },
+  {
+    "Id": "CycloneWeaponLaunchMissileAlternate"
+  },
+  {
+    "Id": "LockOn",
+    "Name": "Lock On Target"
+  },
+  {
+    "Id": "LockOnEndDisableAttack"
+  },
+  {
+    "Id": "LockOnDisableAttack"
+  },
+  {
+    "Id": "MothershipCoreDeath"
+  },
+  {
+    "Id": "MothershipDeath"
+  },
+  {
+    "Id": "MothershipRecalled"
+  },
+  {
+    "Id": "MothershipRecalling"
+  },
+  {
+    "Id": "OracleWeapon",
+    "Name": "Pulsar Beam"
+  },
+  {
+    "Id": "Overcharge",
+    "Name": "Overcharge"
+  },
+  {
+    "Id": "OverchargeDamage",
+    "Name": "Overcharge"
+  },
+  {
+    "Id": "OverchargeSpeedBoost",
+    "Name": "Overcharge (Speed Boost)"
+  },
+  {
+    "Id": "PulsarBeam"
+  },
+  {
+    "Id": "ArbiterMPRecalled"
+  },
+  {
+    "Id": "ArbiterMPRecalling"
+  },
+  {
+    "Id": "SeekerMissile",
+    "Name": "Seeker Missile"
+  },
+  {
+    "Id": "TemporalField",
+    "Name": "Time Warp"
+  },
+  {
+    "Id": "TemporalFieldDecelerationBuff"
+  },
+  {
+    "Id": "TimeWarpController"
+  },
+  {
+    "Id": "VoidRaySwarmDamageBoost",
+    "Name": "Prismatic Alignment"
+  },
+  {
+    "Id": "VortexKill"
+  },
+  {
+    "Id": "NydusDetect"
+  },
+  {
+    "Id": "VoidMPImmortalReviveSupressed",
+    "Name": "Immortal Revive Supressed"
+  },
+  {
+    "Id": "VoidMPImmortalRevive"
+  },
+  {
+    "Id": "DevourerMPAcidSpores",
+    "Name": "Devourer MPAcid Spores"
+  },
+  {
+    "Id": "DefilerMPConsume",
+    "Name": "Consume"
+  },
+  {
+    "Id": "DefilerMPDarkSwarm",
+    "Name": "Dark Swarm"
+  },
+  {
+    "Id": "DefilerMPPlague",
+    "Name": "Plague"
+  },
+  {
+    "Id": "HydraliskImpaleMissileGroundCracks"
+  },
+  {
+    "Id": "QueenMPEnsnare",
+    "Name": "Queen MPEnsnare"
+  },
+  {
+    "Id": "OracleStasisTrapArming"
+  },
+  {
+    "Id": "OracleStasisTrapCloak"
+  },
+  {
+    "Id": "OracleStasisTrapTarget",
+    "Name": "Stasis"
+  },
+  {
+    "Id": "OracleStasisTrapCaster"
+  },
+  {
+    "Id": "GrappleCreatePlaceholder"
+  },
+  {
+    "Id": "GrappleCasterInMotion"
+  },
+  {
+    "Id": "GrapplePlaceholderMover"
+  },
+  {
+    "Id": "GrappleStun"
+  },
+  {
+    "Id": "SelfRepair",
+    "Name": "Self Repair"
+  },
+  {
+    "Id": "SelfRepairEnd"
+  },
+  {
+    "Id": "AggressiveMutation",
+    "Name": "Aggressive Mutation"
+  },
+  {
+    "Id": "GlazeFire"
+  },
+  {
+    "Id": "GlazeIce"
+  },
+  {
+    "Id": "GlazeRock"
+  },
+  {
+    "Id": "GlazeSnow"
+  },
+  {
+    "Id": "GlazeSnowWorld"
+  },
+  {
+    "Id": "GlazeVines"
+  },
+  {
+    "Id": "GlazeHolo"
+  },
+  {
+    "Id": "ParasiticBomb",
+    "Name": "Parasitic Bomb"
+  },
+  {
+    "Id": "ParasiticBombTimer"
+  },
+  {
+    "Id": "ParasiticBombUnitKU",
+    "Name": "Parasitic Bomb Unit KU"
+  },
+  {
+    "Id": "ParasiticBombSecondaryUnitSearch",
+    "Name": "Parasitic Bomb Secondary Unit Search"
+  },
+  {
+    "Id": "AdeptPhaseShift"
+  },
+  {
+    "Id": "AdeptPhaseShiftCancelDummy"
+  },
+  {
+    "Id": "AdeptPhaseShiftTimer"
+  },
+  {
+    "Id": "AdeptDeathCheck",
+    "Name": "Adept Death Check"
+  },
+  {
+    "Id": "LurkerHoldFire",
+    "Name": "Lurker Hold Fire"
+  },
+  {
+    "Id": "LurkerHoldFireB",
+    "Name": "Hold Fire"
+  },
+  {
+    "Id": "LiberatorInitialMovable"
+  },
+  {
+    "Id": "LiberatorTargetMorphBehavior"
+  },
+  {
+    "Id": "LiberatorTargetMorphAGAttackable"
+  },
+  {
+    "Id": "Detector7"
+  },
+  {
+    "Id": "TimeStopStun",
+    "Name": "Time Stop Stun"
+  },
+  {
+    "Id": "KD8ChargeFate"
+  },
+  {
+    "Id": "ReaperKD8Knockback"
+  },
+  {
+    "Id": "KD8PrecursorUnitKnockback"
+  },
+  {
+    "Id": "KillsToOrigin"
+  },
+  {
+    "Id": "PenetratingShot"
+  },
+  {
+    "Id": "CloakingDrone"
+  },
+  {
+    "Id": "SlaynElementalGrabStun",
+    "Name": "Encased"
+  },
+  {
+    "Id": "CollapsiblePurifierTowerDiagonal"
+  },
+  {
+    "Id": "CollapsiblePurifierTowerFalling"
+  },
+  {
+    "Id": "WarpPrismPowerSourceFast"
+  },
+  {
+    "Id": "PowerSourceFast"
+  },
+  {
+    "Id": "NearWarpgate"
+  },
+  {
+    "Id": "PylonSpecialPower"
+  },
+  {
+    "Id": "FastEnablerPowerSource"
+  },
+  {
+    "Id": "FastEnablerPowerSourceNexus"
+  },
+  {
+    "Id": "FastEnablerPowerUser"
+  },
+  {
+    "Id": "PurificationNovaTargettedCaster"
+  },
+  {
+    "Id": "PurificationNovaTargettedTarget"
+  },
+  {
+    "Id": "SnowGlazeStarterMP"
+  },
+  {
+    "Id": "AddonIsWorking"
+  },
+  {
+    "Id": "BatteryEnergy"
+  },
+  {
+    "Id": "DarkTemplarBlinkAttackDelay"
+  },
+  {
+    "Id": "NydusCreepGrowth",
+    "Name": "Nydus Creep Growth"
+  },
+  {
+    "Id": "QueenMustBeOnCreep"
+  },
+  {
+    "Id": "ResonatingGlaivesPhaseShift",
+    "Name": "Resonating Glaives"
+  },
+  {
+    "Id": "BattlecruiserAttackTracker"
+  },
+  {
+    "Id": "BattlecruiserChasing"
+  },
+  {
+    "Id": "BattlecruiserTransientTracker"
+  },
+  {
+    "Id": "CommandCenterKnockbackBehavior"
+  },
+  {
+    "Id": "HyperjumpInitialDelaySuppressWeapon"
+  },
+  {
+    "Id": "LarvaPauseWander"
+  },
+  {
+    "Id": "NeuralParasiteChildren",
+    "Name": "Neural Parasite Children"
+  },
+  {
+    "Id": "ParasiticBombDelayTimedLife"
+  },
+  {
+    "Id": "AmorphousArmorcloud",
+    "Name": "Microbial Shroud"
+  },
+  {
+    "Id": "RavenShredderMissileArmorReductionUIAdd"
+  },
+  {
+    "Id": "RavenShredderMissileArmorReductionUISubtruct",
+    "Name": "Armor Reduction"
+  },
+  {
+    "Id": "TerranStructuresKnockbackBehavior"
+  },
+  {
+    "Id": "LocustMPFlyingSwoopUncommandable"
+  },
+  {
+    "Id": "NydusWormInvuln"
+  },
+  {
+    "Id": "NydusWormArmor"
+  },
+  {
+    "Id": "PurificationNovaPost",
+    "Name": "Phased"
+  },
+  {
+    "Id": "DisableInterceptors",
+    "Name": "Disable Interceptors"
+  },
+  {
+    "Id": "BypassArmorDebuffOne",
+    "Name": "Bypass Armor"
+  },
+  {
+    "Id": "BypassArmorDebuffTwo",
+    "Name": "Bypass Armor"
+  },
+  {
+    "Id": "BypassArmorDebuffThree",
+    "Name": "Bypass Armor"
+  },
+  {
+    "Id": "BypassArmorStun"
+  },
+  {
+    "Id": "BypassArmorDroneTimedLife"
+  },
+  {
+    "Id": "BypassArmorDroneMovement"
+  },
+  {
+    "Id": "BypassArmorDroneInitialUnselectable"
+  },
+  {
+    "Id": "SiegeTankDummyWeaponDisable"
+  },
+  {
+    "Id": "SiegeTankUnmorphDummyWeaponDisable"
+  },
+  {
+    "Id": "ChannelSnipeCombat",
+    "Name": "Steady Targeting"
+  },
+  {
+    "Id": "ChannelSnipeRefund"
+  },
+  {
+    "Id": "ChargingAttackCheck"
+  },
+  {
+    "Id": "ChargingAttack"
+  },
+  {
+    "Id": "SiegeTankUnloadDelay"
+  },
+  {
+    "Id": "Transfusion",
+    "Name": "Transfusion"
+  },
+  {
+    "Id": "UpgradeToWarpGateAutoCastDisabler"
+  },
+  {
+    "Id": "BarrierDamageResponse"
+  },
+  {
+    "Id": "ImmortalBarrierSupressed"
+  },
+  {
+    "Id": "TakenDamage"
+  },
+  {
+    "Id": "QueenSpawnLarvaHiddenStack"
+  },
+  {
+    "Id": "ChannelingCausticSpray"
+  },
+  {
+    "Id": "IsTransportOverlord"
+  },
+  {
+    "Id": "FastEnablerGatewayMorphingPowerSource"
+  },
+  {
+    "Id": "MorphingintoWarpGate"
+  },
+  {
+    "Id": "DisruptorAnimationController"
+  },
+  {
+    "Id": "TempestDisruptionBlastStunBehavior",
+    "Name": "Disruption Blast"
+  },
+  {
+    "Id": "BeamTargetCD"
+  },
+  {
+    "Id": "WidowMineBurrowedCloakingBehavior"
+  },
+  {
+    "Id": "WidowMineArmoryTracker"
+  },
+  {
+    "Id": "Detector13p75"
+  },
+  {
+    "Id": "ParasiticBombSecondaryBuff"
+  },
+  {
+    "Id": "FungalGrowthSlowMovement"
+  },
+  {
+    "Id": "InfestedTerranEggOnCreepFasterMorph"
+  },
+  {
+    "Id": "RavenScramblerMissile",
+    "Name": "Interference Matrix"
+  },
+  {
+    "Id": "RavenRepairDroneTimedLife"
+  },
+  {
+    "Id": "RavenShredderMissileTimeout"
+  },
+  {
+    "Id": "RavenShredderMissileTint",
+    "Name": "Anti-Armor Missile Targeting"
+  },
+  {
+    "Id": "RavenShredderMissileArmorReduction",
+    "Name": "Armor Reduction"
+  },
+  {
+    "Id": "ChronoBoostEnergyCost",
+    "Name": "Chrono Boost"
+  },
+  {
+    "Id": "NexusMassRecallWarpOut"
+  },
+  {
+    "Id": "NexusMassRecallCasting"
+  },
+  {
+    "Id": "NexusMassRecallTargetPhased"
+  },
+  {
+    "Id": "NexusShieldRechargeOnPylonBehavior",
+    "Name": "Restoration Field"
+  },
+  {
+    "Id": "NexusShieldRechargeOnPylonBehaviorSecondaryOnTarget",
+    "Name": "Restoration Field"
+  },
+  {
+    "Id": "InfestorEnsnare",
+    "Name": "Entangle"
+  },
+  {
+    "Id": "InfestorEnsnareDelayedRemove"
+  },
+  {
+    "Id": "InfestorEnsnareMakePrecursorReheightSource"
+  },
+  {
+    "Id": "ParasiticBombInitialDelay"
+  },
+  {
+    "Id": "ParasiticBombGlazeMarker"
+  },
+  {
+    "Id": "NexusShieldOvercharge",
+    "Name": "Nexus Shield Overcharge"
+  },
+  {
+    "Id": "BatteryOvercharge",
+    "Name": "Battery Overcharge"
+  },
+  {
+    "Id": "StasisWardTimedLife"
+  },
+  {
+    "Id": "ParasiticBombDodgeTimer"
+  },
+  {
+    "Id": "NexusRecalled"
+  },
+  {
+    "Id": "MothershipStrategicWarpOut"
+  },
+  {
+    "Id": "BattlecruiserDisableWeapons"
+  },
+  {
+    "Id": "MorphingintoWarpGateBirth"
+  },
+  {
+    "Id": "LockOnDummyWeapon"
+  },
+  {
+    "Id": "Active"
+  },
+  {
+    "Id": "ApertureTeleportTarget"
+  },
+  {
+    "Id": "BoreDrill"
+  },
+  {
+    "Id": "BoreDrill2"
+  },
+  {
+    "Id": "BoreDrill3"
+  },
+  {
+    "Id": "BoreDrill4"
+  },
+  {
+    "Id": "BoreDrill5"
+  },
+  {
+    "Id": "CloakingGenerator"
+  },
+  {
+    "Id": "Detector13"
+  },
+  {
+    "Id": "DisableShieldRegen"
+  },
+  {
+    "Id": "DiscordZoneDebuffStructure"
+  },
+  {
+    "Id": "DiscordZoneDebuffMissile"
+  },
+  {
+    "Id": "DownloadPhase",
+    "Name": "Download Phase"
+  },
+  {
+    "Id": "DummyUnit"
+  },
+  {
+    "Id": "AssemblyArrayIsTraining"
+  },
+  {
+    "Id": "GenetronConstruction",
+    "Name": "Genetron Construction"
+  },
+  {
+    "Id": "GenetronProductionModePerformanceBuff"
+  },
+  {
+    "Id": "AvengerVengeanceMissileAmmo"
+  },
+  {
+    "Id": "GenetronProductionModeStandardBuff"
+  },
+  {
+    "Id": "GenetronProductionModeOverclockBuff"
+  },
+  {
+    "Id": "GenetronTurretFreeze"
+  },
+  {
+    "Id": "FixerReactiveArmor"
+  },
+  {
+    "Id": "GenetronUnitEnergyRegen"
+  },
+  {
+    "Id": "GenetronUnitEnergyRegenx3"
+  },
+  {
+    "Id": "GenetronUnitEnergyRegenx2"
+  },
+  {
+    "Id": "HornetBoreDrillBase",
+    "Name": "Bore Drill"
+  },
+  {
+    "Id": "KeironChargeDummyDiscord",
+    "Name": "Keiron - Charge Dummy Discord"
+  },
+  {
+    "Id": "LockdownModeDuration",
+    "Name": "Lockdown Mode Duration"
+  },
+  {
+    "Id": "GyreAnnexCaster"
+  },
+  {
+    "Id": "GyreAnnexDummy",
+    "Name": "Gyre - Annex Dummy"
+  },
+  {
+    "Id": "GyreAnnexed"
+  },
+  {
+    "Id": "GyreShackled",
+    "Name": "Shackled"
+  },
+  {
+    "Id": "GyreShackledSupress"
+  },
+  {
+    "Id": "BlitzerOverdrive",
+    "Name": "Overdrive"
+  },
+  {
+    "Id": "ManufacturerIsTraining"
+  },
+  {
+    "Id": "FabricatorIsTraining"
+  },
+  {
+    "Id": "MoleBury"
+  },
+  {
+    "Id": "MoleBuried"
+  },
+  {
+    "Id": "MyriadElytronRecall"
+  },
+  {
+    "Id": "Pause",
+    "Name": "Pause"
+  },
+  {
+    "Id": "GeneratorPower"
+  },
+  {
+    "Id": "PulsarDampenerAutoTrigger"
+  },
+  {
+    "Id": "PulsarDampenerAlt"
+  },
+  {
+    "Id": "PulsarDampenerAutoTriggerAlt"
+  },
+  {
+    "Id": "PulsarDampenerAutocast"
+  },
+  {
+    "Id": "RepulsorInterdictorBurrowCD"
+  },
+  {
+    "Id": "ResourceTapSearch",
+    "Name": "Resource Tap"
+  },
+  {
+    "Id": "VirtusSelffixProtocolBuff",
+    "Name": "Self-fix Protocol"
+  },
+  {
+    "Id": "SpitterFate"
+  },
+  {
+    "Id": "UploaderCountDummyInit3x3"
+  },
+  {
+    "Id": "JupiterStealth"
+  },
+  {
+    "Id": "UploaderAddonDummyFate"
+  },
+  {
+    "Id": "UploaderCountDummyInit4x4"
+  },
+  {
+    "Id": "UploaderIsResearching"
+  },
+  {
+    "Id": "GenetronPowerOutage"
+  },
+  {
+    "Id": "XayidSpawnTimedLife"
+  },
+  {
+    "Id": "ShockChargeDecloak",
+    "Name": "Shock Charge Decloak"
+  },
+  {
+    "Id": "Equipped"
+  },
+  {
+    "Id": "EroderEnervate",
+    "Name": "Enervating Spores"
+  },
+  {
+    "Id": "GasRawRichVespeneGeyserBGH"
+  },
+  {
+    "Id": "GasRawVespeneGeyserBGH"
+  },
+  {
+    "Id": "IgnitionBlastADB"
+  },
+  {
+    "Id": "JupiterShellShocked",
+    "Name": "Shell-Shocked"
+  },
+  {
+    "Id": "ProwlerFate"
+  },
+  {
+    "Id": "MineralFieldMineralsBGH"
+  },
+  {
+    "Id": "MineralsHighYieldBGH"
+  },
+  {
+    "Id": "PDDetector",
+    "Name": "Detector"
+  },
+  {
+    "Id": "IntegratedOptics"
+  },
+  {
+    "Id": "IgnitionBlast",
+    "Name": "Ignition Blast"
+  },
+  {
+    "Id": "SuperChargeCannon",
+    "Name": "Super Charged"
+  },
+  {
+    "Id": "CourierCloak",
+    "Name": "Cloak"
+  },
+  {
+    "Id": "CloakChargeGenerator"
+  },
+  {
+    "Id": "CloakChargeField",
+    "Name": "Cloak Charge Field"
+  },
+  {
+    "Id": "LockdownMode",
+    "Name": "Lockdown Mode"
+  },
+  {
+    "Id": "InciterJump"
+  },
+  {
+    "Id": "ProcessorActive"
+  },
+  {
+    "Id": "ResourceTap",
+    "Name": "Resource Tap"
+  },
+  {
+    "Id": "NodePower"
+  },
+  {
+    "Id": "RevenantBombAbilityChannel"
+  },
+  {
+    "Id": "SchematicTransmitAL1"
+  },
+  {
+    "Id": "SchematicTransmitLFS"
+  },
+  {
+    "Id": "SchematicTransmitLAA"
+  },
+  {
+    "Id": "NaniteGrenadeAB",
+    "Name": "Nanite Grenade"
+  },
+  {
+    "Id": "SchematicTransmitLM"
+  },
+  {
+    "Id": "JupiterNapalm",
+    "Name": "Napalm"
+  },
+  {
+    "Id": "JupiterSpeed"
+  },
+  {
+    "Id": "SchematicTransmit"
+  },
+  {
+    "Id": "SchematicTransmit2"
+  },
+  {
+    "Id": "SchematicTransmitAL2"
+  },
+  {
+    "Id": "SchematicTransmitAL3"
+  },
+  {
+    "Id": "SchematicTransmit3"
+  },
+  {
+    "Id": "SpeedCloak",
+    "Name": "Speed Cloak"
+  },
+  {
+    "Id": "MoleBurrowed"
+  },
+  {
+    "Id": "SystemOffload",
+    "Name": "System Offload"
+  },
+  {
+    "Id": "AnalyzeWeakness",
+    "Name": "Analyze Weakness"
+  },
+  {
+    "Id": "ShockCharge"
+  },
+  {
+    "Id": "TrackingImplant",
+    "Name": "Tracking Implant"
+  },
+  {
+    "Id": "UploaderChargeStack"
+  },
+  {
+    "Id": "AvianNestSpawnWasp"
+  },
+  {
+    "Id": "BattleFrenzy",
+    "Name": "Battle Frenzy"
+  },
+  {
+    "Id": "BilePitSustain"
+  },
+  {
+    "Id": "BlindingBurstAB",
+    "Name": "Blinding Burst"
+  },
+  {
+    "Id": "DashFrenzy",
+    "Name": "Dash Frenzy"
+  },
+  {
+    "Id": "DashSpeed"
+  },
+  {
+    "Id": "ProtectiveCloudAB",
+    "Name": "Protective Cloud"
+  },
+  {
+    "Id": "DynamicCoatingDebuff",
+    "Name": "Dynamic Coating Debuff"
+  },
+  {
+    "Id": "FeedingPoolPower"
+  },
+  {
+    "Id": "ScavengerNestPower"
+  },
+  {
+    "Id": "FeedingPoolPowerUser",
+    "Name": "Feeding Pool Power User"
+  },
+  {
+    "Id": "IncendiaryInfusionAA",
+    "Name": "Incendiary Infusion"
+  },
+  {
+    "Id": "IncendiaryInfusionAG",
+    "Name": "Incendiary Infusion"
+  },
+  {
+    "Id": "CoveringSprayAB",
+    "Name": "Covering Spray"
+  },
+  {
+    "Id": "FrenzyInjection",
+    "Name": "Frenzy Injection"
+  },
+  {
+    "Id": "FrenzySink",
+    "Name": "Frenzy Sink"
+  },
+  {
+    "Id": "ResidualAcid",
+    "Name": "Residual Acid"
+  },
+  {
+    "Id": "ResidualAcidFate"
+  },
+  {
+    "Id": "ScorpaliskSnareMultiplier"
+  },
+  {
+    "Id": "ScourFate"
+  },
+  {
+    "Id": "SupplimentationBuff"
+  },
+  {
+    "Id": "FeedingPoolHealingAura",
+    "Name": "Feeding Pool Healing Aura"
+  },
+  {
+    "Id": "SupplimentationOutput"
+  },
+  {
+    "Id": "BilePitPower"
+  },
+  {
+    "Id": "VenomInjection",
+    "Name": "Venom Injection"
+  },
+  {
+    "Id": "VolatileDischargeAB",
+    "Name": "Volatile Discharge"
+  },
+  {
+    "Id": "XayidDenSpawnLarva"
+  },
+  {
+    "Id": "BiomassHatcherySpawnLarva"
+  },
+  {
+    "Id": "MendBehavior",
+    "Name": "Mend"
+  },
+  {
+    "Id": "SacrificialMutation",
+    "Name": "Sacrificial Mutation"
+  },
+  {
+    "Id": "StagnatingBileStun",
+    "Name": "Stagnating Bile Stun"
+  },
+  {
+    "Id": "VolatileAcid"
+  },
+  {
+    "Id": "BilePitNotInRangeOfFeedingPool",
+    "Name": "Bile Pit Not In Range Of Feeding Pool"
+  },
+  {
+    "Id": "AegisShield",
+    "Name": "Aegis Shield"
+  },
+  {
+    "Id": "AegisShieldAura"
+  },
+  {
+    "Id": "AegisShieldAuraReveal"
+  },
+  {
+    "Id": "ApertureRequirementDummy"
+  },
+  {
+    "Id": "Beholder",
+    "Name": "Beholder"
+  },
+  {
+    "Id": "KeironChargeDummyCreation"
+  },
+  {
+    "Id": "CitadelEnergize"
+  },
+  {
+    "Id": "ConduitEchoBase"
+  },
+  {
+    "Id": "CarryHarvestableRichVespeneGeyserGasKeiron"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGasKeiron"
+  },
+  {
+    "Id": "FuseFused",
+    "Name": "Fused"
+  },
+  {
+    "Id": "FuseFusedData"
+  },
+  {
+    "Id": "FuseFusedCaster"
+  },
+  {
+    "Id": "AegisShieldAuraKBFate"
+  },
+  {
+    "Id": "KeironChargeDummyTS1",
+    "Name": "Keiron - Charge Dummy TS1"
+  },
+  {
+    "Id": "KeironChargeDummyTS2",
+    "Name": "Keiron - Charge Dummy TS2"
+  },
+  {
+    "Id": "OutletAurApeBase"
+  },
+  {
+    "Id": "EmissaryOrbFate"
+  },
+  {
+    "Id": "EmissaryOrbTint",
+    "Name": "Emissary Orb"
+  },
+  {
+    "Id": "EmpyreanHarParBase"
+  },
+  {
+    "Id": "CitadelEnergized",
+    "Name": "Energized"
+  },
+  {
+    "Id": "KeironConstructionFreeze"
+  },
+  {
+    "Id": "DisableTurning"
+  },
+  {
+    "Id": "Disconnected",
+    "Name": "!Disconnected"
+  },
+  {
+    "Id": "DiscordZoneDebuff"
+  },
+  {
+    "Id": "DiscordZoneRadius"
+  },
+  {
+    "Id": "EchoReverbFate"
+  },
+  {
+    "Id": "EchoReverbCasterController"
+  },
+  {
+    "Id": "AtriumIndMyrBase"
+  },
+  {
+    "Id": "HarbingerHeraldEnergyCannonsAOE"
+  },
+  {
+    "Id": "HarbingerJudgementMode"
+  },
+  {
+    "Id": "HarbingerJudgementModeStart",
+    "Name": "Harbinger - Judgement Mode Start"
+  },
+  {
+    "Id": "HarbingerJudgementModeStop",
+    "Name": "Harbinger - Judgement Mode Stop"
+  },
+  {
+    "Id": "ParagonDisableAntiAir"
+  },
+  {
+    "Id": "PulsarDampener",
+    "Name": "Dampener"
+  },
+  {
+    "Id": "AegisShieldAuraKB"
+  },
+  {
+    "Id": "UmbraStealthSuppress"
+  },
+  {
+    "Id": "ZenithParagonBase"
+  },
+  {
+    "Id": "HarvestableRichVespeneGeyserGasKeiron"
+  },
+  {
+    "Id": "HarvestableVespeneGeyserGasKeiron"
+  },
+  {
+    "Id": "KeironConstructionModifier"
+  },
+  {
+    "Id": "PantheonTitanBase"
+  },
+  {
+    "Id": "FoundryUmbraBase"
+  },
+  {
+    "Id": "CitadelPowerSource"
+  },
+  {
+    "Id": "SanctumPulSubBase"
+  },
+  {
+    "Id": "ElytraAmmoDummy"
+  },
+  {
+    "Id": "EmanatorFate"
+  },
+  {
+    "Id": "EmanatorFateDelay"
+  },
+  {
+    "Id": "InducerGamutOrb"
+  },
+  {
+    "Id": "PrisonFast"
+  },
+  {
+    "Id": "PrisonSlow"
+  },
+  {
+    "Id": "PrisonChannel"
+  },
+  {
+    "Id": "IsParagon",
+    "Name": "!Is Paragon"
+  },
+  {
+    "Id": "EdificeParVolBase"
+  },
+  {
+    "Id": "KeironUnitCharge"
+  },
+  {
+    "Id": "ForcedWeaponBackswing"
+  },
+  {
+    "Id": "NoCreate",
+    "Name": "!No Create"
+  },
+  {
+    "Id": "GyreShieldBoost",
+    "Name": "Shield Boost"
+  },
+  {
+    "Id": "ParagonHasSpawn",
+    "Name": "!Paragon Has Spawn"
+  },
+  {
+    "Id": "ParagonSpawnCount",
+    "Name": "!Paragon Spawn Count"
+  },
+  {
+    "Id": "ParagonSpawnFollow",
+    "Name": "!Paragon Spawn Follow"
+  },
+  {
+    "Id": "PariahProjectionFate"
+  },
+  {
+    "Id": "EchoReverbTeleportController"
+  },
+  {
+    "Id": "KeironMaterializing",
+    "Name": "Materializing"
+  },
+  {
+    "Id": "ElysiumMeridianBase"
+  },
+  {
+    "Id": "TitanWeapon",
+    "Name": "Inhibitor Beam"
+  },
+  {
+    "Id": "UmbraDamageReduction"
+  },
+  {
+    "Id": "UmbraShieldVisualControl"
+  },
+  {
+    "Id": "UmbraStealth"
+  },
+  {
+    "Id": "WalkAnimBack"
+  },
+  {
+    "Id": "WalkAnimLeft"
+  },
+  {
+    "Id": "WalkAnimRight"
+  },
+  {
+    "Id": "WalkAnimForward"
+  },
+  {
+    "Id": "AlgoritmHightRegeneraishonHealf"
+  },
+  {
+    "Id": "AlgoritmHightRegeneraishonEnergy"
+  },
+  {
+    "Id": "AlgoritmOtklTowerMining",
+    "Name": "The tower is disabled"
+  },
+  {
+    "Id": "AlgoritmDamageOnBuildeng"
+  },
+  {
+    "Id": "AlgoritmVoskreshenie2Times",
+    "Name": "Field recovery"
+  },
+  {
+    "Id": "BeathaniumInfusionField2",
+    "Name": "Beathanium Infusion Field"
+  },
+  {
+    "Id": "BurrowChargeMPKnockback2"
+  },
+  {
+    "Id": "BurrowChargingRevD2"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGasUED"
+  },
+  {
+    "Id": "AlgoritmCloakingDroneUED",
+    "Name": "CloakingDroneUED"
+  },
+  {
+    "Id": "AlgoritmCloakingDroneUEDhelp"
+  },
+  {
+    "Id": "CrimsonEyeRadar"
+  },
+  {
+    "Id": "AlgoritmDetectorCrimsonEye",
+    "Name": "Detection and radar"
+  },
+  {
+    "Id": "Detector1122"
+  },
+  {
+    "Id": "BeaconrAlgoritmBoost",
+    "Name": "Ionized gas"
+  },
+  {
+    "Id": "AlgoritmGarmrPeriodAttack",
+    "Name": "Garmr's Blood"
+  },
+  {
+    "Id": "DrakkarAlgoritmUnit"
+  },
+  {
+    "Id": "DrakkarAlgoritmSlowing"
+  },
+  {
+    "Id": "DrakkarAlgoritmOtklAttack"
+  },
+  {
+    "Id": "PenemundeAlgoritmDamage",
+    "Name": "Damage from peenemunde"
+  },
+  {
+    "Id": "OpticalFlare22"
+  },
+  {
+    "Id": "AlgoritmResurrected",
+    "Name": "Revived"
+  },
+  {
+    "Id": "AlgoritmStrikeGrenade",
+    "Name": "Strike grenade"
+  },
+  {
+    "Id": "AlgoritmKolichestvoTowerMining"
+  },
+  {
+    "Id": "AlgoritmDruseBeatanField",
+    "Name": "Beatania Field"
+  },
+  {
+    "Id": "AlgoritmIrradiationFieldBeatan"
+  },
+  {
+    "Id": "AlgoritmKolichestvoDruse"
+  },
+  {
+    "Id": "AlgoritmIrradiationBMField",
+    "Name": "Irradiated"
+  },
+  {
+    "Id": "PenemundeAlgoritmTargetAbility",
+    "Name": "Cruise missile"
+  },
+  {
+    "Id": "VisionBuffTrooperDown"
+  },
+  {
+    "Id": "InstantMorph2"
+  },
+  {
+    "Id": "PrecursorBurrowChargeImpact2"
+  },
+  {
+    "Id": "PrecursorYoink2"
+  },
+  {
+    "Id": "PsionicSuppressionField",
+    "Name": "Psionic Suppression Field"
+  },
+  {
+    "Id": "EnrichmentField",
+    "Name": "Enrichment Field"
+  },
+  {
+    "Id": "UEDHoldFire2",
+    "Name": "UEDHold Fire"
+  },
+  {
+    "Id": "UEDHoldFireB2",
+    "Name": "UED Hold Fire"
+  },
+  {
+    "Id": "LazarusDeviceTarget"
+  },
+  {
+    "Id": "GlazeTrooperDown"
+  },
+  {
+    "Id": "GlazeTeleportationEffect"
+  },
+  {
+    "Id": "BeaconInbound",
+    "Name": "Beacon Inbound"
+  },
+  {
+    "Id": "OnwardComrades",
+    "Name": "Onward, Comrades!"
+  },
+  {
+    "Id": "SupplyDrop2",
+    "Name": "Supply drop"
+  },
+  {
+    "Id": "SupplyDropEnRoute2"
+  },
+  {
+    "Id": "ProjectedGravityShield",
+    "Name": "Projected Gravity Shield"
+  },
+  {
+    "Id": "UnitDeathPrevention"
+  },
+  {
+    "Id": "IncapDie"
+  },
+  {
+    "Id": "Incapacitated",
+    "Name": "Incapacitated"
+  },
+  {
+    "Id": "StarWind",
+    "Name": "Star Wind"
+  },
+  {
+    "Id": "ResourceDoublingField",
+    "Name": "Resource Doubling Field"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGas2"
+  },
+  {
+    "Id": "MedivacSpeedBoost2",
+    "Name": "Engine surcharged"
+  },
+  {
+    "Id": "UEDheal"
+  },
+  {
+    "Id": "BeathaniumInfusionField",
+    "Name": "Beathanium Infusion Field"
+  },
+  {
+    "Id": "TerranBuildingBurnDown2"
+  },
+  {
+    "Id": "UEDResourses"
+  },
+  {
+    "Id": "GlazeLazarusDeviceEffect"
+  },
+  {
+    "Id": "GarmrBurrowChargeStun",
+    "Name": "GarmrBurrowChargeStun"
+  },
+  {
+    "Id": "OpticalFlare",
+    "Name": "Blinded"
+  },
+  {
+    "Id": "UEDConstructionVisionDebuff"
+  },
+  {
+    "Id": "Yoink2"
+  },
+  {
+    "Id": "YoinkMarker2"
+  },
+  {
+    "Id": "YoinkTentacle2"
+  },
+  {
+    "Id": "ExplodingBarrelLargeExplosion"
+  },
+  {
+    "Id": "CheckMinerals"
+  },
+  {
+    "Id": "NHbr@TeleportBase"
+  },
+  {
+    "Id": "NHbr@TeleportTemple"
+  },
+  {
+    "Id": "NHbr@TeleportHarvester"
+  },
+  {
+    "Id": "NHbr@TeleportHarvesterRich"
+  },
+  {
+    "Id": "NHbr@TeleportVoidRift"
+  },
+  {
+    "Id": "NHbr@TeleportStasisCell"
+  },
+  {
+    "Id": "NHbr@TeleportConcentrator"
+  },
+  {
+    "Id": "NHbr@TeleportConstructAG"
+  },
+  {
+    "Id": "NHbr@TeleportConstructAA"
+  },
+  {
+    "Id": "NHbr@TeleportEngine"
+  },
+  {
+    "Id": "NHbr@TeleportProcessingCore"
+  },
+  {
+    "Id": "NHbr@TeleportProcessor"
+  },
+  {
+    "Id": "NHbr@TeleportVoidPortal"
+  },
+  {
+    "Id": "NHbr@TeleportCrystallicShrine"
+  },
+  {
+    "Id": "NHbr@TeleportNemesisCatacomb"
+  },
+  {
+    "Id": "NHbrCommon@RequiresCrystallicShrine"
+  },
+  {
+    "Id": "NHbrCommon@RequiresProcessingCore"
+  },
+  {
+    "Id": "NHbrCommon@BuildersTracker"
+  },
+  {
+    "Id": "NHbrCommon@RequiresStasisCell"
+  },
+  {
+    "Id": "NHbrHorrorPlasmaticCharge@Behavior",
+    "Name": "Behavior"
+  },
+  {
+    "Id": "NHbrNemesisDisintegrator@Ionizer"
+  },
+  {
+    "Id": "NHbrNemesisDisintegrator@ArmorReduction"
+  },
+  {
+    "Id": "NHbrNemesisDisintegrator"
+  },
+  {
+    "Id": "NHbrNemesisWeapon@CD"
+  },
+  {
+    "Id": "NHbrPollinatorVoidToxicity@VoidToxicity",
+    "Name": "Void Toxicity"
+  },
+  {
+    "Id": "NHbrPollinatorShadowMantle@ShadowMantle",
+    "Name": "Shadow Mantle"
+  },
+  {
+    "Id": "NHbrScreamerDesolation@Behavior",
+    "Name": "Desolation"
+  },
+  {
+    "Id": "NHbrSpirit@PermanentlyCloaked",
+    "Name": "Permanently Cloaked"
+  },
+  {
+    "Id": "NHbrSpiritCoreExchange@CoreExchange",
+    "Name": "Core Exchanged"
+  },
+  {
+    "Id": "NHbrVespeneConcentratorVespeneConcentration@UnitTracker"
+  },
+  {
+    "Id": "NHbrVespeneConcentratorVespeneConcentration@PeriodicSearch"
+  },
+  {
+    "Id": "NHbrVespeneConcentratorVespeneConcentration@DummyTimer"
+  },
+  {
+    "Id": "NHbrVespeneConcentratorVespeneConcentration@Concentrating",
+    "Name": "Concentrating"
+  },
+  {
+    "Id": "NHbrIonicCrystalMorph@VisualController"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@FadeBuff"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@FromTargetToCrystal"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@FromPylonToTarget"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@BuilderSilence"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@Invulnerability"
+  },
+  {
+    "Id": "NHbrTemple@Supplies"
+  },
+  {
+    "Id": "NHbrTempleVoidImmunity",
+    "Name": "Void Immunity"
+  },
+  {
+    "Id": "NHbrVoidRiftTrain@Precursor"
+  },
+  {
+    "Id": "NHbrDominatorTimeWarp@DamageController"
+  },
+  {
+    "Id": "NHbrDominatorTimeWarp",
+    "Name": "Time Warp"
+  },
+  {
+    "Id": "NHbrDreadnokPermanentConnection"
+  },
+  {
+    "Id": "NHbrDreadnokParalyzingTornado@EnergyRegenerationSuppression",
+    "Name": "Energy Regeneration Suppression"
+  },
+  {
+    "Id": "NHbrDreadnokWeaponRanged@Devastation",
+    "Name": "Devastation"
+  },
+  {
+    "Id": "NHbrDreadnokParalyzingTornado",
+    "Name": "Paralyzing Tornado"
+  },
+  {
+    "Id": "NHbrFlayerFury"
+  },
+  {
+    "Id": "NHbrFlayerFury@Cooldown"
+  },
+  {
+    "Id": "NHbrMinionVoidBonus",
+    "Name": "Void Bonus"
+  },
+  {
+    "Id": "NHbrMinionBuild@InProgress"
+  },
+  {
+    "Id": "NHbrMinionBuild@DisableSpirit"
+  },
+  {
+    "Id": "NHbrReaverConsumeDNA@Autocast"
+  },
+  {
+    "Id": "NHbrReaverConsumeDNA@AutocastController"
+  },
+  {
+    "Id": "NHbrReaverConsumeDNA@PeriodicBuff"
+  },
+  {
+    "Id": "NHbrSentinelJump@Stun"
+  },
+  {
+    "Id": "NHbrSentinelJump@JumpBuff"
+  },
+  {
+    "Id": "NHbrWarbringerMaceStrike"
+  },
+  {
+    "Id": "NHbrNetworkNEW@NetworkController"
+  },
+  {
+    "Id": "NHbrNetworkNEW@PeriodicSearch"
+  },
+  {
+    "Id": "NHbrNetworkNEW@ShortBuff"
+  },
+  {
+    "Id": "NHbrNetworkCharging@Charged"
+  },
+  {
+    "Id": "NHbrNetworkCharging@TimerFull"
+  },
+  {
+    "Id": "NHbrNetworkCharging@TimerFullReduced"
+  },
+  {
+    "Id": "NHbrNetworkCharging"
+  },
+  {
+    "Id": "NHbrNetwork@PowerUser",
+    "Name": "Power User"
+  },
+  {
+    "Id": "NHbrProtection@SpellArmor"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@EnergyRegenSupressed"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@001"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@002"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@003"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@004"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@005"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@006"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@007"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@008"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@009"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@010"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@011"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@012"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@013"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@014"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@015"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@016"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@017"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@018"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@019"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@020"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@021"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@022"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@023"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@024"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@025"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@026"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@027"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@028"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@029"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@030"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@031"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@032"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@033"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@034"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@035"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@036"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@037"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@038"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@039"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@040"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@041"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@042"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@043"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@044"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@045"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@046"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@047"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@048"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@049"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@050"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@051"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@052"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@053"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@054"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@055"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@056"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@057"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@058"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@059"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@060"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@061"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@062"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@063"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@064"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@065"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@066"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@067"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@068"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@069"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@070"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@071"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@072"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@073"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@074"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@075"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@076"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@077"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@078"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@079"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@080"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@081"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@082"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@083"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@084"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@085"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@086"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@087"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@088"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@089"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@090"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@091"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@092"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@093"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@094"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@095"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@096"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@097"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@098"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@099"
+  },
+  {
+    "Id": "NHbrTimeScaleBuff@100"
+  },
+  {
+    "Id": "VolcanicHarbingerOverload",
+    "Name": "Overload"
+  },
+  {
+    "Id": "ArkwyrmUnload",
+    "Name": "Arkwyrm - Unload"
+  },
+  {
+    "Id": "ArkwyrmUnloadCaster",
+    "Name": "Arkwyrm - Unload (Caster)"
+  },
+  {
+    "Id": "AugmentationPit",
+    "Name": "Augmentation Pit"
+  },
+  {
+    "Id": "AuroraConduitNetherShock",
+    "Name": "Nether Shock"
+  },
+  {
+    "Id": "BrimstoneDemolisherScorchingBlaze1",
+    "Name": "Brimstone Demolisher - Scorching Blaze"
+  },
+  {
+    "Id": "BrimstoneDemolisherScorchingBlaze2",
+    "Name": "Brimstone Demolisher - Scorching Blaze"
+  },
+  {
+    "Id": "BrimstoneDemolisherScorchingBlaze3",
+    "Name": "Brimstone Demolisher - Scorching Blaze (3)"
+  },
+  {
+    "Id": "DeepOne4x4",
+    "Name": "Deep One (4x4)"
+  },
+  {
+    "Id": "DeepOne5x5",
+    "Name": "Deep One (5x5)"
+  },
+  {
+    "Id": "DenizenoftheDeepLiquify1",
+    "Name": "Denizen of the Deep - Liquify (1)"
+  },
+  {
+    "Id": "DenizenoftheDeepCrystalize1",
+    "Name": "Denizen of the Deep - Crystalize (1)"
+  },
+  {
+    "Id": "DenizenoftheDeepCrystalize2",
+    "Name": "Denizen of the Deep - Crystalize (2)"
+  },
+  {
+    "Id": "DenizenoftheDeepLiquify2",
+    "Name": "Denizen of the Deep - Liquify (2)"
+  },
+  {
+    "Id": "DragonAscend",
+    "Name": "Dragon - Ascend"
+  },
+  {
+    "Id": "DragonAscended",
+    "Name": "Ascended"
+  },
+  {
+    "Id": "DragonBuildApplyBehavior",
+    "Name": "Dragon - Build (Apply Behavior)"
+  },
+  {
+    "Id": "DragonBuildRemoveBehavior",
+    "Name": "Dragon - Build (Remove Behavior)"
+  },
+  {
+    "Id": "DragonFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "DragonLineage",
+    "Name": "Dragon Lineage"
+  },
+  {
+    "Id": "DragonLineageGreater",
+    "Name": "Dragon Lineage"
+  },
+  {
+    "Id": "DragonLineageLesser",
+    "Name": "Dragon Lineage"
+  },
+  {
+    "Id": "FleshrenderInfernalAscend",
+    "Name": "Fleshrender - Infernal Ascend"
+  },
+  {
+    "Id": "FleshrenderInfernalEffigy",
+    "Name": "Fleshrender - Infernal Effigy"
+  },
+  {
+    "Id": "GenesisPit",
+    "Name": "Genesis Pit"
+  },
+  {
+    "Id": "HornedMagusFireShieldDamage",
+    "Name": "Horned Magus - Fire Shield (Damage)"
+  },
+  {
+    "Id": "HornedMagusShroud",
+    "Name": "Shroud"
+  },
+  {
+    "Id": "RazorbackUrticatingQuills",
+    "Name": "Razorback - Urticating Quills"
+  },
+  {
+    "Id": "Skyrazer1",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "Skyrazer2",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "Skyrazer3",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "SkyrazerAscended1",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "SkyrazerAscended2",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "SkyrazerAscended3",
+    "Name": "Skyrazer"
+  },
+  {
+    "Id": "SunkenGuardian",
+    "Name": "Sunken Guardian"
+  },
+  {
+    "Id": "SunkenGuardianImpale",
+    "Name": "Impale"
+  },
+  {
+    "Id": "SunkenGuardianCracksModel",
+    "Name": "Sunken Guardian - Cracks (Model)"
+  },
+  {
+    "Id": "FlamespitterFervor",
+    "Name": "Fervor"
+  },
+  {
+    "Id": "Fleshrender",
+    "Name": "Fleshrender"
+  },
+  {
+    "Id": "FrontierDeepOneInvigorateCaster",
+    "Name": "Frontier Deep One - Invigorate (Caster)"
+  },
+  {
+    "Id": "RemovewithCaster",
+    "Name": "Remove with Caster"
+  },
+  {
+    "Id": "DragonCracksModel",
+    "Name": "Dragon - Cracks (Model)"
+  },
+  {
+    "Id": "DragonTrain1",
+    "Name": "Dragon - Train 1"
+  },
+  {
+    "Id": "FlamespitterOverheated",
+    "Name": "Overheated"
+  },
+  {
+    "Id": "DragonTrain2",
+    "Name": "Dragon - Train 2"
+  },
+  {
+    "Id": "DeepOne3x3",
+    "Name": "Deep One (3x3)"
+  },
+  {
+    "Id": "GrimGlider",
+    "Name": "Grim Glider"
+  },
+  {
+    "Id": "GrimGliderMortalitysEclipse",
+    "Name": "Grim Glider - Mortality's Eclipse"
+  },
+  {
+    "Id": "GrimGliderShade",
+    "Name": "Shade"
+  },
+  {
+    "Id": "HandofPowerCrushingGravity",
+    "Name": "Crushing Gravity"
+  },
+  {
+    "Id": "HandofPowerCrushingGravityAir",
+    "Name": "Hand of Power - Crushing Gravity (Air)"
+  },
+  {
+    "Id": "HandofPowerCrushingGravityGround",
+    "Name": "Hand of Power - Crushing Gravity (Ground)"
+  },
+  {
+    "Id": "HandofPowerCrushingGravityPush",
+    "Name": "Hand of Power - Crushing Gravity (Push)"
+  },
+  {
+    "Id": "HandofPowerPortal",
+    "Name": "Hand of Power - Portal"
+  },
+  {
+    "Id": "HandofPowerPortalActive",
+    "Name": "Hand of Power - Portal (Active)"
+  },
+  {
+    "Id": "HandofPowerPortalTarget1",
+    "Name": "Hand of Power - Portal (Target 1)"
+  },
+  {
+    "Id": "HandofPowerPortalTarget2",
+    "Name": "Hand of Power - Portal (Target 2)"
+  },
+  {
+    "Id": "HandofPowerFrenzy",
+    "Name": "Frenzy"
+  },
+  {
+    "Id": "HornedMagusInvigorateCaster",
+    "Name": "Horned Magus - Invigorate (Caster)"
+  },
+  {
+    "Id": "DragonInvigorateTarget",
+    "Name": "Dragon - Invigorate (Target)"
+  },
+  {
+    "Id": "HornedMagusFireShield",
+    "Name": "Fire Shield"
+  },
+  {
+    "Id": "DragonHunter"
+  },
+  {
+    "Id": "HunterTongueLash",
+    "Name": "Hunter - Tongue Lash"
+  },
+  {
+    "Id": "Madness",
+    "Name": "Madness"
+  },
+  {
+    "Id": "Negative1Armor",
+    "Name": "-1 Armor"
+  },
+  {
+    "Id": "Berserker",
+    "Name": "Berserker"
+  },
+  {
+    "Id": "RazorbackSpikedCarapace",
+    "Name": "Razorback - Spiked Carapace"
+  },
+  {
+    "Id": "SuicidewithCaster",
+    "Name": "Suicide with Caster"
+  },
+  {
+    "Id": "UnseenBeast",
+    "Name": "Unseen Beast"
+  },
+  {
+    "Id": "UnseenBeastRadar",
+    "Name": "Unseen Beast (Radar)"
+  },
+  {
+    "Id": "UnseenBeastTeleportAssault",
+    "Name": "Unseen Beast - Teleport Assault"
+  },
+  {
+    "Id": "VolcanicHarbingerOverload1",
+    "Name": "Overload"
+  },
+  {
+    "Id": "VolcanicHarbingerOverload2",
+    "Name": "Overload"
+  },
+  {
+    "Id": "VolcanicHarbingerOverload3",
+    "Name": "Overload"
+  },
+  {
+    "Id": "UPLTurretCargoInside"
+  },
+  {
+    "Id": "CarryHarvestableVespeneGeyserGasUPL"
+  },
+  {
+    "Id": "HarvestableVespeneGeyserGasUPL"
+  },
+  {
+    "Id": "CarryHumanResource"
+  },
+  {
+    "Id": "HumanResource"
+  },
+  {
+    "Id": "CinematicUnitSettings"
+  },
+  {
+    "Id": "ClaymoreMineDummy"
+  },
+  {
+    "Id": "ClaymoreMineCaster"
+  },
+  {
+    "Id": "ClaymoreMineHaveCharges"
+  },
+  {
+    "Id": "ClaymoreMineReady"
+  },
+  {
+    "Id": "ClaymoreMineQueued"
+  },
+  {
+    "Id": "ClaymoreMineTracker"
+  },
+  {
+    "Id": "LineMovement"
+  },
+  {
+    "Id": "LotC_EP01M02_CarryingCanister"
+  },
+  {
+    "Id": "MissileTargetTracker"
+  },
+  {
+    "Id": "LotC_EP01M03_SnipeShot"
+  },
+  {
+    "Id": "SuppressFidget"
+  },
+  {
+    "Id": "UPLScared"
+  },
+  {
+    "Id": "SuppressRadar"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryRifle"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryFlamethrower"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryMortar"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryHeavy"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryOfficer"
+  },
+  {
+    "Id": "UPLTurretCargo_InfantryRocket"
+  },
+  {
+    "Id": "UPLTurretCargo_UPLScout"
+  },
+  {
+    "Id": "UPLTurretCargo_UPLSpecOps"
+  },
+  {
+    "Id": "UPLTurretCargo_UPLRiotOfficer"
+  },
+  {
+    "Id": "UPLTurretCargo_MyraDavisOfficer"
+  },
+  {
+    "Id": "UPLTurretCargo_MyraDavisRiotOfficer"
+  },
+  {
+    "Id": "UPLTurretCargo_WilliamGraves"
+  },
+  {
+    "Id": "UPLTurretCargo_TrevorRand"
+  },
+  {
+    "Id": "UPLTurretCargo_AltonPeters"
+  },
+  {
+    "Id": "UPLTurretCargo_KatherineHalsey"
+  },
+  {
+    "Id": "UPLTurretCargo_LillyRollins"
+  },
+  {
+    "Id": "UPLTurretCargo_RichardGideon"
+  },
+  {
+    "Id": "UPLTurretCargo_KatherineHalseyPistol"
+  },
+  {
+    "Id": "UPLTurretCargo_DeniseAllisterRiotOfficer"
+  },
+  {
+    "Id": "ClaymoreMineSearch"
+  },
+  {
+    "Id": "LotC_EP01M06_ReducedSight"
+  },
+  {
+    "Id": "LotC_EP01M06_FullyHidden"
+  },
+  {
+    "Id": "LotC_EP01M06_SafeZone"
+  },
+  {
+    "Id": "Detector03"
+  },
+  {
+    "Id": "LotC_EP01M06_Listenable"
+  },
+  {
+    "Id": "LotC_EP01M06_Alerted"
+  },
+  {
+    "Id": "LotC_EP01M06_Concealed"
+  },
+  {
+    "Id": "LotC_EP01M03_HearingRadar"
+  },
+  {
+    "Id": "LotC_EP01M03_HearingRadarHeard"
+  },
+  {
+    "Id": "UPL_WorkerBuildHide"
+  },
+  {
+    "Id": "LotC_CasterDummy",
+    "Name": "LotC_CasterDummy"
+  },
+  {
+    "Id": "NewsHelicopterSpotlight",
+    "Name": "Officer Detection"
+  },
+  {
+    "Id": "MiningDroneSwitchMode",
+    "Name": "Combat Mode"
+  },
+  {
+    "Id": "UPLTurretCargoEmpty"
+  },
+  {
+    "Id": "InfantryMedkit@Handler"
+  },
+  {
+    "Id": "InfantryMedkit"
+  },
+  {
+    "Id": "InfantryMedkit@Disable"
+  },
+  {
+    "Id": "InfantryMedkit@Supressed"
+  },
+  {
+    "Id": "InfantryMedkit@Healing",
+    "Name": "Healing"
+  },
+  {
+    "Id": "InfantryMortarDisableWeapon"
+  },
+  {
+    "Id": "InfantryMortarAttacking"
+  },
+  {
+    "Id": "InfantryOfficerCharge",
+    "Name": "Rallying Leadership"
+  },
+  {
+    "Id": "InfantryOfficerInspired",
+    "Name": "Inspired"
+  },
+  {
+    "Id": "InfantryOfficerAura"
+  },
+  {
+    "Id": "InfantryOfficerChargeAura",
+    "Name": "Charge Aura"
+  },
+  {
+    "Id": "InfantryFlamethrowerBurning",
+    "Name": "Boiling Hydrocarbon Gel"
+  },
+  {
+    "Id": "InfantryOfficerInspiredUpgraded",
+    "Name": "Inspired (+3 Damage)"
+  },
+  {
+    "Id": "InfantryMortarUnsieging"
+  },
+  {
+    "Id": "InfantryMortarSieging"
+  },
+  {
+    "Id": "InfantryFlamethrowerDetonate",
+    "Name": "Detonating!"
+  },
+  {
+    "Id": "InfantryMortarSieged"
+  },
+  {
+    "Id": "APCSmokeGrenadeProtection",
+    "Name": "APC Smoke Grenade Protection"
+  },
+  {
+    "Id": "RaptorCloakActivate",
+    "Name": "Raptor Cloak Activate"
+  },
+  {
+    "Id": "CSVInjuredInfantryNearby"
+  },
+  {
+    "Id": "RaptorAirBurning",
+    "Name": "Plasma Infused White Phosphorous"
+  },
+  {
+    "Id": "TR17Unsieging"
+  },
+  {
+    "Id": "Z1BadgerBomb",
+    "Name": "Burning!"
+  },
+  {
+    "Id": "Z1BadgerBombDummy"
+  },
+  {
+    "Id": "Z1BadgerBombInitial"
+  },
+  {
+    "Id": "Z1BadgerBombFuse"
+  },
+  {
+    "Id": "Z1BadgerBombSpeed"
+  },
+  {
+    "Id": "Z1Shield",
+    "Name": "Full Size Smart Metal Shield"
+  },
+  {
+    "Id": "RoutheTankDust"
+  },
+  {
+    "Id": "Z1Taunt"
+  },
+  {
+    "Id": "Z1Freeze",
+    "Name": "Frozen"
+  },
+  {
+    "Id": "CondorFlying"
+  },
+  {
+    "Id": "CondorLanded"
+  },
+  {
+    "Id": "OspreyLanded"
+  },
+  {
+    "Id": "OspreyFlying"
+  },
+  {
+    "Id": "CSVDeployed"
+  },
+  {
+    "Id": "CSVSupplyLineManagement"
+  },
+  {
+    "Id": "CSVSupplyLineManagementBuff",
+    "Name": "Supply Line Management"
+  },
+  {
+    "Id": "CSVRepairPulse"
+  },
+  {
+    "Id": "CSVTransportHealer"
+  },
+  {
+    "Id": "CondordoFly"
+  },
+  {
+    "Id": "CondordoLand"
+  },
+  {
+    "Id": "CondorFlyMode"
+  },
+  {
+    "Id": "RaptorCloak",
+    "Name": "Cloaked"
+  },
+  {
+    "Id": "CondorLandDelay"
+  },
+  {
+    "Id": "TR17Sieging"
+  },
+  {
+    "Id": "TR17Sieged"
+  },
+  {
+    "Id": "UPLCommStationActiveBuffMech",
+    "Name": "Command Link"
+  },
+  {
+    "Id": "UPLCommStationActiveBuff",
+    "Name": "Command Link"
+  },
+  {
+    "Id": "UPLNightjarFiring"
+  },
+  {
+    "Id": "UPLSolitaireFiring"
+  },
+  {
+    "Id": "UPLSolitaireBurning",
+    "Name": "Boiling Hydrocarbon Gel"
+  },
+  {
+    "Id": "UPLCommStationBuff",
+    "Name": "Comm Station Dispatching"
+  },
+  {
+    "Id": "UPLCommStationPassive"
+  },
+  {
+    "Id": "UPLExhumerIncapacitated",
+    "Name": "Incapacitated"
+  },
+  {
+    "Id": "ExhumerDies"
+  },
+  {
+    "Id": "UPLBuilingInProgressDies"
+  },
+  {
+    "Id": "ExhumerDeathPrevention"
+  },
+  {
+    "Id": "CARRBossInvulnerabilityGlaze"
+  },
+  {
+    "Id": "CARRTracker"
+  },
+  {
+    "Id": "Test_HornerAirFleetActivate"
+  },
+  {
+    "Id": "Test_HornerAirFleetSearch"
+  },
+  {
+    "Id": "NovaDefensiveDroneNullified2",
+    "Name": "NovaDefensiveDroneNullified"
+  },
+  {
+    "Id": "PointDefenseReady2"
+  },
+  {
+    "Id": "UPLCondorCloak",
+    "Name": "Metamateria Coating"
+  },
+  {
+    "Id": "SmokeDetection"
+  },
+  {
+    "Id": "APCSmokeGrenadeProtection2"
+  },
+  {
+    "Id": "KoalitsiyaRailgunCompleted"
+  }
+]

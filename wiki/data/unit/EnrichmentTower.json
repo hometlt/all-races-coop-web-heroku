@@ -1,0 +1,214 @@
+{
+  "Name": "Enrichment Tower",
+  "Description": "Being installed next to mineral druses allows you to extract more minerals.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 75,
+  "LifeMax": 75,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "EnrichmentTower",
+  "HotkeyAlias": "EnrichmentTower",
+  "SelectAlias": "EnrichmentTower",
+  "SubgroupAlias": "EnrichmentTower",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SupplyDepot",
+  "AIEvaluateAlias": "EnrichmentTower",
+  "ReviveType": "EnrichmentTower",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "EnrichmentTower/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "EnrichmentTower/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Light",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 8,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 50
+  },
+  "RepairTime": 30,
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UnknownButton4",
+          "Type": "Passive",
+          "Behavior": "AlgoritmIrradiationFieldBeatan",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "ButtonTowerMiningVkl",
+          "Type": "AbilCmd",
+          "AbilCmd": "OtklTowerMining,Off",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ButtonTowerMiningOtkl",
+          "Type": "AbilCmd",
+          "AbilCmd": "OtklTowerMining,On",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 26,
+  "TechAliasArray": [
+    "Alias_SupplyDepot"
+  ],
+  "GlossaryPriority": 248,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "EnergyRegenRate": 0.5625,
+  "CargoSize": 2,
+  "PlacementFootprint": "FootprintNoBuild1x1",
+  "Icon": "btn-building-terran-sensortower-silver",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "EnrichmentTower",
+  "Behaviors": [
+    {
+      "Link": "AlgoritmIrradiationFieldBeatan",
+      "Id": "AlgoritmIrradiationFieldBeatan"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "OtklTowerMining",
+      "Id": "OtklTowerMining",
+      "Name": "Disable the Enrichment Tower"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "TacticsAcademy",
+      "Icon": "btn-structure-ued-sciencefacility",
+      "Description": "Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Taranises<br/>- Lazaruses<br/>- Drakkar APCs<br/>- Defense Towers",
+      "Name": "Tactics Academy"
+    }
+  ],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "ButtonTowerMiningVkl",
+      "Icon": "btn-techupgrade-terran-ripwavemissiles",
+      "Tooltip": "Resume irradiation of mineral druze with beatings.",
+      "Name": "Turn on the Tower",
+      "AbilCmd": "OtklTowerMining,Off"
+    },
+    {
+      "Id": "ButtonTowerMiningOtkl",
+      "Icon": "btn-command-stop",
+      "Tooltip": "To stop irradiation of mineral druze with beatings.",
+      "Name": "Disable the Tower",
+      "AbilCmd": "OtklTowerMining,On"
+    }
+  ]
+}

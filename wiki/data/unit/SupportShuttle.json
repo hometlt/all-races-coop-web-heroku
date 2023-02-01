@@ -1,0 +1,354 @@
+{
+  "Name": "Support Shuttle",
+  "Description": "Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 150,
+  "LifeMax": 150,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0.2,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AIThreatGround",
+    "AIThreatAir",
+    "AISupport",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SupportShuttle",
+  "HotkeyAlias": "SupportShuttle",
+  "SelectAlias": "SupportShuttle",
+  "SubgroupAlias": "SupportShuttle",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SupportShuttle",
+  "AIEvaluateAlias": "SupportShuttle",
+  "ReviveType": "SupportShuttle",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SupportShuttle/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SupportShuttle/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Speed": 3.1992,
+  "Acceleration": 4,
+  "LateralAcceleration": 1000,
+  "Sight": 11,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -2,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 125
+  },
+  "RepairTime": 41.6667,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attackUED,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "CloakingDrone",
+          "Type": "AbilCmd",
+          "AbilCmd": "CloakingDrone,Execute",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "DeployPsionicSuppressionField",
+          "Type": "AbilCmd",
+          "AbilCmd": "PsionicSuppressionField,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "ProjectedGravitySheild",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProjectedGravityShield,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Behavior": "Detector11",
+          "Row": 2,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 90,
+  "TacticalAIThink": "AIThinkMedivac",
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 185,
+  "GlossaryWeakArray": [
+    "MissileTurret",
+    "SporeCrawler",
+    "PhotonCannon"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-ued-supportshuttle",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "SupportShuttle",
+  "Behaviors": [
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UpgradeEnergeSupportShutl",
+      "Id": "UpgradeEnergeSupportShutl",
+      "Icon": "btn-ability-mengsk-ghost-staticempblast",
+      "Name": "Beatan Reactor"
+    },
+    {
+      "Link": "ProjectedGravityShield",
+      "Id": "ProjectedGravityShield",
+      "Icon": "btn-ability-stetmann-stetzonegenerator-energy",
+      "Name": "Projected Gravity Shield"
+    },
+    {
+      "Link": "UEDVehicalsLevel2",
+      "Id": "UEDVehicalsLevel2",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 2"
+    },
+    {
+      "Link": "UEDVehicalsLevel3",
+      "Id": "UEDVehicalsLevel3",
+      "Name": "Heavy Weaponry Targeting Adjustment, level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "CloakingDrone",
+      "Id": "CloakingDrone",
+      "Name": "Cloaking Drone"
+    },
+    {
+      "Link": "PsionicSuppressionField",
+      "Id": "PsionicSuppressionField",
+      "Name": "Psionic Suppression Field"
+    },
+    {
+      "Link": "ProjectedGravityShield",
+      "Id": "ProjectedGravityShield",
+      "Name": "Projected Gravity Shield"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "StarshipMaintenancePlant",
+      "Icon": "btn-ued-starship-plant",
+      "Description": "Starship support structure. Provides equipment authorizations for basic vessels.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Crimson Eyes<br/>- Strikefighters<br/>- Valkyries<br/>- Transport Shuttles<br/>- Support Shuttles",
+      "Name": "Starship Maintenance Plant"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attackUED,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    },
+    {
+      "Id": "CloakingDrone",
+      "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
+      "Tooltip": "The specified combat unit receives a disguise for 43 seconds. + bonus damage reduction and movement speed increase by 25%.<c val=\"#ColorAttackInfo\"> The unit does not attack on its own until the attack command is given.",
+      "Name": "Activate Cloaking Drone",
+      "AbilCmd": "CloakingDrone,Execute"
+    },
+    {
+      "Id": "DeployPsionicSuppressionField",
+      "Icon": "btn-ability-stetmann-stetzonegenerator-energy",
+      "Tooltip": "For 12 seconds, create a field to suppress psionic activity in the specified area. Everyone who enters it loses the opportunity to exercise psionic will for 2.5 seconds.",
+      "Name": "Expand the Field of suppression of psionic energy",
+      "AbilCmd": "PsionicSuppressionField,Execute"
+    },
+    {
+      "Id": "ProjectedGravitySheild",
+      "Icon": "btn-upgrade-stetmann-zerglinghardenedshield",
+      "Tooltip": "Project an energy barrier around the targeted unit, shielding it from incoming fire. The barrier can hold off up to 250 damage and will dissipate on its own within 14 seconds from activation.",
+      "Name": "Activate Projected Gravity Sheild",
+      "AbilCmd": "ProjectedGravityShield,Execute"
+    }
+  ]
+}

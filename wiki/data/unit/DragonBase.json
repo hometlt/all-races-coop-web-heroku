@@ -1,0 +1,77 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectFamily": "Melee",
+    "ObjectType": "Other"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "DragonBase",
+  "HotkeyAlias": "DragonBase",
+  "SelectAlias": "DragonBase",
+  "SubgroupAlias": "DragonBase",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "DragonBase",
+  "AIEvaluateAlias": "DragonBase",
+  "ReviveType": "DragonBase",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "DragonBase/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "DragonBase/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Biological"
+  ],
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "Id": "DragonBase",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

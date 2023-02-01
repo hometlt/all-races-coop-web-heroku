@@ -1,0 +1,92 @@
+{
+  "Name": "Extending Bridge",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "CreateVisible",
+    "Unselectable",
+    "Untargetable",
+    "Unradarable",
+    "UseLineOfSight",
+    "Invulnerable",
+    "NoPortraitTalk"
+  ],
+  "EditorFlags": [
+    "NeutralDefault"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ExtendingBridge",
+  "HotkeyAlias": "ExtendingBridge",
+  "SelectAlias": "ExtendingBridge",
+  "SubgroupAlias": "ExtendingBridge",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ExtendingBridge",
+  "AIEvaluateAlias": "ExtendingBridge",
+  "ReviveType": "ExtendingBridge",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ExtendingBridge/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ExtendingBridge/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Structure",
+    "RoachBurrow"
+  ],
+  "Attributes": [
+    "Structure"
+  ],
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Id": "ExtendingBridge",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

@@ -1,0 +1,281 @@
+{
+  "Name": "Scavenger Spawn",
+  "Description": "Rapid spawn defense unit with timed life. Can harvest resources.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 100,
+  "LifeMax": 100,
+  "LifeArmorName": "Xayid Ground Carapace",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.4375,
+  "SeparationRadius": 0.4375,
+  "MinimapRadius": 0.3125,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "Worker"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ScavengerSpawn",
+  "HotkeyAlias": "ScavengerSpawn",
+  "SelectAlias": "ScavengerSpawn",
+  "SubgroupAlias": "ScavengerSpawn",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ScavengerSpawn",
+  "AIEvaluateAlias": "ScavengerSpawn",
+  "ReviveType": "ScavengerSpawn",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ScavengerSpawn/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ScavengerSpawn/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Acceleration": 1000,
+  "Attributes": [
+    "Biological",
+    "Light"
+  ],
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "FormStructures,Halt",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "GatherZerg",
+          "Type": "AbilCmd",
+          "AbilCmd": "DroneHarvest,Gather",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "ReturnCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "DroneHarvest,Return",
+          "Row": 1,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 9,
+  "CostCategory": "Economy",
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "",
+  "HotkeyCategory": "",
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "Speed": 3.5,
+  "CostResource": {
+    "Minerals": 25
+  },
+  "AIOverideTargetPriority": 10,
+  "InnerRadius": 0.3125,
+  "CargoSize": 1,
+  "SubgroupPriority": 67,
+  "GlossaryPriority": 1,
+  "GlossaryAlias": "Scavenger",
+  "Icon": "btn-unit-xayid-scavengerspawn",
+  "LifeArmorIcon": "btn-upgrade-xayid-organiccarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ScavengerSpawn",
+  "Weapons": [
+    {
+      "Link": "ScavengerSpawnClaws",
+      "Id": "ScavengerSpawnClaws",
+      "Icon": "btn-upgrade-xayid-groundattackslevel0",
+      "Name": "Claws",
+      "Amount": 10,
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.5,
+      "Period": 0.75
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "DroneHarvest",
+      "Id": "DroneHarvest",
+      "Name": "Gather (Drone)"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "FormStructures,Halt"
+    },
+    {
+      "Id": "GatherZerg",
+      "Icon": "btn-ability-zerg-gather",
+      "Tooltip": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
+      "Name": "Gather",
+      "AbilCmd": "DroneHarvest,Gather"
+    },
+    {
+      "Id": "ReturnCargo",
+      "Icon": "btn-command-returncargo",
+      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
+      "Name": "Return Cargo",
+      "AbilCmd": "DroneHarvest,Return"
+    }
+  ]
+}

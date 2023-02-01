@@ -1,0 +1,196 @@
+{
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 375,
+  "LifeMax": 375,
+  "LifeArmorName": "Terran Ship Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0,
+  "SeparationRadius": 0,
+  "MinimapRadius": 0,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Campaign"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "Untargetable",
+    "Uncursorable",
+    "Uncloakable",
+    "Undetectable",
+    "UseLineOfSight",
+    "Invulnerable",
+    "NoScore",
+    "Unstoppable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Test_HornerAirFleetStrafer",
+  "HotkeyAlias": "Test_HornerAirFleetStrafer",
+  "SelectAlias": "Test_HornerAirFleetStrafer",
+  "SubgroupAlias": "Test_HornerAirFleetStrafer",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Test_HornerAirFleetStrafer",
+  "AIEvaluateAlias": "Test_HornerAirFleetStrafer",
+  "ReviveType": "Test_HornerAirFleetStrafer",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Test_HornerAirFleetStrafer/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Test_HornerAirFleetStrafer/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "MapBoss"
+  ],
+  "LifeArmor": 1,
+  "Speed": 12,
+  "Acceleration": 1000,
+  "LateralAcceleration": 1000,
+  "Sight": 10,
+  "VisionHeight": 4,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "AcquireMove",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,AcquireMove",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Test_HornerAirFleetStrafer",
+  "Behaviors": [
+    {
+      "Link": "Test_HornerAirFleetSearch",
+      "Id": "Test_HornerAirFleetSearch"
+    },
+    {
+      "Link": "Test_HornerAirFleetUpgraded"
+    },
+    {
+      "Link": "Test_HornerAirFleetSearchYamato"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+      "Name": "Scan Move",
+      "AbilCmd": "move,AcquireMove"
+    }
+  ]
+}

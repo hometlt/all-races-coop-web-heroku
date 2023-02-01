@@ -1,0 +1,618 @@
+{
+  "Name": "Void Rift",
+  "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 500,
+  "LifeMax": 500,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrVoidRift",
+  "HotkeyAlias": "NHbrVoidRift",
+  "SelectAlias": "NHbrVoidRift",
+  "SubgroupAlias": "NHbrVoidRift",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrVoidRift",
+  "AIEvaluateAlias": "NHbrVoidRift",
+  "ReviveType": "NHbrVoidRift",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrVoidRift/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrVoidRift/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 2,
+  "DataCollection": "NHbrVoidRift",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInWarrior",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train2",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInFlayer",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInWarbringer",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train4",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInSentinel",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train5",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@AirPage",
+          "Type": "Submenu",
+          "SubmenuCardId": "Air",
+          "SubmenuFullSubCmdValidation": 1,
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInReaver",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train8",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInDominator",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train9",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInDreadnok",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train10",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInSilent",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train7",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer",
+          "Type": "Passive",
+          "Requirements": "NHbrVoidRiftTransfer@Use",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer@Load",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTransfer,Load",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer@UnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTransfer,UnloadAll",
+          "Row": 2,
+          "Column": 3
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInScreamer",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train16",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInPollinator",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train17",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInNavigator",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train15",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInHorror",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train18",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@GroundPage",
+          "Type": "Submenu",
+          "SubmenuFullSubCmdValidation": 1,
+          "SubmenuIsSticky": 1,
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrVoidRiftTrain@WarpInNemesis",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTrain,Train19",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer",
+          "Type": "Passive",
+          "Requirements": "NHbrVoidRiftTransfer@Use",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer@Load",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTransfer,Load",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "NHbrVoidRiftTransfer@UnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrVoidRiftTransfer,UnloadAll",
+          "Row": 2,
+          "Column": 3
+        }
+      ],
+      "CardId": "Air"
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "EnergyMax": 100,
+  "ShieldsStart": 200,
+  "ShieldsMax": 200,
+  "CostResource": {
+    "Minerals": 175
+  },
+  "GlossaryPriority": 11,
+  "Icon": "btn-hybrid-building-voidrift",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrVoidRift",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "NHbrVoidRiftTrain",
+      "Id": "NHbrVoidRiftTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "NHbrVoidRiftTransfer",
+      "Id": "NHbrVoidRiftTransfer",
+      "Name": "Transport"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "NHbrWarrior",
+      "Icon": "btn-hybrid-unit-warrior",
+      "Description": "General-purpose early-game infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Warrior"
+    },
+    {
+      "Id": "NHbrFlayer",
+      "Icon": "btn-hybrid-unit-flayer",
+      "Description": "Ferocious mid-game annihilator of light-units.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Flayer"
+    },
+    {
+      "Id": "NHbrWarbringer",
+      "Icon": "btn-hybrid-unit-shifter",
+      "Description": "Potent mid-game destroyer of armored units. Can use «Mace Strike» to provide long-range support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Warbringer"
+    },
+    {
+      "Id": "NHbrSentinel",
+      "Icon": "btn-hybrid-unit-sentinel",
+      "Description": "Mid-game fast unit. Can use <span style=\"color: #FFFF80\">Jump</span> ability.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Sentinel"
+    },
+    {
+      "Id": "NHbrReaver",
+      "Icon": "btn-hybrid-unit-reaver",
+      "Description": "Late-game monstrous creature. Has a devastating melee attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Reaver"
+    },
+    {
+      "Id": "NHbrDominator",
+      "Icon": "btn-hybrid-unit-destroyer",
+      "Description": "Late-game psionic monstrous creature. Has a devastating ranged attack.<br/><br/><span style=\"color: #ffff8a\">Can attack air and ground units.</span>",
+      "Name": "Dominator"
+    },
+    {
+      "Id": "NHbrDreadnok",
+      "Icon": "btn-hybrid-unit-dreadnok",
+      "Description": "Strong support unit that can disable casters.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Dreadnok"
+    },
+    {
+      "Id": "NHbrSilent",
+      "Icon": "btn-hybrid-unit-silent",
+      "Description": "Ranged mid-game support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Silent"
+    },
+    {
+      "Id": "NHbrScreamer",
+      "Icon": "btn-hybrid-unit-screamer",
+      "Description": "Support mid-game air unit. Can restore <c val=\"#Network\">Network</span> to friendly units. Can use «Desolation» to cloak allies.<br/><br/><span style=\"color: #f078ff\">Restores <b>1.10</b> energy per second.</span><br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Screamer"
+    },
+    {
+      "Id": "NHbrPollinator",
+      "Icon": "btn-hybrid-unit-pollinator",
+      "Description": "Air unit. Posions its target from the void.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Pollinator"
+    },
+    {
+      "Id": "NHbrNavigator",
+      "Icon": "btn-hybrid-unit-transport",
+      "Description": "Mid-game flying transport. Can teleport to any <span style=\"color: #FF8080\">Void Portal</span>.<br/><br/><c val=\"#Network\">Network Power Source.</span>",
+      "Name": "Navigator"
+    },
+    {
+      "Id": "NHbrHorror",
+      "Icon": "btn-hybrid-unit-horror",
+      "Description": "Late-game assault-tanky air unit. Deals splash damage to enemy air units and slows down ground units.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Horror"
+    },
+    {
+      "Id": "NHbrNemesis",
+      "Icon": "btn-hybrid-unit-nemesis",
+      "Description": "Flagship air unit. Can use two attack modes.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Nemesis"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "NHbrIonicCrystal",
+      "Icon": "btn-hybrid-building-pylon",
+      "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+      "Name": "Ionic Crystal"
+    },
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInWarrior",
+      "Icon": "btn-hybrid-unit-warrior",
+      "Tooltip": "General-purpose early-game infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Warp In Warrior",
+      "AbilCmd": "NHbrVoidRiftTrain,Train2"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInFlayer",
+      "Icon": "btn-hybrid-unit-flayer",
+      "Tooltip": "Ferocious mid-game annihilator of light-units.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Flayer",
+      "AbilCmd": "NHbrVoidRiftTrain,Train3"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInWarbringer",
+      "Icon": "btn-hybrid-unit-shifter",
+      "Tooltip": "Potent mid-game destroyer of armored units. Can use «Mace Strike» to provide long-range support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+      "Name": "Warp In Warbringer",
+      "AbilCmd": "NHbrVoidRiftTrain,Train4"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInSentinel",
+      "Icon": "btn-hybrid-unit-sentinel",
+      "Tooltip": "Mid-game fast unit. Can use <span style=\"color: #FFFF80\">Jump</span> ability.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Sentinel",
+      "AbilCmd": "NHbrVoidRiftTrain,Train5"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInReaver",
+      "Icon": "btn-hybrid-unit-reaver",
+      "Tooltip": "Late-game monstrous creature. Has a devastating melee attack.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Reaver",
+      "AbilCmd": "NHbrVoidRiftTrain,Train8"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInDominator",
+      "Icon": "btn-hybrid-unit-destroyer",
+      "Tooltip": "Late-game psionic monstrous creature. Has a devastating ranged attack.<br/><br/><span style=\"color: #ffff8a\">Can attack air and ground units.</span>",
+      "Name": "Warp In Dominator",
+      "AbilCmd": "NHbrVoidRiftTrain,Train9"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInDreadnok",
+      "Icon": "btn-hybrid-unit-dreadnok",
+      "Tooltip": "Strong support unit that can disable casters.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "Warp In Dreadnok",
+      "AbilCmd": "NHbrVoidRiftTrain,Train10"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInSilent",
+      "Icon": "btn-hybrid-unit-silent",
+      "Tooltip": "Ranged mid-game support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+      "Name": "Warp In Silent",
+      "AbilCmd": "NHbrVoidRiftTrain,Train7"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "NHbrVoidRiftTransfer@Load",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Void Rift.",
+      "Name": "Load",
+      "AbilCmd": "NHbrVoidRiftTransfer,Load"
+    },
+    {
+      "Id": "NHbrVoidRiftTransfer@UnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "NHbrVoidRiftTransfer,UnloadAll"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInScreamer",
+      "Icon": "btn-hybrid-unit-screamer",
+      "Tooltip": "Support mid-game air unit. Can restore <c val=\"#Network\">Network</span> to friendly units. Can use «Desolation» to cloak allies.<br/><br/><span style=\"color: #f078ff\">Restores <b>1.10</b> energy per second.</span><br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Warp In Screamer",
+      "AbilCmd": "NHbrVoidRiftTrain,Train16"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInPollinator",
+      "Icon": "btn-hybrid-unit-pollinator",
+      "Tooltip": "Air unit. Posions its target from the void.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Warp In Pollinator",
+      "AbilCmd": "NHbrVoidRiftTrain,Train17"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInNavigator",
+      "Icon": "btn-hybrid-unit-transport",
+      "Tooltip": "Mid-game flying transport. Can teleport to any <span style=\"color: #FF8080\">Void Portal</span>.<br/><br/><c val=\"#Network\">Network Power Source.</span>",
+      "Name": "Warp In Navigator",
+      "AbilCmd": "NHbrVoidRiftTrain,Train15"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInHorror",
+      "Icon": "btn-hybrid-unit-horror",
+      "Tooltip": "Late-game assault-tanky air unit. Deals splash damage to enemy air units and slows down ground units.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Warp In Horror",
+      "AbilCmd": "NHbrVoidRiftTrain,Train18"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "NHbrVoidRiftTrain@WarpInNemesis",
+      "Icon": "btn-hybrid-unit-nemesis",
+      "Tooltip": "Flagship air unit. Can use two attack modes.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Name": "Warp In Nemesis",
+      "AbilCmd": "NHbrVoidRiftTrain,Train19"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "NHbrVoidRiftTransfer@Load",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Void Rift.",
+      "Name": "Load",
+      "AbilCmd": "NHbrVoidRiftTransfer,Load"
+    },
+    {
+      "Id": "NHbrVoidRiftTransfer@UnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "NHbrVoidRiftTransfer,UnloadAll"
+    }
+  ]
+}

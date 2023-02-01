@@ -1,0 +1,290 @@
+{
+  "Name": "Missile Turret",
+  "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 250,
+  "LifeMax": 250,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIDefense",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "MissileTurret",
+  "HotkeyAlias": "MissileTurret",
+  "SelectAlias": "MissileTurret",
+  "SubgroupAlias": "MissileTurret",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "MissileTurret",
+  "AIEvaluateAlias": "MissileTurret",
+  "ReviveType": "MissileTurret",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "MissileTurret/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "MissileTurret/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 100
+  },
+  "RepairTime": 25,
+  "AttackTargetPriority": 19,
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 14,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Halt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Requirements": "NotUnderConstruction",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "SelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 310,
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "GlossaryStrongArray": [
+    "Banshee",
+    "Mutalisk",
+    "Phoenix"
+  ],
+  "GlossaryWeakArray": [
+    "Marine",
+    "Zergling",
+    "Zealot"
+  ],
+  "Icon": "btn-building-terran-missileturret",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "MissileTurret",
+  "Weapons": [
+    {
+      "Link": "LongboltMissile",
+      "Turret": "MissileTurret",
+      "Id": "LongboltMissile",
+      "Icon": "btn-upgrade-terran-hisecautotracking",
+      "Name": "Longbolt Missile",
+      "Amount": 12,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 0.8608
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    },
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    },
+    {
+      "Link": "HiSecAutoTracking",
+      "Id": "HiSecAutoTracking",
+      "Icon": "btn-upgrade-terran-hisecautotracking",
+      "Name": "Hi-Sec Auto Tracking"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "EngineeringBay",
+      "Icon": "btn-building-terran-engineeringbay",
+      "Description": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
+      "Name": "Engineering Bay"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "SCV"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "BuildInProgress,Halt"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

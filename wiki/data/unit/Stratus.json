@@ -1,0 +1,282 @@
+{
+  "Name": "Stratus",
+  "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 250,
+  "LifeMax": 250,
+  "LifeArmorName": "Keiron Structure Armor",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Stratus",
+  "HotkeyAlias": "Stratus",
+  "SelectAlias": "Stratus",
+  "SubgroupAlias": "Stratus",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Stratus",
+  "AIEvaluateAlias": "Stratus",
+  "ReviveType": "Stratus",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Stratus/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Stratus/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Structure"
+  ],
+  "LifeArmor": 2,
+  "Sight": 10,
+  "CostCategory": "Technology",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "LifeRegenRate": 0.25,
+  "Food": 0,
+  "Footprint": "Footprint2x2AirContour",
+  "PlacementFootprint": "Footprint2x2Air",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "Row": 0,
+          "Column": 1,
+          "AbilCmd": "stop,Stop"
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "MothershipCoreAttack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "SelectBuilderKeiron",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "Detector",
+          "Type": "Passive",
+          "Requirements": "NotUnderConstruction",
+          "Row": 2,
+          "Column": 3
+        }
+      ]
+    }
+  ],
+  "Height": 4,
+  "VisionHeight": 4,
+  "ShieldsStart": 125,
+  "ShieldsMax": 125,
+  "CostResource": {
+    "Minerals": 125
+  },
+  "GlossaryCategory": "Unit/Category/KeironUnits",
+  "AttackTargetPriority": 20,
+  "GlossaryPriority": 51,
+  "ScoreMake": 150,
+  "ScoreKill": 150,
+  "Icon": "btn-building-keiron-stratus",
+  "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Stratus",
+  "Weapons": [
+    {
+      "Link": "StratusWeapon",
+      "Turret": "Stratus",
+      "Id": "StratusWeapon",
+      "Icon": "btn-building-keiron-stratus",
+      "Name": "Stratus - Weapon",
+      "Amount": 12,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "Air",
+      "Range": 8,
+      "Period": 1.3
+    },
+    {
+      "Link": "StratusWeaponDummy",
+      "Turret": "StratusMovement",
+      "Id": "StratusWeaponDummy",
+      "Icon": "btn-building-keiron-stratus",
+      "Name": "Stratus - Weapon Dummy",
+      "Amount": 12,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "Air",
+      "Range": 8,
+      "Period": 1.3
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "KeironConstructionFreeze",
+      "Id": "KeironConstructionFreeze"
+    },
+    {
+      "Link": "Detector9",
+      "Id": "Detector9",
+      "Name": "Detector9"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "Reliquary",
+      "Icon": "btn-building-keiron-reliquary",
+      "Description": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+      "Name": "Reliquary"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Converter",
+      "Icon": "btn-unit-keiron-converter",
+      "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Converter"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "MothershipCoreAttack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

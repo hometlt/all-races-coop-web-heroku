@@ -1,0 +1,319 @@
+{
+  "Name": "Ionic Crystal",
+  "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "AcquireNoFlee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 250,
+  "LifeMax": 250,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "ForceCollisionCheck"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrIonicCrystal",
+  "HotkeyAlias": "NHbrIonicCrystal",
+  "SelectAlias": "NHbrIonicCrystal",
+  "SubgroupAlias": "NHbrIonicCrystal",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrIonicCrystal@Moveable",
+  "AIEvaluateAlias": "NHbrIonicCrystal",
+  "ReviveType": "NHbrIonicCrystal@Moveable",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrIonicCrystal@Moveable/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrIonicCrystal@Moveable/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 3,
+  "DataCollection": "NHbrIonicCrystal",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharged",
+          "Type": "Passive",
+          "Requirements": "NHbrNetwork@NetworkChargedShow",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharging",
+          "Type": "Passive",
+          "Behavior": "NHbrNetworkCharging@TimerFull",
+          "Requirements": "NHbrNetwork@NetworkChargingTimerFull",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrNetwork@SourceNetworkCharging",
+          "Type": "Passive",
+          "Behavior": "NHbrNetworkCharging@TimerFullReduced",
+          "Requirements": "NHbrNetworkCharging@HasTimerReduced",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrNetworkFastCharging@FastCharging",
+          "Type": "Passive",
+          "Requirements": "NHbrNetworkFastCharging@Completed",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 11,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "EnergyStart": 20,
+  "EnergyMax": 100,
+  "ShieldsStart": 175,
+  "ShieldsMax": 175,
+  "Speed": 1.1992,
+  "Acceleration": 800,
+  "Food": 8,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 125
+  },
+  "TurretArray": [
+    "NHbrIonicCrystal@RingRotate"
+  ],
+  "EffectArray": {
+    "Birth": "NHbrNetworkNEW@PowerSourceCreatedDummySet",
+    "Death": "NHbrNetworkNEW@PowerSourceDestroyedDummySet"
+  },
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "TechAliasArray": [
+    "Alias_NHbrIonicCrystal"
+  ],
+  "GlossaryPriority": 18,
+  "Icon": "btn-hybrid-building-pylon",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrIonicCrystal@Moveable",
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "NHbrNetworkCharging",
+      "Id": "NHbrNetworkCharging"
+    },
+    {
+      "Link": "NHbrNetworkNEW@PeriodicSearch",
+      "Id": "NHbrNetworkNEW@PeriodicSearch"
+    },
+    {
+      "Link": "NHbrIonicCrystalMorph@VisualController",
+      "Id": "NHbrIonicCrystalMorph@VisualController"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal",
+      "Id": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal",
+      "Name": "Transform To Static Ionic Crystal"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal",
+      "Icon": "btn-ability-terran-land",
+      "Tooltip": "Allows Ionic Crystal prevent movement.",
+      "Name": "Transform To Static Ionic Crystal",
+      "AbilCmd": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal,Execute"
+    }
+  ]
+}

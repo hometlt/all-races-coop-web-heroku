@@ -1,0 +1,284 @@
+{
+  "Name": "Fusion Core",
+  "Description": "Contains Medivac, Liberator, and Battlecruiser upgrades. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 750,
+  "LifeMax": 750,
+  "LifeArmorName": "Terran Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "FusionCore",
+  "HotkeyAlias": "FusionCore",
+  "SelectAlias": "FusionCore",
+  "SubgroupAlias": "FusionCore",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "FusionCore",
+  "AIEvaluateAlias": "FusionCore",
+  "ReviveType": "FusionCore",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "FusionCore/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "FusionCore/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 150
+  },
+  "RepairTime": 65,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3Contour",
+  "PlacementFootprint": "Footprint3x3",
+  "ScoreMake": 300,
+  "ScoreKill": 300,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 7,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "ResearchBattlecruiserSpecializations",
+          "Type": "AbilCmd",
+          "AbilCmd": "FusionCoreResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Halt",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "SelectBuilder",
+          "Type": "SelectBuilder",
+          "AbilCmd": "",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "ResearchBallisticRange",
+          "Type": "AbilCmd",
+          "Row": 0,
+          "Column": 2,
+          "AbilCmd": "FusionCoreResearch,Research2"
+        },
+        {
+          "Face": "ResearchRapidReignitionSystem",
+          "Type": "AbilCmd",
+          "AbilCmd": "FusionCoreResearch,Research3",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 333,
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "TechTreeUnlockedUnitArray": [
+    "Battlecruiser"
+  ],
+  "Icon": "btn-building-terran-fusioncore",
+  "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "FusionCore",
+  "Behaviors": [
+    {
+      "Link": "TerranBuildingBurnDown",
+      "Id": "TerranBuildingBurnDown"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranBuildingArmor",
+      "Id": "TerranBuildingArmor",
+      "Icon": "btn-upgrade-terran-buildingarmor",
+      "Name": "Neosteel Armor"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "FusionCoreResearch",
+      "Id": "FusionCoreResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "BattlecruiserEnableSpecializations",
+      "Icon": "btn-ability-terran-yamatogun-color",
+      "Name": "Weapon Refit"
+    },
+    {
+      "Id": "LiberatorAGRangeUpgrade",
+      "Icon": "btn-upgrade-terran-advanceballistics",
+      "Name": "Advanced Ballistics"
+    },
+    {
+      "Id": "MedivacIncreaseSpeedBoost",
+      "Icon": "btn-upgrade-terran-highcapacityfueltanks",
+      "Name": "Rapid Reignition System"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "SCV",
+      "Icon": "btn-unit-terran-scv",
+      "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "SCV"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "ResearchBattlecruiserSpecializations",
+      "Icon": "btn-ability-terran-yamatogun-color",
+      "Tooltip": "Enables use of the <span style=\"color: #ffff8a\">Battlecruiser</span> Yamato Cannon.",
+      "Name": "Research Weapon Refit",
+      "AbilCmd": "FusionCoreResearch,Research1"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "BuildInProgress,Halt"
+    },
+    {
+      "Id": "ResearchBallisticRange",
+      "Icon": "btn-upgrade-terran-advanceballistics",
+      "Tooltip": "Increases the range of <span style=\"color: #ffff8a\">Liberators</span> in Defender Mode by <b>3</b>.",
+      "Name": "Research Advanced Ballistics",
+      "AbilCmd": "FusionCoreResearch,Research2"
+    },
+    {
+      "Id": "ResearchRapidReignitionSystem",
+      "Icon": "btn-upgrade-terran-highcapacityfueltanks",
+      "Tooltip": "Reduces the cooldown of <span style=\"color: #ffff8a\">Medivac's</span> Ignite Afterburners by <b>7</b> and increases the movement speed of <span style=\"color: #ffff8a\">Medivacs</span>.",
+      "Name": "Research Rapid Reignition System",
+      "AbilCmd": "FusionCoreResearch,Research3"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "Name": "Shock Charge",
+  "Description": "Consumes energy after it is placed, and when it deals damage. Self-destructs when its energy reserves are consumed.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Gen",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.25,
+  "SeparationRadius": 0.25,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unselectable",
+    "UseLineOfSight",
+    "Invulnerable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ShockCharge",
+  "HotkeyAlias": "ShockCharge",
+  "SelectAlias": "ShockCharge",
+  "SubgroupAlias": "ShockCharge",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ShockCharge",
+  "AIEvaluateAlias": "ShockCharge",
+  "ReviveType": "ShockCharge",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ShockCharge/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ShockCharge/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow3"
+  ],
+  "EnergyStart": 200,
+  "EnergyMax": 200,
+  "EnergyRegenRate": -5,
+  "Sight": 4,
+  "CostCategory": "Army",
+  "CargoSize": 1,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "ShockCharge",
+  "Behaviors": [
+    {
+      "Link": "ShockCharge",
+      "Id": "ShockCharge"
+    }
+  ],
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}

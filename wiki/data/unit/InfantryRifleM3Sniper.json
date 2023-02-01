@@ -1,0 +1,275 @@
+{
+  "Name": "Combat Infantry",
+  "Description": "Shock Trooper<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 40,
+  "LifeMax": 40,
+  "LifeArmorName": "UPL Infantry Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "InfantryRifle",
+  "HotkeyAlias": "",
+  "SelectAlias": "InfantryRifle",
+  "SubgroupAlias": "InfantryRifle",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "InfantryRifle",
+  "AIEvaluateAlias": "InfantryRifle",
+  "ReviveType": "InfantryRifle",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "InfantryRifle/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "InfantryRifle/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Speed": 3,
+  "Acceleration": 1000,
+  "LateralAcceleration": 69.125,
+  "Sight": 10,
+  "Food": -1,
+  "CostCategory": "Army",
+  "RepairTime": 25,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 15,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "InfantryMedkit",
+          "Type": "Passive",
+          "Requirements": "InfantryMedkit@ChargeAvailable",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "InfantryMedkit",
+          "Type": "Passive",
+          "Behavior": "InfantryMedkit@Supressed",
+          "Requirements": "InfantryMedkit@Have",
+          "ShowInGlossary": 1,
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "InfantryRifleRangeUpgrade",
+          "Type": "Passive",
+          "Requirements": "HaveInfantryRifleRangeUpgrade",
+          "ShowInGlossary": 1,
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "PhysicalTraining",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.3125,
+  "CargoSize": 1,
+  "ScoreMake": 125,
+  "ScoreKill": 125,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 12,
+  "GlossaryCategory": "",
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "CostResource": {
+    "Minerals": 50
+  },
+  "GlossaryPriority": 21,
+  "AlliedPushPriority": 0,
+  "GlossaryAlias": "",
+  "Icon": "btn-unit-upl-infantryrifle",
+  "LifeArmorIcon": "btn-upgrades-upl-infantryarmor-lvl0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "InfantryRifleM3Sniper",
+  "Weapons": [
+    {
+      "Link": "InfantryRifle",
+      "Id": "InfantryRifle",
+      "Icon": "btn-upgrades-upl-infantryweapons-lvl0",
+      "Name": "GAL-442 Kinetic Express",
+      "Amount": 5,
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 5,
+      "Period": 0.7
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "InfantryMedkit@Handler",
+      "Id": "InfantryMedkit@Handler"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

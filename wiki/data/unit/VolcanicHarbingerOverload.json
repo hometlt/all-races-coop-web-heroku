@@ -1,0 +1,84 @@
+{
+  "Name": "Overload",
+  "Description": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span></n><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Dragon",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "PushPriority": 10,
+  "LeaderAlias": "VolcanicHarbingerOverload",
+  "HotkeyAlias": "VolcanicHarbingerOverload",
+  "SelectAlias": "VolcanicHarbingerOverload",
+  "SubgroupAlias": "VolcanicHarbingerOverload",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "VolcanicHarbingerOverload",
+  "AIEvaluateAlias": "VolcanicHarbingerOverload",
+  "ReviveType": "VolcanicHarbingerOverload",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "VolcanicHarbingerOverload/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "VolcanicHarbingerOverload/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "ScoreResult": "BuildOrder",
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 10
+  },
+  "Icon": "btn-ability-kerrigan-crushinggrip",
+  "Id": "VolcanicHarbingerOverload",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "VolcanicHarbinger",
+      "Icon": "btn-lostvinking-swarmguardian",
+      "Description": "Heavy siege flyer that charges up attacks.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+50% Attack Speed<br/>+1 Attack Range</span>",
+      "Name": "Volcanic Harbinger"
+    },
+    {
+      "Id": "AscendedVolcanicHarbinger",
+      "Icon": "btn-lostvinking-swarmguardian",
+      "Description": "Heavy siege flyer that charges up attacks.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+50% Attack Speed<br/>+1 Attack Range</span>",
+      "Name": "Ascended Volcanic Harbinger"
+    }
+  ],
+  "Commands": []
+}

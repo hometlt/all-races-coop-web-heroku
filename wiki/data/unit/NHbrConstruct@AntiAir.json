@@ -1,0 +1,310 @@
+{
+  "Name": "Construct (Anti-Air)",
+  "Description": "Powerful Anti-Air guardian that test the strength of those who seek the Halls of Revelation. Can be transformed to Anti-Ground construct.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 300,
+  "LifeMax": 300,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "AIDefense"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrConstruct@AntiAir",
+  "HotkeyAlias": "NHbrConstruct@AntiAir",
+  "SelectAlias": "NHbrConstruct@AntiAir",
+  "SubgroupAlias": "NHbrConstruct@AntiAir",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NHbrConstruct@AntiAir",
+  "AIEvaluateAlias": "NHbrConstruct@AntiAir",
+  "ReviveType": "NHbrConstruct@AntiAir",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrConstruct@AntiAir/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrConstruct@AntiAir/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Attributes": [
+    "Structure",
+    "Armored",
+    "Massive"
+  ],
+  "ShieldArmorName": "Hybrid Protection",
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "SubgroupPriority": 5,
+  "DataCollection": "NHbrConstruct",
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "Facing": 315,
+  "ScoreResult": "BuildOrder",
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "EntropicBlast",
+          "Type": "AbilCmd",
+          "AbilCmd": "EntropicBlast,255",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "XelNagaShadowStep",
+          "Type": "AbilCmd",
+          "AbilCmd": "XelNagaShadowStep,255",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrMinionBuild@ConstructAntiAir",
+          "Type": "Passive",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrConstruct@TransformToConstructAntiGround",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrConstruct@TransformToAntiGround,Execute",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "AttackTargetPriority": 20,
+  "Mob": "Multiplayer",
+  "Sight": 9,
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "CostCategory": "Army",
+  "KillXP": 20,
+  "InnerRadius": 1,
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 200,
+  "ShieldsStart": 150,
+  "ShieldsMax": 150,
+  "GlossaryPriority": 14,
+  "CostResource": {
+    "Minerals": 225
+  },
+  "Footprint": "Footprint2x2Contour",
+  "Icon": "btn-hybrid-unit-construct-sentinel-antiair",
+  "LifeArmorIcon": "btn-amonshardsarmor",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrConstruct@AntiAir",
+  "Weapons": [
+    {
+      "Link": "NHbrConstructWeaponAntiAir",
+      "Id": "NHbrConstructWeaponAntiAir",
+      "Icon": "btn-upgrade-protoss-airweaponslevel0",
+      "Name": "Anti-Air Cannon",
+      "Amount": 20,
+      "Kind": "Ranged",
+      "TargetFilters": "Air",
+      "Range": 7,
+      "Period": 1
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrCommon@BuildersTracker",
+      "Id": "NHbrCommon@BuildersTracker"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    },
+    {
+      "Link": "Detector11",
+      "Id": "Detector11",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "NHbrConstruct@Smash"
+    },
+    {
+      "Link": "NHbrConstruct@ChaseBeam"
+    },
+    {
+      "Link": "NHbrConstruct@TransformToAntiGround",
+      "Id": "NHbrConstruct@TransformToAntiGround",
+      "Name": "Transform To Anti-Ground"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrStasisCell",
+      "Icon": "btn-hybrid-building-stasiscell",
+      "Description": "Improve Void Rifts connected to Stasis Cell in <c val=\"#Network\">Network</span>, <span style=\"color: #FFFF80\">containes upgrades for Hybrid units</span>.<br/><br/><span style=\"color: #ffff8a\">Connected Network Allows:</span><br/>- Flayers<br/>- Warbringers<br/>- Sentinels",
+      "Name": "Stasis Cell"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NHbrIonicCrystal",
+      "Icon": "btn-hybrid-building-pylon",
+      "Description": "Provides supply. Supply allows you to warp in more units. Can teleport nearby Hybrid buildings to the target <c val=\"#Network\">Network</span> location.<br/><br/><c val=\"#Network\">Network Power Source.</span><br/><br/><span style=\"color: #ffff8a\">Moveable structure.</span>",
+      "Name": "Ionic Crystal"
+    },
+    {
+      "Id": "NHbrMinion",
+      "Icon": "btn-hybrid-unit-harvester",
+      "Description": "Basic worker unit. Can gather resources and warp in Hybrid structures. Can sacrifice itself to become a Spirit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Minion"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "AbilCmd": "EntropicBlast,255"
+    },
+    {
+      "AbilCmd": "XelNagaShadowStep,255"
+    },
+    {
+      "Id": "NHbrConstruct@TransformToConstructAntiGround",
+      "Icon": "btn-hybrid-unit-construct-sentinel-antiground",
+      "Tooltip": "Transform to Anti-Ground construct.",
+      "Name": "Transform To Construct (Anti-Ground)",
+      "AbilCmd": "NHbrConstruct@TransformToAntiGround,Execute"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    }
+  ]
+}

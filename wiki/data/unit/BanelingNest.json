@@ -1,0 +1,233 @@
+{
+  "Name": "Baneling Nest",
+  "Description": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 850,
+  "LifeMax": 850,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "BanelingNest",
+  "HotkeyAlias": "BanelingNest",
+  "SelectAlias": "BanelingNest",
+  "SubgroupAlias": "BanelingNest",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "BanelingNest",
+  "AIEvaluateAlias": "BanelingNest",
+  "ReviveType": "BanelingNest",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "BanelingNest/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "BanelingNest/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3CreepContour",
+  "PlacementFootprint": "Footprint3x3Creep",
+  "ScoreMake": 150,
+  "ScoreKill": 200,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 8,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "EvolveCentrificalHooks",
+          "Type": "AbilCmd",
+          "AbilCmd": "BanelingNestResearch,Research1",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 37,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 50
+  },
+  "TechTreeUnlockedUnitArray": [
+    "Baneling"
+  ],
+  "Icon": "btn-building-zerg-banelingnest",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "BanelingNest",
+  "Behaviors": [
+    {
+      "Link": "OnCreep",
+      "Id": "OnCreep"
+    },
+    {
+      "Link": "ZergBuildingNotOnCreep",
+      "Id": "ZergBuildingNotOnCreep"
+    },
+    {
+      "Link": "ZergBuildingDies6",
+      "Id": "ZergBuildingDies6"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5",
+      "Id": "que5",
+      "Name": "Queue (5)"
+    },
+    {
+      "Link": "BanelingNestResearch",
+      "Id": "BanelingNestResearch",
+      "Name": "Research (Baneling Nest)"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "SpawningPool",
+      "Icon": "btn-building-zerg-spawningpool",
+      "Description": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
+      "Name": "Spawning Pool"
+    }
+  ],
+  "Production": [
+    {
+      "Id": "CentrificalHooks",
+      "Icon": "btn-upgrade-zerg-centrifugalhooks",
+      "Name": "Centrifugal Hooks"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "EvolveCentrificalHooks",
+      "Icon": "btn-upgrade-zerg-centrifugalhooks",
+      "Tooltip": "<span style=\"color: #ffff8a\">Banelings</span> gain increased movement speed and +5 life.",
+      "Name": "Evolve Centrifugal Hooks",
+      "AbilCmd": "BanelingNestResearch,Research1"
+    }
+  ]
+}

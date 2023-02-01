@@ -1,0 +1,307 @@
+{
+  "Name": "Nydus Network",
+  "Description": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 850,
+  "LifeMax": 850,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 1.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "AIDefense",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NydusNetwork",
+  "HotkeyAlias": "NydusNetwork",
+  "SelectAlias": "NydusNetwork",
+  "SubgroupAlias": "NydusNetwork",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "NydusNetwork",
+  "AIEvaluateAlias": "NydusNetwork",
+  "ReviveType": "NydusNetwork",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NydusNetwork/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NydusNetwork/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 344.9707,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 1,
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 11,
+  "Footprint": "Footprint3x3CreepContour",
+  "PlacementFootprint": "Footprint3x3Creep",
+  "ScoreMake": 350,
+  "ScoreKill": 400,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 10,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "Locust",
+    "Phased"
+  ],
+  "Sight": 9,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "NydusCanalLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "NydusCanalTransport,Load",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NydusCanalUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "NydusCanalTransport,UnloadAll",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "SetRallyPoint",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "SummonNydusWorm",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildNydusCanal,Build1",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "SummonNydusCanalCreeper",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildNydusCanal,Build3",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "NydusWormIncreasedArmorPassive",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "GlossaryPriority": 249,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "CostResource": {
+    "Minerals": 200,
+    "Vespene": 150
+  },
+  "TechTreeProducedUnitArray": [
+    "NydusCanal"
+  ],
+  "CostCategory": "Technology",
+  "Icon": "btn-building-zerg-nydusnetwork",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "NydusNetwork",
+  "Behaviors": [
+    {
+      "Link": "OnCreep",
+      "Id": "OnCreep"
+    },
+    {
+      "Link": "ZergBuildingNotOnCreep",
+      "Id": "ZergBuildingNotOnCreep"
+    },
+    {
+      "Link": "ZergBuildingDies6",
+      "Id": "ZergBuildingDies6"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "SecretedCoating",
+      "Id": "SecretedCoating",
+      "Icon": "btn-upgrade-zerg-demolition",
+      "Name": "Secreted Coating"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "NydusCanalTransport",
+      "Id": "NydusCanalTransport",
+      "Name": "Nydus Canal Transport"
+    },
+    {
+      "Link": "BuildNydusCanal",
+      "Id": "BuildNydusCanal",
+      "Name": "Build Nydus Canal"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "NydusCanal",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Description": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+      "Name": "Nydus Worm"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Drone",
+      "Icon": "btn-unit-zerg-drone",
+      "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+      "Name": "Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "NydusCanalLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Nydus Network.",
+      "Name": "Load",
+      "AbilCmd": "NydusCanalTransport,Load"
+    },
+    {
+      "Id": "NydusCanalUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Tooltip": "Unloads all units.",
+      "Name": "Unload All",
+      "AbilCmd": "NydusCanalTransport,UnloadAll"
+    },
+    {
+      "Id": "SetRallyPoint",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "SummonNydusWorm",
+      "Icon": "btn-building-zerg-nydusworm",
+      "Tooltip": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+      "Name": "Summon Nydus Worm",
+      "AbilCmd": "BuildNydusCanal,Build1"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "SummonNydusCanalCreeper",
+      "Icon": "btn-building-zerg-creeptumor",
+      "Tooltip": "Summons a Creep Tower at the target location. Creep Tower can launch creep in a chosen direction.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+      "Name": "Summon Creep Tower",
+      "AbilCmd": "BuildNydusCanal,Build3"
+    }
+  ]
+}

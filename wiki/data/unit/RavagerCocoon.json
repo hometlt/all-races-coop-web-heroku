@@ -1,0 +1,160 @@
+{
+  "Name": "Ravager Cocoon",
+  "Description": "This cocoon contains a Roach that is morphing into a Ravager.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 100,
+  "LifeMax": 100,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.75,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "NoScore",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "RavagerCocoon",
+  "HotkeyAlias": "RavagerCocoon",
+  "SelectAlias": "RavagerCocoon",
+  "SubgroupAlias": "RavagerCocoon",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "RavagerCocoon",
+  "AIEvaluateAlias": "RavagerCocoon",
+  "ReviveType": "RavagerCocoon",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "RavagerCocoon/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "RavagerCocoon/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Attributes": [
+    "Biological"
+  ],
+  "LifeArmor": 5,
+  "LifeRegenRate": 0.2734,
+  "Sight": 5,
+  "Food": -2,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 10,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelCocoonMorph",
+          "Type": "AbilCmd",
+          "AbilCmd": "MorphToRavager,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "Rally,Rally1",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.5,
+  "SubgroupPriority": 54,
+  "ScoreKill": 200,
+  "Icon": "btn-unit-zerg-egg",
+  "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "RavagerCocoon",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "Rally",
+      "Id": "Rally",
+      "Name": "Rally"
+    },
+    {
+      "Link": "MorphToRavager",
+      "Id": "MorphToRavager",
+      "Name": "Morph To Ravager"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelCocoonMorph",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels the morph order.",
+      "Name": "Cancel",
+      "AbilCmd": "MorphToRavager,Cancel"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "Rally,Rally1"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

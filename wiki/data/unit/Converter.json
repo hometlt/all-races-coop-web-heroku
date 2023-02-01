@@ -1,0 +1,733 @@
+{
+  "Name": "Converter",
+  "Description": "Basic worker unit. Can gather resources and shape Keiron structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Defensive",
+  "Response": "Flee",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 20,
+  "LifeMax": 20,
+  "LifeArmorName": "Keiron Biological Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "Worker"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Converter",
+  "HotkeyAlias": "Converter",
+  "SelectAlias": "Converter",
+  "SubgroupAlias": "Converter",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Converter",
+  "AIEvaluateAlias": "Converter",
+  "ReviveType": "Converter",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Converter/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Converter/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "LifeRegenRate": 0.1718,
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "Acceleration": 2.5,
+  "Sight": 8,
+  "CostCategory": "Economy",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "GatherProt",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProbeHarvest,Gather",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "ReturnCargo",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProbeHarvest,Return",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "ShapeAdvancedStructure",
+          "Type": "Submenu",
+          "SubmenuCardId": "0003",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "ShapeStructure",
+          "Type": "Submenu",
+          "SubmenuCardId": "0002",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Halt",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Halt",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Unfuse",
+          "Type": "AbilCmd",
+          "AbilCmd": "FuseUnfuse,Execute",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Citadel",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Sanctum",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build8",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "Edifice",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build7",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Nullifier",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build4",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Oculus",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build6",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Formulator",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build2",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "Stratus",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build5",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "Reliquary",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build3",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Conduit",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build13",
+          "Row": 1,
+          "Column": 3
+        }
+      ],
+      "CardId": "0002"
+    },
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "CancelSubmenu",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Elysium",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build9",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Foundry",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build10",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "Atrium",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build11",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "Outlet",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build14",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Pantheon",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build12",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "Empyrean",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build15",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Zenith",
+          "Type": "AbilCmd",
+          "AbilCmd": "KeironBuild,Build16",
+          "Row": 2,
+          "Column": 2
+        }
+      ],
+      "CardId": "0003"
+    }
+  ],
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/KeironUnits",
+  "GlossaryAlias": "Converter",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "ShieldsStart": 20,
+  "ShieldsMax": 20,
+  "Speed": 2.8125,
+  "CostResource": {
+    "Minerals": 50
+  },
+  "CargoSize": 1,
+  "LateralAcceleration": 46,
+  "Attributes": [
+    "Light",
+    "Biological",
+    "Mechanical"
+  ],
+  "Food": -1,
+  "GlossaryPriority": 10,
+  "SubgroupPriority": 3,
+  "Icon": "btn-unit-keiron-converter",
+  "LifeArmorIcon": "btn-upgrade-keiron-biologicalarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Converter",
+  "Weapons": [
+    {
+      "Link": "ConverterDissolutionRay",
+      "Id": "ConverterDissolutionRay",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
+      "Name": "Dissolution Ray",
+      "Amount": 5,
+      "Kind": "Melee",
+      "TargetFilters": "Ground",
+      "Range": 0.1,
+      "Period": 1.5
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironBioArmor",
+      "Id": "KeironBioArmor",
+      "Name": "Keiron Bio Armor"
+    },
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironBioArmorLevel1",
+      "Id": "KeironBioArmorLevel1",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel1",
+      "Name": "Keiron Biological Armor Level 1"
+    },
+    {
+      "Link": "KeironBioArmorLevel2",
+      "Id": "KeironBioArmorLevel2",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel2",
+      "Name": "Keiron Biological Armor Level 2"
+    },
+    {
+      "Link": "KeironBioArmorLevel3",
+      "Id": "KeironBioArmorLevel3",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel3",
+      "Name": "Keiron Biological Armor Level 3"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "FuseUnfuse",
+      "Id": "FuseUnfuse",
+      "Name": "Unfuse"
+    },
+    {
+      "Link": "ProbeHarvest",
+      "Id": "ProbeHarvest",
+      "Name": "Gather (Probe)"
+    },
+    {
+      "Link": "KeironBuild",
+      "Id": "KeironBuild",
+      "Name": "Keiron Build"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "Citadel",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+      "Name": "Citadel"
+    },
+    {
+      "Id": "Sanctum",
+      "Icon": "btn-building-keiron-sanctum",
+      "Description": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+      "Name": "Sanctum"
+    },
+    {
+      "Id": "Edifice",
+      "Icon": "btn-building-keiron-edifice",
+      "Description": "Basic tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pariah from the Citadel<br/>  - Volts from the Citadel<br/>  - Oculi from the Converter",
+      "Name": "Edifice"
+    },
+    {
+      "Id": "Nullifier",
+      "Icon": "btn-building-keiron-nullifier",
+      "Description": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Nullifier"
+    },
+    {
+      "Id": "Oculus",
+      "Icon": "btn-building-keiron-oculus",
+      "Description": "Able to grant vision of areas on the map at a long range.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Oculus"
+    },
+    {
+      "Id": "Formulator",
+      "Icon": "btn-building-keiron-formulator",
+      "Description": "Shaped over a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Formulator"
+    },
+    {
+      "Id": "Stratus",
+      "Icon": "btn-building-keiron-stratus",
+      "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Stratus"
+    },
+    {
+      "Id": "Reliquary",
+      "Icon": "btn-building-keiron-reliquary",
+      "Description": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+      "Name": "Reliquary"
+    },
+    {
+      "Id": "Conduit",
+      "Icon": "btn-building-keiron-conduit",
+      "Description": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+      "Name": "Conduit"
+    },
+    {
+      "Id": "Elysium",
+      "Icon": "btn-building-keiron-elysium",
+      "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Meridians from the Citadel",
+      "Name": "Elysium"
+    },
+    {
+      "Id": "Foundry",
+      "Icon": "btn-building-keiron-foundry",
+      "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Umbrae from the Citadel",
+      "Name": "Foundry"
+    },
+    {
+      "Id": "Atrium",
+      "Icon": "btn-building-keiron-atrium",
+      "Description": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Inducers from the Citadel<br/>  - Myriads from the Citadel",
+      "Name": "Atrium"
+    },
+    {
+      "Id": "Outlet",
+      "Icon": "btn-building-keiron-outlet",
+      "Description": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Apertures from the Citadel<br/>  - Auroras from the Citadel",
+      "Name": "Outlet"
+    },
+    {
+      "Id": "Pantheon",
+      "Icon": "btn-building-keiron-pantheon",
+      "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Titans from the Citadel",
+      "Name": "Pantheon"
+    },
+    {
+      "Id": "Empyrean",
+      "Icon": "btn-building-keiron-empyrean",
+      "Description": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+      "Name": "Empyrean"
+    },
+    {
+      "Id": "Zenith",
+      "Icon": "btn-building-keiron-zenith",
+      "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+      "Name": "Zenith"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "Aquifer",
+      "Icon": "btn-building-keiron-oculus",
+      "Description": "Can create workers. Can use x.",
+      "Name": "Aquifer"
+    },
+    {
+      "Id": "Citadel",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+      "Name": "Citadel"
+    },
+    {
+      "Id": "CitadelCharged",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can use Energize.",
+      "Name": "Citadel"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "GatherProt",
+      "Icon": "btn-ability-protoss-gather",
+      "Tooltip": "Orders Probe to gather resources from a selected Mineral Field or Vespene Geyser.",
+      "Name": "Gather",
+      "AbilCmd": "ProbeHarvest,Gather"
+    },
+    {
+      "Id": "ReturnCargo",
+      "Icon": "btn-command-returncargo",
+      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
+      "Name": "Return Cargo",
+      "AbilCmd": "ProbeHarvest,Return"
+    },
+    {
+      "Id": "Halt",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
+      "Name": "Halt",
+      "AbilCmd": "KeironBuild,Halt"
+    },
+    {
+      "Id": "Unfuse",
+      "Icon": "btn-ability-zerg-dehaka-levelup",
+      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Name": "Unfuse",
+      "AbilCmd": "FuseUnfuse,Execute"
+    },
+    {
+      "Id": "Citadel",
+      "Icon": "btn-building-keiron-citadel",
+      "Tooltip": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+      "Name": "Shape Citadel",
+      "AbilCmd": "KeironBuild,Build1"
+    },
+    {
+      "Id": "Sanctum",
+      "Icon": "btn-building-keiron-sanctum",
+      "Tooltip": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+      "Name": "Shape Sanctum",
+      "AbilCmd": "KeironBuild,Build8"
+    },
+    {
+      "Id": "Edifice",
+      "Icon": "btn-building-keiron-edifice",
+      "Tooltip": "Basic tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pariah from the Citadel<br/>  - Volts from the Citadel<br/>  - Oculi from the Converter",
+      "Name": "Shape Edifice",
+      "AbilCmd": "KeironBuild,Build7"
+    },
+    {
+      "Id": "Nullifier",
+      "Icon": "btn-building-keiron-nullifier",
+      "Tooltip": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+      "Name": "Shape Nullifier",
+      "AbilCmd": "KeironBuild,Build4"
+    },
+    {
+      "Id": "Oculus",
+      "Icon": "btn-building-keiron-oculus",
+      "Tooltip": "Able to grant vision of areas on the map at a long range.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Shape Oculus",
+      "AbilCmd": "KeironBuild,Build6"
+    },
+    {
+      "Id": "Formulator",
+      "Icon": "btn-building-keiron-formulator",
+      "Tooltip": "Shaped over a Vespene Geyser to allow harvesting of vespene gas.",
+      "Name": "Shape Formulator",
+      "AbilCmd": "KeironBuild,Build2"
+    },
+    {
+      "Id": "Stratus",
+      "Icon": "btn-building-keiron-stratus",
+      "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Name": "Shape Stratus",
+      "AbilCmd": "KeironBuild,Build5"
+    },
+    {
+      "Id": "Reliquary",
+      "Icon": "btn-building-keiron-reliquary",
+      "Tooltip": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+      "Name": "Shape Reliquary",
+      "AbilCmd": "KeironBuild,Build3"
+    },
+    {
+      "Id": "Conduit",
+      "Icon": "btn-building-keiron-conduit",
+      "Tooltip": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+      "Name": "Shape Conduit",
+      "AbilCmd": "KeironBuild,Build13"
+    },
+    {
+      "Id": "Elysium",
+      "Icon": "btn-building-keiron-elysium",
+      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Meridians from the Citadel",
+      "Name": "Shape Elysium",
+      "AbilCmd": "KeironBuild,Build9"
+    },
+    {
+      "Id": "Foundry",
+      "Icon": "btn-building-keiron-foundry",
+      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Umbrae from the Citadel",
+      "Name": "Shape Foundry",
+      "AbilCmd": "KeironBuild,Build10"
+    },
+    {
+      "Id": "Atrium",
+      "Icon": "btn-building-keiron-atrium",
+      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Inducers from the Citadel<br/>  - Myriads from the Citadel",
+      "Name": "Shape Atrium",
+      "AbilCmd": "KeironBuild,Build11"
+    },
+    {
+      "Id": "Outlet",
+      "Icon": "btn-building-keiron-outlet",
+      "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Apertures from the Citadel<br/>  - Auroras from the Citadel",
+      "Name": "Shape Outlet",
+      "AbilCmd": "KeironBuild,Build14"
+    },
+    {
+      "Id": "Pantheon",
+      "Icon": "btn-building-keiron-pantheon",
+      "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Titans from the Citadel",
+      "Name": "Shape Pantheon",
+      "AbilCmd": "KeironBuild,Build12"
+    },
+    {
+      "Id": "Empyrean",
+      "Icon": "btn-building-keiron-empyrean",
+      "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+      "Name": "Shape Empyrean",
+      "AbilCmd": "KeironBuild,Build15"
+    },
+    {
+      "Id": "Zenith",
+      "Icon": "btn-building-keiron-zenith",
+      "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+      "Name": "Shape Zenith",
+      "AbilCmd": "KeironBuild,Build16"
+    }
+  ]
+}

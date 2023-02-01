@@ -1,0 +1,2255 @@
+[
+  {
+    "Id": "Research",
+    "Name": "Research"
+  },
+  {
+    "Id": "TerranInfantryWeapons",
+    "Name": "Terran Infantry Weapons"
+  },
+  {
+    "Id": "TerranInfantryArmors",
+    "Name": "Terran Infantry Armors"
+  },
+  {
+    "Id": "TerranVehicleWeapons",
+    "Name": "Terran Vehicle Weapons"
+  },
+  {
+    "Id": "TerranVehicleArmors",
+    "Name": "Terran Vehicle Armors"
+  },
+  {
+    "Id": "TerranShipWeapons",
+    "Name": "Terran Ship Weapons"
+  },
+  {
+    "Id": "TerranShipArmors",
+    "Name": "Terran Ship Armors"
+  },
+  {
+    "Id": "ProtossGroundArmors",
+    "Name": "Protoss Ground Armors"
+  },
+  {
+    "Id": "ProtossGroundWeapons",
+    "Name": "Protoss Ground Weapons"
+  },
+  {
+    "Id": "ProtossShields",
+    "Name": "Protoss Shields"
+  },
+  {
+    "Id": "ProtossAirArmors",
+    "Name": "Protoss Air Armors"
+  },
+  {
+    "Id": "ProtossAirWeapons",
+    "Name": "Protoss Air Weapons"
+  },
+  {
+    "Id": "ZergMeleeWeapons",
+    "Name": "Zerg Melee Weapons"
+  },
+  {
+    "Id": "ZergMissileWeapons",
+    "Name": "Zerg Missile Weapons"
+  },
+  {
+    "Id": "ZergGroundArmors",
+    "Name": "Zerg Ground Armors"
+  },
+  {
+    "Id": "ZergFlyerArmors",
+    "Name": "Zerg Flyer Armors"
+  },
+  {
+    "Id": "ZergFlyerWeapons",
+    "Name": "Zerg Flyer Weapons"
+  },
+  {
+    "Id": "CollectionSkinDeluxe",
+    "Name": "CollectionSkinDeluxe"
+  },
+  {
+    "Id": "CollectionSkinDeluxeProtoss",
+    "Name": "CollectionSkinDeluxeProtoss"
+  },
+  {
+    "Id": "BattlecruiserEnableSpecializations",
+    "Icon": "Assets\\Textures\\btn-ability-terran-yamatogun-color.dds",
+    "Name": "Weapon Refit"
+  },
+  {
+    "Id": "BattlecruiserBehemothReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-behemothreactor.dds",
+    "Name": "Behemoth Reactor"
+  },
+  {
+    "Id": "CarrierLaunchSpeedUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-gravitoncatapult.dds",
+    "Name": "Graviton Catapult"
+  },
+  {
+    "Id": "AnabolicSynthesis",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-anabolicsynthesis.dds",
+    "Name": "Anabolic Synthesis"
+  },
+  {
+    "Id": "Confetti"
+  },
+  {
+    "Id": "GhostMoebiusReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-moebiusreactor.dds",
+    "Name": "Moebius Reactor"
+  },
+  {
+    "Id": "ObverseIncubation",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-enduringcorruption.dds",
+    "Name": "Obverse Incubation"
+  },
+  {
+    "Id": "SnowVisualMP"
+  },
+  {
+    "Id": "TunnelingClaws",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-tunnelingclaws.dds",
+    "Name": "Tunneling Claws"
+  },
+  {
+    "Id": "HighTemplarKhaydarinAmulet",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-khaydarinamulet.dds",
+    "Name": "Khaydarin Amulet"
+  },
+  {
+    "Id": "InfestorEnergyUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-pathogenglands.dds",
+    "Name": "Pathogen Glands"
+  },
+  {
+    "Id": "MedivacCaduceusReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-caduceusreactor.dds",
+    "Name": "Caduceus Reactor"
+  },
+  {
+    "Id": "RavenCorvidReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-corvidreactor.dds",
+    "Name": "Corvid Reactor"
+  },
+  {
+    "Id": "ReaperSpeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-reapernitropacks.dds",
+    "Name": "Nitro Packs"
+  },
+  {
+    "Id": "TerranBuildingArmor",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-buildingarmor.dds",
+    "Name": "Neosteel Armor"
+  },
+  {
+    "Id": "DurableMaterials",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-durablematerials.dds",
+    "Name": "Durable Materials"
+  },
+  {
+    "Id": "HunterSeeker",
+    "Icon": "Assets\\Textures\\btn-ability-terran-huntermissile-color.dds",
+    "Name": "Seeker Missile"
+  },
+  {
+    "Id": "NeosteelFrame",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-neosteelframe.dds",
+    "Name": "Neosteel Frame"
+  },
+  {
+    "Id": "PunisherGrenades",
+    "Icon": "Assets\\Textures\\btn-ability-terran-punishergrenade-color.dds",
+    "Name": "Concussive Shells"
+  },
+  {
+    "Id": "ChitinousPlating",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-chitinousplating.dds",
+    "Name": "Chitinous Plating"
+  },
+  {
+    "Id": "VikingJotunBoosters",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-jotunboosters.dds",
+    "Name": "Jotun Boosters"
+  },
+  {
+    "Id": "VoidRaySpeedUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-fluxvanes.dds",
+    "Name": "Flux Vanes"
+  },
+  {
+    "Id": "haltech",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-hallucination-color.dds",
+    "Name": "Hallucination"
+  },
+  {
+    "Id": "CentrificalHooks",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-centrifugalhooks.dds",
+    "Name": "Centrifugal Hooks"
+  },
+  {
+    "Id": "ExtendedThermalLance",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-extendedthermallance.dds",
+    "Name": "Extended Thermal Lance"
+  },
+  {
+    "Id": "HighCapacityBarrels",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infernalpreigniter.dds",
+    "Name": "Infernal Pre-Igniter"
+  },
+  {
+    "Id": "HiSecAutoTracking",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Terran-hisecautotracking.dds",
+    "Name": "Hi-Sec Auto Tracking"
+  },
+  {
+    "Id": "TerranInfantryWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel1.dds",
+    "Name": "Terran Infantry Weapons Level 1"
+  },
+  {
+    "Id": "TerranInfantryWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel2.dds",
+    "Name": "Terran Infantry Weapons Level 2"
+  },
+  {
+    "Id": "TerranInfantryWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel3.dds",
+    "Name": "Terran Infantry Weapons Level 3"
+  },
+  {
+    "Id": "TerranInfantryArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel1.dds",
+    "Name": "Terran Infantry Armor Level 1"
+  },
+  {
+    "Id": "TerranInfantryArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel2.dds",
+    "Name": "Terran Infantry Armor Level 2"
+  },
+  {
+    "Id": "TerranInfantryArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel3.dds",
+    "Name": "Terran Infantry Armor Level 3"
+  },
+  {
+    "Id": "TerranVehicleWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds",
+    "Name": "Terran Vehicle Weapons Level 1"
+  },
+  {
+    "Id": "TerranVehicleWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
+    "Name": "Terran Vehicle Weapons Level 2"
+  },
+  {
+    "Id": "TerranVehicleWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds",
+    "Name": "Terran Vehicle Weapons Level 3"
+  },
+  {
+    "Id": "TerranVehicleArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds",
+    "Name": "Terran Vehicle Plating Level 1"
+  },
+  {
+    "Id": "TerranVehicleArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds",
+    "Name": "Terran Vehicle Plating Level 2"
+  },
+  {
+    "Id": "TerranVehicleArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds",
+    "Name": "Terran Vehicle Plating Level 3"
+  },
+  {
+    "Id": "TerranShipWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel1.dds",
+    "Name": "Terran Ship Weapons Level 1"
+  },
+  {
+    "Id": "TerranShipWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel2.dds",
+    "Name": "Terran Ship Weapons Level 2"
+  },
+  {
+    "Id": "TerranShipWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel3.dds",
+    "Name": "Terran Ship Weapons Level 3"
+  },
+  {
+    "Id": "TerranShipArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds",
+    "Name": "Terran Ship Plating Level 1"
+  },
+  {
+    "Id": "TerranShipArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds",
+    "Name": "Terran Ship Plating Level 2"
+  },
+  {
+    "Id": "TerranShipArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds",
+    "Name": "Terran Ship Plating Level 3"
+  },
+  {
+    "Id": "ProtossGroundArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel1.dds",
+    "Name": "Protoss Ground Armor Level 1"
+  },
+  {
+    "Id": "ProtossGroundArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel2.dds",
+    "Name": "Protoss Ground Armor Level 2"
+  },
+  {
+    "Id": "ProtossGroundArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel3.dds",
+    "Name": "Protoss Ground Armor Level 3"
+  },
+  {
+    "Id": "ProtossGroundWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel1.dds",
+    "Name": "Protoss Ground Weapons Level 1"
+  },
+  {
+    "Id": "ProtossGroundWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel2.dds",
+    "Name": "Protoss Ground Weapons Level 2"
+  },
+  {
+    "Id": "ProtossGroundWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel3.dds",
+    "Name": "Protoss Ground Weapons Level 3"
+  },
+  {
+    "Id": "ProtossShieldsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-shieldslevel1.dds",
+    "Name": "Protoss Shields Level 1"
+  },
+  {
+    "Id": "ProtossShieldsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-shieldslevel2.dds",
+    "Name": "Protoss Shields Level 2"
+  },
+  {
+    "Id": "ProtossShieldsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-shieldslevel3.dds",
+    "Name": "Protoss Shields Level 3"
+  },
+  {
+    "Id": "ProtossAirArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel1.dds",
+    "Name": "Protoss Air Armor Level 1"
+  },
+  {
+    "Id": "ProtossAirArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel2.dds",
+    "Name": "Protoss Air Armor Level 2"
+  },
+  {
+    "Id": "ProtossAirArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel3.dds",
+    "Name": "Protoss Air Armor Level 3"
+  },
+  {
+    "Id": "ProtossAirWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel1.dds",
+    "Name": "Protoss Air Weapons Level 1"
+  },
+  {
+    "Id": "ProtossAirWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel2.dds",
+    "Name": "Protoss Air Weapons Level 2"
+  },
+  {
+    "Id": "ProtossAirWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel3.dds",
+    "Name": "Protoss Air Weapons Level 3"
+  },
+  {
+    "Id": "ZergGroundArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level1.dds",
+    "Name": "Zerg Ground Carapace Level 1"
+  },
+  {
+    "Id": "ZergGroundArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level2.dds",
+    "Name": "Zerg Ground Carapace Level 2"
+  },
+  {
+    "Id": "ZergGroundArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level3.dds",
+    "Name": "Zerg Ground Carapace Level 3"
+  },
+  {
+    "Id": "ZergFlyerArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level1.dds",
+    "Name": "Zerg Flyer Carapace Level 1"
+  },
+  {
+    "Id": "ZergFlyerArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level2.dds",
+    "Name": "Zerg Flyer Carapace Level 2"
+  },
+  {
+    "Id": "ZergFlyerArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level3.dds",
+    "Name": "Zerg Flyer Carapace Level 3"
+  },
+  {
+    "Id": "ZergFlyerWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level1.dds",
+    "Name": "Zerg Flyer Attacks Level 1"
+  },
+  {
+    "Id": "ZergFlyerWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level2.dds",
+    "Name": "Zerg Flyer Attacks Level 2"
+  },
+  {
+    "Id": "ZergFlyerWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level3.dds",
+    "Name": "Zerg Flyer Attacks Level 3"
+  },
+  {
+    "Id": "ZergMeleeWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds",
+    "Name": "Zerg Melee Attacks Level 1"
+  },
+  {
+    "Id": "ZergMeleeWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds",
+    "Name": "Zerg Melee Attacks Level 2"
+  },
+  {
+    "Id": "ZergMeleeWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level3.dds",
+    "Name": "Zerg Melee Attacks Level 3"
+  },
+  {
+    "Id": "ZergMissileWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level1.dds",
+    "Name": "Zerg Missile Attacks Level 1"
+  },
+  {
+    "Id": "ZergMissileWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds",
+    "Name": "Zerg Missile Attacks Level 2"
+  },
+  {
+    "Id": "ZergMissileWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level3.dds",
+    "Name": "Zerg Missile Attacks Level 3"
+  },
+  {
+    "Id": "OrganicCarapace",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-organiccarapace.dds",
+    "Name": "Organic Carapace"
+  },
+  {
+    "Id": "Stimpack",
+    "Icon": "Assets\\Textures\\btn-ability-terran-stimpack-color.dds",
+    "Name": "Stimpack"
+  },
+  {
+    "Id": "PersonalCloaking",
+    "Icon": "Assets\\Textures\\btn-ability-terran-cloak-color.dds",
+    "Name": "Personal Cloaking"
+  },
+  {
+    "Id": "SiegeTech",
+    "Icon": "Assets\\Textures\\btn-unit-terran-siegetanksiegemode.dds",
+    "Name": "Siege Tech"
+  },
+  {
+    "Id": "BansheeCloak",
+    "Icon": "Assets\\Textures\\btn-ability-terran-cloak-color.dds",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "ObserverGraviticBooster",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-graviticbooster.dds",
+    "Name": "Gravitic Boosters"
+  },
+  {
+    "Id": "PsiStormTech",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-psistorm-color.dds",
+    "Name": "Psionic Storm"
+  },
+  {
+    "Id": "GraviticDrive",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-graviticdrive.dds",
+    "Name": "Gravitic Drive"
+  },
+  {
+    "Id": "Charge",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-charge-color.dds",
+    "Name": "Charge"
+  },
+  {
+    "Id": "zerglingattackspeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-adrenalglands.dds",
+    "Name": "Adrenal Glands"
+  },
+  {
+    "Id": "zerglingmovementspeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-metabolicboost.dds",
+    "Name": "Metabolic Boost"
+  },
+  {
+    "Id": "hydraliskspeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groovedspines.dds",
+    "Name": "Muscular Augments"
+  },
+  {
+    "Id": "Burrow",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-burrow-color.dds",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "overlordtransport",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-ventralsacs.dds",
+    "Name": "Ventral Sacs"
+  },
+  {
+    "Id": "overlordspeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-pneumatizedcarapace.dds",
+    "Name": "Pneumatized Carapace"
+  },
+  {
+    "Id": "InfestorPeristalsis",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-peristalsis.dds",
+    "Name": "Peristalsis"
+  },
+  {
+    "Id": "BlinkTech",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-blink-color.dds",
+    "Name": "Blink"
+  },
+  {
+    "Id": "GlialReconstitution",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-glialreconstitution.dds",
+    "Name": "Glial Reconstitution"
+  },
+  {
+    "Id": "AbdominalFortitude",
+    "Name": "Abdominal Fortitude"
+  },
+  {
+    "Id": "ShieldWall",
+    "Icon": "Assets\\Textures\\btn-techupgrade-terran-combatshield-color.dds",
+    "Name": "Combat Shield"
+  },
+  {
+    "Id": "WarpGateResearch",
+    "Icon": "Assets\\Textures\\BTN-Building-Protoss-WarpGate.dds",
+    "Name": "Warp Gate"
+  },
+  {
+    "Id": "ThorSkin",
+    "Icon": "Assets\\Textures\\btn-unit-terran-thor.dds",
+    "Name": "Thor"
+  },
+  {
+    "Id": "GhostAlternate",
+    "Name": "Ghost"
+  },
+  {
+    "Id": "SprayTerran"
+  },
+  {
+    "Id": "SprayZerg"
+  },
+  {
+    "Id": "SprayProtoss"
+  },
+  {
+    "Id": "GhostSkinNova"
+  },
+  {
+    "Id": "GhostSkinJunker"
+  },
+  {
+    "Id": "ZerglingSkin",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-zergling.dds",
+    "Name": "Zergling"
+  },
+  {
+    "Id": "OverlordSkin",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-overlord.dds",
+    "Name": "Overlord"
+  },
+  {
+    "Id": "MarineSkin",
+    "Icon": "Assets\\Textures\\btn-unit-terran-marine.dds",
+    "Name": "Marine"
+  },
+  {
+    "Id": "SupplyDepotSkin",
+    "Icon": "Assets\\Textures\\btn-building-terran-supplydepot.dds",
+    "Name": "Supply Depot"
+  },
+  {
+    "Id": "ZealotSkin",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-zealot.dds",
+    "Name": "Zealot"
+  },
+  {
+    "Id": "PylonSkin",
+    "Icon": "Assets\\Textures\\btn-building-protoss-pylon.dds",
+    "Name": "Pylon"
+  },
+  {
+    "Id": "UltraliskSkin",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-ultralisk.dds",
+    "Name": "Ultralisk"
+  },
+  {
+    "Id": "RewardDanceOracle",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-oracle.dds",
+    "Name": "Reward Dance - Oracle"
+  },
+  {
+    "Id": "RewardDanceStalker",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-stalker.dds",
+    "Name": "Reward Dance - Stalker"
+  },
+  {
+    "Id": "RewardDanceColossus",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-Colossus.dds",
+    "Name": "Reward Dance - Colossus"
+  },
+  {
+    "Id": "RewardDanceOverlord",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-Overlord.dds",
+    "Name": "Reward Dance - Overlord"
+  },
+  {
+    "Id": "RewardDanceRoach",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-roach.dds",
+    "Name": "Reward Dance - Roach"
+  },
+  {
+    "Id": "RewardDanceInfestor",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-infestor.dds",
+    "Name": "Reward Dance - Infestor"
+  },
+  {
+    "Id": "RewardDanceMule",
+    "Icon": "Assets\\Textures\\btn-unit-terran-mule.dds",
+    "Name": "Reward Dance - Mule"
+  },
+  {
+    "Id": "RewardDanceGhost",
+    "Icon": "Assets\\Textures\\btn-unit-terran-ghost.dds",
+    "Name": "Reward Dance - Ghost"
+  },
+  {
+    "Id": "RewardDanceViking",
+    "Icon": "Assets\\Textures\\btn-unit-terran-ghost.dds",
+    "Name": "Reward Dance - Viking"
+  },
+  {
+    "Id": "OracleEnergyUpgrade",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Protoss-ResearchBosonicCore.dds",
+    "Name": "Bosonic Core"
+  },
+  {
+    "Id": "RestoreShields",
+    "Icon": "Assets\\Textures\\btn-missing-kaeo.dds",
+    "Name": "Restore Shields"
+  },
+  {
+    "Id": "PhoenixRangeUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-phoenixrange.dds",
+    "Name": "Anion Pulse-Crystals"
+  },
+  {
+    "Id": "HydraliskSpeedUpgrade",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Zerg-EvolveMuscularAugments.dds",
+    "Name": "Muscular Augments"
+  },
+  {
+    "Id": "BanelingBurrowMove",
+    "Name": "Tunneling Jaws"
+  },
+  {
+    "Id": "ReaperJump",
+    "Icon": "Assets\\Textures\\btn-ability-terran-jetpack-color.dds",
+    "Name": "Reaper Jump"
+  },
+  {
+    "Id": "CombatDrugs",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-reapercombatdrugs.dds",
+    "Name": "Combat Drugs"
+  },
+  {
+    "Id": "StrikeCannons",
+    "Icon": "Assets\\Textures\\btn-ability-terran-bombardmentstrike-color.dds",
+    "Name": "250mm Strike Cannons"
+  },
+  {
+    "Id": "IncreasedRange",
+    "Icon": "Assets\\Textures\\aoe_splatterran1c.dds",
+    "Name": "Increased Range"
+  },
+  {
+    "Id": "NeuralParasite",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-neuralparasite-color.dds",
+    "Name": "Neural Parasite"
+  },
+  {
+    "Id": "ZergBurrowMove",
+    "Name": "Zerg Burrow Move"
+  },
+  {
+    "Id": "LocustLifetimeIncrease",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Zerg-EvolveIncreasedLocustLifetime.dds",
+    "Name": "Enduring Locusts"
+  },
+  {
+    "Id": "TempestRangeUpgrade",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Protoss-ResearchGravitySling.dds",
+    "Name": "Quantum Reactor"
+  },
+  {
+    "Id": "UltraliskBurrowChargeUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-burrowcharge.dds",
+    "Name": "Evolve Burrow Charge"
+  },
+  {
+    "Id": "AnionPulseCrystals",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-phoenixrange.dds",
+    "Name": "Anion Pulse Crystals"
+  },
+  {
+    "Id": "TransformationServos",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-transformationservos.dds",
+    "Name": "Transformation Servos"
+  },
+  {
+    "Id": "TerranVehicleAndShipWeapons",
+    "Name": "Terran Vehicle And Ship Weapons"
+  },
+  {
+    "Id": "TerranVehicleAndShipArmors",
+    "Name": "Terran Vehicle And Ship Plating"
+  },
+  {
+    "Id": "AdeptTaldarim",
+    "Name": "AdeptTaldarim"
+  },
+  {
+    "Id": "FlyingLocusts",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-locustflyer.dds",
+    "Name": "Flying Locusts"
+  },
+  {
+    "Id": "ImmortalRevive",
+    "Icon": "Assets\\Textures\\btn-techupgrade-terran-immortalityprotocol.dds",
+    "Name": "Immortal Revive"
+  },
+  {
+    "Id": "TerranVehicleAndShipWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds",
+    "Name": "Terran Vehicle And Ship Weapons Level 1"
+  },
+  {
+    "Id": "TerranVehicleAndShipWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
+    "Name": "Terran Vehicle And Ship Weapons Level 2"
+  },
+  {
+    "Id": "TerranVehicleAndShipWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds",
+    "Name": "Terran Vehicle And Ship Weapons Level 3"
+  },
+  {
+    "Id": "TerranVehicleAndShipArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds",
+    "Name": "Terran Vehicle and Ship Plating Level 1"
+  },
+  {
+    "Id": "TerranVehicleAndShipArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds",
+    "Name": "Terran Vehicle and Ship Plating Level 2"
+  },
+  {
+    "Id": "TerranVehicleAndShipArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds",
+    "Name": "Terran Vehicle and Ship Plating Level 3"
+  },
+  {
+    "Id": "DrillClaws",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Terran-ResearchDrillingClaws.dds",
+    "Name": "Drilling Claws"
+  },
+  {
+    "Id": "RoachSupply",
+    "Name": "Roach Supply"
+  },
+  {
+    "Id": "CycloneLockOnRangeUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-durablematerials.dds",
+    "Name": "Targeting Optics"
+  },
+  {
+    "Id": "CycloneAirUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-terran-surfacetoairtargeting.dds",
+    "Name": "Surface-To-Air Targeting"
+  },
+  {
+    "Id": "ImmortalBarrier",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-invulnerabilityshield.dds",
+    "Name": "Immortal Barrier"
+  },
+  {
+    "Id": "AdeptKillBounce",
+    "Icon": "Assets\\Textures\\btn-techupgrade-terran-consumption.dds",
+    "Name": "Shockwave"
+  },
+  {
+    "Id": "AdeptPiercingAttack",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-resonatingglaives-orange.dds",
+    "Name": "Resonating Glaives"
+  },
+  {
+    "Id": "CinematicMode",
+    "Name": "Cinematic Mode"
+  },
+  {
+    "Id": "LiberatorMorph",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-liberator-agmode.dds",
+    "Name": "Defender Mode"
+  },
+  {
+    "Id": "AdeptShieldUpgrade",
+    "Icon": "Assets\\Textures\\BTN-Upgrade-Protoss-AdeptShieldUpgrade.dds",
+    "Name": "Shield Upgrade"
+  },
+  {
+    "Id": "CursorDebug"
+  },
+  {
+    "Id": "AdeptSkin",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-adept.dds",
+    "Name": "Adept"
+  },
+  {
+    "Id": "ColossusSkin",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-colossus.dds",
+    "Name": "Colossus"
+  },
+  {
+    "Id": "ColossusTal",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-colossus.dds",
+    "Name": "Colossus"
+  },
+  {
+    "Id": "TempestGroundAttackUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-disruptionblast.dds",
+    "Name": "Tectonic Destabilizers"
+  },
+  {
+    "Id": "AmplifiedShielding",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-adeptshieldupgrade.dds",
+    "Name": "Amplified Shielding"
+  },
+  {
+    "Id": "MicrobialShroud",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-darkswarm.dds",
+    "Name": "Microbial Shroud"
+  },
+  {
+    "Id": "PsionicAmplifiers",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-phasedisruptor.dds",
+    "Name": "Psionic Amplifiers"
+  },
+  {
+    "Id": "BansheeSpeed",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-hyperflightrotors.dds",
+    "Name": "Hyperflight Rotors"
+  },
+  {
+    "Id": "SunderingImpact",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-shadowblade.dds",
+    "Name": "Sundering Impact"
+  },
+  {
+    "Id": "SecretedCoating",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-demolition.dds",
+    "Name": "Secreted Coating"
+  },
+  {
+    "Id": "LiberatorAGRangeUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-advanceballistics.dds",
+    "Name": "Advanced Ballistics"
+  },
+  {
+    "Id": "EnhancedShockwaves",
+    "Icon": "Assets\\Textures\\btn-ability-terran-electricfield.dds",
+    "Name": "Enhanced Shockwaves"
+  },
+  {
+    "Id": "RavagerRange",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-roachlings.dds",
+    "Name": "Ravager Range"
+  },
+  {
+    "Id": "LurkerRange",
+    "Icon": "Assets\\Textures\\btn-upgrade-kerrigan-seismicspines.dds",
+    "Name": "Seismic Spines"
+  },
+  {
+    "Id": "MedivacRapidDeployment",
+    "Icon": "Assets\\Textures\\btn-techupgrade-terran-rapiddeployment.dds",
+    "Name": "Rapid Deployment"
+  },
+  {
+    "Id": "RavenRecalibratedExplosives",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-recalibratedexplosives.dds",
+    "Name": "Recalibrated Explosives"
+  },
+  {
+    "Id": "RavenDamageUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-explosiveshrapnelshells.dds",
+    "Name": "Explosive Shrapnel Shells"
+  },
+  {
+    "Id": "CycloneLockOnDamageUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-magfieldaccelerator.dds",
+    "Name": "Mag-Field Accelerator"
+  },
+  {
+    "Id": "MedivacIncreaseSpeedBoost",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-highcapacityfueltanks.dds",
+    "Name": "Rapid Reignition System"
+  },
+  {
+    "Id": "DarkTemplarBlinkUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-stealth-blink.dds",
+    "Name": "Shadow Stride"
+  },
+  {
+    "Id": "EvolveMuscularAugments",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-evolvemuscularaugments.dds",
+    "Name": "Muscular Augments"
+  },
+  {
+    "Id": "EvolveGroovedSpines",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-hotsgroovedspines.dds",
+    "Name": "Grooved Spines"
+  },
+  {
+    "Id": "MagFieldLaunchers",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-cyclonerangeupgrade.dds",
+    "Name": "Mag-Field Launchers"
+  },
+  {
+    "Id": "DiggingClaws",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-adaptivetalons.dds",
+    "Name": "Adaptive Talons"
+  },
+  {
+    "Id": "SmartServos",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-transformationservos.dds",
+    "Name": "Smart Servos"
+  },
+  {
+    "Id": "ArmorPiercingRockets",
+    "Icon": "Assets\\Textures\\btn-ability-terran-ignorearmor.dds",
+    "Name": "Armor Piercing Rockets"
+  },
+  {
+    "Id": "CycloneRapidFireLaunchers",
+    "Icon": "Assets\\Textures\\btn-upgrade-raynor-ripwavemissiles.dds",
+    "Name": "Rapid Fire Launchers"
+  },
+  {
+    "Id": "RavenEnhancedMunitions",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-enhancedmunitions.dds",
+    "Name": "Enhanced Munitions"
+  },
+  {
+    "Id": "CarrierCarrierCapacity",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-interceptor.dds",
+    "Name": "Carrier Capacity"
+  },
+  {
+    "Id": "CarrierLeashRangeUpgrade",
+    "Icon": "Assets\\Textures\\btn-unit-protoss-interceptor.dds",
+    "Name": "Carrier Leash Range Upgrade"
+  },
+  {
+    "Id": "ResearchGenetron",
+    "Name": "Research (Genetron)"
+  },
+  {
+    "Id": "ResearchKeiron",
+    "Name": "Research (Keiron)"
+  },
+  {
+    "Id": "ResearchXayid",
+    "Name": "Research (Xayid)"
+  },
+  {
+    "Id": "GenetronAircraftPlating",
+    "Icon": "##Icon##",
+    "Name": "Genetron Aircraft Plating"
+  },
+  {
+    "Id": "GenetronAircraftWeapons",
+    "Icon": "##Icon##",
+    "Name": "Genetron Aircraft Weapons"
+  },
+  {
+    "Id": "GenetronGroundPlating",
+    "Icon": "##Icon##",
+    "Name": "Genetron Ground Plating"
+  },
+  {
+    "Id": "GenetronHeavyWeapons",
+    "Icon": "##Icon##",
+    "Name": "Genetron Heavy Weapons"
+  },
+  {
+    "Id": "GenetronLightWeapons",
+    "Icon": "##Icon##",
+    "Name": "Genetron Light Weapons"
+  },
+  {
+    "Id": "XayidFlyerAttacks",
+    "Icon": "##Icon##",
+    "Name": "Xayid Flyer Attacks"
+  },
+  {
+    "Id": "XayidFlyerCarapace",
+    "Icon": "##Icon##",
+    "Name": "Xayid Flyer Carapace"
+  },
+  {
+    "Id": "XayidGroundAttacks",
+    "Icon": "##Icon##",
+    "Name": "Xayid Ground Attacks"
+  },
+  {
+    "Id": "XayidGroundCarapace",
+    "Icon": "##Icon##",
+    "Name": "Xayid Ground Carapace"
+  },
+  {
+    "Id": "KeironBioArmor",
+    "Icon": "##Icon##",
+    "Name": "Keiron Bio Armor"
+  },
+  {
+    "Id": "KeironBioWeapons",
+    "Icon": "##Icon##",
+    "Name": "Keiron Bio Weapons"
+  },
+  {
+    "Id": "KeironMechArmor",
+    "Icon": "##Icon##",
+    "Name": "Keiron Mech Armor"
+  },
+  {
+    "Id": "KeironMechWeapons",
+    "Icon": "##Icon##",
+    "Name": "Keiron Mech Weapons"
+  },
+  {
+    "Id": "KeironShields",
+    "Icon": "##Icon##",
+    "Name": "Keiron Shields"
+  },
+  {
+    "Id": "BlitzerBoreanReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-boreanreactor.dds",
+    "Name": "Borean Reactor"
+  },
+  {
+    "Id": "FixerFusionWelders",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-fusionwelders.dds",
+    "Name": "Fusion Welders"
+  },
+  {
+    "Id": "FixerReactiveArmor",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-reactivearmor.dds",
+    "Name": "Reactive Armor"
+  },
+  {
+    "Id": "GenetronAircraftPlatingLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds",
+    "Name": "Genetron Aircraft Plating Level 1"
+  },
+  {
+    "Id": "GenetronAircraftPlatingLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level2.dds",
+    "Name": "Genetron Aircraft Plating Level 2"
+  },
+  {
+    "Id": "GenetronAircraftPlatingLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level3.dds",
+    "Name": "Genetron Aircraft Plating Level 3"
+  },
+  {
+    "Id": "GenetronAircraftWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level1.dds",
+    "Name": "Genetron Aircraft Weapons Level 1"
+  },
+  {
+    "Id": "GenetronAircraftWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level2.dds",
+    "Name": "Genetron Aircraft Weapons Level 2"
+  },
+  {
+    "Id": "GenetronAircraftWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level3.dds",
+    "Name": "Genetron Aircraft Weapons Level 3"
+  },
+  {
+    "Id": "GenetronGroundPlatingLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level1.dds",
+    "Name": "Genetron Ground Plating Level 1"
+  },
+  {
+    "Id": "GenetronGroundPlatingLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level2.dds",
+    "Name": "Genetron Ground Plating Level 2"
+  },
+  {
+    "Id": "GenetronGroundPlatingLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level3.dds",
+    "Name": "Genetron Ground Plating Level 3"
+  },
+  {
+    "Id": "GenetronHeavyWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level1.dds",
+    "Name": "Genetron Heavy Weapons Level 1"
+  },
+  {
+    "Id": "GenetronHeavyWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level2.dds",
+    "Name": "Genetron Heavy Weapons Level 2"
+  },
+  {
+    "Id": "GenetronHeavyWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level3.dds",
+    "Name": "Genetron Heavy Weapons Level 3"
+  },
+  {
+    "Id": "GenetronLightWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level1.dds",
+    "Name": "Genetron Light Weapons Level 1"
+  },
+  {
+    "Id": "GenetronLightWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level2.dds",
+    "Name": "Genetron Light Weapons Level 2"
+  },
+  {
+    "Id": "GenetronLightWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level3.dds",
+    "Name": "Genetron Light Weapons Level 3"
+  },
+  {
+    "Id": "KeironBioArmorLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel1.dds",
+    "Name": "Keiron Biological Armor Level 1"
+  },
+  {
+    "Id": "KeironBioArmorLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds",
+    "Name": "Keiron Biological Armor Level 2"
+  },
+  {
+    "Id": "KeironBioArmorLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel3.dds",
+    "Name": "Keiron Biological Armor Level 3"
+  },
+  {
+    "Id": "KeironBioWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel1.dds",
+    "Name": "Keiron Biological Weapons Level 1"
+  },
+  {
+    "Id": "KeironBioWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel2.dds",
+    "Name": "Keiron Biological Weapons Level 2"
+  },
+  {
+    "Id": "KeironBioWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel3.dds",
+    "Name": "Keiron Biological Weapons Level 3"
+  },
+  {
+    "Id": "KeironMechArmorLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel1.dds",
+    "Name": "Keiron Mechanical Armor Level 1"
+  },
+  {
+    "Id": "KeironMechArmorLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel2.dds",
+    "Name": "Keiron Mechanical Armor Level 2"
+  },
+  {
+    "Id": "KeironMechArmorLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel3.dds",
+    "Name": "Keiron Mechanical Armor Level 3"
+  },
+  {
+    "Id": "KeironMechWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel1.dds",
+    "Name": "Keiron Mechanical Weapons Level 1"
+  },
+  {
+    "Id": "KeironMechWeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel2.dds",
+    "Name": "Keiron Mechanical Weapons Level 2"
+  },
+  {
+    "Id": "KeironMechWeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel3.dds",
+    "Name": "Keiron Mechanical Weapons Level 3"
+  },
+  {
+    "Id": "KeironShieldsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-shields-level1.dds",
+    "Name": "Keiron Shields Level 1"
+  },
+  {
+    "Id": "KeironShieldsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds",
+    "Name": "Keiron Shields Level 2"
+  },
+  {
+    "Id": "KeironShieldsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-shields-level3.dds",
+    "Name": "Keiron Shields Level 3"
+  },
+  {
+    "Id": "SpitfireMadcapRounds",
+    "Icon": "Assets\\Textures\\btn-tips-terran-penetrator.dds",
+    "Name": "Madcap Rounds"
+  },
+  {
+    "Id": "XayidFlyerAttacksLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel1.dds",
+    "Name": "Xayid Flyer Attacks Level 1"
+  },
+  {
+    "Id": "XayidFlyerAttacksLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel2.dds",
+    "Name": "Xayid Flyer Attacks Level 2"
+  },
+  {
+    "Id": "XayidFlyerAttacksLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel3.dds",
+    "Name": "Xayid Flyer Attacks Level 3"
+  },
+  {
+    "Id": "XayidFlyerCarapaceLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel1.dds",
+    "Name": "Xayid Flyer Carapace Level 1"
+  },
+  {
+    "Id": "XayidFlyerCarapaceLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel2.dds",
+    "Name": "Xayid Flyer Carapace Level 2"
+  },
+  {
+    "Id": "XayidFlyerCarapaceLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel3.dds",
+    "Name": "Xayid Flyer Carapace Level 3"
+  },
+  {
+    "Id": "XayidGroundAttacksLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-hotsgroovedspines.dds",
+    "Name": "Xayid Ground Attacks Level 1"
+  },
+  {
+    "Id": "XayidGroundAttacksLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-xayid-missileweaponslevel2.dds",
+    "Name": "Xayid Ground Attacks Level 2"
+  },
+  {
+    "Id": "XayidGroundAttacksLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-missileweaponslevel3.dds",
+    "Name": "Xayid Ground Attacks Level 3"
+  },
+  {
+    "Id": "XayidGroundCarapaceLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level1.dds",
+    "Name": "Xayid Ground Carapace Level 1"
+  },
+  {
+    "Id": "XayidGroundCarapaceLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level2.dds",
+    "Name": "Xayid Ground Carapace Level 2"
+  },
+  {
+    "Id": "XayidGroundCarapaceLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level3.dds",
+    "Name": "Xayid Ground Carapace Level 3"
+  },
+  {
+    "Id": "DexterousJoints",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-dexterousjoints.dds",
+    "Name": "Dexterous Joints"
+  },
+  {
+    "Id": "OcularAcuity",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-ocularacuity.dds",
+    "Name": "Ocular Acuity"
+  },
+  {
+    "Id": "PiercingThrust",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-monarchblades.dds",
+    "Name": "Piercing Thrust"
+  },
+  {
+    "Id": "BileDucts",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-bileducts.dds",
+    "Name": "Bile Ducts"
+  },
+  {
+    "Id": "CalcifiedHusk",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-calcifiedhusk.dds",
+    "Name": "Calcified Husk"
+  },
+  {
+    "Id": "ScorpaliskMetabolics",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-scorpaliskmetabolics.dds",
+    "Name": "Scorpalisk Metabolics"
+  },
+  {
+    "Id": "PersistentSpores",
+    "Icon": "Assets\\Textures\\btn-ability-Xayid-coveringspray.dds",
+    "Name": "Persistent Spores"
+  },
+  {
+    "Id": "BattleFrenzy",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-battlefrenzy.dds",
+    "Name": "Battle Frenzy"
+  },
+  {
+    "Id": "ResidualAcid",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-residualacid.dds",
+    "Name": "Residual Acid"
+  },
+  {
+    "Id": "ProlongedSpores",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-protractivespores.dds",
+    "Name": "Prolonged Spores"
+  },
+  {
+    "Id": "Hunker",
+    "Icon": "Assets\\Textures\\btn-ability-Xayid-massaliskhunker.dds",
+    "Name": "Hunker"
+  },
+  {
+    "Id": "CleavingSpores",
+    "Icon": "Assets\\Textures\\btn-upgrade-xayid-cleavingspores.dds",
+    "Name": "Cleaving Spores"
+  },
+  {
+    "Id": "IncendiaryInfusion",
+    "Icon": "Assets\\Textures\\btn-ability-xayid-incendiaryinfusion.dds",
+    "Name": "Incendiary Infusion"
+  },
+  {
+    "Id": "RefinedExcretion",
+    "Icon": "Assets\\Textures\\btn-upgrade-Xayid-refinedexcretion.dds",
+    "Name": "Refined Excretion"
+  },
+  {
+    "Id": "VolatileDischarge",
+    "Icon": "Assets\\Textures\\btn-ability-Xayid-volatiledischarge.dds",
+    "Name": "Volatile Discharge"
+  },
+  {
+    "Id": "CalibratedEngines",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-calibratedengines.dds",
+    "Name": "Calibrated Engines"
+  },
+  {
+    "Id": "ReinforcedPlating",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-reinforcedplating.dds",
+    "Name": "Reinforced Plating"
+  },
+  {
+    "Id": "FirewallShield",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-firewallshield.dds",
+    "Name": "Firewall Shield"
+  },
+  {
+    "Id": "BlazeFirewallRevert",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-firewallshield.dds",
+    "Name": "Blaze Firewall Revert"
+  },
+  {
+    "Id": "RefittedNozzles",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-refittednozzles.dds",
+    "Name": "Refitted Nozzles"
+  },
+  {
+    "Id": "PhalanxReactor",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-phalanxreactor.dds",
+    "Name": "Phalanx Reactor"
+  },
+  {
+    "Id": "EnhancedTargeting",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-enhancedtargeting.dds",
+    "Name": "Enhanced Targeting"
+  },
+  {
+    "Id": "SubterraneanSensors",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-detector.dds",
+    "Name": "Subterranean Sensors"
+  },
+  {
+    "Id": "InternalProducers",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-optimizedlogistics.dds",
+    "Name": "Internal Producers"
+  },
+  {
+    "Id": "SelffixProtocol",
+    "Icon": "Assets\\Textures\\btn-upgrade-swann-regenerativebiosteel.dds",
+    "Name": "Self-fix Protocol"
+  },
+  {
+    "Id": "VengeanceMissile",
+    "Icon": "Assets\\Textures\\btn-ability-genetron-vengeancemissile.dds",
+    "Name": "Vengeance Missile"
+  },
+  {
+    "Id": "BoreDrills",
+    "Icon": "Assets\\Textures\\btn-ability-genetron-boredrill.dds",
+    "Name": "Bore Drills"
+  },
+  {
+    "Id": "StealthSystems",
+    "Icon": "Assets\\Textures\\btn-ability-hornerhan-wraith-permanentcloak.dds",
+    "Name": "Stealth Systems"
+  },
+  {
+    "Id": "ShapedHull",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-shapedhull.dds",
+    "Name": "Shaped Hull"
+  },
+  {
+    "Id": "AAMDefenseTurret",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-auxillaryantimissiledefenseturret.dds",
+    "Name": "AAM Defense Turret"
+  },
+  {
+    "Id": "CloakingGenerator",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-Processorcloak.dds",
+    "Name": "Cloaking Generator"
+  },
+  {
+    "Id": "IntegratedOptics",
+    "Icon": "Assets\\Textures\\btn-upgrade-genetron-integratedoptics.dds",
+    "Name": "Integrated Optics"
+  },
+  {
+    "Id": "ModifiedGait",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-modifiedgait.dds",
+    "Name": "Modified Gait"
+  },
+  {
+    "Id": "LatentCharge",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-latentcharge.dds",
+    "Name": "Latent Charge"
+  },
+  {
+    "Id": "ExaltedShield",
+    "Icon": "Assets\\Textures\\btn-ability-stetmann-banelingmanashield.dds",
+    "Name": "Exalted Shield"
+  },
+  {
+    "Id": "AmplifiedSphere",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-fenix-scoutchampionrange.dds",
+    "Name": "Amplified Sphere"
+  },
+  {
+    "Id": "PulsarDampener",
+    "Icon": "Assets\\Textures\\btn-ability-keiron-dampener.dds",
+    "Name": "Dampener"
+  },
+  {
+    "Id": "MeridianConvergence",
+    "Icon": "Assets\\Textures\\btn-ability-keiron-convergence.dds",
+    "Name": "Convergence"
+  },
+  {
+    "Id": "ShieldCompulsion",
+    "Icon": "Assets\\Textures\\btn-ability-keiron-shieldcompulsion.dds",
+    "Name": "Stealth Compulsion"
+  },
+  {
+    "Id": "WraithChamber",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-wraithchamber.dds",
+    "Name": "Wraith Chamber"
+  },
+  {
+    "Id": "AnisopteraWings",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-anisopterawings.dds",
+    "Name": "Anisoptera Wings"
+  },
+  {
+    "Id": "DissonanceProjector",
+    "Icon": "Assets\\Textures\\btn-upgrade-keiron-dissonanceprojector.dds",
+    "Name": "Dissonance Projector"
+  },
+  {
+    "Id": "ApertureKeyhole",
+    "Icon": "Assets\\Textures\\btn-ability-keiron-keyhole.dds",
+    "Name": "Keyhole"
+  },
+  {
+    "Id": "UpgradeSpeedHurakan",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-medivac-igniteafterburners.dds",
+    "Name": "Calibration of the motors"
+  },
+  {
+    "Id": "UpgraideDrakkar",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-battlecruiser-decksights.dds",
+    "Name": "Internal stabilizer"
+  },
+  {
+    "Id": "UEDOrbitalConstruction",
+    "Name": "UEDOrbitalConstruction"
+  },
+  {
+    "Id": "UpgradeEnergeSupportShutl",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-ghost-staticempblast.dds",
+    "Name": "Beatan Reactor"
+  },
+  {
+    "Id": "UpgradeTowerMining",
+    "Icon": "Assets\\Buttons\\Structures\\btn-structure-UED-SensorTower.dds"
+  },
+  {
+    "Id": "UpgradeLazarusRegenHealf",
+    "Icon": "Assets\\Textures\\btn-ability-dehaka-healing.dds"
+  },
+  {
+    "Id": "UpgradeOpticalFlare",
+    "Icon": "Assets\\Textures\\btn-upgrade-nova-btn-upgrade-nova-flashgrenade.dds"
+  },
+  {
+    "Id": "PrototypePositronicWeaponry",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-ghost-tacticalmissilestrike.dds",
+    "Name": "Prototype Positronic Weaponry"
+  },
+  {
+    "Id": "ProjectedGravityShield",
+    "Icon": "Assets\\Textures\\btn-ability-stetmann-stetzonegenerator-energy.dds",
+    "Name": "Projected Gravity Shield"
+  },
+  {
+    "Id": "SprayUED",
+    "Name": "SprayUED"
+  },
+  {
+    "Id": "StrikeGrenade",
+    "Icon": "Assets\\Textures\\btn-ability-tychus-tychus-shreddergrenade.dds",
+    "Name": "Strike Grenade"
+  },
+  {
+    "Id": "UpgradeEnergeCrimsonEye",
+    "Icon": "Assets\\Textures\\btn-upgrade-tychus-ghost-persuader.dds",
+    "Name": "Additional battery"
+  },
+  {
+    "Id": "DroneRepairModule",
+    "Icon": "Assets\\Textures\\ui_tipicon_campaign_space01-repair.dds",
+    "Name": "Drone Repair Module"
+  },
+  {
+    "Id": "AtmosphericOperationsLoadout",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-hellfiremissiles.dds",
+    "Name": "Atmospheric Operations Loadout"
+  },
+  {
+    "Id": "FieldReloadingProtocols",
+    "Icon": "Assets\\Textures\\btn-upgrade-tychus-warhound-thunderboltmissiles.dds",
+    "Name": "Field Reloading Protocols"
+  },
+  {
+    "Id": "SalvoFiringPattern",
+    "Icon": "Assets\\Textures\\btn-ability-hornerhan-viking-missileupgrade.dds",
+    "Name": "Salvo Firing Pattern"
+  },
+  {
+    "Id": "EnrichedUraniumOrdinance",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-topbar-nuclearannihilation.dds",
+    "Name": "Enriched Uranium Ordinance"
+  },
+  {
+    "Id": "TandemReactiveArmor",
+    "Icon": "Assets\\Textures\\btn-upgrade-stetmann-mechagroundplating-level2.dds",
+    "Name": "Tandem Reactive Armor"
+  },
+  {
+    "Id": "SpareRifleBatteries",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-shotgunaoe.dds",
+    "Name": "Spare Rifle Batteries"
+  },
+  {
+    "Id": "ExtendedMissilePayloads",
+    "Icon": "Assets\\Textures\\btn-upgrade-mengsk-trooper-missilelauncher.dds",
+    "Name": "Extended Missile Payloads"
+  },
+  {
+    "Id": "IcarusCatalyst",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-ghost-pyrokineticimmolation_orange.dds",
+    "Name": "Icarus Catalyst"
+  },
+  {
+    "Id": "CommandoTraining",
+    "Icon": "Assets\\Textures\\btn-upgrade-nova-holographicdecoy.dds",
+    "Name": "Commando Training"
+  },
+  {
+    "Id": "UEDArmorLevel1",
+    "Icon": "Assets\\btn-upgrade-ued-armor-level1.dds",
+    "Name": "Beathanium Defensive Programming, level 1"
+  },
+  {
+    "Id": "UEDArmorLevel2",
+    "Icon": "Assets\\btn-upgrade-ued-armor-level2.dds",
+    "Name": "Beathanium Defensive Programming, level 2"
+  },
+  {
+    "Id": "UEDArmorLevel3",
+    "Icon": "Assets\\btn-upgrade-ued-armor-level3.dds",
+    "Name": "Beathanium Defensive Programming, level 3"
+  },
+  {
+    "Id": "UEDCommander",
+    "Icon": "Assets\\Textures\\Viper_Decal.dds",
+    "Name": "UED Commander"
+  },
+  {
+    "Id": "UEDVehicalsLevel2",
+    "Icon": "Assets\\weapon-tank-icon-upgrade-2.dds",
+    "Name": "Heavy Weaponry Targeting Adjustment, level 2"
+  },
+  {
+    "Id": "UEDVehicalsLevel3",
+    "Icon": "Assets\\weapon-tank-icon-upgrade-3.dds",
+    "Name": "Heavy Weaponry Targeting Adjustment, level 3"
+  },
+  {
+    "Id": "UEDWeaponsLevel1",
+    "Icon": "Assets\\weapon-trooper-icon-upgrade-1.dds",
+    "Name": "Light Weaponry Targeting Adjustment, level 1"
+  },
+  {
+    "Id": "UEDVehicalsLevel1",
+    "Icon": "Assets\\weapon-tank-icon-upgrade-1.dds",
+    "Name": "Heavy Weaponry Targeting Adjustment, level 1"
+  },
+  {
+    "Id": "UEDWeaponsLevel2",
+    "Icon": "Assets\\weapon-trooper-icon-upgrade-2.dds",
+    "Name": "Light Weaponry Targeting Adjustment, level 2"
+  },
+  {
+    "Id": "UEDWeaponsLevel3",
+    "Icon": "Assets\\weapon-trooper-icon-upgrade-3.dds",
+    "Name": "Light Weaponry Targeting Adjustment, level 3"
+  },
+  {
+    "Id": "UEDAdvisorUpgradeBecauseEditorIsFunctionalHelp",
+    "Icon": "Assets\\UI\\Interface\\ui_leaderpanel_buttonhover_UED.dds",
+    "Name": "UED Advisor Upgrade"
+  },
+  {
+    "Id": "UEDBannerUpgrade",
+    "Icon": "Assets\\UI\\Interface\\ui_leaderpanel_buttonhover_UED.dds",
+    "Name": "UED Banner upgrade"
+  },
+  {
+    "Id": "UpgradePhosphoricFire",
+    "Icon": "Assets\\Textures\\btn-tips-walloffire.dds",
+    "Name": "Phosphoric fire"
+  },
+  {
+    "Id": "NHbrAirArmors",
+    "Name": "Hybrid Air Armors"
+  },
+  {
+    "Id": "NHbrGroundArmors",
+    "Name": "Hybrid Ground Armors"
+  },
+  {
+    "Id": "NHbrAirWeapons",
+    "Name": "Hybrid Air Weapons"
+  },
+  {
+    "Id": "NHbrGroundWeapons",
+    "Name": "Hybrid Ground Weapons"
+  },
+  {
+    "Id": "NHbrSpray",
+    "Name": "Spray Hybrids"
+  },
+  {
+    "Id": "NHbrNavigatorInterdimensionalOverload@InterdimensionalOverload",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-personaldefensivematrix.dds",
+    "Name": "Interdimensional Overload"
+  },
+  {
+    "Id": "NHbrNemesisUpgradeToAdvancedNemesis",
+    "Icon": "Assets\\Textures\\tip_hybridnemesis.dds",
+    "Name": "Advanced Nemesis"
+  },
+  {
+    "Id": "NHbrPollinatorExpressMantle@ExpressMantle",
+    "Icon": "Assets\\Textures\\btn-ability-stetmann-stetelliteoverloadspeed.dds",
+    "Name": "Express Mantle"
+  },
+  {
+    "Id": "NHbrSpiritCloaking@Cloaking",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-alarak-permanentcloak.dds",
+    "Name": "Cloaking"
+  },
+  {
+    "Id": "NHbrNetworkFastCharging",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-doubleshieldrecharge.dds",
+    "Name": "Fast Charging"
+  },
+  {
+    "Id": "NHbrCrystallicShrine",
+    "Name": "Crystallic Shrine"
+  },
+  {
+    "Id": "NHbrProcessingCore",
+    "Name": "Processing Core"
+  },
+  {
+    "Id": "NHbrNemesisCatacombNetworkReassembly@NetworkReassembly",
+    "Icon": "Assets\\Textures\\btn-upgrade-karax-energyregen200.dds",
+    "Name": "Network Reassembly"
+  },
+  {
+    "Id": "NHbrNemesisCatacombEnhancedArmor@Upgrade",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-armoraura.dds",
+    "Name": "Upgrade"
+  },
+  {
+    "Id": "NHbrEngineResearch@ProtectionArmor",
+    "Icon": "Assets\\Textures\\btn-ability-zeratul-warpprism-shieldboosters.dds",
+    "Name": "Protection Armor"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@GroundArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-groundcarapace-level1.dds",
+    "Name": "Hybrid Ground Armor Level 1"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@GroundArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-groundcarapace-level2.dds",
+    "Name": "Hybrid Ground Armor Level 2"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@GroundArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-groundcarapace-level3.dds",
+    "Name": "Hybrid Ground Armor Level 3"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@GroundWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-bothattacks-level1.dds",
+    "Name": "Hybrid Ground Weapons Level 1"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@WeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-bothattacks-level2.dds",
+    "Name": "Hybrid Ground Weapons Level 2"
+  },
+  {
+    "Id": "NHbrEngineUpgrades@WeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-bothattacks-level3.dds",
+    "Name": "Hybrid Ground Weapons Level 3"
+  },
+  {
+    "Id": "NHbrStasisCell@StasisCell",
+    "Name": "Stasis Cell"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@GroundWeaponsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-airattacks-level1.dds",
+    "Name": "Hybrid Air Weapons Level 1"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@WeaponsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-airattacks-level2.dds",
+    "Name": "Hybrid Air Weapons Level 2"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@WeaponsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-dehaka-airattacks-level3.dds",
+    "Name": "Hybrid Air Weapons Level 3"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level1.dds",
+    "Name": "Hybrid Air Armor Level 1"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level2.dds",
+    "Name": "Hybrid Air Armor Level 2"
+  },
+  {
+    "Id": "NHbrVoidPortalUpgrades@AirArmorsLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level3.dds",
+    "Name": "Hybrid Air Armor Level 3"
+  },
+  {
+    "Id": "NHbrVoidRiftTransfer",
+    "Icon": "Assets\\Textures\\tip_voidrift.dds",
+    "Name": "Transfer"
+  },
+  {
+    "Id": "NHbrDominatorUpgradeToAdvancedDominator",
+    "Icon": "Assets\\Textures\\tip_Hybriddominator.dds",
+    "Name": "Advanced Dominator"
+  },
+  {
+    "Id": "NHbrDreadnokSlowingEjection",
+    "Icon": "Assets\\Textures\\btn-upgrade-protoss-fenix-colossuschampionslowbeam.dds",
+    "Name": "Slowing Ejection"
+  },
+  {
+    "Id": "NHbrFlayerFury",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-adrenalglands.dds",
+    "Name": "Fury"
+  },
+  {
+    "Id": "NHbrFlayerBerserker@Berserker",
+    "Icon": "Assets\\Textures\\btn-upgrade-kerrigan-broodlordspeed.dds",
+    "Name": "Berserker"
+  },
+  {
+    "Id": "NHbrMinionVoidBonus",
+    "Icon": "Assets\\Textures\\btn-ability-hornerhan-salvagebonus.dds",
+    "Name": "Void Bonus"
+  },
+  {
+    "Id": "NHbrReaverUpgradeToAdvancedReaver",
+    "Icon": "Assets\\Textures\\tip_Hybridbehemoth.dds",
+    "Name": "Advanced Reaver"
+  },
+  {
+    "Id": "NHbrSentinelJumpResearch@JumpResearch",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-dehaka-leapattack.dds",
+    "Name": "Jump Research"
+  },
+  {
+    "Id": "NHbrWarbringerOrbitalGuidance",
+    "Icon": "Assets\\Textures\\btn-upgrade-mengsk-engineeringbay-orbitaldrop.dds",
+    "Name": "Orbital Guidance"
+  },
+  {
+    "Id": "NHbrWarriorDeconstruction@Deconstruction",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-terrandefendermodestructureattack.dds",
+    "Name": "Deconstruction"
+  },
+  {
+    "Id": "DragonFireAttacks",
+    "Name": "Dragon Fire Attacks"
+  },
+  {
+    "Id": "DragonMeleeAttacks",
+    "Name": "Dragon Melee Attacks"
+  },
+  {
+    "Id": "DragonScaleArmors",
+    "Name": "Dragon Scale Armors"
+  },
+  {
+    "Id": "DragonPlateArmors",
+    "Name": "Dragon Plate Armors"
+  },
+  {
+    "Id": "AuroraConduitCelerity",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-consume.dds",
+    "Name": "Aurora Conduit - Celerity"
+  },
+  {
+    "Id": "BrimstoneDemolisher",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-brakk.dds",
+    "Name": "Brimstone Demolisher"
+  },
+  {
+    "Id": "DragonCommander",
+    "Name": "DragonCommander"
+  },
+  {
+    "Id": "DragonFireAttacksLevel1",
+    "Icon": "Assets\\Textures\\fireball_6.dds",
+    "Name": "Dragon Fire Attacks Level 1"
+  },
+  {
+    "Id": "DragonFireAttacksLevel2",
+    "Icon": "Assets\\Textures\\fireball_3.dds",
+    "Name": "Dragon Fire Attacks Level 2"
+  },
+  {
+    "Id": "DragonFireAttacksLevel3",
+    "Icon": "Assets\\Textures\\fireball_1hot.dds",
+    "Name": "Dragon Fire Attacks Level 3"
+  },
+  {
+    "Id": "DragonLineage",
+    "Icon": "Assets\\Textures\\btn-unit-zerg-finalboss.dds",
+    "Name": "Dragon Lineage"
+  },
+  {
+    "Id": "DragonMeleeAttacksLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds",
+    "Name": "Dragon Melee Attacks Level 1"
+  },
+  {
+    "Id": "DragonMeleeAttacksLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds",
+    "Name": "Dragon Melee Attacks Level 2"
+  },
+  {
+    "Id": "DragonMeleeAttacksLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level3.dds",
+    "Name": "Dragon Melee Attacks Level 3"
+  },
+  {
+    "Id": "DragonPlateArmorLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level1.dds",
+    "Name": "Dragon Plate Armor Level 1"
+  },
+  {
+    "Id": "DragonPlateArmorLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level2.dds",
+    "Name": "Dragon Plate Armor Level 2"
+  },
+  {
+    "Id": "DragonPlateArmorLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level3.dds",
+    "Name": "Dragon Plate Armor Level 3"
+  },
+  {
+    "Id": "DragonScaleArmorLevel1",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level1.dds",
+    "Name": "Dragon Scale Armor Level 1"
+  },
+  {
+    "Id": "DragonScaleArmorLevel2",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level2.dds",
+    "Name": "Dragon Scale Armor Level 2"
+  },
+  {
+    "Id": "DragonScaleArmorLevel3",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level3.dds",
+    "Name": "Dragon Scale Armor Level 3"
+  },
+  {
+    "Id": "GrimGlider",
+    "Icon": "Assets\\Textures\\btn-critter-sporeray.dds",
+    "Name": "Grim Glider"
+  },
+  {
+    "Id": "HornedMagusArcaneEssence",
+    "Icon": "Assets\\Textures\\btn-tips-biosample.dds",
+    "Name": "Horned Magus - Arcane Essence"
+  },
+  {
+    "Id": "FleshrenderProliferation",
+    "Icon": "Assets\\Textures\\btn-ability-kerrigan-broodlingnest.dds",
+    "Name": "Fleshrender - Proliferation"
+  },
+  {
+    "Id": "HandofPowerMightyFist",
+    "Icon": "Assets\\Textures\\ui_tipicon_campaign_hyb02-nullzone.dds",
+    "Name": "Hand of Power - Mighty Fist"
+  },
+  {
+    "Id": "HandofPowerFrenzy",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-genemutation-attackspeed.dds",
+    "Name": "Hand of Power - Frenzy"
+  },
+  {
+    "Id": "HornedMagusShroud",
+    "Icon": "Assets\\Textures\\btn-ability-protoss-energize.dds",
+    "Name": "Horned Magus - Shroud"
+  },
+  {
+    "Id": "HunterFeast",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-adrenaloverload.dds",
+    "Name": "Hunter - Feast"
+  },
+  {
+    "Id": "BerserkerMadness",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-dehaka-intimidatingroar.dds",
+    "Name": "Berserker - Madness"
+  },
+  {
+    "Id": "RazorbackAbundance",
+    "Icon": "Assets\\Textures\\btn-ability-zerg-regenaura.dds",
+    "Name": "Razorback - Abundance"
+  },
+  {
+    "Id": "SkyrazerEmberCore",
+    "Icon": "Assets\\Textures\\ui_tipicon_evolution_baneling-lava.dds",
+    "Name": "Skyrazer - Ember Core"
+  },
+  {
+    "Id": "FlamespitterFervidReconstitution",
+    "Icon": "Assets\\Textures\\btn-ability-kerrigan-wildmutation.dds",
+    "Name": "Flamespitter - Fervid Reconstitution"
+  },
+  {
+    "Id": "BrimstoneDemolisherInfernalBreath",
+    "Icon": "Assets\\Textures\\btn-tips-walloffire.dds",
+    "Name": "Brimstone Demolisher - Infernal Breath"
+  },
+  {
+    "Id": "UnseenBeast",
+    "Icon": "Assets\\Textures\\wireframe-critter-matriarchsnowbeast.dds",
+    "Name": "Unseen Beast"
+  },
+  {
+    "Id": "VolcanicHarbingerPlasmaCatalyst",
+    "Icon": "Assets\\Textures\\btn-ability-kerrigan-chainreaction.dds",
+    "Name": "Volcanic Harbinger - Plasma Catalyst"
+  },
+  {
+    "Id": "GrimGliderWraithNight",
+    "Icon": "Assets\\Textures\\btn-upgrade-zerg-enduringcorruption.dds",
+    "Name": "Grim Glider - Wraith Night"
+  },
+  {
+    "Id": "UPLShipArmor",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Ship Armor"
+  },
+  {
+    "Id": "UPLShipWeapons",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Ship Weapons"
+  },
+  {
+    "Id": "UPLVehicleArmor",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Vehicle Plating"
+  },
+  {
+    "Id": "UPLVehicleWeapons",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Vehicle Weapons"
+  },
+  {
+    "Id": "UPLInfantryArmor",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Infantry Armor"
+  },
+  {
+    "Id": "UPLInfantryWeapons",
+    "Icon": "##path####lvl##.dds",
+    "Name": "UPL Infantry Weapons"
+  },
+  {
+    "Id": "LotC_InfantryCamoSkin",
+    "Name": "LotC_InfantryCamoSkin"
+  },
+  {
+    "Id": "UPLShipPlatingLevel1",
+    "Name": "UPL Ship Plating Level 1"
+  },
+  {
+    "Id": "UPLShipPlatingLevel2",
+    "Name": "UPL Ship Plating Level 2"
+  },
+  {
+    "Id": "UPLShipPlatingLevel3",
+    "Name": "UPL Ship Plating Level 3"
+  },
+  {
+    "Id": "UPLShipWeaponsLevel1",
+    "Name": "UPL Ship Weapons Level 1"
+  },
+  {
+    "Id": "UPLShipWeaponsLevel2",
+    "Name": "UPL Ship Weapons Level 2"
+  },
+  {
+    "Id": "UPLShipWeaponsLevel3",
+    "Name": "UPL Ship Weapons Level 3"
+  },
+  {
+    "Id": "UPLVehiclePlatingLevel1",
+    "Name": "UPL Vehicle Plating Level 1"
+  },
+  {
+    "Id": "UPLVehiclePlatingLevel2",
+    "Name": "UPL Vehicle Plating Level 2"
+  },
+  {
+    "Id": "UPLVehiclePlatingLevel3",
+    "Name": "UPL Vehicle Plating Level 3"
+  },
+  {
+    "Id": "UPLVehicleWeaponsLevel1",
+    "Name": "UPL Vehicle Weapons Level 1"
+  },
+  {
+    "Id": "UPLVehicleWeaponsLevel2",
+    "Name": "UPL Vehicle Weapons Level 2"
+  },
+  {
+    "Id": "UPLVehicleWeaponsLevel3",
+    "Name": "UPL Vehicle Weapons Level 3"
+  },
+  {
+    "Id": "UPLInfantryArmorLevel1",
+    "Name": "UPL Infantry Armor Level 1"
+  },
+  {
+    "Id": "UPLInfantryArmorLevel2",
+    "Name": "UPL Infantry Armor Level 2"
+  },
+  {
+    "Id": "UPLInfantryArmorLevel3",
+    "Name": "UPL Infantry Armor Level 3"
+  },
+  {
+    "Id": "UPLInfantryWeaponsLevel1",
+    "Name": "UPL Infantry Weapons Level 1"
+  },
+  {
+    "Id": "UPLInfantryWeaponsLevel2",
+    "Name": "UPL Infantry Weapons Level 2"
+  },
+  {
+    "Id": "UPLInfantryWeaponsLevel3",
+    "Name": "UPL Infantry Weapons Level 3"
+  },
+  {
+    "Id": "UPLRenameZerg",
+    "Name": "UPLRenameZerg"
+  },
+  {
+    "Id": "InfantryFlamethrower3xBurning",
+    "Icon": "Assets\\icons\\Button_InfantryFlameThrower\\btn-ability-UPL-NaniteIgnition.dds",
+    "Name": "Infantry Flamethrower 3x Burning"
+  },
+  {
+    "Id": "InfantryHeavyAttackmove",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-Sprint.dds",
+    "Name": "Infantry Heavy Attack move"
+  },
+  {
+    "Id": "InfantryOfficerAuraUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-InfantryOfficerCharge.dds",
+    "Name": "Infantry Officer Aura Upgrade"
+  },
+  {
+    "Id": "InfantryRocket1Range",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-Longshot.dds",
+    "Name": "Infantry Rocket +1 Range"
+  },
+  {
+    "Id": "InfantryRocketAOE",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-GrenadeLauncher.dds",
+    "Name": "Infantry Rocket AOE"
+  },
+  {
+    "Id": "RoutheTankExplosiveShells",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-ExplosiveRounds.dds",
+    "Name": "RoutheTankExplosiveShells"
+  },
+  {
+    "Id": "InfantryMedkit",
+    "Icon": "Assets\\Textures\\btn-ability-upl-medkit.dds",
+    "Name": "Upgrade"
+  },
+  {
+    "Id": "InfantryMortarRangeUpgrade",
+    "Icon": "Assets\\icons\\Button_InfantryMortar\\btn-ability-UPL-LongRangeMortarShells.dds",
+    "Name": "Increased Mortar Range"
+  },
+  {
+    "Id": "InfantryRifleRangeUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-AssaultRifle.dds",
+    "Name": "InfantryRifleRangeUpgrade"
+  },
+  {
+    "Id": "CondorEnhancedCargo",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-EnlargeCargoBay.dds",
+    "Name": "Expanded Cargo Hold"
+  },
+  {
+    "Id": "A6ExplosiveRounds",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-Flak.dds",
+    "Name": "Nano-Flak"
+  },
+  {
+    "Id": "FrancineFuelInjection",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-AdvancedEnergyProcessing.dds",
+    "Name": "Francine Fuel Injection"
+  },
+  {
+    "Id": "RoutheTankArmorPlating",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-UnobtaniumArmorPlating.dds",
+    "Name": "Routhe Tank Armor Plating"
+  },
+  {
+    "Id": "RaptorCloakAbilUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-Metamateria-Suit.dds",
+    "Name": "Metamateria Coating"
+  },
+  {
+    "Id": "Z1SpeedUpgrade",
+    "Icon": "Assets\\Textures\\btn-ability-stetmann-stetelliteoverloadspeed.dds",
+    "Name": "Z1SpeedUpgrade"
+  },
+  {
+    "Id": "CSVSupplyLineManagement",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-SupplyManagement.dds",
+    "Name": "CSVSupplyLineManagement"
+  },
+  {
+    "Id": "CSVPersonnelCarrier",
+    "Icon": "Assets\\Textures\\btn-ability-UPL-PersonnelCarrier.dds",
+    "Name": "CSVPersonnelCarrier"
+  },
+  {
+    "Id": "UPLRaptorIncendiary",
+    "Icon": "Assets\\icons\\Button_Raptor Fighter Jet\\btn-ability-UPL-Thermite.dds",
+    "Name": "UPLRaptorIncendiary"
+  },
+  {
+    "Id": "UPLMiningDronesGrenadeLauncher",
+    "Icon": "Assets\\Textures\\btn-ability-upl-miningdronecombatmode.dds",
+    "Name": "UPLMiningDronesGrenadeLauncher"
+  },
+  {
+    "Id": "Z1EnergyUpgrade",
+    "Icon": "Assets\\Textures\\btn-upgrade-nova-equipment-jetpack.dds",
+    "Name": "Z1EnergyUpgrade"
+  },
+  {
+    "Id": "AAMBarrage3",
+    "Icon": "Assets\\Textures\\btn-upgrade-terran-nova-bansheemissilestrik.dds"
+  },
+  {
+    "Id": "KoalitsiyaRailgunHowitzer",
+    "Icon": "Assets\\Textures\\btn-ability-mengsk-siegetank-shockandawe.dds"
+  }
+]

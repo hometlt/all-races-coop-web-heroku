@@ -1,0 +1,170 @@
+{
+  "Name": "Creep Tumor",
+  "Description": "A burrowed creep generator. Creep feeds nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Zerg",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 50,
+  "LifeMax": 50,
+  "LifeArmorName": "Zerg Building Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1,
+  "SeparationRadius": 1,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 0,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TownAlert",
+    "Cloaked",
+    "Buried",
+    "NoPortraitTalk",
+    "AILifetime",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "CreepTumor",
+  "HotkeyAlias": "CreepTumorBurrowed",
+  "SelectAlias": "CreepTumor",
+  "SubgroupAlias": "CreepTumorBurrowed",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "CreepTumorBurrowed",
+  "AIEvaluateAlias": "CreepTumorBurrowed",
+  "ReviveType": "CreepTumorBurrowed",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "CreepTumorBurrowed/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "CreepTumorBurrowed/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Footprint": "CreepTumorBurrowed",
+  "TechAliasArray": [
+    "Alias_CreepTumor"
+  ],
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "LifeRegenRate": 0.2734,
+  "AttackTargetPriority": 19,
+  "SubgroupPriority": 2,
+  "TacticalAIThink": "AIThinkCreepTumor",
+  "Attributes": [
+    "Biological",
+    "Structure",
+    "Light"
+  ],
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small",
+    "CreepTumor"
+  ],
+  "Sight": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BuildCreepTumorPropagate",
+          "Type": "AbilCmd",
+          "AbilCmd": "CreepTumorBuild,Build1",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.5,
+  "GlossaryPriority": 257,
+  "HotkeyCategory": "Unit/Category/ZergUnits",
+  "Icon": "btn-building-zerg-creeptumor",
+  "LifeArmorIcon": "btn-armor-zerg-building",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "CreepTumorBurrowed",
+  "Behaviors": [
+    {
+      "Link": "makeCreep4x4",
+      "Id": "makeCreep4x4"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "CreepTumorBuild",
+      "Id": "CreepTumorBuild",
+      "Name": "Build"
+    },
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "CreepTumor",
+      "Icon": "btn-building-zerg-creeptumor",
+      "Description": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+      "Name": "Creep Tumor"
+    }
+  ],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BuildCreepTumorPropagate",
+      "Icon": "btn-building-zerg-creeptumor",
+      "Tooltip": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+      "Name": "Spawn Creep Tumor",
+      "AbilCmd": "CreepTumorBuild,Build1"
+    }
+  ]
+}

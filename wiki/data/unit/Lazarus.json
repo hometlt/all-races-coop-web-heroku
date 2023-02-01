@@ -1,0 +1,348 @@
+{
+  "Name": "Lazarus",
+  "Description": "Combat medic. Capable of reanimating deceased Directorate infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 100,
+  "LifeMax": 100,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.375,
+  "MinimapRadius": 0.375,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.2,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Lazarus",
+  "HotkeyAlias": "Lazarus",
+  "SelectAlias": "Lazarus",
+  "SubgroupAlias": "Lazarus",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Ghost",
+  "AIEvaluateAlias": "Lazarus",
+  "ReviveType": "Lazarus",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Lazarus/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Lazarus/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Locust",
+    "Small"
+  ],
+  "Attributes": [
+    "Biological",
+    "Psionic"
+  ],
+  "LifeArmorTip": "Unit/LifeArmorName/UEDArmor",
+  "EnergyStart": 50,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 0.5625,
+  "Speed": 2.25,
+  "Acceleration": 1000,
+  "LateralAcceleration": 46.0625,
+  "Sight": 11,
+  "Food": -2,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 125,
+    "Vespene": 50
+  },
+  "RepairTime": 40,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 30,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "moveUED,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "AttackGhost",
+          "Type": "AbilCmd",
+          "AbilCmd": "attackUED,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MutatorReanimate",
+          "Type": "AbilCmd",
+          "AbilCmd": "LazarusDeviceAoE,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.375,
+  "CargoSize": 1,
+  "ScoreMake": 300,
+  "ScoreKill": 300,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 78,
+  "TacticalAIThink": "AIThinkGhost",
+  "GlossaryCategory": "Unit/Category/UEDUnits",
+  "GlossaryPriority": 70,
+  "GlossaryStrongArray": [
+    "Raven",
+    "Infestor",
+    "HighTemplar"
+  ],
+  "GlossaryWeakArray": [
+    "Thor",
+    "Roach",
+    "Stalker"
+  ],
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "Icon": "btn-unit-ued-spectre",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "Lazarus",
+  "Weapons": [
+    {
+      "Link": "LSC330GaussCarabine",
+      "Id": "LSC330GaussCarabine",
+      "Name": "LSC-330 Gauss Carabine",
+      "Amount": 8,
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 1.96
+    },
+    {
+      "Link": "DrakkarLSC330GaussCarabine2",
+      "Id": "DrakkarLSC330GaussCarabine2",
+      "Amount": 8,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 5,
+      "Period": 1.96
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "UnitDeathPrevention",
+      "Id": "UnitDeathPrevention"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UpgradeLazarusRegenHealf",
+      "Id": "UpgradeLazarusRegenHealf",
+      "Icon": "btn-ability-dehaka-healing"
+    },
+    {
+      "Link": "UEDArmorLevel1",
+      "Id": "UEDArmorLevel1",
+      "Name": "Beathanium Defensive Programming, level 1"
+    },
+    {
+      "Link": "UEDArmorLevel2",
+      "Id": "UEDArmorLevel2",
+      "Name": "Beathanium Defensive Programming, level 2"
+    },
+    {
+      "Link": "UEDArmorLevel3",
+      "Id": "UEDArmorLevel3",
+      "Name": "Beathanium Defensive Programming, level 3"
+    },
+    {
+      "Link": "UEDWeaponsLevel1",
+      "Id": "UEDWeaponsLevel1",
+      "Name": "Light Weaponry Targeting Adjustment, level 1"
+    },
+    {
+      "Link": "UEDWeaponsLevel2",
+      "Id": "UEDWeaponsLevel2",
+      "Name": "Light Weaponry Targeting Adjustment, level 2"
+    },
+    {
+      "Link": "UEDWeaponsLevel3",
+      "Id": "UEDWeaponsLevel3",
+      "Name": "Light Weaponry Targeting Adjustment, level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "moveUED",
+      "Id": "moveUED",
+      "Name": "Move UED"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attackUED",
+      "Id": "attackUED",
+      "Name": "Attack UED"
+    },
+    {
+      "Link": "LazarusDeviceAoE",
+      "Id": "LazarusDeviceAoE",
+      "Name": "Lazarus Device"
+    },
+    {
+      "Link": "OpticalFlare",
+      "Id": "OpticalFlare",
+      "Name": "Optical Flare"
+    },
+    {
+      "Link": "UEDTossGrenade",
+      "Id": "UEDTossGrenade",
+      "Name": "UEDToss Grenade"
+    },
+    {
+      "Link": "LazarusRegenHealf",
+      "Id": "LazarusRegenHealf",
+      "Name": "Field recovery"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "TacticsAcademy",
+      "Icon": "btn-structure-ued-sciencefacility",
+      "Description": "Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Taranises<br/>- Lazaruses<br/>- Drakkar APCs<br/>- Defense Towers",
+      "Name": "Tactics Academy"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "TeleportationNode",
+      "Icon": "btn-ued-teleportation-node",
+      "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Name": "Teleportation Node"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "moveUED,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "moveUED,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "moveUED,Patrol"
+    },
+    {
+      "Id": "AttackGhost",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attackUED,Execute"
+    },
+    {
+      "Id": "MutatorReanimate",
+      "Icon": "btn-ability-kerrigan_revive",
+      "Tooltip": "Releases a nanoswarm into the targeted unit's organism, reviving it at 50% of max health. Can only be used on incapacitated infantry.",
+      "Name": "Lazarus Device",
+      "AbilCmd": "LazarusDeviceAoE,Execute"
+    }
+  ]
+}

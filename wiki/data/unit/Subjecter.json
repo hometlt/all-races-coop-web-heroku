@@ -1,0 +1,388 @@
+{
+  "Name": "Subjecter",
+  "Description": "Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can target ground and air units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Keir",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 110,
+  "LifeMax": 110,
+  "LifeArmorName": "Keiron Biological Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 990,
+  "TurningRate": 990,
+  "Radius": 0.625,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.625,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Subjecter",
+  "HotkeyAlias": "Subjecter",
+  "SelectAlias": "Subjecter",
+  "SubgroupAlias": "Subjecter",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "Subjecter",
+  "AIEvaluateAlias": "Subjecter",
+  "ReviveType": "Subjecter",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "Subjecter/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "Subjecter/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "LifeRegenRate": 0.1718,
+  "ShieldRegenDelay": 4,
+  "ShieldRegenRate": 1.25,
+  "Acceleration": 1000,
+  "Sight": 10,
+  "CostCategory": "Army",
+  "AttackTargetPriority": 20,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "Rally",
+          "Type": "AbilCmd",
+          "AbilCmd": "ProgressRally,Rally1",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "Unfuse",
+          "Type": "AbilCmd",
+          "AbilCmd": "FuseUnfuse,Execute",
+          "Row": 1,
+          "Column": 4
+        }
+      ]
+    }
+  ],
+  "ScoreMakeCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreKillCostFactor": {
+    "Minerals": 1,
+    "Vespene": 1
+  },
+  "ScoreResult": "BuildOrder",
+  "GlossaryCategory": "Unit/Category/KeironUnits",
+  "GlossaryAlias": "Subjecter",
+  "HotkeyCategory": "Unit/Category/KeironUnits",
+  "ShieldArmorName": "Keiron Dispersion Shields",
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "ShieldsStart": 60,
+  "ShieldsMax": 60,
+  "Speed": 3,
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 125,
+    "Vespene": 75
+  },
+  "InnerRadius": 0.5,
+  "CargoSize": 2,
+  "EffectArray": {
+    "Create": "SanctumPulSubDelay"
+  },
+  "GlossaryPriority": 16,
+  "SubgroupPriority": 4,
+  "Icon": "btn-unit-keiron-subjecter",
+  "LifeArmorIcon": "btn-upgrade-keiron-biologicalarmorlevel0",
+  "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+  "Id": "Subjecter",
+  "Weapons": [
+    {
+      "Link": "ForceBlast",
+      "Id": "ForceBlast",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
+      "Name": "Force Blaster",
+      "Amount": 11,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6,
+      "Period": 1.4
+    },
+    {
+      "Link": "EnthrallerQuills",
+      "Id": "EnthrallerQuills",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
+      "Name": "Enthraller Quills",
+      "Amount": 8,
+      "Kind": "Ranged",
+      "DisplayAttackCount": 2,
+      "TargetFilters": "Air",
+      "Range": 6,
+      "Period": 0.91
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "KeironBioArmor",
+      "Id": "KeironBioArmor",
+      "Name": "Keiron Bio Armor"
+    },
+    {
+      "Link": "KeironBioWeapons",
+      "Id": "KeironBioWeapons",
+      "Name": "Keiron Bio Weapons"
+    },
+    {
+      "Link": "KeironShields",
+      "Id": "KeironShields",
+      "Name": "Keiron Shields"
+    },
+    {
+      "Link": "KeironBioArmorLevel1",
+      "Id": "KeironBioArmorLevel1",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel1",
+      "Name": "Keiron Biological Armor Level 1"
+    },
+    {
+      "Link": "KeironBioArmorLevel2",
+      "Id": "KeironBioArmorLevel2",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel2",
+      "Name": "Keiron Biological Armor Level 2"
+    },
+    {
+      "Link": "KeironBioArmorLevel3",
+      "Id": "KeironBioArmorLevel3",
+      "Icon": "btn-upgrade-keiron-biologicalarmorlevel3",
+      "Name": "Keiron Biological Armor Level 3"
+    },
+    {
+      "Link": "KeironBioWeaponsLevel1",
+      "Id": "KeironBioWeaponsLevel1",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel1",
+      "Name": "Keiron Biological Weapons Level 1"
+    },
+    {
+      "Link": "KeironBioWeaponsLevel2",
+      "Id": "KeironBioWeaponsLevel2",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel2",
+      "Name": "Keiron Biological Weapons Level 2"
+    },
+    {
+      "Link": "KeironBioWeaponsLevel3",
+      "Id": "KeironBioWeaponsLevel3",
+      "Icon": "btn-upgrade-keiron-biologicalweaponslevel3",
+      "Name": "Keiron Biological Weapons Level 3"
+    },
+    {
+      "Link": "KeironShieldsLevel1",
+      "Id": "KeironShieldsLevel1",
+      "Icon": "btn-upgrade-keiron-shields-level1",
+      "Name": "Keiron Shields Level 1"
+    },
+    {
+      "Link": "KeironShieldsLevel2",
+      "Id": "KeironShieldsLevel2",
+      "Icon": "btn-upgrade-keiron-shields-level2",
+      "Name": "Keiron Shields Level 2"
+    },
+    {
+      "Link": "KeironShieldsLevel3",
+      "Id": "KeironShieldsLevel3",
+      "Icon": "btn-upgrade-keiron-shields-level3",
+      "Name": "Keiron Shields Level 3"
+    },
+    {
+      "Link": "AmplifiedSphere",
+      "Id": "AmplifiedSphere",
+      "Icon": "btn-upgrade-protoss-fenix-scoutchampionrange",
+      "Name": "Amplified Sphere"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "ProgressRally",
+      "Id": "ProgressRally",
+      "Name": "Progress Rally"
+    },
+    {
+      "Link": "KeironWarpable",
+      "Id": "KeironWarpable",
+      "Name": "Keiron Warpable"
+    },
+    {
+      "Link": "FuseUnfuse",
+      "Id": "FuseUnfuse",
+      "Name": "Unfuse"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "Citadel",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can be upgraded to use Energize.",
+      "Name": "Citadel"
+    },
+    {
+      "Id": "CitadelCharged",
+      "Icon": "btn-building-keiron-citadel",
+      "Description": "Primary structure. Used to create all Keiron units and receive gathered resources. Can use Energize.",
+      "Name": "Citadel"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "ProgressRally,Rally1"
+    },
+    {
+      "Id": "Unfuse",
+      "Icon": "btn-ability-zerg-dehaka-levelup",
+      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Name": "Unfuse",
+      "AbilCmd": "FuseUnfuse,Execute"
+    }
+  ]
+}

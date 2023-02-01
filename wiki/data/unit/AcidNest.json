@@ -1,0 +1,209 @@
+{
+  "Name": "Acid Nest",
+  "Description": "The <span style=\"color: #FFFF80\">Acid Nest</span> explodes for 50 damage to a enemy ground unit that comes into contact with it. Deals 35 splash damage to other units around it.",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Xayi",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 50,
+  "LifeMax": 50,
+  "LifeArmorName": "Xayid Structure Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "Cloaked",
+    "Buried"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "AcidNest",
+  "HotkeyAlias": "AcidNest",
+  "SelectAlias": "AcidNest",
+  "SubgroupAlias": "AcidNest",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AcidNest",
+  "AIEvaluateAlias": "AcidNest",
+  "ReviveType": "AcidNest",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AcidNest/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AcidNest/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField"
+  ],
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "LifeRegenDelay": 3,
+  "LifeRegenRate": 0.5,
+  "Sight": 5,
+  "CostCategory": "Army",
+  "ScoreResult": "BuildOrder",
+  "HotkeyCategory": "Unit/Category/XayidUnits",
+  "Facing": 45,
+  "CostResource": {
+    "Minerals": 10,
+    "Vespene": 10
+  },
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "AcidNest",
+          "Type": "Passive",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "MothershipCoreAttack",
+          "Type": "AbilCmd",
+          "AbilCmd": "AcidNestAttack,Execute",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "ResidualAcid",
+          "Type": "Passive",
+          "Requirements": "UseResidualAcid",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "AcidNest",
+  "PlacementFootprint": "AcidNestPlacement",
+  "ScoreMake": 20,
+  "ScoreKill": 20,
+  "GlossaryPriority": 21,
+  "SubgroupPriority": 41,
+  "GlossaryAlias": "AcidNest",
+  "GlossaryCategory": "Unit/Category/XayidUnits",
+  "Icon": "btn-ability-xayid-prowlerexplosive",
+  "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AcidNest",
+  "Behaviors": [
+    {
+      "Link": "ResidualAcidFate",
+      "Id": "ResidualAcidFate"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "ResidualAcid",
+      "Id": "ResidualAcid",
+      "Icon": "btn-upgrade-xayid-residualacid",
+      "Name": "Residual Acid"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que1",
+      "Id": "que1",
+      "Name": "Queue (1)"
+    },
+    {
+      "Link": "AcidNestAttack",
+      "Id": "AcidNestAttack",
+      "Name": "Acid Nest Attack"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "MothershipCoreAttack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "AcidNestAttack,Execute"
+    },
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "Name": "Headquarters",
+  "Description": "Primary structure. Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Mining Drone</b><br/>- <b>CARR</b>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1500,
+  "LifeMax": 1500,
+  "LifeArmorName": "UPL Building Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 2.5,
+  "SeparationRadius": 2.5,
+  "MinimapRadius": 2.5,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing",
+    "PreventReveal",
+    "TownCamera"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "UPLHeadquarters",
+  "HotkeyAlias": "UPLHeadquarters",
+  "SelectAlias": "UPLHeadquarters",
+  "SubgroupAlias": "UPLHeadquarters",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "CommandCenter",
+  "AIEvaluateAlias": "UPLHeadquarters",
+  "ReviveType": "UPLHeadquarters",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "UPLHeadquarters/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "UPLHeadquarters/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "Sight": 11,
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Cancel",
+          "Type": "AbilCmd",
+          "AbilCmd": "que5CancelToSelection,CancelLast",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "UPLSelectBuilder",
+          "Type": "SelectBuilder",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "RallyMiningDrone",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyHeadquarters,Rally2",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "RallyCARR",
+          "Type": "AbilCmd",
+          "AbilCmd": "RallyHeadquarters,Rally1",
+          "Row": 1,
+          "Column": 4
+        },
+        {
+          "Face": "MiningDrone",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLHeadquartersTrain,Train1",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "CARR",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLHeadquartersTrain,Train3",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "ResearchMiningDroneGrenadeLauncher",
+          "Type": "AbilCmd",
+          "AbilCmd": "UPLForwardOperatingBaseResearch,Research5",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 3,
+  "GlossaryCategory": "Unit/Category/0UPLBuildings",
+  "GlossaryPriority": 1,
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "Facing": 45,
+  "ResourceDropOff": {
+    "Minerals": 1,
+    "Vespene": 1,
+    "Terrazine": 1,
+    "Custom": 1
+  },
+  "LifeArmor": 1,
+  "Food": 15,
+  "CostCategory": "Economy",
+  "CostResource": {
+    "Minerals": 350
+  },
+  "RepairTime": 60,
+  "EffectArray": {
+    "Create": "CCCreateSet",
+    "Birth": "CCBirthSet"
+  },
+  "Footprint": "Footprint5x5Contour",
+  "PlacementFootprint": "Footprint5x5DropOff",
+  "ScoreMake": 400,
+  "ScoreKill": 400,
+  "TacticalAIThink": "AIThinkCommandCenter",
+  "TechAliasArray": [
+    "Alias_UPLHeadquarters"
+  ],
+  "TechTreeProducedUnitArray": [
+    "MiningDrone",
+    "CARR"
+  ],
+  "DataCollection": "UPLHeadquarters",
+  "DeathTime": 1,
+  "DeadFootprint": "Footprint5x5Contour",
+  "Icon": "btn-building-upl-uplheadquarters",
+  "LifeArmorIcon": "btn-upgrade-upl-buildingarmor",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "UPLHeadquarters",
+  "Behaviors": [
+    {
+      "Link": "UnderConstruction",
+      "Id": "UnderConstruction"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "que5CancelToSelection",
+      "Id": "que5CancelToSelection",
+      "Name": "Queue (5) (Cancel To Selection)"
+    },
+    {
+      "Link": "RallyHeadquarters",
+      "Id": "RallyHeadquarters",
+      "Name": "Headquarters - Rally"
+    },
+    {
+      "Link": "UPLHeadquartersTrain",
+      "Id": "UPLHeadquartersTrain",
+      "Name": "Train"
+    },
+    {
+      "Link": "UPLForwardOperatingBaseResearch",
+      "Id": "UPLForwardOperatingBaseResearch",
+      "Name": "Research"
+    }
+  ],
+  "Requirements": [],
+  "Production": [
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Mining Drone"
+    },
+    {
+      "Id": "CARR",
+      "Icon": "btn-unit-upl-carr",
+      "Description": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "CARR"
+    },
+    {
+      "Id": "UPLMiningDronesGrenadeLauncher",
+      "Icon": "btn-ability-upl-miningdronecombatmode",
+      "Name": "UPLMiningDronesGrenadeLauncher"
+    }
+  ],
+  "Producers": [
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Description": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Mining Drone"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel",
+      "AbilCmd": "que5CancelToSelection,CancelLast"
+    },
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "RallyMiningDrone",
+      "Tooltip": "Sends constructed worker units to the designated point. Workers rallied to Mineral Fields or Exhumers will begin gathering automatically.",
+      "Name": "Set Worker Rally Point",
+      "AbilCmd": "RallyHeadquarters,Rally2"
+    },
+    {
+      "Id": "RallyCARR",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends constructed CARR to the designated point.",
+      "Name": "Set Rally Point",
+      "AbilCmd": "RallyHeadquarters,Rally1"
+    },
+    {
+      "Id": "MiningDrone",
+      "Icon": "btn-unit-upl-miningdrone",
+      "Tooltip": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Build Mining Drone",
+      "AbilCmd": "UPLHeadquartersTrain,Train1"
+    },
+    {
+      "Id": "CARR",
+      "Icon": "btn-unit-upl-carr",
+      "Tooltip": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+      "Name": "CARR",
+      "AbilCmd": "UPLHeadquartersTrain,Train3"
+    },
+    {
+      "Id": "ResearchMiningDroneGrenadeLauncher",
+      "Icon": "btn-ability-upl-miningdronecombatmode",
+      "Tooltip": "Mining Drone replaces a harvester arm with a grenade launcher",
+      "Name": "Research  Grenade Launcher",
+      "AbilCmd": "UPLForwardOperatingBaseResearch,Research5"
+    }
+  ]
+}

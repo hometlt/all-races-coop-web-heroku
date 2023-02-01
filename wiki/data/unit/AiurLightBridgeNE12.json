@@ -1,0 +1,101 @@
+{
+  "Name": "Aiur Light Bridge - NE - Height 12 - Retracted",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 10000,
+  "LifeMax": 10000,
+  "LifeArmorName": "None",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 3,
+  "SeparationRadius": 3,
+  "MinimapRadius": 0.375,
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "IgnoreTerrainZInit"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "AiurLightBridgeNE12",
+  "HotkeyAlias": "AiurLightBridgeNE12",
+  "SelectAlias": "AiurLightBridgeNE12",
+  "SubgroupAlias": "AiurLightBridgeNE12",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "AiurLightBridgeNE12",
+  "AIEvaluateAlias": "AiurLightBridgeNE12",
+  "ReviveType": "AiurLightBridgeNE12",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "AiurLightBridgeNE12/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "AiurLightBridgeNE12/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "FogVisibility": "Snapshot",
+  "LifeArmor": 10,
+  "SubgroupPriority": 1,
+  "Facing": 135,
+  "Height": 12,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "BridgeExtend",
+          "Type": "AbilCmd",
+          "AbilCmd": "AiurLightBridgeNE12Out,Execute",
+          "Row": 0,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "Footprint": "AiurLightBridgeNE",
+  "Icon": "btn-missing-kaeo",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "AiurLightBridgeNE12",
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "AiurLightBridgeNE12Out",
+      "Id": "AiurLightBridgeNE12Out",
+      "Name": "Aiur Light Bridge - NE - Height 12 - Extend"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "BridgeExtend",
+      "Icon": "btn-missing-kaeo",
+      "Name": "Bridge Extend",
+      "AbilCmd": "AiurLightBridgeNE12Out,Execute"
+    }
+  ]
+}

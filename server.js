@@ -5,6 +5,7 @@ import express from "express"
 import cors from "cors"
 import path from "path"
 import url from "url"
+import fs from "fs"
 import serveStatic from "serve-static"
 import bodyParser from "body-parser"
 import ejs from "ejs"
@@ -13,8 +14,8 @@ import passport from "passport"
 import cookieParser from "cookie-parser"
 
 // import stormRouter from "./storm/router.js"
-import dataRouter from "./data/router.js"
-import authRouter from "./auth/router.js"
+// import dataRouter from "./data/router.js"
+// import authRouter from "./auth/router.js"
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,17 +39,34 @@ app.use(passport.session());
 
 // app.use('/icons',serveStatic(__dirname + "/icons"))
 
-app.use('/icon/:icon', (req, res) => {res.sendFile(`${__dirname}/services/icon/${req.params.icon}.png`)})
+// app.use('/icon/:icon', (req, res) => {res.sendFile(`${__dirname}/services/icon/${req.params.icon}.png`)})
+//
+// app.use('/info',serveStatic(__dirname + "/services/info"))
+//
+// app.use('/tech',serveStatic(__dirname + "/services/tech"))
 
-app.use('/info',serveStatic(__dirname + "/services/info"))
+app.use('/icons',serveStatic(__dirname + "/icons"))
 
-app.use('/tech',serveStatic(__dirname + "/services/tech"))
+// app.use('/wiki',serveStatic(__dirname + "/wiki"))
 
-app.use('/data', dataRouter)
 
-app.use('/storm', stormRouter)
+app.all('/wiki/*', (req, res) => {
+    if(fs.existsSync(__dirname + req.url )){
+        res.status(200).sendFile(__dirname + req.url);
+    }
+    else{
+        res.status(200).sendFile(__dirname + '/wiki/index.html');
+    }
+});
 
-app.use('/auth', authRouter)
+
+
+
+// app.use('/data', dataRouter)
+
+// app.use('/storm', stormRouter)
+
+// app.use('/auth', authRouter)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //// Starting Server ///////////////////////////////////////////////////////////////////////////////////////////////////

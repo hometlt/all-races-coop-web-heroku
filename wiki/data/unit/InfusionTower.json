@@ -1,0 +1,214 @@
+{
+  "Name": "Infusion Tower",
+  "Description": "Support structure. Regenerates health for all nearby allied units.<br/><span style=\"color: #FFE303\"><br/>There is a detection function</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UED",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 400,
+  "LifeMax": 400,
+  "LifeArmorName": "UED Adaptive Staballoy Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 719.4726,
+  "TurningRate": 719.4726,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.25,
+  "EditorCategories": {
+    "ObjectType": "Structure",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDefeat",
+    "PreventDestroy",
+    "PenaltyRevealed",
+    "UseLineOfSight",
+    "TownAlert",
+    "NoPortraitTalk",
+    "ArmorDisabledWhileConstructing"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "InfusionTower",
+  "HotkeyAlias": "InfusionTower",
+  "SelectAlias": "InfusionTower",
+  "SubgroupAlias": "InfusionTower",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SupplyDepot",
+  "AIEvaluateAlias": "InfusionTower",
+  "ReviveType": "InfusionTower",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "InfusionTower/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "InfusionTower/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Facing": 315,
+  "Mob": "Multiplayer",
+  "FogVisibility": "Snapshot",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Burrow",
+    "Ground",
+    "Structure",
+    "RoachBurrow",
+    "ForceField",
+    "Locust",
+    "Phased",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Structure"
+  ],
+  "LifeArmor": 1,
+  "Sight": 10,
+  "Food": 8,
+  "CostCategory": "Technology",
+  "CostResource": {
+    "Minerals": 225,
+    "Vespene": 50
+  },
+  "AttackTargetPriority": 11,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "CancelBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "BuildInProgress,Cancel",
+          "Row": 2,
+          "Column": 4
+        },
+        {
+          "Face": "BeathaniumInfusionField",
+          "Type": "Passive",
+          "Behavior": "UEDheal",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "UnknownButton3",
+          "Type": "AbilCmd",
+          "AbilCmd": "AbilitiIrradiationBMField,Execute",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "ButtonIonRecharging",
+          "Type": "AbilCmd",
+          "AbilCmd": "AbilityHightRegeneration,Execute",
+          "Row": 0,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "Footprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
+  "ScoreMake": 100,
+  "ScoreKill": 100,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 26,
+  "TechAliasArray": [
+    "Alias_SupplyDepot"
+  ],
+  "GlossaryPriority": 248,
+  "HotkeyCategory": "Unit/Category/UEDUnits",
+  "CargoSize": 8,
+  "EnergyStart": 75,
+  "EnergyMax": 100,
+  "EnergyRegenRate": 0.5625,
+  "Icon": "btn-structure-ued-hivemindemulator",
+  "LifeArmorIcon": "btn-upgrade-stetmann-mechagroundplating-level1",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "InfusionTower",
+  "Behaviors": [
+    {
+      "Link": "UEDheal",
+      "Id": "UEDheal"
+    }
+  ],
+  "Upgrades": [],
+  "Abilities": [
+    {
+      "Link": "BuildInProgress",
+      "Id": "BuildInProgress",
+      "Name": "Build in Progress"
+    },
+    {
+      "Link": "AbilitiIrradiationBMField",
+      "Id": "AbilitiIrradiationBMField"
+    },
+    {
+      "Link": "AbilityHightRegeneration",
+      "Id": "AbilityHightRegeneration"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+      "Name": "Cancel",
+      "AbilCmd": "BuildInProgress,Cancel"
+    },
+    {
+      "Id": "UnknownButton3",
+      "Icon": "btn-ability-mengsk-blimp-propagandamode",
+      "Tooltip": "Irradiate everyone with a Beatan magnetic field in the specified area. Units at the same time <span style=\"color: #FFFF00\">lose the ability to invisibility for 10 seconds.",
+      "Name": "Beatan magnetic field emitter",
+      "AbilCmd": "AbilitiIrradiationBMField,Execute"
+    },
+    {
+      "Id": "ButtonIonRecharging",
+      "Icon": "btn-techupgrade-terran-stabilizermedpacks",
+      "Tooltip": "Restores health by 200% stronger + energy to terrestrial biological targets also by 200%. Duration 30 sec.",
+      "Name": "Ion charging",
+      "AbilCmd": "AbilityHightRegeneration,Execute"
+    }
+  ]
+}

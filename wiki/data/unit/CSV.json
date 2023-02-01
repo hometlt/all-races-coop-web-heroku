@@ -1,0 +1,477 @@
+{
+  "Name": "CSV",
+  "Description": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 220,
+  "LifeMax": 220,
+  "LifeArmorName": "UPL Vehicle Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 360,
+  "Radius": 0.9,
+  "SeparationRadius": 1.1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.2,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "TurnBeforeMove",
+    "AISupport",
+    "AIPressForwardDisabled",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "CSV",
+  "HotkeyAlias": "CSV",
+  "SelectAlias": "CSV",
+  "SubgroupAlias": "CSV",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "CSV",
+  "AIEvaluateAlias": "CSV",
+  "ReviveType": "CSV",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "CSV/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "CSV/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Locust",
+    "Small"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "LifeArmor": 1,
+  "EnergyStart": 250,
+  "EnergyMax": 250,
+  "EnergyRegenRate": 0.75,
+  "Speed": 2.3984,
+  "Acceleration": 1000,
+  "LateralAcceleration": 64,
+  "Sight": 11,
+  "Food": -6,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 225,
+    "Vespene": 100
+  },
+  "RepairTime": 45,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "CSVDeploy",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVDeploy,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "CSVUndeploy",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVUndeploy,Execute",
+          "ShowInGlossary": 0,
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "CSVRepairPulse",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVRepairPulse,Execute",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "CSVUnloadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVTransport,UnloadAll",
+          "Row": 1,
+          "Column": 3
+        },
+        {
+          "Face": "CSVSupplyLineManagement",
+          "Type": "Passive",
+          "AbilCmd": "attack,Execute",
+          "Behavior": "CSVSupplyLineManagement",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "CSVPersonnelCarrier",
+          "Type": "Passive",
+          "Requirements": "HaveCSVPersonnelCarrier",
+          "ShowInGlossary": 0,
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "CSVLoadAll",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVTransportDamaged,Execute",
+          "Row": 2,
+          "Column": 3
+        },
+        {
+          "Face": "CSVLoad",
+          "Type": "AbilCmd",
+          "AbilCmd": "CSVTransport,Load",
+          "Row": 1,
+          "Column": 2
+        },
+        {
+          "Face": "APCSmokeGrenade",
+          "Type": "AbilCmd",
+          "AbilCmd": "APCSmokeGrenade,Execute",
+          "Row": 2,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.9,
+  "CargoSize": 4,
+  "ScoreMake": 350,
+  "ScoreKill": 350,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 44,
+  "TechAliasArray": [
+    "Alias_CSV"
+  ],
+  "GlossaryCategory": "Unit/Category/0UPLUnits",
+  "GlossaryPriority": 44,
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "AlliedPushPriority": 15,
+  "Icon": "btn-unit-upl-csv",
+  "LifeArmorIcon": "btn-upgrades-upl-vehicleplating-lvl0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "CSV",
+  "Weapons": [
+    {
+      "Link": "CSV",
+      "Turret": "CSVTurret",
+      "Id": "CSV",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl0",
+      "Name": "GAL 40 mm Turret",
+      "Amount": 10,
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 1.6
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "CSVSupplyLineManagement",
+      "Id": "CSVSupplyLineManagement"
+    },
+    {
+      "Link": "CSVTransportHealer",
+      "Id": "CSVTransportHealer"
+    },
+    {
+      "Link": "CSVInjuredInfantryNearby",
+      "Id": "CSVInjuredInfantryNearby"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UPLVehicleArmor",
+      "Id": "UPLVehicleArmor",
+      "Name": "UPL Vehicle Plating"
+    },
+    {
+      "Link": "UPLVehicleWeapons",
+      "Id": "UPLVehicleWeapons",
+      "Name": "UPL Vehicle Weapons"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel1",
+      "Id": "UPLVehiclePlatingLevel1",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl1",
+      "Name": "UPL Vehicle Plating Level 1"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel2",
+      "Id": "UPLVehiclePlatingLevel2",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl2",
+      "Name": "UPL Vehicle Plating Level 2"
+    },
+    {
+      "Link": "UPLVehiclePlatingLevel3",
+      "Id": "UPLVehiclePlatingLevel3",
+      "Icon": "btn-upgrades-upl-vehicleplating-lvl3",
+      "Name": "UPL Vehicle Plating Level 3"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel1",
+      "Id": "UPLVehicleWeaponsLevel1",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl1",
+      "Name": "UPL Vehicle Weapons Level 1"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel2",
+      "Id": "UPLVehicleWeaponsLevel2",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl2",
+      "Name": "UPL Vehicle Weapons Level 2"
+    },
+    {
+      "Link": "UPLVehicleWeaponsLevel3",
+      "Id": "UPLVehicleWeaponsLevel3",
+      "Icon": "btn-upgrades-upl-vehicleweapons-lvl3",
+      "Name": "UPL Vehicle Weapons Level 3"
+    },
+    {
+      "Link": "CSVSupplyLineManagement",
+      "Id": "CSVSupplyLineManagement",
+      "Icon": "btn-ability-upl-supplymanagement",
+      "Name": "CSVSupplyLineManagement"
+    },
+    {
+      "Link": "CSVPersonnelCarrier",
+      "Id": "CSVPersonnelCarrier",
+      "Icon": "btn-ability-upl-personnelcarrier",
+      "Name": "CSVPersonnelCarrier"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "CSVRepairPulse",
+      "Id": "CSVRepairPulse",
+      "Name": "CSV Repair Pulse"
+    },
+    {
+      "Link": "CSVDeploy",
+      "Id": "CSVDeploy",
+      "Name": "Deploy"
+    },
+    {
+      "Link": "CSVTransport",
+      "Id": "CSVTransport",
+      "Name": "CSV Transport"
+    },
+    {
+      "Link": "CSVTransportDamaged",
+      "Id": "CSVTransportDamaged",
+      "Name": "CSV Transport Damaged"
+    },
+    {
+      "Link": "APCSmokeGrenade",
+      "Id": "APCSmokeGrenade",
+      "Name": "APC Smoke Grenade"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "UPLForwardOperatingBase",
+      "Icon": "btn-building-upl-uplforwardoperatingbase",
+      "Description": "Support Unit Production<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Infantry Officer</b><br/>- <b>CSV</b>",
+      "Name": "Forward Operating Base"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "CSVDeploy",
+      "Icon": "btn-ability-upl-deploy",
+      "Tooltip": "Allows CSV to repair vehicles and use other abilities.  CSV cannot move while deployed.",
+      "Name": "Deploy Base Mode",
+      "AbilCmd": "CSVDeploy,Execute"
+    },
+    {
+      "Id": "CSVUndeploy",
+      "Icon": "btn-unit-upl-csv",
+      "Tooltip": "Allows CSV to move.  <br/><br/>CSV cannot use abilities while in vehicle mode.",
+      "Name": "Engage Vehicle Mode",
+      "AbilCmd": "CSVUndeploy,Execute"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "CSVRepairPulse",
+      "Icon": "btn-ability-upl-naniteregeneration",
+      "Tooltip": "Spends energy to Repair vehicles in a radius of <b>4</b>",
+      "Name": "Repair Pulse",
+      "AbilCmd": "CSVRepairPulse,Execute"
+    },
+    {
+      "Id": "CSVUnloadAll",
+      "Icon": "btn-ability-upl-undeploy",
+      "Tooltip": "Unloads all onboard infantry.",
+      "Name": "Unload Infantry",
+      "AbilCmd": "CSVTransport,UnloadAll"
+    },
+    {
+      "Id": "CSVSupplyLineManagement",
+      "Icon": "btn-ability-upl-supplymanagement",
+      "Tooltip": "When the CSV is deployed nearby mechanical vehicles gain <span style=\"color: #80FFFF\"><b>25</b>%</span> increased weapon speed",
+      "Name": "Supply Line Management",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "CSVLoadAll",
+      "Icon": "btn-ability-upl-firstaid",
+      "Tooltip": "Loads nearby injured infantry into the CSV.",
+      "Name": "Load Injured Infantry",
+      "AbilCmd": "CSVTransportDamaged,Execute"
+    },
+    {
+      "Id": "CSVLoad",
+      "Icon": "btn-ability-upl-deploy",
+      "Tooltip": "Loads infantry into the CSV.",
+      "Name": "Load Infantry",
+      "AbilCmd": "CSVTransport,Load"
+    },
+    {
+      "Id": "APCSmokeGrenade",
+      "Tooltip": "Chemical smoke cloud makes friendly units invisible and provide them limited vision on enemy cloaked objects within the chemical cloud",
+      "Name": "Smoke Grenade",
+      "AbilCmd": "APCSmokeGrenade,Execute"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "Name": "Liberator",
+  "Description": "Immobile defender. Deals heavy single target damage to ground units. Can switch into Fighter mode to provide air support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 180,
+  "LifeMax": 180,
+  "LifeArmorName": "Terran Ship Plating",
+  "Mover": "Fly",
+  "StationaryTurningRate": 1499.9414,
+  "TurningRate": 1499.9414,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AIThreatGround",
+    "AIThreatAir",
+    "ArmySelect"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "Liberator",
+  "HotkeyAlias": "Liberator",
+  "SelectAlias": "Liberator",
+  "SubgroupAlias": "Liberator",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "LiberatorAG",
+  "AIEvaluateAlias": "LiberatorAG",
+  "ReviveType": "LiberatorAG",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "LiberatorAG/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "LiberatorAG/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "TechAliasArray": [
+    "Alias_Liberator"
+  ],
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Flying"
+  ],
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "Acceleration": 3.5,
+  "Sight": 10,
+  "Height": 3.75,
+  "VisionHeight": 4,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 150
+  },
+  "RepairTime": 60,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "LiberatorAAMode",
+          "Type": "AbilCmd",
+          "AbilCmd": "LiberatorAATarget,Execute",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "LiberatorAGRangeUpgrade",
+          "Type": "Passive",
+          "Requirements": "HaveLiberatorRange",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "ScoreMake": 300,
+  "ScoreKill": 300,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 72,
+  "TacticalAIThink": "AIThinkLiberatorAG",
+  "Icon": "btn-ability-terran-liberator-agmode",
+  "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "LiberatorAG",
+  "Weapons": [
+    {
+      "Link": "LiberatorAGWeapon",
+      "Turret": "LiberatorAG",
+      "Id": "LiberatorAGWeapon",
+      "Icon": "btn-upgrade-terran-shipweaponslevel0",
+      "Name": "Concord Cannon",
+      "Amount": {
+        "value": 75
+      },
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 10,
+      "Period": 1.6
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "LiberatorInitialMovable",
+      "Id": "LiberatorInitialMovable"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranVehicleAndShipArmors",
+      "Id": "TerranVehicleAndShipArmors",
+      "Name": "Terran Vehicle And Ship Plating"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel1",
+      "Id": "TerranVehicleAndShipArmorsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "Name": "Terran Vehicle and Ship Plating Level 1"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel2",
+      "Id": "TerranVehicleAndShipArmorsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "Name": "Terran Vehicle and Ship Plating Level 2"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel3",
+      "Id": "TerranVehicleAndShipArmorsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "Name": "Terran Vehicle and Ship Plating Level 3"
+    },
+    {
+      "Link": "LiberatorAGRangeUpgrade",
+      "Id": "LiberatorAGRangeUpgrade",
+      "Icon": "btn-upgrade-terran-advanceballistics",
+      "Name": "Advanced Ballistics"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "LiberatorMorphtoAA",
+      "Id": "LiberatorMorphtoAA",
+      "Name": "Morph to AA"
+    },
+    {
+      "Link": "LiberatorMorphtoAG",
+      "Id": "LiberatorMorphtoAG",
+      "Name": "Morph to AG"
+    },
+    {
+      "Link": "LiberatorAATarget",
+      "Id": "LiberatorAATarget",
+      "Name": "AA Target"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "LiberatorAAMode",
+      "Icon": "btn-ability-terran-liberator-aamode",
+      "Tooltip": "Reverts to Fighter Mode. In this mode Liberators can move, but they can only attack air targets.",
+      "Name": "Fighter Mode",
+      "AbilCmd": "LiberatorAATarget,Execute"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

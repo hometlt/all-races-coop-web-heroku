@@ -1,0 +1,350 @@
+{
+  "Name": "Rocket Trooper",
+  "Description": "Anti-Armor<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "UPL",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 40,
+  "LifeMax": 40,
+  "LifeArmorName": "UPL Infantry Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.375,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "InfantryRocket",
+  "HotkeyAlias": "InfantryRocket",
+  "SelectAlias": "InfantryRocket",
+  "SubgroupAlias": "InfantryRocket",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "InfantryRocket",
+  "AIEvaluateAlias": "InfantryRocket",
+  "ReviveType": "InfantryRocket",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 33,
+      "Anim": 33,
+      "Turn": 33
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "InfantryRocket/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "InfantryRocket/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "Mob": "Multiplayer",
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField"
+  ],
+  "Speed": 2.25,
+  "Acceleration": 1000,
+  "LateralAcceleration": 69.125,
+  "Sight": 10,
+  "Food": -1,
+  "CostCategory": "Army",
+  "RepairTime": 25,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 15,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "InfantryRocketAOEResearched",
+          "Type": "Passive",
+          "Requirements": "InfantryRocketAOEResearched",
+          "Row": 1,
+          "Column": 0
+        },
+        {
+          "Face": "InfantryRifleRangeUpgrade",
+          "Type": "Passive",
+          "Requirements": "HaveInfantryRifleRangeUpgrade",
+          "Row": 1,
+          "Column": 1
+        },
+        {
+          "Face": "InfantryMedkit",
+          "Type": "Passive",
+          "Requirements": "InfantryMedkit@ChargeAvailable",
+          "Row": 2,
+          "Column": 2
+        },
+        {
+          "Face": "InfantryMedkit",
+          "Type": "Passive",
+          "Behavior": "InfantryMedkit@Supressed",
+          "Requirements": "InfantryMedkit@Have",
+          "Row": 2,
+          "Column": 2
+        }
+      ]
+    }
+  ],
+  "InnerRadius": 0.3125,
+  "CargoSize": 1,
+  "ScoreMake": 125,
+  "ScoreKill": 125,
+  "ScoreResult": "BuildOrder",
+  "SubgroupPriority": 12,
+  "GlossaryCategory": "Unit/Category/0UPLUnits",
+  "HotkeyCategory": "Unit/Category/UPLUnits",
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "CostResource": {
+    "Minerals": 50,
+    "Vespene": 25
+  },
+  "GlossaryPriority": 25,
+  "GlossaryStrongArray": [
+    "Roach",
+    "Ultralisk"
+  ],
+  "GlossaryWeakArray": [
+    "Zergling",
+    "Hydralisk"
+  ],
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
+  "AlliedPushPriority": 5,
+  "Icon": "btn-unit-upl-infantryrocket",
+  "LifeArmorIcon": "btn-upgrades-upl-infantryarmor-lvl0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "InfantryRocket",
+  "Weapons": [
+    {
+      "Link": "InfantryRocket",
+      "Id": "InfantryRocket",
+      "Icon": "btn-upgrades-upl-infantryweapons-lvl0",
+      "Name": "Delta Dynamics Legal-80 Rocket Launcher \"Pro Bono\"",
+      "Amount": 15,
+      "Kind": "Ranged",
+      "TargetFilters": "",
+      "Range": 7,
+      "Period": 1.5
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "InfantryMedkit",
+      "Id": "InfantryMedkit"
+    },
+    {
+      "Link": "InfantryMedkit@Handler",
+      "Id": "InfantryMedkit@Handler"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "UPLInfantryArmor",
+      "Id": "UPLInfantryArmor",
+      "Name": "UPL Infantry Armor"
+    },
+    {
+      "Link": "UPLInfantryWeapons",
+      "Id": "UPLInfantryWeapons",
+      "Name": "UPL Infantry Weapons"
+    },
+    {
+      "Link": "LotC_InfantryCamoSkin",
+      "Id": "LotC_InfantryCamoSkin",
+      "Name": "LotC_InfantryCamoSkin"
+    },
+    {
+      "Link": "UPLInfantryArmorLevel1",
+      "Id": "UPLInfantryArmorLevel1",
+      "Icon": "btn-upgrades-upl-infantryarmor-lvl1",
+      "Name": "UPL Infantry Armor Level 1"
+    },
+    {
+      "Link": "UPLInfantryArmorLevel2",
+      "Id": "UPLInfantryArmorLevel2",
+      "Icon": "btn-upgrades-upl-infantryarmor-lvl2",
+      "Name": "UPL Infantry Armor Level 2"
+    },
+    {
+      "Link": "UPLInfantryArmorLevel3",
+      "Id": "UPLInfantryArmorLevel3",
+      "Icon": "btn-upgrades-upl-infantryarmor-lvl3",
+      "Name": "UPL Infantry Armor Level 3"
+    },
+    {
+      "Link": "UPLInfantryWeaponsLevel1",
+      "Id": "UPLInfantryWeaponsLevel1",
+      "Icon": "btn-upgrades-upl-infantryweapons-lvl1",
+      "Name": "UPL Infantry Weapons Level 1"
+    },
+    {
+      "Link": "UPLInfantryWeaponsLevel2",
+      "Id": "UPLInfantryWeaponsLevel2",
+      "Icon": "btn-upgrades-upl-infantryweapons-lvl2",
+      "Name": "UPL Infantry Weapons Level 2"
+    },
+    {
+      "Link": "UPLInfantryWeaponsLevel3",
+      "Id": "UPLInfantryWeaponsLevel3",
+      "Icon": "btn-upgrades-upl-infantryweapons-lvl3",
+      "Name": "UPL Infantry Weapons Level 3"
+    },
+    {
+      "Link": "InfantryMedkit",
+      "Id": "InfantryMedkit",
+      "Name": "Upgrade"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "UPLBillet",
+      "Icon": "btn-building-upl-uplbillet",
+      "Description": "Infantry training facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- <b>Combat Infantry</b><br/>- <b>Heavy Gunner</b><br/>- <b>Incinerator</b><br/>- <b>Mortar Trooper</b><br/>- <b>Rocket Trooper</b>",
+      "Name": "Billet"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    }
+  ]
+}

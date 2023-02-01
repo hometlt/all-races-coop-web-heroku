@@ -1,0 +1,355 @@
+{
+  "Name": "Siege Tank",
+  "Description": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Terr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 175,
+  "LifeMax": 175,
+  "LifeArmorName": "Terran Vehicle Plating",
+  "Mover": "Ground",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 0.875,
+  "SeparationRadius": 1,
+  "MinimapRadius": 1,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.5,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "AISplash",
+    "ArmySelect"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "SiegeTank",
+  "HotkeyAlias": "SiegeTank",
+  "SelectAlias": "SiegeTank",
+  "SubgroupAlias": "SiegeTank",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "SiegeTankSieged",
+  "AIEvaluateAlias": "SiegeTankSieged",
+  "ReviveType": "SiegeTankSieged",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "SiegeTankSieged/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "SiegeTankSieged/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "TechAliasArray": [
+    "Alias_SiegeTank"
+  ],
+  "Facing": 45,
+  "Mob": "Multiplayer",
+  "LifeArmor": 1,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 150,
+    "Vespene": 125
+  },
+  "RepairTime": 45,
+  "AttackTargetPriority": 20,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 50,
+  "InnerRadius": 0.875,
+  "Footprint": "FootprintSieged",
+  "ScoreKill": 275,
+  "SubgroupPriority": 74,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "ForceField",
+    "Small",
+    "Locust"
+  ],
+  "Sight": 11,
+  "Attributes": [
+    "Armored",
+    "Mechanical"
+  ],
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "AttackBuilding",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "Unsiege",
+          "Type": "AbilCmd",
+          "AbilCmd": "Unsiege,Execute",
+          "Row": 2,
+          "Column": 1
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/TerranUnits",
+  "HotkeyCategory": "Unit/Category/TerranUnits",
+  "GlossaryPriority": 135,
+  "GlossaryStrongArray": [
+    "Marine",
+    "Roach",
+    "Stalker"
+  ],
+  "GlossaryWeakArray": [
+    "Banshee",
+    "Mutalisk",
+    "Immortal"
+  ],
+  "Icon": "btn-unit-terran-siegetanksiegemode",
+  "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
+  "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+  "Id": "SiegeTankSieged",
+  "Weapons": [
+    {
+      "Link": "CrucioShockCannon",
+      "Turret": "SiegeTankSieged",
+      "Id": "CrucioShockCannon",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
+      "Name": "Crucio Shock Cannon",
+      "Amount": 40,
+      "AttributeBonus": {
+        "Armored": 30
+      },
+      "Kind": "Splash",
+      "TargetFilters": "Ground",
+      "Range": 13,
+      "Period": 3
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "TerranVehicleWeapons",
+      "Id": "TerranVehicleWeapons",
+      "Name": "Terran Vehicle Weapons"
+    },
+    {
+      "Link": "TerranVehicleArmors",
+      "Id": "TerranVehicleArmors",
+      "Name": "Terran Vehicle Armors"
+    },
+    {
+      "Link": "TerranVehicleWeaponsLevel1",
+      "Id": "TerranVehicleWeaponsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel1",
+      "Name": "Terran Vehicle Weapons Level 1"
+    },
+    {
+      "Link": "TerranVehicleWeaponsLevel2",
+      "Id": "TerranVehicleWeaponsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel2",
+      "Name": "Terran Vehicle Weapons Level 2"
+    },
+    {
+      "Link": "TerranVehicleWeaponsLevel3",
+      "Id": "TerranVehicleWeaponsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel3",
+      "Name": "Terran Vehicle Weapons Level 3"
+    },
+    {
+      "Link": "TerranVehicleArmorsLevel1",
+      "Id": "TerranVehicleArmorsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "Name": "Terran Vehicle Plating Level 1"
+    },
+    {
+      "Link": "TerranVehicleArmorsLevel2",
+      "Id": "TerranVehicleArmorsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "Name": "Terran Vehicle Plating Level 2"
+    },
+    {
+      "Link": "TerranVehicleArmorsLevel3",
+      "Id": "TerranVehicleArmorsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "Name": "Terran Vehicle Plating Level 3"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeapons",
+      "Id": "TerranVehicleAndShipWeapons",
+      "Name": "Terran Vehicle And Ship Weapons"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmors",
+      "Id": "TerranVehicleAndShipArmors",
+      "Name": "Terran Vehicle And Ship Plating"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel1",
+      "Id": "TerranVehicleAndShipWeaponsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel1",
+      "Name": "Terran Vehicle And Ship Weapons Level 1"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel2",
+      "Id": "TerranVehicleAndShipWeaponsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel2",
+      "Name": "Terran Vehicle And Ship Weapons Level 2"
+    },
+    {
+      "Link": "TerranVehicleAndShipWeaponsLevel3",
+      "Id": "TerranVehicleAndShipWeaponsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel3",
+      "Name": "Terran Vehicle And Ship Weapons Level 3"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel1",
+      "Id": "TerranVehicleAndShipArmorsLevel1",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "Name": "Terran Vehicle and Ship Plating Level 1"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel2",
+      "Id": "TerranVehicleAndShipArmorsLevel2",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "Name": "Terran Vehicle and Ship Plating Level 2"
+    },
+    {
+      "Link": "TerranVehicleAndShipArmorsLevel3",
+      "Id": "TerranVehicleAndShipArmorsLevel3",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "Name": "Terran Vehicle and Ship Plating Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "Unsiege",
+      "Id": "Unsiege",
+      "Name": "Unsiege"
+    }
+  ],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "AttackBuilding",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "Unsiege",
+      "Icon": "btn-unit-terran-siegetank",
+      "Tooltip": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage.",
+      "Name": "Tank Mode",
+      "AbilCmd": "Unsiege,Execute"
+    }
+  ]
+}

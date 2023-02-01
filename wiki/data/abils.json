@@ -1,0 +1,4092 @@
+[
+  {
+    "Id": "ReviveSelf",
+    "Name": "Revive Self"
+  },
+  {
+    "Id": "ReviveSelfAtTarget",
+    "Name": "Revive Self At Target"
+  },
+  {
+    "Id": "ReviveSelfReplaceTarget",
+    "Name": "Revive Self Replace Target"
+  },
+  {
+    "Id": "ReviveSelfOnCreep",
+    "Name": "Revive Self On Creep"
+  },
+  {
+    "Id": "Taunt",
+    "Name": "Taunt"
+  },
+  {
+    "Id": "stop",
+    "Name": "Stop"
+  },
+  {
+    "Id": "HoldFire",
+    "Name": "Hold Fire"
+  },
+  {
+    "Id": "move",
+    "Name": "Move"
+  },
+  {
+    "Id": "Beacon"
+  },
+  {
+    "Id": "SimpleTargetAbil"
+  },
+  {
+    "Id": "WizSimpleSkillshot",
+    "Name": "Wizard Simple Skillshot"
+  },
+  {
+    "Id": "WizSimpleChain"
+  },
+  {
+    "Id": "WizSimpleGrenade"
+  },
+  {
+    "Id": "MetalGateDefaultLower",
+    "Name": "Metal Gate Default Lower"
+  },
+  {
+    "Id": "MetalGateDefaultRaise",
+    "Name": "Metal Gate Default Raise"
+  },
+  {
+    "Id": "TerranAddOns",
+    "Name": "Terran AddOns"
+  },
+  {
+    "Id": "TerranBuildingLiftOff",
+    "Name": "Terran Building Lift Off"
+  },
+  {
+    "Id": "TerranBuildingLand",
+    "Name": "Terran Building Land"
+  },
+  {
+    "Id": "Refund",
+    "Name": "Refund"
+  },
+  {
+    "Id": "Salvage",
+    "Name": "Salvage"
+  },
+  {
+    "Id": "DisguiseChangeling",
+    "Name": "Disguise Changeling"
+  },
+  {
+    "Id": "SprayParent"
+  },
+  {
+    "Id": "LoadOutSpray",
+    "Name": "Load Out Spray"
+  },
+  {
+    "Id": "SprayTerran"
+  },
+  {
+    "Id": "SprayZerg"
+  },
+  {
+    "Id": "SprayProtoss"
+  },
+  {
+    "Id": "SalvageShared",
+    "Name": "Salvage"
+  },
+  {
+    "Id": "Corruption",
+    "Name": "Corruption"
+  },
+  {
+    "Id": "GhostHoldFire",
+    "Name": "Hold Fire"
+  },
+  {
+    "Id": "GhostWeaponsFree",
+    "Name": "Weapons Free"
+  },
+  {
+    "Id": "MorphToInfestedTerran",
+    "Name": "Morph To Infested Terran"
+  },
+  {
+    "Id": "Explode",
+    "Name": "Explode"
+  },
+  {
+    "Id": "FleetBeaconResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "FungalGrowth",
+    "Name": "Fungal Growth"
+  },
+  {
+    "Id": "GuardianShield",
+    "Name": "Guardian Shield"
+  },
+  {
+    "Id": "MULERepair",
+    "Name": "Repair"
+  },
+  {
+    "Id": "MorphZerglingToBaneling",
+    "Name": "Morph (Zergling -> Baneling)"
+  },
+  {
+    "Id": "NexusTrainMothership",
+    "Name": "Train Mothership"
+  },
+  {
+    "Id": "Feedback",
+    "Name": "Feedback"
+  },
+  {
+    "Id": "MassRecall",
+    "Name": "Mass Recall"
+  },
+  {
+    "Id": "PlacePointDefenseDrone",
+    "Name": "Place Point Defense Drone"
+  },
+  {
+    "Id": "HallucinationArchon",
+    "Name": "Hallucination (Archon)"
+  },
+  {
+    "Id": "HallucinationColossus",
+    "Name": "Hallucination (Colossus)"
+  },
+  {
+    "Id": "HallucinationHighTemplar",
+    "Name": "Hallucination (High Templar)"
+  },
+  {
+    "Id": "HallucinationImmortal",
+    "Name": "Hallucination (Immortal)"
+  },
+  {
+    "Id": "HallucinationPhoenix",
+    "Name": "Hallucination (Phoenix)"
+  },
+  {
+    "Id": "HallucinationProbe",
+    "Name": "Hallucination (Probe)"
+  },
+  {
+    "Id": "HallucinationStalker",
+    "Name": "Hallucination (Stalker)"
+  },
+  {
+    "Id": "HallucinationVoidRay",
+    "Name": "Hallucination (Void Ray)"
+  },
+  {
+    "Id": "HallucinationWarpPrism",
+    "Name": "Hallucination (Warp Prism)"
+  },
+  {
+    "Id": "HallucinationZealot",
+    "Name": "Hallucination (Zealot)"
+  },
+  {
+    "Id": "MULEGather",
+    "Name": "Gather"
+  },
+  {
+    "Id": "SeekerMissile",
+    "Name": "Seeker Missile"
+  },
+  {
+    "Id": "CalldownMULE",
+    "Name": "Calldown MULE"
+  },
+  {
+    "Id": "GravitonBeam",
+    "Name": "Graviton Beam"
+  },
+  {
+    "Id": "BuildinProgressNydusCanal",
+    "Name": "Buildin Progress Nydus Canal"
+  },
+  {
+    "Id": "Siphon",
+    "Name": "Siphon Life"
+  },
+  {
+    "Id": "Leech",
+    "Name": "Leech"
+  },
+  {
+    "Id": "SpawnChangeling",
+    "Name": "Spawn Changeling"
+  },
+  {
+    "Id": "DisguiseAsZealot",
+    "Name": "Disguise As Zealot"
+  },
+  {
+    "Id": "DisguiseAsMarineWithShield",
+    "Name": "Disguise As Marine With Shield"
+  },
+  {
+    "Id": "DisguiseAsMarineWithoutShield",
+    "Name": "Disguise As Marine Without Shield"
+  },
+  {
+    "Id": "DisguiseAsZerglingWithWings",
+    "Name": "Disguise As Zergling With Wings"
+  },
+  {
+    "Id": "DisguiseAsZerglingWithoutWings",
+    "Name": "Disguise As Zergling Without Wings"
+  },
+  {
+    "Id": "PhaseShift",
+    "Name": "Phase Shift"
+  },
+  {
+    "Id": "Rally",
+    "Name": "Rally"
+  },
+  {
+    "Id": "ProgressRally",
+    "Name": "Progress Rally"
+  },
+  {
+    "Id": "RallyCommand",
+    "Name": "Command Center - Rally"
+  },
+  {
+    "Id": "RallyNexus",
+    "Name": "Nexus - Rally"
+  },
+  {
+    "Id": "RallyHatchery",
+    "Name": "Hatchery - Rally"
+  },
+  {
+    "Id": "RoachWarrenResearch",
+    "Name": "Research (Roach Warren)"
+  },
+  {
+    "Id": "SapStructure",
+    "Name": "Sap Structure"
+  },
+  {
+    "Id": "InfestedTerrans",
+    "Name": "Infested Terrans"
+  },
+  {
+    "Id": "NeuralParasite",
+    "Name": "Neural Parasite"
+  },
+  {
+    "Id": "SpawnLarva",
+    "Name": "Larva Swarm"
+  },
+  {
+    "Id": "StimpackMarauder",
+    "Name": "StimpackMara"
+  },
+  {
+    "Id": "SupplyDrop",
+    "Name": "Supply Drop"
+  },
+  {
+    "Id": "250mmStrikeCannons",
+    "Name": "250mm Strike Cannons"
+  },
+  {
+    "Id": "TemporalRift",
+    "Name": "Temporal Rift"
+  },
+  {
+    "Id": "TimeWarp",
+    "Name": "Chrono Boost"
+  },
+  {
+    "Id": "UltraliskCavernResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "WormholeTransit",
+    "Name": "Wormhole Transit"
+  },
+  {
+    "Id": "attack",
+    "Name": "Attack"
+  },
+  {
+    "Id": "SCVHarvest",
+    "Name": "Gather (SCV)"
+  },
+  {
+    "Id": "ProbeHarvest",
+    "Name": "Gather (Probe)"
+  },
+  {
+    "Id": "AttackWarpPrism",
+    "Name": "Attack (Warp Prism)"
+  },
+  {
+    "Id": "que1",
+    "Name": "Queue (1)"
+  },
+  {
+    "Id": "que5",
+    "Name": "Queue (5)"
+  },
+  {
+    "Id": "que5CancelToSelection",
+    "Name": "Queue (5) (Cancel To Selection)"
+  },
+  {
+    "Id": "que5LongBlend",
+    "Name": "Queue (5) Long Blend"
+  },
+  {
+    "Id": "que5Addon",
+    "Name": "Queue"
+  },
+  {
+    "Id": "BuildInProgress",
+    "Name": "Build in Progress"
+  },
+  {
+    "Id": "Repair",
+    "Name": "Repair"
+  },
+  {
+    "Id": "TerranBuild",
+    "Name": "Build (SCV)"
+  },
+  {
+    "Id": "RavenBuild",
+    "Name": "Build"
+  },
+  {
+    "Id": "Stimpack",
+    "Name": "Stimpack"
+  },
+  {
+    "Id": "GhostCloak",
+    "Name": "Personal Cloaking"
+  },
+  {
+    "Id": "Snipe",
+    "Name": "Sniper"
+  },
+  {
+    "Id": "MedivacHeal",
+    "Name": "Heal"
+  },
+  {
+    "Id": "SiegeMode",
+    "Name": "Siege"
+  },
+  {
+    "Id": "Unsiege",
+    "Name": "Unsiege"
+  },
+  {
+    "Id": "BansheeCloak",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "MedivacTransport",
+    "Name": "Load-Unload (Medivac)"
+  },
+  {
+    "Id": "ScannerSweep",
+    "Name": "Scanner Sweep"
+  },
+  {
+    "Id": "Yamato",
+    "Name": "Yamato Gun"
+  },
+  {
+    "Id": "AssaultMode",
+    "Name": "Assault Mode"
+  },
+  {
+    "Id": "FighterMode",
+    "Name": "Fighter Mode"
+  },
+  {
+    "Id": "BunkerTransport",
+    "Name": "Load-Unload (Bunker)"
+  },
+  {
+    "Id": "CommandCenterTransport",
+    "Name": "Load-Unload (Command Center)"
+  },
+  {
+    "Id": "CommandCenterLiftOff",
+    "Name": "Lift Off (Command Center)"
+  },
+  {
+    "Id": "CommandCenterLand",
+    "Name": "Land (Command Center)"
+  },
+  {
+    "Id": "BarracksAddOns",
+    "Name": "AddOns"
+  },
+  {
+    "Id": "FactoryAddOns",
+    "Name": "AddOns"
+  },
+  {
+    "Id": "StarportAddOns",
+    "Name": "AddOns"
+  },
+  {
+    "Id": "FactoryLiftOff",
+    "Name": "Lift Off"
+  },
+  {
+    "Id": "FactoryLand",
+    "Name": "Land"
+  },
+  {
+    "Id": "StarportLiftOff",
+    "Name": "Lift Off"
+  },
+  {
+    "Id": "StarportLand",
+    "Name": "Land"
+  },
+  {
+    "Id": "CommandCenterTrain",
+    "Name": "Train (Command Center)"
+  },
+  {
+    "Id": "BarracksLiftOff",
+    "Name": "Lift Off"
+  },
+  {
+    "Id": "BarracksLand",
+    "Name": "Land"
+  },
+  {
+    "Id": "SupplyDepotLower",
+    "Name": "Lower"
+  },
+  {
+    "Id": "SupplyDepotRaise",
+    "Name": "Raise"
+  },
+  {
+    "Id": "BarracksTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "FactoryTrain",
+    "Name": "Train (Factory)"
+  },
+  {
+    "Id": "StarportTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "EngineeringBayResearch",
+    "Name": "Research (Engineering Bay)"
+  },
+  {
+    "Id": "MercCompoundResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "ArmSiloWithNuke",
+    "Name": "Arm Magazine (Nuke)"
+  },
+  {
+    "Id": "BarracksTechLabResearch",
+    "Name": "Tech Lab Research (Barracks)"
+  },
+  {
+    "Id": "FactoryTechLabResearch",
+    "Name": "Tech Lab Research (Factory)"
+  },
+  {
+    "Id": "StarportTechLabResearch",
+    "Name": "Tech Lab Research (Starport)"
+  },
+  {
+    "Id": "GhostAcademyResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "ArmoryResearch",
+    "Name": "Research (Armory)"
+  },
+  {
+    "Id": "ProtossBuild",
+    "Name": "Build (Probe)"
+  },
+  {
+    "Id": "WarpPrismTransport",
+    "Name": "Load-Unload (Shuttle)"
+  },
+  {
+    "Id": "GatewayTrain",
+    "Name": "Train (Gateway)"
+  },
+  {
+    "Id": "StargateTrain",
+    "Name": "Train (Stargate)"
+  },
+  {
+    "Id": "RoboticsFacilityTrain",
+    "Name": "Train (Robotics Facility)"
+  },
+  {
+    "Id": "NexusTrain",
+    "Name": "Train (Nexus)"
+  },
+  {
+    "Id": "PsiStorm",
+    "Name": "Psi Storm"
+  },
+  {
+    "Id": "HangarQueue5",
+    "Name": "Queue (5) (Hangar)"
+  },
+  {
+    "Id": "BroodLordQueue2",
+    "Name": "Brood Lord Queue2"
+  },
+  {
+    "Id": "CarrierHangar",
+    "Name": "Hangar"
+  },
+  {
+    "Id": "ForgeResearch",
+    "Name": "Research (Forge)"
+  },
+  {
+    "Id": "RoboticsBayResearch",
+    "Name": "Research (Robotics Bay)"
+  },
+  {
+    "Id": "TemplarArchivesResearch",
+    "Name": "Research (Templar Archives)"
+  },
+  {
+    "Id": "ZergBuild",
+    "Name": "Morph Unit (Drone -> Zerg Buildings)"
+  },
+  {
+    "Id": "DroneHarvest",
+    "Name": "Gather (Drone)"
+  },
+  {
+    "Id": "evolutionchamberresearch",
+    "Name": "Research (Evolution Chamber)"
+  },
+  {
+    "Id": "UpgradeToLair",
+    "Name": "Morph Building (Hatchery -> Lair)"
+  },
+  {
+    "Id": "UpgradeToHive",
+    "Name": "Morph Building (Lair -> Hive)"
+  },
+  {
+    "Id": "UpgradeToGreaterSpire",
+    "Name": "Morph Building (Spire -> Greater Spire)"
+  },
+  {
+    "Id": "LairResearch",
+    "Name": "Research (LairHive)"
+  },
+  {
+    "Id": "SpawningPoolResearch",
+    "Name": "Research (Spawning Pool)"
+  },
+  {
+    "Id": "HydraliskDenResearch",
+    "Name": "Research (Hydralisk Den)"
+  },
+  {
+    "Id": "SpireResearch",
+    "Name": "Research (Spire & GreaterSpire)"
+  },
+  {
+    "Id": "LarvaTrain",
+    "Name": "Morph Unit (Larva -> Basic)"
+  },
+  {
+    "Id": "MorphToBroodLord",
+    "Name": "Morph (Corruptor - > Brood Lord)"
+  },
+  {
+    "Id": "BurrowBanelingDown",
+    "Name": "Burrow (Baneling)"
+  },
+  {
+    "Id": "BurrowBanelingUp",
+    "Name": "Unburrow (Baneling)"
+  },
+  {
+    "Id": "BurrowDroneDown",
+    "Name": "Burrow (Drone)"
+  },
+  {
+    "Id": "BurrowDroneUp",
+    "Name": "Unburrow (Drone)"
+  },
+  {
+    "Id": "BurrowHydraliskDown",
+    "Name": "Burrow (Hydralisk)"
+  },
+  {
+    "Id": "BurrowHydraliskUp",
+    "Name": "Unburrow (Hydralisk)"
+  },
+  {
+    "Id": "BurrowRoachDown",
+    "Name": "Burrow (Roach)"
+  },
+  {
+    "Id": "BurrowRoachUp",
+    "Name": "Unburrow (Roach)"
+  },
+  {
+    "Id": "BurrowZerglingDown",
+    "Name": "Burrow (Zergling)"
+  },
+  {
+    "Id": "BurrowZerglingUp",
+    "Name": "Unburrow (Zergling)"
+  },
+  {
+    "Id": "BurrowInfestorTerranDown",
+    "Name": "Burrow Infested Terran Down"
+  },
+  {
+    "Id": "BurrowInfestorTerranUp",
+    "Name": "Burrow Infested Terran Up"
+  },
+  {
+    "Id": "RedstoneLavaCritterBurrow",
+    "Name": "Redstone Lava Critter Burrow"
+  },
+  {
+    "Id": "RedstoneLavaCritterInjuredBurrow",
+    "Name": "Redstone Lava Critter Injured Burrow"
+  },
+  {
+    "Id": "RedstoneLavaCritterUnburrow",
+    "Name": "Redstone Lava Critter Unburrow"
+  },
+  {
+    "Id": "RedstoneLavaCritterInjuredUnburrow",
+    "Name": "Redstone Lava Critter Injured Unburrow"
+  },
+  {
+    "Id": "OverlordTransport",
+    "Name": "Load-Unload (Overlord)"
+  },
+  {
+    "Id": "Mergeable",
+    "Name": "Mergeable"
+  },
+  {
+    "Id": "Warpable",
+    "Name": "Warpable"
+  },
+  {
+    "Id": "WarpGateTrain",
+    "Name": "Train (Warp Gate)"
+  },
+  {
+    "Id": "BurrowQueenDown",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "BurrowQueenUp",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "NydusCanalTransport",
+    "Name": "Nydus Canal Transport"
+  },
+  {
+    "Id": "Blink",
+    "Name": "Blink"
+  },
+  {
+    "Id": "BurrowInfestorDown",
+    "Name": "Burrow (Infestor)"
+  },
+  {
+    "Id": "BurrowInfestorUp",
+    "Name": "Unburrow (Infestor)"
+  },
+  {
+    "Id": "MorphToOverseer",
+    "Name": "Overlord Morph to Overseer"
+  },
+  {
+    "Id": "UpgradeToPlanetaryFortress",
+    "Name": "Morph Building (COCE -> Planetary Fortress)"
+  },
+  {
+    "Id": "InfestationPitResearch",
+    "Name": "Infestation Pit Research"
+  },
+  {
+    "Id": "BanelingNestResearch",
+    "Name": "Research (Baneling Nest)"
+  },
+  {
+    "Id": "BurrowUltraliskDown",
+    "Name": "Burrow (Ultralisk)"
+  },
+  {
+    "Id": "BurrowUltraliskUp",
+    "Name": "Unburrow (Ultralisk)"
+  },
+  {
+    "Id": "UpgradeToOrbital",
+    "Name": "Morph Building (COCE -> Orbital Command)"
+  },
+  {
+    "Id": "UpgradeToWarpGate",
+    "Name": "Morph Building (Gateway -> Warp Gate)"
+  },
+  {
+    "Id": "MorphBackToGateway",
+    "Name": "Back To Gateway"
+  },
+  {
+    "Id": "OrbitalLiftOff",
+    "Name": "Lift Off (Orbital Command)"
+  },
+  {
+    "Id": "OrbitalCommandLand",
+    "Name": "Land (Orbital Command)"
+  },
+  {
+    "Id": "ForceField",
+    "Name": "Force Field"
+  },
+  {
+    "Id": "PhasingMode",
+    "Name": "Phasing Mode"
+  },
+  {
+    "Id": "TransportMode",
+    "Name": "Transport Mode"
+  },
+  {
+    "Id": "FusionCoreResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "CyberneticsCoreResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "TwilightCouncilResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "TacNukeStrike",
+    "Name": "Nuclear Strike"
+  },
+  {
+    "Id": "SalvageBunkerRefund",
+    "Name": "Bunker"
+  },
+  {
+    "Id": "SalvageBunker",
+    "Name": "Bunker"
+  },
+  {
+    "Id": "EMP",
+    "Name": "EMP"
+  },
+  {
+    "Id": "Vortex",
+    "Name": "Vortex"
+  },
+  {
+    "Id": "TrainQueen",
+    "Name": "Train Queen"
+  },
+  {
+    "Id": "BurrowCreepTumorDown",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "Transfusion",
+    "Name": "Transfusion"
+  },
+  {
+    "Id": "TechLabMorph",
+    "Name": "Tech Lab Morph (Detached)"
+  },
+  {
+    "Id": "BarracksTechLabMorph",
+    "Name": "Tech Lab Morph (Barracks)"
+  },
+  {
+    "Id": "FactoryTechLabMorph",
+    "Name": "Tech Lab Morph (Factory)"
+  },
+  {
+    "Id": "StarportTechLabMorph",
+    "Name": "Tech Lab Morph (Starport)"
+  },
+  {
+    "Id": "ReactorMorph",
+    "Name": "Nuclear Reactor Morph"
+  },
+  {
+    "Id": "BarracksReactorMorph",
+    "Name": "Nuclear Reactor Morph (Barracks)"
+  },
+  {
+    "Id": "FactoryReactorMorph",
+    "Name": "Nuclear Reactor Morph (Factory)"
+  },
+  {
+    "Id": "StarportReactorMorph",
+    "Name": "Nuclear Reactor Morph (Starport)"
+  },
+  {
+    "Id": "AttackRedirect",
+    "Name": "Attack Redirect"
+  },
+  {
+    "Id": "StimpackRedirect",
+    "Name": "Stimpack Redirect"
+  },
+  {
+    "Id": "StimpackMarauderRedirect",
+    "Name": "Stimpack Marauder Redirect"
+  },
+  {
+    "Id": "burrowedStop",
+    "Name": "Stop"
+  },
+  {
+    "Id": "StopRedirect",
+    "Name": "Stop Redirect"
+  },
+  {
+    "Id": "GenerateCreep",
+    "Name": "Generate Creep"
+  },
+  {
+    "Id": "QueenBuild",
+    "Name": "Build"
+  },
+  {
+    "Id": "SpineCrawlerUproot",
+    "Name": "Uproot"
+  },
+  {
+    "Id": "SporeCrawlerUproot",
+    "Name": "Uproot"
+  },
+  {
+    "Id": "SpineCrawlerRoot",
+    "Name": "Root"
+  },
+  {
+    "Id": "SporeCrawlerRoot",
+    "Name": "Root"
+  },
+  {
+    "Id": "CreepTumorBuild",
+    "Name": "Build"
+  },
+  {
+    "Id": "BuildAutoTurret",
+    "Name": "Place Auto Turret"
+  },
+  {
+    "Id": "ArchonWarp",
+    "Name": "Archon Merge"
+  },
+  {
+    "Id": "BuildNydusCanal",
+    "Name": "Build Nydus Canal"
+  },
+  {
+    "Id": "BroodLordHangar",
+    "Name": "Brood Lord Hangar"
+  },
+  {
+    "Id": "Charge",
+    "Name": "Charge"
+  },
+  {
+    "Id": "TowerCapture",
+    "Name": "Tower Capture"
+  },
+  {
+    "Id": "HerdInteract",
+    "Name": "Herd Interact"
+  },
+  {
+    "Id": "Frenzy",
+    "Name": "Frenzy"
+  },
+  {
+    "Id": "Contaminate",
+    "Name": "Contaminate"
+  },
+  {
+    "Id": "Shatter",
+    "Name": "Shatter"
+  },
+  {
+    "Id": "InfestedTerransLayEgg",
+    "Name": "Infested Terrans Lay Egg"
+  },
+  {
+    "Id": "que5Passive",
+    "Name": "Queue (5) Passive"
+  },
+  {
+    "Id": "que5PassiveCancelToSelection",
+    "Name": "Queue (5) Passive (Cancel to Selection)"
+  },
+  {
+    "Id": "MorphToGhostAlternate"
+  },
+  {
+    "Id": "MorphToGhostNova"
+  },
+  {
+    "Id": "BridgeExtend",
+    "Name": "Bridge Extend"
+  },
+  {
+    "Id": "BridgeRetract",
+    "Name": "Bridge Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorDefaultOpen",
+    "Name": "Xel'Naga Caverns Door Default Open"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorDefaultClose",
+    "Name": "Xel'Naga Caverns Door Default Close"
+  },
+  {
+    "Id": "DigesterCreepSpray",
+    "Name": "Spray Creep"
+  },
+  {
+    "Id": "MorphToCollapsibleTerranTowerDebris",
+    "Name": "Morph To Collapsible Terran Tower Debris"
+  },
+  {
+    "Id": "MorphToCollapsibleTerranTowerDebrisRampLeft",
+    "Name": "Morph To Collapsible Terran Tower Debris (Ramp Left)"
+  },
+  {
+    "Id": "MorphToCollapsibleTerranTowerDebrisRampRight",
+    "Name": "Morph To Collapsible Terran Tower Debris (Ramp Right)"
+  },
+  {
+    "Id": "MorphToMothership",
+    "Name": "Morph To Mothership"
+  },
+  {
+    "Id": "MothershipStasis",
+    "Name": "Stasis"
+  },
+  {
+    "Id": "MothershipCoreWeapon",
+    "Name": "Mothership Core Weapon"
+  },
+  {
+    "Id": "NexusTrainMothershipCore",
+    "Name": "Train Mothership Core"
+  },
+  {
+    "Id": "MothershipCoreTeleport",
+    "Name": "Teleport"
+  },
+  {
+    "Id": "SalvageDroneRefund",
+    "Name": "Salvage Drone Refund"
+  },
+  {
+    "Id": "SalvageDrone",
+    "Name": "Salvage Drone"
+  },
+  {
+    "Id": "SalvageZerglingRefund",
+    "Name": "Salvage Zergling Refund"
+  },
+  {
+    "Id": "SalvageZergling",
+    "Name": "Salvage Zergling"
+  },
+  {
+    "Id": "SalvageQueenRefund",
+    "Name": "Salvage Queen Refund"
+  },
+  {
+    "Id": "SalvageQueen",
+    "Name": "Salvage Queen"
+  },
+  {
+    "Id": "SalvageRoachRefund",
+    "Name": "Salvage Roach Refund"
+  },
+  {
+    "Id": "SalvageRoach",
+    "Name": "Salvage Roach"
+  },
+  {
+    "Id": "SalvageBanelingRefund",
+    "Name": "Salvage Baneling Refund"
+  },
+  {
+    "Id": "SalvageBaneling",
+    "Name": "Salvage Baneling"
+  },
+  {
+    "Id": "SalvageHydraliskRefund",
+    "Name": "Salvage Hydralisk Refund"
+  },
+  {
+    "Id": "SalvageHydralisk",
+    "Name": "Salvage Hydralisk"
+  },
+  {
+    "Id": "SalvageInfestorRefund",
+    "Name": "Salvage Infestor Refund"
+  },
+  {
+    "Id": "SalvageInfestor",
+    "Name": "Salvage Infestor"
+  },
+  {
+    "Id": "SalvageSwarmHostRefund",
+    "Name": "Salvage Swarm Host Refund"
+  },
+  {
+    "Id": "SalvageSwarmHost",
+    "Name": "Salvage Swarm Host"
+  },
+  {
+    "Id": "SalvageUltraliskRefund",
+    "Name": "Salvage Ultralisk Refund"
+  },
+  {
+    "Id": "SalvageUltralisk",
+    "Name": "Salvage Ultralisk"
+  },
+  {
+    "Id": "DigesterTransport",
+    "Name": "Digester Transport"
+  },
+  {
+    "Id": "SpectreShield",
+    "Name": "Spectre Shield"
+  },
+  {
+    "Id": "XelNagaHealingShrine",
+    "Name": "Xel Naga Healing Shrine"
+  },
+  {
+    "Id": "NexusInvulnerability",
+    "Name": "Invulnerability"
+  },
+  {
+    "Id": "NexusPhaseShift",
+    "Name": "Phase Shift"
+  },
+  {
+    "Id": "SpawnChangelingTarget",
+    "Name": "Spawn Changeling Target"
+  },
+  {
+    "Id": "QueenLand",
+    "Name": "Queen Land"
+  },
+  {
+    "Id": "QueenFly",
+    "Name": "Queen Fly"
+  },
+  {
+    "Id": "OracleCloakField",
+    "Name": "Oracle Cloak Field"
+  },
+  {
+    "Id": "FlyerShield",
+    "Name": "Flyer Shield"
+  },
+  {
+    "Id": "LocustTrain",
+    "Name": "Locust Train"
+  },
+  {
+    "Id": "MothershipCoreMassRecall",
+    "Name": "Mothership Core Mass Recall"
+  },
+  {
+    "Id": "SingleRecall",
+    "Name": "Single Recall"
+  },
+  {
+    "Id": "MorphToHellion",
+    "Name": "Morph To Hellion"
+  },
+  {
+    "Id": "RestoreShields",
+    "Name": "Restore Shields"
+  },
+  {
+    "Id": "Scryer",
+    "Name": "Preordain"
+  },
+  {
+    "Id": "BurrowChargeTrial",
+    "Name": "Burrow Charge Trial"
+  },
+  {
+    "Id": "LeechResources",
+    "Name": "Leech Resources"
+  },
+  {
+    "Id": "SnipeDoT",
+    "Name": "Snipe DoT"
+  },
+  {
+    "Id": "SwarmHostSpawnLocusts",
+    "Name": "Spawn Locusts"
+  },
+  {
+    "Id": "Clone",
+    "Name": "Clone"
+  },
+  {
+    "Id": "BuildingShield",
+    "Name": "Building Shield"
+  },
+  {
+    "Id": "MorphToCollapsibleRockTowerDebris",
+    "Name": "Morph To Collapsible Rock Tower Debris"
+  },
+  {
+    "Id": "MorphToHellionTank",
+    "Name": "Morph To Hellbat"
+  },
+  {
+    "Id": "BuildingStasis",
+    "Name": "Phase Shift"
+  },
+  {
+    "Id": "ResourceBlocker",
+    "Name": "Mineral Shield"
+  },
+  {
+    "Id": "ResourceStun",
+    "Name": "Entomb"
+  },
+  {
+    "Id": "MaxiumThrust",
+    "Name": "Maxium Thrust"
+  },
+  {
+    "Id": "Sacrifice",
+    "Name": "Sacrifice"
+  },
+  {
+    "Id": "BurrowChargeMP",
+    "Name": "Burrow Charge MP"
+  },
+  {
+    "Id": "BurrowChargeRevD",
+    "Name": "Burrow Charge Rev D"
+  },
+  {
+    "Id": "MorphToSwarmHostBurrowedMP",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "MorphToSwarmHostMP",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "SpawnInfestedTerran",
+    "Name": "Spawn Infested Terran"
+  },
+  {
+    "Id": "attackProtossBuilding",
+    "Name": "attack Protoss Building"
+  },
+  {
+    "Id": "burrowedBanelingStop",
+    "Name": "Stop"
+  },
+  {
+    "Id": "stopProtossBuilding",
+    "Name": "stop Protoss Building"
+  },
+  {
+    "Id": "BlindingCloud",
+    "Name": "Blinding Cloud"
+  },
+  {
+    "Id": "EyeStalk",
+    "Name": "Eye Stalk"
+  },
+  {
+    "Id": "Yoink",
+    "Name": "Abduct"
+  },
+  {
+    "Id": "ViperConsume",
+    "Name": "Viper Consume"
+  },
+  {
+    "Id": "ViperConsumeMinerals",
+    "Name": "Viper Consume Minerals"
+  },
+  {
+    "Id": "ViperConsumeStructure",
+    "Name": "Viper Consume Structure"
+  },
+  {
+    "Id": "ProtossBuildingQueue",
+    "Name": "Protoss Building Queue"
+  },
+  {
+    "Id": "que8",
+    "Name": "Queue (8)"
+  },
+  {
+    "Id": "TestZerg",
+    "Name": "Test Zerg"
+  },
+  {
+    "Id": "VolatileBurstBuilding",
+    "Name": "Volatile Burst Building"
+  },
+  {
+    "Id": "PickupScrapSmall",
+    "Name": "Pickup Scrap Small"
+  },
+  {
+    "Id": "PickupScrapMedium",
+    "Name": "Pickup Scrap Medium"
+  },
+  {
+    "Id": "PickupScrapLarge",
+    "Name": "Pickup Scrap Large"
+  },
+  {
+    "Id": "PickupPalletGas",
+    "Name": "Pickup Pallet Gas"
+  },
+  {
+    "Id": "PickupPalletMinerals",
+    "Name": "Pickup Pallet Minerals"
+  },
+  {
+    "Id": "MassiveKnockover",
+    "Name": "Massive Knockover"
+  },
+  {
+    "Id": "WidowMineBurrow",
+    "Name": "Widow Mine Burrow"
+  },
+  {
+    "Id": "WidowMineUnburrow",
+    "Name": "Widow Mine Unburrow"
+  },
+  {
+    "Id": "WidowMineAttack",
+    "Name": "Widow Mine Attack"
+  },
+  {
+    "Id": "TornadoMissile",
+    "Name": "Tornado Missile"
+  },
+  {
+    "Id": "MothershipCoreEnergize",
+    "Name": "Mothership Core Energize"
+  },
+  {
+    "Id": "LurkerAspectMPFromHydraliskBurrowed",
+    "Name": "Lurker Aspect MPFrom Hydralisk Burrowed"
+  },
+  {
+    "Id": "LurkerAspectMP",
+    "Name": "Lurker Aspect MP"
+  },
+  {
+    "Id": "BurrowLurkerMPDown",
+    "Name": "Burrow Lurker MPDown"
+  },
+  {
+    "Id": "BurrowLurkerMPUp",
+    "Name": "Burrow Lurker MPUp"
+  },
+  {
+    "Id": "UpgradeToLurkerDenMP",
+    "Name": "Upgrade To Lurker Den MP"
+  },
+  {
+    "Id": "HallucinationOracle",
+    "Name": "Hallucination Oracle"
+  },
+  {
+    "Id": "MedivacSpeedBoost",
+    "Name": "Emergency Thrusters"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide8Out",
+    "Name": "ExtendingBridge - NE - Height 8 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide8",
+    "Name": "ExtendingBridge - NE - Height 8 - Wide - Retract"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide8Out",
+    "Name": "ExtendingBridge - NW - Height 8 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide8",
+    "Name": "ExtendingBridge - NW - Height 8 - Wide - Retract"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide10Out",
+    "Name": "ExtendingBridge - NE - Height 10 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide10",
+    "Name": "ExtendingBridge - NE - Height 10 - Wide - Retract"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide10Out",
+    "Name": "ExtendingBridge - NW - Height 10 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide10",
+    "Name": "ExtendingBridge - NW - Height 10 - Wide - Retract"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide12Out",
+    "Name": "ExtendingBridge - NE - Height 12 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNEWide12",
+    "Name": "ExtendingBridge - NE - Height 12 - Wide - Retract"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide12Out",
+    "Name": "ExtendingBridge - NW - Height 12 - Wide - Extend"
+  },
+  {
+    "Id": "ExtendingBridgeNWWide12",
+    "Name": "ExtendingBridge - NW - Height 12 - Wide - Retract"
+  },
+  {
+    "Id": "InvulnerabilityShield",
+    "Name": "Invulnerability Shield"
+  },
+  {
+    "Id": "CritterFlee",
+    "Name": "Critter Flee"
+  },
+  {
+    "Id": "OracleRevelation",
+    "Name": "Oracle Revelation"
+  },
+  {
+    "Id": "OracleRevelationMode",
+    "Name": "Oracle Revelation Mode"
+  },
+  {
+    "Id": "OracleNormalMode",
+    "Name": "Oracle Normal Mode"
+  },
+  {
+    "Id": "MorphToCollapsibleRockTowerDebrisRampRight",
+    "Name": "Morph To Collapsible Rock Tower Debris (Ramp Right)"
+  },
+  {
+    "Id": "MorphToCollapsibleRockTowerDebrisRampLeft",
+    "Name": "Morph To Collapsible Rock Tower Debris (Ramp Left)"
+  },
+  {
+    "Id": "VoidSiphon",
+    "Name": "Void Siphon"
+  },
+  {
+    "Id": "UltraliskWeaponCooldown",
+    "Name": "Ultralisk Weapon Cooldown"
+  },
+  {
+    "Id": "MothershipCorePurifyNexusCancel",
+    "Name": "Mothership Core - Purify Nexus (Cancel)"
+  },
+  {
+    "Id": "MothershipCorePurifyNexus",
+    "Name": "Mothership Core - Purify Nexus"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorE",
+    "Name": "Xel'Naga Caverns Door E"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorEOpened",
+    "Name": "Xel'Naga Caverns Door E Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorN",
+    "Name": "Xel'Naga Caverns Door N"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorNE",
+    "Name": "Xel'Naga Caverns Door NE"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorNEOpened",
+    "Name": "Xel'Naga Caverns Door NE Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorNOpened",
+    "Name": "Xel'Naga Caverns Door N Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorNW",
+    "Name": "Xel'Naga Caverns Door NW"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorNWOpened",
+    "Name": "Xel'Naga Caverns Door NW Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorS",
+    "Name": "Xel'Naga Caverns Door S"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorSE",
+    "Name": "Xel'Naga Caverns Door SE"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorSEOpened",
+    "Name": "Xel'Naga Caverns Door SE Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorSOpened",
+    "Name": "Xel'Naga Caverns Door S Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorSW",
+    "Name": "Xel'Naga Caverns Door SW"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorSWOpened",
+    "Name": "Xel'Naga Caverns Door SW Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorW",
+    "Name": "Xel'Naga Caverns Door W"
+  },
+  {
+    "Id": "XelNaga_Caverns_DoorWOpened",
+    "Name": "Xel'Naga Caverns Door W Opened"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE8Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height - 8 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE8",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height - 8 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW8Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 8 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW8",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 8 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE10Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height 10 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE10",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height 10 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW10Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 10 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW10",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 10 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE12Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height 12 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNE12",
+    "Name": "Xel'Naga Caverns Floating Bridge - NE - Height 12 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW12Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 12 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeNW12",
+    "Name": "Xel'Naga Caverns Floating Bridge - NW - Height 12 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH8Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 8 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH8",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 8 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV8Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 8 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV8",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 8 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH10Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 10 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH10",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 10 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV10Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 10 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV10",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 10 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH12Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 12 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeH12",
+    "Name": "Xel'Naga Caverns Floating Bridge - H - Height 12 - Retract"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV12Out",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 12 - Extend"
+  },
+  {
+    "Id": "XelNaga_Caverns_Floating_BridgeV12",
+    "Name": "Xel'Naga Caverns Floating Bridge - V - Height 12 - Retract"
+  },
+  {
+    "Id": "Tarsonis_DoorDefaultRaise",
+    "Name": "Tarsonis Door Default Raise"
+  },
+  {
+    "Id": "Tarsonis_DoorDefaultLower",
+    "Name": "Tarsonis Door Default Lower"
+  },
+  {
+    "Id": "MorphToCollapsibleRockTowerDebrisRampLeftGreen",
+    "Name": "Morph To Collapsible Rock Tower Debris (Ramp Left) (Green)"
+  },
+  {
+    "Id": "MorphToCollapsibleRockTowerDebrisRampRightGreen",
+    "Name": "Morph To Collapsible Rock Tower Debris (Ramp Right) (Green)"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNEShort8Out",
+    "Name": "Snow Refinery Terran Extending Bridge NEShort8 Out"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNEShort8",
+    "Name": "Snow Refinery Terran Extending Bridge NEShort8"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNWShort8Out",
+    "Name": "Snow Refinery Terran Extending Bridge NWShort8 Out"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNWShort8",
+    "Name": "Snow Refinery Terran Extending Bridge NWShort8"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNEShort10Out",
+    "Name": "Snow Refinery Terran Extending Bridge NEShort10 Out"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNEShort10",
+    "Name": "Snow Refinery Terran Extending Bridge NEShort10"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNWShort10Out",
+    "Name": "Snow Refinery Terran Extending Bridge NWShort10 Out"
+  },
+  {
+    "Id": "SnowRefinery_Terran_ExtendingBridgeNWShort10",
+    "Name": "Snow Refinery Terran Extending Bridge NWShort10"
+  },
+  {
+    "Id": "Tarsonis_DoorN",
+    "Name": "Tarsonis Door N"
+  },
+  {
+    "Id": "Tarsonis_DoorNLowered",
+    "Name": "Tarsonis Door N Lowered"
+  },
+  {
+    "Id": "Tarsonis_DoorNE",
+    "Name": "Tarsonis Door NE"
+  },
+  {
+    "Id": "Tarsonis_DoorNELowered",
+    "Name": "Tarsonis Door NE Lowered"
+  },
+  {
+    "Id": "Tarsonis_DoorE",
+    "Name": "Tarsonis Door E"
+  },
+  {
+    "Id": "Tarsonis_DoorELowered",
+    "Name": "Tarsonis Door E Lowered"
+  },
+  {
+    "Id": "Tarsonis_DoorNW",
+    "Name": "Tarsonis Door NW"
+  },
+  {
+    "Id": "Tarsonis_DoorNWLowered",
+    "Name": "Tarsonis Door NW Lowered"
+  },
+  {
+    "Id": "CompoundMansion_DoorN"
+  },
+  {
+    "Id": "CompoundMansion_DoorNLowered"
+  },
+  {
+    "Id": "CompoundMansion_DoorNE"
+  },
+  {
+    "Id": "CompoundMansion_DoorNELowered"
+  },
+  {
+    "Id": "CompoundMansion_DoorE"
+  },
+  {
+    "Id": "CompoundMansion_DoorELowered"
+  },
+  {
+    "Id": "CompoundMansion_DoorNW"
+  },
+  {
+    "Id": "CompoundMansion_DoorNWLowered"
+  },
+  {
+    "Id": "ArmoryResearchSwarm",
+    "Name": "Armory Research Swarm"
+  },
+  {
+    "Id": "CausticSpray",
+    "Name": "Caustic Spray"
+  },
+  {
+    "Id": "OracleCloakingFieldTargeted",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "ImmortalOverload",
+    "Name": "Barrier"
+  },
+  {
+    "Id": "MorphToRavager",
+    "Name": "Morph To Ravager"
+  },
+  {
+    "Id": "MorphToLurker",
+    "Name": "Morph To Lurker"
+  },
+  {
+    "Id": "OraclePhaseShift",
+    "Name": "Oracle Phase Shift"
+  },
+  {
+    "Id": "ReleaseInterceptors",
+    "Name": "Release Interceptors"
+  },
+  {
+    "Id": "RavagerCorrosiveBile",
+    "Name": "Corrosive Bile"
+  },
+  {
+    "Id": "BurrowRavagerDown",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "BurrowRavagerUp",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "PurificationNova",
+    "Name": "Purification Nova"
+  },
+  {
+    "Id": "PurificationNovaTargeted",
+    "Name": "Purification Nova"
+  },
+  {
+    "Id": "Impale",
+    "Name": "Impale"
+  },
+  {
+    "Id": "LockOn",
+    "Name": "Lock On"
+  },
+  {
+    "Id": "LockOnAir",
+    "Name": "Lock On Air"
+  },
+  {
+    "Id": "LockOnCancel",
+    "Name": "Lock On Cancel"
+  },
+  {
+    "Id": "CorruptionBomb",
+    "Name": "Corruption Bomb"
+  },
+  {
+    "Id": "Hyperjump",
+    "Name": "Tactical Jump"
+  },
+  {
+    "Id": "Overcharge",
+    "Name": "Overcharge"
+  },
+  {
+    "Id": "ThorAPMode",
+    "Name": "Thor APMode"
+  },
+  {
+    "Id": "ThorNormalMode",
+    "Name": "Thor Normal Mode"
+  },
+  {
+    "Id": "LightofAiur",
+    "Name": "Envision"
+  },
+  {
+    "Id": "MothershipMassRecall",
+    "Name": "Mothership Mass Recall"
+  },
+  {
+    "Id": "NydusWormTransport",
+    "Name": "Nydus Worm Transport"
+  },
+  {
+    "Id": "OracleWeapon",
+    "Name": "Oracle Weapon"
+  },
+  {
+    "Id": "PulsarBeam",
+    "Name": "Pulsar Beam"
+  },
+  {
+    "Id": "PulsarCannon",
+    "Name": "Pulsar Blast"
+  },
+  {
+    "Id": "TemporalField",
+    "Name": "Time Warp"
+  },
+  {
+    "Id": "VoidSwarmHostSpawnLocust",
+    "Name": "Swarm Host Spawn Locust"
+  },
+  {
+    "Id": "LocustMPFlyingMorphToGround",
+    "Name": "Morph To Ground"
+  },
+  {
+    "Id": "LocustMPMorphToAir",
+    "Name": "Locust MP Morph To Air"
+  },
+  {
+    "Id": "LocustMPFlyingSwoop",
+    "Name": "Swoop"
+  },
+  {
+    "Id": "HallucinationDisruptor",
+    "Name": "Hallucination (Disruptor)"
+  },
+  {
+    "Id": "HallucinationAdept",
+    "Name": "Hallucination (Adept)"
+  },
+  {
+    "Id": "VoidRaySwarmDamageBoost",
+    "Name": "Void Ray Swarm Damage Boost"
+  },
+  {
+    "Id": "SeekerDummyChannel",
+    "Name": "Seeker Dummy Channel"
+  },
+  {
+    "Id": "AiurLightBridgeNE8Out",
+    "Name": "Aiur Light Bridge - NE - Height 8 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNE8",
+    "Name": "Aiur Light Bridge - NE - Height 8 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeNE10Out",
+    "Name": "Aiur Light Bridge - NE - Height 10 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNE10",
+    "Name": "Aiur Light Bridge - NE - Height 10 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeNE12Out",
+    "Name": "Aiur Light Bridge - NE - Height 12 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNE12",
+    "Name": "Aiur Light Bridge - NE - Height 12 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeNW8Out",
+    "Name": "Aiur Light Bridge - NW - Height 8 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNW8",
+    "Name": "Aiur Light Bridge - NW - Height 8 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeNW10Out",
+    "Name": "Aiur Light Bridge - NW - Height 10 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNW10",
+    "Name": "Aiur Light Bridge - NW - Height 10 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeNW12Out",
+    "Name": "Aiur Light Bridge - NW - Height 12 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeNW12",
+    "Name": "Aiur Light Bridge - NW - Height 12 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNE8Out",
+    "Name": "Aiur Temple Bridge - NE - Height 8 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNE8",
+    "Name": "Aiur Temple Bridge - NE - Height 8 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNE10Out",
+    "Name": "Aiur Temple Bridge - NE - Height 10 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNE10",
+    "Name": "Aiur Temple Bridge - NE - Height 10 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNE12Out",
+    "Name": "Aiur Temple Bridge - NE - Height 12 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNE12",
+    "Name": "Aiur Temple Bridge - NE - Height 12 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNW8Out",
+    "Name": "Aiur Temple Bridge - NW - Height 8 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNW8",
+    "Name": "Aiur Temple Bridge - NW - Height 8 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNW10Out",
+    "Name": "Aiur Temple Bridge - NW - Height 10 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNW10",
+    "Name": "Aiur Temple Bridge - NW - Height 10 - Retract"
+  },
+  {
+    "Id": "AiurTempleBridgeNW12Out",
+    "Name": "Aiur Temple Bridge - NW - Height 12 - Extend"
+  },
+  {
+    "Id": "AiurTempleBridgeNW12",
+    "Name": "Aiur Temple Bridge - NW - Height 12 - Retract"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE8Out",
+    "Name": "Shakuras Light Bridge NE8 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE8",
+    "Name": "Shakuras Light Bridge NE8"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE10Out",
+    "Name": "Shakuras Light Bridge NE10 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE10",
+    "Name": "Shakuras Light Bridge NE10"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE12Out",
+    "Name": "Shakuras Light Bridge NE12 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNE12",
+    "Name": "Shakuras Light Bridge NE12"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW8Out",
+    "Name": "Shakuras Light Bridge NW8 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW8",
+    "Name": "Shakuras Light Bridge NW8"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW10Out",
+    "Name": "Shakuras Light Bridge NW10 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW10",
+    "Name": "Shakuras Light Bridge NW10"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW12Out",
+    "Name": "Shakuras Light Bridge NW12 Out"
+  },
+  {
+    "Id": "ShakurasLightBridgeNW12",
+    "Name": "Shakuras Light Bridge NW12"
+  },
+  {
+    "Id": "VoidMPImmortalReviveRebuild",
+    "Name": "Void MPImmortal Revive Rebuild"
+  },
+  {
+    "Id": "VoidMPImmortalReviveDeath",
+    "Name": "Void MPImmortal Revive Death"
+  },
+  {
+    "Id": "ArbiterMPStasisField",
+    "Name": "ArbiterMP Stasis Field"
+  },
+  {
+    "Id": "ArbiterMPRecall",
+    "Name": "Recall"
+  },
+  {
+    "Id": "CorsairMPDisruptionWeb",
+    "Name": "CorsairMP Disruption Web"
+  },
+  {
+    "Id": "MorphToGuardianMP",
+    "Name": "Morph To Guardian MP"
+  },
+  {
+    "Id": "MorphToDevourerMP",
+    "Name": "Morph To Devourer "
+  },
+  {
+    "Id": "DefilerMPConsume",
+    "Name": "Consume"
+  },
+  {
+    "Id": "DefilerMPDarkSwarm",
+    "Name": "Dark Swarm"
+  },
+  {
+    "Id": "DefilerMPPlague",
+    "Name": "Plague"
+  },
+  {
+    "Id": "DefilerMPBurrow",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "DefilerMPUnburrow",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "QueenMPEnsnare",
+    "Name": "Queen MPEnsnare"
+  },
+  {
+    "Id": "QueenMPSpawnBroodlings",
+    "Name": "Queen MPSpawn Broodlings"
+  },
+  {
+    "Id": "QueenMPInfestCommandCenter",
+    "Name": "Queen MPInfest Command Center"
+  },
+  {
+    "Id": "LightningBomb",
+    "Name": "Disintegration"
+  },
+  {
+    "Id": "Grapple",
+    "Name": "Grapple"
+  },
+  {
+    "Id": "OracleStasisTrap",
+    "Name": "Oracle Stasis Ward"
+  },
+  {
+    "Id": "OracleStasisTrapBuild",
+    "Name": "Build Stasis Ward"
+  },
+  {
+    "Id": "OracleStasisTrapActivate",
+    "Name": "Activate"
+  },
+  {
+    "Id": "SelfRepair",
+    "Name": "Emergency Repair"
+  },
+  {
+    "Id": "AggressiveMutation",
+    "Name": "Aggressive Mutation"
+  },
+  {
+    "Id": "ParasiticBomb",
+    "Name": "Parasitic Bomb"
+  },
+  {
+    "Id": "AdeptPhaseShift"
+  },
+  {
+    "Id": "PurificationNovaMorph",
+    "Name": "Purification Nova Morph"
+  },
+  {
+    "Id": "PurificationNovaMorphBack",
+    "Name": "Purification Nova Morph Back"
+  },
+  {
+    "Id": "LurkerHoldFire",
+    "Name": "Lurker Hold Fire"
+  },
+  {
+    "Id": "LurkerRemoveHoldFire",
+    "Name": "Lurker Remove Hold Fire"
+  },
+  {
+    "Id": "LiberatorMorphtoAG",
+    "Name": "Morph to AG"
+  },
+  {
+    "Id": "LiberatorMorphtoAA",
+    "Name": "Morph to AA"
+  },
+  {
+    "Id": "LiberatorAGTarget",
+    "Name": "AG Target"
+  },
+  {
+    "Id": "LiberatorAATarget",
+    "Name": "AA Target"
+  },
+  {
+    "Id": "TimeStop",
+    "Name": "Time Stop"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE8Out",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 8 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE8",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 8 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE10Out",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 10 – Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE10",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 10 – Retract"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE12Out",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 12 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNE12",
+    "Name": "Aiur Light Bridge Abandoned – NE – Height 12 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW8Out",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 8 – Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW8",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 8 – Retract"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW10Out",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 10 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW10",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 10 - Retract"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW12Out",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 12 - Extend"
+  },
+  {
+    "Id": "AiurLightBridgeAbandonedNW12",
+    "Name": "Aiur Light Bridge Abandoned – NW – Height 12 - Retract"
+  },
+  {
+    "Id": "KD8Charge",
+    "Name": "KD8 Charge"
+  },
+  {
+    "Id": "PenetratingShot",
+    "Name": "Penetrating Shot"
+  },
+  {
+    "Id": "CloakingDrone",
+    "Name": "Cloaking Drone"
+  },
+  {
+    "Id": "AdeptPhaseShiftCancel",
+    "Name": "Psionic Transfer Cancel"
+  },
+  {
+    "Id": "AdeptShadePhaseShiftCancel",
+    "Name": "Shade Phase Shift Cancel"
+  },
+  {
+    "Id": "SlaynElementalGrab",
+    "Name": "Essence Leech"
+  },
+  {
+    "Id": "MorphToCollapsiblePurifierTowerDebris"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE8Out",
+    "Name": "Port City Bridge Unit NE8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE8",
+    "Name": "Port City Bridge Unit NE8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE8Out",
+    "Name": "Port City Bridge Unit SE8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE8",
+    "Name": "Port City Bridge Unit SE8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW8Out",
+    "Name": "Port City Bridge Unit NW8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW8",
+    "Name": "Port City Bridge Unit NW8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW8Out",
+    "Name": "Port City Bridge Unit SW8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW8",
+    "Name": "Port City Bridge Unit SW8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE10Out",
+    "Name": "Port City Bridge Unit NE10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE10",
+    "Name": "Port City Bridge Unit NE10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE10Out",
+    "Name": "Port City Bridge Unit SE10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE10",
+    "Name": "Port City Bridge Unit SE10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW10Out",
+    "Name": "Port City Bridge Unit NW10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW10",
+    "Name": "Port City Bridge Unit NW10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW10Out",
+    "Name": "Port City Bridge Unit SW10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW10",
+    "Name": "Port City Bridge Unit SW10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE12Out",
+    "Name": "Port City Bridge Unit NE12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNE12",
+    "Name": "Port City Bridge Unit NE12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE12Out",
+    "Name": "Port City Bridge Unit SE12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSE12",
+    "Name": "Port City Bridge Unit SE12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW12Out",
+    "Name": "Port City Bridge Unit NW12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitNW12",
+    "Name": "Port City Bridge Unit NW12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW12Out",
+    "Name": "Port City Bridge Unit SW12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitSW12",
+    "Name": "Port City Bridge Unit SW12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN8Out",
+    "Name": "Port City Bridge Unit N8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN8",
+    "Name": "Port City Bridge Unit N8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS8Out",
+    "Name": "Port City Bridge Unit S8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS8",
+    "Name": "Port City Bridge Unit S8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE8Out",
+    "Name": "Port City Bridge Unit E8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE8",
+    "Name": "Port City Bridge Unit E8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW8Out",
+    "Name": "Port City Bridge Unit W8 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW8",
+    "Name": "Port City Bridge Unit W8"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN10Out",
+    "Name": "Port City Bridge Unit N10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN10",
+    "Name": "Port City Bridge Unit N10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS10Out",
+    "Name": "Port City Bridge Unit S10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS10",
+    "Name": "Port City Bridge Unit S10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE10Out",
+    "Name": "Port City Bridge Unit E10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE10",
+    "Name": "Port City Bridge Unit E10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW10Out",
+    "Name": "Port City Bridge Unit W10 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW10",
+    "Name": "Port City Bridge Unit W10"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN12Out",
+    "Name": "Port City Bridge Unit N12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitN12",
+    "Name": "Port City Bridge Unit N12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS12Out",
+    "Name": "Port City Bridge Unit S12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitS12",
+    "Name": "Port City Bridge Unit S12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE12Out",
+    "Name": "Port City Bridge Unit E12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitE12",
+    "Name": "Port City Bridge Unit E12"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW12Out",
+    "Name": "Port City Bridge Unit W12 Out"
+  },
+  {
+    "Id": "PortCity_Bridge_UnitW12",
+    "Name": "Port City Bridge Unit W12"
+  },
+  {
+    "Id": "SC2_Battery",
+    "Name": "SC2 Battery"
+  },
+  {
+    "Id": "BattlecruiserAttack",
+    "Name": "Battlecruiser Attack"
+  },
+  {
+    "Id": "BattlecruiserAttackEvaluator",
+    "Name": "Battlecruiser Attack Evaluator"
+  },
+  {
+    "Id": "BattlecruiserMove",
+    "Name": "Battlecruiser Move"
+  },
+  {
+    "Id": "BattlecruiserStopEvaluator",
+    "Name": "Battlecruiser Stop Evaluator"
+  },
+  {
+    "Id": "BattlecruiserStop",
+    "Name": "Battlecruiser Stop"
+  },
+  {
+    "Id": "BatteryOvercharge",
+    "Name": "Battery Overcharge"
+  },
+  {
+    "Id": "LaunchInterceptors",
+    "Name": "Launch Interceptors"
+  },
+  {
+    "Id": "AmorphousArmorcloud"
+  },
+  {
+    "Id": "ShieldBatteryRechargeEx5",
+    "Name": ""
+  },
+  {
+    "Id": "SpawnLocustsTargeted",
+    "Name": "Spawn Locusts Targeted"
+  },
+  {
+    "Id": "ViperParasiticBombRelay"
+  },
+  {
+    "Id": "ParasiticBombRelayDodge"
+  },
+  {
+    "Id": "VoidRaySwarmDamageBoostCancel"
+  },
+  {
+    "Id": "LocustMPFlyingSwoopAttack",
+    "Name": "Locust MP Flying Swoop Attack"
+  },
+  {
+    "Id": "MorphToTransportOverlord",
+    "Name": "Morph To Transport Overlord"
+  },
+  {
+    "Id": "BypassArmor",
+    "Name": "Bypass Armor"
+  },
+  {
+    "Id": "BypassArmorDroneCU",
+    "Name": "Bypass Armor Drone CU"
+  },
+  {
+    "Id": "ChannelSnipe",
+    "Name": "Channel Snipe"
+  },
+  {
+    "Id": "PurifyMorphPylon"
+  },
+  {
+    "Id": "PurifyMorphPylonBack"
+  },
+  {
+    "Id": "TempestDisruptionBlast",
+    "Name": "Disruption Blast"
+  },
+  {
+    "Id": "DarkTemplarBlink",
+    "Name": "Dark Templar Blink"
+  },
+  {
+    "Id": "DarkShrineResearch",
+    "Name": "Dark Shrine Research"
+  },
+  {
+    "Id": "LurkerDenResearch",
+    "Name": "Lurker Den Research"
+  },
+  {
+    "Id": "ObserverSiegeMorphtoObserver",
+    "Name": "Observer Siege Morph to Observer"
+  },
+  {
+    "Id": "ObserverMorphtoObserverSiege",
+    "Name": "Observer Morph to Observer Siege"
+  },
+  {
+    "Id": "OverseerMorphtoOverseerSiegeMode",
+    "Name": "Overseer Morph to Overseer Siege Mode"
+  },
+  {
+    "Id": "OverseerSiegeModeMorphtoOverseer",
+    "Name": "Overseer Siege Mode Morph to Overseer"
+  },
+  {
+    "Id": "RavenScramblerMissile",
+    "Name": "Scrambler Missile"
+  },
+  {
+    "Id": "RavenRepairDrone",
+    "Name": "Repair Drone"
+  },
+  {
+    "Id": "RavenRepairDroneHeal",
+    "Name": "Repair"
+  },
+  {
+    "Id": "RavenShredderMissile",
+    "Name": "Shredder Missile"
+  },
+  {
+    "Id": "ChronoBoostEnergyCost",
+    "Name": "Chrono Boost Energy Cost"
+  },
+  {
+    "Id": "NexusMassRecall",
+    "Name": "Nexus Mass Recall"
+  },
+  {
+    "Id": "NexusShieldRecharge",
+    "Name": "Nexus Shield Recharge"
+  },
+  {
+    "Id": "NexusShieldRechargeOnPylon",
+    "Name": "Nexus Shield Recharge On Pylon"
+  },
+  {
+    "Id": "InfestorEnsnare",
+    "Name": "Infestor Ensnare"
+  },
+  {
+    "Id": "ShieldBatteryRechargeChanneled",
+    "Name": "Shield Recharge"
+  },
+  {
+    "Id": "NexusShieldOvercharge",
+    "Name": "Nexus Shield Overcharge"
+  },
+  {
+    "Id": "NexusShieldOverchargeOff",
+    "Name": "Nexus Shield Overcharge Off"
+  },
+  {
+    "Id": "AnalysisTerminalResearch",
+    "Name": "Analysis Terminal - Research"
+  },
+  {
+    "Id": "AvengerConstructVengeanceMissile",
+    "Name": "Avenger - Construct Vengeance Missile"
+  },
+  {
+    "Id": "GeneratorResearch",
+    "Name": "Generator - Research"
+  },
+  {
+    "Id": "BlitzerOverdrive",
+    "Name": "Blitzer - Overdrive"
+  },
+  {
+    "Id": "CitadelChargeMorph",
+    "Name": "Citadel Charge Instant"
+  },
+  {
+    "Id": "DisguiseAsSpitfire",
+    "Name": "Disguise As Spitfire"
+  },
+  {
+    "Id": "DisguiseAsXayidling",
+    "Name": "Disguise As Xayidling"
+  },
+  {
+    "Id": "GenetronProductionModeOverclock",
+    "Name": "Genetron Production Mode (Overclock)"
+  },
+  {
+    "Id": "GenetronProductionModePerformance",
+    "Name": "Genetron Production Mode (Performance)"
+  },
+  {
+    "Id": "GenetronProductionModeStandard",
+    "Name": "Genetron Production Mode (Standard)"
+  },
+  {
+    "Id": "MoleBury",
+    "Name": "MoleBury"
+  },
+  {
+    "Id": "MoleTurnTurret",
+    "Name": "MoleTurnTurret"
+  },
+  {
+    "Id": "GyreAnnex",
+    "Name": "Gyre - Annex"
+  },
+  {
+    "Id": "GyreShackle",
+    "Name": "Gyre - Shackle"
+  },
+  {
+    "Id": "MoleUnbury",
+    "Name": "MoleUnbury"
+  },
+  {
+    "Id": "OutfittingStationResearch",
+    "Name": "Outfitting Station - Research"
+  },
+  {
+    "Id": "ProcessorAnalyzeWeakness",
+    "Name": "Analyze Weakness"
+  },
+  {
+    "Id": "IgnitionBlast",
+    "Name": "Ignition Blast"
+  },
+  {
+    "Id": "RallyProcessingCore",
+    "Name": "Processing Core - Rally"
+  },
+  {
+    "Id": "FixerRepair",
+    "Name": "Repair"
+  },
+  {
+    "Id": "RelayTowerLongRangeTransfer",
+    "Name": "Relay Tower - Long Range Transfer"
+  },
+  {
+    "Id": "SuperCharge",
+    "Name": "Super Charge"
+  },
+  {
+    "Id": "CourierCloak",
+    "Name": "Cloaking Field"
+  },
+  {
+    "Id": "BuildAircraft",
+    "Name": "Build Aircraft"
+  },
+  {
+    "Id": "ConstructTeslaCharge",
+    "Name": "Construct Tesla Charge"
+  },
+  {
+    "Id": "MoleActivate",
+    "Name": "MoleActivate"
+  },
+  {
+    "Id": "NaniteGrenade",
+    "Name": "Nanite Grenade"
+  },
+  {
+    "Id": "SuperChargeAquila",
+    "Name": "Super Charge"
+  },
+  {
+    "Id": "LaunchShockCharge",
+    "Name": "Launch Shock Charge"
+  },
+  {
+    "Id": "LaunchCloakCharge",
+    "Name": "Launch Cloak Charge"
+  },
+  {
+    "Id": "CourierTransport",
+    "Name": "Load-Unload (Courier)"
+  },
+  {
+    "Id": "MiningPriority",
+    "Name": "Mining Priority"
+  },
+  {
+    "Id": "ACRBuild"
+  },
+  {
+    "Id": "MoleDeactivate",
+    "Name": "MoleDeactivate"
+  },
+  {
+    "Id": "RepulsorBurrow",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "InterdictorBurrow",
+    "Name": "Burrow"
+  },
+  {
+    "Id": "InterdictorUnburrow",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "RevenantBomb",
+    "Name": "Revenant Bomb"
+  },
+  {
+    "Id": "ACRGather",
+    "Name": "Gather"
+  },
+  {
+    "Id": "SchematicTransmit",
+    "Name": "Schematic Transmit"
+  },
+  {
+    "Id": "SpeedCloak",
+    "Name": "Speed Cloak"
+  },
+  {
+    "Id": "SystemOffload",
+    "Name": "System Offload"
+  },
+  {
+    "Id": "ProcessorSystemRecharge",
+    "Name": "System Recharge"
+  },
+  {
+    "Id": "CoreSystemRecharge",
+    "Name": "System Recharge"
+  },
+  {
+    "Id": "TechVaultResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "ProcessorToggleDetection",
+    "Name": "Toggle Detection"
+  },
+  {
+    "Id": "TrainHeavyweightMechs",
+    "Name": "Train Heavyweight Mechs"
+  },
+  {
+    "Id": "ProcessingCoreTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "TrainLightweightMechs",
+    "Name": "Train Lightweight Mechs"
+  },
+  {
+    "Id": "RepulsorUnburrow",
+    "Name": "Unburrow"
+  },
+  {
+    "Id": "UploaderAddonDummyBuild",
+    "Name": "Uploader Addon Dummy Build"
+  },
+  {
+    "Id": "UploaderSmartLink",
+    "Name": "Uploader Smart Link"
+  },
+  {
+    "Id": "VengeanceMissile",
+    "Name": "Vengeance Missile"
+  },
+  {
+    "Id": "VirtusSelffixProtocol",
+    "Name": "Virtus - Self-fix Protocol"
+  },
+  {
+    "Id": "que1Passive",
+    "Name": "Queue (1) Passive"
+  },
+  {
+    "Id": "AcidNestAttack",
+    "Name": "Acid Nest Attack"
+  },
+  {
+    "Id": "AcidNestMorph",
+    "Name": "Acid Nest Morph"
+  },
+  {
+    "Id": "AdaptiveInjection",
+    "Name": "Adaptive Injection"
+  },
+  {
+    "Id": "AerialNestWaspMutateXayidFlyers",
+    "Name": "Mutate Xayid Flyers"
+  },
+  {
+    "Id": "BiomassCavernResearch",
+    "Name": "Biomass Cavern Research"
+  },
+  {
+    "Id": "BiomassHatcheryLarvaMutateXayidUnits",
+    "Name": "Mutate Xayid Units"
+  },
+  {
+    "Id": "BirthScavenger",
+    "Name": "Birth Scavenger"
+  },
+  {
+    "Id": "BlindingBurst",
+    "Name": "Blinding Burst"
+  },
+  {
+    "Id": "CasnoliskDenResearch",
+    "Name": "Casnolisk Den Research"
+  },
+  {
+    "Id": "CoveringSpray",
+    "Name": "Covering Spray"
+  },
+  {
+    "Id": "XayidlingDash",
+    "Name": "Dash"
+  },
+  {
+    "Id": "CatalystPitResearch",
+    "Name": "Catalyst Pit Research"
+  },
+  {
+    "Id": "IncendiaryInfusion",
+    "Name": "Incendiary Infusion"
+  },
+  {
+    "Id": "ExplosiveGlob",
+    "Name": "Explosive Glob"
+  },
+  {
+    "Id": "FormStructures",
+    "Name": "Form Structures"
+  },
+  {
+    "Id": "Hunker",
+    "Name": "Hunker"
+  },
+  {
+    "Id": "Mend",
+    "Name": "Mend"
+  },
+  {
+    "Id": "MendlingSacrificialMutation",
+    "Name": "Mendling >> Sacrificial Mutation"
+  },
+  {
+    "Id": "Mobile",
+    "Name": "Mobile"
+  },
+  {
+    "Id": "MutagenChamberResearch",
+    "Name": "Mutagen Chamber Research"
+  },
+  {
+    "Id": "MutateXayidUnits",
+    "Name": "Mutate Xayid Units"
+  },
+  {
+    "Id": "PlaceAcidNest",
+    "Name": "Place Acid Nest"
+  },
+  {
+    "Id": "ProtectiveCloud",
+    "Name": "Protective Cloud"
+  },
+  {
+    "Id": "Scour",
+    "Name": "Scour"
+  },
+  {
+    "Id": "StagnatingBile",
+    "Name": "Stagnating Bile"
+  },
+  {
+    "Id": "SunkenWarrenResearch",
+    "Name": "Sunken Warren Research"
+  },
+  {
+    "Id": "TransportFerrion",
+    "Name": "Transport"
+  },
+  {
+    "Id": "VolatileDischarge",
+    "Name": "Volatile Discharge"
+  },
+  {
+    "Id": "VolatileDischargeCancel",
+    "Name": "Volatile Discharge Cancel"
+  },
+  {
+    "Id": "AegisMorphToShielded",
+    "Name": "Aegis - Morph To Shielded"
+  },
+  {
+    "Id": "AegisRelocate",
+    "Name": "Aegis Relocate"
+  },
+  {
+    "Id": "ApertureKeyhole",
+    "Name": "Aperture - Keyhole"
+  },
+  {
+    "Id": "Beholder",
+    "Name": "Beholder"
+  },
+  {
+    "Id": "DisguiseAsVolt",
+    "Name": "Disguise As Volt"
+  },
+  {
+    "Id": "CitadelEnergize",
+    "Name": "Citadel - Energize"
+  },
+  {
+    "Id": "EmissaryOrb",
+    "Name": "Emissary Orb"
+  },
+  {
+    "Id": "FuseFusion",
+    "Name": "Fusion"
+  },
+  {
+    "Id": "HarbingerExitJudgementMode",
+    "Name": "Harbinger - Exit Judgement Mode"
+  },
+  {
+    "Id": "HarbingerJudgementModeStart",
+    "Name": "Harbinger - Judgement Mode"
+  },
+  {
+    "Id": "KeironAquiferTrain",
+    "Name": "Keiron - Aquifer Train"
+  },
+  {
+    "Id": "AegisMorphToNormal",
+    "Name": "Aegis - Morph To Normal"
+  },
+  {
+    "Id": "OculusReveal",
+    "Name": "Oculus - Reveal"
+  },
+  {
+    "Id": "OutletResearch",
+    "Name": "Outlet Research"
+  },
+  {
+    "Id": "ProjectionCancel",
+    "Name": "Projection Cancel"
+  },
+  {
+    "Id": "PulsarDampener",
+    "Name": "Pulsar - Dampener"
+  },
+  {
+    "Id": "RallyCitadel",
+    "Name": "Citadel - Rally"
+  },
+  {
+    "Id": "ReliquaryResearch",
+    "Name": "Reliquary Research"
+  },
+  {
+    "Id": "EdificeResearch",
+    "Name": "Edifice Research"
+  },
+  {
+    "Id": "SanctumResearch",
+    "Name": "Sanctum Research"
+  },
+  {
+    "Id": "ElysiumResearch",
+    "Name": "Elysium Research"
+  },
+  {
+    "Id": "FoundryResearch",
+    "Name": "Foundry Research"
+  },
+  {
+    "Id": "AtriumResearch",
+    "Name": "Atrium Research"
+  },
+  {
+    "Id": "ConduitResearch",
+    "Name": "Conduit Research"
+  },
+  {
+    "Id": "ElytronAttack",
+    "Name": "Elytron Attack"
+  },
+  {
+    "Id": "Emanator",
+    "Name": "Emanator"
+  },
+  {
+    "Id": "GyrePrison",
+    "Name": "Gyre - Prison"
+  },
+  {
+    "Id": "KeironBuild",
+    "Name": "Keiron Build"
+  },
+  {
+    "Id": "KeironCitadelTrain",
+    "Name": "Keiron - Citadel Train"
+  },
+  {
+    "Id": "KeironCitadelAegisTrain",
+    "Name": "Keiron - Citadel Aegis Train"
+  },
+  {
+    "Id": "KeironCitadelMaterialize",
+    "Name": "Keiron - Citadel Materialize"
+  },
+  {
+    "Id": "MeridianConvergence",
+    "Name": "Meridian - Convergence"
+  },
+  {
+    "Id": "MeridianLightningBolt",
+    "Name": "Meridian - Lightning Bolt"
+  },
+  {
+    "Id": "ElytraHangar",
+    "Name": "Elytra Hangar"
+  },
+  {
+    "Id": "EchoFighterMode",
+    "Name": "Fighter Mode"
+  },
+  {
+    "Id": "EchoDiscordMode",
+    "Name": "Discord Mode"
+  },
+  {
+    "Id": "GyreShield",
+    "Name": "Gyre - Shield"
+  },
+  {
+    "Id": "ParagonDrop",
+    "Name": "!Paragon Drop"
+  },
+  {
+    "Id": "ParagonSpawn",
+    "Name": "!Paragon Spawn"
+  },
+  {
+    "Id": "Projection",
+    "Name": "Projection"
+  },
+  {
+    "Id": "ProjectionEnd",
+    "Name": "Projection End"
+  },
+  {
+    "Id": "ProjectionStart",
+    "Name": "Projection Start"
+  },
+  {
+    "Id": "SonicImage",
+    "Name": "Sonic Image"
+  },
+  {
+    "Id": "ReverbRB",
+    "Name": "Reverb Teleport"
+  },
+  {
+    "Id": "ParagonSpawnMove",
+    "Name": "Paragon Spawn Move"
+  },
+  {
+    "Id": "KeironWarpable",
+    "Name": "Keiron Warpable"
+  },
+  {
+    "Id": "ApertureLoadUnload",
+    "Name": "Aperture - Load-Unload"
+  },
+  {
+    "Id": "UmbraShieldCompulsion",
+    "Name": "Umbra - Shield Compulsion"
+  },
+  {
+    "Id": "FuseUnfuse",
+    "Name": "Unfuse"
+  },
+  {
+    "Id": "ELORProtocol",
+    "Name": "ELOR Protocol"
+  },
+  {
+    "Id": "ArmoryResearch2"
+  },
+  {
+    "Id": "ArmoryResearch22",
+    "Name": "Research (Armory)"
+  },
+  {
+    "Id": "AbilitiIrradiationBMField"
+  },
+  {
+    "Id": "AbilitiDetection"
+  },
+  {
+    "Id": "AttackRedirectUED"
+  },
+  {
+    "Id": "AbilityHightRegeneration"
+  },
+  {
+    "Id": "LazarusRegenHealf",
+    "Name": "Field recovery"
+  },
+  {
+    "Id": "OtklTowerMining",
+    "Name": "Disable the Enrichment Tower"
+  },
+  {
+    "Id": "GoAttackRedirect"
+  },
+  {
+    "Id": "UEDCalldownStructure",
+    "Name": "UED Calldown Structure"
+  },
+  {
+    "Id": "UEDTossGrenade",
+    "Name": "UEDToss Grenade"
+  },
+  {
+    "Id": "DropArsenal",
+    "Name": "Drop Arsenal"
+  },
+  {
+    "Id": "BurrowChargeRevD2",
+    "Name": "Burrow Charge Garmr"
+  },
+  {
+    "Id": "CrimsonEyeRepair",
+    "Name": "Repair"
+  },
+  {
+    "Id": "DisguiseAsStrikeTrooper",
+    "Name": "Disguise As Strike Trooper"
+  },
+  {
+    "Id": "DropSuppressionTower",
+    "Name": "Drop Suppression Tower"
+  },
+  {
+    "Id": "DropInfusionTower",
+    "Name": "Drop Infusion Tower"
+  },
+  {
+    "Id": "DropMissleTower",
+    "Name": "Drop Missle Tower"
+  },
+  {
+    "Id": "DropHeavyTower",
+    "Name": "Drop Heavy Tower"
+  },
+  {
+    "Id": "PositronicMissileStrike",
+    "Name": "Positronic Missile Strike"
+  },
+  {
+    "Id": "PsionicSuppressionField",
+    "Name": "Psionic Suppression Field"
+  },
+  {
+    "Id": "MedivacTransport2",
+    "Name": "Load-Unload (Shuttle)"
+  },
+  {
+    "Id": "MedivacTransport3",
+    "Name": "Load-Unload (APC)"
+  },
+  {
+    "Id": "MilitaryResearchStationResearch",
+    "Name": "Research (MilitaryResearchStation)"
+  },
+  {
+    "Id": "BattlecruiserAttack2",
+    "Name": "Battlecruiser Attack"
+  },
+  {
+    "Id": "BattlecruiserMove2",
+    "Name": "Battlecruiser Move"
+  },
+  {
+    "Id": "BattlecruiserStop2",
+    "Name": "Battlecruiser Stop"
+  },
+  {
+    "Id": "EngineeringBayResearch2",
+    "Name": "Research (Engineering Bay)"
+  },
+  {
+    "Id": "CalldownEnrichmentTower",
+    "Name": "Calldown Enrichment Tower"
+  },
+  {
+    "Id": "CalldownBeacon",
+    "Name": "Calldown Beacon"
+  },
+  {
+    "Id": "OnwardComrades",
+    "Name": "Onward, Comrades!"
+  },
+  {
+    "Id": "LazarusDeviceAoE",
+    "Name": "Lazarus Device"
+  },
+  {
+    "Id": "SprayUED",
+    "Name": "SprayUED"
+  },
+  {
+    "Id": "TacticsAcademyResearch",
+    "Name": "Research (Tactics Academy)"
+  },
+  {
+    "Id": "FusionCoreResearch2",
+    "Name": "Research"
+  },
+  {
+    "Id": "CrimsonEyeMorphtoCrimsonEyeSiege",
+    "Name": "CrimsonEye Morph to CrimsonEye Siege"
+  },
+  {
+    "Id": "SalvagerHarvest",
+    "Name": "Gather (Salvager)"
+  },
+  {
+    "Id": "RallyOperationHeadquarters",
+    "Name": "Operation Headquarters - Rally"
+  },
+  {
+    "Id": "EngineSurchargeProtocols",
+    "Name": "Additional battery"
+  },
+  {
+    "Id": "OperationHeadquartersTrain",
+    "Name": "Train (Operation Headquarters)"
+  },
+  {
+    "Id": "BeaconBuild",
+    "Name": "BeaconBuild"
+  },
+  {
+    "Id": "TeleportationNodeTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "ProjectedGravityShield",
+    "Name": "Projected Gravity Shield"
+  },
+  {
+    "Id": "UpgradeToInfusionTower",
+    "Name": "Morph Building (Arsenal-> Infusion Tower)"
+  },
+  {
+    "Id": "UpgradeToMissileTower",
+    "Name": "Morph Building (Arsenal-> MissileTower)"
+  },
+  {
+    "Id": "UpgradeToSuppressionTower",
+    "Name": "Morph Building (Arsenal-> SuppressionTower)"
+  },
+  {
+    "Id": "UpgradeToHeavyTower",
+    "Name": "Morph Building (Arsenal-> HeavyTower)"
+  },
+  {
+    "Id": "Yamato3",
+    "Name": "Song of the Dead"
+  },
+  {
+    "Id": "attackUED",
+    "Name": "Attack UED"
+  },
+  {
+    "Id": "moveUED",
+    "Name": "Move UED"
+  },
+  {
+    "Id": "que12",
+    "Name": "Queue (1)"
+  },
+  {
+    "Id": "que52",
+    "Name": "UED Warp Queue"
+  },
+  {
+    "Id": "stop2",
+    "Name": "Stop"
+  },
+  {
+    "Id": "LazarusDevice",
+    "Name": "Lazarus Device"
+  },
+  {
+    "Id": "WarpUEDBeacon",
+    "Name": "WarpUEDBeacon"
+  },
+  {
+    "Id": "OpticalFlare",
+    "Name": "Optical Flare"
+  },
+  {
+    "Id": "PeenemundeMRLSLM"
+  },
+  {
+    "Id": "NHbrSpray",
+    "Name": "Spray"
+  },
+  {
+    "Id": "NHbrNavigatorNavigation",
+    "Name": "Navigation"
+  },
+  {
+    "Id": "NHbrNavigatorLoad",
+    "Name": "Load-Unload"
+  },
+  {
+    "Id": "NHbrNemesisDisintegrator",
+    "Name": "Disintegrator"
+  },
+  {
+    "Id": "NHbrPollinatorShadowMantle@ShadowMantle",
+    "Name": "ShadowMantle"
+  },
+  {
+    "Id": "NHbrScreamerEnergation@Energation",
+    "Name": "Energation"
+  },
+  {
+    "Id": "NHbrScreamerDesolation",
+    "Name": "Desolation"
+  },
+  {
+    "Id": "NHbrSpiritCoreExchange@CoreExchange",
+    "Name": "Core Exchange"
+  },
+  {
+    "Id": "NHbrConstruct@TransformToAntiGround",
+    "Name": "Transform To Anti-Ground"
+  },
+  {
+    "Id": "NHbrConstruct@TransformToAntiAir",
+    "Name": "Transform To Anti-Air"
+  },
+  {
+    "Id": "NHbrVespeneConcentratorResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrShrineResearch"
+  },
+  {
+    "Id": "NHbrCrystallicShrineResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrWorkshopResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrProcessingCoreResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport",
+    "Name": "Teleport"
+  },
+  {
+    "Id": "NHbrIonicCrystalTeleport@Build",
+    "Name": "Build"
+  },
+  {
+    "Id": "NHbrIonicCrystalMorph@TransformToStaticIonicCrystal",
+    "Name": "Transform To Static Ionic Crystal"
+  },
+  {
+    "Id": "NHbrIonicCrystalMorph@TransfromToMoveableIonicCrystal",
+    "Name": "Transfrom To Moveable Ionic Crystal"
+  },
+  {
+    "Id": "NHbrNemesisCatacombResearch@Research",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrEngineResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrStasisCellResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrTempleVoidImmunity",
+    "Name": "Void Immunity"
+  },
+  {
+    "Id": "NHbrTemple@Rally",
+    "Name": "Rally"
+  },
+  {
+    "Id": "NHbrTempleTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "NHbrVoidPortalResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "NHbrVoidRiftTransfer",
+    "Name": "Transport"
+  },
+  {
+    "Id": "NHbrVoidRiftTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "NHbrDominatorTimeWarp",
+    "Name": "Time Warp"
+  },
+  {
+    "Id": "NHbrDreadnokPermanentConnection",
+    "Name": "Permanent Connection"
+  },
+  {
+    "Id": "NHbrDreadnokParalyzingTornado",
+    "Name": "Paralyzing Tornado"
+  },
+  {
+    "Id": "NHbrMinionBuild@Main",
+    "Name": "Build (Main)"
+  },
+  {
+    "Id": "NHbrMinionMorph@MechanicalReincarnation",
+    "Name": "Mechanical Reincarnation"
+  },
+  {
+    "Id": "NHbrMinionBuild",
+    "Name": "Build"
+  },
+  {
+    "Id": "NHbrReaverConsumeDNA",
+    "Name": "Consume DNA"
+  },
+  {
+    "Id": "NHbrSentinelJump",
+    "Name": "Jump"
+  },
+  {
+    "Id": "NHbrWarbringerMaceStrike",
+    "Name": "Mace Strike"
+  },
+  {
+    "Id": "DragonAscend",
+    "Name": "Dragon (Ascend)"
+  },
+  {
+    "Id": "DragonBuild",
+    "Name": "Dragon - Build"
+  },
+  {
+    "Id": "DragonBuilding",
+    "Name": "Dragon Building"
+  },
+  {
+    "Id": "AscendedArkwyrm",
+    "Name": "Ascended Arkwyrm"
+  },
+  {
+    "Id": "ArkwyrmUnload",
+    "Name": "Arkwyrm - Unload"
+  },
+  {
+    "Id": "ArkwyrmTransport",
+    "Name": "Arkwyrm - Transport"
+  },
+  {
+    "Id": "AscendedAuroraConduit",
+    "Name": "Ascended Aurora Conduit"
+  },
+  {
+    "Id": "AscendedBrimstoneDemolisher",
+    "Name": "Ascended Brimstone Demolisher"
+  },
+  {
+    "Id": "AscendedFlamespitter",
+    "Name": "Ascended Flamespitter"
+  },
+  {
+    "Id": "AugmentationPit",
+    "Name": "Augmentation Pit"
+  },
+  {
+    "Id": "BrimstoneDemolisherScorchingBlaze",
+    "Name": "Scorching Blaze"
+  },
+  {
+    "Id": "DenizenoftheDeep",
+    "Name": "Denizen of the Deep"
+  },
+  {
+    "Id": "DenizenoftheDeepCrystalize",
+    "Name": "Denizen of the Deep - Crystalize"
+  },
+  {
+    "Id": "DenizenoftheDeepLiquify",
+    "Name": "Denizen of the Deep - Liquify"
+  },
+  {
+    "Id": "DisguiseAsFlamespitter",
+    "Name": "Disguise As Flamespitter"
+  },
+  {
+    "Id": "DragonBuildApplyBehavior",
+    "Name": "Dragon - Build (Apply Behavior)"
+  },
+  {
+    "Id": "AscendedFleshrender",
+    "Name": "Ascended Fleshrender"
+  },
+  {
+    "Id": "AscendedFleshrenderFree",
+    "Name": "Ascended Fleshrender (Free)"
+  },
+  {
+    "Id": "DragonFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "ArkwyrmFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "DragonFissionDisabled",
+    "Name": "Fission"
+  },
+  {
+    "Id": "GrimGliderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "VolcanicHarbingerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "DragonAscendedFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedArkwyrmFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedGrimGliderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedVolcanicHarbingerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedBrimstoneDemolisherFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedFleshrenderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedAuroraConduitFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedSkyrazerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedHandofPowerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedUnseenBeastFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedHunterFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedHornedMagusFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedPlodderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedFlamespitterFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AscendedBerserkerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "BrimstoneDemolisherFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "FleshrenderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "AuroraConduitFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "SkyrazerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "HandofPowerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "UnseenBeastFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "HunterFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "FrontierDeepOneBuild",
+    "Name": "Frontier Deep One - Build"
+  },
+  {
+    "Id": "FrontierDeepOneResearch",
+    "Name": "Frontier Deep One - Research"
+  },
+  {
+    "Id": "GenesisPit",
+    "Name": "Genesis Pit"
+  },
+  {
+    "Id": "GreaterDeepOneBuild",
+    "Name": "Greater Deep One - Build"
+  },
+  {
+    "Id": "GreaterDeepOneResearch",
+    "Name": "Greater Deep One - Research"
+  },
+  {
+    "Id": "AscendedGrimGlider",
+    "Name": "Ascended Grim Glider"
+  },
+  {
+    "Id": "GrimGliderMortalitysEclipse",
+    "Name": "Grim Glider - Mortality's Eclipse"
+  },
+  {
+    "Id": "AscendedHandofPower",
+    "Name": "Ascended Hand of Power"
+  },
+  {
+    "Id": "AscendedHornedMagus",
+    "Name": "Ascended Horned Magus"
+  },
+  {
+    "Id": "HornedMagusShroud",
+    "Name": "Horned Magus - Shroud"
+  },
+  {
+    "Id": "AscendedHunter",
+    "Name": "Ascended Hunter"
+  },
+  {
+    "Id": "HornedMagusFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "LesserDeepOneBuild",
+    "Name": "Lesser Deep One - Build"
+  },
+  {
+    "Id": "LesserDeepOneResearch",
+    "Name": "Lesser Deep One - Research"
+  },
+  {
+    "Id": "AscendedPlodder",
+    "Name": "Ascended Plodder"
+  },
+  {
+    "Id": "AscendedBerserker",
+    "Name": "Ascended Berserker"
+  },
+  {
+    "Id": "AscendedSkyrazer",
+    "Name": "Ascended Skyrazer"
+  },
+  {
+    "Id": "PlodderFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "FlamespitterFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "BerserkerFission",
+    "Name": "Fission"
+  },
+  {
+    "Id": "UnseenBeastTeleportAssault",
+    "Name": "Unseen Beast - Teleport Assault"
+  },
+  {
+    "Id": "ToweringDeepOneBuild",
+    "Name": "Towering Deep One - Build"
+  },
+  {
+    "Id": "FrontierDeepOneInvigorate",
+    "Name": "Frontier Deep One - Invigorate"
+  },
+  {
+    "Id": "DenizenoftheDeepBuild",
+    "Name": "Denizen of the Deep - Build"
+  },
+  {
+    "Id": "Razorback",
+    "Name": "Razorback"
+  },
+  {
+    "Id": "DenizenoftheDeepTrain",
+    "Name": "Denizen of the Deep - Train"
+  },
+  {
+    "Id": "DragonTrain",
+    "Name": "Dragon - Train"
+  },
+  {
+    "Id": "GenesisPitTrain",
+    "Name": "Genesis Pit - Train"
+  },
+  {
+    "Id": "GreaterDeepOneTrain",
+    "Name": "Greater Deep One - Train"
+  },
+  {
+    "Id": "HandofPowerCrushingGravity",
+    "Name": "Hand of Power - Crushing Gravity"
+  },
+  {
+    "Id": "HandofPowerPortalEntrance",
+    "Name": "Hand of Power - Portal Entrance"
+  },
+  {
+    "Id": "HandofPowerPortalExit",
+    "Name": "Hand of Power - Portal Exit"
+  },
+  {
+    "Id": "HandofPowerFrenzy",
+    "Name": "Hand of Power - Frenzy"
+  },
+  {
+    "Id": "HornedMagusInvigorate",
+    "Name": "Horned Magus - Invigorate"
+  },
+  {
+    "Id": "HornedMagusFireShield",
+    "Name": "Horned Magus - Fire Shield"
+  },
+  {
+    "Id": "LesserDeepOne",
+    "Name": "Lesser Deep One"
+  },
+  {
+    "Id": "GreaterDeepOne",
+    "Name": "Greater Deep One"
+  },
+  {
+    "Id": "LesserDeepOneTrain",
+    "Name": "Lesser Deep One - Train"
+  },
+  {
+    "Id": "ToweringDeepOne",
+    "Name": "Towering Deep One"
+  },
+  {
+    "Id": "PlodderBuild",
+    "Name": "Plodder - Build"
+  },
+  {
+    "Id": "DenizenoftheDeepRally",
+    "Name": "Denizen of the Deep - Rally"
+  },
+  {
+    "Id": "ToweringDeepOneResearch",
+    "Name": "Towering Deep One - Research"
+  },
+  {
+    "Id": "AscendedUnseenBeast",
+    "Name": "Ascended Unseen Beast"
+  },
+  {
+    "Id": "AscendedVolcanicHarbinger",
+    "Name": "Ascended Volcanic Harbinger"
+  },
+  {
+    "Id": "ToweringDeepOneTrain",
+    "Name": "Towering Deep One - Train"
+  },
+  {
+    "Id": "VolcanicHarbingerOverload",
+    "Name": "Overload"
+  },
+  {
+    "Id": "VolcanicHarbingerQueue",
+    "Name": "Volcanic Harbinger - Queue"
+  },
+  {
+    "Id": "UPLBuildBase"
+  },
+  {
+    "Id": "ClaymoreMineDummy",
+    "Name": "ClaymoreMineDummy"
+  },
+  {
+    "Id": "ClaymoreMineExecute",
+    "Name": "ClaymoreMineExecute"
+  },
+  {
+    "Id": "ClaymoreMineSetDirection",
+    "Name": "ClaymoreMineSetDirection"
+  },
+  {
+    "Id": "FlashbangGrenadePickup",
+    "Name": "FlashbangGrenadePickup"
+  },
+  {
+    "Id": "HazmatRepair",
+    "Name": "HazmatRepair"
+  },
+  {
+    "Id": "ClaymoreMinePlace",
+    "Name": "ClaymoreMinePlace"
+  },
+  {
+    "Id": "LotC_EP01M03_SnipeShot",
+    "Name": "LotC_EP01M03_SnipeShot"
+  },
+  {
+    "Id": "FlameGrenadePickup",
+    "Name": "FlameGrenadePickup"
+  },
+  {
+    "Id": "UPLCommStationActiveBuff",
+    "Name": "UPLComm Station Command Link"
+  },
+  {
+    "Id": "WillliamGravesArtilleryStrike",
+    "Name": "Willliam Graves Artillery Strike"
+  },
+  {
+    "Id": "UPLNuclearStrike",
+    "Name": "UPL Nuclear Strike"
+  },
+  {
+    "Id": "UPLTurretCargo",
+    "Name": "UPLTurretCargo"
+  },
+  {
+    "Id": "UPLBuild",
+    "Name": "Build"
+  },
+  {
+    "Id": "InfantryMortarTurn",
+    "Name": "Infantry Mortar Turn"
+  },
+  {
+    "Id": "InfantryMortarUnsiege",
+    "Name": "Unmount"
+  },
+  {
+    "Id": "InfantryMortarModeSiege",
+    "Name": "Mount"
+  },
+  {
+    "Id": "InfantryFlamethrowerDetonate",
+    "Name": "Detonate"
+  },
+  {
+    "Id": "UPLMiningDroneRepair",
+    "Name": "UPLMiningDroneRepair"
+  },
+  {
+    "Id": "MiningDroneSwitchMode",
+    "Name": "MiningDroneSwitchMode"
+  },
+  {
+    "Id": "InfantryOfficerCharge",
+    "Name": "Infantry Officer Charge"
+  },
+  {
+    "Id": "MiningDroneGather",
+    "Name": "Mining Drone Gather"
+  },
+  {
+    "Id": "APCSmokeGrenade",
+    "Name": "APC Smoke Grenade"
+  },
+  {
+    "Id": "RaptorCloak",
+    "Name": "RaptorCloak"
+  },
+  {
+    "Id": "CSVTransportDamaged",
+    "Name": "CSV Transport Damaged"
+  },
+  {
+    "Id": "RileyJericoBadgerBomb",
+    "Name": "Riley Jerico Badger Bomb"
+  },
+  {
+    "Id": "Z1BadgerBomb",
+    "Name": "Z1 Badger Bomb"
+  },
+  {
+    "Id": "Z1ShieldCancel",
+    "Name": "Z1 Shield Cancel"
+  },
+  {
+    "Id": "Z1Shield",
+    "Name": " Full Size Smart Metal Shield"
+  },
+  {
+    "Id": "Z1Freeze",
+    "Name": "Z1 Freeze"
+  },
+  {
+    "Id": "CondorLandCinematic",
+    "Name": "Condor Land Cinematic"
+  },
+  {
+    "Id": "CSVDeploy",
+    "Name": "Deploy"
+  },
+  {
+    "Id": "CSVUndeploy",
+    "Name": "Undeploy"
+  },
+  {
+    "Id": "CSVRepairPulse",
+    "Name": "CSV Repair Pulse"
+  },
+  {
+    "Id": "CSVTransport",
+    "Name": "CSV Transport"
+  },
+  {
+    "Id": "CondorFly",
+    "Name": "Condor Fly"
+  },
+  {
+    "Id": "CondorLand",
+    "Name": "Condor Land"
+  },
+  {
+    "Id": "CondorLandCinematicInstantMorph",
+    "Name": "Condor Land Cinematic Instant Morph"
+  },
+  {
+    "Id": "CondorTransport",
+    "Name": "Condor Transport"
+  },
+  {
+    "Id": "OspreyFly",
+    "Name": "Osprey Fly"
+  },
+  {
+    "Id": "OspreyLand",
+    "Name": "Osprey Land"
+  },
+  {
+    "Id": "OspreyTransport",
+    "Name": "Osprey Transport"
+  },
+  {
+    "Id": "RaptorJetScatterBombs",
+    "Name": "RaptorJet Scatter Bombs"
+  },
+  {
+    "Id": "TR17Siege",
+    "Name": "Artillery Mode"
+  },
+  {
+    "Id": "TR17Unsiege",
+    "Name": "Mobile Mode"
+  },
+  {
+    "Id": "TR17Starburst",
+    "Name": "TR-17 Starburst"
+  },
+  {
+    "Id": "RallyHeadquarters",
+    "Name": "Headquarters - Rally"
+  },
+  {
+    "Id": "UPLAirstripResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "UPLManufacturingFacilityResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "UPLBilletResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "UPLForwardOperatingBaseResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "UPLRnDFacilityResearch",
+    "Name": "Research"
+  },
+  {
+    "Id": "UPLRnDFacilityTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "UPLAirstripTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "UPLBilletTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "UPLForwardOperatingBaseTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "UPLHeadquartersTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "UPLManufacturingFacilityTrain",
+    "Name": "Train"
+  },
+  {
+    "Id": "CARRIllumination",
+    "Name": "Illumination"
+  },
+  {
+    "Id": "CARRGrenadeLauncherCheck",
+    "Name": "Grenade Launcher Check"
+  },
+  {
+    "Id": "CARRGrenadeLauncher",
+    "Name": "Grenade Launcher"
+  },
+  {
+    "Id": "CARRGrenadeLauncherBoss"
+  },
+  {
+    "Id": "Test_HornerAirFleetActivate"
+  },
+  {
+    "Id": "Test_HornerAirFleetExecute"
+  },
+  {
+    "Id": "Test_HornerAirFleetTargetingDummy"
+  },
+  {
+    "Id": "HQDoubleQueue"
+  },
+  {
+    "Id": "ReaverHangar222"
+  }
+]

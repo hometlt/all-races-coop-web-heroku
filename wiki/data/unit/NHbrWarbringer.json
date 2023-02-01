@@ -1,0 +1,416 @@
+{
+  "Name": "Warbringer",
+  "Description": "Potent mid-game destroyer of armored units. Can use «Mace Strike» to provide long-range support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 3,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "NHbr",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 90,
+  "LifeMax": 90,
+  "LifeArmorName": "Hybrid Armor",
+  "Mover": "Ground",
+  "StationaryTurningRate": 999.8437,
+  "TurningRate": 999.8437,
+  "Radius": 0.625,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
+  "EditorCategories": {
+    "ObjectType": "Unit",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1.8,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Turnable",
+    "Movable",
+    "Unclickable",
+    "Unhighlightable",
+    "Untooltipable",
+    "KillCredit",
+    "ShowResources",
+    "ClearRallyOnTargetLost",
+    "PlayerRevivable",
+    "CameraFollow",
+    "PreventDestroy",
+    "UseLineOfSight",
+    "ArmySelect",
+    "AlwaysThreatens",
+    "AIThreatGround",
+    "AIThreatAir",
+    "AISplash",
+    "AIHighPrioTarget",
+    "AICaster",
+    "AIPressForwardDisabled"
+  ],
+  "EditorFlags": [
+    "BlockStructures"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "NHbrWarbringer",
+  "HotkeyAlias": "NHbrWarbringer",
+  "SelectAlias": "NHbrWarbringer",
+  "SubgroupAlias": "NHbrWarbringer",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "HighTemplar",
+  "AIEvaluateAlias": "NHbrWarbringer",
+  "ReviveType": "NHbrWarbringer",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 70,
+      "Anim": 20,
+      "Turn": 10
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "NHbrWarbringer/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "NHbrWarbringer/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "DataCollection": "NHbrWarbringer",
+  "ShieldArmorName": "Hybrid Protection",
+  "Acceleration": 1000,
+  "LateralAcceleration": 46,
+  "DamageDealtXP": 1,
+  "DamageTakenXP": 1,
+  "KillXP": 40,
+  "LifeArmor": 1,
+  "ShieldArmor": 1,
+  "CardLayouts": [
+    {
+      "LayoutButtons": [
+        {
+          "Face": "Move",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Move",
+          "Row": 0,
+          "Column": 0
+        },
+        {
+          "Face": "Stop",
+          "Type": "AbilCmd",
+          "AbilCmd": "stop,Stop",
+          "Row": 0,
+          "Column": 1
+        },
+        {
+          "Face": "MoveHoldPosition",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,HoldPos",
+          "Row": 0,
+          "Column": 2
+        },
+        {
+          "Face": "Attack",
+          "Type": "AbilCmd",
+          "AbilCmd": "attack,Execute",
+          "Row": 0,
+          "Column": 4
+        },
+        {
+          "Face": "MovePatrol",
+          "Type": "AbilCmd",
+          "AbilCmd": "move,Patrol",
+          "Row": 0,
+          "Column": 3
+        },
+        {
+          "Face": "NHbrWarbringerMaceStrike@MaceCannon",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrWarbringerMaceStrike,Off",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrWarbringerMaceStrike@MaceCannonPassive",
+          "Type": "Passive",
+          "Requirements": "NHbrWarbringerMaceStrike@HasNoBuff",
+          "Row": 2,
+          "Column": 0
+        },
+        {
+          "Face": "NHbrWarbringerMaceStrike",
+          "Type": "AbilCmd",
+          "AbilCmd": "NHbrWarbringerMaceStrike,On",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrWarbringerMaceStrike@Passive",
+          "Type": "Passive",
+          "AbilCmd": "NHbrWarbringerMaceStrike,On",
+          "Requirements": "NHbrWarbringerMaceStrike@HasBuff",
+          "Row": 2,
+          "Column": 1
+        },
+        {
+          "Face": "NHbrWarbringerOrbitalGuidance",
+          "Type": "Passive",
+          "Requirements": "NHbrWarbringerOrbitalGuidance@Use",
+          "Row": 1,
+          "Column": 0
+        }
+      ]
+    }
+  ],
+  "GlossaryCategory": "Unit/Category/NHbrUnits",
+  "TauntDuration": {
+    "Cheer": 5,
+    "Dance": 5
+  },
+  "Mob": "Multiplayer",
+  "AttackTargetPriority": 20,
+  "PlaneArray": [
+    "Ground"
+  ],
+  "Collide": [
+    "Ground",
+    "Locust",
+    "Small",
+    "ForceField"
+  ],
+  "HotkeyCategory": "Unit/Category/NHbrUnits",
+  "KillDisplay": "Always",
+  "RankDisplay": "Always",
+  "ScoreResult": "BuildOrder",
+  "ShieldArmorTip": "Unit/ShieldArmorTooltip/NHbrShields",
+  "LifeRegenDelay": 10,
+  "ShieldRegenDelay": 10,
+  "Attributes": [
+    "Armored",
+    "Biological",
+    "Psionic"
+  ],
+  "EnergyStart": 100,
+  "EnergyMax": 100,
+  "Speed": 2.6796,
+  "Deceleration": 1000,
+  "Sight": 10,
+  "Height": 0.5,
+  "Food": -3,
+  "CostCategory": "Army",
+  "CostResource": {
+    "Minerals": 125,
+    "Vespene": 100
+  },
+  "InnerRadius": 0.625,
+  "CargoSize": 2,
+  "ScoreMake": 200,
+  "ScoreKill": 200,
+  "SubgroupPriority": 56,
+  "TacticalAIThink": "AIThinkHighTemplar",
+  "GlossaryPriority": 13,
+  "GlossaryStrongArray": [
+    "Marine",
+    "Hydralisk",
+    "Sentry"
+  ],
+  "GlossaryWeakArray": [
+    "Ghost",
+    "Roach",
+    "Colossus"
+  ],
+  "ShieldsStart": 50,
+  "ShieldsMax": 50,
+  "Icon": "btn-hybrid-unit-shifter",
+  "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
+  "ShieldArmorIcon": "btn-ability-zeratul-warpprism-shieldboosters",
+  "Id": "NHbrWarbringer",
+  "Weapons": [
+    {
+      "Link": "NHbrWarbringerWeaponMaceCannon",
+      "Id": "NHbrWarbringerWeaponMaceCannon",
+      "Icon": "btn-ability-protoss-shadowcannon",
+      "Name": "Mace Cannon",
+      "Amount": 17,
+      "Kind": "Ranged",
+      "TargetFilters": "Ground",
+      "Range": 6.5,
+      "Period": 1.5
+    },
+    {
+      "Link": "NHbrWarbringerWeaponMaceStrike",
+      "Id": "NHbrWarbringerWeaponMaceStrike",
+      "Icon": "btn-ability-spearofadun-orbitalstrike",
+      "Name": "Mace Strike",
+      "Amount": 24,
+      "Kind": "Splash",
+      "TargetFilters": "Ground",
+      "Range": 10,
+      "Period": 2.25
+    }
+  ],
+  "Behaviors": [
+    {
+      "Link": "NHbrProtection@SpellArmor",
+      "Id": "NHbrProtection@SpellArmor"
+    },
+    {
+      "Link": "NHbrNetwork@PowerUser",
+      "Id": "NHbrNetwork@PowerUser",
+      "Name": "Power User"
+    }
+  ],
+  "Upgrades": [
+    {
+      "Link": "NHbrGroundArmors",
+      "Id": "NHbrGroundArmors",
+      "Name": "Hybrid Ground Armors"
+    },
+    {
+      "Link": "NHbrGroundWeapons",
+      "Id": "NHbrGroundWeapons",
+      "Name": "Hybrid Ground Weapons"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel1",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level1",
+      "Name": "Hybrid Ground Armor Level 1"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel2",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level2",
+      "Name": "Hybrid Ground Armor Level 2"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Id": "NHbrEngineUpgrades@GroundArmorsLevel3",
+      "Icon": "btn-upgrade-dehaka-groundcarapace-level3",
+      "Name": "Hybrid Ground Armor Level 3"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@GroundWeaponsLevel1",
+      "Id": "NHbrEngineUpgrades@GroundWeaponsLevel1",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level1",
+      "Name": "Hybrid Ground Weapons Level 1"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@WeaponsLevel2",
+      "Id": "NHbrEngineUpgrades@WeaponsLevel2",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level2",
+      "Name": "Hybrid Ground Weapons Level 2"
+    },
+    {
+      "Link": "NHbrEngineUpgrades@WeaponsLevel3",
+      "Id": "NHbrEngineUpgrades@WeaponsLevel3",
+      "Icon": "btn-upgrade-dehaka-bothattacks-level3",
+      "Name": "Hybrid Ground Weapons Level 3"
+    }
+  ],
+  "Abilities": [
+    {
+      "Link": "stop",
+      "Id": "stop",
+      "Name": "Stop"
+    },
+    {
+      "Link": "attack",
+      "Id": "attack",
+      "Name": "Attack"
+    },
+    {
+      "Link": "move",
+      "Id": "move",
+      "Name": "Move"
+    },
+    {
+      "Link": "NHbrWarbringerMaceStrike",
+      "Id": "NHbrWarbringerMaceStrike",
+      "Name": "Mace Strike"
+    }
+  ],
+  "Requirements": [
+    {
+      "Id": "NHbrStasisCell@StasisCell",
+      "Name": "Stasis Cell"
+    }
+  ],
+  "Production": [],
+  "Producers": [
+    {
+      "Id": "NHbrVoidRift",
+      "Icon": "btn-hybrid-building-voidrift",
+      "Description": "Warps in Hybrid units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Warriors",
+      "Name": "Void Rift"
+    }
+  ],
+  "Commands": [
+    {
+      "Id": "Move",
+      "Icon": "btn-command-move",
+      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+      "Name": "Move",
+      "AbilCmd": "move,Move"
+    },
+    {
+      "Id": "Stop",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop",
+      "AbilCmd": "stop,Stop"
+    },
+    {
+      "Id": "MoveHoldPosition",
+      "Icon": "btn-command-holdposition",
+      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+      "Name": "Hold Position",
+      "AbilCmd": "move,HoldPos"
+    },
+    {
+      "Id": "Attack",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+      "Name": "Attack",
+      "AbilCmd": "attack,Execute"
+    },
+    {
+      "Id": "MovePatrol",
+      "Icon": "btn-command-patrol",
+      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+      "Name": "Patrol",
+      "AbilCmd": "move,Patrol"
+    },
+    {
+      "Id": "NHbrWarbringerMaceStrike@MaceCannon",
+      "Icon": "btn-ability-protoss-shadowcannon",
+      "Tooltip": "Activate to make weapon deals base damage with base range and without <c val=\"#Network\">Network</span> cost.",
+      "Name": "Mace Cannon",
+      "AbilCmd": "NHbrWarbringerMaceStrike,Off"
+    },
+    {
+      "Id": "NHbrWarbringerMaceStrike",
+      "Icon": "btn-ability-spearofadun-orbitalstrike",
+      "Tooltip": "Activate to increase weapon damage by <span style=\"color: #ffff8a\"><b>41</b>%</span> and range to <span style=\"color: #ffff8a\"><b>10</b></span>. Each weapon attack deals <span style=\"color: #ffff8a\"><b>12</b></span> to <span style=\"color: #ffff8a\"><b>24</b></span> splash damage, depending on distance from center and costs <span style=\"color: #ffff8a\"><b>20</b></span> <c val=\"#Network\">Network</span>.",
+      "Name": "Mace Strike",
+      "AbilCmd": "NHbrWarbringerMaceStrike,On"
+    },
+    {
+      "Id": "NHbrWarbringerMaceStrike@Passive",
+      "Icon": "btn-ability-spearofadun-orbitalstrike",
+      "Tooltip": "Weapon damage increase by <span style=\"color: #ffff8a\"><b>41</b>%</span> and range to <span style=\"color: #ffff8a\"><b>10</b></span>. Each weapon attack deals <span style=\"color: #ffff8a\"><b>12</b></span> to <span style=\"color: #ffff8a\"><b>24</b></span> splash damage, depending on distance from center and costs <span style=\"color: #ffff8a\"><b>20</b></span> <c val=\"#Network\">Network</span>.",
+      "Name": "Mace Strike",
+      "AbilCmd": "NHbrWarbringerMaceStrike,On"
+    }
+  ]
+}

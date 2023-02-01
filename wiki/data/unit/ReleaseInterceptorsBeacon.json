@@ -1,0 +1,81 @@
+{
+  "Name": "Release Interceptors Beacon",
+  "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
+  "DeathRevealRadius": 2,
+  "DeathRevealDuration": 4,
+  "DeathRevealType": "Snapshot",
+  "Race": "Prot",
+  "DefaultAcquireLevel": "Offensive",
+  "Response": "Acquire",
+  "ResourceState": "Unknown",
+  "ResourceType": "Unknown",
+  "LifeStart": 1,
+  "LifeMax": 1,
+  "LifeArmorName": "None",
+  "Mover": "Fly",
+  "StationaryTurningRate": 720,
+  "TurningRate": 720,
+  "Radius": 1.5,
+  "SeparationRadius": 1.5,
+  "MinimapRadius": 0.5,
+  "EditorCategories": {
+    "ObjectType": "Other",
+    "ObjectFamily": "Melee"
+  },
+  "TacticalAIFilters": "-;Player,Ally,Neutral",
+  "AIEvalFactor": 1,
+  "Mass": 0.4,
+  "FlagArray": [
+    "Uncommandable",
+    "Unselectable",
+    "Untargetable",
+    "Invulnerable"
+  ],
+  "PushPriority": 10,
+  "LeaderAlias": "ReleaseInterceptorsBeacon",
+  "HotkeyAlias": "ReleaseInterceptorsBeacon",
+  "SelectAlias": "ReleaseInterceptorsBeacon",
+  "SubgroupAlias": "ReleaseInterceptorsBeacon",
+  "OccludeHeight": 0.75,
+  "TacticalAI": "ReleaseInterceptorsBeacon",
+  "AIEvaluateAlias": "ReleaseInterceptorsBeacon",
+  "ReviveType": "ReleaseInterceptorsBeacon",
+  "PawnItemReduction": 1,
+  "Fidget": {
+    "DelayMax": 30,
+    "DelayMin": 10,
+    "DistanceMax": 4,
+    "DistanceMin": 1,
+    "TurnAngle": 90,
+    "TurningRate": 90,
+    "ChanceArray": {
+      "Idle": 100
+    }
+  },
+  "ReviveInfoBase": {
+    "Charge": {
+      "Link": "ReleaseInterceptorsBeacon/Revive",
+      "Location": "Unit"
+    },
+    "Cooldown": {
+      "Link": "ReleaseInterceptorsBeacon/Revive",
+      "Location": "Unit"
+    }
+  },
+  "InnerRadiusSafetyMultiplier": 1,
+  "ArmorType": "Unknown",
+  "PlaneArray": [
+    "Air"
+  ],
+  "Collide": [
+    "Air4"
+  ],
+  "Height": 3.75,
+  "InnerRadius": 1.5,
+  "Id": "ReleaseInterceptorsBeacon",
+  "Upgrades": [],
+  "Requirements": [],
+  "Production": [],
+  "Producers": [],
+  "Commands": []
+}
